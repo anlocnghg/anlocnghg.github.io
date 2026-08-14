@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 4 - Tr&#237; Tuệ Đ&#225;m Đ&#244;ng  V&#236; Sao Đa Số Th&#244;ng Minh Hơn Thiểu Số</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 4</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-004.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-006.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ <b>
+  Cia, Linux và nghệ thuật phi tập trung hóa
+ </b>
+</p>
+
+<p>
+ Tháng Tư năm 1946, tại một diễn đàn do The New York Herald tổ chức, Tướng Wild Bill Donovan đã đọc bài phát biểu mang tiêu đề "Chính sách ngoại giao của chúng ta cần có một Cục Tình báo Trung ương". Trong Đại chiến thế giới II, Donovan là Trưởng ban Chiến lược, tổ chức tình báo hàng đầu trong thời chiến của Mỹ, và khi chiến tranh kết thúc ông trở thành một người nhiệt tình công khai ủng hộ việc thành lập một phiên bản của Ban Chiến lược mạnh hơn trong thời bình. Trước chiến tranh, Mỹ phân trách nhiệm thu thập tin tình báo cho nhiều quân chủng khác nhau. Nhưng chẳng có bất kỳ quân chủng nào biết trước cuộc tấn công vào Trân Châu Cảng - mặc dù nhìn lại quá khứ, thì dường như có nhiều bằng chứng cho thấy cuộc tấn công lớn của quân Nhật sắp xảy ra. Điều đó chứng tỏ những hạn chế của hệ thống này và đưa ra nhu cầu cần có một phương thức toàn diện hơn, hệ thống hơn để thu thập tin tình báo. Cũng vậy, nguy cơ xung đột với Liên Xô ngay từ năm 1946 đã biểu hiện rõ là một khả năng thực tế, và sự xuất hiện của những công nghệ mới - như Donovan đã viện dẫn: "tên lửa, bom nguyên tử, chiến tranh vi khuẩn" - khiến cho biên giới Mỹ khó có thể vững chắc được. Trong bài phát biểu hồi tháng Tư đó, Donovan đề cập đến tất cả các chủ đề này và lập luận rằng Mỹ cần phải có một "cơ quan tập trung, công minh, độc lập" để đảm nhận mọi hoạt động tình báo của quốc gia.
+</p>
+
+<p>
+ Phát biểu công khai của Donovan không có lợi cho sự nghiệp của chính ông vì những lời chỉ trích gay gắt đó khiến giới tình báo phải xa lánh và có thể làm ông mất cơ hội trở lại phục vụ trong chính phủ. Tuy nhiên, năm 1947 Quốc hội Mỹ đã thông qua Luật An ninh Quốc gia và thành lập Cục Tình báo Trung ương. Theo nhà sử học Michael Warner ghi lại, mục đích của luật này là để "thực hiện các nguyên tắc thống nhất về chỉ huy và thống nhất về tình báo". Sự chia rẽ và tách biệt làm cho Mỹ dễ bị tổn thương trước sự tấn công bất ngờ. Sự tập trung và thống nhất sẽ bảo vệ Mỹ an toàn trong tương lai.
+</p>
+
+<p>
+ Tuy nhiên, trong thực tế, sự tập trung về tình báo chưa bao giờ có. Mặc dù ban đầu CIA đóng vai trò then chốt trong thời kỳ sau chiến tranh, nhưng thời gian trôi qua, giới tình báo trở nên chia rẽ hơn bao giờ hết, phân hóa thành một mớ hỗn tạp và các cục thành viên trong CIA, với những trách nhiệm và nhiệm vụ chồng chéo, bao gồm Cục An ninh Quốc gia, Cục Ảnh và Bản đồ Quốc gia, Cục Trinh sát Quốc gia, Cục Tình báo Quốc phòng, các nhánh tình báo của ba quân chủng lớn và tất nhiên là cả CIA. Trên lý thuyết, giám đốc CIA phụ trách giới tình báo nói chung, nhưng trong thực tế, ông thi hành quyền giám sát rất ít đối với những cơ quan này và phần lớn kinh phí cho các hoạt động tình báo đều lấy từ Bộ Quốc phòng. Ngoài ra, FBI - nơi chịu trách nhiệm về việc thực thi luật pháp trong nước - gần như hoàn toàn hoạt động ngoài quỹ đạo của giới tình báo, dù là thông tin về bọn khủng bố nước ngoài đang hoạt động trong nội địa Mỹ rõ ràng thuộc mối quan tâm của CIA. Thay vì là nơi tổng hợp và phân tích thông tin tập trung mà Donovan đã mường tượng lúc đó, giới tình báo Mỹ phát triển thành một tập hợp các nhóm hoàn toàn độc lập, phi tập trung, tất cả đều làm việc hướng tới cùng một mục tiêu lớn - bảo vệ nước Mỹ an toàn nước mọi sự tấn công - nhưng theo những cách khác nhau.
+</p>
+
+<p>
+ Những nhược điểm của hệ thống này đã bị bỏ qua cho đến tận ngày 11/9/2001. Giới tình báo đã không lường trước được vụ đánh bom Trung tâm Thương mại Thế giới năm 1993 và các vụ đánh bom năm 1998 vào Đại sứ quán Mỹ ở Kenya và Hạm đội Hải quân Cole ở Yemen. Nhưng đến vụ 11/9 thì có lẽ không thể lại nhận được sự thất bại của Mỹ trong việc thu thập tin tình báo được nữa. Phòng Thanh tra chung của Quốc hội (the Congressional Join Inquiry) điều tra về các vụ tấn công nhận thấy cộng đồng tình báo Mỹ "đã không khai thác được cả ý nghĩa chung và ý nghĩa riêng của những thông tin sẵn có; có vẻ liên quan đến sự kiện 11/9". Các cơ quan tình báo đã "bỏ lỡ các cơ hội đập tan âm mưu trong vụ 11/9" và đã bỏ qua thông tin mà không nhận thấy rằng nếu như đánh giá đúng thì có thể đã "mở ra rất nhiều cơ hội phát hiện và ngăn chặn các vụ tấn công. Nói cách khác sự kiện Trân Châu Cảng đã tái diễn thêm một lần nữa.
+</p>
+
+<p>
+ Đến bây giờ có lẽ đa số chúng ta đều thấy rằng cuộc thanh tra của Quốc hội là ví dụ điển hình cho cái gọi là "mất bò mới lo làm chuồng". Do hoàn toàn chỉ căn cứ vào lượng thông tin mà các cơ quan tình báo xử lý, thế nên không có gì ngạc nhiên khi thấy nếu xem xét những dữ liệu họ có trong tay tại thời điểm xảy ra cuộc tấn công, ta có thể tìm được những tư liệu dường như có liên quan đến những gì đã xảy ra vào ngày 11/9. Nói như thế không có nghĩa là người ta thật sự nghĩ rằng các cơ quan đã có thể nhận thấy ngay từ trước những điểm liên quan trong tư liệu. Trong tài liệu nghiên cứu về những thất bại của tình báo trong vụ Trân Châu Cảng "Cảnh báo và Quyết định" (Warning and Decision), bà Roberta Wohlstetter chỉ ra những tín hiệu cho thấy cuộc tấn công của người Nhật sắp xảy ra, nhưng vẫn cho rằng con người khó có thể chọn lọc được những tín hiệu chính xác từ "vô số thông tin lộn xộn" đó. Wohlstetter cho rằng sự bất ngờ về chiến lược là một vấn đề rất khó giải quyết. Nếu như một cuộc tấn công quy mô lớn với hàng trăm máy bay, tàu chiến và hàng nghìn quân của Hải quân Nhật mà còn khó biết trước được thì để dự đoán cuộc tấn công khủng bố chỉ có 19 tên còn khó hơn biết chừng nào?
+</p>
+
+<p>
+ Thế nhưng vẫn có điểm phải băn khoăn. Căn cứ vào việc cộng đồng tình báo gần như hoàn toàn thất bại trong việc dự đoán bất kỳ cuộc tấn công khủng bố nào trong số bốn vụ lớn kể từ năm 1993 đến 2001, thì liệu việc tổ chức cộng đồng tình báo theo cách khác đi có thể cải thiện, ở mức ít nhất, khả năng nhận ra cái mà Phòng Thanh tra chung của Quốc hội gọi là "ý nghĩa chung" của những dữ liệu họ có trong tay hay không? Có lẽ là không thể dự đoán được các cuộc tấn công thực tế vào Trung tâm Thương mại Thế giới và Lầu Năm Góc. Nhưng đưa ra được một đánh giá cụ thể, hợp lý về khả năng của một cuộc tấn công như vậy có thể cũng đã không có.
+</p>
+
+<p>
+ Ít nhất, đây là kết luận mà Quốc hội đã có được: những cách xử lý tốt hơn có thể đã cho kết quả tốt hơn. Đặc biệt, họ đã nhấn mạnh đến tình trạng thiếu "chia sẻ thông tin" giữa các cơ quan. Thay vì dựng lên bức tranh toàn cảnh về những mối đe dọa Mỹ phải đối mặt, hàng loạt cơ quan lại đưa ra nhiều góc ảnh khu biệt. Người chỉ trích gay gắt nhất đối với công việc của các cơ quan này, thượng nghị sỹ Richard Shelby, lập luận rằng FBI bị tê liệt bởi "cơ cấu tổ chức phi tập trung" của nó, do đó dẫn đến "việc nắm thông tin khoanh vùng theo những khu vực riêng biệt trên quy mô lớn". Và cả cộng đồng tình báo nói chung đã bị tổn thương vì thông tin có trong tay nhưng không chuyển đến đúng nơi cần đến. Việc cần phải làm, theo Shelby, là loại bỏ sự khoanh vùng và trở lại với quan điểm mà Bill Donovan đã trình bày từ nửa thế kỷ trước. Cần phải có một cơ quan đứng "cao hơn hẳn và tách biệt với bộ máy quan liêu hay lý sự" để đảm nhận trách nhiệm về tình báo Mỹ. Phi tập trung hóa đã làm cho Mỹ đi lệch hướng. Tập trung hóa có thể sắp đặt công việc ổn thỏa hơn.
+</p>
+
+<p>
+ II
+</p>
+
+<p>
+ Khi không thừa nhận những giá trị của sự phi tập trung, Shelby cũng không thừa nhận một quan điểm mà 15 năm trước từng tác động đến trí tưởng tượng của giới doanh nhân, học giả, các nhà khoa học và công nghệ ở khắp mọi nơi. Trong kinh doanh, các lý thuyết về quản trị cũng giống như việc điều hành máy móc, chúng chủ trương thay thế những người quản lý và giám sát bằng các đội tự quản, những đội này chịu trách nhiệm tự giải quyết hầu hết các vấn đề, trong khi ngày càng nhiều nhà tư tưởng không tưởng cho rằng bản thân tập đoàn đã lỗi thời. Trong lĩnh vực vật lý học và sinh học, các nhà khoa học ngày càng chú ý hơn đến các hệ thống tự tổ chức, phi tập trung - như đàn kiến hoặc bầy ong - những hệ thống dù không có trung tâm vẫn tỏ ra mạnh mẽ và thích hợp. Và các nhà khoa học xã hội lại bắt đầu nhấn mạnh vào tầm quan trọng của các mạng lưới xã hội, những mạng lưới này cho phép mọi người liên hệ và phối hợp với nhau không cần một người đứng ra chịu trách nhiệm. Quan trọng nhất, tất nhiên, là sự phát triển của Internet về một số phương diện, là hệ thống phi tập trung dễ thấy nhất trên thế giới - và các công nghệ hệ luận như Công nghệ chia sẻ file ngang hàng (được minh họa bằng Napster), đó là một minh chứng rõ ràng cho những khả năng (về kinh tế, về tổ chức, v.v…) mà sự phi tập trung hóa đã mang lại.
+</p>
+
+<p>
+ Quan điểm về trí tuệ đám đông cũng coi sự phi tập trung hóa như cái đã định sẵn và cái hữu ích. Nói chung tôi cho rằng, nếu bạn giao cho một đám đông gồm những người độc lập và có tính vụ lợi cùng giải quyết một vấn đề như nhau theo cách phi tập trung, thay vì cố gắng chỉ đạo các nỗ lực của họ từ trên xuống dưới, thì cách giải quyết tập thể của họ rất có khả năng sẽ tốt hơn bất kỳ giải pháp nào bạn có thể đưa ra. Các nhân viên tình báo và các nhà phân tích tình báo Mỹ là những người độc lập và có tính vụ lợi đang giải quyết cùng một vấn đề đại thể như nhau (bảo vệ an toàn cho đất nước) theo cách phi tập trung. Vậy thì sai sót nằm ở đâu? Tại sao những nhân viên này không đựa ra được dự báo tốt hơn? Sự phi tập trung thực sự có vấn đề gì không?
+</p>
+
+<p>
+ Trước những giải đáp cho câu hỏi đó, đầu tiên chúng ta cần trả lời một câu hỏi đơn giản hơn, cụ thể là: dầu sao chăng nữa, “phi tập trung" có nghĩa là gì? Đó là một thuật ngữ rất rộng và trong vài năm qua, thuật ngữ này được sử dụng khá nhiều. Các đàn chim, các nền kinh tế từ trường tự do, các thành phố, các mạng máy tính ngang hàng: tất cả đều được coi là những ví dụ về sự phi tập trung. Thế nhưng hệ thống trường học công, giao thông công cộng và tập đoàn hiện đại của Mỹ cũng thường các mô tả là phi tập trung. Những hệ thống này có điểm gì chung? Trong tất cả chúng, quyền lực đều không hoàn toàn nằm ở một vị trí trung tâm và nhiều quyết định quan trọng được đưa ra bởi các cá nhân dựa trên hiểu biết riêng và cục bộ của họ, chứ không phải bởi một kế hoạch gia có tầm nhìn xa trông rộng hay thông suốt mọi sự. Cách chung nhất để diễn tả việc này là (nếu như có phần hơi cường điệu): trong một hệ thống phi tập trung, mệnh lệnh và thông tin được đưa ra từ dưới lên trên, mà không phải từ trên xuống dưới.
+</p>
+
+<p>
+ Điểm mạnh nhất của sự phi tập trung đó là, một mặt, nó cho phép mọi người phối hợp hành động và giải quyết những vấn đề khó; mặt khác, nó thúc đẩy tính độc lập và sự chuyên môn hóa. Điểm yếu nhất của sự phi tập trung là toàn bộ thông tìm được cất kỹ ở những bộ phận khác nhau trong hệ thống phi tập trung có thể bị tắc lại ở đó. Nói cách khác, bạn cần phải tìm ra cách nào đó để biến tất cả các bộ phận của hệ thống phi tập trung thành một khối thống nhất.
+</p>
+
+<p>
+ III
+</p>
+
+<p>
+ Năm 1991, một người Na Uy tên là Linux Torvalds đã tạo ra phiên bản riêng của hệ điều hành Linux, đặt tên là Hệ điều hành Linux. Sau đó, anh ta công khai mã nguồn đã viết, cho nên mọi người trên mạng - thế đấy, tất cả những người có thể hiểu được mã máy tính - đều hiểu được những gì anh ta làm. Quan trọng hơn, anh ta còn đính kèm thêm câu: "Nếu những nỗ lực của bạn có thể đem phân phát tự do thì tôi sẵn lòng đón nhận và như thế, có thể bổ sung chúng vào hệ điều hành này." Đó là một mẩu tin định mệnh. Như trong một câu chuyện về Linux như sau: "Trong số 10 người tải chương trình Linux xuống thì có 5 người gửi lại cách sửa lỗi, cải tiến mã nguồn và những đặc trưng mới." Qua thời gian, quá trình phát triển này đã được thể chế hóa có khi có hàng nghìn lập trình viên tự nguyện làm việc, đóng góp hàng nghìn cách sửa lỗi lớn và nhỏ cho hệ điều hành, làm cho Linux trở nên mạnh mẽ và đáng tin cậy hơn bao giờ hết.
+</p>
+
+<p>
+ Không giống như Windows, hệ điều hành thuộc sở hữu của Microsoft và chỉ do các nhân viên Microsoft tạo ra, Linux không thuộc sở hữu của riêng ai. Khi một vấn đề nảy sinh với phương thức hoạt động của Linux, thì vấn đề đó chỉ được khắc phục nếu có người nào đó đích thân đưa ra một giải pháp tốt. Không có những ông chủ chỉ đạo mọi người phải nỗ lực, không có các biểu đồ làm việc của tổ chức chỉ rõ trách nhiệm của mọi người. Thay vào đó, mọi người làm việc với những gì họ quan tâm và bỏ qua những thứ còn lại. Điều này có vẻ giống như - mà thực ra, đúng như thế - là một cách giải quyết vấn đề rất bừa bãi. Thế nhưng, ít nhất cho đến nay, cách giải quyết đó vẫn rất hiệu quả, khiến cho Linux là chương trình thách thức quan trọng nhất đối với Microsoft.
+</p>
+
+<p>
+ Linux rõ ràng là một hệ thống phi tập trung vì nó không phải là một tổ chức chính thức và những người đóng góp cho Linux đến từ khắp thế giới. Điều mà sự phi tập trung mang lại cho Linux là tính đa dạng. Theo mô hình hợp tác truyền thống, cấp quản lý cao nhất thuê những nhân công giỏi nhất có thể trả lương để họ làm việc toàn thời gian, hướng dẫn chung cho họ về những vấn đề cần giải quyết và hy vọng có được kết quả tốt nhất. Đó không phải là một mô hình tồi. Nó có ưu điểm lớn và dễ dàng động viên được sức người để cùng giải quyết một vấn đề cụ thể và cho phép các công ty thu được kết quả rất tốt đối với những việc họ đã biết cách phải làm như thế nào. Nhưng dứt khoát nó cũng hạn chế những giải pháp khả dĩ khác nhờ sự hợp tác, đơn giản đó là do tính chính xác về toán học (một công ty chỉ có chừng đó nhân viên và chừng đó thời gian) và do thực tế có các quan điểm và tổ chức chính trị quan liêu. Linux, thực ra, không phải lo ngại nhiều về bất kể điều gì. Thật ngạc nhiên, dường như có một nguồn lập trình viên rất lớn muốn đóng góp nỗ lực của mình nhằm làm cho hệ điều hành này tốt hơn. Điều đó bảo đảm phạm vi để có những giải pháp khả dĩ sẽ vô cùng rộng lớn. Các lập trình viên có vô số và rất đa dạng, cho nên dù lỗi của hệ điều hành lớn đến đâu và thuộc bất kỳ dạng nào cũng không vấn đề gì, sẽ có người đưa ra giải pháp khắc phục. Như người có uy tín lớn trong cộng đồng người Hindu, ông Eric Raymond, đã phát biểu một câu nổi tiếng: “Nếu có đủ số người tìm kiếm, mọi con rệp sẽ bị phát hiện."
+</p>
+
+<p>
+ Thực ra, về cách thức hoạt động, Linux không khác với cách hoạt động của thị trường nói chung, như chúng ta đã thấy ở chương viết về sự đa dạng. Giống như bầy ong, chúng phái nhiều con ong đi thăm dò và cho rằng một trong số những con ong đó sẽ tìm ra đường bay tốt nhất đến những vườn hoa. Chắc chắn, cách này không hiệu quả bằng việc chỉ cố gắng xác định đường bay tốt nhất đến vườn hoa hoặc thậm chí là chọn ra con ong thông minh nhất đi thăm dò. Tóm lại, nếu hàng trăm hoặc hàng nghìn lập trình viên cùng bỏ thời gian để cố gắng đưa ra một giải pháp mà chỉ có một số rất ít người trong số họ sẽ tìm thấy, như vậy sẽ lãng phí mất nhiều thời gian mà lẽ ra có thể dành để làm những việc khác. Tuy nhiên, giống hệt như việc thị trường tự do có khả năng tạo ra nhiều lựa chọn khác nhau và sàng lọc lấy cái tốt nhất đóng vai trò trọng tâm cho sự tăng trưởng không ngừng, sự lãng phí bề ngoài của Linux cũng là một dạng sức mạnh như vậy (một sức mạnh mà những công ty vì lợi nhuận không thể dựa vào, dù là may hay rủi). Bạn có thể để cho cả nghìn đoá hoa cùng khoe sắc và sau đó chọn lấy bông đẹp nhất.
+</p>
+
+<p>
+ IV
+</p>
+
+<p>
+ Vậy thì ai là người chọn ra bông hoa đẹp nhất đây? Chắc hẳn bạn sẽ không ngạc nhiên khi biết rằng đó chính là đám đông. Nhưng ở đây có một cái bẫy: hệ thống phi tập trung chỉ có thể khiến cho điều đó xảy ra nếu như có cách để tập hợp thông tin của tất cả mọi người trong hệ thống. Nếu không, sẽ không có lí do để nghĩ rằng sự phi tập trung sẽ tạo ra kết quả thông minh thực sự. Trong trường hợp thí nghiệm mở đầu cho cuốn sách này thì cơ chế tập hợp đó chính là việc Francis Galton đếm số phiếu bầu cử. Trong trường hợp thị trường tự do, cơ chế tập hợp đó rõ ràng là giá cả. Giá của một mặt hàng phản ánh, tuy không hoàn toàn nhưng hiệu quả, quyết định tập thể của người mua và người bán ở khắp mọi nơi và bảo đảm sự kích thích cần thiết để thúc đẩy nền kinh tế đi đúng hướng. Và trong trường hợp Linux, đó là một số nhỏ những người làm công tác mật mã, kể cả chính bản thân Torvalds, những người xem xét lại mọi sự thay đổi tiềm tàng đối với mã nguồn của hệ điều hành này. Những người muốn trở thành lập trình viên Linux có trên khắp thế giới, nhưng cuối cùng mọi con đường đều dẫn đến Linux.
+</p>
+
+<p>
+ Hiện giờ, vẫn chưa ai biết rõ cần phải đưa những gì vào bộ mã Linux và có nên để những việc đó trong tay một nhóm người nhỏ như vậy hay không. Tóm lại, nếu lập luận của tôi trong cuốn sách này là đúng, thì một nhóm lớn những người lập trình, dù là họ không có kỹ năng bằng Torvalds và các cộng sự của ông, gần như chắc chắn vẫn có thể đánh giá rất tốt bộ mã nào đáng giữ lại. Nhưng hãy để việc đó sang một bên. Điều quan trọng ở đây là nếu quyết định không phải do một người nào đó đưa ra thì chính Linux có thể không thành công được như bây giờ. Nếu một nhóm các cá nhân tự quản cố gắng giải quyết một vấn đề mà không có cách nào để ghép các ý kiến đánh giá của họ lại với nhau thì giải pháp tốt nhất họ có thể hy vọng có được là giải pháp mà người thông minh nhất trong nhóm đưa ra và không có gì bảo đảm là họ sẽ có được nó. Song, nếu nhóm đó có cách tập hợp tất cả các ý kiến khác nhau lại thì giải pháp tập thể của cả nhóm có thể thông minh hơn cả giải pháp của người thông minh nhất. Chính vì vậy, thật nghịch lý là sự tập hợp - bạn có thể thấy đó là một dạng của sự tập trung khác lạ lại rất quan trọng đối với sự thành công của phi tập trung. Nếu như điều này có vẻ mơ hồ thì có thể đó là vì khi nghe đến sự tập trung, chúng ta nghĩ ngay đến "các nhà hoạch định chính sách trung ương”, như ở Liên Xô và hình dung ra một nhóm gồm rất ít người - hoặc có thể chỉ một người - quyết định việc sẽ sản xuất bao nhiêu đôi giày trong ngày hôm nay. Nhưng thực ra không có lí do gì để nhầm lẫn giữa hai điều này. Ý kiến đề nghị thực sự ở đây là bạn muốn có những quyết định tập thể do các nhân viên phi tập trung đưa ra.
+</p>
+
+<p>
+ Hiểu được sự phi tập trung diễn ra khi nào chính là một công thức cho các vấn đề trí tuệ tập thể vì trong những năm gần đây sự sùng bái quá mức đối với sự phi tập trung đôi khi làm cho nó có vẻ là giải pháp lý tưởng cho mọi vấn đề. Rõ ràng, căn cứ vào tiền đề của cuốn sách này, tôi cho rằng các phương thức tổ chức phi tập trung đối với nguồn nhân lực thường có khả năng tạo ra những kết quả tốt hơn so với các phương thức tập trung. Thế nhưng, như tôi sẽ cố gắng trình bày trong sách, sự phi tập trung có tác dụng tốt trong một số điều kiện và không tốt mấy trong những điều kiện khác. Trong thập kỷ qua, người ta dễ tin rằng nếu một hệ thống mang tính phi tập trung, thì nó nhất định có hoạt động tốt. Nhưng tất cả việc bạn cần làm là hãy quan sát một vụ ùn tắc giao thông hay cộng đồng tình báo Mỹ về vấn đề đó để nhận ra rằng thoát ra khỏi quyền lực trung ương không phải là thuốc chữa bệnh bệnh. Tương tự, những người đã trở nên say sưa với ý tưởng cho rằng sự phi tập trung ở mức độ nào đó là tự nhiên và tất yếu, có lẽ là vì chúng ta đã có quá nhiều hình ảnh về sự phi tập trung xuất phát từ sinh học. Loài kiến, rốt cuộc, không cần phải làm gì đặc biệt mới tạo thành đàn. Việc hình thành các đàn kiến là đặc tính sinh học cần có của chúng. Song, điều tương tự lại không đúng với loài người. Rất khó hình thành và duy trì được một công việc phi tập trung và từ chỗ phi tập trung rất dễ biến thành vô tổ chức.
+</p>
+
+<p>
+ Một ví dụ cổ điển về việc này là hoạt động của quân đội Iraq trong cuộc chiến tranh giữa Mỹ và Iraq năm 2003. Những ngày đầu cuộc chiến, khi lực lượng bán quân sự fedayeen của Iraq khiến liên quân Mỹ-Anh bị bất ngờ trước sức kháng cự mạnh mẽ của họ, lực lượng này đã được lấy làm ví dụ về nhóm phi tập trung thành công, nhóm có khả năng phát triển mạnh mẽ mà không cần bất kỳ sự kiểm soát nào từ trên xuống dưới. Thực tế đã có tờ báo so sánh các chiến binh fedayeen với những con kiến trong đàn kiến, họ tìm đến giải pháp "tốt" chỉ thông qua liên lạc với những người lính ngay bên cạnh họ. Nhưng sau vài ngày, ý tưởng cho rằng fedayeen đang dựng lên một sức kháng cự có tổ chức và đầy ý nghĩa đã thay đổi, vì nó ngày càng bộc lộ rõ là các cuộc tấn công của họ thực ra còn nhỏ hơn cả các cuộc đột kích ngẫu nhiên, không có sự phối hợp và không có sự liên kết nào với những gì đang xảy ra ở nơi khác trong nước. Như một viên chỉ huy người Anh đã nhận xét, đó hoàn toàn là những chiến thuật và không có chiến lược. Nói khác đi hành động cá nhân của các chiến binh fedayeen chưa từng được tập hợp thành cái gì đó lớn hơn, chính xác vì chưa có phương pháp tập hợp trí tuệ cục bộ của họ. Lực lượng fedayeen thực ra rất giống những con kiến - tuân theo các quy tắc cục bộ. Tuy nhiên, cũng tuân theo các quy tắc cục bộ, nhưng loài kiến kết thúc bằng việc thúc đẩy được sức mạnh của cả đàn, còn những người lính lại đi đến chỗ chết.
+</p>
+
+<p>
+ Điều mỉa mai trong thực tế là lực lượng quân sự thực sự phi tập trung trong xung đột Mỹ - Iraq lại là quân đội Mỹ. Trên chiến trường lính Mỹ được trao quyền chủ động hơn bất kỳ một quân đội nào khác, bởi vì lực lượng quân sự này thực hiện theo lý thuyết "hiểu biết cục bộ rất có lợi”. Nhưng trong những năm gần đây, quân đội này đã đột ngột thay đổi. Ngày nay, các tư lệnh cục bộ có phạm vi quyền hạn lớn hơn, các hệ thống thông tin liên lạc tinh xảo nói lên rằng những chiến lược khôn ngoan mang tính tập thể có thể xuất hiện từ những chiến thuật cục bộ. Các tư lệnh cấp cao không thể không biết những gì đang xảy ra trên chiến trường và quyết định của họ đương nhiên sẽ phản ánh sâu sắc những hiểu biết cục bộ của các tư lệnh chiến trường. Chẳng hạn, trong cuộc đánh chiếm thủ đô Baghdad, Mỹ đã nhanh chóng đưa ra chiến lược rất phù hợp với thực tế thiếu sự kháng cự của quân Iraq khi được các tư lệnh cục bộ báo cáo sức kháng cự của quân Iraq rất yếu ớt, thậm chí không có. Điều này không phải để nói rằng quân đội Mỹ đã trở thành một tổ chức từ dưới lên trên thực thụ, như một số người phát biểu. Hệ thống cấp chỉ huy vẫn mang tính thiết yếu đối với hoạt động quân sự, mọi hoạt động trên chiến trường đều diễn ra trong khuôn khổ xác định theo ý định chiến đấu của chỉ huy, ý định này cơ bản đặt ra các mục tiêu của chiến dịch. Nhưng dần dần, các chiến dịch thành công có thể phụ thuộc vào việc nhanh chóng tập hợp thông tin từ chiến trường giống như vào các chiến lược từ trên xuống dưới có từ trước.
+</p>
+
+<p>
+ V
+</p>
+
+<p>
+ Đối với các vấn đề của cộng đồng tình báo Mỹ trước ngày 11/9, thì vấn đề không phải là sự phi tập trung. Vấn đề là kiểu phi tập trung mà cộng đồng tình báo đang áp dụng. Nhìn bề ngoài, sự phân chia lao động giữa các cơ quan khác nhau có ý nghĩa rất lớn. Sự chuyên môn hoá cho phép đánh giá thông tin sâu sắc hơn và phân tích thành thạo hơn. Và tất cả những gì chúng ta biết về việc ra quyết định cho thấy các quan điểm nhìn nhận đối với một vấn đề càng đa dạng thì càng có khả năng quyết định cuối cùng sẽ khôn ngoan. Quyền Giám đốc CIA, ông Lowell Jacoby, đã đề xuất cụ thể về việc này trong một văn bản trình bày trước Quốc hội như sau: "Những thông tin mà một số các nhà phân tích cho rằng không có gì liên quan có thể cung cấp những đầu mối quan trọng hoặc bộc lộ những mối liên hệ rất có ý nghĩa khi được người khác nghiên cứu cẩn thận."
+</p>
+
+<p>
+ Tuy nhiên, những gì còn thiếu trong cộng đồng tình báo này đó là không có bất kỳ phương thức thực sự nào để tập hợp không những các thông tin mà cả các ý kiến đánh giá. Nói cách khác, chưa có cơ chế thu hút trí tuệ tập thể của các nhân viên NSA, CIA và FBI. Đã có sự phi tập trung, nhưng chưa có sự tập hợp và do đó không có tổ chức. Giải pháp của Shelby cho vấn đề này - thành lập cục tình báo trung ương thật sự - mới có thể giải quyết được vấn đề tổ chức và mới có thể dễ giao cho ít nhất một cơ quan đảm nhận trách nhiệm về tất cả mọi thông tin. Nhưng để làm được như vậy, trước hết, phải có được đầy đủ những lợi ích mà sự phi tập trung mang lại - tính đa dạng, kiến thức cục bộ và sự độc lập. Shelby đã đúng khi cho rằng thông tin cần phải được chia sẻ. Nhưng ông lại cho rằng cần phải có một người nào đó - hoặc một nhóm nhỏ những người nào đó - giữ vai trò trung tâm, sàng lọc thông tin, tính toán xem điều gì quan trọng và điều gì không. Nhưng tất cả những gì chúng ta biết về sự nhận thức cho thấy rằng nhóm ít người, thông minh ở mức độ nào không quan trọng, đơn giản sẽ không thông minh hơn nhóm đông người hơn. Và công cụ tốt nhất để đánh giá đúng ý nghĩa tập thể của thông tin mà cộng đồng tình báo thu thập được chính là trí tuệ tập thể của cộng đồng tình báo. Câu trả lời không phải là sự tập trung, mà là sự tập hợp.
+</p>
+
+<p>
+ Điều thú vị là một số người trong cộng đồng tình báo dường như đã nhận thấy điều này và đưa ra một giải pháp khả dĩ: sử dụng các thị trường để cho phép các nhà phân tích đến từ các cơ quan và các tổ chức khác nhau mua bán các hợp đồng về hàng hoá bán giao sau dựa trên dự tính của họ về những gì có thể xảy ra ở Trung Đông và ở một nơi nào khác. Đây là chương trình FutureMAP. Chương trình này lúc đầu được Cục Dự án Nghiên cứu Phát triển Quốc phòng (DARPA) tài trợ. Trong FutureMAP có hai yếu tố chính. Thứ nhất là các thị trường nội bộ. Thị trường này rất nhỏ (có lẽ chỉ giới hạn từ 20 đến 30 người), thành phần tham gia chỉ có các nhà phân tích tình báo và có thể là một số hạn chế các chuyên gia bên ngoài. Những thị trường này thực ra đã tìm cách dự đoán khả năng của các sự kiện cụ thể và họ có điều kiện rất thuận lợi là được dựa vào thông tin mật để biết rõ vấn đề nào quan trọng cần tìm hiểu.
+</p>
+
+<p>
+ Yếu tố thứ hai trong FutureMAP là Thị trường phân tích chính sách (PAM). Mùa hè năm 2003, thị trường này đã trở thành mục tiêu của cơn bão lửa chỉ trích của các chính trị gia đang hoảng loạn. Ý tưởng chính phía sau PAM rất đơn giản (và có lẽ giống hệt ý tưởng đằng sau các thị trường nội bộ): cũng như thị trường điện tử Iowa làm tốt công việc dự đoán kết quả bầu cử, các thị trường khác làm tốt công việc dự đoán những sự kiện chưa xác định, một thị trường tập trung vào Trung Đông có thể cung cấp tin tình báo mà những phương thức khác có thể bỏ qua.
+</p>
+
+<p>
+ Tất nhiên, thị trường phân tích chính sách có điểm phân biệt rất rõ ràng với thị trường nội bộ, đó là nó sẽ công khai trước công chúng và có khả năng thu lợi từ những sự việc khủng khiếp xảy ra. Các thượng nghị sỹ Ron Wyden và Byron Dorgan, những người đi đầu trong nỗ lực muốn phá bỏ PAM, đã kịch hệt lên án PAM là mang tính "nông nổi", "công kích" và "vô dụng". Báo chí hồi đầu nói chung cũng theo quan điểm của họ, làm cho mọi người nghĩ rằng kế hoạch lố bịch như vậy là không thể thực hiện được.
+</p>
+
+<p>
+ Theo luận điểm của cuốn sách này, bạn sẽ không thấy ngạc nhiên khi biết rằng tôi nghĩ rằng PAM lại có tiềm năng là một ý tưởng rất hay. Cơ sở lập luận cho rằng thị trường này sẽ mở ra công khai trước công chúng không có nghĩa là những dự đoán của nó sẽ càng không chính xác. Ngược lại, chúng ta đã thấy rằng ngay cả khi những người giao dịch không nhất thiết là những chuyên gia thì ý kiến đánh giá tập thể của họ thường rất có chất lượng. Hơn nữa, việc đưa thị trường này ra công khai trước công chúng là một cách để những người bình thường không thể gặp gỡ với CIA - dù là vì yêu nước, sợ hãi hay oán giận - để cung cấp thông tin họ biết được về tình hình ở Trung Đông.
+</p>
+
+<p>
+ Theo quan điểm của Shelby nhằm vào cộng đồng tình báo, thì PAM có thể giúp phá bỏ những rào cản về thể chế, khiến không thể tập hợp được thông tin vào một nơi. Vì những người tham gia giao dịch trên một thị trường không có động cơ nào khác là đưa ra dự đoán đúng - tức là, sẽ không có những yếu tố chính trị hay hành chính quan liêu tác động đến các quyết định của họ - và vì họ có động cơ đúng, nên lại càng có khả năng đưa ra những ý kiến đánh giá trung thực, mà thay đổi ý kiến của họ cho phù hợp với xu thế chính trị hay thoả mãn những yêu cầu về thể chế.
+</p>
+
+<p>
+ Thượng nghị sỹ Wyden bác bỏ PAM, coi đó như một câu chuyện “cổ tích" và cho rằng DARFA tốt hơn nên đầu tư kinh phí cho hoạt động tình báo của "thế giới thực". Nhưng đó là một sự phân biệt sai lầm. Đã không có ai đề xuất thay thế việc thu thập tình báo truyền thống bằng một thị trường. PAM chỉ đơn giản được dự kiến là một phương thức thu thập thông tin khác. Và trong bất cứ trường hợp nào thì mọi thông tin mà những người tham gia thị trường đưa ra giao dịch đều có thể bắt nguồn từ "thế giới thực". Nếu không, sẽ rất khó thấy được làm sao họ có thể đưa ra những dự đoán chính xác.
+</p>
+
+<p>
+ Tất nhiên, cuộc tấn công thực sự vào PAM không có gì khó khăn, dù nó có hiệu quả hay không và hiệu quả ở mức độ nào. Vấn đề thực sự với PAM, như Wyden và Dorgan đã chỉ rõ, đó là: việc đặt cược vào những thảm hoạ tiềm ẩn vừa mang tính "kích động”, vừa "sai trái về đạo đức". Chúng ta hãy chấp nhận một việc hết sức khủng khiếp và mất hết lý trí như đánh cược vào một âm mưu ám sát nào đó. Và chúng ta cũng đồng ý để các nhà phân tích trong Chính phủ Mỹ hằng ngày được tự nghiên cứu những vấn đề giống hệt như của những người tham gia trong thị trường PAM đưa ra: Chính phủ Jordan vững chắc ở mức độ nào? Liệu có khả năng Hoàng gia Arab Saudi bị sụp đổ hay không? Ai sẽ là người đứng đầu Chính quyền Palestin năm 2004? Việc đặt ra những câu hỏi như vậy bị coi là trái đạo đức đối với Chính phủ Mỹ, nhưng lại không có dấu hiệu bị coi là trái đạo đức đối với những người ngoài chính phủ.
+</p>
+
+<p>
+ Tuy nhiên, nếu coi là trái đạo đức thì có lẽ là PAM có thể cho phép mọi người kiếm tiền bằng cách dự đoán thảm hoạ. Nhưng các nhà phân tích CIA không tình nguyện làm công việc của họ. Chúng ta trả tiền cho họ để dự đoán các thảm hoạ. Việc đó về đạo đức có gì sai không? Chúng ta cũng trả tiền cho những người cung cấp tin tức để mua những thông tin có giá trị. Chúng ta làm như vậy cũng là sai sao? Hoặc ta hãy xét nền kinh tế hiện nay của chúng ta. Toàn bộ hoạt động kinh doanh của một công ty bảo hiểm nhân thọ đều dựa trên việc cá cược về tuổi thọ của mọi người (Với chính sách bảo hiểm nhân thọ truyền thống, công ty bảo hiểm cược rằng bạn sẽ sống lâu hơn bạn nghĩ, trong khi đó chính sách trợ cấp hằng năm cược rằng bạn sẽ sống ít hơn). Có thể có điều gì đó nhẫn tâm trong việc này, nhưng phần lớn chúng ta hiểu rằng việc này là cần thiết. Về mặt nào đó, đây là những gì các thị trường thường làm: khai thác những khía cạnh nằm ngoài phạm vi luân lý để nâng cao lợi ích tập thể. Nếu phải đánh đổi bằng cách để cho những tình cảm của chúng ta bị tổn thương để có được tin tình báo tốt hơn, thì chúng ta cũng nên bằng lòng. Trong mọi trường hợp, việc cho phép mọi người đặt cược vào tương lai chắc chắn không gây nhiều vấn đề rắc rối bằng nhiều cách khác mà các nhân viên tình báo của chúng ta sử dụng để có được thông tin. Và nếu như PAM thực sự làm cho an ninh nước Mỹ vững chắc hơn, mà không sử dụng nó thì mới là điều sai trái về đạo đức.
+</p>
+
+<p>
+ Chắc chắn từng có những vấn đề mà PAM có thể đã vượt qua được. Đáng chú ý nhất, nếu thị trường đó chính xác và Bộ Quốc phòng dựa vào dự đoán của thị trường để hành động nhằm ngăn chặn, chẳng hạn, việc ám sát Quốc vương Jordan, thì việc này có thể lại khiến cho dự đoán của những người tham gia thị trường sai đi, và như vậy sẽ hủy hoại động cơ để có những dự đoán tốt. Một thị trường được thiết kế tốt có thể phải tính đến những can thiệp đó của Mỹ, chẳng hạn bằng cách đặt ra những vụ cá cược tùy thuộc vào hành động của Mỹ (hoặc, theo cách khác, những người giao dịch có thể bắt đầu tính đến khả năng hành động của Mỹ như một hệ số trong những cái giá họ phải trả.). Nhưng tất nhiên việc này chỉ có thể là vấn đề cần giải quyết nếu như thị trường trên thực tế đưa ra được những dự đoán tốt. Nếu như PAM trở thành một thị trường hoàn toàn tự do, nó cũng có thể tồn tại những vấn đề giống như những thị trường khác đôi khi vẫn có, như các cơn sốt giả và mánh khóe lừa bịp. Nhưng bạn không được thấy các thị trường hoạt động hoàn hảo mà tin rằng chúng hoạt động tốt.
+</p>
+
+<p>
+ Quan trọng hơn, mặc dù hầu hết sự chú ý đối với PAM đều tập trung vào triển vọng của những người đặt cược vào các việc như ám sát Arafat, nhưng đại đa số các “vụ cá cược" của những người giao dịch trong PAM có thể lại liên quan đến những vấn đề trần tục hơn, như tăng trưởng kinh tế của Jordan trong tương lai hay quân đội Syria hùng mạnh đến mức nào. Về cốt lõi, PAM không hề có ý cho chúng ta biết Hamas sẽ làm gì trong tuần tới. Nó chỉ có ý giúp chúng ta cảm nhận tốt hơn về sức mạnh kinh tế, sự ổn định trong dân chúng và khả năng sẵn sàng của quân đội các nước Trung Đông, có để ý đến ý nghĩa của chúng đối với các lợi ích của Mỹ trong khu vực. Điều đó như thể là sự phối hợp đánh giá của các nhà phân tích chính sách, các chuyên gia về Trung Đông tương lai, các thương gia và các viện sĩ từ chính Trung Đông (những nhóm người có khả năng tham gia giao dịch trên thị trường PAM) có thể bao gồm điều gì đó có giá trị để nói ra. Wyden và Dorgan đã khinh bỉ so sánh thị trường phân tích chính sách với một "phòng cá độ". Đó là một sự so sánh rất ấn tượng (và rắc rối), vì chúng ta biết một điều về các thị trường cá độ, đó là: chúng giỏi dự đoán tương lai tới mức kỳ lạ.
+</p>
+
+<p>
+ Nếu như PAM thực sự đã đi vào hoạt động trong thực tế, nó có thể dẫn đến một vấn đề khác: quá chính xác. Rốt cuộc, vẫn không có gì bảo đảm những người cầm quyền ở cấp cao nhất lúc nào cũng muốn nghe ý kiến trung thực nhất của cộng đồng tình báo. Có thể thấy rõ là nhiều quyết định của tổng thống được đưa ra trước, sau đó mới điều chỉnh lại. Nếu PAM (hoặc các thị trường bên trong) cung cấp bằng chứng cho thấy danh sách của tổng thống là ương ngạnh thì không thể biết điều gì có thể xảy ra. Rõ ràng, trong một số trường hợp, thông tin chính xác luôn được hoan nghênh. Nhưng có thể là một cộng đồng tình báo đã rạn nứt và chính trị hóa lại chính là cái mà các nhà hoạch định chính sách muốn, vì nó cho phép họ lựa chọn và nhặt ra những ý kiến mà họ thích. Có lẽ chúng ta đã nhận thấy rằng một dự báo có thể là quá đúng vì tốt cho chính nó.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-004.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-006.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>
