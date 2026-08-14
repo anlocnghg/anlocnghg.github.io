@@ -1,0 +1,959 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 12 - C&#226;y Người</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 12</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-011.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-013.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Mùa hè thống trị làm khô cạn khắp vùng. Lá cây khô khốc như giấy ráp, và khi có luồng gió thổi qua bãi cỏ vàng, nó kêu lạo xạo giữa những phiến cỏ héo úa. Hạt khô thành lớp trên đất xám, và ở chỗ đàn bò thường tụ tập bên những vũng nước và khe suối, sục mũi vào lớp cặn váng xanh, đất đã khô thành những hố sâu. Quanh vùng la liệt xác chết - những thân cây trơ trụi xám xịt, một con bò già yếu bị lún trong bùn và không sao ngoi lên được, những con thằn lằn chết nằm phơi bụng lên trời. Mùa hè năm ấy đôi khi mọi thứ tưởng như đều sẽ chết. Nhưng con người không quan tâm, khi họ lấy tay che những cặp mắt yếu ớt hay kỳ cọ lớp da nhầy nhụa. Chỉ là họ không hề lo lắng ở cái giai đoạn ban đầu này khi họ còn bị động, về sau, khi những đám cháy bùng lên và không thể nào kiểm soát nổi, thiêu cháy những khe suối, bén đến những bãi quây gia cầm, lùa vào các cửa sổ, biến những mành che ủ rũ thành những ngọn lửa điên cuồng, lúc ấy mọi người mới tỉnh dậy và nhận ra rằng họ không muốn chết. Những tiếng khóc thét bật ra từ cổ họng những ai bị lửa bén cháy. Họ nhớ lại thời thơ ấu, nhớ lại tội lỗi của mình, và sẵn sàng cải hóa để trở thành những vị thánh, nếu quả có cơ hội sống lại kiếp người. Một số có được cơ hội đó, nhưng chỉ là để thoát khỏi bản thân mình trong một thời gian ngắn, rồi lại trở nên tồi tệ hơn trước.
+</p>
+
+<p>
+ Thế nhưng, trước khi có cháy rừng, Armstrong đã đặt mua hai đôi vịt làm sẵn mà một buổi tối Amy Parker đã mang đến nhà anh ta sau khi dọn dẹp nhà cửa sạch sẽ. Lần này nhà Armstrong có khách, nhiều ông bà quý phái từ thành phố đến, những người không có gì ngoài tiền của, như chị O’Dowd nói. Chính là vì cô Madeleine, chị nghĩ, mà trong nhà mới có những việc trọng đại phải làm, chị Frisby nói thế, và người ta đã đặt sẵn vịt bởi vì cái cô Madeleine này không thể nào gạt anh chàng Armstrong ra được nữa, nên cuối cùng đã chấp nhận anh ta.
+</p>
+
+<p>
+ Amy Parker lên đường vào buổi tối hôm đó qua một miền khô cằn với hai đôi vịt làm sẵn để trong cái giỏ nông quàng trên tay. Trông chị gọn gàng trong chiếc áo sơ mi sạch, hai cánh tay đỏ lên vì vừa kỳ cọ cho sạch máu vịt. Chị bước đi, nín thở, tự hỏi mình sẽ thấy và nói gì, liệu mình có gặp Madeleine không. Chắc là không. Vì thế nên đến đồi chị đi chậm lại, người đỏ bừng, vì lúc này chị đã đẫy người, chưa nói là thật sự béo, nên tay chân chị vụng về, phảng phất mùi xà phòng hảo hạng.
+</p>
+
+<p>
+ Thế là chị đến cổng nhà Armstrong, cái cổng đắt tiền và lòe loẹt, ngồn ngộn những sắt và gạch, trên mỗi cột xây bằng gạch đỏ có gắn tên bằng đá trắng. Cơ ngơi nhà Armstrong được gọi là Glastonbury, kể từ khi một nhà quý phái có học vấn sau khi uống vài cốc rượu đã nói nơi này không khác mấy so với nơi có cái tên đó, mà ở miền quê cổ lỗ này chưa ai nghe đến cả. Vì thế ông Armstrong rất hài lòng. Ông ta đọc thầm cái tên, rồi tra nó trong một cuốn sách, và nơi ông ta ở trở thành Glastonbury.
+</p>
+
+<p>
+ Thời gian này ông Armstrong khá nhàn hạ, dẫu cho da thịt ông ta chưa bao giờ mất đi sự săn chắc. Nhưng ông ta cởi chiếc tạp dề ra đã lâu lắm rồi, nên mọi người cũng đã quên. Chỉ có đôi lúc khi đang ăn thịt ở nhà ông, một số người lại nảy sinh ác ý, họ ngẩng lên khỏi đĩa ăn cảm thấy mình cao trọng hơn, cầm lấy những gì ông ta mời họ, rồi bỏ đi luôn. Nhưng hầu hết chỉ ngồi ăn. Hoặc đi dạo trên bãi cỏ và nói chuyện châu Âu. Họ nhũn như con chi chi trước anh con trai ông, người sặc mùi rượu rum, hoặc trước các cô con gái ông, người sực mùi nước hoa dành dành. Thực ra có một lãnh chúa Anh theo đuổi một cô con gái, chị O’Dowd nói thế. Vì vậy ông Armstrong hài lòng. Ông ta đã có gia hiệu riêng và cả một câu lạc bộ, và biết bao kẻ ăn bám, mang lại cho ông cái vinh dự là được nhẹ gánh tiền bạc.
+</p>
+
+<p>
+ Ngay cả chạy xe trên đường ở Glastonbury, sự phồn vinh cũng dễ nhận ra. Nó ánh lên trên mặt gương của những lá nguyệt quế lấp loáng, lảng vảng trong các bụi cây và bãi cỏ, và cả trong ngôi nhà mùa hè nho nhỏ, nơi mấy lá bài bị bỏ lại dưới những bông hồng đẹp đến giả tạo. Trước khi cho xe xuống lối đi dành cho những thương nhân và đầy tớ,
+</p>
+
+<p>
+ Amy Parker ngượng ngùng nhận thấy bức tượng người phụ nữ khỏa thân gần cửa trước. Hầu hết ai thấy bức tượng đều im lặng để tỏ lòng kính trọng. Họ không nhìn, hoặc chỉ tình cờ, và sau khi nhìn trộm thật sướng mắt hai bàn tay khêu gợi, chấp nhận đấy là biểu tượng đáng kính của sự giàu có đã đặt nó ở đấy.
+</p>
+
+<p>
+ Nhưng Amy Parker thấy nóng bừng cả người, và mong sao bức tượng không có ở đó khi chị đi vòng quanh nhà đến cánh cửa sẽ đón chị vào. Ở phía bên này, họ trồng một hàng cây dành dành, mà vào buổi hoàng hôn đó những phiến lá kiểu cách và những bông hoa mềm mại đã có thể ngăn chị lại, nếu như chị không nhìn qua cửa sổ và cảm thấy mình bị thôi thúc. Vì thế chị đi quanh quẩn, len người vào bụi dành dành mà không hề thấy tội lỗi, để nhìn vào bên trong cửa sổ mà trước đấy chị chỉ dám liếc qua.
+</p>
+
+<p>
+ Căn buồng chị nhìn vào rực sáng trong ánh hoàng hôn, vì họ thắp một ngọn đèn trắng sữa khá lớn, có cả một hàng giá đèn cầy bạc cháy lập lòe trước gió. Để thoáng gió trong cảnh nóng nực, họ mở toang rèm và cửa ra vào dẫn sâu vào trong nhà, dẫn vào những bí mật và những ánh đèn khác. Amy Parker nhìn thấy nhiều người tụ tập trong buồng; những người đứng tuổi mặc đồ đen, vẻ đáng kính, và những người trẻ trông diện hơn. Nhưng tất cả đều bị cuốn hút vào bóng tối, trừ chiếc áo sơ mi trắng của họ, còn mặt họ nghểnh lên nghe. Họ là thính giả. Chính Madeleine đã tạc họ thành những bức tượng. Cô ta đứng đó, khiến ánh đèn cũng trở nên mờ ảo.
+</p>
+
+<p>
+ Amy Parker tiến lại gần hơn. Ngợp trong mùi hoa của bóng tối dày đặc, cành cây hoa nhài vươn ra khẽ rung rinh ôm lấy khuôn mặt kẻ xâm nhập. Từ chỗ này chị có thể theo dõi, vô danh như một con ngài, nhưng không nghe thấy gì. Chị không muốn nghe. Chị sẽ thấy sợ hãi. Vả lại chị đã có thể nghe quá rõ tiếng tim mình đập thình thịch.
+</p>
+
+<p>
+ Lúc này Madeleine giơ tay, mắt những người đàn ông nhìn theo, như thể nó không phải làm bằng xương thịt mà là cái gì đó kỳ dị khác. Họ bị cánh tay điều khiển, họ cười khi miệng cô ta mấp máy ra lệnh. Các ông già cười như thể vừa bị đánh, rung cả người như một lũ ngớ ngẩn. Nhưng anh con trai, nay đã là anh chàng Armstrong, cười vì anh hy vọng sẽ làm cô Madeleine thỏa mãn sâu sắc nhất, như thể hai người ở đó một mình, và anh ta đang ôm cô. Tiếng cười của anh ta có chiều mơn trớn. Nhưng Madeleine không chú ý đặc biệt đến những người có mặt trong phòng. Cô ta nói cho mình nghe. Khi thì chỉnh lại chiếc vòng ngọc trai cho ngay ngắn. Khi thì liếc theo đôi vai trần. Khi thì nhìn vào kẽ hở giữa đôi vú, mà cô che giấu bằng một bông hồng. Madeleine lạnh như băng giá. Bộ quần áo băng giá của cô mọc lên từ thân hình lộng lẫy của cô chứ không phải bất kỳ ai khác. Vào lúc ấy, Amy Parker hoàn toàn quên rằng mình đã nhìn thấy cô ta ở những hoàn cảnh khác hoặc trong những bộ đồ khác.
+</p>
+
+<p>
+ Sau đó ông Armstrong đứng dậy khỏi chỗ ông vẫn ngồi bên cửa sổ, trong buổi tối mát mẻ, xem xét giấy tờ, rõ ràng là thư từ, trước khi ánh sáng yếu đi. Hình như chẳng có ai buồn quấy rầy ông. Ông đã trả tiền cho sự có mặt của họ ở đây, và cũng đủ giàu có để phớt lờ bọn họ. Ông cứ đi lại một mình trong phòng với những lá thư để ngỏ bay phần phật trong tay, rồi tự rót một cốc vang mà những người khác đang uống, và uống, rồi kích thích những ý nghĩ của mình. Nhưng ông đã phủ một bóng mây u ám lên câu chuyện của Madeleine. Tiếng cười của cánh đàn ông trở thành những nụ cười thật nhưng khá chua chát. Họ chuyền tay uống cạn chén, còn Madeleine nhìn vào chén của mình, vào thứ rượu mà cô không thích. Cho đến khi ông Armstrong đến và cầm lấy chén của cô rồi đặt xuống, tuy cô không yêu cầu. Rõ ràng cô chỉ muốn đập vỡ cái chén đó.
+</p>
+
+<p>
+ Rồi hình như mọi bóng dáng trong phòng đều đang đứng hay ngồi chẳng nhằm mục đích nào cả. Họ không hòa vào nhau, vì bản chất của họ là không thể dung hòa. Họ luôn luôn là một thứ kim loại mỏng manh, chỉ cần ai đó thở một chút căm ghét vào là xoắn cả lại. Amy Parker bắt đầu cảm thấy mình dừng lại quá lâu. Cơn gió nhẹ lùa sau tấm thảm loại đắt tiền mà người bán thịt mang từ châu Âu về, thêu hình các lãnh chúa cùng mệnh phụ cưỡi những con ngựa bạc. Khu rừng lay động, và bầy ngựa run rẩy trong làn gió nhẹ. Cả căn phòng rung rinh như tấm thảm lay động kia. Ngọn nến chảy dài như suối tóc, và lá vàng bịt cổ chai rượu vang khô giòn trong ánh sáng bập bùng. Madeleine đến ngồi xuống ghế mà anh chàng Armstrong, người nghe nói sắp lấy cô ta, đang giữ chặt trên mặt đất cho vững. Không ý thức được sức mạnh và lòng ngưỡng mộ của anh, cô ta ngồi xuống chiếc ghế chạm trổ, giấu vẻ chán ngán đằng sau những nan quạt. Những người già vốn được dạy là phải tươi cười, đã vượt qua cảm giác khó chịu ban đầu đối với cung cách cư xử của anh chủ nhà, lúc này đang đứng tách ra và cười nhăn nhở, chờ đợi giây phút xoay đổi.
+</p>
+
+<p>
+ Amy Parker bắt đầu cảm thấy gánh nặng của mấy con vịt trên cánh tay, và của nhiều điều mà chị không hiểu. Vì thế chị thở dài và rời khỏi cảnh tượng chị đang theo dõi. Dẫu sao cũng đã xong, hoặc đã bước vào giai đoạn mới. Chị bước qua rặng cây tối bốc lên mùi mục rữa, át cả mùi hoa trong đêm, và đi đến cửa phòng những người hầu gái.
+</p>
+
+<p>
+ Cửa mở lùa ra một luồng gió thơm nức mùi thịt bò nướng, cùng với tiếng cười pha lẫn những lời ta thán. Chị ngượng ngập bước vào sàn nhà sạch sẽ, xấu hổ vì cả đôi bít tất diện nhất của mình và điêu đứng vì ánh đèn.
+</p>
+
+<p>
+ - Tôi mang vịt tới cho ngày mai đây, - chị nói bằng một giọng có thể khiến lũ con của chị cũng phải ngước lên nhìn.
+</p>
+
+<p>
+ - Sao mà đúng lúc thế. - Chị Frisby, một người không xấu bụng lắm nói.
+</p>
+
+<p>
+ Nhưng chị ta đóng sầm cửa bếp lò lại.
+</p>
+
+<p>
+ - Đồ của nợ, cái bếp lò của nợ này, cả bọn họ lẫn những cái bếp đều khốn kiếp. Tôi phát ốm và ngấy tất cả. Tuần tới họ có thể tìm cô gái khác. Tôi sẽ lui về ở bên bờ biển thôi.
+</p>
+
+<p>
+ - Và sống bằng lòng từ thiện của họ, - Winnie nói, kéo căng tai mũ ra, nom càng đanh đá hơn.
+</p>
+
+<p>
+ - Ôi, không đâu cô bạn ơi, - chị Frisby nói. - Có một bà sẵn sàng cho tôi ở cùng cốt cho có bạn. Và dùng bữa sáng ngay tại giường, nếu tôi không ngại vụn bánh mì rơi vãi.
+</p>
+
+<p>
+ Mọi người cười vang, cho đến lúc chị Frisby im bặt, đặc biệt là cô gái tên Cassie có gương mặt chất phác vừa mới từ Ai-len đến, đang đánh trứng.
+</p>
+
+<p>
+ - Ồ, chúng ta quên khuấy mất chị Parker, - chị Frisby nói. - Xin mời ngồi, rồi chúng tôi sẽ kể cho chị một bí mật.
+</p>
+
+<p>
+ Chị ta mang từ trong chạn ra một cái chai lấp lánh giấy vàng giống như cái mà người bán thịt cùng các vị khách của mình uống, rồi sau khi nháy mắt, và ngoắc ngón tay, chị ta rất lịch sự rót một cốc rượu đầy.
+</p>
+
+<p>
+ - Nó hả hết rồi vì đã mở ra được một lúc. Nhưng nó sẽ đưa chị phiêu diêu đến bất cứ nơi nào.
+</p>
+
+<p>
+ - Tôi không uống rượu bao giờ, - Amy Parker trả lời.
+</p>
+
+<p>
+ Thế là mặt Winnie nom dài thuỗn ra, rồi cô ta rút trong túi tạp dề một chiếc giũa và bắt đầu cọ móng tay.
+</p>
+
+<p>
+ - Ở chỗ em làm trước, bọn con gái chúng em uống rượu rất cừ. Dạo ấy vui lắm. Cứ cách một ngày lại có tiệc. Ông ấy đúng là một nhà quý phái. Chứ đâu có như anh chàng này, loại giàu xổi.
+</p>
+
+<p>
+ - Suỵt, - chị Frisby chặc lưỡi. - Anh ta giả lương cao. Mà anh ta đâu có tồi tệ lắm đâu.
+</p>
+
+<p>
+ Rượu và hơi nước làm chị mềm lòng, và cả những suy tư buồn bã về người chồng thủy thủ quá cố trôi theo tiếng ợ dài. - Tôi xin lỗi, - chị ta nói, nhìn vào cái xoong. - Nhớ lại chuyện xưa làm tôi hơi buồn. Cái giá của rượu là thế đấy.
+</p>
+
+<p>
+ Những lời trên khiến cô gái người Ai-len cười rũ bên chậu trứng mà cô cứ ra sức đánh.
+</p>
+
+<p>
+ - Này, phải cẩn thận đấy cô bạn ạ, kẻo trứng lại dậy quá đấy!
+</p>
+
+<p>
+ Trong nhà bếp lúc này thật ấm áp và rực sáng. Amy Parker nhấm nháp rượu từ chiếc cốc chị đang nâng niu như một bông hoa, và nhìn vào trong buồng, lắng nghe dấu hiệu của sự sống đang diễn ra ở buồng bên kia. Khi rượu chạy qua mạch máu và bốc lên trong đầu, chị chỉ muốn đứng dậy và dò dẫm tìm đường qua cánh cửa bọc nỉ để đứng trước mặt Madeleine.
+</p>
+
+<p>
+ - Cô ấy đẹp lắm, - chị nói.
+</p>
+
+<p>
+ - Ai cơ? - Chị Frisby hỏi. - Cái cô bé ngu ngốc ở quận Cork ấy à?
+</p>
+
+<p>
+ Cassie cười khúc khích, đánh trứng tiếp, như thể cô ta chỉ có thể làm được hai chức năng trên.
+</p>
+
+<p>
+ - Dĩ nhiên là Madeleine rồi, - Amy Parker tỉnh táo nói. Môi chị chúm chím duyên dáng để phát ra cái từ mà chị chưa bao giờ dám nói.
+</p>
+
+<p>
+ Winnie lặng lẽ bỏ chiếc giũa vào túi và kéo tạp dề sát vào bộ ngực phẳng.
+</p>
+
+<p>
+ - Chính là cô Madeleine xinh đẹp ấy, - Amy Parker lại nói, giờ chị đã dám nói.
+</p>
+
+<p>
+ - À, - chị Frisby kêu lên, nhúng cái muôi vào nồi xúp, - chúng ta chưa nhìn thấy cô ta trên giường.
+</p>
+
+<p>
+ - Đó là việc của người khác, - Winnie phá lên cười. Còn Cassie khúc khích, tay vẫn đánh trứng ào ào. Chị Frisby bắc cái nồi hơi bốc mù mịt ra, phía sau thấp thoáng bộ mặt tiên tri của chị ta, rồi xúp đổ ào vào đĩa nghe như thác nước, những mẩu cà rốt nhỏ lẫn trong thứ nước vàng óng.
+</p>
+
+<p>
+ - Đó là việc của người khác. Nếu người đó thành công. Thế nhưng người đó là ai?
+</p>
+
+<p>
+ Chị ta đổ xúp ra, gương mặt xám ngoét trông đến thảm hại trong làn hơi nước.
+</p>
+
+<p>
+ - Cái của nợ này chưa trong, - chị ta buồn bã nói. - Kệ, chắc họ vẫn ăn được. Chẳng việc gì đến tôi cả. Có hơi mỡ màng một chút. Dẫu sao đây là món ăn Pháp.
+</p>
+
+<p>
+ Nhưng đối với Amy Parker mọi thứ đều tuyệt vời.
+</p>
+
+<p>
+ - Tôi muốn ngồi cạnh cô ấy, - chị nói, - giống như cô ấy vậy, ngồi ở đó, dưới cái màn che, với những con ngựa. Ngồi bên cạnh cô ấy, tôi sẽ kể cho cô ấy nghe giấc mơ của tôi nếu như tôi còn nhớ. Tôi không bao giờ nói nổi những chuyện cần phải nói. Khi vợ chồng tôi lấy nhau, tôi có trồng một cây hồng, nhưng chúng tôi không nói về chuyện đó. Mà đấy lại là một trong những thứ đẹp nhất. Chị thấy không, tôi biết nhiều thứ lắm. Nhưng không thể kể ra được. Chỉ bí mật giữa tôi và chị thôi nhé chị Frisby, đó cũng chính là vấn đề của ông chồng bà trưởng trạm bưu điện đấy. Ông ta biết cái gì đó.
+</p>
+
+<p>
+ - Đánh diêm lên, chị Parker, - chị Frisby nói, - đã đến giờ chị phải về rồi đấy.
+</p>
+
+<p>
+ - Và uống có một cốc thôi, - Winnie lạnh lùng nói, tay đang sắp xếp xúp lên khay như thể đột nhiên thấy ghen tức với chuyện đó.
+</p>
+
+<p>
+ - Vâng, - Amy Parker nói.
+</p>
+
+<p>
+ - Tiền của chị đấy, - chị Frisby nói, quẳng ra mấy đồng xu. - Mà nếu thịt vịt không được mềm thì tôi không chịu trách nhiệm nhé. Dạ dày tôi chán ngấy chúng rồi. Có một người bạn của tôi tắc tử, khi người, ta mổ bụng ra thì chị có tin không? - Toàn là thịt vịt. Nhồi đầy bụng.
+</p>
+
+<p>
+ Amy Parker chẳng tin lắm điều đó.
+</p>
+
+<p>
+ - Vịt! - Chị Frisby kêu to lên. - Ha! ha!
+</p>
+
+<p>
+ Winnie bê khay xúp lách qua cánh cửa. Lớp nỉ rung rung rồi đứng im.
+</p>
+
+<p>
+ - Tôi sẽ không bao giờ nói chuyện với cô ấy, - Amy Parker nói, vừa nhặt cái giỏ.
+</p>
+
+<p>
+ - Không sao đâu, - chị Frisby nói. - Cô ta thấy lạc lõng. Madeleine muốn tất cả đều chú ý đến mình mà thôi.
+</p>
+
+<p>
+ Amy Parker đứng, tay cầm cái giỏ trống không. Chị Frisby nhận ra điều đó.
+</p>
+
+<p>
+ - Đây, - chị ta nói và gói ghém mấy miếng thịt bò muối lạnh ngon lành còn thừa.
+</p>
+
+<p>
+ Chị ta hy vọng điều này sẽ có ích, nhưng khi nhớ đến người thủy thủ đã khuất, chị ta lại thấy ngờ vực.
+</p>
+
+<p>
+ Thế là Amy Parker đi khỏi nhà bếp, rời khỏi ngôi nhà ồn ào nhộn nhạo. Những con chim ăn đêm khiến chị thấy lúng túng loay hoay như kiến bò miệng chảo. Vì hội nhà giàu đã vào phòng ăn và ngồi sau tấm rèm được buông xuống. Trong căn phòng trống trải mà họ vừa mới uống rượu nay chỉ còn lại tấm thảm.
+</p>
+
+<p>
+ Amy Parker rảo bước nhanh hơn qua khu vườn. Chim ăn đêm vỗ cánh râm ran. Có một lần chị nghe thấy, cho rằng mình đã nghe thấy tiếng bước chân trên cùng con đường rải sỏi này, thế là chị lách đi bằng cách rẽ vào rặng thông. Chị cố gắng và hy vọng. Nhưng nếu Madeleine trốn khỏi phòng ăn, vì bị nhức đầu, thì chắc cô ta đã phát hiện ra một người đàn bà béo lùn khỏe mạnh im thin thít đi dưới hàng cây tăm tối. Thế là Amy Parker chạy mãi, thù ghét cả hơi thở của mình, và quẳng cái bọc thịt bò muối vào bụi cây gần cổng trước.
+</p>
+
+<p>
+ Khi về đến nhà, chồng chị hỏi:
+</p>
+
+<p>
+ - Có chuyện gì đấy em?
+</p>
+
+<p>
+ - Chẳng có gì cả, - chị trả lời.
+</p>
+
+<p>
+ - Em không có chuyện gì để kể à?
+</p>
+
+<p>
+ - Không, - chị nói. - Toàn chuyện vớ vẩn. Họ cho em một cốc rượu vang, nên đầu thấy bừng bừng.
+</p>
+
+<p>
+ - Em bị say à? - Anh hỏi.
+</p>
+
+<p>
+ - Em không biết có phải thế không, - chị nói, vỗ nước vào mặt. - Em chưa bao giờ say cả.
+</p>
+
+<p>
+ Rồi chị vỗ nước vào trán, và sợ rằng chị sẽ buột mồm nói ra điều gì trong nhà bếp. Chị lo lắng khi nhớ lại một hình ảnh trần truồng nào đó. Nhưng nước lạnh đã bao bọc tâm hồn chị, trông chị lại gọn ghẽ và thân thuộc với chồng, không còn cái cảnh thơ mộng chị đã nhìn thấy và trải qua bên cửa sổ trong khu vườn tối, hay trong căn bếp bốc hơi của chị Frisby.
+</p>
+
+<p>
+ Mùa hè làm chị héo đi như một ngọn cỏ. Gió thổi giữa cái nóng ngột ngạt làm lay động những lá ngô khô cong. Có nhiều loại côn trùng chị lần đầu tiên để ý thấy, rồi những chiếc lá khô trơ xương. Trong thời kỳ này, lúc chồng bận bịu công việc, chăm sóc một con bò ốm hay làm cái này cái nọ bằng dây kẽm, lúc đứa con trai nghịch cái chai xanh trong đất bụi, đổ đất vào rồi lại trút đất ra cứ như đấy là điều quan trọng duy nhất, chị nhìn qua mái đầu họ, chờ đợi một điều gì đó sẽ xảy ra. Cuối cùng điều đó đã xảy ra. Trong tư thế và tâm trạng đó, chị nhìn thấy cột khói đầu tiên ở cái vùng gọi là Hải Đảo, phía Wullunya, nơi đã từng bị ngập lụt.
+</p>
+
+<p>
+ - Cháy kia rồi, - chị nói, giọng phân vân, không hiểu mình có nên sợ hay không.
+</p>
+
+<p>
+ Khói bốc lên trời, cột khói tuy còn mảnh, nhưng đang lớn dần.
+</p>
+
+<p>
+ Chị chạy đi báo cho chồng biết.
+</p>
+
+<p>
+ - Ừ, - anh nói, - đúng là cháy rồi.
+</p>
+
+<p>
+ Anh nhìn lên, tay cầm kìm đang dùng để thắt nút dây kẽm. Trước đấy anh đã để ý có cháy rồi, nhưng anh không kể. Anh thầm hy vọng rằng nó sẽ lụi dần chỉ còn khói.
+</p>
+
+<p>
+ Xung quanh, mọi người truyền tai nhau, phụ nữ rất thạo tin, còn đàn ông chậm chạp hơn thì không muốn chấp nhận sự thật. Có người còn văng tục khi nghe kể, một tay thậm chí lấy xô nện vợ khiến chị ta ngã lăn, máu phun ra.
+</p>
+
+<p>
+ Nhưng đám đàn ông bắt đầu tụ tập lại, sau một hồi do dự và những muốn quay lưng lại đám cháy. Họ đi tìm rìu, lôi bao tải ra, đổ đầy bao đựng nước và yêu cầu chuẩn bị chút thức ăn cầm hơi. Rồi họ cưỡi ngựa, hay đánh xe, tiến thẳng về phía Hải Đảo, nơi xảy ra đám cháy.
+</p>
+
+<p>
+ Lúc đó lửa đã bùng cháy dữ tợn. Những đám khói cuồn cuộn bốc cao ngất trời trong rừng, và trong đám khói là những vật thể tối đen, lờ mờ, như thể có gì đó đang bị cưỡng ép đẩy lên không trung. Cánh đàn ông vùng Durilgai đi rải rác thành từng nhóm dọc theo con đường mòn, nói chuyện về những đám cháy khác, hoặc đi riêng lẻ, mắt nhìn xuống đất. Nhóm thứ hai ngạc nhiên trước dáng vẻ của cát, của đá và cây cối mà họ nhìn thấy. Họ khám phá ra trong đất một vẻ đẹp khắc khổ mà đến lúc này họ mới yêu với một tình yêu sầu muộn, dẫu đến quá trễ. Đám cháy khiến điều này tất yếu xảy ra với những con người lẻ loi đơn độc. Họ đành cam chịu cuộc đời mà họ bỏ lại phía sau, khi họ đi giữa hàng cây tăm tối, ánh sáng vàng dần hạ thấp xuống, và những con vật bắt đầu chạy về phía họ chứ không bỏ đi. Thậm chí một số người bông phèng về những đám cháy to hơn, bắt đầu cảm thấy điều khủng khiếp đang đến gần, cố che đậy nó bằng những lời văng tục, và khi làm như thế cũng không xong, bèn thúc ngựa và khạc nhổ và giật mạnh mõm ngựa.
+</p>
+
+<p>
+ Những người tình nguyện từ Durilgai đi được mấy dặm đường thì gặp một người tên là Ted Doyle, đang tiến về phía họ trên lưng con ngựa đẫm mồ hôi.
+</p>
+
+<p>
+ Hải Đảo hầu như bị cháy trụi, Ted Doyle nói, huơ tay về phía đám cháy, nơi anh ta đã đánh mất cái mũ và lòng can đảm. Đó là đám cháy lớn nhất, người đưa tin cam đoan, khi con ngựa đầm đìa mồ hôi của anh ta xoay tròn trên những cẳng chân gầy guộc. Khu nhà Flanagan cháy trụi, tiếp đến khu nhà Slattery; anh ta nhìn thấy những bức tường đổ sụp vào người ông già, có một bà ở nhà Glasson bị bén lửa, chị gái bà Glasson, bỏ chạy đến đầm mình dưới khe suối, năm đó lại khô cạn, nên chỉ thấy bà ta lăn lộn trên vũng bùn khô - mặc dù mọi người đã dùng tay hay áo cũ hay cái gì đó đập vào người bà, nhưng bà vẫn bỏ mạng. Cả quận đó bị cháy sạch sành sanh. Người đưa tin vừa thông báo vừa xòe đôi tay, run rẩy trong bầu không khí vàng rượi. Chẳng có chiếc đệm nào không biến thành một đống lông khét lẹt. Họ mở chuồng cho gà vịt bay tứ tung. Người chúng bén lửa, mỏ há ra thở, rồi cứ thế mà chết, mắt trợn trừng, yếm cháy đen. Đôi mắt người đưa tin trũng sâu vì bám khói. Đôi mắt trắng dã của anh ta tiết lộ nhiều hơn và trái hầu giật giật nơi cổ họng gầy guộc của anh ta. Khi gió làm lan đám lửa cháy, anh ta nói, tay vung sang một bên và trang trọng di chuyển như một bức màn lửa, thì hơi nóng làm khô héo những lá cây trước khi lửa bén tới, và lông trên bàn tay quăn lại. Họ nhìn vào tay anh ta, thấy lông tay đúng là bị cháy xém. Tóc trên đầu cháy hết phần ngọn như vương sương muối. Người anh ta có mùi cháy, mà họ hít hà để chắc chắn. Súc vật cũng đang bị cháy, anh ta nói, những con dã thú và rắn rết, chúng lao đi trên nền đất nóng rẫy, khi chúng cháy, hình thù chúng biến dạng, quắt lại, cong queo. Anh ta nhìn thấy một con rắn tự cắn vào người nó trước khi chết, như buộc ai đó phải chịu trách nhiệm.
+</p>
+
+<p>
+ Những người ngồi nghe quyết định quay trở lại và tìm một vị trí để có thể bảo vệ Durilgai. Ông lão Peabody, giờ đã già khụ, ngồi như một vị tiên tri trên chiếc xe ngựa với con trai, gợi ý họ nên dựng một mô đất cao cách đó một dặm, nơi có sườn đồi dốc đá và một chỗ nứt tự nhiên trong rừng cây. Những người khác lắng nghe giọng nói già nua của ông ta phát ra một cách kỳ diệu giữa da và xương, và quyết định nghe theo lời khuyên của ông cụ. Họ ngoan ngoãn quay ngựa lại và đi theo xe của Peabody. Một số thấy tội lỗi khi nhớ đến cha mình, và hầu như tất cả đều biết ơn sự bảo vệ mỏng manh bằng quyền lực của ông già.
+</p>
+
+<p>
+ Vậy là họ sẵn sàng chống chọi với đám cháy rừng, nếu nó bị gió làm lan rộng tới tận bây giờ. Nơi ấy là miền đất nghèo, chỉ thấy toàn đá sỏi và hang thỏ cùng những cây kế chết. Dọc theo đồi, họ chặt các bụi cây con, làm thành một vành đai rộng hơn, với hy vọng lửa cháy không thể bén qua được. Tiếng người gọi nhau và tiếng cây con đổ thình thịch ở nơi yên tĩnh đó, kéo dài suốt ngày đến tận đêm tối, tiếng ngựa hí vang, chúng quay mõm về hướng nhà ngơ ngác.
+</p>
+
+<p>
+ Hôm đó lửa không đến, chỉ ngửi thấy mùi lửa và nhìn thấy khói bốc. Rồi đến đêm gió lặng như tờ, mọi người bắt đầu pha trò vui vẻ. Ban đêm đám cháy không lan đi xa được, vì không có gió. Họ quyết định về nhà và quay trở lại vào sáng sớm. Một số người thầm hy vọng sẽ không cần làm thế, mà họ sẽ dậy vào một ngày rực rỡ, khi đó những ngọn lửa của nỗi hãi hùng trong họ đã tàn lụi.
+</p>
+
+<p>
+ Suốt những ngày cháy rừng, đàn bà chăm lo công việc, hầu như thể đàn ông không hề đi vắng. Thật ra họ không bao giờ biết làm cái gì khác. Chỉ thỉnh thoảng họ ngẩng nhìn lên bầu trời dơ bẩn, và dường như bước nặng nề hơn qua ánh sáng màu vàng. Nhưng sự tĩnh mịch bị tiếng khóc trẻ con phá vỡ vẫn như thế. Mồ hôi chảy trên da thịt họ vẫn như thế.
+</p>
+
+<p>
+ Đàn bà đùa cợt về chuyện cháy rừng. Một số nói họ sẽ nhảy vào thùng đựng nước với chỗ tiền mặt kiếm được nhờ bán rau hay lợn.
+</p>
+
+<p>
+ - Tôi sẽ cầu Chúa, - Doll Quigley nói.
+</p>
+
+<p>
+ Và có lẽ sẽ được cứu sống. Nhưng không phải ai cũng làm như Doll Quigley, người đã học được đôi chút ở các bà xơ. Song họ vẫn lặng lẽ lúng túng đọc những câu kinh cứng nhắc, rồi nhìn lên trời và chờ đợi.
+</p>
+
+<p>
+ Ở Glastonbury họ chờ đợi. Rồi khi cơn khủng hoảng sâu sắc hơn, và bầu trời vàng vọt lại nặng nề hơn, họ cảm thấy bị cô lập. Ông già Armstrong lên đường hướng về nơi có đám cháy, quay trở lại, ngắt bỏ đầu điều xì gà, bước qua vườn cây ăn quả, rồi quay lại. Ông ta mắc bệnh co giật trước đấy không hề có.
+</p>
+
+<p>
+ - Lạy Chúa, ngồi xuống nào bố, không thì… - hai cô con gái nói, xuất hiện trên đường dành cho xe ngựa.
+</p>
+
+<p>
+ Các cô con gái ông hàng thịt đứng trên đường lát sỏi, đôi bàn tay không quen lao động của họ đan vào nhau và sực mùi brandy Cologne. Cô Dora, đầu đã đội mũ, ít nhiều đã quyết định rằng phải đi Sydney, nơi người anh trai đang điều khiển công việc làm ăn của ông bố. Nhưng cô em Mabel, người sớm muộn gì cũng sẽ lấy lãnh chúa, còn đang lưỡng lự, không sao quyết định nổi. Cô đáng yêu và xinh đẹp, với đôi mắt trung thực khiến mọi người nghĩ rằng cô đang lắng nghe họ.
+</p>
+
+<p>
+ - Chị sẽ làm gì, Madeleine? - Dora Armstrong hỏi.
+</p>
+
+<p>
+ Madeleine vừa mới bước ra sân thượng. Cô ta cũng đội mũ, nhưng là vì nó hợp với cô, vành mũ rộng, lười biếng rung rinh khi cô đi từng bước chậm chạp, uể oải. Cô mặc váy dài trắng, trông mát mẻ, và rõ ràng là đắt tiền, bất chấp hoàn cảnh buổi sáng hôm đó.
+</p>
+
+<p>
+ - Hừm, - cô ta nói, - có lẽ tôi sẽ đọc một cuốn sách, ăn một quả đào mà tôi vừa mới nhìn thấy trên chạn trong nhà ăn.
+</p>
+
+<p>
+ Khác với hầu hết mọi người, ăn đào xong Madeleine vẫn sạch sẽ. Dora ghét sự khéo léo của cô ta, vì hầu như chuyện gì cũng làm cô lo lắng. Lúc này cô nhíu mày và nói:
+</p>
+
+<p>
+ - Sao chị có thể nói đến việc ăn đào trong lúc đang cháy ghê sợ thế này được?
+</p>
+
+<p>
+ - Có người sẽ dập tắt nó, tôi mong thế, - Madeleine nói.
+</p>
+
+<p>
+ Nếu không cô ta sẽ bị đem hiến tế. Mặc dầu vẻ phớt lạnh bề ngoài, lòng bàn tay cô ta nóng ran. Cô ta ngồi trên lan can lát đá và vung chân cho có.
+</p>
+
+<p>
+ Nhưng cánh tay lửa màu đồng đen đột nhiên phụt lên trời từ hướng Hải Đảo, vượt khỏi những đám mây khói bụi mù mịt. Hình như cái gì đó đã chịu lùi bước. Sức công phá dữ dội rõ mồn một của đám cháy khiến bố con Armstrong phải công nhận nó sẽ không dừng lại trước Glastonbury. Lần đầu tiên họ thấy mình yếu ớt. Họ không thể dùng tiền để ngăn chặn đám cháy được.
+</p>
+
+<p>
+ Madeleine cảm thấy điều này. Cô ta nghĩ về người tình, giờ đang ngồi bên chiếc bàn choáng lộn. Cô đã đến bên anh một lần, hôn lên mái đầu bóng mượt vì nó là của cô. Đó là mái đầu tận tụy. Vẻ đạo đức đáng khâm phục đó là cái điều cô cho rằng mình mong muốn. Cô vẫn ngồi vung chân ở lan can. Nhưng lòng cô ngờ vực. Dẫu sao cô chẳng để lộ mấy nỗi ngờ vực cho một người quan sát thông thường. Song chúng vẫn hiện ra dưới hàng cây vào ban đêm, đôi khi cô khóc đến tan nát cõi lòng, hoặc trong trạng thái buồn ngủ lơ mơ, rồi choàng tỉnh dậy trước khi phát hiện một điều gì.
+</p>
+
+<p>
+ Nhưng cô không thực sự cho rằng cuối cùng mình sẽ vẫn ôm mối nghi ngờ, cùng với tiền của Tom Armstrong, và sống đại khái một cuộc đời luôn định sống, ê hề tiệc tùng, nữ trang quý giá, gỗ gụ và ánh nến sáng choang. Chỉ là vào buổi sáng hôm đó, cô ta bị giày vò vì đám cháy, một tai họa rõ ràng có thể thiêu trụi toàn bộ ý đồ. Bất cứ việc gì cũng có thể xảy ra. Vì vậy cô ta đợi, chịu phơi nắng, điều mà bình thường cô ta sẽ không bao giờ làm, và còn gãy một móng tay bởi cái lan can đá nữa.
+</p>
+
+<p>
+ Trong lúc đó cô con gái nhà Armstrong đã từ bỏ hy vọng chi phối bất cứ ai, cô ra lệnh cho người chuẩn bị ngựa đưa cô ta đến ga tàu ở Bangalay. Cô ta muốn thoát khỏi đây càng nhanh càng tốt, dứt bỏ mọi lo lắng về vụ cháy rừng. Nhưng cô em mặc dù sợ hãi, vẫn thích xem điều gì sẽ xảy ra. Cô đa cảm hơn, dịu dàng hơn. Có lần cô ta đã băng bó cho một người bị rìu bổ vào. Trong một thời gian cô đã yêu người đó. Lúc nào cô cũng yêu đương, và phân vân không biết làm gì, trước khi đến tuổi hay trước khi bố mẹ cô giải quyết vấn đề.
+</p>
+
+<p>
+ Hai người con gái trên sân thượng, vốn chẳng hay quan tâm đến nhau, trừ khi làm vì hình thức, lúc này lại gắn bó với nhau trong sự phân vân và tự huyễn hoặc chấp nhận tình thế xảy ra. Họ đến bên nhau. Họ hầu như nắm tay nhau, chỉ ngại trông nó thật ngớ ngẩn.
+</p>
+
+<p>
+ - Lửa đằng ấy lớn đấy, - Mabel Armstrong nói khi cây cối đổ và lửa bùng cháy cao hơn.
+</p>
+
+<p>
+ - Ôi, những con người khốn khổ, cả lũ trẻ nhỏ kia, - vợ người bán thịt kêu lên, tay ôm hộp nữ trang ở cửa sổ trên gác.
+</p>
+
+<p>
+ Bà ta dễ mủi lòng, hay thiếu chủ kiến giống cô con gái út. Bà Armstrong cảm thấy có lỗi vì sự giàu có của mình, muốn bố thí làm phúc mà không nhận ra rằng mình là nguyên nhân. Bà quá chậm chạp. Nói chậm chạp, bằng một giọng kiểu cách, khiến người nghe ngóng cái miệng bà như chờ gà đẻ trứng ra. Sau nhiều năm kiên trì bà ta có thể nhận ra được vài từ tiếng Pháp, dĩ nhiên là trên giấy tờ, và do đó vui lòng xả hơi đôi chút. Bà ta thích gác chân lên, kể cho những người kinh ngạc nốt viêm tấy ở kẽ chân mà hầu như không ai có thể chữa khỏi cho bà.
+</p>
+
+<p>
+ Việc này xảy ra khi đám cháy lúc đó vẫn còn ở xa, thiêu rụi vài lớp vỏ khả ái và uể oải, phơi bày con người thật của bà. Buổi sáng hôm đó bà ta đi khắp nhà, gom hết bát đĩa và ly của người khác, nhận ra những người hầu vẫn cười nhạo mình hàng bao năm nay. Bà ta dịch chuyển cái ly pha lê Bohemia quý giá làm nó rơi vỡ. Song việc ấy dường như chẳng quan trọng. Người vợ ông hàng thịt quá mỏi mệt để run sợ.
+</p>
+
+<p>
+ Họ đợi đám cháy đến, và đã đợi bao nhiêu năm nay rồi. Chờ đợi bao nhiêu đêm. Tối đến những đám mây cháy rực cả chân trời. Tiếng tích tắc đồng hồ, tiếng dế và tiếng tim đập quấn trong khăn ướt thật không thể chịu nổi.
+</p>
+
+<p>
+ Dưới Durilgai, cánh đàn ông đã tạo khoảng đất trống phòng đám cháy vào sáng hôm sau. Dường như nó tất yếu phải đến. Cành cây nổ lách tách trong im lặng giữa những đợt gió nóng. Rồi vào khoảng mười một giờ, khi một, hai người đứng canh đang ngủ gà ngủ gật trong bóng râm còn nhiều người khác đang nói chuyện phiếm, hầu như quên lý do tại sao họ ở nơi đó, thì bầu không khí đột nhiên dầy đặc lại như thủy tinh nóng chảy.
+</p>
+
+<p>
+ - Nó đến rồi, - họ nói.
+</p>
+
+<p>
+ Những ai đang ngồi hoặc nằm đều bật đứng dậy. Những ai cởi trần bèn phô diễn cơ bắp và xoa mạnh đám lông ngực để dồn sức mạnh. Nhưng gần như tất cả đều thể hiện sự lúng túng thầm kín bằng cách nhổ toẹt xuống đất, và đất xám nóng rực làm khô ngay nước bọt của họ, không để lại một dấu vết gì.
+</p>
+
+<p>
+ Song suốt thời gian đó ông lão Peabody vẫn ngồi trên một hòn đá, tuy nhiệt độ rất cao nhưng vẫn quấn một cái áo khoác nom như tấm lót lưng ngựa bỏ đi. Lão tỏ ra chẳng lo lắng gì trước tình hình. Có lẽ vì tuổi tác. Lão đã già lắm rồi. Da lão cộm lên thành lớp vẩy trong suốt trên mớ da thịt còn sót lại. Hai bàn tay lão xòe ra như những que diêm trên cái đầu gối củ lạc của lão. Nếu xảy ra thảm họa, chắc hẳn ông cũng chẳng được tích sự gì, thậm chí còn làm vướng chân vướng cẳng nữa, song lúc này mọi người lại thích lão có mặt ở đây. Lão an ủi họ vì lão còn sống.
+</p>
+
+<p>
+ Lúc này lão di chuyển cái lưỡi giữa cặp môi khô héo bằng động tác của loài thằn lằn, để ban ra một lời tiên tri.
+</p>
+
+<p>
+ Mọi người bồn chồn chuẩn bị đối phó với đám cháy, luôn chân luôn tay, kéo lê những cành cây đã chặt dùng làm vật dập lửa, hoặc lấy dây thép buộc chặt những cái bao vải vào những cây gậy chắc chắn. Trong khi họ chuẩn bị như thế, lão Peabody nói:
+</p>
+
+<p>
+ - Đang diễn ra sự thay đổi, - lão nói, thè lưỡi thăm dò bầu không khí khô khốc.
+</p>
+
+<p>
+ - Thay đổi à? - Có người hỏi. - cố nhiên là thế, lửa bén đến mông rồi còn đâu. Chúng ta sẽ biến thành một lũ khỉ nhảy chồm chồm. Leo lên đồi và thế là đi đời. Người bốc khói nghi ngút.
+</p>
+
+<p>
+ - À, không, gió sẽ xoay chuyển tình hình chứ. Đang có sự thay đổi, - lão Peabody nói, giọng yếu ớt, rồi rùng mình như thể có ai đi xuyên qua ngôi mộ của lão, hay luồng gió lạnh mà lão hứa hẹn đã thực sự lùa qua những nếp nhăn trên người.
+</p>
+
+<p>
+ Nhưng những người khác chỉ mướt mồ hôi vào buổi sáng nóng đến tan chảy. Rừng bắt đầu tan thành những cuộn khói xám bay rải rác, cuồn cuộn len lỏi giữa lá và cành, cứ như cành lá nhả ra khói. Đội canh phòng bắt đầu hít phải khói bay lạc, chăm chú nhìn ra xa để phát hiện ngọn lửa đầu tiên. Ai cũng đều nhận thấy sự vô nghĩa của tầm vóc mình khi chuẩn bị tóm lấy đám cháy trong cuộc vật lộn cuối cùng.
+</p>
+
+<p>
+ Bỗng một con cáo vừa rú lên vừa chạy ra từ bụi cây, lửa cháy dữ dội trên người nó.
+</p>
+
+<p>
+ Đúng là cháy đang lan tới.
+</p>
+
+<p>
+ Những đám khói vàng bùng lên một cách bất ngờ, như thể bục ra từ trong túi. Khói lửa ngùn ngụt, tiếng lốp bốp, rồi gãy vụn, rồi đổ vỡ. Lửa từ những lùm cây bốc lên cao, cao mãi, nuốt chửng cây cối. Có tiếng nhựa cây ứa chảy. Một con chim rơi xuống, cháy từ mỏ cháy đi, giãy giụa đau đớn trong đám cành lá. Từng mảng trời xanh xa tít hiện ra một cách vô tình trong khói lửa cuồn cuộn. Những ngọn cờ lửa phấp phới trên cành cây cao nhất, báo hiệu một chiến thắng tất yếu.
+</p>
+
+<p>
+ Nhưng khi đám cháy đến khoảng đất trống tự nhiên trên sườn đồi trơ trọi và vành đai phòng hộ mà cánh đàn ông đã chuẩn bị đề phòng khi hữu sự, thì sự việc đã xảy ra đúng như lão Peabody dự đoán. Những người cứu hỏa đã chạy bổ ra ngăn lửa, tay cầm cành cây và những cái bao bay phần phật, họ đập vào những con thằn lằn lửa đầu tiên uốn éo trên nền đất khô cằn, họ đánh những con vật sống đó cho có việc, mặc dù nghe khá nực cười, họ bắt đầu cảm thấy có sự thay đổi, thoạt đầu là những luồng gió mát nhẹ thổi qua vai. Lúc đầu, họ hầu như chẳng để ý. Nó quá nhẹ. Nhưng khi họ đang dập lửa, cánh tay và ngực của họ bắt đầu bị xém, thì gió mỗi lúc một mạnh cho đến khi gió mát từ phía nam xuất hiện ùa tới rìa của đám cháy. Gió và lửa cùng ngả nghiêng giữa những hòn đá nóng. Cánh đàn ông thậm chí bắt đầu cảm thấy mình đang đạt được điều gì. Họ có thể cười vang được rồi.
+</p>
+
+<p>
+ - Tôi đã bảo mà, - lão Peabody nói, nhưng lúc này chẳng ai nghe, bởi tự thân họ đã trải qua mọi sự tình.
+</p>
+
+<p>
+ Ai nấy hít hà gió đang thổi lửa. Kỳ tích của họ làm họ phấn chấn. Tất cả đã lấy lại sức mạnh và tầm vóc của mình vì đám cháy đã bị dồn vào thế cùng, nếu không phải do cố gắng của họ thì ít nhất điều đó đã diễn ra ngay trước mặt họ, do đó, ai cũng có thể kể lại chuyện này mãi mãi về sau.
+</p>
+
+<p>
+ Đến cuối buổi chiều, đám cháy xem chừng đã lụi. Sau khi đổi hướng ở chỗ ghềnh đá và giằng co với gió một lúc, ngọn lửa đã bị đẩy lùi về vùng nó vừa thui cháy trụi, rồi tan biến ngay trên chiến tích nó đã đạt được. Gió thổi qua vùng đất cháy đen còn bốc khói, đến lượt nó cố bùng lên vài ngọn lửa leo lét cuối cùng, nhưng chẳng còn gì nuôi ngọn lửa. Một khi lòng nhiệt tình đã tan biến, thật khó để hiểu được ý nghĩa của toàn bộ chuyện này, trong khung cảnh khói bốc hàng dặm; thật khó để quyết định những đức tính cao cả nào sẽ nảy sinh ra từ tro bụi.
+</p>
+
+<p>
+ Dẫu sao những người cứu hỏa vẫn đứng nán lại, sau khi trải qua cảm giác khói xuyên qua người họ. Mọi người chùi mồ hôi ở mặt, rồi cười và bảo với nhau rằng cháy cũng chẳng là cái gì. Chỉ có Stan Parker, lúc đó đang mặc áo, cố gắng chui đầu trong đó càng lâu càng tốt, anh không đưa ra lời bình luận nào để tránh bị chọn phát biểu ý kiến. Còn lão Peabody lại lùi vào cái vỏ ốc của mình, cam chịu tuổi tác, sự thật về lời tiên đoán của lão và kiến thức mà lão không cần đến nữa.
+</p>
+
+<p>
+ Đám người còn mải nhởn nhơ, tận hưởng phút thoải mái và tình bằng hữu thì ba, bốn đứa trẻ chạy đến dọc theo ngọn đồi như có ý tìm họ. Hình như chúng đến có chủ định vì chúng đang chạy không ngừng nghỉ, tóc hất tung trong gió, chúng chạy miết, chạy mãi, cho tới lúc đến rất gần mới thấy rõ những khuôn mặt đầy tàn hương, đầu gối sứt sẹo, rồi chúng dừng lại.
+</p>
+
+<p>
+ Xương sườn bọn trẻ phập phồng bên trong quần áo, nhưng chúng lấy lại được hơi và kể đứt đoạn câu chuyện chúng mang đến. Bọn chúng kể những đám cháy đã bùng lên phía tây Glastonbury vào buổi sáng hôm đó, Billy Scrivener thấy một, rồi hai, và nhiều đám khác nối tiếp nhau bùng cháy, mọi người sợ rằng nếu gió cứ thổi đúng hướng này, nhiều trang trại bị thiêu rụi giữa vùng Durilgai và Bangalay.
+</p>
+
+<p>
+ Bọn trẻ kể xong, ta có thể nghe thấy chúng thở trong khi nhìn mọi người và mong họ làm điều gì đó.
+</p>
+
+<p>
+ Dĩ nhiên họ sẽ làm. Chỉ có điều là trước mắt, mặt họ nhăn nhó, như muốn phủ nhận sự tồn tại của những đám cháy. Nhưng trên sườn đồi cháy đen thui lồ lộ trước mắt bọn trẻ, những đôi mắt rõ ràng chỉ quen nhìn sự thật, mỗi người đều nhớ đến ngôi nhà của mình, ngôi nhà làm bằng gạch, bằng gỗ, sắt, hay bằng vỏ cây, mà cho đến lúc này họ vẫn coi là bền vững, cùng tất cả những đồ vật mà họ vun vén, nếu không có chúng thì không còn là họ nữa. Vậy là sau khi vê một nhúm thuốc lá sợi, hoặc nhai một miếng chuẩn bị cho chuyến đi, họ thắng yên ngựa hoặc đóng chúng vào cỗ xe, ngay sau đó lên đường về nhà.
+</p>
+
+<p>
+ Suốt cả vùng đó đến tận phía tây Durilgai, qua con đường lên dốc từ Bangalay như ngập trong lửa. Một cơn gió thổi ngược không có vẻ sẽ ngừng đêm đó hỗ trợ cho ngọn lửa, tuy yếu hơn, kém dữ dội hơn và không còn bạo liệt, nhưng lại cương quyết hơn ngọn lửa đã thiêu cháy Hải Đảo. Cánh đàn ông bắt đầu cảm thấy chân tay đau nhừ, mắt nhức nhối khi đi về nhà và về hướng đám cháy mới, nên họ cáu kỉnh với vợ lúc các bà tiến đến cổng nhà kể cho họ nghe những điều đã thừa biết. Lúc nhảy từ trên ngựa xuống và bước trên đôi chân gần như quỵ, họ lãnh trách nhiệm nặng nề không thể nào rũ bỏ được. Những con bò, kích động vì đám cháy và trước cảnh người chạy ngược xuôi tán loạn, cũng cuống cuồng chạy lại phía họ. Những con chó già nằm nhà trườn qua hàng rào và nhe răng giữa những tiếng sủa khàn khàn. Bọn trẻ con reo hò. Nỗi chờ mong và sự tiếp đón bao quanh làm họ lúng túng. Họ muốn được chui vào đâu đó ngủ một giấc.
+</p>
+
+<p>
+ Sau khi ăn vội ăn vàng món thịt các bà vợ đặt trước mặt, súc miệng và ợ mấy lần liền, cánh đàn ông bắt đầu bàn luận xem nên đi đâu tiếp, vì ông lão Peabody dường như đã cạn nguồn cảm hứng, hay lão dỗi chăng. Dẫu sao lão cũng biến mất. Một số người lên ngựa và đi về phía Durilgai, ít ra cũng để có mặt ở khu trung tâm, nơi chỉ vỏn vẹn có cái cột chỉ đường, bưu điện và cửa hàng. Nhưng bà trưởng trạm bưu điện lại vui mừng. Bà ta vàng vọt hơn trong thứ ánh sáng cuối ngày đó. Bà lao vào bụi, khoanh tròn đôi tay áo giấy nâu, và có thể thông báo tin bà nhận được từ những người vãng lai. Bà ta thật quan trọng.
+</p>
+
+<p>
+ Đội canh phòng tụ tập và đi quanh quẩn, những ai sống xa hơn thì nỗ lực tìm kiếm một người láng giềng cho có bạn. Trong buổi tối mờ dần, không thấy hướng đi nào rõ rệt. Tro tàn bay lơ lửng và rơi xuống bãi cỏ héo úa.
+</p>
+
+<p>
+ Rồi đám cháy mở đường. Rõ ràng là nó đang hướng về khu sườn đồi dẫn đến vùng Glastonbury. Gió làm cho lửa bùng to lên. Phía dưới thung lũng, những lưỡi lửa tươi vui thè ra từ những cái miệng tối đen và liếm láp. Hoa văn ánh vàng từ những bụi cây tối hiện ra khi bóng chiều thẫm dần. Trên trời, mặt trăng một mầu bờn bợt, nghiêng nghiêng và hối lỗi trên cành cây trắng bệch.
+</p>
+
+<p>
+ Lúc này những ai chống chọi hay theo dõi đám cháy bắt đầu tiến về Glastonbury, cả trẻ con nữa, cứ như đi xem pháo hoa. Có mấy bà còn đang đi dép trong nhà cho thoải mái, và cũng vì đám cháy đã rất gần. Nhưng những người đàn ông, đã từng nhìn vào đáy sâu thẳm của đám cháy hôm đó và nhìn thấy những gì có trời mà biết được, mắt họ sâu hoắm và nghiêm nghị. Mặc dù đám cháy không xa, hầu hết bọn họ đều ngồi dí trên ngựa, vì như thế họ có thể ở trên hẳn mặt đất. Buổi tối vang vang tiếng hàm thiếc ngựa kêu leng keng, bàn đạp yên ngựa kêu xủng xoẻng, rồi tiếng thở và tiếng nói chuyện. Ông Armstrong vui mừng thấy tất cả mọi người đi qua cánh đồng và ngược lên con đường, và lo thưởng cho họ thế nào nếu dập tắt được đám cháy.
+</p>
+
+<p>
+ Mấy ngọn đèn vẫn sáng trong ngôi nhà lớn, vì không ai thật sự tin là có thảm họa, còn một số người cố tìm lối thoát. Nhưng dầu có tràn trề hy vọng đó, phần lớn những người ở trong nhà đều ra ngoài. Những con bướm hay những cái mũ của cánh hầu gái lập lòe trong các lùm cây, và thỉnh thoảng lại vang lên tiếng cười khúc khích từ một bộ ngực đầy đặn, trong khi linh hồn cô hầu gái cố vật lộn thoát khỏi cái áo đồng phục và tiếp nhận định mệnh trong bóng tối. Cô bếp chẳng có gì để mất ngoài cái hộp sắt tây, nên cô đã chạy đến hơn nửa đường để mặt đối mặt với đám cháy. Hai bàn tay thô của cô lần đầu tiên sờ vào các thân cây, đặc biệt là những cây ứa nhựa. Chẳng bao lâu cô đã biến mất, trừ có tiếng khúc khích kéo dài bất cứ khi nào cô vấp phải những người khác, hay có lần lao đầu vào bụi cây gai, tóm lấy nó, há hốc miệng ngoạm cả lá cây và hoảng sợ ôm chầm lấy nó.
+</p>
+
+<p>
+ Ở dưới thung, nơi người ta hay ngắm nhìn vào những ngày êm ả từ Glastonbury, đàn ông đã lên đường đi chữa cháy, họ nối đuôi nhau thành hàng như khe suối hẹp, hy vọng nghĩ ra một kế hoạch trước khi họ tới nơi. Bóng tối đã cướp đi của họ khả năng suy tư và cả hành động nữa. Họ không hào hứng nghĩ về những kỳ tích có thể diễn ra. Họ bị đám cháy nuốt chửng không thương tiếc. Lửa đang lan đến các thân cây và rơi từ chạc ba xuống, lăn giữa bụi dương xỉ chết héo thành những quả cầu thiên biến vạn hóa, rồi tản ra thành những tia lửa, tan rồi lại hợp, nhưng trong bất cứ hoạt động nào, che đậy dưới bất cứ hình thức nào, nó vẫn luôn luôn bùng cháy. Đối mặt với ngọn lửa hừng hực khí thế, cánh đàn ông chẳng có lấy một hy vọng. Bộ mặt nhẵn như da thuộc của họ trống rỗng vì mệt và tràn ứ vì sợ, nó bộc lộ mỗi khi ngọn lửa lao đến gần. Một số vội bẻ cành cây đập lửa, nhưng chẳng khác gì những kẻ không có chìa khóa dây cót vặn cho chân tay cơ khí của họ hoạt động. Sự thiếu lòng tin mâu thuẫn với hành động của họ.
+</p>
+
+<p>
+ Tuy nhiên trên ngôi nhà đó, mọi người đều yên lòng thấy đám đàn ông đã đi chữa cháy, trong ấy có nhiều người to lớn và khỏe mạnh. Mabel Armstrong, người đã đốt cuốn nhật ký tối hôm đó, lại nhớ đến tay chỉ huy tàu mà cô mang lòng yêu thương trong chuyến du lịch. Cô nửa vui mừng, nửa run sợ trước cảnh hỗn độn của buổi tối, những cái xác hôi thối xếp đống ở trên bãi cỏ của ngôi nhà lúc cô bước giữa đám người đứng xem và tươi cười với họ. Chẳng ai thấy cảm kích cả. Cảnh tượng đó quá giả tạo đối với họ lẫn những người chủ nhà. Mấy phụ nữ đã ngồi đàng hoàng trên ghế. Trẻ con nằm ngủ la liệt trên bãi cỏ cháy giòn, hoặc ngồi nhìn chăm chú vào ngôi nhà như thể chúng có thể đập vỡ một mảnh và mút mát. Mabel Armstrong, với đôi mắt xanh nhàn nhạt trở nên sâu hơn trong bóng tối, bắt đầu cảm thấy xấu hổ về một tấm thảm trên đó có những người đi săn thổi tù và liên hồi và những bà quý phái mặc váy phồng đứng cầm quạt, những viên sáp thơm và những thứ hợp thời khác không rõ để làm gì. Mabel Armstrong quay lưng về phía cửa sổ sáng đèn, hướng về phía đám cháy. Lúc này nó như gầm rú, làm nổi lên những bóng người lốm đốm đen tay cầm cành cây cháy thui, nom đến buồn cười. Mabel Armstrong lúc này đứng trơ trọi một mình trong đám đông, cô chắc hẳn muốn được hôn. Nhẽ ra cô có thể ôm đầu người yêu mình và rút cạn sinh lực của anh ta. Nhưng hồi đó cô không yêu anh, tuy có tạm hứa hôn vì chức tước, chứ không phải bây giờ.
+</p>
+
+<p>
+ Đám cháy đã lan đến đâu rồi, điều này có thể nhìn thấy qua bóng người đen ngòm mỗi lúc một to và rõ trước ngọn lửa. Hành động nghiêm trọng của họ lúc này có thể được theo dõi tỉ mỉ trong im lặng ngỡ ngàng.
+</p>
+
+<p>
+ Thực tế là những người chữa cháy đã không những kiệt sức mà còn bị ngọn lửa làm cho mê muội. Họ nhìn chằm chằm vào đó, vào cái vòm lửa vàng chói há hốc miệng và xuyên thẳng qua rừng cây. Vài người lúc này đã quá thờ ơ, nên nhẽ ra họ phải chui vào lửa, hiến thêm nắm xương tàn. Hầu như tất cả đã chịu bùa phép của đám cháy rừng. Họ bị ngọn lửa điều khiển, chứ không phải ngược lại.
+</p>
+
+<p>
+ Vì thế họ luôn luôn rút lui, trông cứ như những cánh tay của họ đang dang ra đón lấy ngọn lửa, bỗng Stan Parker ở phía cánh trái nhìn dọc theo cánh vai trần kêu lên:
+</p>
+
+<p>
+ - Ô kìa, lửa đang bốc từ khe Barrel kìa!
+</p>
+
+<p>
+ Những hình người như nhền nhện mắc kẹt nhìn xuống phía bên trái, thấy rõ cánh tay lửa thứ hai. Lửa lan tới gần, mà chắc hẳn do đợt gió lớn, ta có thể thấy họ sẽ bị mắc kẹt trong cái hố lửa dưới Glastonbury, bị bao vây, nướng cháy những thân hình kia, nơi ý thức quằn quại của họ bên trong cũng biến mất.
+</p>
+
+<p>
+ Vậy là mọi người theo tự nhiên chạy ùa trở lại, cho đến khi họ đứng trên bãi cỏ trong vườn, giữa đám khói mà họ cuốn theo và họ bắt đầu đưa ra những câu hỏi. Chẳng ai trả lời được mà cũng chẳng có ai thật sự muốn được nghe câu trả lời, nhưng hỏi là để tự trấn an mình. Lửa lan tràn. Nhiều khán giả giờ này đang đứng sang một bên, và chẳng mấy chốc lại rồng rắn kéo về nhà, cứu lấy những tấm nệm.
+</p>
+
+<p>
+ Ngược con đường trải sỏi có vài người tình nguyện đang kéo cái guồng trên có cuộn một ống nước. Ống nước này có nối với một vòi nước chảy yếu, từ đó vọt ra những tiếng ục ục đầu tiên và một con ếch, rồi một dòng nước nhỏ từ từ chảy. Nhưng thế cũng tốt rồi. Ngọn lửa dưới đồi lan từ ngọn cây này sang ngọn cây kia rồi trùm lên tất cả, lại thêm lửa từ khe Barrel tràn đến khu lũng này, lửa và khói quyện vào nhau.
+</p>
+
+<p>
+ Lúc này căn nhà lớn tối mờ mịt, chạy quanh là ông hàng thịt và bà vợ. Bà Armstrong đã đánh rơi hộp trang sức đâu đó, nhưng đã quên, chỉ nhớ mình còn chưa trả Chúa Trời nhiều món nợ. Hai bàn tay đeo kim cương của bà ta rẽ khói, và bà ta khóc thút thít trước cảnh điêu tàn.
+</p>
+
+<p>
+ - Có lẽ gió sẽ đổi hướng, - một thiếu phụ đứng đó bình tĩnh nói, - hay giông bão sẽ nổi lên, bà ạ. Nghe gần lắm, tiếng sấm ấy mà.
+</p>
+
+<p>
+ - Không bao giờ có chuyện như vậy, - bà Armstrong thở dài. - Không có đâu. Tôi biết.
+</p>
+
+<p>
+ Rõ ràng là bà ta đúng. Người thiếu phụ kia chăm chú nhìn bà ta trong bóng tối mờ khói.
+</p>
+
+<p>
+ - Tôi chỉ muốn mang ra một cái ghế bành để ngồi cho thoải mái thôi, - người vợ ông hàng thịt nói. - Kiểu Louis này hay Louis nọ đều tốt đấy. Nhưng một cái ghế êm thì không phải cứ có tiền là mua được. Tôi có một cái ghế mà tôi sẵn sàng ngồi suốt ngày, cứ như đấy là thân thể mình ấy. Nhưng, - đột nhiên bà ta thoát khỏi nỗi hoài niệm và nói, - Madeleine ở đâu rồi? Suốt tối nay không thấy cô ta đâu?
+</p>
+
+<p>
+ - Madeleine à? - Amy Parker hỏi, vì chính chị là người thiếu phụ đứng đó.
+</p>
+
+<p>
+ - Vâng, - bà Armstrong nói, - vợ chưa cưới của con trai tôi. Đã mấy tuần nay cô ta ở nhà chúng tôi mà.
+</p>
+
+<p>
+ Cứ như những người khác không biết.
+</p>
+
+<p>
+ - Madeleine! - Bà Armstrong gọi, khập khiễng đi trên hai mắt cá sưng tấy, hỏi hết người này người nọ.
+</p>
+
+<p>
+ Nhưng không ai biết.
+</p>
+
+<p>
+ - Không biết, - Mabel Armstrong nói. - Con không nhớ lần cuối con trông thấy chị ấy là ở chỗ nào. Chị ấy bị đau đầu, chị ấy nói sẽ ra vườn, con nghĩ chắc để hóng mát. Nhưng con thấy chị ấy trong buồng đọc thư. Chắc trước khi đấy thì đúng hơn. Hay sau đó nhỉ? Con không nhớ chính xác nữa, - Mabel Armstrong nói.
+</p>
+
+<p>
+ Cô cảm thấy tội lỗi, mặc dù chẳng có lý do gì. Khi lửa tràn đến gần hơn, và khói dày đặc xộc vào mũi, làm nó sưng phồng lên, cô ta nảy sinh nhiều cảm xúc không sao giải thích nổi, cũng không kiềm chế được những thôi thúc dù rất muốn. Cô ta vướng vào cái gì đó rách cả quần áo, và nước từ vòi phun vào ngôi nhà làm ướt cả ngực cô cho đến khi cô như trần truồng. Giờ đây chẳng có lý do nào để thương tiếc Madeleine, dù sống hay đã chết, hoặc thậm chí đang bước xuống gác, cái hành động mà mọi người thường nhìn đầy ngưỡng mộ - chỉ bắt đầu mở miệng khi đã xuống tới bậc cuối cùng.
+</p>
+
+<p>
+ Nhưng Amy Parker, người đã mơ thấy Madeleine, đã nói chuyện với cô ta vào những giây phút mộng mị đầy phấn chấn, biết là cô ta ở trong nhà. Nằm trên giường, hai mắt nhắm lại, hay nhìn lửa cháy qua cửa sổ trong một tâm trạng hoang mang, bộ tóc dài của cô ta buông thõng.
+</p>
+
+<p>
+ - A a a a! - Mọi người kêu lên. - Có nhìn thấy không kìa? Không gì cản được lửa lan tới nhà rồi. Những cây thông già kia sinh ra để cháy.
+</p>
+
+<p>
+ Những cây thông đứng đợi, sẵn sàng hiến dâng cho ngọn lửa. Ngọn lửa tràn tới từ khe Barrel, hiện thành mấy hình thù phức tạp, rồi áp sát vào những cây thông đứng túm tụm. Cái ôm này làm bùng lên ngọn đuốc rực lửa soi tỏ mọi gương mặt trong những đường nét bí mật nhất, cô Mabel Armstrong đưa cánh tay che ngực.
+</p>
+
+<p>
+ Sau đấy bà Armstrong lúc đó đang há hốc miệng và ngây ngất trong mùi nhựa thông cháy, bắt đầu kêu cứu.
+</p>
+
+<p>
+ - Tôi phải tìm cô gái, - bà ta nói. - Tom sẽ không bao giờ tin. Nó mới mua cái nhẫn vào hôm thứ tư trước.
+</p>
+
+<p>
+ Amy Parker nhìn thấy những viên kim cương bao quanh bởi lửa.
+</p>
+
+<p>
+ - Stan, - chị nói, chạm vào chồng, anh đang bước lên phía trước khi những cây thông đã bén lửa, để được ở bên chị trong cảnh hỗn mang này. - Anh Stan, - chị nói, - anh vào nhà và đưa tiểu thư đó ra đi. Anh biết mà, người cưỡi ngựa đi trên đường nhà mình đó. Có bộ tóc hung hung ấy.
+</p>
+
+<p>
+ Lúc ấy Stan Parker không sẵn sàng làm mọi điều vợ mình yêu cầu. Trong cảnh ánh sáng huy hoàng lộng lẫy làm vậy, anh trông mờ nhạt, và thụ động, anh biết rõ thế. Anh đang đứng đợi, không phải để cho mà là để nhận. Hai bàn chân anh đứng bắt rễ trong sự ngỡ ngàng. Những mạch máu của anh gần như đông lại. Vậy là vợ anh phải chạm vào anh lần nữa, chị làm việc đó một cách uy nghi vì biết rõ con người anh. Nhưng người chồng đang cầu khẩn đó sẽ không động đậy đâu, ngay cả lúc ấy, nếu bản thân anh không bị lửa bén vào. Liệu để bị lửa thiêu cháy có tốt hơn không? Anh giũ những hòn đất khỏi hai bàn chân mà anh chưa bao giờ cất bước đi xa. Những chiếc màn gió bay tung ra ngoài, được giữ lại chỉ bằng những chiếc vòng móc. Những ánh đèn dịu như ngọc để lộ mấy ô cửa sổ, nhấp nháy một cách buồn bã, đối lập hẳn với ngọn lửa bùng cháy dữ dội. Tất cả những gì anh chưa từng làm, tất cả những gì anh chưa từng nhìn thấy đều dường như bị giam hãm trong ngôi nhà này, và nó đang mở ra trước mắt anh. Cho đến khi đầu anh choáng váng trước vẻ huy hoàng rực lửa của chính ngôi nhà đó, anh lại sẵn sàng nhận lời mời chào và đi theo lối dẫn đến ngôi nhà, hay đến với ngọn lửa, đến bất cứ hậu quả nào có thể xảy ra.
+</p>
+
+<p>
+ - Anh sẽ cố xem sao, - anh nói và bắt đầu bước qua đám cỏ giòn, trong khi đó bà Armstrong hét to chỉ đường, nhưng anh không nghe theo.
+</p>
+
+<p>
+ Amy Parker thấy mình không còn điều khiển được chồng, và có lẽ chị đã làm điều gì đó ngu xuẩn, mà đối với việc đó mà, sự can đảm của anh chỉ là điều an ủi duy nhất.
+</p>
+
+<p>
+ Mọi người đều rất vui mừng khi thấy Stan Parker đảm nhận một việc tích cực. Họ đã trút được gánh nặng. Giờ đây họ có thể tận hưởng cảnh tượng đó mà không thấy lương tâm cắn rứt. Họ thở phào và người nào yên vị người nấy, thậm chí cả những người đang chĩa vòi phun nước yếu ớt vào ngôi nhà như là khúc dạo đầu cho buổi lễ rửa tội khác, đã để cho nước phun vô mục đích khi họ nhìn Stan Parker đi vào trong nhà.
+</p>
+
+<p>
+ Một sự im lặng ngự trị trong ngôi nhà, mà số phận đã giữ lại khi đám cháy vật lộn với những cây thông đầy tự nguyện. Đó là sự im lặng không thoải mái, mặc dù có đôi chút chuyển động trong đó. Một con mèo lôi một cuộn len từ lòng ghế bọc thảm và đang nghịch với nó trong một căn phòng yên tĩnh, lôi sợi len xám dài làm rối linh tinh. Bầu không khí cũng mờ mịt, xoắn xít như vậy với những sợi len xám của luồng khói xám xịt. Những sợi len cuốn quanh ngọn đèn chùm. Một sợi dài sổ ra ở dưới cửa ra vào, đã lôi cuốn con mèo sắt đá lao vào chộp lấy và luồn qua.
+</p>
+
+<p>
+ Vào đến nơi Stan Parker không còn nghi ngờ về việc mình phải đến. Ánh đèn hắt ra từ ngọn đèn còn sáng bỏ lại bên một quyển sách làm anh to lớn hơn bình thường. Lúc bước đi, bóng anh quyện vào với ngọn đèn chùm nằm im lìm, nhấp nháy yếu ớt. Anh mỉm cười trong cảnh ảm đạm của cái hang du dương này, nơi anh đang đứng, và nhớ đến vở kịch Hamlet mà anh đã đọc trong một quyển sách của mẹ, bà là cô giáo, và đã quên rồi, cho đến lúc anh bước qua ngôi nhà đầy thơ mộng mà anh chỉ cần sờ vào cửa là chúng sẽ mở ra.
+</p>
+
+<p>
+ Anh đi từ phòng đó, gỡ nhẹ một tấm thảm run rẩy bên vai, nó lay động và lấy lại sự vĩnh hằng. Mọi thứ trong nhà đều vĩnh cửu vào đêm hôm đó, nếu ta có thể quên đi ngọn lửa. Thời gian êm ả qua các lối đi, đặc biệt ở phía cuối trong những hốc dựng những cái chổi, treo những cái áo khoác mùa đông giữ khư khư không dám mặc và những bộ quần áo bằng da cũ mèm, trầy xước. Có một con ngựa đụng vào thì khẽ bập bênh và ở bụng nó có cái gì kêu lẻng kẻng. Một cái mũ rơm phụ nữ rách bươm như xơ mướp treo ở trên móc vẫn còn đượm mùi hoa hồng và nắng. Cái bóng tối che chở đó kín đến nỗi khói vẫn chưa luồn vào được, nên không thể sợ hãi được. Ta lắng nghe tìm kiếm những tiếng nói từ phía bên kia tường của những người chưa chết.
+</p>
+
+<p>
+ Vì thế anh phải lướt mình ra khỏi những lối đi đó và quay trở lại với tình cảnh tuyệt vọng. Mở toang cửa, anh bước vào trong một phòng dài gần những chiếc gương run rẩy và những cái ghế lạnh lùng. Đôi ủng dính đất của anh trông đến ngượng trong khung cảnh đó. Nhưng lúc này đâu có hệ trọng gì. Nếu thời gian có ngưng đọng trong lối đi ngột ngạt, thì ở đây nó lại chảy tràn trề. Bên ngoài cửa sổ của căn phòng có một cây tuyết tùng, ta có thể nhìn rõ vỏ cây của nó với nốt sần sùi và kẽ nứt cuối cùng khi ngọn lửa bén đến sáng rực cả bóng tối, và những đám mây khói đỏ lướt trên những cành cây, lơ lửng xong lại trôi, rồi lùa vào phòng. Anh giống như cây cũng bị đưa đẩy, chắp vá ký ức cố nhớ lại nhiệm vụ của mình. Dĩ nhiên anh đến để tìm kiếm người nào đó, đang ngồi đâu đây trong một căn phòng, mặc nhung lụa và đeo những hạt kim cương. Nếu cô ta không mong anh nói, anh sẽ bế cô ta chạy nhanh xuống dưới, cặp vào bên sườn như ôm bó lúa yến mạch. Nhưng anh sợ cô ta sẽ chờ anh tự giới thiệu. Và đụng chạm. Anh đã cảm thấy ngại ngùng khi chạm vào làn da mịn của cô ta.
+</p>
+
+<p>
+ Bên ngoài ngọn lửa đã chiếm được một vị trí mới. Có cái gì đó làm gãy một cành, thậm chí cả cái cây, và toàn bộ luồng ánh sáng lòa đến chói mắt bắn tung vào phòng, nơi thực ra anh đang mơ mộng đôi chút, làm anh tỉnh như sáo và lùi lại, va phải cái đàn hạc mà chẳng ai chơi bao giờ. Nỗi u sầu đến rùng mình khi nhớ đến chiếc đàn hạc lập tức đẩy anh ra khỏi phòng để tìm kiếm.
+</p>
+
+<p>
+ Giờ đây bóng tối đã sáng hơn trong lòng căn nhà mà Stan đã cố chạy qua, đến bên cầu thang, loạng choạng, lảo đảo, bàn tay như bắt lửa quờ quạng bám lấy lan can, cảm thấy chiếc áo sơ mi phần phật bên mạn sườn khi anh tiến hành một nhiệm vụ huyền bí, trong bầu không khí trong lành ở những căn phòng trên gác. Ở đây ánh lửa cũng lùa vào sáng lòa. Những đồ đạc lớn hắt bóng lù lù, màu gỗ gụ ngời trong ánh sáng đó và cái giường sắt bình thường mà ông hàng thịt chọn để tự hành xác sám hối cũng ánh vàng lên trông trang trọng khác thường.
+</p>
+
+<p>
+ Khi đạt đến cực điểm, hơi thở của vị cứu tinh hay của kẻ bị hy sinh cũng không rõ là ai, dồn dập hơn. Anh lê đôi ủng nặng nề nghe ầm ầm hất tung các cánh cửa thậm chí đá cả đồ đạc. Quang cảnh những cái buồng này đều hỗn loạn trong lúc những người chủ của chúng vội vã bỏ chạy, nào ngăn kéo để ngỏ, các tủ đựng mở toang cửa, bí mật bị lộ hết… Cái đẹp co rúm lại, héo hon trong các lọ hoa không còn ánh phản chiếu trên bàn trang điểm. Có ai đó xõa mái tóc trên thảm, để nó nằm đấy trông còn uể oải hơn lúc xưng tội, khi ngọn lửa ập tới phòng và liếm sạch nó.
+</p>
+
+<p>
+ Song không kịp, Stan Parker như một cơn gió đã lao vào giữa nhà, nhìn thấy cô ta đang đứng đó, lưng quay lại phía anh bởi vì lửa là vấn đề quan trọng nhất.
+</p>
+
+<p>
+ Madeleine mặc một chiếc áo dài rộng ngời sáng giữa ánh lửa lấp lánh cùng muôn vàn ánh sáng khác. Tóc cô ta xòa trên bờ vai vì lúc chiều cô ta đã thả tóc do tiết trời nóng nực. Cô ta quay lại phía anh vì không thể tránh được, khiến anh thấy chưa bao giờ mình thấy cái gì lại lóng lánh và mượt mà như người phụ nữ trong bộ đồ lộng lẫy này. Anh đứng đó ấp úng không sao nói được, và gần như hy vọng thảm họa tràn đến thiêu cháy cả hai người. Hoặc trần nhà sụp đổ xuống.
+</p>
+
+<p>
+ Nhưng Madeleine đã nói:
+</p>
+
+<p>
+ - Tôi đang ngắm lửa. Nó đã tràn vào các lớp học ở cái trường phía dưới kia. Có một quả địa cầu cũ làm bằng giấy bồi mà các bé gái dùng để học biết tên các thủ đô dường như biến thành khói rồi. Thật khủng khiếp!
+</p>
+
+<p>
+ Nhưng có thể không phải. Lời nói của cô ta tuôn ra từng đợt, chậm rãi, vừa ghê tởm, vừa vui mừng, phát đều đều từ cổ họng trước khi chúng ùa ra, hoặc có thể là ánh sáng làm cho cô ta mềm mại hơn. Miệng cô ta khá mỏng, cứ hé ra sau khi đã giãi bày. Madeleine không thích cái miệng mình và ước gì nó đầy đặn hơn, mặc dù chẳng có ai coi đó là một khuyết điểm cả. Dung nhan hoàn mỹ của cô chẳng vì thế mà suy giảm.
+</p>
+
+<p>
+ Stan Parker không nghe những lời cô ta nói, vì nó không cần thiết. Những chùm lửa bắn tung tóe qua cửa sổ cùng với khói màu đỏ tía. Đó là một niềm an ủi vì anh không cần nhìn vào Madeleine nữa.
+</p>
+
+<p>
+ Anh nói:
+</p>
+
+<p>
+ - Họ phái tôi đến đưa cô ra. Nên chúng ta không thể lãng phí thời gian nữa. Chúng ta phải nhanh chân kẻo lửa bén đến cầu thang. Nào, theo tôi, tôi sẽ đưa cô xuống.
+</p>
+
+<p>
+ - Ồ, ra họ phái anh đến, - cô ta nói.
+</p>
+
+<p>
+ Cô ta tiến lại chỗ anh, giẫm lên những lá thư cũ mà cô ta đã đọc và vứt vương vãi. Cô ta tiến lại nhưng không phải vì vâng lời.
+</p>
+
+<p>
+ - Dĩ nhiên sự có mặt của tôi ở đây kể cũng buồn cười thật. Mà tôi không biết tại sao mình lại thế, chắc hẳn anh cho là tôi điên.
+</p>
+
+<p>
+ Đó chính là điều anh sợ hãi. Nhưng cô ta chưa đến gần, vì vậy anh khua đôi chân và tìm hành động thay thế để khỏi phải đụng chạm.
+</p>
+
+<p>
+ - Có những giây phút điên rồ, - cô ta nói, - trong bất cứ một ai.
+</p>
+
+<p>
+ Nói xong cô đến cạnh anh, và anh thấy lớp da quanh mắt cô vừa mới lau khô, khiến anh lại càng nghi ngờ hơn, để được trao gửi một niềm bất hạnh.
+</p>
+
+<p>
+ - Tôi hy vọng mình chung quy không phải là của nợ. - Madeleine nói.
+</p>
+
+<p>
+ Cô ta sẵn sàng theo anh, nhưng không tin anh có thể cứu được mình. Mọi hành động thực tiễn và chân thành của anh, cô chỉ tiếp nhận với vẻ mỉa mai. Nhưng do đó khiến cô buồn, mặc dù cô không muốn như vậy.
+</p>
+
+<p>
+ Điều ấy làm anh suy nghĩ phân vân vì ngoài tầm hiểu biết của bản thân, liệu anh có tìm ra được lối thoát không nhưng rồi khả năng đó trôi mất như một cái bóng qua khung cửa.
+</p>
+
+<p>
+ - Nếu chúng ta đi theo lối này, - anh nói khẽ với cô ta, - tôi nghĩ chúng ta sẽ tìm được đường ra đằng sau nhà.
+</p>
+
+<p>
+ - Để tôi chỉ cho anh, đây là lần đầu tiên anh đến ngôi nhà này. - Cô ta nói. Dù đúng hay không vẻ kiêu ngạo của cô khẳng định điều đó. - Đi qua cánh cửa bọc vải nỉ, là đến đó… Không phải đến chỗ cầu thang dành cho người hầu đâu, - cô ta dịu giọng, - mà là đến cầu thang sau nhà.
+</p>
+
+<p>
+ Cô ta cũng trở nên dịu dàng hơn, tử tế với anh, tự tay mở cánh cửa ngột ngạt ngăn cách các đẳng cấp. Nhưng lửa cũng đã đến đó rồi. Nó đã bén đến làm gãy gục lớp gỗ thường ở cầu thang dành cho người hầu. Nó bùng lên tìm kiếm vật mới khác để thiêu cháy. Người đàn bà và người đến cứu đứng nhìn xuống, mắt mở to lấp lánh vàng. Rồi khi đám cháy phát triển thêm, đôi mắt họ biến dạng, và họ đứng sát vào nhau để lấy thêm sức mạnh và sự động viên nhau.
+</p>
+
+<p>
+ - Hình như phải đi ngược lại, - Stan Parker nói.
+</p>
+
+<p>
+ Vì ở đây chỉ còn con đường cùng duy nhất. Họ quay lại đi qua những buồng nhỏ, nơi những người hầu gái vào thay mũ, rửa ráy và để mơ mộng xem bói bằng lá trà. Ảnh hoàng gia và các vị thánh được đính trên tường đã mất quyền lực. Chỉ còn lại giấy, mất hết vẻ huyền bí và bị ruồi bâu lốm đốm.
+</p>
+
+<p>
+ Madeleine đi nhanh. Cô cầm tay anh, vừa đi vừa chỉ cho anh xem mọi thứ:
+</p>
+
+<p>
+ - Khi còn bé, vẫn phải bế ẵm, tôi nghĩ là mình bị kẹt trong đám cháy, - cô ta nói, giọng hơi to, sẵn sàng chia sẻ với anh mọi thứ mà cô nghĩ ra. - Tôi vừa mới nhớ ra. Chính ánh lửa trên những bức tường trắng cao này. Tôi có thể nhớ đến một cái lồng chim, nhưng không nhớ những gì đã xảy ra. Theo tôi điều đó quá khủng khiếp. Giờ lại lâm vào đám cháy thứ hai, - cô ta cười, hất mái tóc đen, hơi đỏ ra sau khi lửa chiếu đến. - Đối với tôi hình như là số phận đã định rồi. Còn anh… - Cô ta dừng lại.
+</p>
+
+<p>
+ Hai người đi đến đầu cầu thang trước, khói hãy còn ngụy trang những ý đồ của đám cháy.
+</p>
+
+<p>
+ - Tôi chẳng biết gì về anh. Anh chưa kịp nói gì. Rồi anh sẽ chẳng bao giờ nói nữa.
+</p>
+
+<p>
+ - Chẳng có gì để nói cả, - Stan Parker nói.
+</p>
+
+<p>
+ Cô ta nom vàng võ, gần như xấu xí, anh đứng rất gần nên nhìn thấy rõ, nó khiến anh thoải mái. Ở một bên mũi cô ta, cái mũi rất đẹp và mảnh mai có một vết nhỏ, như một nốt rỗ hoa. Rồi đột nhiên anh ước ao mình được gục mặt vào da thịt, được hít ngửi, được tách đôi hai bầu ngực của cô và gục mặt vào giữa.
+</p>
+
+<p>
+ Cô ta thấy rõ điều đó. Họ đang cùng bị thiêu cháy ở ngay đầu cầu thang mù khói. Giờ này cô ta phải thừa nhận, không một chút ác cảm, rằng mồ hôi trên người anh đang kích thích cô, và lẽ ra cô phải lọt sâu vào đôi mắt anh nếu có thể được, và không bao giờ quay lại.
+</p>
+
+<p>
+ Hai người bắt đầu giai đoạn cuối cùng của cuộc hành trình, mò mẫm xuống cầu thang mềm mại, qua lớp khói vàng xám, nhầm lẫn bàn tay với thành cầu thang và thành cầu thang với bàn tay. Có lần mắt hai người cùng nhau bơi lượn nhưng lại rụt lại trước khi thừa nhận. Vì cái thế giới mờ ảo của khói và hình dáng lại hiền hòa hơn.
+</p>
+
+<p>
+ Rồi họ ra khỏi, sắp sửa đến nơi an toàn thì lưỡi lửa đầu tiên lùa vào. Họ thở không ra hơi. Giờ đây vẻ đẹp của Madeleine đã nhăn nheo, và mọi khát vọng mà Stan Parker có thể có đều teo lại. Anh nhỏ bé và cô đơn trong thân hình mình khi lôi người đàn bà vàng võ đi.
+</p>
+
+<p>
+ - Đừng, - cô ta nói. - Tôi không thể đi được.
+</p>
+
+<p>
+ Cô ta chỉ muốn ngã gục xuống và bị thiêu cháy, vì như thế chắc dễ dàng hơn.
+</p>
+
+<p>
+ Nhưng anh nhấc cô ta dậy. Không phải da thịt họ chạm nhau mà là xương cốt của họ chạm nhau. Rồi họ quằn quại chạy qua ngọn lửa. Không còn là sinh tồn. Họ bước vào giai đoạn đau đớn và ý thức bị kiềm chế. Chân tay anh tiếp tục tiến lên, trong vô thức. Mang cô ta chạy. Khi răng cô ta cắn chặt vào má anh, nó nói lên cùng một nỗi khắc khoải đau đớn.
+</p>
+
+<p>
+ - Kìa! Anh ấy kia rồi, - mọi người kêu lên. - Họ kia rồi. Anh ấy cứu được cô ta kìa.
+</p>
+
+<p>
+ Những người đứng tụ tập quanh ngôi nhà đang cháy, nhìn theo ngọn lửa, họ xúc động đến cao độ, bắt đầu reo lên những lời âu yếm và đầy khích lệ hoặc họ chỉ reo lên, khi thấy Stan Parker loạng choạng bước ra, ôm theo người thiếu nữ. Họ cháy xém, nhưng họ bỏng đến mức độ nào thì chưa thể biết được.
+</p>
+
+<p>
+ Stan Parker bước tiếp. Anh ôm trong cánh tay thân hình cong queo, cứng đơ của người đàn bà. Anh đi tiếp. Bầu không khí mát lành làm cho anh tỉnh lại, và anh thấy ngượng ngùng trước những gì đã xảy ra.
+</p>
+
+<p>
+ - Cô ấy chết rồi à? - Mọi người hỏi nhau, giọng khẽ khàng.
+</p>
+
+<p>
+ Nhưng cô ta không chết. Cô ta đang gục mặt vào chỗ hõm ở cổ anh, không thể nào dám ngẩng mặt lên nhìn, cho đến lúc cô ta cọ mặt vào cổ anh, gần như hồi tỉnh, rồi ho, rồi khóc.
+</p>
+
+<p>
+ Sau đó anh chàng Tom Armstrong, người yêu của cô ta, người đã vội từ thành phố Sydney về khi nghe tin cháy rừng, liền chạy ra đoạt lấy cô ta. Anh ta trông đẹp trai, sạch sẽ, cổ tay áo màu trắng và nồng mùi rượu rum.
+</p>
+
+<p>
+ - Madeleine, - anh ta gọi.
+</p>
+
+<p>
+ Nhưng cô ta vẫn khóc và ho liên tục, và khi đặt cô xuống, cô nói:
+</p>
+
+<p>
+ - Để mặc em. Không sao đâu. Chỉ bị choáng ghê gớm thôi.
+</p>
+
+<p>
+ Cô quỳ xuống, nôn khan, tay ôm đầu, thậm chí còn bò cả người ra. Hầu hết mọi người im lặng, do kinh ngạc và thương xót, nhưng có một đôi người bật phá lên cười.
+</p>
+
+<p>
+ - Madeleine em yêu, - anh chàng Tom Armstrong nói, cố vượt qua sự ghê tởm của mình, trước mặt mọi người giơ tay ra.
+</p>
+
+<p>
+ - Để em yên. Không phải bây giờ, - cô ta nói.
+</p>
+
+<p>
+ Nói xong cô ta đứng dậy, bước loạng choạng vào bóng tối. Tóc của cô ta bị cháy trụi.
+</p>
+
+<p>
+ - Có phải đây là Madeleine không? Amy Parker tự hỏi, không còn luyến tiếc. Tiểu thuyết của cô ta đã kết thúc.
+</p>
+
+<p>
+ Lúc này thảm họa ở Glastonbury đã có thể thiêu cháy cả những người xem, nếu như không có những tiến triển mới. Rất nhiều thứ đã xảy ra vượt lên khói bụi và xúc cảm. Những đám mây khác lơ lửng trên ống khói, bắt đầu nhả ra những hạt nằng nặng đầu tiên. Một đứa bé đưa tay hứng những viên ngọc và cười vang khi một giọt mưa to rơi vào tay nó. Rồi nó nghi ngờ khi chớp lóe chẻ đôi đám cháy tai hại. Và cuối cùng nó kêu thét lên hoảng sợ khi tiếng sấm rền vang và cảnh tro tàn xám xịt trong đó họ đang đứng, rung chuyển.
+</p>
+
+<p>
+ Đúng là bão rồi, mọi người cười, uống nước mưa, rồi đứng sát vào nhau chống chọi với sấm sét.
+</p>
+
+<p>
+ Rồi mưa như trút nước, chứng minh rằng thậm chí lửa cũng bất lực. Mọi người đi lang thang trong mưa, bản thân họ trở thành những lạch nước. Nước mưa chảy giữa khe ngực của đàn bà và ngập đầy túi của đàn ông. Họ đã được cứu thoát. Họ ngửi thấy mùi tro và biết. Tuy vậy vẫn có thể còn một đám lửa ở phía bên này của Bangalay, hoặc phía bên kia, tận Wullunya.
+</p>
+
+<p>
+ Vì vậy mọi người bắt đầu lui vào cái thế giới mà họ quen biết, nhưng từ đó họ lại buộc phải chui ra do khói ở chính thế giới đó.
+</p>
+
+<p>
+ Amy Parker lại đặt tay lên người chồng, hẳn chị có nhiều chuyện để hỏi anh.
+</p>
+
+<p>
+ - Ta đi thôi, Stan, - chị nói. - Chỗ bỏng có đau lắm không anh? Phải băng bó anh ạ. Nào anh, có đau lắm không?
+</p>
+
+<p>
+ - Không, - anh nói. - Không đau lắm.
+</p>
+
+<p>
+ Mặt anh nhăn nhó khi mưa rơi vào làm đau nhói những vết cháy trên vai và cánh tay. Nhưng đây là những vết thương bên ngoài da. Nếu anh có run lên, chẳng qua là vì anh thoát khỏi đám cháy, người yếu ớt như một đứa bé, và đã nhìn thấy những bộ mặt đầu tiên nhờ có tia chớp. Nhưng anh không quay lại với người đàn bà mà anh đã cùng đứng suốt lúc đó bên đầu cầu thang. Anh gạt ý nghĩ này đi, không nghĩ đến nữa.
+</p>
+
+<p>
+ Nhưng vợ anh vẫn nhớ đến khi họ đi trong mưa.
+</p>
+
+<p>
+ - Cô ấy khiếp sợ, tội nghiệp, - chị nói khi nhìn anh trong bóng tối. - Thật là hãi hùng.
+</p>
+
+<p>
+ Đây chính là sự thể nghiệm mà chị muốn trải nghiệm mà chẳng được. Điều đó cứ làm chị day dứt mãi. Không hiểu Stan đã nói gì với Madeleine khi anh tìm thấy cô ta trong ngôi nhà cháy? Chị khao khát muốn chiếm lĩnh lấy chồng mình bên ánh đèn thành thật, ôm lấy khuôn mặt anh trong đôi tay và nhìn thẳng vào anh.
+</p>
+
+<p>
+ Trong lúc ấy, mưa vẫn trút nước. Hai người bước đi, va vào nhau trong bóng tối, và những tia chớp lóe sáng gương mặt chị đang quay cuồng bao ý nghĩ, còn mặt anh thì khép kín.
+</p>
+
+<p>
+ Vì vậy chị đành phải vui lòng với hành động dũng cảm của anh đã cứu người đàn bà khỏi đám cháy.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-011.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-013.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>
