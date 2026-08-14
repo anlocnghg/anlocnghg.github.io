@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 11 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 11</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-010.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-012.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Con người sống trên đời luôn có hy vọng, hy vọng cũ sẽ cố gắng thực hiện, hoặc sẽ mất đi, hy vọng mới sẽ tiếp tục bùng cháy mãnh liệt. Nếu một người sống từ ngày này qua ngày khác mà không có hy vọng thì cuộc đời của anh ta cũng coi như kết thúc. — Guy de Maupassant (1)
+</p>
+
+<p>
+ (1) Henri René Albert Guy de Maupassant (1850–1893) là nhà văn viết truyện ngắn nổi tiếng người Pháp. Tư tưởng phê bình của Maupassant thường nhắm vào luân lý đạo đức xã hội. Cái nhìn căn bản của ông là đề tài hiện thực, và các khía cạnh về lối tự thuật. Sức khoẻ của Maupassant đã gây nhiều khó khăn cho ông. Từ thời trai trẻ, Maupassant đã mang chứng bệnh giang mai dẫn đến suy đồi thoái hoá, thậm chí còn ảnh hưởng liên tục đến thị lực của ông. Có thể nói, tình trạng sức khoẻ của Maupassant đã khiến ông khủng hoảng trầm trọng và ngã quỵ từ tâm hồn đến thể xác. (wiki)
+</p>
+
+<p>
+ Sáng sớm, Trình Trí Viễn đã chuẩn bị sẵn một bàn thịnh soạn gồm các món Tây Âu đầy đủ màu sắc và hương vị, hai người ăn xong bữa sáng, nghỉ ngơi khoảng nửa giờ thì lên đường về quê.
+</p>
+
+<p>
+ Ngày mùng một đầu năm, hoàn toàn không xảy ra tắc đường, một mạch thông suốt, chỉ đi hơn một giờ đã nhanh đến thị xã của hai người.
+</p>
+
+<p>
+ Nhà của Nhan Hiểu Thần thuộc vùng ngoại ô, trong một thị trấn nhỏ, xe của Trình Trí Viễn không cần đi đến nội thành. Mặc dù có GPS (2), nhưng Lý tài xế vẫn hơi choáng váng, Nhan Hiểu Thần chỉ biết đi xe buýt thôi, căn bản không biết rõ lộ trình về nhà, nhưng Trình Trí Viễn ngược lại rất tường tận thấu đáo, ví dụ như đến chỗ kia thì phải rẽ, đến chỗ nọ thì phải qua cầu.
+</p>
+
+<p>
+ (2) hệ thống định vị toàn cầu, thường các xe hơi đời mới đều có trang bị hệ thống này.
+</p>
+
+<p>
+ Gần đến thị trấn, Trình Trí Viễn nói: “Con đường phía trước tôi không biết, từ đây em biết đường rồi chứ?”
+</p>
+
+<p>
+ “Tôi biết.” Thị trấn nhỏ, đi xe đạp hơn một giờ có thể đi hết, Nhan Hiểu Thần biết rõ mỗi con phố ở đây. Cô nhờ tài xế đưa đến một giao lộ hình chữ “T”, đến nơi thì quay ra nói với Trình Trí Viễn: “Đi vào trong không có chỗ quay đầu xe đâu, anh dừng xe ở đây tiện hơn! Quãng đường còn lại tôi tự đi vào là được rồi.”
+</p>
+
+<p>
+ Bên trong nhà ở rất cũ kỹ lụp xụp, đích thực là không có phương tiện nào lớn như xe hơi ra vào, Trình Trí Viễn không nhiều lời nữa, anh ta xuống xe, xem Lý tài xế mang hành lý của Nhan Hiểu Thần xuống đưa cho cô.
+</p>
+
+<p>
+ Dù là xe của Trình Trí Viễn, hay người như Trình Trí Viễn đều khẳng định là không hợp với con đường này, dĩ nhiên gây sự chú ý với mọi người, Nhan Hiểu Thần để ý thấy trên giao lộ đã có kẻ tò mò nhìn ngó, cô có chút khẩn trương.
+</p>
+
+<p>
+ Trình Trí Viễn hình như cũng nhận biết được, anh ta quay sang Nhan Hiểu Thần phất phất tay, rồi lên xe, “Tôi phải đi rồi, có gì thì liên hệ qua điện thoại.” “Cảm ơn anh!” Nhan Hiểu Thần nhìn theo xe của anh ta đi xa rồi mới kéo hành lý đi vào nhà.
+</p>
+
+<p>
+ Tuy rằng người thị trấn này không giàu có gì, nhưng trên cửa của mỗi nhà đều có dán chữ “Phúc” mới tinh, trên sân đỏ tươi đầy xác pháo, trong góc tường chất đầy đống chai bia hoặc đồ uống, trông có vẻ nhếch nhác lộn xộn, nhưng tất cả đều cho thấy sự sung túc vui vẻ của một phố phường bình dân.
+</p>
+
+<p>
+ Nhan Hiểu Thần đi đến trước cửa nhà mình, trên cửa chính trụi lủi chẳng có gì, so với mấy nhà khác dán đầy chữ đỏ đỏ hồng hồng thật là khác biệt. Cô mở cửa, vừa bước vào đã xộc lên mũi mùi thuốc lá cùng với mùi gì giống như mùi mốc. Cô đặt hành lý xuống, bước lên lầu nhìn thoáng qua, mẹ cô đang ở trong phòng ngủ, xem ra hôm qua đánh mạt chược cả đêm nên bây giờ vẫn còn đang ngủ bù. Nhan Hiểu Thần nhẹ nhàng đóng chặt cửa, rón ra rón rén đi xuống lầu. Cô thay quần áo cũ, bắt đầu quét tước vệ sinh nhà cửa, bận rộn khoảng hai giờ, mùi mốc trong phòng cũng đã nhạt đi một ít.
+</p>
+
+<p>
+ Cô cầm tiền, đi đến tiệm tạp hóa tại giao lộ để mua đồ. Tiệp tạm hóa nhỏ này nằm trong một cửa hàng một lầu ở ngay mặt tiền, nó nằm ở tầng hai, vì làm ăn nhỏ, chỉ cần cả gia đình chủ nhà không đi vắng hết, thì tiệm luôn mở cửa suốt một năm 365 ngày. Nhan Hiểu Thần mua hai cân trứng gà và một thùng mì ăn liền, chủ cửa hàng và nhà của Nhan Hiểu Thần coi như là hàng xóm, họ biết rõ hoàn cảnh nhà cô, hỏi cô có muốn mua rau xanh với hẹ không, là rau tự trồng, Nhan Hiểu Thần quyết định mua hai cân.
+</p>
+
+<p>
+ Mang theo vài thứ về nhà, mẹ của cô đã ra khỏi giường, đang đánh răng rửa mặt.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Mẹ, con vừa mua vài thứ, tối nay ăn cơm ở nhà nhé?
+</p>
+
+<p>
+ Bà Nhan phun phèo một ngụm nước súc miệng ra, thản nhiên nói: “Không ăn!”
+</p>
+
+<p>
+ Nhan Hiểu Thần đã sớm thành thói quen, lặng lẽ xoay người đi vào bếp, tự mình làm cơm chiều.
+</p>
+
+<p>
+ Mẹ của Nhan Hiểu Thần sửa soạn trang điểm xong, cầm lấy túi chuẩn bị đi ra cửa thì nhớ tới cái gì đó, quay đầu lại hỏi: “Có tiền không? Đừng có nói với tao là mày về đây mà không mang theo tiền!”
+</p>
+
+<p>
+ Nhan Hiểu Thần đã sớm chuẩn bị 500 đồng, cô mang ra đưa cho mẹ, nhịn không được nói: “Mẹ chơi mạt chược thì chơi, nhưng đừng có chơi cả đêm, giữ gìn sức khỏe một chút.”
+</p>
+
+<p>
+ Bà Nhan không nói tiếng nào, cầm lấy tiền nhét vào trong túi, hừ một tiếng rồi lừ lừ đi ra ngoài.
+</p>
+
+<p>
+ Nhan Hiểu Thần làm một nồi canh hẹ trứng gà, cùng với mì ăn liền dành cho một người ăn.
+</p>
+
+<p>
+ Dọn dẹp sạch sẽ bát đũa, tắm rửa xong, cô cầm một cốc nước ấm, ngồi trên ghế sô pha xem TV. Vì tiết kiệm điện, công suất của đèn trong phòng khách rất thấp, cho dù có bật đèn thì ánh sáng cũng mờ tối nặng nề; ghế sô pha mua đã lâu năm, mẹ cô cũng ít lau dọn, mùi mốc cũ kỹ cứ thoang thoảng trên mũi của Nhan Hiểu Thần; mùa đông ở miền nam vốn lạnh và ẩm ướt, phòng ở thường xuyên không có ánh sáng mặt trời chiếu vào, càng giống như âm khí lạnh thấu xương, cho dù có mặc áo lông cũng không cảm thấy ấm áp. Nhớ tới đêm qua, cô cùng Trình Trí Viễn hai người ngồi trong căn phòng ấm áp sáng ngời, vừa ăn cơm vừa tán gẫu vừa xem TV, cảm thấy không giống như thật, nhưng cô cũng không biết, rốt cuộc cái nào mới là mơ nữa.
+</p>
+
+<p>
+ Đến lúc cốc nước trên tay trở nên lạnh ngắt, cô mới tắt TV, trở lại phòng mình.
+</p>
+
+<p>
+ Mở chiếc đèn bàn đầu giường, nằm trong chăn đọc sách, buổi tối giết thời gian cũng không khó lắm, chỉ là chăn lâu quá không phơi, hơi ẩm một chút, đắp lên người chẳng có cảm giác ấm áp gì, Nhan Hiểu Thần không thể không quấn chăn quanh người như một cái bánh cuốn.
+</p>
+
+<p>
+ Di động vang lên, Nhan Hiểu Thần nhìn ra là điện thoại của Thẩm Hầu, vô cùng vui vẻ, nhưng ngay sau đó lại có chút mờ mịt, thậm chí không biết mình có nên nhận cuộc điện thoại này hay không. Chần chờ một thoáng, cô nhận điện thoại. “Nhan Hiểu Thần, cậu ăn xong cơm tối chưa?” Giọng của Thẩm Hầu giống như cơn gió mùa hè, vù vù thổi tới, chỉ là qua di động nhưng khiến Nhan Hiểu Thần trong lòng cảm thấy ấm áp.
+</p>
+
+<p>
+ “Mình ăn rồi, còn cậu?”
+</p>
+
+<p>
+ “Đang ăn, cậu đoán xem bọn mình ăn cái gì?”
+</p>
+
+<p>
+ “Đoán không được! Là cá à?”
+</p>
+
+<p>
+ Thẩm Hầu hào hứng nói: “Là cá nướng! Bọn mình lấy hai cái bếp than, để ở trong sân nướng cá, nhắm với rượu Hoa Điêu (3) 15 năm, hương vị rất ư là tuyệt…”Từ trong điện thoại có thể nghe được tiếng cười hi hi ha ha, còn có tiếng đàn dương cầm và tiếng hát, “Con bé em họ của mình đang bắt đầu hát, nó bắt bọn mình ngồi nghe, còn kéo cả thằng em họ chơi đàn, cảm ơn trời nó không rủ mình, mình mà kéo đàn violon giống như là cưa gỗ…”.
+</p>
+
+<p>
+ (3) Hoa điêu tửu: Gốc từ rượu Thiệu Hưng tỉnh Chiết Giang, đã có từ nhiều ngàn năm, là một loại danh tửu của Trung Hoa. Người ta chọn loại gạo ngon nấu thành rượu, để lâu có màu vàng, khi hâm lên mùi rất thơm. Rượu này thường được dùng trong dịp chiêu đãi khách khứa khi con trai của gia đình kết hôn. Nếu nhà nào sinh con gái, rượu này phải đợi đến khi con gái xuất giá về nhà chồng thì mới được đem ra uống, bởi vậy Hoa Điêu còn có tên là Nữ Nhi Hồng. (google)
+</p>
+
+<p>
+ Nhan Hiểu Thần nhắm hai mắt lại, theo lời của hắn, từ từ hình dung ra mình đang ở giữa một căn nhà, đèn đuốc sáng choang, một cô gái xinh đẹp đang nương theo tiếng dương cầm cất tiếng hát, lò lửa hừng hực, có người vội vàng nướng cá, có người cầm ly rượu nhấm nháp. Mặc dù cùng một cái mùa đông, nhưng sao thế giới kia lại ấm áp sáng ngời như vậy, dĩ nhiên càng không có cái mùi mốc khó ngửi.
+</p>
+
+<p>
+ “Nhan Hiểu Thần, cậu vẫn đang nghe mình nói đó chứ?”
+</p>
+
+<p>
+ “Vẫn nghe!”
+</p>
+
+<p>
+ “Sao nãy giờ cậu không nói gì?”
+</p>
+
+<p>
+ “Thì tại vì nghe cậu nói!”
+</p>
+
+<p>
+ Thẩm Hầu cười, “Nói xạo! Mình ra lệnh cậu phải nói!”
+</p>
+
+<p>
+ “Yes, Sir! Cậu muốn nghe mình nói cái gì?”
+</p>
+
+<p>
+ “Mấy hôm nghỉ tết này cậu làm gì?”
+</p>
+
+<p>
+ “Tổng vệ sinh nhà cửa, đi cửa hàng mua sắm, nấu cơm, ăn cơm, lúc nãy cậu gọi điện thoại mình đang đọc sách.”
+</p>
+
+<p>
+ “Đọc sách?”
+</p>
+
+<p>
+ “Ừ.”
+</p>
+
+<p>
+ “Sách gì?”
+</p>
+
+<p>
+ “Fractals and Scaling in Finance.” (Phương pháp thống kê và dự báo trong kinh tế tài chính) (4)
+</p>
+
+<p>
+ (4) Là cuốn sách của Benoit B. Mandelbrot xuất bản năm 1997, cuốn này nói về phương pháp sử dụng các thuật toán lặp lại và các biến số ngẫu nhiên để nghiên cứu các rủi ro về tài chính, chủ yếu ứng dụng trong lĩnh vực tài chính marketing và nhiều ứng dụng khác. Tuy nhiên hiện nay các phương pháp này được cho là lỗi thời. (Cảm ơn người nào đó đã tra dùm mình ^.^)
+</p>
+
+<p>
+ Thẩm Hầu đang háo hức bỗng nhiên hít một hơi lạnh, “Bạn Nhan Hiểu Thần, bạn rất là biết hưởng thụ a~.”
+</p>
+
+<p>
+ Đầu bên kia điện thoại nghe mấy tiếng “Hầu ca”, Nhan Hiểu Thần cười nói: “Cậu còn muốn tiếp tục nghe mình nói à? Mình có rất nhiều đề tài tâm đắc về kinh tế tài chính có thể bàn luận với cậu.”
+</p>
+
+<p>
+ “Được! Cậu từ từ bàn một mình đi! Mình đi ăn thịt dê xiên nướng đây!”
+</p>
+
+<p>
+ “Chào cậu!”
+</p>
+
+<p>
+ “A lô, chờ một chút, mình hỏi cậu một chuyện…Có muốn nướng thịt cùng mình không?”
+</p>
+
+<p>
+ “Muốn!”
+</p>
+
+<p>
+ “Đọc sách và nướng thịt cùng mình, cậu chọn cái nào?”
+</p>
+
+<p>
+ “Nướng thịt với cậu!”
+</p>
+
+<p>
+ Thẩm Hầu hài lòng, “Mình cúp máy đây! Chào cậu!”
+</p>
+
+<p>
+ “Chào!”
+</p>
+
+<p>
+ Nhan Hiểu Thần buông di động nhìn cuốn Fractals and Scaling in Finance bên gối, nhịn không được cười rộ lên, cô chẳng qua không có gì làm nên mới dùng nó để giết thời gian, cùng với trò nướng thịt thú vị kia dĩ nhiên không đáng một đồng, vậy mà Thẩm Hầu lại cho rằng cô quá ham học, tự xuống giá mà đi so sánh.
+</p>
+
+<p>
+ Nhan Hiểu Thần tiếp tục đọc sách, có lẽ bởi vì quyển sách này với việc nướng thịt cùng Thẩm Hầu có liên quan với nhau, nên đọc thấy thú vị hơn nhiều
+</p>
+
+<p>
+ Ngày thứ hai, sau khi Nhan Hiểu Thần rời gường thì thấy mẹ trở về, bà ăn một bát cháo cùng trứng gà luộc, tiếp theo lên giường đi ngủ.
+</p>
+
+<p>
+ Nhan Hiểu Thần thấy thời tiết tốt, lấy chăn nệm ra đập vài cái, xong đem phơi, còn ra giường, vỏ chăn thì đem giặt sạch, tất cả hong thật khô ráo dưới ánh nắng mặt trời.
+</p>
+
+<p>
+ Bận rộn xong hết mọi việc cũng đã hơn 11 giờ trưa, cô chuẩn bị làm cơm trưa, đang nấu cơm thì nghe tiếng di động vang lên, lại là Thẩm Hầu.
+</p>
+
+<p>
+ “A lô?”
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Đang ăn trưa à?”
+</p>
+
+<p>
+ “Còn chưa nấu.”
+</p>
+
+<p>
+ “Có muốn đi ăn cùng mình không?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cứng họng, ngây ngẩn đứng một lúc, vọt nhanh ra cửa, kéo cổng nhìn ra phía ngoài, không thấy Thẩm Hầu, “Cậu có ý gì?” Bởi vì khẩn trương hơi quá, giọng nói của cô cũng thay đổi.
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Cậu rốt cuộc là vui vẻ nhiều hơn hay kinh ngạc nhiều hơn?”
+</p>
+
+<p>
+ Nhan Hiểu Thần thành thật nói: “Không biết, cảm thấy tim đang đập thình thịch nè.” Cô đi ra cửa nhìn chung quanh một lần nữa, xác định Thẩm Hầu chắc chắn không ở gần đây mới thôi, “Mình đang ở trước cửa nhà, không nhìn thấy cậu, cậu trêu mình à?”
+</p>
+
+<p>
+ “Đúng rồi, mình đang dọa cậu thôi! Dĩ nhiên mình không ở gần nhà cậu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần bình tĩnh trở lại, Thẩm Hầu cười ha ha, “Tiếc quá! Rất muốn nhìn thấy cậu hấp tấp vọt ra khỏi nhà rồi đột nhiên nhìn thấy mình như thế nào.”
+</p>
+
+<p>
+ Nhan Hiểu Thần liếc mắt nhìn qua con hẻm nhỏ vừa bẩn vừa lộn xộn, đi lại vào trong nhà, tự giễu nói: “Cậu tưởng đang xem phim lãng mạn à, giống phim kinh dị hơn ấy!”
+</p>
+
+<p>
+ Thẩm Hầu cười nói, “Vốn định dựng nên một cảnh phim như vậy, đột nhiên mình sẽ xuất hiện bên ngoài nhà cậu, cho cậu bất ngờ, nhưng mà kỳ thực lúc làm hơi khó.”
+</p>
+
+<p>
+ “Là sao?”
+</p>
+
+<p>
+ “Mình dựa vào bản đăng ký nhập học hồi năm nhất của cậu, trên đó có ghi địa chỉ nhà cậu, có thể tìm không ra, nhà cậu có dọn đi đâu không?”
+</p>
+
+<p>
+ Tim của Nhan Hiểu Thần lại đập thình thịch, lắp bắp nói: “Cái gì? Cậu…Cậu tới…”
+</p>
+
+<p>
+ Thẩm Hầu hết sức dịu dàng nói: “Nhan Hiểu Thần, tuy là mình không ở ngoài cửa nhà cậu, nhưng mà mình đang ở cùng thị trấn với cậu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cầm di động, đứng trong cái sân cũ nát, nhìn xa xăm về phía chân trời, đột nhiên tất cả đều đã thay đổi,  giống như rơi vào một giấc mơ không có thực — bầu trời xanh thẳm trong veo, ánh nắng mặt trời mùa đông của Miền Nam yên tĩnh ấm áp, chiếu rọi bức tường loang lổ, cây sào trúc thật dài đang nhẹ nhàng phất phơ mấy cái ra giường vỏ chăn, bốn phía thoang thoảng mùi bột giặt thanh trùng, hết thảy đều trở nên đẹp đẽ và ấm áp một cách kỳ lạ. Nhan Hiểu Thần nghe mình nói giống như đang nằm mơ, nhẹ giọng hỏi: “Cậu đến đây như thế nào?”
+</p>
+
+<p>
+ “Mình với thằng em họ lái xe đến đây, không xa lắm, sáng sớm xuất phát, hơn 11 giờ đã tới. Nhà cậu địa chỉ thế nào? Mình đến tìm.”
+</p>
+
+<p>
+ “Nhà mình ở trong hẻm không dễ tìm, thường mình ngồi xe buýt đi về, không chỉ đường cho cậu được, cậu đang ở đâu? Mình sẽ đến đó!” Nhan Hiểu Thần vừa nói chuyện vừa chạy ra ngoài, nhớ tới cái gì lại chạy trở về, nhìn vào gương, bởi vì làm việc nhà, cô cố ý mặc bộ quần áo cũ, dùng hai bao tay bằng vải bọc tay lại, tóc thì tùy tiện buộc lên giống như cái bánh bao, trông rất nhếch nhác.
+</p>
+
+<p>
+ Thẩm Hầu nói: “Để xem…Mình vừa đi qua một cái bệnh viện, à, bên kia có một tiệm McDonald (5).”
+</p>
+
+<p>
+ (5) McDonald’s là một tập đoàn kinh doanh hệ thống nhà hàng thức ăn nhanh với khoảng 31.000 nhà hàng tại 119 quốc gia, phục vụ 43 triệu lượt khách mỗi ngày dưới thương hiệu riêng của mình. Công ty được thành lập đầu tiên năm 1940 do anh em Richard và Maurice (“Mick & Mack”) McDonald. Nền tảng của sự kinh doanh thành công hôm nay là do Ray Kroc mua lại của anh em McDonald và phát triển thành một trong những dự án kinh doanh ẩm thực thành công nhất thế giới. (wiki)
+</p>
+
+<p>
+ “Mình biết cậu ở đâu rồi, cậu đến gần tiệm McDonald chờ mình một chút, khoảng nửa tiếng nữa mình sẽ đến đó.”
+</p>
+
+<p>
+ “Không có gì, cậu cứ từ từ. Bọn mình chờ cậu ở gần đây.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cúp điện thoại, lập tức thay quần áo. Ra đến cửa, nhìn lại mũ, khăn quàng cổ Thẩm Hầu tặng, rồi nghĩ đến tết âm lịch hắn cố ý chạy đến đây thăm cô, cô không biết có nên đi tay không hay không, nhưng mà gấp gáp thế này phải tặng cái gì bây giờ?
+</p>
+
+<p>
+ Xe buýt đi từ thị trấn đến nội thành xuất phát rất đúng giờ, một giờ duy nhất, Nhan Hiểu Thần đợi không kịp nên quyết định đi taxi. Nửa tiếng sau cô đến nội thành. Đến gần tiệm McDonald thì xuống xe, đang chuẩn bị gọi điện thoại cho Thẩm Hầu thì hắn từ trên một chiếc xe hơi màu trắng ở ven đường nhảy xuống, lớn tiếng gọi: “Nhan Hiểu Thần!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn qua hướng gọi, không hiểu vì sao, rõ ràng sớm biết rằng hắn ở gần đây chờ, vậy mà lúc này mặt cô nóng bừng, tim đập rộn lên, cô suy nghĩ miên man, nếu đã không phải là kinh ngạc, vậy chắc là vui vẻ rồi nhỉ?
+</p>
+
+<p>
+ Một đứa con trai quay cửa kính xe xuống, ánh mắt sáng quắc đánh giá Nhan Hiểu Thần, cười nói: “Chào! Tui tên Thẩm Lâm, lâm trong hai cây gỗ (song mộc lâm), là em họ Thẩm Hầu, có lẽ chúng ta cùng tuổi, nó so với tui không lớn hơn bao nhiêu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần vốn đang hoảng hốt, lúc này càng thêm lúng túng, mặt đỏ bừng, nhưng mà xem như không biết gì, ra vẻ trấn tĩnh nói: “Chào cậu, mình là bạn học của Thẩm Hầu, tên Nhan Hiểu Thần.”
+</p>
+
+<p>
+ Thẩm Lâm lần đầu tiên thấy một người vẻ ngoài thì thong dong mà mặt thì đỏ gay, thầm khen một tiếng “Kỹ xảo rất khá” a~, hắn nhướng nhướng mày nhìn Thẩm Hầu. Thẩm Hầu thường hay trêu chọc Nhan Hiểu Thần, lại không chịu nổi thấy người khác trêu cô, phất tay đuổi Thẩm Lâm đi, “Mày đi đâu thì đi đi.”
+</p>
+
+<p>
+ Thẩm Lâm vừa làu bàu, vừa rồ máy xe, “Thật là phi điểu tẫn, lương cung tàng (6)! Haizz!”
+</p>
+
+<p>
+ (6) Khi chim chóc đã bị bắn chết hết, cây cung tốt cũng bỏ xó: ý câu này tương tự như câu “Qua cầu rút ván”, hoặc “Có mới nới cũ”.
+</p>
+
+<p>
+ Thẩm Hầu tức giận vỗ cửa kính xe, “Cút cho nhanh!”
+</p>
+
+<p>
+ Thẩm Lâm cười với Nhan Hiểu Thần, phất phất tay, liền phóng đi.
+</p>
+
+<p>
+ Thẩm Hầu nói với Nhan Hiểu Thần: “Chúng ta vào cửa hàng McDonald ngồi một chút.”
+</p>
+
+<p>
+ Nhan Hiểu Thần không phản đối, hai người đi vào tiệm McDonald, lên lầu hai tìm một góc ít người ngồi xuống.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Hôm nay để mình mời cậu bữa trưa, cậu muốn ăn gì?”
+</p>
+
+<p>
+ Thẩm Hầu mở ba lô ra, làm như mấy ảo thuật gia, lấy ra cái cà mèn ba ngăn, mở từng ngăn một, bên trong có thịt dê xiên nướng, cánh gà nướng, nấm nướng, hắn nếm qua một miếng, không hài lòng lắm nói: “Hương vị so với lúc mới vừa nướng tệ hơn rất nhiều, nhưng mà so với các món của McDonald thì ngon hơn.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghĩ đến lời hắn nói tối qua, nhẹ giọng hỏi: “Cậu nướng à?”
+</p>
+
+<p>
+ Thẩm Hầu đắc ý gật đầu, tranh công nói: “Sáng sớm thức dậy đi nướng, cậu phải ăn nhiều một chút.” Nhan Hiểu Thần im lặng nhìn Thẩm Hầu một thoáng, cầm lấy cánh gà, bắt đầu cắn. Không biết có phải do tay nghề của Thẩm Hầu rất giỏi, hay bởi vì hắn cố ý nướng cho cô, Nhan Hiểu Thần cảm thấy đây là món cánh gà nướng ngon nhất trong đời cô được ăn.
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Mình còn mang theo rượu Hoa Điêu nữa, cậu có muốn uống không?”
+</p>
+
+<p>
+ “Có thể uống một ít, chỗ mình nhà nào cũng có ủ rượu, lễ tết người lớn không thể quản, nên bọn mình có thể uống một chút.”
+</p>
+
+<p>
+ “Bọn mình cũng vậy! Ông bà mình bây giờ cứ nói là rượu gạo do họ ủ so với rượu Mao Đài (7) ủ 15 năm không hề kém.” Thẩm Hầu cầm ra hai ly rượu bằng sứ có hoa văn, rót ra hai ly, “Nếm thử xem.” Nhan Hiểu Thần bưng chén rượu lên, nhấp một miếng, khen: “Nhắm với đồ nướng, thật sự rất đặc sắc.” Thẩm Hầu cười rộ lên, chạm cốc với Nhan Hiểu Thần, ngửa đầu định uống, Nhan Hiểu Thần vội vàng túm tay hắn lại, hỏi: “Một lát nữa cậu về nhà không cần lái xe sao?”
+</p>
+
+<p>
+ (7) Mao Đài tửu: là một nhãn hiệu rượu trắng (bạch tửu) của Trung Quốc. Mao Đài là tên gọi của một thị trấn gần Tuân Nghĩa, tỉnh Quý Châu, nơi có truyền thống sản xuất loại rượu này và sau này trở thành tên gọi của rượu. Rượu Mao Đài là rượu chưng cất từ cao lương lên men, có đặc trưng trong vắt, không màu, có mùi thơm và độ cồn cao (truyền thống là 65%, nhưng gần đây có nhiều loại Mao Đài chỉ từ 35 đến 47%). (wiki)
+</p>
+
+<p>
+ “Mình kéo Thẩm Lâm theo chỉ vì để cùng cậu uống rượu thôi!” Nói xong nốc cạn ly rượu, “Mình đi mua hai ly đồ uống, đỡ phải bị người ta nói chúng ta chiếm không chỗ ngồi.”
+</p>
+
+<p>
+ Chốc lát sau, hắn bê hai ly đồ uống quay lại, nhìn thấy Nhan Hiểu Thần ăn ngon lành không khỏi tươi cười, “Ngon không?”
+</p>
+
+<p>
+ “Ngon lắm!”
+</p>
+
+<p>
+ “Vậy thịt nướng của mình so với sách cái nào hơn?”
+</p>
+
+<p>
+ Thì ra còn để bụng chuyện kia! Nhan Hiểu Thần cười nói: “Một trời, một vực, căn bản không thể so sánh!”
+</p>
+
+<p>
+ Thẩm Hầu cầm lấy một xiên thịt dê nướng, cười híp mắt nói: “Không sai, không sai, cậu chưa đến nỗi nào!”
+</p>
+
+<p>
+ Thịt nướng Thẩm Hầu mang theo không ít, trình độ ăn uống của Nhan Hiểu Thần siêu phát huy, lượng ăn gấp hai lần bình thường. Thẩm Hầu mới ăn được lửng dạ mà chỉ còn lại một cái cánh gà.
+</p>
+
+<p>
+ Thẩm Hầu nhìn thấy Nhan Hiểu Thần có vẻ ăn chưa no, hắn nhường cái cánh gà cuối cùng cho cô, “Cậu ăn tốt thật, mình còn chưa no.”
+</p>
+
+<p>
+ Nhan Hiểu Thần một bên không khách khí chút nào cầm lấy cái cánh gà, một bên xin lỗi nói: “Cậu đi mua Hamburger ăn đi!”
+</p>
+
+<p>
+ Thẩm Hầu tỏ vẻ chán ghét nói: “Không cần, tuy rằng chưa no, nhưng không đói đến nỗi có thể nuốt McDonald Hambug.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn miếng cánh gà trong tay, do dự nửa muốn đưa cho Thẩm Hầu nửa muốn không. Thẩm Hầu nhịn không được cười vỗ lên đầu cô một cái, “Cậu ăn đi!”
+</p>
+
+<p>
+ Khi Nhan Hiểu Thần ăn xong, hai người dọn dẹp ném rác vào thùng rác, đi vào nhà vệ sinh rửa tay, sau đó uống đồ uống và nói chuyện phiếm.
+</p>
+
+<p>
+ Thẩm Hầu lấy điện thoại di động ra, cho Nhan Hiểu Thần xem, “Mấy tấm hình này là đêm trừ tịch cậu gọi cho mình, mình đã chụp được.” Thẩm Hầu chỉ vào một hình chụp pháo hoa, “Mình đúng lúc đó đang ở trên ban công, pháo hoa giống như gần sát đỉnh đầu mà nở rộ vậy, đáng tiếc ảnh chụp bằng di động không được rõ, lúc đó thật sự rất đẹp!” “Thì ra lúc đó cậu bảo mình chờ một chút là để chụp ảnh này.” Nhan Hiểu Thần nhìn qua từng tấm ảnh, trong lòng tràn đầy cảm động. Thời khắc đó, Thẩm Hầu đã rất muốn chia sẻ với cô điều tuyệt mỹ này!
+</p>
+
+<p>
+ Ảnh chụp pháo hoa xem xong rồi, ngay sau đó là một tấm chụp người nhà của Thẩm Hầu, Nhan Hiểu Thần không dám nhìn kỹ, trả điện thoại lại cho Thẩm Hầu.
+</p>
+
+<p>
+ Thẩm Hầu không để ý, chỉ vào bức ảnh nói với Nhan Hiểu Thần: “Đây là ba, đây là mẹ, đây là cô mình…” Vậy là lấy toàn bộ ảnh chụp cả nhà ra giới thiệu cho Nhan Hiểu Thần.
+</p>
+
+<p>
+ Thật đúng là đại gia đình, khó trách sao náo nhiệt như vậy. Nhan Hiểu Thần hỏi: “Tên của cậu tại sao là ‘Hầu’ một chữ độc nhất vậy? Có ý nghĩa gì đặc biệt à?”
+</p>
+
+<p>
+ “Ba của mình họ Thẩm, mẹ họ Hầu, hai họ kết hợp với nhau nên gọi là ‘Thẩm Hầu’”
+</p>
+
+<p>
+ Nhan Hiểu Thần hỏi: “Em họ cậu tên Thẩm Lâm không phải là vì mẹ cậu ta mang họ Lâm chứ?”
+</p>
+
+<p>
+ Thẩm Hầu đưa ra ngón tay cái, tỏ vẻ cô đã đoán hoàn toàn đúng.
+</p>
+
+<p>
+ Nhan Hiểu Thần lắc đầu cười: “Người nhà các cậu đúng thật là lười!”
+</p>
+
+<p>
+ Thẩm Hầu cười nói: “Chủ yếu là vì bác cả nhà mình đã bắt đầu đặt tên cho chị cả là như vậy, dùng họ của bác gái đặt tên cho chị ấy là Thẩm Chu. Mẹ mình rất thích, học theo đặt cho mình, chú, dì cũng làm theo đặt tên giống như vậy luôn.”
+</p>
+
+<p>
+ “Nếu sinh hai đứa con thì làm thế nào? Người nhà cậu có ai sinh hai đứa không?”
+</p>
+
+<p>
+ “Có nhe! Thẩm Lâm còn có một em gái.”
+</p>
+
+<p>
+ “Gọi là gì?”
+</p>
+
+<p>
+ “Thẩm Ái Lâm.”
+</p>
+
+<p>
+ Nhan Hiểu Thần xì một tiếng bật cười, cô coi như hiểu triệt để rồi, phụ nữ Thẩm gia rất có quyền phát biểu a~.
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Tên của cậu có ý nghĩa gì đặc biệt không?”
+</p>
+
+<p>
+ “Cậu đoán thử xem!”
+</p>
+
+<p>
+ “Không phải theo nghĩa kia là người thông minh chứ? Cậu sinh ra vào buổi sáng à?”
+</p>
+
+<p>
+ (Nhan Hiểu Thần có nghĩa là gương mặt sáng, sáng dạ, chữ “Thần” còn có nghĩa là sáng sớm)
+</p>
+
+<p>
+ “Đúng rồi! Vốn định gọi là Nhan Thần, nhưng lúc làm tên khai sinh nghe dì kia nói tên hai chữ trùng nhiều quá, bảo mẹ mình đặt thành ba chữ. Mình lúc ra đời hơi nhỏ và gầy, tên ở nhà gọi là Tiểu Tiểu, nhỏ của nhỏ; ba mình nói vậy thì gọi là Tiểu Thần, mẹ mình nói gọi là Hiểu Thần, cho nên liền đặt là Hiểu Thần.”
+</p>
+
+<p>
+ “Tiểu Tiểu?” Thẩm Hầu nói thầm, “Tên này nghe rất đáng yêu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút bối rối, không nói gì.
+</p>
+
+<p>
+ “Đúng rồi, có cái này cho cậu, lát nữa đi rồi lại quên.” Thẩm Hầu lấy từ trong ba lô một cái hộp giấy, đặt trước mặt Nhan Hiểu Thần.
+</p>
+
+<p>
+ Nhan Hiểu Thần mở ra, phát hiện là một cái ví tiền có sọc ca rô màu nâu, chắc chắn là Thẩm Hầu biết cô không có ví tiền, tiền lẻ hay chẵn gì cũng nhét đại vào túi. Sắp đi làm rồi, cô quả thật cần một cái ví tiền, “Cảm ơn cậu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần lấy từ trong túi ra một gói giấy màu đưa cho Thẩm Hầu.
+</p>
+
+<p>
+ “Tặng mình quà năm mới à?” Thẩm Hầu cười hì hì tiếp nhận.
+</p>
+
+<p>
+ Giấy màu đã cũ, nhàu nát, còn có chút ẩm, bên trong là một bức tượng Tôn Ngộ Không bằng gỗ, nhìn không giống đồ mới, hơn nữa khắc rất sơ sài, nếu bày bán ở cửa hàng, hắn tuyệt đối sẽ không thèm ngó tới. Thẩm Hầu dở khóc dở cười, “Cậu mua cái này ở đâu vậy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần ngưng mắt nhìn tượng gỗ, khẽ cười nói: “Là tự tay mình làm.”
+</p>
+
+<p>
+ Biểu hiện của Thẩm Hầu lập tức thay đổi, “Cậu làm à?” Tuy rằng rất sơ sài, nhưng để khắc ra được Tôn Ngộ Không tuyệt đối không dễ dàng.
+</p>
+
+<p>
+ “Ba mình là thợ mộc, không được học hành bao nhiêu, nhưng ông ấy rất thông minh và khéo léo. Khi mình còn nhỏ, nhà rất nghèo, mua không nổi một món đồ chơi, rất nhiều đồ chơi của mình là do ba làm. Lúc đó, mình với ba đã cùng nhau làm ra tất cả các nhân vật trong “Tây Du Ký”, lớn nhỏ có 16 cái, nhưng mà mình không biết giữ, đều vứt sạch, hiện tại chỉ còn mỗi tượng Tôn Ngộ Không này thôi”
+</p>
+
+<p>
+ Đây là lần đầu tiên Nhan Hiểu Thần kể chuyện nhà cho hắn nghe, Thẩm Hầu trong lòng có nhiều cảm xúc kỳ lạ, không rõ là thương xót hay vui vẻ nữa, hắn an ủi Nhan Hiểu Thần, “Ai khi còn nhỏ cũng đều như vậy, vứt bừa bãi, kỳ nghỉ đông này cậu có thể cùng ba cậu làm thêm vài cái nữa mà.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhẹ giọng nói: “Ba mình mất rồi.”
+</p>
+
+<p>
+ Thẩm Hầu ngây ngẩn cả người, chân tay luống cuống nhìn Nhan Hiểu Thần, muốn nói gì đó nhưng lại không biết nói cái gì.
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn hắn cười cười, tỏ ra là mình không sao.
+</p>
+
+<p>
+ Thẩm Hầu cầm bức tượng gỗ Tôn Ngộ Không, có chút không tin hỏi: “Cậu thật sự muốn tặng nó cho mình?”
+</p>
+
+<p>
+ Nhan Hiểu Thần gật gật đầu, cười híp mắt nói: “Không có thời gian đi mua đồ đàng hoàng cho cậu, đành dùng nó bù vậy, Hầu ca!”
+</p>
+
+<p>
+ Một thứ không tốt cũng không xấu, nhưng hết thảy đều có ý nghĩa rất lớn,  Thẩm Hầu vuốt ve bức tượng gỗ Tôn Ngộ Không, cảm giác như cầm một vật rất quý, hắn nói với Nhan Hiểu Thần: “Đây là món quà quý giá nhất mà mình được nhận trong năm nay, mình nhất định sẽ giữ gìn nó cẩn thận, cảm ơn cậu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần thấy hắn thật thích, trong lòng rất vui vẻ.
+</p>
+
+<p>
+ Hai người lại thì thầm to nhỏ, trôi qua hết một giờ, Thẩm Lâm gọi điện thoại nhắc nhở Thẩm Hầu nên đi về. Nhan Hiểu Thần sợ trời tối lái xe không an toàn, thúc giục nói: “Cậu mau về đi thôi!”
+</p>
+
+<p>
+ Thẩm Hầu cùng Nhan Hiểu Thần đi ra khỏi tiệm McDonald, Thẩm Hầu nói: “Để bọn mình đưa cậu về.”
+</p>
+
+<p>
+ “Không cần, mình tự đi xe buýt về là được rồi, tiện lắm.”
+</p>
+
+<p>
+ Thẩm Hầu lưu luyến không rời hỏi: “Cậu chừng nào thì về trường học?”
+</p>
+
+<p>
+ “Mình ở nhà một tuần.”
+</p>
+
+<p>
+ “Cũng nhanh…vậy hẹn gặp cậu ở trường!”
+</p>
+
+<p>
+ “Ừ, được!”
+</p>
+
+<p>
+ Thẩm Hầu lên xe, Thẩm Lâm cười cười, phất phất tay với Nhan Hiểu Thần, lái xe rời khỏi.
+</p>
+
+<p>
+ Nhan Hiểu Thần đi đến trạm xe buýt, dọc theo đường đi luôn nhoẻn miệng cười.
+</p>
+
+<p>
+ Cô vừa ngồi xe buýt, vừa nhắn tin cho Thẩm Hầu, “Hôm nay rất vui, cảm ơn cậu đã tới gặp mình!”
+</p>
+
+<p>
+ Thẩm Hầu nhận được tin nhắn, cũng nhe răng cười, trả lời lại: “Mình cũng rất vui, cảm ơn món quà quý của cậu!”
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-010.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-012.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 16 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 16</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-017.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Thừa dịp bầu trời còn xanh thẳm tươi đẹp, thừa dịp đóa hoa còn kiều diễm ngát hương, thừa dịp bóng tối còn chưa trùm phủ, tất cả mọi điều trước mắt chính là tươi đẹp nhất, thừa dịp thời gian hiện tại vẫn còn đứng yên, hãy làm người mơ mộng. Nhưng hết thảy chỉ là tạm thời, khi tỉnh lại sẽ khóc. — Shelley (1)
+</p>
+
+<p>
+ (1) Mary Wollstonecraft Shelley (30/08/1797 – 01/02/1851) là nữ nhà văn nước Anh, bà nổi tiếng thế giới vì là tác giả của tiểu thuyết nổi tiếng: Frankenstein, hay The Modern Prometheus, lại vừa là vợ của nhà thơ lãng mạn Percy Bysshe Shelley.
+</p>
+
+<p>
+ Nguyên văn trích trong bài thơ “The flower that smiles today” (Đóa hoa mỉm cười ngày hôm nay)
+</p>
+
+<p>
+ “Whilst skies are blue and bright, Whilst flowers are gay, Whilst eyes that change ere night, Make glad the day; Whilst yet the calm hours creep, Dream thou—and from thy sleep,Then wake to weep…”
+</p>
+
+<p>
+ Sáng sớm thứ hai, vừa mới 6 giờ rưỡi, Nhan Hiểu Thần và Ngô Thiến Thiến đã rời giường. Hai người rửa mặt xong thì tùy tiện uống một bịch sữa, ăn một miếng bánh mì nguội, thay bộ đồ đồng phục đi làm đã chuẩn bị sẵn hôm qua, cùng nhau ra khỏi phòng, ngồi xe buýt đến công ty làm việc.
+</p>
+
+<p>
+ Trường đại học cách công ty khá xa, hai người sợ đến muộn nên cố ý thức dậy đi làm sớm một chút, vốn tưởng là đã sớm lắm rồi, nhưng khi lên đến xe buýt nhìn thấy cảnh chen lấn chật chội toàn người là người, các cô mới hiểu được ở thành phố này có rất nhiều người cũng đi làm giống như các cô.
+</p>
+
+<p>
+ Nhan Hiểu Thần và Ngô Thiến Thiến xô đẩy đám đông, chen chân lên xe, Ngô Thiến Thiến nhỏ giọng nói: “Về sau chắc phải thuê nhà ở gần công ty thôi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Nhà gần công ty không phải là mắc lắm hay sao?” Công ty của bọn họ nằm trong khu kinh tế tài chính Lục Gia Chủy (2), hiển nhiên đất đai và phòng ở khu đó là tấc đất tấc vàng.
+</p>
+
+<p>
+ (2) Là đặc khu kinh tế tài chính của thành phố Thượng Hải, nó nằm phía đông của sông Hoàng Phố thuộc khu Phố Đông. Hiện nay, Lục Gia Chủy có hơn 30 tòa cao ốc hơn 25 tầng mà kinh doanh thương mại là chức năng chính, có hơn 504 tập đoàn tài chính và bảo hiểm trong nước cũng như ngoài nước được đặt ở đây. Lục Gia Chủy cũng là nơi thu hút nhiều khách du lịch hàng năm đến Thượng Hải. (wiki)
+</p>
+
+<p>
+ Ngô Thiến Thiến không đồng ý nói: “Tiền lương của chúng ta cao mà.”
+</p>
+
+<p>
+ Tuy rằng các cô đã ép giọng thật nhỏ, nhưng mà trong xe buýt chen chúc nhau, cơ hồ thân thể dính sát, người bên cạnh nghe xong lời của các cô đương nhiên hiểu rõ ràng, có một bà dì khá đứng tuổi dùng tiếng địa phương của Thượng Hải nói với người bên cạnh: “Tiểu cô nương phạt hiểu được trời cao đất rộng, na tự dát đương Lý Gia Thành, tay duỗi ra là tiền mặt.” Phiên dịch ra tiếng phổ thông chính là: “Nhóc con không biết trời cao đất dày, tưởng mình là Lý Gia Thành (3), duỗi tay ra là có tiền chắc.” Quê của Nhan Hiểu Thần có tiếng địa phương giống với tiếng Thượng Hải nên nghe hoàn toàn hiểu, Ngô Thiến Thiến là nửa nghe nửa đoán nên đại khái cũng hiểu.
+</p>
+
+<p>
+ (3) Lý Gia Thành (sinh ngày 29/07/1928 tại Triều Châu, Trung Quốc) là tỉ phú, nhà đầu tư, nhà tư bản công nghiệp, nhà từ thiện người Hồng Kông. Vào ngày 06/03/2007, tạp chí Forbes đã xếp ông vào vị trí thứ chín trong danh sách những người giàu nhất thế giới, với tài sản khoảng 23 tỉ USD. Ông là chủ tịch tập đoàn Hòa Ký Hoàng Phố (Hutchison Whampoa Limited) và Trường Giang Thực Nghiệp (Cheung Kong Holdings) tại Hồng Kông. Tuy là người rất giàu, ông Lý được biết đến là người có phong cách sống giản dị, ông thường đi những đôi giày đen đơn giản và đeo đồng hồ Seiko không quá đắt tiền. (wiki)
+</p>
+
+<p>
+ Một bà dì khác hùa theo nói: “Tiểu địa phương cách ninh, sao gặp qua đại bài tràng, chậm giao liền hiểu được, Thượng Hải ngạch một bộ phòng ở, liền hảo bức tới đây khối hỗn phạt hạ khởi.” Tiếng phổ thông có nghĩa là: “Dân nhà quê, chưa thấy quan tài chưa đổ lệ, rồi sẽ sớm biết nhà thuê ở Thượng Hải sẽ làm cho công việc của các người xất bất xang bang cho mà xem.”
+</p>
+
+<p>
+ Ngô Thiến Thiến tuy rằng chỉ hiểu nửa phần, nhưng ý nghĩa của câu “Dân nhà quê, chưa thấy quan tài chưa đổ lệ, công việc sẽ xất bất xang bang” là hoàn toàn lĩnh hội được, từ trước tới giờ cô là người khá nóng tính, trong lòng lại tự ti nghĩ mình thuộc dạng dân quê tỉnh lẻ nghèo nàn lạc hậu, lập tức bị chọc giận, nhanh miệng phản bác lại: “Mấy người hoàn toàn không biết một tháng tôi kiếm được bao nhiêu tiền mới nói vậy, mấy người mới là không biết trời cao đất dày, mới là chưa gặp chưa biết!”
+</p>
+
+<p>
+ Bà dì kia cười nhạo, chanh chua nói: “Ngô tắc hiểu được, thật cách có tiền mặt ninh, phạt sẽ đến qua công cộng khí xí thô!”
+</p>
+
+<p>
+ Một bà dì khác hình như sợ Ngô Thiến Thiến không hiểu, cố tình lặp lại bằng tiếng phổ thông, “Bọn ta chỉ biết nếu là người có nhiều tiền thì sẽ không chen chúc đi xe buýt!”
+</p>
+
+<p>
+ Ngô Thiến Thiến tức giận đến lông mày dựng ngược, Nhan Hiểu Thần dùng sức nắm tay cô lại, lắc đầu, ý bảo đừng cãi nữa. Ngô Thiến Thiến cũng thấy mình với hai bà dì chợ búa này tranh luận kiếm được bao nhiêu tiền thật sự nhàm chán, cô cắn răng, mặt dịu lại, nhìn ra ngoài cửa sổ xe buýt. Nhưng hai bà dì kia lại hứng trí đắc thắng, cứ huyên thuyên mãi, một người thì chê bai đứa con của người bạn, bỏ mặc cha mẹ không lo đi mua xe BMW, một kẻ lại khoe khoang đứa con gái của cô em ruột mình vừa mới 18 tuổi, trong nhà đã mua cho nó một căn hộ làm lễ cưới…
+</p>
+
+<p>
+ Xe vừa ghé trạm, Nhan Hiểu Thần liền lôi Ngô Thiến Thiến chen chân xuống xe, Ngô Thiến Thiến tức giận nói: “Mắc mớ gì chúng ta phải xuống xe? Mình muốn nghe xem mấy mụ đó ba hoa đến cỡ nào! Nổ cho cố vào, chỉ là lôi truyện của bạn bè, người thân ra mà nói thôi, khẳng định không động gì vào chuyện của mấy mụ ấy đâu!”
+</p>
+
+<p>
+ Nhan Hiểu Thần dịu dàng nói: “Thời gian còn sớm, chúng ta chờ chuyến khác là đến mà, đi làm ngày đầu tiên không nên mang theo một bụng không thoải mái đến công ty.”
+</p>
+
+<p>
+ Ngô Thiến Thiến lập tức cảnh giác, nghĩ đến hôm nay việc quan trọng nhất là gì. Cô nhìn đến phía trước trạm xe buýt một đám người chen chúc mà chán nản nhíu mày, giơ tay gọi một chiếc taxi. Nhan Hiểu Thần kinh ngạc nhìn cô, “Gọi xe mắc tiền đó nhe!”
+</p>
+
+<p>
+ Ngô Thiến Thiến đến mở cửa xe, thoải mái nói: “Lên xe, hôm nay mình mời!”
+</p>
+
+<p>
+ Nhan Hiểu Thần mím môi cười rộ lên, “Được thôi!” xong chui vào trong xe.
+</p>
+
+<p>
+ Ngô Thiến Thiến ngồi trong taxi nhìn ra ngoài cửa xem xe cộ qua lại, đúng lúc đi bên cạnh có một chiếc xe buýt, cả xe chen chúc giống như mấy con cá mòi xếp san sát với nhau trong hộp cá, bởi vì chen lấn nên vẻ mặt của mọi người đều không có chút thoải mái, chỉ là mệt mỏi bơ phờ. Ngô Thiến Thiến nghĩ đến chính mình vừa rồi cũng là một người trong số họ, một khắc ngắn ngủi sau đó cô đã dùng tiền thoát khỏi cảnh tượng kia, không cần phải nghe những kẻ toàn thân thối, miệng cũng thối nói chuyện. Ngô Thiến Thiến nhẹ giọng cảm thán: “Tiền đích thực không phải vạn năng, nhưng cũng phải thừa nhận rằng, nếu thiếu tiền thì vạn năng cũng chả có.” Nhan Hiểu Thần không trả lời, Ngô Thiến Thiến quay đầu nhìn lại thì thấy Nhan Hiểu Thần đang cầm cái điện thoại Samsung mới, chậm chạp viết blog. Ngô Thiến Thiến đoán được cô phát tin cho Thẩm Hầu, cười nhạo nói: “Đúng là một ngày không thấy như cách ba thu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần không nói gì, cười làm cái mặt hề rồi vẫn như vậy chuyên tâm đăng blog.
+</p>
+
+<p>
+ Đến công ty sớm hơn giờ quy định nửa tiếng, nhưng trong công ty đã có không ít người bận rộn công việc, Nhan Hiểu Thần cùng Ngô Thiến Thiến lập tức hiểu rõ, những công ty đầu ngành hiển nhiên sẽ trả lương cao hơn bình thường, nhưng cũng hiển nhiên cần phải trả giá cho sự cố gắng cao hơn bình thường.
+</p>
+
+<p>
+ Tiếp tân dẫn các cô đến phòng chờ ngồi đợi, hai người không phải là những thực tập sinh đến sớm nhất, trong phòng chờ đã có năm sáu người. Nhan Hiểu Thần và Ngô Thiến Thiến đều cảm thấy áp lực ngày càng lớn đập vào mặt, không trò chuyện tán gẫu, mạnh ai người nấy im lặng chờ đợi.
+</p>
+
+<p>
+ Đúng giờ làm việc, hơn hai mươi thực tập sinh đã có mặt đầy đủ. Mọi người đợi thêm khoảng 10 phút nữa thì quản lý phòng nhân sự mới đi vào phòng chờ, tự giới thiệu, sau đó đại diện cho công ty nói vài câu chào mừng, tiếp theo yêu cầu các bạn giới thiệu bản thân một chút, để thuận tiện cho mọi người nhanh chóng quen thuộc với công việc.
+</p>
+
+<p>
+ Mỗi người giới thiệu về bản thân không giống nhau, người có tính tình hoạt bát hướng ngoại sẽ nói hết những chuyện đam mê hứng thú bình thường, chủ động mời mọi người sau giờ làm có thể đến kết bạn với anh ta, người có tính khí trầm ổn cẩn thận hiển nhiên sẽ nói ít đi một chút, Nhan Hiểu Thần coi như là nói ít nhất, chỉ mỉm cười giới thiệu tên tiếng Hoa, và tên tiếng Anh sẽ dùng tại công ty này, Nhan Hiểu Thần lười nghĩ nhiều nên cô tiếp tục dùng lại tên đã sử dụng ở quán Bar Lam Nguyệt là Olivia.
+</p>
+
+<p>
+ Sau khi các bạn tự giới thiệu xong, ai nấy đều đã đánh giá được năng lực của nhau, một nhân viên khác từ phòng nhân sự đem thẻ nhân viên tạm thời đến phát cho bọn họ, sau đó dẫn bọn họ đi tham quan công ty, phổ biến một số nội quy và những điều cần lưu ý. Buổi trưa, phòng nhân sự  mời những người phụ trách các phòng ban cùng các thực tập sinh ăn một bữa tiệc liên hoan. Buổi chiều mở một cuộc họp, phát một ít tài liệu liên quan đến công việc, tiếp đến bắt đầu phân chia nhóm, mọi người tự lựa chọn phòng ban theo chuyên ngành mong muốn của mình.
+</p>
+
+<p>
+ Nhan Hiểu Thần và Ngô Thiến Thiến học cùng trường, lại cùng ngành, nên hai cô xin việc theo chuyên môn là giống nhau, do đó đã cùng bốn bạn nam khác đi đến phòng tài chính.
+</p>
+
+<p>
+ Tiếp đón bọn họ là Vice President (Phó phòng, viết tắt là VP), là một nam nhân 28 tuổi, họ Trần, tên tiếng Anh là Jason, người Bắc Kinh, tính tình rất khôi hài và hay nói. Jason cùng bọn họ nói chuyện tán gẫu trong chốc lát, giới thiệu bọn họ với các đồng nghiệp khác cùng phòng, vừa đúng lúc cũng đến giờ tan ca, Jason nói cho bọn họ biết có thể ra về, mấy bạn thực tập sinh nhìn thấy các anh chị đồng nghiệp hình như không có ai ra về nên tất cả đều chần chừ, Jason cười nói: “Sau này chuyện tăng ca sẽ như cơm bữa thôi, bây giờ các bạn chưa phải là nhân viên chính thức, thật sự chưa có nhiều việc để làm, nên về đi!”
+</p>
+
+<p>
+ Lúc này, nhóm thực tập mới cầm lấy đồ dùng cá nhân của mình rời khỏi công ty.
+</p>
+
+<p>
+ Xe buýt ghé trạm, Nhan Hiểu Thần vừa xuống xe liền nhìn thấy Thẩm Hầu, cô vừa vui vừa lo hỏi: “Sao anh lại đến đây?”
+</p>
+
+<p>
+ “Anh tới đón em!” Thẩm Hầu cầm lấy túi xách của cô, thân thiết hỏi: “Có mệt không?”
+</p>
+
+<p>
+ (Hai người chính thức yêu nhau rồi nhé, đổi cách xưng hô thôi ^.^)
+</p>
+
+<p>
+ Nhan Hiểu Thần cười lắc đầu, “Không mệt, công ty sẽ không cho thực tập sinh làm công việc chính thức đâu, với lại hôm nay là ngày đầu tiên, chỉ là giới thiệu thủ tục thôi.”
+</p>
+
+<p>
+ Ngô Thiến Thiến cười nhạo, “Thẩm Hầu, bọn mình là đi làm văn phòng, không phải là làm lao công!”
+</p>
+
+<p>
+ Thẩm Hầu thản nhiên nghe qua rồi cười nhạo, “Mình quan tâm bạn gái mình, cậu có ý kiến gì không?”
+</p>
+
+<p>
+ Ngô Thiến Thiến bĩu môi, “Không có ý kiến!”
+</p>
+
+<p>
+ Thẩm Hầu ôm chặt bả vai của Nhan Hiểu Thần, “Buổi tối đi căng tin ăn cơm nhé? Hay đi ăn cơm thố (4) đi!” Gần trường đại học có một quán cơm thố, một phần khoảng 20 đồng, còn kèm theo súp với vài món phụ, vừa tiện lợi vừa phải chăng.
+</p>
+
+<p>
+ (4) Cơm được bày biện sẵn trong nồi đất, tiện cho việc hâm nóng và giữ ấm thức ăn.
+</p>
+
+<p>
+ “Được đó!” Nhan Hiểu Thần hỏi Ngô Thiến Thiến, “Muốn cùng đi ăn với bọn mình không?”
+</p>
+
+<p>
+ Ngô Thiến Thiến phất tay với Nhan Hiểu Thần, “Mình không muốn làm bóng đèn (5), bái bai.”
+</p>
+
+<p>
+ (5) ý là không muốn có tồn tại mà như không tồn tại.
+</p>
+
+<p>
+ Thẩm Hầu cùng Nhan Hiểu Thần đi đến quán cơm thố dùng cơm chiều, sau đó tản bộ về trường.
+</p>
+
+<p>
+ Dọc theo con đường rợp bóng cây, cả hai đi đến bên bờ hồ. Cảnh sắc tháng 4 như có tình, xuân về hoa nở, từng đôi yêu nhau hoặc là đi chầm chậm dạo mát xung quanh hồ, hoặc ngồi trên những tảng đá bên bờ hồ ngồi tâm sự.
+</p>
+
+<p>
+ Vừa hay có một chiếc ghế trống dưới một gốc cây, xung quanh bóng mát và cây um tùm chắn hết tầm nhìn, không thể nhìn thấy cảnh trên hồ, lại rất yên tĩnh. Thẩm Hầu kéo Nhan Hiểu Thần đến ngồi trên ghế, lấy điện thoại di động ra đưa cho Nhan Hiểu Thần xem, hình nền trên di động là ảnh chụp của Nhan Hiểu Thần, cô đứng tại một giá sách của thư viện, đang lật xem một quyển sách, ánh sáng từ cửa sổ ở một góc chiếu lên người cô, tạo nên xung quanh thân hình của cô một quầng sáng hình tròn mờ ảo.
+</p>
+
+<p>
+ Nhan Hiểu Thần chính mình còn chưa được nhìn thấy tấm ảnh này, cũng không biết là Thẩm Hầu đã lén chụp từ lúc nào, cô ngượng ngùng hỏi: “Sao muốn dùng ảnh của em?”
+</p>
+
+<p>
+ Thẩm Hầu gửi một tấm ảnh cho Nhan Hiểu Thần, bá đạo nói: “Chẳng phải bây giờ em mau chóng học tập theo anh hay sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhận được tấm ảnh, nhất thời không biết làm sao để lấy ra, Thẩm Hầu cầm điện thoại của cô, vài thao tác đã đem tấm hình cài đặt thành hình nền.
+</p>
+
+<p>
+ Trên màn hình di động, nhìn về phía cô là Thẩm Hầu với nụ cười tươi sáng đến vầng dương cũng phải ghen tỵ, Nhan Hiểu Thần đột nhiên nhận ra, với cái này mỗi giây mỗi phút đều có thể nhìn thấy Thẩm Hầu, cảm giác vô cùng tuyệt vời. Thẩm Hầu thấy Nhan Hiểu Thần nhìn chằm chằm vào hình của hắn, cười hì hì nói: “Này! Anh hiện ở bên cạnh em mà, muốn thì nhìn anh đây.”
+</p>
+
+<p>
+ Nhan Hiểu Thần xin lỗi, cất điện thoại di động.
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Đi làm cảm giác thế nào?”
+</p>
+
+<p>
+ “Bởi vì quá xa lạ, hơi mờ mịt không biết nên làm cái gì, nhưng lại nghĩ có thể kiếm được tiền nên rất chờ mong và cũng rất hưng phấn.”
+</p>
+
+<p>
+ Thẩm Hầu cười nói: “Nghe nói ngành nghề của em hiện giờ rất hot, lương một năm 7 8 chục ngàn là không thành vấn đề, anh đến bây giờ còn chưa đi tìm việc làm, xem ra chắc là không kiếm được công ty nào tốt rồi, đến lúc đó em không khinh thường anh chứ?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy những câu nói của Thẩm Hầu có ý nghĩa khác, nhưng cô đoán không ra rốt cuộc Thẩm Hầu muốn nói gì, thản nhiên lưu loát nói: “Em mãi mãi sẽ không bao giờ khinh thường anh, ngược lại em chỉ lo lắng anh khinh thường em thôi.”
+</p>
+
+<p>
+ Thẩm Hầu đưa tay ra sau gáy, tựa vào băng ghế, xa xăm nói: “Lúc tốt nghiệp cũng là lúc chia tay! Anh có mấy người bạn có bạn gái đều rầu rĩ khổ sở. Tìm được việc làm thì buồn rầu vì không thể cùng ở lại một thành phố, không tìm được việc làm thì không nghĩ đến chuyện cùng nhau vượt qua khó khăn, mà suốt ngày cãi nhau. Vì vậy công việc cũng lơ là! Em có biết không, em với anh quen nhau bây giờ có nhiều người nói ra nói vào lắm, hiện tại em tài giỏi xuất sắc, sự nghiệp tỏa sáng, tương lai rộng mở, lựa chọn anh, là tự hạ thấp mình!”
+</p>
+
+<p>
+ Tuy từ trước đến nay Nhan Hiểu Thần không quan tâm đến lời qua tiếng lại của mọi người, nhưng không ít thì nhiều cũng cảm nhận được đã gì đó thay đổi, trước kia các bạn học đều cảm thấy cô không thể giữ nổi Thẩm Hầu, nay đơn giản là vì cô đã tìm được một công việc tốt lương cao, chẳng còn ai nghĩ như vậy nữa, Ngô Thiến Thiến thậm chí còn tỏ vẻ rất hiểu rằng Thẩm Hầu đối xử tốt với cô là chuyện đương nhiên.
+</p>
+
+<p>
+ Nhan Hiểu Thần hỏi: “Vậy bản thân anh nghĩ gì?”
+</p>
+
+<p>
+ “Anh hơi tò mò, cho đến bây giờ anh vẫn chưa có việc làm mà em còn chưa sốt ruột, em hoàn toàn không để ý sao? Em vẫn chưa nghĩ đến tương lai của chúng ta sao?”
+</p>
+
+<p>
+ “Không phải như vậy.”
+</p>
+
+<p>
+ Thẩm Hầu dương mắt lên nhìn Nhan Hiểu Thần, tỏ vẻ sẵn lòng chăm chú lắng nghe.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Em tin tưởng anh, cũng tin tưởng chính mình.”
+</p>
+
+<p>
+ Có lẽ trong khoảng thời gian này đã nhìn thấy quá nhiều cuộc cãi vã và chia tay, tình yêu của tuổi trẻ nóng rực như lửa nhưng cũng nhanh tàn như lửa, Thẩm Hầu lại bị bạn bè vô tình hay cố ý chê cười hắn trèo cao, hắn tin tưởng mình, nhưng lại không có đầy đủ tự tin đối mặt với Nhan Hiểu Thần, thật giống với câu nói, khi quá yêu một người, không tự chủ được bản thân mà cảm thấy chính mình hèn kém. Thẩm Hầu bén nhọn hỏi: “Nếu anh không tìm được việc làm, em cũng tin tưởng anh sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần thong dong nói: “Tìm không được thì tiếp tục tìm, từ từ thế nào cũng có, dù sao em đã có thể kiếm được tiền, không sợ cả hai chết đói đâu.”
+</p>
+
+<p>
+ “Nếu tìm được công việc ở nơi khác thì sao?”
+</p>
+
+<p>
+ “Em có thể xin công ty điều động nội bộ, nếu mà không được, em sẽ đổi việc khác, việc làm chắc chắn sẽ có, nhưng tiền kiếm được có thể ít một chút, còn nếu ít hơn nữa, hai chúng ta hai người chẳng lẽ không tự nuôi sống được chính mình hay sao?” Những vấn đề phức tạp của người khác đối với Nhan Hiểu Thần lúc này đều trở thành hoàn toàn không là vấn đề, xem ra cô đã thật sự có suy xét kỹ càng về tương lai của bọn họ, cũng đã chuẩn bị cách đối phó thật chu đáo, Thẩm Hầu bật cười lắc đầu, đúng là do hắn suy nghĩ quá nhiều rồi.
+</p>
+
+<p>
+ Nhan Hiểu Thần giữ chặt bàn tay của Thẩm Hầu, “Em tin tưởng anh chắc chắn đã có suy nghĩ đến tương lai của chính mình, cũng đã tự có quyết định. Em tin vào năng lực của bản thân, mặc kệ anh đã quyết định cái gì, chỉ cần anh vẫn muốn ở bên em, em nhất định sẽ mãi bên cạnh anh. Đừng nói chỉ là chuyển đi thành phố khác, nếu anh đột nhiên thay đổi quyết định, muốn xuất ngoại, em cũng có thể bắt đầu chuẩn bị thi TOEFL, để đi nước ngoài tìm anh.”
+</p>
+
+<p>
+ Thẩm Hầu nắm lấy tay Nhan Hiểu Thần, dùng sức kéo cô vào ngực mình, thì thầm bên tai cô: “Tiểu Tiểu, anh yêu em!”
+</p>
+
+<p>
+ Thân thể Nhan Hiểu Thần cứng đờ, nói nhỏ: “Anh vừa kêu em là gì?”
+</p>
+
+<p>
+ Thẩm Hầu dịu dàng nói: “Không phải em đã nói tên từ nhỏ của em là ‘Tiểu Tiểu’ hay sao? Về sau anh sẽ gọi em là ‘Tiểu Tiểu’.”
+</p>
+
+<p>
+ Nhan Hiểu Thần kinh ngạc một thoáng, chậm rãi nhắm mắt lại, dùng sức ôm Thẩm Hầu thật chặt. Vậy ra, trên đời này vẫn còn một người có thể gọi cô bằng cái tên tràn đầy yêu thương: ‘Tiểu Tiểu’.
+</p>
+
+<p>
+ Mặc dù phòng tài chính có công việc áp lực lớn, nhưng cho dù là trưởng phòng hay các nhân viên đồng nghiệp đều có yêu cầu rất thấp đối với thực tập sinh, hơn nữa phần lớn công việc đều là buôn bán cơ mật, không thích hợp để giao cho bọn họ, cho nên nếu so với các nhân viên đồng nghiệp thì công việc của Nhan Hiểu Thần không đến nỗi là “làm mệt chết”, nhưng mỗi ngày cũng phải đi sớm về muộn. Mỗi tuần còn có hai lần huấn luyện, họp hành giao bài tập, tuy rằng không có người chấm điểm bài tập, nhưng nếu ai làm tốt sẽ được điểm danh khen ngợi, còn có thể được gặp riêng trưởng phòng để giải trình, vô hình trung lại biến thành một kiểu cạnh tranh, chung quy không phải ai cũng không nghĩ đến việc sẽ để lại ấn tượng tốt cho cấp trên.
+</p>
+
+<p>
+ Nhan Hiểu Thần vốn là người thành thạo, kiến thức cực kỳ vững chắc, lại là người có tinh thần cố gắng, bất kể là giao cho công việc gì, hay bắt làm bài tập gì, cô đều hoàn thành rất tốt. Hơn nữa sau lưng cô còn có sư phụ tài giỏi Trình Trí Viễn, nếu có bài tập khó chưa tìm ra được hướng giải quyết cô sẽ gọi ngay cho Trình Trí Viễn nhờ giúp đỡ, Trình Trí Viễn chỉ bày ra hướng đi, hoặc đề cử sách tham khảo, Nhan Hiểu Thần lập tức sẽ hiểu rõ nên làm như thế nào.
+</p>
+
+<p>
+ Được điểm danh tuyên dương vài lần, Nhan Hiểu Thần liền trở thành thực tập sinh nổi tiếng, các trưởng phòng của các phòng ban khác ai cũng đều nhớ kỹ cô. Có một lần, một nhóm tực tập sinh vừa mới huấn luyện xong, cùng đi vào thang máy, đúng lúc cũng có một nhóm trưởng phòng vừa họp xong đi ra, bọn họ đi qua như vậy nhưng lại chào hỏi Nhan Hiểu Thần. Chỉ là lịch sự bình thường hỏi thăm nhau của các đồng nghiệp, nhưng đã khiến cho đám người trẻ tuổi vô cùng hâm mộ và ghen tị.
+</p>
+
+<p>
+ Cho dù là có thiện ý hâm mộ, nhưng vẫn có chút gì đó là ác ý ghen tị, Nhan Hiểu Thần hoàn toàn làm như không biết, cô toàn tâm toàn lực làm tốt công việc của mình, người khác nghĩ như thế nào, cô không quan tâm.
+</p>
+
+<p>
+ Cuối tháng tư thì quản lý phòng nhân sự công bố một tin tốt lành, đó là sẽ chọn ra trong nhóm thực tập một bạn có biểu hiện nổi trội xuất sắc để đưa sang tổng công ty ở Mỹ thực tập hai năm.
+</p>
+
+<p>
+ Đến tháng 6 sẽ lấy bằng chứng nhận tốt nghiệp đại học, bọn họ một khi chính thức được nhận vào công ty, lương khởi điểm sẽ không thấp hơn 300 ngàn nhân dân tệ, ở trong nước đã được xem là lương rất cao rồi, nếu qua tổng công ty ở Mỹ, lương khởi điểm sẽ không thua kém 100 ngàn đô la. Nếu không kể đến lợi ích tiền tài, có thể làm việc ở trung tâm kinh tế tài chính tại New York, đối với bọn họ mà nói, sự nghiệp cả đời này không thể tưởng tượng được sẽ tuyệt vời đến mức độ nào.
+</p>
+
+<p>
+ Thực tập sinh nghe được tin này đều háo hức sôi sục, có người còn hận không thể dốc hết sức lực để tranh thủ trở thành người may mắn. Nhan Hiểu Thần đối với chuyện này là hoàn toàn không có hứng thú, nếu Thẩm Hầu có ý định xuất ngoại thì bây giờ vẫn còn sớm để cô đi, còn nếu kế hoạch tương lai của Thẩm Hầu không có suy nghĩ đến xuất ngoại, thì như vậy cô tuyệt đối cũng sẽ không nghĩ tới. Cô vẫn như ngày thường, nghiêm túc tiếp nhận mỗi một việc, sẽ không cố ý tranh giành để thể hiện mình, nhưng nếu đến phiên cô thể hiện, thì cũng sẽ không cố ý nhường nhịn một ai. Dù sao, muốn được chọn thì không dễ dàng, nhưng nếu đã được chọn mà muốn từ chối thì lại rất dễ dàng.
+</p>
+
+<p>
+ Bởi vì đã quyết định là từ chối nên Nhan Hiểu Thần không nói với Thẩm Hầu chuyện này.
+</p>
+
+<p>
+ Đầu tháng 5, Nhan Hiểu Thần nhận được tháng lương đầu tiên, trừ đi các loại thuế, có hơn 5000 đồng, đối với Nhan Hiểu Thần mà nói, đây là một số tiền lớn.
+</p>
+
+<p>
+ Cô chuyển cho mẹ 1500 đồng, tính toán trả lại cho Trình Trí Viễn 1000, còn dư lại hơn 2000. Cô tra cứu giá cả một số nhà hàng Tây gần khu chung cư của Trình Trí Viễn mới phát hiện, nếu như mời Trình Trí Viễn ăn đại tiệc, chí ít phải tốn 500 đồng. Như vậy, nhiều nhất cũng chỉ còn dư lại hơn một ngàn, nhìn thì không ít, nhưng đi làm không phải như đi học, chi tiêu lớn hơn rất nhiều, hơn 1000 duy trì cho một tháng mới chỉ vừa đủ, nhưng Nhan Hiểu Thần đã hài lòng lắm rồi. Cô chọn nhà hàng tốt, cao hứng phấn khởi gọi điện thoại cho Trình Trí Viễn mời anh ta ăn cơm, Trình Trí Viễn rất vui vẻ đồng ý.
+</p>
+
+<p>
+ Tất cả đều đã quyết định nhưng Nhan Hiểu Thần không biết nên nói sao với Thẩm Hầu. Thẩm Hầu là người có rất nhiều bạn bè, hoạt động của hắn cũng rất nhiều, Nhan Hiểu Thần không có hứng thú tham gia nên Thẩm Hầu cũng sẽ không đưa cô đi cùng. Nếu Nhan Hiểu Thần không nói với hắn, kiếm cớ gì đó để đi ăn cơm cùng Trình Trí Viễn thì Thẩm Hầu chắc chắn là không biết, nhưng Nhan Hiểu Thần không nghĩ là sẽ lừa gạt hắn.
+</p>
+
+<p>
+ Có điều Thẩm Hầu đối với Trình Trí Viễn thành kiến quá sâu, Nhan Hiểu Thần đã thử đủ cách, muốn hóa giải hiểu lầm của hắn đối với Trình Trí Viễn nhưng không được. Mỗi lần cô nói với Thẩm Hầu kể rõ Trình Trí Viễn là người tốt như thế nào thì Thẩm Hầu luôn nói với vẻ mặt quái lạ khinh thường: “Hắn có ý đồ với em, dĩ nhiên đối tốt! Hắn không đối tốt với em, làm thế nào thực hiện ý đồ của hắn đây?” Thẩm Hầu kiên quyết không tin Trình Trí Viễn xem Nhan Hiểu Thần là bạn bè bình thường, cho nên Nhan Hiểu Thần càng nói Trình Trí Viễn tốt, giống như càng chứng mình ý đồ xấu của anh ta.
+</p>
+
+<p>
+ Nhiều khi Nhan Hiểu Thần nói nhiều quá, Thẩm Hầu phát ghen, chua xót nói rằng: “Hắn tốt như vậy, không bằng em tìm hắn làm bạn trai đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần không muốn Thẩm Hầu buồn bực nên chỉ có thể im lặng không đề cập gì đến Trình Trí Viễn nữa, nhưng đương nhiên cô cũng kiên quyết không nghe theo lời của Thẩm Hầu mà tuyệt giao với Trình Trí Viễn. Thẩm Hầu biết cô vẫn liên hệ với Trình Trí Viễn, bởi vì mỗi lần gọi điện thoại cho Trình Trí Viễn hỏi về công việc cô đều không dối gạt Thẩm Hầu, có khi cô còn cầm điện thoại đưa cho Thẩm Hầu xem, chứng minh tin nhắn của cô với Trình Trí Viễn là trong sạch, giống như buôn bán sách giáo khoa vậy, Thẩm Hầu không có cách gì nổi giận, nhưng hắn vẫn là không chấp nhận được anh ta.
+</p>
+
+<p>
+ Dần dần cả hai đều trở nên ngang ngạnh cứng đầu, bọn họ đều cho rằng chính mình rất có lý,  chẳng ai nhường nhịn ai, nhưng cũng không muốn phải cãi nhau, chỉ có thể mỗi người nhường một bước, Thẩm Hầu bất quá không hỏi đến chuyện của cô và Trình Trí Viễn, Nhan Hiểu Thần cũng không chủ động đi gặp anh ta.
+</p>
+
+<p>
+ Bởi vì không biết phải nói với Thẩm Hầu như thế nào, nên Nhan Hiểu Thần muốn trì hoãn thêm một lát.
+</p>
+
+<p>
+ Nhan Hiểu Thần đến khu ký túc xá của Thẩm Hầu tìm hắn thì thấy hắn đang vô trang taobao (6) nhìn ngó linh tinh, cái này thì không lạ, nhưng lạ là mấy trang web hắn đang xem đều là thời trang trẻ em hoặc trang phục phụ nữ, Nhan Hiểu Thần tò mò hỏi, “Anh muốn mua quần áo cho ai?”
+</p>
+
+<p>
+ (6) taobao.com là trang web mua sắm trực tuyến của Trung Quốc, giống như eBay hay Amazon, được tạo ra tại Trung quốc nhờ nhóm Alibaba.
+</p>
+
+<p>
+ “Không có mua, chỉ là tùy tiện xem thôi, để coi bây giờ người ta thích nhất là loại quần áo gì.”
+</p>
+
+<p>
+ Thẩm Hầu đóng máy tính lại, “Tối nay ăn cơm ở đâu?”
+</p>
+
+<p>
+ “Tối nay anh tự đi ăn đi! Em có hẹn với bạn…” Nhan Hiểu Thần lắp bắp, cô định nói chuyện mời Trình Trí Viễn đi ăn cơm tối cho Thẩm Hầu nghe.
+</p>
+
+<p>
+ Thẩm Hầu quả nhiên nổi giận, hơi lớn tiếng nói: “Em có tiền lương, chỉ mời anh ăn một phần cơm thố, vậy mà muốn mời Trình Trí Viễn ăn cơm Tây! Chẳng lẽ hắn quan trọng hơn anh?”
+</p>
+
+<p>
+ Nhan Hiểu Thần còn chưa nói cho Thẩm Hầu biết cô đã hai lần mượn tiền của Trình Trí Viễn, nên chỉ có thể giải thích: “Em tìm việc làm anh ta đã giúp rất nhiều, lúc trước em có đồng ý sẽ cảm tạ anh ta thật tốt, không mời người ta ăn tiệc lớn, là bởi vì không đủ tiền, cho nên lúc đó đành nhẫn nhịn một chút.”
+</p>
+
+<p>
+ Thẩm Hầu nghe mấy câu đầu không đồng ý cho lắm, nhưng hắn đối với Nhan Hiểu Thần tràn đầy tin tưởng, cảm thấy Trình Trí Viễn cùng lắm là “dệt hoa trên gấm” (7), không có anh ta, Nhan Hiểu Thần khẳng định vẫn có thể có được việc làm tốt, nhưng nghe đến câu sau lại hết sức chú tâm, bực tức giảm đi một chút, than thở nói: “Thì em tự mua cho Trình Trí Viễn món quà nào có giá trị một chút, không cần cùng đi ăn cơm như thế, có được không?”
+</p>
+
+<p>
+ (7) Gấm đã có hoa, dệt lên cũng thừa: ý là Trình Trí Viễn có làm việc gì đi nữa cũng không ảnh hưởng gì đến Nhan Hiểu Thần.
+</p>
+
+<p>
+ Nhan Hiểu Thần xin lỗi nhìn Thẩm Hầu, đột nhiên nảy ra ý định, nhanh trí nói: “Nếu anh không yên tâm, hay là đi chung đi?” Thừa dịp này, cô muốn giúp cho Thẩm Hầu hiểu con người của Trình Trí Viễn một chút, nói chung rất nhiều hiểu lầm đều bắt nguồn từ không hiểu biết.
+</p>
+
+<p>
+ Thẩm Hầu tỏ thái độ cực kỳ không ưa, nghiêm túc nói với Nhan Hiểu Thần: “Tiểu Tiểu, anh không phải không yên tâm, anh đối với mình vẫn thừa tự tin, cũng tuyệt đối tin tưởng em! Anh chỉ là không thích con người của Trình Trí Viễn, nói chung cảm thấy hắn rất quái lạ!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cười nói: “Anh tin tưởng vào việc đánh giá người khác của em một lần không được sao? Trình Trí Viễn thực sự là một người bạn rất tốt.”
+</p>
+
+<p>
+ Thẩm Hầu không lay chuyển được Nhan Hiểu Thần đành thở dài, “Em đi đi, cùng lắm bù lại tổn thất cho anh.”
+</p>
+
+<p>
+ Nhan Hiểu Thần lập tức nói: “Được, anh muốn bù lại cái gì?”
+</p>
+
+<p>
+ Thẩm Hầu cười xấu xa, chỉ chỉ vào môi của Nhan Hiểu Thần, “Anh muốn cái này.” Nhan Hiểu Thần vừa “hừ” nhẹ một tiếng, Thẩm Hầu đã bịt kín môi của cô bằng môi của hắn, tiến quân thần tốc, hung hăng tàn bạo một trận, sau đó dời xuống đến cổ của cô. Nhan Hiểu Thần là điển hình con gái miền Nam sông nước, làn da trắng nõn trơn láng, chạm vào như đồ sứ, còn mát lạnh nhạy cảm, khiến cho Thẩm Hầu hết sức cẩn thận dịu dàng. Nhưng đêm nay, hắn lại nhớ tới mấy thằng bạn trong ký túc xá nói “dấu ấn dâu tây” gì đó, ý định đùa cợt nổi lên, ấn lực một chút dùng môi mút thật mạnh lên cổ của Nhan Hiểu Thần.
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy hơi đau, nhưng cũng không đến nỗi không chịu được, cô có chút bất an  liền cấu Thẩm Hầu một cái, Thẩm Hầu trấn an dỗ dành cô. Mấy phút sau, Thẩm Hầu nghiêng đầu nhìn thấy phía trên xương quai xanh của Nhan Hiểu Thần là một cái dấu đỏ ửng giống như dâu tây, lấp ló ngay tại đường viền cổ áo. Thẩm Hầu cười nói với Nhan Hiểu Thần: “Em đi ăn cơm đi, anh đã để lại dấu ấn dành riêng cho anh trên người em rồi, em không chạy thoát được đâu!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cũng không để ý trên cổ cô có cái gì, nghe được Thẩm Hầu chịu cho cô đi thì vui vẻ nói: “Em đi đây, buổi tối không cần chờ, em sẽ gửi blog cho anh.”
+</p>
+
+<p>
+ Thẩm Hầu không có ý kiến gì cười cười, “Em đi ăn cơm của em đi, anh đi ăn cơm của anh, anh không can thiệp chuyện của em, em cũng đừng động đến chuyện của anh.”
+</p>
+
+<p>
+ Nhan Hiểu Thần hôn lên hai má của Thẩm Hầu một chút rồi rời khỏi.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-017.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

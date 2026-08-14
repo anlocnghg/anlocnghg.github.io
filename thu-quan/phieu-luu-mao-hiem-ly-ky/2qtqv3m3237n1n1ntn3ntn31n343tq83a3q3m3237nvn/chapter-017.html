@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 17 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 17</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-016.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-018.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Gần trưa đội của Roran tới khu lều cạnh đường. Những căn lều trông xám xịt và khó phân biệt vì lúc này sự mệt mỏi của Roran đã giăng mây che tầm nhìn cuae anh. Cách đó 1 dặm về phía nam là thành phố Aroughs nhưng anh chỉ nhận ra những đặc trưng cơ bản nhất của một thành phố: tường trắng như bang, cổng thành rộng lớn đóng im ỉm và những tòa tháp xây bằng đá vuông.
+</p>
+
+<p>
+ Anh nhảy khỏi ngựa khi đoàn người tới trại. Những con ngựa gần như ngã quỵ. Một thanh niên gầy nhẳng chạy tới chỗ anh và nắm lấy cương kéo cho tới khi con vật dừng hẳn.
+</p>
+
+<p>
+ Roran cúi xuống nhìn cậu nhóc và chưa hiểu chuyện gì xảy ra. Một lúc lâu sau anh mới nói được một câu gọn lỏn, “Đưa tôi tới gặp Brigman.”
+</p>
+
+<p>
+ Thằng nhóc không nói tới một lời thằng nhỏ xoay người bước đi, để lại lớp bụi bay mù dưới gót chân trần.
+</p>
+
+<p>
+ Roran cảm thấy như anh phải ngồi đợi hơn một tiếng đồng hồ. Con ngựa thở hổn hển đứt đoạn còn anh chảy máu tai. Khi anh nhìn xuống đất, dường như máu vẫn tiếp tục chảy thành dòng. Từ đâu đó vang lên tiếng thúc ngựa.Tầm mười hai chiến binh tụ tập gần đó, chống lên giáo và khiên, vẻ mặt thể hiện nét tò mò.
+</p>
+
+<p>
+ Từ đằng xa một người đàn ông vai rộng mặc áo trấn thủ xanh lơ đi khập khiễng về phía Roran, sử dụng một cây giáo gẫy thay cho gậy chống. Ông để râu xồm xoàm dù ria cạo sạch và lấm tấm mồ hôi – Roran không biết vì ông đang thấy đau hay do nóng.
+</p>
+
+<p>
+ “Anh là Cây Búa Dũng Mãnh?” ông hỏi.
+</p>
+
+<p>
+ Roran ừm nhẹ một tiếng xác nhận. Anh thả tay đang cầm cương, cho vào trong áo và đưa cho Brigman một phong thư da dê có lệnh của Nasuada.
+</p>
+
+<p>
+ Brigman bóc niêm phong. Ông đọc một hồi rồi hạ lá thư xuống và nhìn Roran không biểu cảm.
+</p>
+
+<p>
+ “Chúng tôi đang đợi anh,” ông nói. “Một trong những thầy bùa thân cận của Nasuada đã liên lạc với tôi từ bốn ngày trước và nói anh đã đi, nhưng tôi không nghĩ anh sẽ tới sớm thế này.”
+</p>
+
+<p>
+ “Không dễ dàng gì,” Roran nói.
+</p>
+
+<p>
+ Môi trên của Brigman cong lên. “Tôi chắc chắn vậy thưa...ngài.” Ông đưa tấm da dê lại cho Roran. “Binh sĩ ở đây sẽ nghe lệnh ngài thưa Cây Búa Dũng Mãnh. Chúng tôi chuẩn bị tấn công cổng tây. Có thể ngài muốn chỉ huy chăng?” Câu hỏi sắc nhọn như một mũi dao.
+</p>
+
+<p>
+ Thế giới xung quanh Roran dường như nghiêng nghả và anh cầm chắc cương hơn. Anh quá mệt không thể tán dóc với ai nữa rồi.
+</p>
+
+<p>
+ “Ra lệnh cho họ nghỉ một ngày,” anh nói.
+</p>
+
+<p>
+ “Ngài có còn minh mẫn không? Ngài làm thế nào để chiếm thành vậy? Chúng tôi phải mất cả buổi sáng để chuẩn bị tấn công và tôi sẽ không ăn không ngồi rồi chờ ngài ngủ đâu. Nasuada mong chúng tôi chiếm thành trong vài ngày và, vì Angvard, tôi sẽ làm được điều đó!”
+</p>
+
+<p>
+ Roran gầm nhẹ chỉ mình Brigman nghe thấy, “Ra lệnh cho binh sĩ rút lui, không tôi sẽ đánh ông què cẳng vì bất tuân quân lệnh. Tôi sẽ không cho phép bất kỳ cuộc tấn công nào diễn ra cho tới khi tôi nghỉ ngơi và quan sát tình hình.”
+</p>
+
+<p>
+ “Ngài thật là ngu ngốc. Điều này có thể...”
+</p>
+
+<p>
+ “Nếu ông không câm miệng và làm nhiệm vụ của mình đi, tôi sẽ tự tay đập ông một trận – ngay đây và ngay lúc này.”
+</p>
+
+<p>
+ Cánh mũi Brigman phập phồng. “Trong tình trạng này sao? Ngài không có cơ hội đâu.”
+</p>
+
+<p>
+ “Sai rồi,” Roran nói. Và anh nói thật. Anh không chắc mình sẽ đánh bại Brigman bằng cách nào nhưng anh biết anh có thể.
+</p>
+
+<p>
+ Brigman có vẻ đang đấu tranh tư tưởng ghê gớm. “Vâng,” ông quát lên. “Tốt hơn hết là không nên để cho quân sĩ thấy nội bộ tướng lĩnh lục đục. Chúng tôi sẽ ở nguyên vị trí nếu đó là điều ngài muốn, nhưng tôi không chịu trách nhiệm vì bỏ lỡ thời cơ. Đó là trách nhiệm của ngài.”
+</p>
+
+<p>
+ “Tất nhiên rồi,” Roran nói, cổ họng bỏng rát vì đau. “Cũng như ông phải chịu trách nhiệm vì những tổn thất ông đã gây cho cuộc vây thành lần này.”
+</p>
+
+<p>
+ Mắt Brigman tối lại và Roran có thể thấy ông tướng đã chuyển từ không thích anh sang thù ghét. Anh ước gì anh đã phản ứng nhã nhặn hơn.
+</p>
+
+<p>
+ “Lều của ngài ở đằng này.”
+</p>
+
+<p>
+ Sáng hôm sau Roran tỉnh giấc.
+</p>
+
+<p>
+ Ánh sáng mờ mờ chiếu vào lều khiến anh lên tinh thần. Trong một lúc, anh nghĩ anh chỉ ngủ có vài phút. Nhưng rồi anh nhận ra đầu óc anh đã sáng suốt và tỉnh táo hơn nhiều.
+</p>
+
+<p>
+ Anh tự rủa thầm, tức giận vì để lỡ cả ngày.
+</p>
+
+<p>
+ Anh đắp một tấm chăn mỏng, thực sự không cần thiết cho thời tiết phương nam dễ chịu, đặc biệt là khi anh vẫn đeo giầy và mặc quần áo. Anh bỏ chăn sang bên rồi ngồi thẳng dậy.
+</p>
+
+<p>
+ Anh rên lên một tiếng vì toàn bộ cơ thể anh như căng cứng và gẫy vụn. Anh nằm xuống thở hổn hển. Cú choáng ban đầu nhanh chóng tan đi chỉ để lại những cơn đau ê ẩm.
+</p>
+
+<p>
+ Anh mất vài phút mới tập trung toàn bộ sức lực lăn sang một bên và bỏ chân xuống võng. Anh dừng lại thở trước khi cố sức đứng lên.
+</p>
+
+<p>
+ Khi đã đứng được lên anh cười chua sót. Hôm nay sẽ là một ngày thú vị đây.
+</p>
+
+<p>
+ Khi anh ra khỏi lều những người khác đã dậy và đang đứng đợi anh. Trông họ tơi tả và thảm hại: họ cử động cà nhắc như anh. Sau khi chào hỏi, Roran chỉ về tấm vải băng cánh tay Delwin, băng vết thương một người chủ quán rượu chém vào. “Đỡ đau chưa?”
+</p>
+
+<p>
+ Delwin nhún vai. “Không tệ lắm. Nếu cần tôi vẫn đấm đá được.”
+</p>
+
+<p>
+ “Tốt.”
+</p>
+
+<p>
+ “Anh định làm gì tiếp theo đây?” Carn hỏi.
+</p>
+
+<p>
+ Roran nhìn mặt trời đang mọc, tính toán còn bao lâu sẽ tới trưa. “Đi bộ chút đã,” anh nói.
+</p>
+
+<p>
+ Roran dẫn những người bạn đồng hành đi từ trung tâm khu trại dọc ngang các dãy lều, xem xét tình hình quân binh cũng như quân dụng. Thi thoảng, anh dừng lại hỏi han một binh sĩ trước khi đi tiếp. Hầu như các chiến binh đều mệt mỏi và nản lòng, dù anh để ý thấy tinh thần có có phấn chấn đôi chút khi nhìn thấy anh.
+</p>
+
+<p>
+ Cuộc đi dạo của Roran kết thúc ở góc phía nam trại như anh đã dự định từ đầu. Anh và những người khác dừng lại nhìn về thành phố Aroughs.
+</p>
+
+<p>
+ Thành phố được chia thành hai khu. Khu thứ nhất thấp và trải dài gồm những tòa nhà quan trọng trong khi khu thứ hai, nhỏ hơn chủ yếu là những khu nhà cao, thiết kế trang nhã. Bức tường thành bao quanh cả hai khu. Từ ngoài nhìn vào có thể thấy rõ năm cổng thành: hai cổng lớn dẫn đường vào thành phố: một phía bắc và một phía đông – ba cổng còn lại nằm cạnh con kênh chảy từ phía nam vào thành phố. Ở bên kia Aroughs là con sống sóng vỗ rầm rì, nơi con kênh chảy ra.
+</p>
+
+<p>
+ Ít nhất họ không có tường hào, anh nghĩ.
+</p>
+
+<p>
+ Những vết thủng lỗ chỗ trên cổng bắc là vết tích của chiến tranh. Trên mặt đất cũng hằn những dấu vết của trận chiến. Anh nhận ra ba vết đạn từ máy bắn ta và bốn vết từ cẩu đá nhờ hồi thuộc đội Cánh Rồng, hai tòa tháp xiêu vẹo ở đằng sau tường thành. Vài binh sĩ đang ngồi chổm hỗm bên cạnh các cỗ máy chiến tranh hút thuốc hoặc chơi xúc xắc trên vài tấm da. Những cỗ máy có vẻ trông nhỏ bé tới tội nghiệp so với thành phố rộng lớn này.
+</p>
+
+<p>
+ Thành phố Aroughs thấp, bằng phẳng đổ thoai thoải ra biển. Hàng trăm trang trại điểm xuyết trên đồng bằng xanh rì, được đánh dấu bằng những hàng rào gỗ và ít nhất một túp lều lợp rạ. Những dinh thự xa hoa nằm đây đó: những trang viên xây bằng đá được bảo vệ bởi những bức tường cao và những người bảo vệ. Chắc chắn chúng là tài sản của giới quý tộc Aroughs và có thể là của những thương nhân làm ăn phát đạt.
+</p>
+
+<p>
+ “Anh nghĩ gì?” anh hỏi Carn.
+</p>
+
+<p>
+ Pháp sư lắc đầu, đôi mắt cụp của anh trông buồn hơn bình thường. “Chúng ta sẽ mất rất nhiều binh lính mới chiếm nổi thôi.”
+</p>
+
+<p>
+ “Chắc rồi,” Brigman nhận xét khi tiến tới chỗ họ.
+</p>
+
+<p>
+ Roran không nói ra những nhận xét của minhfl anh không muốn những người khác biết anh đang nản lòng vô cùng. Nasuada bị điên nếu tin rằng chúng ta có thể chiếm Aroughs chỉ với tám trăm binh lính. Nếu mình có tám ngàn quân cùng sự hỗ trợ của Eragon và Saphira thì còn có nhẽ. Nhưng đằng này...”
+</p>
+
+<p>
+ Nhưng anh biết anh phải tìm ra cách, vì tương lai của Katrina.
+</p>
+
+<p>
+ Roran không nhìn Brigman và nói. “Nói cho tôi nghe về Aroghs.”
+</p>
+
+<p>
+ Brigman xoay ngọn giáo vài lần, thân giáo xoay vài lỗ trên mặt đất, rồi nói. “Galbatorix đã tính toán từ trước; hắn đã cho dữ trữ lương thực đầy đủ trong thành phố trước khi chúng ta cắt đường chi viện từ đây với Triều đình. Ngài có thể thấy rằng họ không thiếu nguồn nước. Nếu chúng ta ngăn sông, họ còn có vài con suối và giếng trong thành phố. Họ có thể giữ thành cho tới mùa, thậm chí còn lâu hơn, dù tôi nghi họ không thể nào không ốm lên vì ăn củ cải suốt. Ngoài ra, Galbatorix còn điều số lượng lớn binh sĩ tới đây – gấp đôi số lượng quân của chúng ta – bổ sung cho binh sĩ trong thành.”
+</p>
+
+<p>
+ “Sao ông biết?”
+</p>
+
+<p>
+ “Nội gián. Nhưng cậu ta không biết về binh pháp nên đã cung cấp quá nhiều đánh giá chủ quan về những điểm yếu của Aroughs.”
+</p>
+
+<p>
+ “Ờ.”
+</p>
+
+<p>
+ “Cậu ta cũng đã khẳng định rằng cậu ta sẽ giúp đưa một lượng nhỏ quân chúng ta vào trong thành nhân lúc đêm tối.”
+</p>
+
+<p>
+ “Rồi?”
+</p>
+
+<p>
+ “Chúng tôi đã đợi nhưng cậu ta không xuất hiện và chúng tôi thấy cậu ta bị bêu đầu vào sáng hôm sau. Giờ vẫn còn treo ở cổng đông đó.”
+</p>
+
+<p>
+ “Thì ra là vậy. Ngoài năm cổng này ra còn cổng nào không?”
+</p>
+
+<p>
+ “Có ba cổng nữa. Ở gần bến cảng có một cổng dẫn nước lớn đủ cho ba dòng chảy đi vào cùng lúc và gần đó là một cổng trên đất liền cho người và ngựa. Ngoài ra còn một cổng trên đất liền ở đầu kia” – ông ta chỉ về phía tây thành phố - “giống những cổng khác.”
+</p>
+
+<p>
+ “Có thể bắn phá được cổng nào không.”
+</p>
+
+<p>
+ “Không nhanh được. Bờ biển quá hẹp khiến chúng tôi không thể bày bố quân hoặc tránh tên và đá của quân đội trong thành. Vì thế chúng tôi không thể tấn công các cổng gần biển cũng như là cổng tây. Vùng đất xung quanh thành bị chia cắt vì sông suối quá nhiều cho nên cũng khá nhỏ hẹp, vì vậy tôi đã quyết định tập trung mũi tấn công vào cổng gần nhất.”
+</p>
+
+<p>
+ “Cổng làm bằng gì?”
+</p>
+
+<p>
+ “Sắt và gỗ sồi. Chúng còn trụ vững hàng trăm năm nữa nếu không bị phá dỡ.”
+</p>
+
+<p>
+ “Chúng có được bảo vệ bởi phép thuật không?”
+</p>
+
+<p>
+ “Tôi không rõ vì tiểu thư Nasuada không gửi pháp sư cho chúng tôi. Halstead có...”
+</p>
+
+<p>
+ “Halstead?”
+</p>
+
+<p>
+ “Lãnh chúa Halstead của thành Aroughs. Chắc ngài từng nghe thấy rồi chứ.”
+</p>
+
+<p>
+ “Chưa.”
+</p>
+
+<p>
+ Một quãng im lặng ngắn khiến Roran có thể cảm nhận sự khinh miệt của Brigman dành cho anh đang lớn dần. Sau đó người đàn ông đó nói tiếp, “Halstead có riêng một pháp sư phục tùng: một kẻ xấu tính, da vàng vọt chúng tôi đã có dịp nhìn thấy trên tường thành cố hất ngã chúng tôi xuống bằng phép thuật. Hắn có vẻ không giỏi gì cho cam, trừ chuyện hắn đã thiêu cháy hai người tôi bố trí dùng gỗ phá cổng thành.”
+</p>
+
+<p>
+ Roran liếc mắt nhìn Carn – pháp sư tỏ ra lo lắng hơn trước – nhưng anh quyết định sẽ thảo luận vấn đề này với nhau sau.
+</p>
+
+<p>
+ “Công thành qua đường kênh có dễ hơn không?” anh hỏi.
+</p>
+
+<p>
+ “THế chúng ta sẽ đứng ở đâu? Thành phố kề sát kênh cơ mà. Hơn nữa đi qua lối đó khác nào đưa đầu có chúng giết, chúng có thể đổ dầu nóng, ném đá, hoặc bắn hỏa tiễn vào bất cứ tên ngu nào đi qua lối đó.”
+</p>
+
+<p>
+ “Cánh cổng không thể nào bịt kín được, phải có lối cho nước lưu thông chứ.”
+</p>
+
+<p>
+ “Đúng. Bên đưới có hàng lưới mắt cáo bằng gỗ và sắt để dòng chảy không quá mạnh.”
+</p>
+
+<p>
+ “Hiểu. Vậy là hầu hết thời gian, kể cả khi không bị tấn công, Aroughs đều hạ thấp cổng đúng không?”“Đêm thì chắc, nhưng tôi tin ban ngày cổng đó sẽ mở.
+</p>
+
+<p>
+ “Ừm. Các bức tường xây từ gì?”
+</p>
+
+<p>
+ “Đá hoa cương, bề mặt cực kỳ trơn nhẵn và khít không thể lách nổi một lưỡi dao. Tôi đoán đây là tác phẩm của người lùn trước thời kỳ thoái trào của Kỵ sĩ Rồng. Tôi đoán lớp bên trong tường được trộn đá cuôi. Nhưng tôi không dám khẳng định vì chúng ta chưa làm xây sất nổi lớp vỏ ngoài. Chân tường sâu tới hơn 12 mét nên chúng ta sẽ không thể đào hầm để làm yếu móng tường hoặc đánh sập tường.”
+</p>
+
+<p>
+ Brigman bước thêm một bước và chỉ về những thái ấp ở phía nam và phía tây. “Hầu hết giới quý tộc đều lui vào Aroughs để lại tùy tùng bảo vệ tài sản. Họ gây rắc rối cho chúng ta, tấn công quân trinh sát, trộm ngựa...Chúng ta đã chiếm được hai thái ấp...” – ông ta chỉ hai kho thóc lớn đang cháy cách đó vài dăm – “nhưng giữ lại chúng còn phiền hơn vì thế chúng tôi đã đốt bỏ. Không may, chúng tôi không có đủ người để bảo vệ phần còn lại.”
+</p>
+
+<p>
+ Baldor nói. “Vì sao các kênh lại chạy vào Aroughs nhỉ? Hình như họ không dùng nó làm hệ thống mương tưới tiêu thì phải.”
+</p>
+
+<p>
+ “Ở vùng này không cần tưới nước như người miền bắc không cần xe trượt tuyết trong mùa đông vậy.”
+</p>
+
+<p>
+ “Thế mục đích là gì?” Roran thắc mắc. “Nguồn nước bắt đầu từ đâu? Ông đừng mong tôi tin nhưng con kênh này rẽ nhánh từ sông Jiet nhé, quá xa.”
+</p>
+
+<p>
+ “Không,” Brigman chế giễu. “Có một số hồ nước ở mạn bắc. Nước lợ và bẩn nhưng dân ở đây quen rồi. Một con sông bắt nguồn từ đó, chia làm ba nhánh sông nhỏ chảy tới đây vào các đập tạo năng lượng giúp xay bột cung ứng cho thành phố. Nông dân chở lúa mỳ tới các khu xay sát vào vụ mùa rồi chất các thúng bột lên sà lan chở vào thành phố. Dân cư ở đây cùng lợi dụng đường sông để chuyên chở hàng hóa như gỗ xẻ và rượu từ các trang ấp vào thành phố.”
+</p>
+
+<p>
+ Roran gãi gãi cổ khi tiếp tục quan sát Aroughs. Những gì Brigman vừa nói đã khiến anh nảy ra một ý nhưng chưa rõ nó có khả thi không. “Còn điểm gì đặc biệt ở khu ngoại vi không?”
+</p>
+
+<p>
+ “Đi dọc bờ biển về phương nam có một mỏ đá phiến.”
+</p>
+
+<p>
+ Anh gầm gừ trong khi suy ngẫm. “Tôi muốn tới xem khu xay sát,” anh nói. “Nhưng trước hết tôi muốn nghe toàn bộ tình hình từ ông.”
+</p>
+
+<p>
+ “Mời đi theo tôi thưa Cây búa Dũng mãnh.”
+</p>
+
+<p>
+ Trong cả một tiếng đồng hồ sau đó Roran thảo luận với Roran và hai phó tướng, nghe và hỏi về những lần công thành hay biết mỗi binh lính còn bao nhiêu lương thực.
+</p>
+
+<p>
+ Ít ra chúng ta không thiếu vũ khí, Roran nghĩ khi biết số tử sĩ. Kể cả nếu Nasuada không giới hạn thời gian nhiệm vụ cho anh thì người và ngựa cũng không có đủ lương thực mà sống trong hơn một tuần nữa.
+</p>
+
+<p>
+ Rất nhiều sự kiện và con số Brigman và các phó tướng đề cập tới được viết trên giấy. Roran không nói ra chuyện mình không thể đọc nổi những con chữ đen đen loằng ngoằng nên buộc những người kia đọc lên cho nghe. Dù vậy anh cũng tức vì phụ thuộc vào người khác. Nasuada nói đúng, mình phải học đọc vì nếu không mình không thể biết người kia có nói dối mình không khi đọc gì đó cho mình... Có lẽ khi về Varden Carn có thể dạy mình.
+</p>
+
+<p>
+ Roran càng biết nhiều về Aroughs, anh càng thấy thông cảm cho những khó khăn của Brigman; vô phương chiếm thành. Dù anh không thích người đàn ông này nhưng anh nghĩ vị tướng đã làm hết sức có thể. Roran tin ông ấy thất bại không phải vì không đủ năng lực mà vì ông ấy thiếu hai yếu tố hết lần này tới lần khác mang lại thắng lợi cho Roran: sự liều lĩnh và óc tưởng tượng.
+</p>
+
+<p>
+ Sau khi xem xét tình hình xong, Roran và năm người đồng hành cùng Brigman đi quan sát tường thành Aroughs ở khoảng cách gần hơn nhưng đủ xa để giữ an toàn. Lên lưng ngựa lần nữa lại khiến Roran đau nhưng anh không hề kêu lấy một tiếng.
+</p>
+
+<p>
+ Khi móng ngựa nện lên con đường rải đá đi tới thành phố ở gần khu trại, Roran để ý thi thoảng móng ngựa tạo ra những âm thanh khác thường. Anh nhớ đã nghe thấy âm thanh quen thuộc này trong ngày cuối chuyến đi.
+</p>
+
+<p>
+ Anh nhìn xuống và thấy những phiến đá phẳng hình như có màu bạc mờ, những mạch đá hình thành nên họa tiết hình mạng nhện khác thường.
+</p>
+
+<p>
+ Roran gọi lớn hỏi Brigman nhưng Brigman chỉ bảo “Vữa chất lượng kém nên họ dùng chì để trát đá.”
+</p>
+
+<p>
+ Lúc đầu Roran không tin nhưng Brigman rất nghiêm túc. Anh thấy ngạc nhiên vì người ở đây lại coi kim loại bình thường tới mức dùng để làm đường.
+</p>
+
+<p>
+ Họ cẩn trọng quan sát hàng phòng thủ của Aroughs nhưng chẳng phát hiện ra điều gì mới và càng khiến Roran tin vào chuyện không thể chiếm nổi thành phố.
+</p>
+
+<p>
+ Anh đi ngựa tới gần Carn. Pháp sư đang nhìn Aroughs vẻ thẫn thờ, môi chuyển động không thành tiếng như thể nói chuyện một mình. Roran đợi tới khi anh dừng lại mới hỏi, “Cổng thành có phủ phép thuật không?”
+</p>
+
+<p>
+ “Tôi nghĩ là có,” Carn trả lời. “nhưng tôi không chắc có bao nhiêu câu thần chú trên đó và dụng ý của từng cái là gì. Tôi cần thêm thời gian mới biết được.”
+</p>
+
+<p>
+ “Sao lại khó thế?”
+</p>
+
+<p>
+ “Không hẳn. Hầu hết các câu thần chú đều dễ phát hiện, trừ khi có ai cố giấu chúng. Nhưng kể cả thế, pháp thuật thường để lại những dấu vết nếu anh biết cách nhìn. Tôi chỉ sợ họ dùng thần chú này để khởi động thần chú khác, và nếu tôi tiếp cận chúng thì ai biết chuyện gì sẽ xảy ra? Tôi có thể biến thành một vũng nước ngay trước mắt anh. Nếu có thể tôi sẽ tránh cái đinh mệnh đó.”
+</p>
+
+<p>
+ “Anh có muốn ở lại khi chúng tôi đi tiếp không?”
+</p>
+
+<p>
+ Carn lắc đầu. “Tôi không nghĩ nên để các anh đi mà không có sự bảo vệ. Tôi sẽ trở lạ sau khi mặt trời lặn và xem tôi có thể làm gì. Ngoài ra ở gần cổng thành sẽ giúp tôi hiểu mấy câu thần chú đó, nhưng giờ tôi không dám tới gần cổng thành khi mấy tay lính canh nhìn thấy tôi rõ rành rành thế này.”
+</p>
+
+<p>
+ “Được thôi.”
+</p>
+
+<p>
+ Khi Roran hài lòng rằng họ đã biết mọi thứ về thành phố, anh để Brigman dẫn tới khu xay sát gần nhất.
+</p>
+
+<p>
+ Khi Roran hài lòng rằng họ đã biết mọi thứ về thành phố, anh để Brigman dẫn tới khu xay sát gần nhất.
+</p>
+
+<p>
+ Khá giống những gì Brigman miêu tả. Nước từ kênh được dẫn tới những đập cao 20m. Ở chân đập có một guồng nước có gắn mấy cái thùng. Nước chảy vào thùng làm guồng quay tròn. Các guồng nước được nối vào ba tòa nhà giống y hệt nhau. Trong các tòa nhà là các cối đá cỡ lớn dùng để xay bột cung cấp đủ cho dân cư Aroughs.
+</p>
+
+<p>
+ Anh xuống ngựa ngay khi tới khu xay sát ở vị trí thấp nhất và đi men theo con đường giữa các tòa nhà, mắt nhìn kênh dẫn nước làm nhiệm vụ kiểm soát lượng nước lưu thông vào các con đập. Cửa kênh mở nhưng mực nước trong đập vẫn thấp hơn ba guồng nước đã từ từ chuyển động.
+</p>
+
+<p>
+ Anh dừng ở giữa đoạn đường thoai thoải, chôn chân trên bờ kênh ẩm ướt đầy cỏ, khoanh hai tay lại và cúi đầu chạm ngực khi suy tính cách chiếm thành. Anh tin mình sẽ có cách hoặc chiến thuật gì đó để lẻn vào thành, nhưng cách nào thì anh chưa rõ.
+</p>
+
+<p>
+ Nghĩ mãi tới mệt, anh dừng lại lắng nghe tiếng trục xoay cọt kẹt và tiếng thác nước đổ ầm ầm.
+</p>
+
+<p>
+ Những âm thanh đó êm ả nhưng lại gợi lên cho anh vết thương lòng. Anh nhớ tới xưởng xay bột của chú Dempton ở Therinsford nơi anh đã tới làm vào ngày tụi Ra’zac đốt nhà và tra tấn cha anh tới chết.
+</p>
+
+<p>
+ Roran cố quên ký ức không vui đó đi nhưng nó vẫn ở đó, vẫn làm anh đau quặn từng cơn.
+</p>
+
+<p>
+ Giá mình đi muộn vài giờ, mình đã có thể cứu cha rồi. Ngay lúc đó, phần thực tế trong con người Roran trả lời, Đúng, và Ra’zac có thể giết mình trước khi mình kịp giơ tay. Không có Eragon bảo vệ, mình chỉ như một đứa nhỏ sơ sinh, không hơn.
+</p>
+
+<p>
+ Baldor lặng lẽ bước tới gần anh. “Những người còn lại đang muốn biết anh đã có kế gì chưa?” anh ta hỏi.
+</p>
+
+<p>
+ “Tôi có vài ý tưởng nhưng chưa có kế hoạch. Anh sao?”
+</p>
+
+<p>
+ Baldor cũng khoanh tay lại. “Chúng ta có thể đợi Nasuada cho Eragon và Saphira tới giúp.”
+</p>
+
+<p>
+ “Xì.”
+</p>
+
+<p>
+ Trong một lúc lâu họ lẳng lặng nhìn dòng nước chảy lững lờ bên dươi. Sau đó Baldor nói, “Nếu anh yêu cầu chúng đầu hàng thì sao? Có thể chúng sẽ sợ hãi khi nghe tên anh, chúng sẽ tử mình mở cổng, quỳ dưới chân anh và xin anh tha chết.”
+</p>
+
+<p>
+ Roran tặc tặc lưỡi. “Tôi không nghĩ tên tuổi tôi có thể lan tới tận Aroughs này. Nhưng,” Anh gãi gãi râu. “Có lẽ cũng nên thử, để cho chúng hoang mang chút thôi.”
+</p>
+
+<p>
+ “Kể cả khi chúng ta mở được cổng thành thì sao chiến thắng được với số quân ít ỏi thế này?”
+</p>
+
+<p>
+ “Có thể thắng có thể thua.”
+</p>
+
+<p>
+ Họ lặng yên rồi Baldor lên tiếng, “Chúng ta đã đi một quãng đường rất dài.”
+</p>
+
+<p>
+ “Đúng.”
+</p>
+
+<p>
+ Lại một lần nữa không gian chỉ vang lên tiếng nước chảy và tiếng guồng quay. Cuối cùng vẫn là Baldor mở lời, “Chắc hẳn ở đây tuyết rơi không nhiều. Vì thế lượng nước do băng tan không lớn như ở quê hương chúng ta. Nếu không, vào lúc lập xuân, guồng sẽ ngập một nửa mất.”
+</p>
+
+<p>
+ Roran lắc đầu. “Chuyện lượng mưa hay lượng tuyết rơi nhiều hay ít không quan trọng. Cửa đập sẽ khống chế lượng nước chảy vào các guồng quay để đảm bảo tốc độ cho chúng.”
+</p>
+
+<p>
+ “Nhưng nếu nước dâng lên ngang cửa thì sao?”
+</p>
+
+<p>
+ “Hy vọng là không có ngày đó. Nếu không, anh buộc phải kéo xích mở cửa đập và thế là....” Roran nghĩ tới một loạt những hình ảnh, người anh thấy nóng lên như thể anh vừa nốc một hơi hết cả vại rượu mật ong.
+</p>
+
+<p>
+ Được không? Anh nghĩ. Liệu có thành công không... hay... Không sao, chúng ta phải thử. Chúng ta còn làm được gì nữa?”
+</p>
+
+<p>
+ Anh bước đi trên con đường hẹp trước cái đập ở giữa, kéo những thanh gỗ nhỏ chèn lên trục điều khiển cửa đập. Thanh điều khiển khá khó di chuyển dù anh chèn vai đẩy bằng hết sức.
+</p>
+
+<p>
+ “Giúp tôi đi,” Anh nói với Baldor đang đứng trên bờ kênh quan sát với vẻ hứng thú pha chút bối rối.
+</p>
+
+<p>
+ Baldor cẩn thận đi tới chỗ Roran đứng. Họ cùng nhau đóng cửa đập lại. Sau đó, Roran không chịu trả lời câu hỏi nào mà tiếp tục đóng nốt hai cửa đập còn lại.
+</p>
+
+<p>
+ Sau khi đã đóng chặt cả ba, Roran đi lại chỗ Carn, Brigman và những người khác rồi ra hiệu cho họ xuống ngựa ra chỗ anh. Anh vỗ lên đầu búa trong khi chờ đợi, đột nhiên cảm thấy mất kiên nhẫn.
+</p>
+
+<p>
+ “Sao?” Brigman hỏi sau khi họ đã tới nơi.
+</p>
+
+<p>
+ Roran nhìn từng người một để đảm bảo họ hoàn toàn chú ý tới anh rồi nói. “Phải rồi, đây là điều chúng ta sẽ làm...” – sau đó anh bắt đầu nói, nhanh và căng thẳng trong suốt nửa tiếng đồng hồ, giải thích từng điều anh nghĩ tới trong khoảng khắc thoáng qua đó. Khi anh nói, mọi người nghiêm túc hơn, nhưng Mandel đã bắt đầu nhoẻn cười, Baldor, Delwin và Hamund cũng có vẻ hứng thú với kế hoach táo bạo của anh.
+</p>
+
+<p>
+ Phản ứng của họ khiến Roran hài lòng. Anh đã làm nhiều chuyện để có được sự tín nhiệm từ họ và anh vui vì anh vẫn có thể tin tưởng họ. Trong đời, anh sợ nhất là mất Katrina, sau là làm những người chiến hữu thất vọng.
+</p>
+
+<p>
+ Nhưng có vẻ Carn còn hoài nghi. Điều này thì Roran đã đoán được nhưng anh chỉ không ngờ nỗi nghi ngờ này có khi ngang bằng với Brigman.
+</p>
+
+<p>
+ “Anh điên rồi,” ông ta hét lên khi Roran vừa nói xong. “Không thể nào thành công được.”
+</p>
+
+<p>
+ “Ông rút lại lời nói đó đi!” Mandel nói và nhảy lên phía trước, tay nắm thành quyền. “Vì sao à, Roran đã thắng nhiều trận chiến hơn ông, và anh ấy đâu cần nhiều quân lính như ông!”
+</p>
+
+<p>
+ Brigman rít lên, môi trên cong lên như một con rắn. “Đồ mất dạy! Tao sẽ dạy cho mày một bài học không thể nào quên!”
+</p>
+
+<p>
+ Roran đẩy Mandel lùi lại trước khi cậu trai trẻ tấn công Brigman. “Thôi nào!” Roran gầm lên. “Hai người xem lại cách hành xử đi!” Mandel cáu kỉnh ngừng lại nhưng vẫn nhìn Brigman trừng trừng. Brigman cũng hành động tương tự.
+</p>
+
+<p>
+ “Chắc chắn đây là một kế hoạch lạ lùng,” Delwin nói. “Nhưng những kế hoach kỳ lạ của anh đã giúp chúng ta chiến thắng trong quá khứ.” Những người làng Carvahall khác lên tiếng đồng tình.
+</p>
+
+<p>
+ Carn gật đầu nói. “Kế hoach có thể thành công có thể không. Tôi không chắc. Nhưng chắc chắn nó sẽ khiến kẻ thù của chúng ta ngạc nhiên và tôi phải thừa nhận rằng tôi tò mò muốn thấy chuyện gì sẽ xảy ra. Đây là việc vô tiền khoáng hậu.”
+</p>
+
+<p>
+ Roran cười rạng rỡ. Anh nhìn Brigman và nói, “Giờ chúng ta cần phải điện. Chúng ta chỉ có hai ngày rưỡi để chiếm Aroughs. Những biện pháp thông thường không có hiệu quả vậy chúng ta phải mạo hiểm bằng những kế hoạch bất bình thường.”
+</p>
+
+<p>
+ “Có thể thế,” Brigman nói nhỏ. “Nhưng đây là một kế hoạch liều lĩnh khiến chúng ta tổn thất binh sĩ và tôi không thể nào đồng tình.”
+</p>
+
+<p>
+ Nụ cười của Roran rộng hơn khi anh tiến tới chỉ cách Brigman vài centimet. “Ông không cần phải đồng ý với tôi; ông chỉ cần làm theo lệnh thôi. Giờ ông có nghe theo lệnh của tôi hay không?”
+</p>
+
+<p>
+ Không khí giữa họ nóng lên do hơi thở và nhiệt độ từ da thịt họ. Brigman nghiến răng và xoắn cây giáo mạnh hơn trước, nhưng ánh mắt dao động và ông ta lùi lại. “Quỷ tha ma bắt anh đi,” ông ta nói. “Tôi sẽ làm chó cho anh trong lúc này, Cây búa dũng mãnh ạ, nhưng anh cứ xem đi,anh sẽ phải trả giá cho quyết định của anh sớm thôi.”
+</p>
+
+<p>
+ Miễn là chúng ta chiếm được Aroughs, Rora nghĩ, tôi chẳng cần quan tâm. “Lên ngựa!” anh ra lệnh. “Chúng ta có việc cần làm và còn quá ít thời gian! Nhanh lên! Nhanh lên! Nhanh lên!”
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-016.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-018.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

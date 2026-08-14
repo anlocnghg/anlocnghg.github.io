@@ -1,0 +1,742 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 22 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 22</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-021.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-023.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Hàng tá những tòa nhà tường vôi san sát nhau chung quanh bức tường ngoài, nơi con kênh dãn vào Aroughs. Tất cả các căn nhà – lạnh lẽo và kín mít vì những cửa sổ đen đóng kín – hình như đều là nhà kho. Tất cả đều chất đầy tới nóc, nghĩa là, không ai biết Varden đã vượt qua hàng phòng thủ.
+</p>
+
+<p>
+ Roran không có ý định đứng đó tìm hiểu.
+</p>
+
+<p>
+ Những tia sáng đầu tiên đã chiếu vào thành phố, mạ vàng những nóc tháp, tường thành, những mái vòm, những mái nhà nghiêng nghiêng. Đường phố và những con hẻm khoác lên mình màu bạc xỉn đục và nước chảy trong kênh có màu tối, ảm đạm và váng máu. Trên trời chỉ còn duy nhất một ngôi sao, tỏa ánh sáng xanh xao ảo não vì ánh dương sắp lên làm lu mờ những bảo vật của màn đêm.
+</p>
+
+<p>
+ Varden tiến lên, gót giày da của họ nện lên con đường rải đá cuội.
+</p>
+
+<p>
+ Từ đằng xa vọng lại tiếng gà gáy.
+</p>
+
+<p>
+ Roran dẫn đoàn quân đi qua những dãy nhà tới bức tường thành bên trong thành phố nhưng không phải luôn đi theo con đường to thẳng nhất để tránh chạm trán ai đó trên đường. Họ đi theo những con đường nhỏ và u ám tới mức đôi khi không nhìn thấy mặt đất.
+</p>
+
+<p>
+ Những máng nước cáu bẩn. Mùi hôi thối khiến anh lợm giọng. Anh ước gì mình đang đứng trên cánh đồng bao la ở quê nhà.
+</p>
+
+<p>
+ Sao người ta có thể sống thế này nổi nhỉ? Anh phân vân. Kể cả lợn cũng không đầm mình trong đống bẩn thỉu của nó.
+</p>
+
+<p>
+ Đi xa những bức tường ngoài họ thấy nhiều nhà ở và cửa hàng hơn: chúng cao ráo, vuông vắn với những bức tường sơn trắng và cửa trang trí hoa văn bằng thép. Đằng sau những cánh cửa sổ đóng kín, thi thoảng Roran nghe có tiếng nói hay tiếng bát đĩa loảng xoảng hoặc tiếng ghế kéo lên trên sàn gỗ.
+</p>
+
+<p>
+ Chúng ta không còn nhiều thời gian, anh nghĩ. Vài phút nữa thôi là những con đường sẽ nhung nhúc người.
+</p>
+
+<p>
+ Đúng như dự đoán của anh, hai người đàn ông bước ra khỏi con hẻm trước mặt họ. Họ gánh trên vai hai thùng sữa.
+</p>
+
+<p>
+ Họ ngạc nhiên khựng lại khi thấy Varden, sữa đổ khỏi thùng. Họ mở to mắt và há miệng định tri hô.
+</p>
+
+<p>
+ Roran và đoàn quân đứng lại. “Nếu các người hét lên một tiếng thôi, tôi sẽ giết chết ngay,” anh nói bằng giọng nhẹ nhàng, thân thiện.
+</p>
+
+<p>
+ Hai gã rùng mình thối lui.
+</p>
+
+<p>
+ Roran bước lên. “Nếu các người chạy, các người sẽ chết.” Anh nhìn chằm chằm họ và gọi tên Carn. Khi người pháp sư tới bên cạnh, anh nói. “Anh có thể làm cho họ ngủ được không.”
+</p>
+
+<p>
+ Pháp sư nhanh chong ngâm một cụm từ bằng ngôn ngử cổ, âm kết thúc đối với Roran giống như slytha. Hai gã đổ vật xuống đường, hai thùng sữa nảy lên khi đập xuống nền đá cuội. Sữa đổ tràn ra đường tạo nên một mạng lưới tinh tế những đường tơ trắng chạy theo các rãnh đá.
+</p>
+
+<p>
+ “Kéo họ sang một bên,” Roran nói, “chỗ nào người ta không thấy ấy.”
+</p>
+
+<p>
+ Sau khi các chiến binh của anh kéo hai gã bất tỉnh khỏi đường, anh ra lệnh cho quân Varden tiếp tục tiến lên. Họ cần nhanh chóng tới được nội thành.
+</p>
+
+<p>
+ Nhưng chưa đi được trăm mét, tại một góc quặt họ đụng độ với một nhóm bốn tên lính.
+</p>
+
+<p>
+ Lần này Roran không nhân nhượng. Anh lao về phía họ, xé lẻ họ và, trong khi chúng chưa kịp hiểu chuyện gì xảy ra, anh đập búa vào cổ tên lính dẫn đầu. Cùng lúc đó, Baldor chém rơi đầu tên lính khác với sức mạnh bằng vài người đàn ông. Đó là sức mạnh anh có được sau nhiều năm làm việc trong xưởng rèn của bố.
+</p>
+
+<p>
+ Hai gã còn lại quang quác báo động. Chúng quay người, bỏ chạy.
+</p>
+
+<p>
+ Một mũi tay bay vút qua vai Roran trúng lưng một tên lính, khiến hắn đổ ụp xuống đường. Một lát sau, Carn quát, “Jierda!” Cổ tên lính cuối cùng gẫy đánh rắc, và hắn nằm bất động giữa đường.
+</p>
+
+<p>
+ Tên lính dính tên trên lưng bắt đầu hét: “Quân Varden! Quân Varden! Báo động, quâ...”
+</p>
+
+<p>
+ Roran rút dao găm, chạy tới cắt cổ hắn. Anh lau máu vào áo hắn rồi đứng dậy nó, “Chạy nhanh lên!”
+</p>
+
+<p>
+ Mọi người như một chạy rầm rập trên con đường dẫn tới nội thành Aroughs.
+</p>
+
+<p>
+ Khi họ chạy được trăm mét, Roran dừng lại tại một con hẻm đằng sau một căn nhà, giơ tay bảo những người lứng chờ. Sau đó anh đi rón rén, lén nhìn qua khung lưới sắt trên bức tường đá hoa cương trắng.
+</p>
+
+<p>
+ Cổng thành đóng.
+</p>
+
+<p>
+ Nhưng ở bên trái có một lỗ hổng lớn. Khi anh quan sát, một tên lính đi qua đó và nhắm thẳng về phía tây thành phố mà chạy.
+</p>
+
+<p>
+ Roran tự chửi rủa mình. Anh không định bỏ cuộc, đặc biệt khi họ đã đi được tới đây, nhưng họ đang càng ngày càng gặp nguy hiểm. Anh biết chỉ vài phút nữa thôi, lệnh giới nghiêm chấm dứt và anh cùng đội quân sẽ bị phát hiện.
+</p>
+
+<p>
+ Anh lùi lại sau bức tường và cúi đầu suy nghĩ.
+</p>
+
+<p>
+ “Mandel,” anh nói và búng tay. “Delwin, Carn và ba anh nữa.” Anh chỉ vào nhóm ba người lính trông có vẻ bặm trợn – anh nghĩ là có thâm niên chiến đấu. “Đi cùng tôi. Baldo, anh chỉ huy những người còn lại. Nếu chúng tôi không trở lại, hãy tự nghĩ cách giữ mạng. Đây là lệnh.”
+</p>
+
+<p>
+ Baldor ủ rũ gật đầu.
+</p>
+
+<p>
+ Cùng với sáu người anh lựa chọn, Roran rẽ vào con đường lớn dẫn tới cánh cổng cho tới khi tới chân tường đầy rác có lẽ cách lỗ hổng độ 15m.
+</p>
+
+<p>
+ Hai tên lính đang đứng gác ở hai thòa tháp trên cổng nhưng trong lúc này, chúng không thể nhìn thấy họ trừ khi thò cổ xuống.
+</p>
+
+<p>
+ Roran thì thầm nói, “Một khi qua được cánh cửa, anh, anh, và anh nữa” – Roran chỉ Carn, Delwin và một trong ba người lính kia – “sẽ tới chòi gác nhanh nhất có thể. Chúng tôi sẽ tới chòi gần đó. Làm gì cũng được nhưng nhớ là phải mở cửa. Có thể chúng ta chỉ phải quay một guồng xích duy nhất hoặc phải phối hợp mở cửa, vì thế đừng nghĩ các anh có thể chết để lại mọi việc cho tôi. Sẵn sàng chưa?... Nào!”
+</p>
+
+<p>
+ Roran chạy nhẹ nhàng nhất có thể, dọc theo bước tường rồi rẽ quặt vào lỗ hổng.
+</p>
+
+<p>
+ Phía trước anh là một căn phòng dẫn tới một quảng trường rộng có bốn đài phun nước xếp thành hàng ở chính giữa. Những người đàn ông ăn mặc đẹp đẽ đang vội vã đi lại trong quàng trường, rất nhiều người đang cầm những cuộn giấy trong tay.
+</p>
+
+<p>
+ Roran không để ý tới họ mà rẽ vào một cánh cửa đóng im ỉm. Anh dùng tay khóa, cố kìm ham muốn đá tung cửa ra. Sau cánh cửa là một phòng bốt gác với cầu thang xoắn ốc xây sát một bên tường.
+</p>
+
+<p>
+ Anh chạy lên cầu thang, sau một lần vòng duy nhất, anh đã ở trong một căn phòng trần thấp có năm tên lính đang hút thuốc và chơi xúc xắc trên bàn cạnh một trục quay khổng lồ có dây xích dày bằng cổ tay.
+</p>
+
+<p>
+ “Xin chào!” Roran nói bằng giọng trầm và đầy uy lực. “Tôi có một lá thư vô cùng quan trọng cho các người.”
+</p>
+
+<p>
+ Những tên lính ngần ngừ rồi đứng bật dậy, kéo lùi ghế lại. Chân ghế kêu kén két trên sàn nhà.
+</p>
+
+<p>
+ Họ quá muộn. Chỉ trong một tích tắc thiếu quyết đoán đó, Roran đã rút gọn khoảng cách trước khi chúng kịp rút vũ khí.
+</p>
+
+<p>
+ Roran rống lên khi lao vào giữa đám lính, cùng cây búa tả hữu xung đột và đẩy lùi năm tên lính vào một góc tường. Sau đó Mandel và hai người lính khác đến cạnh anh, lưỡi kiếm lóe lên loang loáng. Họ cùng nhau tiêu diệt những tên lính gác.
+</p>
+
+<p>
+ Khi đứng trước xác tên lính cuối cùng, Roran vỗ xuống đất và nói, “Đừng tin người lạ.”
+</p>
+
+<p>
+ Cuộc ẩu đả khiến căn phòng hỗn tạp nhiều thứ mùi kinh khủng giống như phủ lên người Roran cái chăn dầy nặng làm bằng loại chất liệu khiến anh khó chịu nhất. Anh hầu như không thở nổi, vì thế anh dùng tay áo che mũi và miệng lại.
+</p>
+
+<p>
+ Bốn người họ đi tới trục quay, cẩn thận không giẫm lên vũng máu và đứng nghiên cứu xem nó hoạt động ra sao.
+</p>
+
+<p>
+ Roran nhìn quanh, giơ búa lên khi nghe có tiếng kim loại lách cách rồi một tiếng cửa sập được kéo lên, theo sau là tiếng bước chân hỗn loạn khi một tên lính bước xuống từ tòa tháp canh bên trên.
+</p>
+
+<p>
+ “Taurin, chuyện chó gì đang...” Giọng nói của hắn tắc lại trong họng và hắn đứng khựng giữa cầu thang khi thấy Roran và những người bạn cùng những xác chết trong góc phòng.
+</p>
+
+<p>
+ Chiến binh bên phải Roran phi giáo về phía hắn nhưng hắn lùi lại và mũi giáo vọt đâm vào bức tường bên trên. Tên lính chửi rủa và chạy ngược lên cầu thang, biến mất trong khúc ngoặt cong cong.
+</p>
+
+<p>
+ Chỉ một lát sau, cảnh cửa sập đóng lại với một tiếng bùm, và họ nghe có tiếng kèn và tiếng hô báo nguy cho những người trên quảng trường.
+</p>
+
+<p>
+ Roran chửi rủa và quay về chỗ trục quay. “Thả xích,” anh nói và nhét búa vào thắt lưng. Anh nắm lấy bánh xe dùng để hạ và nâng lưới sắt lên và đẩy thật lực. NHững người khác tiếp sức và từ từ, rất từ từ, bánh xe bắt đầu chuyển động và tiếng xích vang lớn.
+</p>
+
+<p>
+ Vài giây sau công việc trở nên dễ dàng hơn có lẽ nhờ vào những người anh đã bảo tới bốt canh bên kia.
+</p>
+
+<p>
+ Họ không định nâng cả lưới sắt lên; sau nửa phút toát mồ hôi, tiếng hò hét của quân Varden vang lên bên tai họ vì những người lính bên ngoài thành đã lao vào quảng trường.
+</p>
+
+<p>
+ Roran thả tay, rút búa ra và cùng những người khác lao lên tầng.
+</p>
+
+<p>
+ Bên ngoài bốt canh, anh nhìn thấy Carn và Delwin vừa mới bước lên từ phía bên kia. Không ai bị thương nhưng Roran không thấy người lính già bên đó.
+</p>
+
+<p>
+ Trong khi đợi nhóm Roran tới, Baldor và những Varden còn lại sắp xếp thành một đội quân ở góc quảng trường. Họ đứng thành năm hàng, kề vai sát cánh với khiên che cao.
+</p>
+
+<p>
+ Khi Roran chạy tới, anh thấy một lực lượng lính tới đổ ra từ các tòa nhà trong quảng trường. Chúng hình thành một hang phòng thủ, chĩa giáo về phía trước trông gối cắm kim của thợ may. Anh ước chừng có khoảng một trăm năm mươi tên – quân đội của anh dễ dàng đánh bại nhưng sẽ tốn thời gian và hao tổn nhân lực.
+</p>
+
+<p>
+ Khi tên pháp sư mũi khoằm anh nhìn thấy ngày hôm trước bước ra khỏi hang lính và giơ tay lên đầu, trên tay hắn xuất hiện những ánh chớp đen lách tách thì tâm trạng của Roran càng xấu hơn. Roran đã học đủ những kiến thức về phép thuật từ Roran để biết ánh chớp có thể chỉ để phô diễn tài nghệ mà thôi, nhưng dù sao anh cũng biết chắc tên thầy pháp của quân địch là một mối đe dọa to lớn.
+</p>
+
+<p>
+ Carn tiến lên đứng trước mọi người chỉ sau Roran vài giây. Họ và Baldor lừ mắt nhìn tên pháp sư và hàng lính phòng thủ bên đối diện.
+</p>
+
+<p>
+ “Anh giết nổi hắn không?” Roran hỏi nho9r để những người lính đằng sau không nghe thấy.
+</p>
+
+<p>
+ “Tôi phải thử mới biết được chứ?” Carn trả lời. Anh ta dùng mu bàn tay chùi mép. Trên mặt anh lấm tấm mồ hôi.
+</p>
+
+<p>
+ “Nếu anh muốn chúng tôi có thể tập trung vào hắn. HẮn không thể nào giết hết chúng ta trước khi chúng ta làm lá chắn của hắn suy yếu và đâm xuyên tim hắn.”
+</p>
+
+<p>
+ “Anh không hiểu đâu... Không, đây là trách nhiệm của tôi và tôi phải tự mình đương đầu với hắn.”
+</p>
+
+<p>
+ “Chúng tôi giúp được gì không?”
+</p>
+
+<p>
+ Carn bật cười lo lắng. “Anh có thể bắn tên về phía hắn. Vừa chặn tên vừa làm phép sẽ khiến hắn suy yếu và lộ sơ hở. Nhưng dù làm gì cũng đừng xen vào giữa chúng tôi... Không an toàn cho cả anh và tôi.”
+</p>
+
+<p>
+ Roran chuyển búa sang tay trái rồi đặt tay phải lên vai Carn. “Anh sẽ ổn thôi. NHớ rằng hắn không quá thông minh. Anh đã lừa hắn một lần và có thể chơi hắn lần nữa.”
+</p>
+
+<p>
+ “Tôi biết.”
+</p>
+
+<p>
+ “Chúc may mắn.” Roran nói.
+</p>
+
+<p>
+ Carn gật đầu một cái rồi bước tới đài phun nước ở giữa quảng trường. Ánh sáng mặt trời nhảy nhót trên mặt nước, phản chiếu như hàng ngàn viên kim cương trong không khí.
+</p>
+
+<p>
+ Tên pháp sư mũi khoằm cũng bước tới đài phun nước cho tới khi họ chỉ cách nhau độ 6m.
+</p>
+
+<p>
+ Từ chỗ Roran đứng, Carn và đối thủ như đang nói chuyện với nhau nhưng anh không thể nghe họ nói gì. Sau đó cả hai pháp sư đều đứng cứng ngắc như thể có ai dùng dao găm đâm họ.
+</p>
+
+<p>
+ Đó là điều Roran đã biết trước: một dấu hiệu cho thấy họ đang đấu trí, không quan tâm gì tới mọi thứ xung quanh.
+</p>
+
+<p>
+ “Cung thủ!” anh hô. “Ra kia và đằng kia nữa,” anh chỉ về hai phía quảng trường. Bắn càng nhiều mũi tên vào tên chó phản bội kia càng tốt nhưng đừng bắn nhầm Carn không tôi sẽ cho các anh làm mồi cho Saphira.”
+</p>
+
+<p>
+ NHững người lính khó khăn rời ra để hai nhóm cung thủ tiến về quảng trường nhưng không một đội quân nào của Galbatorix tiến tới chặn Varden.
+</p>
+
+<p>
+ Chắc hẳn họ phải tự tin vào con rắn độc kia lắn, Roran lo lắng nghĩ.
+</p>
+
+<p>
+ Hàng ta những mũi tên đuôi lông ngỗng màu nâu bay vun vút về phía tên pháp sư phe địch và trong chốc lát, Roran hy vọng họ có thể giết chết hắn. Nhưng khi những mũi tên cách hắn khoảng mét rưỡi, chúng gẫy đôi, rơi xuống đất như vừa đâm vào một bức tường đá.
+</p>
+
+<p>
+ Roran nhảy lên vì quá căng thẳng. Anh ghét phải chờ đợi, không làm gì trong khi bạn bè đang gặp nguy. Hơn nữa mỗi giây trôi qua Lãnh chúa Halstead lại có thêm cơ hội hiểu chuyện gì đang diễn ra và tìm phương án thích hợp để ứng phó. Nếu những chiến binh của Roran muốn không bị gót giày của đội quân đông hơn gấp vạn của Triều đình dẫm bẹp, họ phải có được ưu thế về sự bất ngờ.
+</p>
+
+<p>
+ “Sẵn sàng nào!” anh nói với những chiến binh. “Chúng ta hãy xem có thể làm gì trong khi Carn đang chiến đấu bảo vệ chúng ta. Chúng ta sẽ tấn công toán linh kia. Một nửa đi theo tôi, một nửa theo Delwin. Chúng không thể chặn mọi ngả đường, vì vậy, Delwin, anh và cánh quân của anh hãy tìm đường vượt qua chúng rồi quay lại tấn công chúng từ phía sau. Chúng tôi sẽ khiêu khích trước mặt chúng để chúng không kịp trở tay. Nếu có tên nào định chạy, mặc kệ chúng. Đằng nào chúng ta cũng sẽ mất rất nhiều thời gian để giết tất cả rồi. Hiểu chưa.... Đi thôi!”
+</p>
+
+<p>
+ Mọi người nhanh chóng tản thành hai nhóm. Roran dẫn đầu nhóm của anh chạy về phía bên phải quảng trường trong khi Delwin chạy về bên trái.
+</p>
+
+<p>
+ Khi cả hai tiến tới đài phun nước, Roran lấy tên pháp sư phe địch leiecs nhìn anh. Chỉ trong thoáng chốc nhưng sự xao lãng đó đã đủ ảnh hưởng tới trận chiến giữa hắn và Carn. Khi tên mũi khoằm nhìn lại Carn, vẻ hằm hè trên mặt hắn xoắn lại thành một nỗi đâu và các đường gân bắt đầu nổi lên trên lông mày nhíu chặt và toàn bộ mặt hắn biến sắc, chuyển thành đỏ sậm vì giận dữ như thể bị úng máu.
+</p>
+
+<p>
+ “Không!” hắn lồng lộn hét lên, sau đó nói một cái gì đó bằng ngôn ngữ cổ mà Roran không hiểu.
+</p>
+
+<p>
+ Một tích tắc sau Carn cũng hét lên gì đó. GIọng họ chồng chéo lên nhau mang theo sự tức giận, thù ghét, buồn rầu khiến Roran biết rằng trận chiến giữa họ đã đi lệch hướng.
+</p>
+
+<p>
+ Carn biến mất trong ánh sáng xanh. Sau đó một vỏ sò cong cong hình mái vòm màu trắng xuất hiện nơi anh đứng và tỏa rộng ra cả quảng trường trong thời gian chẳng đủ cho Roran chớp mắt.
+</p>
+
+<p>
+ Thế giới chìm trong màn đen. Roran cảm thấy một luồng nhiệt nóng không chịu nổi, mọi thứ xoay vần xoắn vặn chung quanh anh như anh đang rơi vào một khoảng không vô định.
+</p>
+
+<p>
+ Cây búa rơi khỏi tay anh và đầu gối phải anh nhói đau. Sau đó một vật gì đó đập vào mồm anh khiến mồm anh toàn máu là máu.
+</p>
+
+<p>
+ Tới khi định hình nổi, anh thấy mình vẫn ở nguôn chỗ cũ, nằm sấp và người cứng ngắc. Các giác quan từ từ quay lại giúp anh thấy bề mặt đá xanh xám trơn nhẵn dưới mũi anh, ngửi thấy mùi vữa chì trên đá, cảm nhận được cơn đau ê ẩm chạy dọc cơ thể. m thanh duy nhất anh nghe được là tiếng đập của con tim.
+</p>
+
+<p>
+ Anh thổ huyết khi hít thở trở lại. Anh thèm khát không khí, anh ho hắng và ngồi thẳng dậy, nhổ đờm đen ra. Một chiếc răng cửa của anh hạ cánh xuống đất cùng máu. Anh nhặt nó lên xem xét, răng bị mẻ nhưng chân răng còn nguyên vẹn, thế là anh lau sạch nó và ấn lại vào nướu, nhăn mặt vì chạm vào chỗ đau. (cái này mà được à? Không tin!)
+</p>
+
+<p>
+ Anh loạng choạng đứng thẳng dậy. Anh đã bị thổi bay đập vào bậc tam cấp một ngôi nhà ở rìa quảng trường. Những người lính ngổn ngang xung quanh, tay chân xiêu vẹo, mất mũ trụ, gươm kiếm bay đâu mất.
+</p>
+
+<p>
+ Một lần nữa Roran mừng vì mình cầm búa vì trong cơn hỗn loạn nhiều Varden đã đâm cả vào nhau.
+</p>
+
+<p>
+ Búa? Búa của mình đâu? Anh trì trệ nghĩ. Anh nhìn xung quanh tới khi thấy cán búa nằm dưới chân một chiến binh gần đó. Anh lôi nó ra và nhìn quảng trường.
+ <br/>
+ Những tên lính và Varden bị quăng liểng xiểng. Đài phun nước không còn gì ngoài đống gạch vụn đang phun nước từng chập. Bên cạnh đó nơi Carn từng đứng là một xác chết héo quắt, đen sì đang bốc khói trông như xác nhện chết, toàn bộ thân thể đã cháy thành than khiến người ta không nhận ra nói sinh vật đó từng sống chứ không nói chi là người. Lạ lùng thay, tên pháp sư mũi khoằm vẫn đứng tại chỗ dù vụ nổ làm bay hết quần áo ngoài chỉ còn mặc độc cái khố.
+ <br/>
+</p>
+
+<p>
+ Cơn giận dữ không kiểm soát nổi sôi lên trong Roran. Anh không nghĩ tới tính mạng bản thân khập khiễng đi vào trung tâm quảng trường, cố sống cố chết giết tên pháp sư đó.
+</p>
+
+<p>
+ Tên pháp sư ngực trần đứng nguyên tại chỗ khi Roran đến gần. Roran giơ búa hét lớn nhưng bản thân anh không hề nghe nổi tiếng mình.
+</p>
+
+<p>
+ Nhưng hắn vẫn không mảy may nhúc nhích.
+</p>
+
+<p>
+ Roran nhận ra hắn không hề di chuyển lấy một centimet từ vụ nổ. Như thể hắn là một bức tượng mà thôi.
+</p>
+
+<p>
+ Vẻ bình thản của tên thầy pháp với sự xuất hiện của Roran chỉ khiến anh muốn lờ hành vi thiếu bình thường của hắn – hay đúng hơn là chẳng có hành động gì – và đập mạnh vào đầu hắn cho xong. Nhưng sự thận trọng của Roran đã giúp anh giảm bớt ý muốn báo thù và khiến anh đi chậm lại và dừng hẳn khi còn cách tên pháp sư độ mét rưỡi.
+</p>
+
+<p>
+ Anh mừng là anh đã dừng lại.
+</p>
+
+<p>
+ Từ đằng xa trong tên pháp sư vẫn bình thường nhưng khi lại gần, Roran thấy da hắn nhẽo và có nếp nhăn như một ông già. Da hắn xạm màu và càng lúc càng xạm hơn như thể hắn bị hóa đá.
+</p>
+
+<p>
+ NGực hắn phập phồng và tròng mắt đảo liên tục nhưng trắng dã. Ngoài ra hắn không thể cử động.
+</p>
+
+<p>
+ Trong lúc đó, tay, cổ và ngực hắn co lại, xương hắn như lộ ra – từ xương ức cho tới xương bánh chè, bung hắn tóp vào như một chai nước rỗng. Môi hắn co lại và vén cao lộ những chiếc răng vàng khè, tròng mắt thụt và da thịt héo lại.
+</p>
+
+<p>
+ Sau đó hơi thở của hắn – khò khè, rít lên từng chập – cũng yếu dần nhưng không hoàn toàn mất hẳn.
+</p>
+
+<p>
+ Roran hoảng sợ lùi lại. Anh càng thấy có gì đó trơn trượt dưới giày. Khi nhìn xuống anh thấy anh đang đứng trên một vũng nước. Lúc đầu anh nghĩ chỉ là nước từ đài phun nước nhưng sau anh biết đó là nước chảy ra từ người gã pháp sư đang cứng đờ.
+</p>
+
+<p>
+ Roran chửi rủa, khiếp sợ và nhảy ra chỗ đất khô. Nhìn thấy dòng nước là Roran hiểu Carn làm gì và sợ lại càng sợ thêm. Dường như Carn đã niệm một câu thần chú rút từng giọt nước khỏi người tên pháp sư.
+</p>
+
+<p>
+ Chỉ thêm vài giây, gã chẳng khác nào một bộ xương da đen cứng. Hẳn trở thành một xác ướp nằm phơi nắng trong cát sa mạc Hadarac cả trăm năm. Dù hắn sắp chết nhưng câu thần chú của Carn buộc hắn đứng đó: như một bóng ma kinh hồn táng đởm, một trong những thứ đáng sợ nhất Roran từng thấy trong những cơn ác mộng hay trong chiến trận.
+</p>
+
+<p>
+ Sau đó lớp da hắn phân hủy thành bụi xám, cuộn tròn, bay lên rồi rơi xuống trôi trên vũng nước bên dưới như tàn lửa. Tiếp theo đó là cơ và xương, rồi lục phủ ngũ tạng cũng chẳng còn. Tất cả chỉ để lại một đống bột trên vũng nước từng trong cơ thể người.
+</p>
+
+<p>
+ Roran nhìn xác Carn rồi vội quay mặt đi vì không chịu đựng nỏi. Ít nhất anh cũng báo thù được cho mình. Sau đó anh không nghĩ tới người bạn đã ra đi mà tập trung tới vấn đề trước mắt: những tên lính ở phía nam quảng trường đang từ từ đứng dậy.
+</p>
+
+<p>
+ Roran thấy quân Varden cũng đang hành động tương tự. “Này!” anh hô. “Đi với tôi! Chúng ta không thể bỏ lỡ cơ hội này.” Anh chỉ vào vài người lính bị thương nặng. “Giúp họ đứng dậy và để họ vào giữa hàng quân. Không được bỏ ai lại. Không một ai!” Môi và miệng anh sưng lên khi nói, đầu anhh đau như thể uống rượu cả đêm.
+</p>
+
+<p>
+ Quân Varden tập hợp lại dưới mệnh lệnh của anh và nhanh chóng đi theo anh. Với một toán người sau lưng, Roran sánh bước cùng Baldor và Delwin, cả hai đều bầm dập vì vụ nổ.
+</p>
+
+<p>
+ “Carn chết rồi à?” Baldor hỏi.
+</p>
+
+<p>
+ Roran gật đầu và nâng khiên lên như những người khác, hình thành một bức tường người thống nhất.
+</p>
+
+<p>
+ “Vậy chúng ta nên hy vọng Halstead không có thêm một pháp sư nào.” Delwin lầm bầm.
+</p>
+
+<p>
+ Khi quân Varden đã vào vị trí, Roran hét. “TIến lên!” và các chiến binh xông vào những tên lính còn lại trên quảng trường.
+</p>
+
+<p>
+ Có thể vì tướng chỉ huy của chúng kém hiệu quả hơn Varden hay vì vụ nổ vừa rồi đã khiến chúng tổn thất nghiêm trọng, binh lính của triều đình không thể phục hồi kịp khi Varden tấn công.
+</p>
+
+<p>
+ Roran rên rẩm và loạng choạng lùi lại một bước khi một ngọn giáo xuyên qua khiên và khiến tay anh tê rần. Anh dùng búa đập lên mặt khiên. Cán giáo nảy lên nhưng không chịu rời ra.
+</p>
+
+<p>
+ Một tên lính trước mặt anh, có lẽ là tên đã phóng giáo nhân cơ hội chạy tới và chém vào cổ Roran. Roran định giơ khiên cùng thanh giáo cắm trên đó nhưng nó quá nặng và cồng kềnh nên anh quyết định dùng búa đánh rơi thanh kiếm.
+</p>
+
+<p>
+ Nhưng thanh kiếm chém đúng điểm mù trong tầm nhìn của anh khiến anh đỡ trượt. Có lẽ vào phút đó anh đã chết nếu đốt ngón tay anh không đập trúng phần mặt kiếm khiến nó trật đi vài centimet.
+</p>
+
+<p>
+ Mũi tên lửa vút qua vai phải của Roran. Những mũi tên bắn vun vút xung quanh anh, mắt anh chỉ thấy màu vàng sáng. Đầu gối phải anh khuỵu xuống. Anh ngã.
+</p>
+
+<p>
+ Đá bên dưới anh. Xung quanh anh là những bàn chân và cẳng chân khiến anh không thể lăn người giữ an toàn. Toàn bộ cơ thể anh uể oải như thể anh rơi vào bẫy bằng mật vậy.
+</p>
+
+<p>
+ Quá chậm, quá chậm, anh nghĩ khi cố tháo khiên và đứng dậy. Nếu anh nằm dưới đất có thể anh bị dẫm bẹp quá.Quá chậm!
+</p>
+
+<p>
+ Rồi anh thấy một tên lính đổ ập xuống trước mặt, nắm lấy áo anh và một giây sau, có một ai đó nắm cổ áo giáp giúp Roran đứng dậy. Đó là Baldor.
+</p>
+
+<p>
+ Roran vặn cổ nhìn tên lính vừa đánh mình. Năm mắt xích trên giáp anh bị chặt tung nhưng dù sao áo giáp vẫn còn. Dù máu chảy ra từ phần mềm, đau cổ và tay nhưng anh không nghĩ mình dính vết thương chí mạng hay cần nghỉ ngơi xem xét. Tay phải anh vẫn lành lặn – ít nhất là đủ tiếp tục chiến đấu – và đó là tất cả những gì anh quan tâm trong giây phút này.
+</p>
+
+<p>
+ Ai đó đưa cho anh cái khiên mới. Anh đeo nó vào và cùng những người lính của mình đẩy lùi những tên lính vào những con đường rộng tỏa ra từ quảng trường.
+</p>
+
+<p>
+ Những tên lính nhanh chóng bị đánh bại trước sức mạnh vượt trội của quân Varden. Chúng chạy vào vô số những con đường và hẻm nhỏ tỏa ra khắp thành phố.
+</p>
+
+<p>
+ Roran ngừng lại cho năm mươi người lính quay lại đóng cửa thành và canh gác đề phòng có kẻ nào phát hiện họ đã ở trong lòng Aroughs. Hầu hết những tên lính trong thành phố đều canh gác ngoại thành để chống lại mũi quân bên ngoài và Roran không hứng đối mặt với họ lúc này. Làm thế khác nào tự sát.
+</p>
+
+<p>
+ Quân Varden chỉ gặp lại sự chống cự yếu ớt trên đường đi từ nội thành tới lâu đài nguy nga của lãnh chúa Halstead.
+</p>
+
+<p>
+ Trước lâu đài là một khoảng sân rộng với một hồ nhân tạo – với những con ngỗng trời và thiên nga trắng đang bơi lội. Lâu đài cao hơn phần còn lại của Aroughs. Lâu đài đẹp, tráng lệ với những mái vòm thoáng đãng, những dãy cột và ban công rộng dùng cho những bữa tiệc hay khiêu vũ. Không giống những lâu đài ở Belatona, nó được thiết kế cho việc vui chơi nghỉ ngơi đầu óc chứ không phải là phòng tuyến phòng thủ.
+</p>
+
+<p>
+ Chắc họ nghĩ không ai có thể vượt qua những bức tường, Roran nghĩ.
+</p>
+
+<p>
+ Vài bảo vệ và lính gác ở sân xông về phía Varden khi thấy họ, hò hét ầm trời.
+</p>
+
+<p>
+ “Giữ nguyên đội hình!” Roran ra lệnh khi những tên lính lao tới.
+</p>
+
+<p>
+ Trong một hai phút trong sân vang lên tiếng kim loại va chạm. NGỗng và thiên ngã kêu lên sợ hãi và đập cánh trên mặt nước nhưng không còn nào dám bay lên.
+</p>
+
+<p>
+ Varden không mất nhiều thời gian xử lý xong tụi lính gác. Sau đó họ lao tới cổng lâu đài, vốn được trang trí công phu với những hình vẽ trên tường và trần – cũng như những thanh gỗ trang trí, những đồ nội thất được điêu khắc cầu kỳ hay sàn nhà trang trí hoa văn – mà Roran thấy họ không thể vào một lượt. Lượng tài sản đổ vào xây dựng và bảo trì một dinh thự thế này quá lớn. Cái trang trại anh lớn lên không giá trị bằng một chiếc ghế trong sảnh lớn.
+</p>
+
+<p>
+ Qua cánh cổng, anh nhìn thấy ba nữ tì đang chạy dọc theo một hành lang dài khác.
+</p>
+
+<p>
+ “Đừng để họ trốn được!” anh hô to.
+</p>
+
+<p>
+ Năm kiếm sĩ tách khỏi đội ngũ Varden và lao về phía những người phụ nữ, bắt họ trước khi họ kịp rẽ vào một hành lang khác. NHững người phụ nữ thét lên và cố cào cấu mong thoát thân khi những người đàn ông lôi họ tới trước mặt Roran.
+</p>
+
+<p>
+ “Đủ rồi!” Roran hét vang khi họ đứng trước mặt anh và những người phụ nữ dừng chống cự dù vẫn tiếp tục kêu khóc. Người già nhất, một phụ nữ đứng tuổi gầy gò với mái tóc bạc búi rối đeo một chùm chìa khóa ở thắt lưng có vẻ là người biết điều nhất, vì thế Roran hỏi bà ta, “Lãnh chúa Halstead ở đâu?”
+</p>
+
+<p>
+ Người phụ nữ cứng đầu hất cằm. “Làm gì cũng được nhưng tôi không phản bội chủ nhân của mình.”
+</p>
+
+<p>
+ Roran tiến lên tới khi chỉ còn cách bà ta một bước. “Nghe và nghe kỹ này,” anh gầm lên. “Aroughs sẽ thất thủ và bà cũng những người khác sẽ chịu sự định đoạt của tôi. Bà không thể thay đổi điều đó. Nói cho tôi biết Halstead ở đâu và tôi sẽ để bà và những người kia đi. Bà không thể cứu lão ta nhưng có thể cứu mạng mình.” Đôi môi rách của anh sưng lên khiến chính anh cũng khó lòng hiểu rõ những từ phát ra từ miệng mình.
+</p>
+
+<p>
+ “Mạng sống của tôi chẳng là gì, thưa ngài,” người phụ nữ nói, nét mặt quả quyết như của một chiến binh.
+</p>
+
+<p>
+ Roran chửi rủa và đập búa vào khiên tạo ra một tiếng vang chát chúa trong hành lang rộng lớn. “Bà điên rồi sao? Halstead đáng để bà hy sinh mạng sống sao? Hay là Triều đình? Hay là Galbatorix?”
+</p>
+
+<p>
+ “Tôi không biết triều đình hay Galbatorix nhưng ngài Halstead luôn đối xử tốt với chúng tôi và tôi chưa từng thấy ông ấy cư xử tệ như ngài. Ngài bẩn thỉu và là thứ hạ đẳng không biết điều.”
+</p>
+
+<p>
+ “Thế sao?” Anh nhìn chằm chằm bà ta. “Bà nghĩ bà sẽ giữ miệng được bao lâu nếu tôi quyết định để lính của tôi lấy sự thật từ bà ra?”
+</p>
+
+<p>
+ “Không bao giờ,: bà ta tuyên bố và anh tin bà ta nói thật.
+</p>
+
+<p>
+ “Thế còn họ thì sao?” Anh hất hàm về những người phụ nữ còn lại, người trẻ nhất còn chưa tới mười bảy. “Bà có dám để họ bị tùng xẻo chỉ vì mạng sống của chủ nhân bà không?”
+</p>
+
+<p>
+ Người phụ nữ khinh miệt khịt mũi rồi nói. “Ngài Halstead ở phía đông lâu đài. Đi theo hành lang kia, Qua Hoàng Phòng và hoa viên của Phu nhân Galiana rồi chắc chắn sẽ thấy ngài ấy.”
+</p>
+
+<p>
+ Roran nghi ngờ lắng nghe. Sự đầu hàng của bà ta quá nhanh và dễ dàng so với sự cứng đầu lúc trước. Ngoài ra khi bà ta nói anh thấy hai người phụ nữ kia lộ vẻ ngạc nhiên và một cảm xúc gì đó anh không thể gọi tên. Bối rối? Anh tự hỏi. Nếu người phụ nữ tóc bạc kia vừa đưa chủ nhân của mình vào tay kẻ thù thì họ sẽ không thể nào phản ứng như thế. HỌ quá âm trầm, quá nhẫn nhin như thể đang che giấu điều gì.
+</p>
+
+<p>
+ Trong hai người, cô gái trẻ khó che giấu cảm xúc hơn vì thế Roran quay lại nhìn cô ta. “Cô, bà ta nói dối, đúng không? Halstead ở đâu? Nói!”
+</p>
+
+<p>
+ Cô gái mở miệng lắc đầu không nói. Cô cố lùi lại nhưng một trong những chiến binh đã giữ chặt cô ta.
+</p>
+
+<p>
+ Roran lao tới, ấn khiên vào ngực cô ta, ép toàn bộ không khí ra và ép cô ta kẹt cứng giữa mình và người đằng sau. Roran giơ búa chạm vào má cô ta. “Cô khá xinh đẹp, nhưng cô sẽ chỉ lấy được mấy lão già làm chồng nếu tôi đánh gẫy răng cô. Hôm nay tôi đã gẫy mất một chiếc răng và đã tự mình đặt nó vào chỗ cũ. Thấy không?” Anh nhe răng cười độc địa với cô ta. “Tôi sẽ giữ răng cô lại nhưng cô sẽ không thể làm điều tương tự đâu. Chúng là một món chiến lợi phẩm hay cho tôi đó chứ, nhỉ?” Rồi anh dọa dẫm cô bằng chiếc búa.
+</p>
+
+<p>
+ Cô gái khúm núm khóc. “Đừng! Làm ơn đi ngài, tôi không biết. Làm ơn! Ngài ấy ở trong phòng, đang họp bàn với các tướng lĩnh nhưng sau đó cùng Phu nhân Galiana tới kênh đào, và...”
+</p>
+
+<p>
+ “Đồ ngốc, Thara!” bà mệnh phụ thét.
+</p>
+
+<p>
+ “Ở đó có một con tàu nhưng giờ tôi không biết họ ở đâu, nhưng đừng đánh tôi, tôi không biết gì nữa, và...”
+</p>
+
+<p>
+ “Phòng của hắn ở đâu?” Roran hỏi cụt lủn.
+</p>
+
+<p>
+ Cô gái sụt sịt nói.
+</p>
+
+<p>
+ “Để họ đi,”” anh nói khi cô ta nói xong và ba người phụ nữ bỏ chạy, gót giày họ nện lên nền nhà bóng loáng.
+</p>
+
+<p>
+ Roran dẫn quân Varden qua tòa nhà rộng lớn theo sự chỉ dẫn của cô gái nhỏ. Vài người đàn ông cởi trần và phụ nữ đi ngang qua nhưng không ai có ý định chống trả. Trong lâu đài vang lên tiếng hét khiến anh chỉ muốn bịt chặt tai lại.
+</p>
+
+<p>
+ Họ đi qua một bức tượng rồng den lớn ngoài cửa. Roran phân vân liệu đây có phải con rồng của Galbatorix. Shruikan không. Khi đi qua bức tượng Roran nghe có tiếng tưng và có gì đó đâm vào lưng anh.
+</p>
+
+<p>
+ Anh ngã nhùi vào chiếc ghế đá cạnh đường.
+</p>
+
+<p>
+ Đau
+</p>
+
+<p>
+ Cơn đau bòn xương rút thịt mà anh chưa từng trải qua. Cơn đau quá lớn khiến anh sẵn sàng chặt tay miễn là nó ngừng lại. Anh cảm giác như ai đó giúi giùi khắc nung vào lưng anh.
+</p>
+
+<p>
+ Anh không cử động nổi...
+</p>
+
+<p>
+ Anh không thở nổi...
+</p>
+
+<p>
+ Kể cả một di chuyển nhỏ nhất cũng khiến anh đau đớn kinh hồn.
+</p>
+
+<p>
+ Anh tối tăm mặt mũi và nghe thấy tiếng Baldor và Delwin hét vang rồi tới Brigman và tất cả những người con lại. Nhưng anh không biết họ nói gì.
+</p>
+
+<p>
+ Cơn đau đột nhiên gia tăng, ai gào lên nhưng chỉ khiến đau thêm, Với một nỗ lực phi thường, anh cố nằm im. Nước mắt chảy xuống từ hai hốc mắt.
+</p>
+
+<p>
+ Rồi Brigman nói với anh. “Roran, anh trúng tên sau lưng. Chúng tôi cố bắt tên cung thủ nhưng hắn thoát được.”
+</p>
+
+<p>
+ “Đau...” Roran thở hổn hển.
+</p>
+
+<p>
+ “Đó là vì mũi tên trúng vào xương sườn. Lẽ ra nó có thể xuyên thủng người anh rồi. Anh may mắn vì nếu mũi tên nhích lên hoặc dịch xuống một centimet là anh đã chết rồi.”
+</p>
+
+<p>
+ “Rút tên ra,” anh nghiến răng nói.
+</p>
+
+<p>
+ “Không thể, mũi tên có ngạnh. Và chúng tôi không thể đẩy ra nó ra. PHải cắt thôi. Tôi có chút kinh nghiệm, Roran. Nếu anh tin tôi tôi sẽ làm ngay. Hoặc không, anh có thể đợi tới khi chúng ta tìm được thầy lang. Chắc phải có một hai người trong lâu đài này.”
+</p>
+
+<p>
+ Dù anh không muốn đặt mạng mình vào tay Brigman nhưng Roran không thể chịu đau hơn nữa, vì thế anh nói. “Làm ngay đi...Baldor...”
+</p>
+
+<p>
+ “Gì hả Roran?”
+</p>
+
+<p>
+ “Đưa năm mươi người đi tìm Halstead. Dù thế nào cũng không được để hắn trốn thoát. Delwin... ở lại với tôi.”
+</p>
+
+<p>
+ Baldor, Delwin và Brigman trao đổi vài câu nhưng Roran chỉ nghe được vài từ ngắt quãng. Sau đó phần lớn quân Varden rời đi khiến không gian im ắng hơn.
+</p>
+
+<p>
+ Theo lệnh của Brigman, một đội chiến binh mang vài chiếc ghế từ phòng gần đó tới, chẻ nó ra và nhóm lửa cạnh bức tượng. Trên ngọn lửa là mũi dao mà Roran biết Brigman sẽ dùng để đốt khử trùng vết thương trên lưng trước khi lấy mũi tên.
+</p>
+
+<p>
+ Khi nằm trên ghế thở dốc và run rẩy, Roran cố gắn kiểm soát nhịp thở, cố gắng thở từ từ và thật sâu để giảm bớt cơn đau. Anh cố không nghĩ những điều khác. Chuyện gì xảy ra và sẽ xảy ra cũng được, giờ anh chỉ biết thở nhịp nhàng.
+</p>
+
+<p>
+ Anh gần như ngất đi khi bốn người lính nâng anh lên khỏi ghế băng và đặt anh nằm sấp xuống đất. Ai đó nhét găng tay da vào miệng anh khiến môi anh đau hơn, cùng lúc đó những bàn tay thô ráp nắm chặt lấy chân và tay anh, giang rộng nó ra hết mức có thể.
+</p>
+
+<p>
+ Roran liếc nhìn Brigman đang quỳ bên cạnh, tay cầm một con dao cong. Con dao bắt đầu hạ xuống, Roran nhắm mắt và cắn chặt chiếc găng tay.
+</p>
+
+<p>
+ Anh hít vào.
+</p>
+
+<p>
+ Thở ra,
+</p>
+
+<p>
+ Lúc đó thời gian và ký ức rời bỏ anh.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-021.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-023.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

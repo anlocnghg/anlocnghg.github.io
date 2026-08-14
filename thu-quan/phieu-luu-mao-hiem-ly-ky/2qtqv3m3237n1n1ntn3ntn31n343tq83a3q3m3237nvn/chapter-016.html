@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 16 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 16</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-017.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon đang trên đường về lều thì nghe giọng Saphira, Muộn rồi đấy. Cô nàng đang nằm cuộn tròn trước lều nó, dưới ánh đuối mờ mờ trông nó như một núi than xanh. Cô nàng nhìn nó bằng một mắt lờ đà lờ đờ.
+</p>
+
+<p>
+ Nó xoa đầu và cụng đầu cô rồng trông một lát. Ừ, cuối cùng nó nói. Và em cũng nghỉ ngơi sau chuyến bay cả ngày nay. Ngủ đi, mai gặp lại em.
+</p>
+
+<p>
+ Cô rồng chớp mắt ra vẻ hiểu.
+</p>
+
+<p>
+ Eragon vào trong lều, thắp một ngọn nến duy nhất. Sau đó nó cởi giày và ngồi lên võng chân khoanh lại. Nó từ từ hít thở và để đầu óc mở rộng, vươn ra chạm vào tất cả những sự sống xung quanh, từ sâu bọ bên dưới chỗ Saphira nằm tới những chiến binh Varden và thậm chí cả vài cây còn lại xung quanh khu vực. Năng lượng phát ra từ cây cối mờ nhạt và khó nhìn nếu so sánh với nguồn sáng rực rỡ phát ra từ những sinh vật nhỏ bé nhất.
+</p>
+
+<p>
+ Nó ngồi đó một lúc lâu, để cho đầu óc trống rỗng. Nó biết tới hàng ngàn những cảm xúc khác nhau, dù rõ nét hay mờ nhạt. Nó không tập trung vào thứ gì ngoại trừ hít thở đều đặn.
+</p>
+
+<p>
+ Từ đằng xa, nó nghe tiếng những người đàn ông nói chuyện phiếm quanh đống lửa. Không khí ban đêm mang tiếng nói của họ đi xa hơn ý định, đủ xa để khiến những đôi tai thính nghe rõ từng từ. Nó có thể cảm nhận trí óc họ, đọc được ý nghĩ nếu nó muốn, nhưng nó chọn tôn trọng quyền riêng tư và chỉ nghe họ nói chuyện.
+</p>
+
+<p>
+ Người đàn ông giọng trầm nói, “...cái cách họ nhìn mày ấy, như thể mày là đáy của đáy xã hội rồi. Họ hầu như có thèm nói chuyện với mày khi mày hỏi họ đâu. Họ chỉ quay người bước đi mất thôi.”
+</p>
+
+<p>
+ “Ừ,” người kia nói. “Và phụ nữ của họ - xinh đẹp như tượng và quyến rũ.”
+</p>
+
+<p>
+ “Đó là lý do vì sao mày là một thằng khốn xấu xí đúng nghĩa đó, Svern. Đấy là lý do đấy.”
+</p>
+
+<p>
+ “Chuyện bố tao đi tới đâu là tán gái tới đó không phải lỗi của tao. Hơn nữa, mày làm gì có quyền đứng đó mà nhận xét này nọ; mặt mũi mày đủ khiến lũ trẻ gặp ác mộng rồi.”
+</p>
+
+<p>
+ Chiến binh giọng trầm càu nhàu; sau đó một ai đó ho húng hắng và Eragon nghe tiếng xì xì như khi củi cháy gặp chỗ ẩm.
+</p>
+
+<p>
+ Người thứ ba bước vào cuộc nói chuyện: “Tao không thích tụi tiên hơn gì bọn mày, nhưng chúng ta cần có họ mới thắng được.”
+</p>
+
+<p>
+ “Nhưng nếu sau đó họ quay lưng với chúng ta thì sao?” người giọng trầm hỏi.
+</p>
+
+<p>
+ “Nghe đi,” Svern nói thêm. “Nhìn chuyện gì đã xảy ra ở Ceunon và Gil’ead. Với toàn bộ quân đội và quyền năng mà Galbatorix cũng không thể chặn nổi họ vượt qua thành lũy.”
+</p>
+
+<p>
+ “Có thể vì lão ta không thử,” người thứ ba đưa ra giả thiết.
+</p>
+
+<p>
+ Một hồi im lặng kéo dài.
+</p>
+
+<p>
+ Sau đó người giọng trầm cất tiếng, “Giờ tôi chỉ có duy một suy nghĩ không vui... Dù lão có hay không thử, tôi không nghĩ chúng ta có thể làm gì họ nếu họ muốn đòi quyền sở hữu vũng đất củ của mình. Họ nhanh hơn và mạnh hơn chúng ta, và không giống như chúng ta, tất cả đều biết dùng phép.”
+</p>
+
+<p>
+ “Nhưng chúng ta có Eragon,” Svern phản đối. “Ngài ấy có thể đẩy họ về rừng nếu muốn.”
+</p>
+
+<p>
+ “Ngài ấy á? Ngài ấy giống tiên hơn loài người. Tao không tin vào lòng trung thành của ngài ấy hơn lũ Urgal.”
+</p>
+
+<p>
+ Người thứ ba lại nói: “Bọn mày có để ý không, ngài ấy lúc nào cũng mày râu nhẵn nhụi dù chúng ta nhổ trại sớm thế nào.”
+</p>
+
+<p>
+ “Chắc ngài ấy dùng phép thuật để cạo râu.”
+</p>
+
+<p>
+ “Đi ngược lại quy luật của tự nhiên. Giờ phép thuật cứ xẹt qua xẹt lại suốt ngày. Các pháp sư đâu cần chúng ta mà vẫn giết được kẻ thù cơ mà.”
+</p>
+
+<p>
+ “Nhưng mày đâu có kêu ca gì khi thầy thuốc dùng phép thuật trị thương thay vì dùng kẹp nhổ mũi tên ra khỏi vai mày nhỉ.”
+</p>
+
+<p>
+ “Có thể, nhưng nếu không có Galbatorix tao đâu có dính tên vào vai. Chính lão và phép thuật của lão là căn nguyên cho tất cả mớ hổ lốn sau này.”
+</p>
+
+<p>
+ Ai đó khịt mũi. “Đúng, nhưng tao thề, dù có Galbatorix hay không, đời mày kiểu gì chẳng lãnh tên một lần. Mày không làm được gì ngoài đánh nhau đâu.”
+</p>
+
+<p>
+ “Mày biết là Eragon đã cứu mạng tao hồi ở Feinster,” Svern nói.
+</p>
+
+<p>
+ “Đúng, và nếu mày còn lải nhải chuyện đó lần nữa, tao sẽ cho mày cọ nồi cả tuần.”
+</p>
+
+<p>
+ “Ờ, ngài ấy đã....”
+</p>
+
+<p>
+ Lại một hồi im lặng nữa. Nó chỉ bị phá vỡ sau tiếng thở dài của người chiến binh giọng trầm. “Chúng ta cần tìm cách tự bảo vệ mình. Đây là vấn đề. Chúng ta được thần tiên, pháp sư – của ta và của họ - che chở và sống nhờ các sinh vật khác trên mảnh đất này thương tình mới sống nổi. Những người như Eragon luôn sống ổn nhưng chúng ta không máy mắn như ngài ấy. Cái chúng ta cần là...”
+</p>
+
+<p>
+ “Cái chúng ta cần,” Svern nói, “là các Kỵ sĩ rồng. Họ đưa thế giới về đúng trật tự.”
+</p>
+
+<p>
+ “Xì. Với con rồng nào? Mày không thể trở thành kỵ sĩ mà không có rồng. Hơn nữa, chúng ta vẫn không thể tự bảo vệ mình và điều đó khiến tao lo. Tao không còn là đứa bé trốn dưới váy mẹ, nhưng nếu Tà thần xuất hiện trong đêm, chúng ta chẳng thể làm gì ngoài đưa đầu cho hắn chém.”
+</p>
+
+<p>
+ “Nói mới nhớ, mày có nghe gì về Lãnh chúa Barst không?” người thứ ba hỏi.Svern lẩm bẩm đồng ý. “Tao nghe nói về sau ông ấy ăn tim mình.”
+</p>
+
+<p>
+ “Cái gì nữa đây?” chiến binh giọng trầm nói.
+</p>
+
+<p>
+ “Barst...”
+</p>
+
+<p>
+ “Barst?”
+</p>
+
+<p>
+ “Mày biết đó, bá tước vùng Gil’ead.”
+</p>
+
+<p>
+ “Không phải là người phi ngựa tới Rảm chỉ để chọc giận...”
+</p>
+
+<p>
+ “Đúng người đó đó. Lão ta đã vào ngôi làng này và yêu cầu trai tráng nhập ngũ cho Galbatorix. Chỉ có điều, họ không đồng ý và tấn công lại Barst và binh sĩ của lão.”
+</p>
+
+<p>
+ “Dũng cảm,” người giọng trầm nói. “Ngu nhưng dũng cảm.”
+</p>
+
+<p>
+ “Ờm, Barst lại quá thông minh so với họ; lão cho cung thủ bao quanh làng trước khi tiến vào. Những binh sĩ đã giết một nửa trai tráng và những người còn lại cũng hấp hối. Không có gì bất ngờ. Sau đó Barst bắt sống trưởng làng, người khởi nguồn cuộc đấu tranh rồi dùng tay bẻ cổ ông ấy và vặt đầu ông ấy.”
+</p>
+
+<p>
+ “Không.”
+</p>
+
+<p>
+ “Như vặt đầu gà. Tệ hơn, lão ra lệnh thiêu sống người thân của ông ấy.”
+</p>
+
+<p>
+ “Barst phải khỏe ngang Urgal,” Svern nói.
+</p>
+
+<p>
+ “Có thể lão có mánh khóe gì đó.”
+</p>
+
+<p>
+ “Hay là dùng pháp thuật?” người giọng trầm nói.
+</p>
+
+<p>
+ “Nhưng theo những gì chúng ta biết, lão có sức mạnh – và cáo già nữa. Người ta kể, khi còn trẻ hắn chỉ một đòn đấm giết chết bò rồi.”
+</p>
+
+<p>
+ “Tao nghe vẫn thấy có hơi hướm phép thuật quanh đây.”
+</p>
+
+<p>
+ “Đó là vì lúc nào mày cũng thấy pháp sư xấu ẩn nấp trong bóng tối thôi.”
+</p>
+
+<p>
+ Người giọng trầm làu nhàu nhưng không nói gì.
+</p>
+
+<p>
+ Sau đó, những người chiến binh tản ra để vào ca gác nên Eragon không nghe được thêm gì. Trong lúc khác, cuộc nói chuyện của họ sẽ khiến nó không vui, nhưng vì đang suy tưởng nên nó vẫn bình tĩnh. Nhưng mặt khác nó cố nhớ những gì họ nói để sau này có dịp suy ngẫm.
+</p>
+
+<p>
+ Sau khi suy nghĩ đã đi đúng trật tự, nó cảm thây bình tĩnh và thư thái. Eragon đóng đầu óc lại, mở mắt và duỗi chân cho khỏi tê.
+</p>
+
+<p>
+ Nó nhìn chằm chằm ánh lửa chập chờn trong một phút, bị mê hoặc bởi ánh lửa nhảy nhót.
+</p>
+
+<p>
+ Sau đó nó tới chỗ đặt túi yên cương và lấy bút lông ngỗng, lọ mực, giấy da dê nó xin Jeod vài ngày trước, cùng bản sao cuốn Domia abr Wyrda mà một học giả già đưa cho nó.
+</p>
+
+<p>
+ Eragon trở lại võng, đẩy cuốn sách nặng sang bên để không vẩy mực lên đó. Nó đặt khiên dưới đầu gốc như đặt một cái khay và trải tờ giấy da dê trên bề mặt cong võng. Nó ngửi thấy mùi ta nanh thơm sắc khi mở nắp lọ mực và nhúng bút lông ngỗng vào.
+</p>
+
+<p>
+ Nó gạt đầu bút lông vào miệng lo để tránh mực tràn rồi cẩn thận đặt nét bút đầu tiên. Tiếng bút lạo xạo trên giấy khi nó viết những con chứ bằng ngôn ngữ loài người. Khi nó viết xong, nó so sánh bản này và bản hôm qua để xem liệu chữ viết của nó có tiến bộ - chỉ một chút – và so sánh với chữ trong cuốn Domia abr Wyrda nó dùng làm sách mẫu.
+</p>
+
+<p>
+ Nó nhìn bảng chữ cái thêm ba lần nữa, đặc biệt để ý tới những con chứ khó viết nhất. Sau đó nó bắt đầu viết những suy nghĩ và những quan sát trong ngày. Bài tập này không chỉ hữu ích vì giúp nó luyện chữ mà còn hiểu những thứ nó nhìn và làm trong ngày tường tận hơn.
+</p>
+
+<p>
+ Nó cần cù viết vì nó thấy được sự hứng thú từ thử thách tính kiên nhẫn này. Luyện chữ khiến nó nhớ tới ông Brom, về cách người kể chuyện già dạy nó ý nghĩa từng con chữ, giúp nó cảm nhận sự gần gũi của người cha đã xa cách nó.
+</p>
+
+<p>
+ Sau khi viết mọi thứ nó muốn, nó rửa sạch bút lông ngỗng và chuyển sang bút lông và chọn một tờ giấy một nửa đã chi chít những con chữ tượng hình của ngôn ngữ cổ xưa.
+</p>
+
+<p>
+ Bắt khó bắt chước kiểu chữ Liduen Kvaedhí của thần tiên khó hơn là viết chữ của loài người do chữ tượng hình tượng trưng cho các hình dạng trong đời sống. Nhưng nó vẫn học viết vì hai lý do: nó cần biết mặt chữ. Và nếu như nó viết cái gì bằng ngôn ngữ cổ, nó nghĩ mình nên viết lại bằng kiểu chữ hầu hết loài người không đọc được.
+</p>
+
+<p>
+ TRí nhớ của Eragon rất tốt, nhưng dù thế đi chăng nữa, nó đã bắt đâu quên những câu thần chú ông Brom và thầy Oromis đã từng dạy nó. Vì thế nó quyết định tạo ra một cuốn từ điển tất cả những từ nó biết bằng ngôn ngữ cổ. Lúc đầu nó cũng không thấy được tầm quan trọng của bản tóm tắt này cho tới gần đây.
+</p>
+
+<p>
+ Nó viết từ điển trong vài tiếng nữa sau đó bỏ bút mực vào túi yên cương và lấy ra hộp đựng trái tim ông rồng Glaedr. Nó cố gắng đánh thức ông rồng già như đã làm nhiều lần trước đó nhưng kết quả vẫn như cũ. Eragon không chịu từ bỏ. Nó ngồi cạnh chiếc hộp đã mở, đọc to cho Glaedr nghe về những nghi thức, lễ hội của người lùn viết trong cuốn Domia abr Wyrda – Eragon biết một vài – cho tới lúc đêm đã lạnh nhất và tối nhất.
+</p>
+
+<p>
+ Sau đó, Eragon đặt cuốn sách sang một bên, thổi tắt nến và nằm xuống võng ngủ. Nó lơ mở ngủ một lúc. Ngay khi ánh sáng đầu tiên xuất hiện ở đằng đông, nó ngồi thẳng dậy bắt đầu một ngày mới.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-017.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

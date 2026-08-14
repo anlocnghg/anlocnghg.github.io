@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 11 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 11</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-010.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-012.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Ánh sáng mờ mờ từ mặt trời sắp lặn len lỏi vào căn lều của Eragon. Mọi thứ chỉ mang màu nâu như thể được tạc từ đá hoa cương. Với tầm nhìn của thần tiên, Eragon có thể thấy các đồ vật một cách dễ dàng nhưng nó biết bà Gertrude sẽ gặp khó khăn vì thế nó nói. “Naina hvitr un böllr,” và tạo ra một quả cầu ánh sáng nhỏ trôi lập lờ trong không khí. Ánh sáng trắng dìu dịu không làm ấm phòng nhưng cũng tạo ra được thứ ánh sáng tương tự đèn dầu. Nó không dám dùng câu thần chú brisingr vì lo thanh kiếm bốc cháy rừng rực.
+</p>
+
+<p>
+ Nó nghe thấy tiếng bước chân Gertrude dừng lại sau lưng nó và nó quay lại thấy bà ta đang nhìn chằm chằm vào quần sáng và nắm chặt lấy cái túi bà mang theo. Khuôn mặt quen thuộc của bà khiến nó nhớ nhà và làng Carvahall.
+</p>
+
+<p>
+ Bà từ từ cúi xuống nhìn nó. “Cháu đã thay đổi nhiều rồi,” bà nói. “Ta nghĩ đứa bé trai ta từng ngồi cả đêm trông nó bị sốt đã không còn.”
+</p>
+
+<p>
+ “Bà biết là cháu vẫn ở đây mà,” nó trả lời.
+</p>
+
+<p>
+ “Không, ta không tin.”
+</p>
+
+<p>
+ Câu nói của bà ta khiến nó khó chịu nhưng nó không thể nghĩ mãi về chuyện đó, nên cố đẩy nó ra khỏi ý nghĩ và đi tới võng. Nó nhẹ nhàng đặt đứa nhỏ mới sinh lên cái chăn, như thể con bé được làm bằng thủy tinh. Đứa bé vẫy nắm tay trước mặt nó. Nó cười và dùng ngón trỏ chạm vào, con bé lẩm bẩm nho nhỏ
+</p>
+
+<p>
+ ‘Cháu định làm gì?” bà Gertrude hỏi khi ngồi xuống chiếc ghế độc nhất trong lều. “Làm sao cháu chữa cho nó được?”
+</p>
+
+<p>
+ “Cháu không chắc.”
+</p>
+
+<p>
+ Đúng lúc đó, Eragon phát hiện ra Arya không đi cùng họ vào lều. Cậu gọi nàng và một lát sau nàng từ ngoài trả lời vọng vào, giọng bị lớp vải bố dày làm có biến dạng. “Tôi ở đây,” nàng nói. “Tôi sẽ đợi ngoài này. Nếu chàng cần tôi, cứ phóng tư tưởng về phía tôi và tôi sẽ vào.”
+</p>
+
+<p>
+ Eragon hơi nhíu mày. Cậu cứ nghĩ cô sẽ ở bên cậu trong suốt quá trình, giúp cậu ở những điểm cậu không biết và sửa sai nếu cậu phạm lỗi. Ừm, không sao. Mình vẫn có thể hỏi nàng nếu cần. Chỉ có cách này bà Gertrude mới không nghi ngờ Arya làm gì đứa nhỏ. Nó bị ám ảnh vì những điều Arya cảnh báo, và nó phân vân liệu cô đã từng bị buộc tội trộm đứa trẻ nào chưa.
+</p>
+
+<p>
+ Chiếc võng kêu kẽo kẹt khi nó từ từ hạ người xuống nhìn đứa nhỏ. Trán nó nhăn tợn. Nó cảm thấy Saphira đang qua nó quang sát đứa nhỏ lơ mở ngủ trong chăn.
+</p>
+
+<p>
+ Em nghĩ sao? Nó hỏi.
+</p>
+
+<p>
+ Từ từ thôi, để anh không vô tình cắn phải đuôi.
+</p>
+
+<p>
+ Nó đồng ý với cô rồng, sau đó nó tinh quái hỏi lại, Thế em đã làm thế bao giờ chưa? Cắn đuôi ấy?
+</p>
+
+<p>
+ Cô nàng im lặng nhưng nó cũng thấy được một chút cảm giác: một mớ hỗn độn những hình ảnh – cây cối, cỏ hoa, ánh mặt trời, dãy nũi Spine – cũng như mùi hương ngọt ngào của lan đỏ và một cảm giác đau đớn bất chợt như thể cánh cửa đóng sầm một nhát vào đuôi cô nàng.
+</p>
+
+<p>
+ Eragon cười thầm, rồi tập trung tạo ra câu thần chú nó nghĩ là cần. Nó mất khoảng nửa tiếng. Nó và Saphira dành gần hết khoảng thời gian đó để soát lại câu thần chú, kiểm tra và tranh luận xem có nên dùng từ hay cụm từ đó không – và thậm chí là cả cách phát âm của Eragon – để chắc chắn câu thần chú đi đúng chủ đích.
+</p>
+
+<p>
+ Khi hai người đang thảo luận trong im lặng, Gertrude động đậy và nói. “Con bé vẫn thế. Không phải chuyện chuyển biến xấu chứ? Đừng giấu bà, Eragon; hôm nay bà đã phải xử lý nhiều tình huống tệ hơn.”
+</p>
+
+<p>
+ Eragon nhướn mày và nhẹ nhàng nói. “Công việc chưa bắt đầu.”
+</p>
+
+<p>
+ Thế là bà Gertrude ngồi lại. Bà lôi trong túi ra một cuộn len vàng, một cái áo len đan được một nửa và một đôi que đan bằng gỗ bạch dương sáng bóng. Những ngón tay bà đan nhanh vì đã quen tay. Tiếng lách cách đều đặn khiến Eragon yên lòng; nó giống âm thanh từ thời niên thiếu khi nó ngồi cạnh bếp lửa trong những tối mùa thu hiu hiu lạnh, nghe người lớn kể chuyện, hút thuốc hoặc uống bia nâu sau bữa tối tập thể.
+</p>
+
+<p>
+ Cuối cùng, khi nó và Saphira hài lòng vì câu thần chú đã an toàn, Eragon tự tin vì nó không ngọng nghịu phát âm ngôn ngữ cổ. Eragon rút lấy sức mạnh từ cả hai cơ thẻ và chuẩn bị niệm thần chú.
+</p>
+
+<p>
+ RỒi nó chần chừ.
+</p>
+
+<p>
+ Khi các tiên dùng phép thuật thuyết phục cây và hoa sinh trưởng theo hình dáng họ muốn, hoặc để thay hình đổi dạng thành sinh vật khác, theo như cậu biết, họ luôn luôn biến câu thần chú thành một bài hát. Nó cũng nên làm thế. Nhưng nó chỉ biết vài bài hát của thần tiên và không bài nào trong số đó chính xác – hoặc có thể - tái tạo vẻ đẹp.
+</p>
+
+<p>
+ Vì vậy, nó chọn một bài hát từ sâu thẳm trong ký ức của nó, một bài hát dì Marian đã hát cho nó nghe từ khi còn bé tí, trước khi dì bị bạo bệnh, một bài hát mà những người phụ nữ Carvahall ru con đi vào giấc ngủ say: lullaby – bài hát ru. Giai điệu của nó rất đơn giản, dễ nhớ và nhẹ nhàng để đứa nhỏ an an tĩnh tĩnh mà ngủ.
+</p>
+
+<p>
+ Nó bắt đầu hát, nhẹ nhàng và trầm ấm lan tỏa trong lều như hơi ấm của lửa. Trước khi sử dụng phép thuật, nó nói với cô bé bằng ngôn ngữ cổ rằng nó là bạn cô, nó muốn cô có những điều tốt đẹp nhất và rằng cô bé cần tin tưởng nó.
+</p>
+
+<p>
+ Con bé hơi nhúc nhích trong giấc ngủ, như thể trả lời nó, và nét mặt rất bình thản.
+</p>
+
+<p>
+ Sau đó Eragon niệm đoạn thần chú đầu tiên: một câu thần chú đơn giản gồm hai câu ngắn mà nó niệm đi niệm lại như thể cầu nguyện. Khe chia đôi môi cô bé rung lên và sáng mờ mờ như một sinh vật ngủ đông cựa quậy bên dưới.
+</p>
+
+<p>
+ Điều nó muốn làm không hề dễ. Xương của đứa nhỏ, giống như những đứa bé sơ sinh khác, rất mềm và còn là sụn, không giống xương người lớn và vì thế rất khác với việc cậu chỉnh xương cho những binh sĩ Varden. Nó phải cẩn thận để lấp khe trên môi cô bằng xương thịt và xa của người lớn và phần đó sẽ không hợp với phần cơ thể còn lại. Ngoài ra, trong khi chữa lành vết hở ở phần lợi và hàm trên, nó phải làm cho chân răng cửa di chuyển, thẳng ra và đối xứng. Cậu chưa bao giờ làm điều này. Hơn nữa, nó không biết nếu không có khuyết tật này trông cô bé sẽ ra sao nên không chắc môi và miệng cô bé nên thế nào cho đúng. Trông cô nhóc y như những đứa nhỏ khác nó từng thấy: tròn, bầu bĩnh. Nó lo lắng rằng nó sẽ tạo ra một khuôn mặt có thể bây giờ thì ưa nhìn nhưng sau này khi con bé lớn lại trở nên kỳ dị và thiếu sức hút.
+</p>
+
+<p>
+ Thế nên nó tiến hành công việc vô cùng cẩn trọng, chỉ tạo ra một vài thay đổi nhỏ một lúc, sau đó dừng lại chiêm ngưỡng kết quả. Nó bắt đầu với lớp tế bào sâu nhất trên gương mặt, với xương và sụn rồi từ từ sửa chữa lớp ngoài trong khi hát.
+</p>
+
+<p>
+ Ở trong những thời điểm nhất định, Saphira từ ngoài lều ngâm nga theo, giọng trầm của cô nàng khiến không khí rung động. Ánh đèn ma sáng lên và mờ đi theo âm điệu của cô nàng khiến Eragon vô cùng hiếu kỳ. Nó sẽ hỏi Saphira về chuyện này sau.
+</p>
+
+<p>
+ Đêm xuống, hàng giờ trôi qua, từng từ tuôn ra, từng câu thần chú được niệm nhưng Eragon không chú ý tới thời gian. Khi cô nhóc khóc vì đói nó cho con bé một lượng năng lượng nhỏ. Nó và Saphira cố gắng không chạm tới đầu óc nó – vì không biết sự giao cảm giữa họ sẽ ảnh hưởng tới đầu óc còn non nớt của nó ra sao – nhưng thi thoảng vẫn có những va chạm. Đối với Eragon, nhận thức của nó còn quá mơ hồi, chỉ là một biển những cảm xúc không rõ ràng, không nhận biết về thế giới bên ngoài.
+</p>
+
+<p>
+ Bên cạnh nó, bà Gertrude vẫn lách cách đan lát. m thanh duy nhất pha tạp vào giai điệu là khi bà ấy đánh rơi que đan hoặc tháo vài mũi đan để sửa lỗi.
+</p>
+
+<p>
+ Từ từ, rất chậm, vết hở trên hàm và lợi cô bé liều lại, hai bên hàm ếch đẩy lại gần nhau – da cô chảy như một dòng chất lỏng – và môi trên từ từ liền lại không còn lấy một khe nứt.
+</p>
+
+<p>
+ Eragon mất một thời gian dài ngắm nghĩa và lo lắng về hình dạng đôi môi cho cô bé cho tới khi Saphira nói Xong rồi, nó đành thừa nhận rằng nó không thể làm gì hơn.
+</p>
+
+<p>
+ Sau đó nó nhỏ giọng dần và im lặng. Nó cảm thấy lưỡi dày và khô, cổ họng rát. Nó chống tay vào võng, hơi cúi người vì mỏi nên không thể đứng thẳng hoàn toàn.
+</p>
+
+<p>
+ Ngoài ánh sáng chiếu ra từ ngọn đèn ma còn có một thứ ánh sáng khác len lỏi vào trong phòng giống như khi nó bắt đầu công việc. – chắc chắn là mặt trời đã lặn rồi! – nhưng rồi nó nhận ra ánh sáng từ đằng đông, không phải đằng tây. Thế là nó hiểu. Chẳng trách anh thấy đau thế. Anh đã ngồi cả đêm!
+</p>
+
+<p>
+ Còn em thì sao? Saphira nói. Xương cốt em cũng đau nhừ tử như anh vậy. Thừa nhận của cô nàng khiến nó ngạc nhiên, hiếm khi cô em nó thấy mình không thoải mái, dù cho cô bé đau thế nào. Trận chiến đã bòn rút của cô em nó nhiều hơn vẻ bề ngoài. Khi nó hiểu ra và Saphira cũng đã ý thức được điều đó, cô bé nói, Mệt hay không thì Galbatorix cho bao nhiêu quân em cũng đập được bây nhiêu.Anh biết.
+</p>
+
+<p>
+ Bà Gertrude bỏ que đan vào túi, đứng dậy và tiến tới võng. “Bà không bao giờ nghĩ mình được chứng kiến chuyện gì tương tự,” bà nói. “Ít nhất là từ cháu, Eragon Bromsson.” Bà nheo mắt nhìn nó. “Brom là cha cháu, đúng không?”
+</p>
+
+<p>
+ Eragon gật đầu rồi càu nhàu. “Đúng ạ.”
+</p>
+
+<p>
+ “Thể nào hai người giống nhau vậy.”
+</p>
+
+<p>
+ Eragon không muốn thảo luận xa hơn về chủ đề đó nên nó lầm bầm dập tắt ánh đèn ma bằng một cái liếc mắt và suy tưởng. Đột nhiên, lều tôi om, trừ phần được ánh bình minh chiếu rọi. Mắt nó thích nghi với sự thay đổi nhanh hơn bà Gertrude; bà chớp mắt và nhíu mày rồi lắc đầu, như thể không biết nó đứng đâu.
+</p>
+
+<p>
+ Nó bế con bé lên. Cậu không chắc liệu cậu yếu đi vì phép thuật đã tiêu hao năng lượng hay vì nó phải ngồi bên con bé lâu quá.
+</p>
+
+<p>
+ Nó cúi xuống nhìn con bé và đột ngột cảm thấy cần bảo vệ sinh linh bé bỏng này. Nó lẩm nhẩm, “Sé ono waíse ilia.” Chúc con hạnh phúc. Đó không phải một câu thần chú mà chỉ là nó hy vọng con bé sẽ tránh được những nỗi đau khổ mà những người khác đang phải chịu đựng. Nó mong con bé sẽ mãi mỉm cười.
+</p>
+
+<p>
+ Quả thực vậy. Con bé nở một nụ cười rất tươi và nhiệt tình hét, “Gahh!”
+</p>
+
+<p>
+ Eragon cũng cười rồi quay người bước ra ngoài.
+</p>
+
+<p>
+ Nó nhìn thấy một nhóm nhỏ tụ tập thành một vòng bán nguyệt quanh lều, vài người đứng, vài người ngồi. Nó nhận ra hầu hết đây là dân làng Carvahall nhưng Arya và các tiên nhân khác cũng ở đó – tách xa những người còn lại – cũng như vài chiến binh Varden mà nó không biết tên. Nó nhìn thấy Elva lấp ló ở căn lều bên cạnh, mũ trùm hạ thấp xuống, che đi khuôn mặt.
+</p>
+
+<p>
+ Eragon nhận ra nhóm người này đã chờ đợi hàng giờ và nó lại không hề cảm nhận được sự hiện hữu của họ. Có tiên nhân và Saphira bảo vệ nó sẽ được an toàn, nhưng không được phép coi thường.
+</p>
+
+<p>
+ Mình phải giỏi hơn, nó tự nhủ.
+</p>
+
+<p>
+ Đứng trước đám đông là Horst và những người con trai, trông đầy lo lắng. Lông mày chú Horst nhíu chặt lại khi nhìn đống vải Eragon đang ôm trong tay. Chú mở miệng định nói nhưng không một âm thanh nào phát ra.
+</p>
+
+<p>
+ Không hề phô trương hay ăn mừng, Eragon bế đứa nhỏ tới chỗ người thợ rèn và cho chú nhìn mặt con. Trong một lúc, chú Horst không hề cử động; sau đó mắt ông ầng ậng nước và niềm vui và nhẹ nhõm hiển hiện quá thâm thúy, khiến người khác nhìn vào có thể tương ông đang buồn.
+</p>
+
+<p>
+ Khi nó đưa đứa nhỏ cho chú Horst, nó nói, “Bàn tay cháu đã nhuốm quá nhiều máu, nhưng cháu mừng vì cháu có thể giúp.”
+</p>
+
+<p>
+ Chú Horst chạm vào môi trên của cô bé bằng ngón giữa rồi lắc đầu. “Chú không tin nổi.. Chú không thể nào tin.” Chú nhìn Eragon. “Elain và chú nợ cháu. Nếu...”
+</p>
+
+<p>
+ “Không có nợ nần gì hết,” Eragon nhẹ nhàng nói. “Cháu chỉ làm điều ai cũng sẽ làm nếu họ có khả năng.”
+</p>
+
+<p>
+ “Nhưng cháu là người chữa trị cho con chú, chú biết ơn cháu.”
+</p>
+
+<p>
+ Eragon ngần ngừ rồi chúi đầu chấp nhận lời cảm ơn của chú Horst. “Em bé tên gì hả chú?”
+</p>
+
+<p>
+ Người thợ rèn nhìn chăm chăm vào con gái. “Nếu Elain đồng ý, chú sẽ đặt tên cho con bé là Hope.”
+</p>
+
+<p>
+ “Hope... một cái tên hay.” Và chẳng phải chúng ta luôn cần có hy vọng để sống sao? “Còn dì Elain sao rồi ạ?”
+</p>
+
+<p>
+ “Mệt, nhưng không sao.”
+</p>
+
+<p>
+ Sau đó Albriech và Baldor chạy tới cạnh cha họ, nhìn vào cô em gái cùng với bà Gertrude – bà ra khỏi lều ngay sau Eragon – và sau đó dân làng cũng tiến tới. Kể cả những chiến binh tò mò cũng tới gần hơn, ngó đầu nhìn đứa bé một chú.
+</p>
+
+<p>
+ Sau một lúc, các tiên nhân cũng tiến tới. Khi thấy họ, mọi người tránh đường, để họ tiến tới chỗ chú Horst. Quai hàm chú Horst cứng lại và đưa về phía trước như hàm chó bun. Từng tiên nhân cúi xuống xem xét, thi thoảng thì thầm một hai từ bằng ngôn ngữ cổ với cô bé. Họ không để ý hay phiền lòng vì những ánh nhìn nghi ngờ của dân làng.
+</p>
+
+<p>
+ Khi chỉ còn lại ba tiên nhân cuối cùng, Elva chạy ra đã đứng vào sau họ. Cô bé không phải chờ lâu để tới lượt đứng trước chú Horst. Dù chú có chút miễn cưỡng, nhưng chú vẫn hạ thấp tay xuống và khuỵu gối, nhưng vì chú cao hơn Elva quá nhiều nên con bé phải nhón chân để nhìn đứa nhỏ sơ sinh. Eragon nín thở khi con bé nhìn đứa trẻ sơ sinh từng bị dị tật, không thể đoán nổi phản ứng của con bé sẽ thế nào.
+</p>
+
+<p>
+ Sau vài giây, Elva hạ chân xuống. Nó từ từ đi về phía Eragon.
+</p>
+
+<p>
+ Nó nghiêng đầu và nhướn mày,
+</p>
+
+<p>
+ Con bé gật đầu, dừng lại một chút rồi tiếp tục đi.
+</p>
+
+<p>
+ Khi Eragon quan sát con bé bước đi, Arya bước tới gần nó. “Chàng nên tự hào vì những gì đã làm,” nàng nói nhỏ. “Đứa trẻ ngủ ngon và rất xinh. Những thầy phép giỏi nhất trong loài tiên cũng không thể làm được hơn. Chàng đã cho cô bé một món quà rất lớn – một khuôn mặt và một tương lai – và cô bé sẽ không quên, tôi chắc chắn đó... Và chúng tôi cũng sẽ không quên.”
+</p>
+
+<p>
+ Eragon thấy nàng và những tiên nhân khác nhìn nó với vẻ kính trọng theo một cách khác – nhưng sự ngưỡng mộ của Arya mới là thứ có ý nghĩa với nó nhất. “Danh sư xuất cao đồ,” nó nhỏ giọng trả lời. Arya không bàn cãi. Họ cùng nhau quan sát dân làng bao quanh Horst và cô con gái nói chuyện hào hứng. Eragon không rời mắt khỏi họ và nghiêng người về phía Arya mà nói. “Cám ơn nàng đã giúp Elain.”
+</p>
+
+<p>
+ “Không có gì. Không làm tôi thấy cắn rứt lương tâm.”
+</p>
+
+<p>
+ Chú Horst quay lại và bế đứa bé vào lều cho Elain ngắm nhìn cô con gái, nhưng dân làng vẫn không hề có dấu hiệu sẽ tản đi. Sau khi nó chán bắt tay rồi trả lời câu hỏi, nó tạm biệt Arya rồi đi vào trong lều và buộc bạt cửa lều lại.
+</p>
+
+<p>
+ Trừ khi chúng ta bị đánh úp, anh sẽ không muốn gặp ai trong mười tiếng tới, kể cả Nasuada, nó nói với Saphira khi nằm xuống võng. Em chuyển lời tới Blödhgarm giùm anh nhé?
+</p>
+
+<p>
+ Tất nhiên là được, cô nàng đáp. Nghỉ ngơi đi, em cũng thế.
+</p>
+
+<p>
+ Eragon thở dài và lấy tay che mắt. Hơi thở của nó chậm lại, đầu óc lang thang rồi những âm thanh và hình ảnh kỳ lạ trong mơ chiếm lĩnh lấy nó – những tưởng tượng nhưng chân thật; chói lóa nhưng không màu như thể cậu nhìn thấy toàn cỏ xanh – và trong một lúc, cậu có thể quên hết những trách nhiệm gánh vác trên vai và những sự kiện kinh hoàng trong ngày. Kể cả trong mơ, cậu cũng nghe thấy tiếng hát ru như lời thì thầm của gió, nửa nghe, nửa quên, đưa cậu về với những ký ức thời thơ ấu nơi quê nhà.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-010.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-012.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

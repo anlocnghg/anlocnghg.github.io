@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 33 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 33</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-032.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-034.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Hạnh phúc và bất hạnh, không giống như những vị khách cứ lui tới một cách bất định. Chúng đều có quy luật, có quỹ đạo, có nguyên tắc tồn tại riêng, không phải ai cũng có thể nắm giữ. — Victor Hugo (15.1)
+</p>
+
+<p>
+ (15.1) Victor Hugo (26/02/1802 – 22/05/1885) là một nhà văn, nhà thơ, nhà viết kịch thuộc chủ nghĩa lãng mạn nổi tiếng của Pháp. Ông đồng thời cũng là một nhà chính trị, một trí thức tiêu biểu của thế kỷ XIX.
+</p>
+
+<p>
+ Một đêm trằn trọc trăn trở, Nhan Hiểu Thần cảm giác như vừa ngủ được chốc lát, nhưng lại vừa cảm thấy tỉnh táo.
+</p>
+
+<p>
+ Mấy năm nay, cô luôn cố ý giấu kín đi ký ức của quá khứ, giờ đây, nỗi đau khổ giống như một xâu chìa khóa, từng cái một mở ra cánh cửa quá khứ, khiến tất cả ký ức đau thương ào ạt tràn về.
+</p>
+
+<p>
+ Mùa hè năm 18 tuổi ấy, là đoạn ký ức đau thương nhất của cô từ lúc sinh ra trên đời này. Mọi người đều nói cho cô biết, ba cô đã chết, nhưng cô vẫn tuyệt đối không tin.
+</p>
+
+<p>
+ Một người tồn tại rõ mồn một như vậy làm sao dễ dàng chết đi được? Tâm hồn non nớt trẻ con của cô còn chưa nhận thức được thế nào là cái chết, đối với cô, cái chết giống như một sự kiện kinh thiên động địa, là chuyện gì đó rất xa vời.
+</p>
+
+<p>
+ Ba của cô nhất định đang trốn ở một góc nào đó, chỉ cần cô muốn gặp, ông sẽ lập tức xuất hiện. Nhưng cho đến khi bọn họ kéo quan tài của ba đi hỏa táng, cô mới thật sự nhận thức và bắt đầu lý giải được hai từ “Cái chết” ở trong miệng của bọn họ.
+</p>
+
+<p>
+ Cái chết là gì chứ?
+</p>
+
+<p>
+ Đó là những chuyện từng cho rằng rất hiển nhiên, là những thứ tồn tại trên trời dưới đất rất rõ ràng mà lại biến mất không còn dấu tích. Là những thứ từ lúc sinh ra trên đời này đã từng chút từng chút một vây quanh, đã từng li từng tí quan tâm chăm sóc, là những điều đã sớm quen, không nhận thấy có bao nhiêu tốt đẹp, cũng không hiểu được có chừng nào hiếm hoi, mà trong phút chốc lại tan thành mây khói, trở thành trên đời này vĩnh viễn không bao giờ có lại được.
+</p>
+
+<p>
+ Lúc trời đỗ mưa sẽ không có người cõng cô qua vũng nước đọng, thà để hai chân của mình ướt đẫm, cũng không để giày của cô dính nước; sẽ không có người tình nguyện chỉ mang đôi dép nhựa 30 đồng, nhưng lại mua cho cô giầy thể thao hơn 300 đồng; sẽ không có người cẩn thận giấu thanh socola nước ngoài của ông chủ để cố ý mang về cho cô ăn; sẽ không còn ai mặc kệ bàn tay đen nhẻm của mình mà luôn nhớ mua cho cô hộp kem dưỡng da; sẽ không có ai lúc đêm tối mùa đông luôn nhớ vùi vào ổ chăn của cô một túi nước ấm…
+</p>
+
+<p>
+ Cái chết không phải là ngắn ngủi cách biệt mà là mãi mãi vĩnh biệt, cái chết chính là đời này kiếp này, bất luận thế nào đi nữa, cô sẽ vĩnh viễn không bao giờ được gặp lại ba!
+</p>
+
+<p>
+ Cuộc đời này, cho dù cô có ra sao đi nữa, là ngoan ngoãn hay hư hỏng, là xinh đẹp hay xấu xa, ba vẫn sẽ yêu thương cô vô điều kiện, sẽ không màng đến hậu quả mà trả giá vì cô. Nhưng cái chết của ông, lại chính tay cô tạo thành! Nếu cô không tâm cao khí ngạo, sống chết không chịu học cái trường đại học bình thường đó, nếu tính tình của cô không tự tư tự lợi, thầm oán trách ba mẹ vô năng, không giúp được cho mình, ba sẽ không đi lên thành phố, thì sẽ không xảy ra tai nạn giao thông.
+</p>
+
+<p>
+ Chẳng lẽ ông trời muốn trừng phạt cô, nên mới để cô gặp Thẩm Hầu?
+</p>
+
+<p>
+ Ba và Thẩm Hầu là hai người đàn ông quan trọng hơn cả sinh mạng cuả cô trên đời này, một người khiến cho cô hiểu được nỗi đau sinh ly tử biệt, một người dạy cho cô nhận thức được nỗi khổ xa cách chia lìa.
+</p>
+
+<p>
+ Đến gần sáng, Nhan Hiểu Thần bò dậy, chuẩn bị đi làm.
+</p>
+
+<p>
+ Bà Nhan nhìn thấy sắc mặc của cô thật khó coi, hai mắt sưng đỏ, cho rằng cô đang chần chừ chọn lựa, khổ sở vì tình, nên rất là bất mãn, bà đem một chén cháo táo đỏ, mạnh tay đặt lên bàn trước mặt cô, tức giận nói: “Đừng có bao giờ ‘ăn trong bát, nhìn trong nồi’! Mày cho rằng trong nồi còn lại thứ ngon, nhưng mấy thứ còn dư toàn là đồ cặn.”
+</p>
+
+<p>
+ Nhan Hiểu Thần chưa nói câu nào, đã cầm lấy thìa, lặng lẽ ăn cháo.
+</p>
+
+<p>
+ Từ lúc mang thai cho đến giờ, khẩu vị của cô ngày càng phong phú, ăn món gì cũng đều thấy ngon, nhưng hiện tại lại cảm thấy trong dạ dày như có chứa đá tảng, rõ ràng đêm qua còn chưa ăn cơm tối, nhưng vừa ăn mấy miếng, lại cảm thấy khó chịu.
+</p>
+
+<p>
+ “Con đi làm đây.” Nhan Hiểu Thần cầm lấy túi xách, chuẩn bị muốn đi ra ngoài.
+</p>
+
+<p>
+ Bà Nhan gọi: “Hôm nay là thứ bảy! Có đi làm sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần sửng sốt một chút, lại không nghĩ phải tiếp tục đối mặt với mẹ, “Hôm nay con làm thêm!” Cô cũng không quay đầu lại mà đi vào thang máy.
+</p>
+
+<p>
+ Đi ra khỏi cổng khu chung cư, Nhan Hiểu Thần lại cảm thấy mờ mịt, không biết rốt cuộc là nên đi đâu, sớm như vậy, khu mua sắm, tiệm cà phê đều không có mở cửa. Thế giới này nhìn thì rất lớn, nhưng có đôi khi muốn tìm một góc để chất chứa ưu tư cũng không dễ dàng.
+</p>
+
+<p>
+ Đang đứng ngẩn ngơ dưới bóng cây ven đường, cảm giác có người đi đến trước mặt, Nhan Hiểu Thần tưởng là người đi đường đi ngang qua, nên không để ý đến, nhưng người đó vẫn đứng một chỗ nhìn cô thật lâu. Cô ngẩng đầu lên, là Thẩm Hầu, hắn vẫn mặc bộ quần áo ngày hôm qua, thần sắc tiều tụy, râu ria xồm xoàm, đầu tóc rối bù, giống như là một đêm không ngủ.
+</p>
+
+<p>
+ Nhan Hiểu Thần căn bản không nghĩ đến vào lúc này lại gặp hắn, nên chưa kịp chuẩn bị gì, lập tức sống mũi cay xè, nước mắt đã rơm rớm nơi khóe mắt. Cô vội vàng cúi đầu, muốn chạy trốn.
+</p>
+
+<p>
+ Thẩm Hầu nắm lấy tay của cô, “Tiểu Tiểu! Hôm qua sau khi trở về, anh không thể nào ngủ được, nửa đêm chạy đến dưới lầu nhà em, rất muốn gặp em, nhưng lại sợ quấy rầy em và mẹ đang ngủ, chỉ có thể đứng mãi ở dưới lầu. Ngày hôm qua, tâm trạng của anh quá kích động, thái độ không được tốt, anh xin lỗi! Bây giờ anh chỉ muốn cùng em bình tĩnh nói chuyện một chút.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cúi đầu, không nói tiếng nào. Hắn cầm tay cô, lẳng lặng chờ đợi.
+</p>
+
+<p>
+ Để cho nước mắt vơi đi một ít, Nhan Hiểu Thần mang vào mặt nạ lạnh nhạt, cứng rắn nói: “Đã chia tay, còn có chuyện gì để nói nữa chứ?”
+</p>
+
+<p>
+ “Nếu anh chết đi rồi, em cũng không muốn cho anh biết nguyên nhân hay sao?”
+</p>
+
+<p>
+ “Em đã nói anh biết rồi, đi mà hỏi ba mẹ anh!”
+</p>
+
+<p>
+ “Đêm qua anh đã đi gặp bọn họ, mẹ anh đã đổ bệnh, đang nằm viện, ba anh nói nhà anh đã hiểu lầm em. Tiểu Tiểu, anh biết ba mẹ anh trong khoảng thời gian này cư xử có hơi quá đáng! Nhưng anh đã nói rồi, bọn họ là bọn họ, anh là anh, là anh muốn được ở bên em cả đời, không phải bọn họ! Em là vợ anh, không có nghĩa là con dâu của bọn họ, anh có nghĩa vụ hiếu thuận với ba mẹ, nhưng em thì không. Hơn nữa, ba mẹ anh đã nghĩ thông suốt rồi, ba nói, chỉ cần em muốn ở bên anh, sau này bọn họ sẽ xem em như con gái ruột, dốc hết khả năng đối xử tốt với em, bù đắp lại lỗi lầm của bọn họ. Tiểu Tiểu, ba mẹ không còn phản đối chúng ta nữa!”
+</p>
+
+<p>
+ “Ba mẹ anh thực sự đã nói những lời này?”
+</p>
+
+<p>
+ “Ba anh còn nói, xin em tha thứ cho bọn họ.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy vớ vẩn không thể tưởng được, bọn họ hại chết ba cô, chẳng có dũng khí đối mặt thẳng thắn với con trai, lại còn muốn nhận cô làm con ruột, bù đắp lại cho cô. Cô không thèm, cô là con gái ruột của chỉ một mình ba cô mà thôi. Nhan Hiểu Thần cười lạnh nhạt, lắc đầu, “Bọn họ không phản đối sao? Nhưng em muốn phản đối! Thẩm Hầu, em và anh không thể nào đến được với nhau.”
+</p>
+
+<p>
+ Hy vọng của Thẩm Hầu mới vừa nhen nhóm đã bị dập tắt, “Tại sao?”
+</p>
+
+<p>
+ Đêm qua, Nhan Hiểu Thần cũng đã vô số lần hỏi chính mình câu hỏi này, tại sao bọn họ muốn gặp nhau, tại sao bọn họ muốn yêu nhau, tại sao cố tình là bọn họ? Nhưng căn bản là không có đáp án.
+</p>
+
+<p>
+ Thẩm Hầu nhìn thấy cô cứ im lặng mãi không lên tiếng, nhỏ giọng nói: “Anh không phải kẻ ngốc, em đối với anh là thật lòng, hay giả dối, anh có thể cảm nhận được, anh biết em toàn tâm toàn ý yêu anh, anh không thể nào nghĩ ra, rốt cuộc anh đã làm sai chuyện gì để cho em ghét anh như vậy. Anh càng không ngừng so sánh mình với Trình Trí Viễn, hắn so với anh là người chín chắn ổn trọng, hiểu được như thế nào là chăm sóc một người, hắn có sự nghiệp của riêng mình, sẽ không bị ba mẹ quản thúc, có thể tự mình làm chủ, có thể đối xử rất tốt với em. Anh biết những điều này anh thật không bằng hắn, nhưng Tiểu Tiểu, hắn lớn hơn anh đến 10 tuổi, không phải anh thua hắn, mà là chênh lệch đến 10 năm. Anh cam đoan với em, hãy cho anh chút thời gian, anh nhất định sẽ không thua hắn. Những gì hắn có thể cho em, anh cũng có thể cho em, hắn làm được, anh cũng có thể làm được…”
+</p>
+
+<p>
+ “Thẩm Hầu, làm ơn đừng nhắc đến Trình Trí Viễn, anh là anh, anh ấy là anh ấy, em chưa bao giờ so sánh giữa hai người!”
+</p>
+
+<p>
+ Cho dù cô và Thẩm Hầu đang ở hai phía đối lập, nhưng Nhan Hiểu Thần không thể trái với lương tâm mà nói hắn thua kém Trình Trí Viễn.
+</p>
+
+<p>
+ Thẩm Hầu trong lòng cảm thấy vui vẻ, vội vàng nói: “Vậy anh đã làm sai điều gì, khiến em thất vọng như vậy! nếu anh có gì đó không đúng, hãy nói cho anh biết, anh có thể sửa! Tiểu Tiểu, anh không muốn từ bỏ đoạn tình cảm này, cũng không muốn em từ bỏ, cho dù có vấn đề gì, chúng ta đều có thể trao đổi thông suốt, anh tự nguyện sửa chữa sai lầm!” Một Thẩm Hầu ăn nói khép nép như vậy, Nhan Hiểu Thần chưa từng thấy qua. Từ ngày đầu tiên biết hắn, hắn vĩnh viễn là khí phách bá đạo, tự tin kêu ngạo, cho dù bị trường đuổi học, cho dù bị mẹ làm cho thất nghiệp, hắn sẽ vẫn là cuồng phong vũ bão tung hoành, không cúi đầu, không nhân nhượng, nhưng hắn vì cứu vãn đoạn tình cảm của bọn họ, mà buông bỏ tất cả tự tôn kêu ngạo, cúi đầu nhẫn nhịn.
+</p>
+
+<p>
+ Nhan Hiểu Thần uất nghẹn nơi lồng ngực, trái tim như bị đốt cháy trên lửa than, nhưng lời nói lại lạnh như băng, “Không yêu chính là không yêu! Dù anh có làm gì đi nữa cũng vô dụng!”
+</p>
+
+<p>
+ Thẩm Hầu như bị đâm sâu vào tim chảy máu, nhưng vẫn không muốn từ bỏ, cầu xin nói: “Chúng ta thử bắt đầu lại một lần nữa được không? Tiểu Tiểu, hãy cho anh thêm một cơ hội.”
+</p>
+
+<p>
+ Hắn nắm thật chặt tay của cô, cõi lòng đầy mong đợi nhìn cô, Nhan Hiểu Thần cố nén nước mắt, dùng sức đẩy từng chút một cánh tay của hắn ra, ánh mắt của hắn dần dần trở nên ảm đạm không còn ánh sáng.
+</p>
+
+<p>
+ Tay của hắn, ở trong bàn tay của cô nóng bỏng, vô số lần, mười ngón tay của bọn họ đan xen vào nhau, giống như trên đời này cả hai đã gắn kết với nhau làm một, vĩnh viễn ở bên nhau, không thể tách rời. Nhưng Nhan Hiểu Thần không ngờ đến một ngày, cô lại lựa chọn buông tay.
+</p>
+
+<p>
+ Thẩm Hầu nắm lấy ngón tay cô, không để ý gì đến lòng tự trọng nữa, vẫn muốn níu giữ lại, “Tiểu Tiểu, em từng nói chỉ cần anh không rời xa em, em sẽ vĩnh viễn không rời xa anh.”
+</p>
+
+<p>
+ “Thật xin lỗi, em không nhớ rõ!”
+</p>
+
+<p>
+ Giữa những ngón tay của hắn, Nhan Hiểu Thần rút tay của mình ra. Tay của hắn bất lực duỗi thẳng, mặt xám như tro tàn, im lặng nhìn cô, ánh mắt vốn bá đạo kêu căng, giờ chẳng còn chút sắc thái.
+</p>
+
+<p>
+ Nhan Hiểu Thần lạnh lùng xoay người, đi từng bước một về phía trước, rời xa khỏi thế giới của hắn.
+</p>
+
+<p>
+ Cô đi thẳng lưng, khiến cho nó có vẻ tàn nhẫn kiên quyết, nước mắt lại không thể khống chế được, lặng lẽ rơi xuống.
+</p>
+
+<p>
+ Trên đường, có nhiều người đi tới đi lui, nhưng trước mắt cô chỉ còn lại ánh mắt của hắn, như một dấu tích tàn lụi, không có sinh khí, cũng chẳng có hy vọng. Trong hai mắt của hắn, cô nhìn thấy tương lai của chính mình, nhân gian trời đất, vũ trụ bất định, tất cả đã hóa thành tro.
+</p>
+
+<p>
+ Nhan Hiểu Thần mất hết cảm giác, thất tha thất thiểu đi tới trước, có một bóng người nhìn không rõ xẹt qua người cô, thế giới trước mắt từ từ tối đen lại, cô đụng vào một người, trong tiếng kêu sợ hãi của người đó, cô giống như một con cờ Domino bị đẩy ngã nhào xuống đất.
+</p>
+
+<p>
+ Một khắc trước khi mất hết ý thức, trong đầu cô xuất hiện những hình ảnh lúc còn nhỏ.
+</p>
+
+<p>
+ Buổi chiều của ngày hè, cô ham chơi trèo lên cây, nhưng không dám xuống, ba cô đứng dưới tán cây, vươn hai tay ra, bảo cô nhảy xuống. Ánh mặt trời sáng lạn, ông cũng tươi cười sáng lạn, cô nhảy xuống, chắc chắn ông sẽ vững vàng đón được. Nhưng cô biết, lúc này đây, cô đang rơi xuống một vách núi, sẽ chẳng có ai đỡ cô.
+</p>
+
+<p>
+ Thẩm Hầu nhìn Nhan Hiểu Thần, thấy cô từng bước một đi ra khỏi thế giới của hắn.
+</p>
+
+<p>
+ Hắn đã từng cảm nhận rất rõ ràng, tình cảm của cô dành cho hắn chính là chân tình, hắn không hiểu, tại sao tình cảm sâm đậm như vậy liền có thể nói không yêu chính là không yêu. Một cuộc tình bắt đầu, cần phải có hai người đồng ý, nhưng khi nó chấm dứt, chỉ cần một người quyết định mà thôi. Cô không chút nào lưu luyến xoay người bỏ đi, hắn vẫn đứng tại đó bồi hồi, vẫn luôn mong đợi cô đổi ý. Nhưng cho đến khi bóng dáng mịt mờ trong biển người, cô cũng chưa một lần ngoái đầu lại nhìn hắn, cô đã hoàn toàn bỏ mặc hắn!
+</p>
+
+<p>
+ Thẩm Hầu rốt cuộc cũng xoay người, đi tới hướng trái ngược hoàn toàn, đi ra khỏi thế giới mà bây giờ chỉ còn lại một mình hắn.
+</p>
+
+<p>
+ Hắn cảm thấy vô cùng mỏi mệt, giống như trong một đêm, hắn liền già đi. Như một kẻ lưu lạc đầu đường xó chợ bình thường, hắn tùy ý ngồi lại ven đường, châm một điếu thuốc, một bên hút thuốc, một bên nhìn ngắm thế giới hồng trần tiếp tục phồn hoa náo nhiệt.
+</p>
+
+<p>
+ Hắn tự nói với chính mình, chỉ là mất cô mà thôi, cuộc đời này sẽ vẫn như vậy, lại sẽ giống như trước đây đầy hứng khởi, nhưng cho dù lý trí có phân tích như thế nào, trong lòng hắn vẫn rất rõ ràng, là không giống nhau.
+</p>
+
+<p>
+ Cô đối với thế giới này mà nói, có lẽ không quan hệ nhiều cho lắm, nhưng đối với hắn mà nói, chính là làm cho cả thế giới thay đổi, giống như thức ăn tinh tế tuyệt mỹ lại không thêm muối vào, cho dù có tốt đẹp đến đâu, đều là không có hương vị.
+</p>
+
+<p>
+ Chuông điện thoại di động đột nhiên vang lên vài tiếng, mỗi lần có tiếng chuông hắn đều lập tức xem qua, bởi vì có thể là cô gọi cho hắn, nhưng bây giờ, hắn cũng không mong chờ điều gì tốt đẹp ở đầu bên kia nữa rồi.
+</p>
+
+<p>
+ Hắn hút thuốc, không để ý đến, chuông điện thoại ngừng một chút, lại lập tức vang lên, nhắc nhở hắn có người rất cấp thiết muốn tìm hắn.
+</p>
+
+<p>
+ Thẩm Hầu lười biếng lấy điện thoại di động ra, nhìn vào màn hình, “Mẹ của Tiểu Tiểu”. Tuy rằng Nhan Hiểu Thần đã rõ ràng rành mạch biểu lộ bọn họ chẳng còn quan hệ gì, nhưng trong nhất thời, hắn không có cách nào từ bỏ thói quen quan tâm đến cô. Hắn lập tức ném tàn thuốc, nhận điện thoại, “A lô?”
+</p>
+
+<p>
+ Giọng nói của bà Nhan dồn dập, còn khóc thút thít, “Thẩm Hầu, con đang ở đâu? Có người gọi điện thoại cho ta, nói Nhan Hiểu Thần bị té xỉu trên đường, đã đưa đến bệnh viện, bọn họ bảo ta đến bệnh viện ngay…” Bà Nhan là người không có học, một đời chưa rời khỏi quê hương, tính tình lại nóng nảy, vừa gặp chuyện đã dễ dàng bị hoảng.
+</p>
+
+<p>
+ Thẩm Hầu lập tức đứng lên, vừa ngoắc đón taxi, vừa bình tĩnh trấn an bà Nhan: “Dì à, dì đừng có lo quá, con lập tức đến chỗ dì. Dì nên mang theo chứng minh thư, khoá chặt cửa lại, đến cửa chung cư đợi con, con đang ở rất gần, sẽ đến nhanh thôi.”
+</p>
+
+<p>
+ Thẩm Hầu đón bà Nhan tại cửa khu chung cư, cùng nhau chạy tới bệnh viện.
+</p>
+
+<p>
+ Chạy vào phòng cấp cứu, Thẩm Hầu nhìn thấy Nhan Hiểu Thần nằm trên gường bệnh mê man, trên cánh tay cắm ống tiêm truyền dịch, cả người có vẻ rất tiều tụy đáng thương, hắn sốt ruột hỏi: “Cô ấy bị làm sao?”
+</p>
+
+<p>
+ Y tá nói: “Bị tụt huyết áp dẫn đến ngất, chắc là không có vấn đề gì lớn, có phải cô ấy vì giảm cân mà không ăn cơm, lại không nghỉ ngơi cho tốt? Khi nào có kết quả xét nghiệm cụ thể, bác sĩ sẽ cho các vị biết, các vị chờ một lát đi!”
+</p>
+
+<p>
+ Y tá mang đồ đạc cá nhân giao cho bọn họ, “Vì muốn nhanh chóng liên lạc với người thân của cô ấy, bệnh viện đã xem xét chứng minh thân phận và điện thoại, những thứ khác đều không đụng tới.”
+</p>
+
+<p>
+ Thẩm Hầu nhận túi xách, bỏ lên ghế, “Cảm ơn.”
+</p>
+
+<p>
+ Bọn họ đợi trong chốc lát, một nữ bác sĩ khoảng 30 tuổi đi đến, theo nguyên tắc trước hết hỏi qua quan hệ của bọn họ với bệnh nhân.
+</p>
+
+<p>
+ Bà Nhan dùng giọng nói dày đặc tiếng phổ thông: “Tôi là mẹ nó.”
+</p>
+
+<p>
+ Nữ bác sĩ hỏi: “Chồng của cô ấy đâu?”
+</p>
+
+<p>
+ “Con gái tôi còn chưa kết hôn…” Bà Nhan chỉ Thẩm Hầu nói: “Đó là bạn trai của nó.”
+</p>
+
+<p>
+ Thẩm Hầu há miệng thở dốc, không nói gì.
+</p>
+
+<p>
+ Nữ bác sĩ quan sát từ đầu đến chân của Thẩm Hầu, tự nhiên nói: “Bệnh nhân không có vấn đề gì cả, chỉ là mang thai, nhưng lại không chú ý đến ăn uống và nghỉ ngơi, nên dẫn đến suy nhược.”
+</p>
+
+<p>
+ Bà Nhan “A” lên một tiếng thất thanh, nhìn thấy bác sĩ nhìn bà, vội vàng lấy hai tay che chặt miệng lại, mặt đỏ bừng.
+</p>
+
+<p>
+ Nữ bác sĩ nghĩ bà là mẹ ở quê xa lên thăm con, nên thông cảm, ôn hòa cười trấn an, “Ở thành phố lớn chuyện này rất bình thường, không có gì ghê gớm, bà không cần phải lo lắng, tôi thấy trên tay con gái bà có đeo nhẫn, chắc cũng lập tức muốn kết hôn.”
+</p>
+
+<p>
+ Biểu hiện của Thẩm Hầu cực kỳ hoang mang, “Cô nói Tiểu Tiểu có thai?”
+</p>
+
+<p>
+ Nữ bác sĩ đối với Thẩm Hầu lại có chút không khách khí, lạnh lùng nói: “Chuyện của mình làm mà không biết? Bạn gái của cậu cũng không biết sao?”
+</p>
+
+<p>
+ Thẩm Hầu ngẩn ngơ lắc đầu, “Không nghe cô ấy nói, chúng tôi vừa mới bàn đến chuyện kết hôn cách đây không lâu.” Nữ bác sĩ bất đắc dĩ thở dài, “Đã hơn hai tháng rồi, sau khi cô ấy tỉnh dậy, có thể lập tức xuất viện. Nhanh chóng đi khoa sản làm kiểm tra đi.” Nữ bác sĩ nói xong liền rời khỏi.
+</p>
+
+<p>
+ Thẩm Hầu ngơ ngác trong chốc lát, đến lúc hiểu được chuyện gì, hắn mừng như điên, có phải ông trời cũng không muốn cho bọn họ chia tay, mới đột nhiên ban xuống thứ ràng buộc chặt chẽ nhất này? Thẩm Hầu giống như cây khô héo gặp xuân về, tinh thần trở nên phấn chấn gấp trăm lần.
+</p>
+
+<p>
+ Bà Nhan thì lại có tư tưởng truyền thống cổ hủ, đối với chuyện con gái chưa lập gia đình mà lại có thai trước hơi khó chấp nhận, hỏi Thẩm Hầu: “Hai đứa tính khi nào kết hôn?” Bà đã chuẩn bị tinh thần, nếu tên tiểu tử thối này mà có chút xíu nào do dự, bà lập tức liều mạng với hắn.
+</p>
+
+<p>
+ Thẩm Hầu cười nói: “Ngài mai…À, không được, mai là chủ nhật, ngày kia, ngày kia là thứ Hai, thứ Hai chúng con sẽ đi đăng ký kết hôn.”
+</p>
+
+<p>
+ Bà Nhan yên tâm phần nào, tuy rằng có chút khó chịu, như sự việc đã ra như vậy, bà chỉ có thể chấp nhận, “Thẩm Hầu, con ở đây với Hiểu Thần, ta về nhà trước. Ta muốn ra chợ, mua một con gà, Hiểu Thần cần phải bồi bổ cho tốt.”
+</p>
+
+<p>
+ Thẩm Hầu sợ bà Nhan không biết đường, đưa bà ra đến tận cửa bệnh viện, dẫn bà đến cửa taxi, mới trở lại.
+</p>
+
+<p>
+ Thẩm Hầu ngồi trước giường bệnh, nắm tay của Nhan Hiểu Thần, ngưng mắt nhìn cô. Gương mặt cô tái nhợt thon gầy, ngón tay lạnh lẽo tinh tế, một chút cũng không giống như người sắp làm mẹ.
+</p>
+
+<p>
+ Thẩm Hầu nhịn không được đưa tay nhẹ nhàng đặt lên bụng của cô, bằng phản như tấm phản, cảm giác không có chút nào khác thường, thế nhưng bên trong lại chứa một báu vật cùng chung huyết thống với hắn. Sinh mệnh kỳ diệu đến cỡ nào mà lại tuyệt vời như vậy!
+</p>
+
+<p>
+ Thẩm Hầu thương xót sờ tay Nhan Hiểu Thần, chiếc nhẫn hắn đã trao cho cô vẫn đang được đeo trên ngón tay, nếu cô không yêu hắn, thật sự muốn chia tay với hắn, tại sao không cởi bỏ nó ra? Con gái là người hay để ý những điều nhỏ nhặt như thế này, tại sao lại bỏ qua một việc có thể chứng minh mình không liên quan đến quyền sở hữu đã được công khai của con trai?
+</p>
+
+<p>
+ Mười ngón tay đan xen, hai bàn tay lớn nhỏ khác nhau, hai chiếc nhẫn giống nhau như đúc hoà lẫn, Thẩm Hầu cúi xuống, hôn ngón tay của Nhan Hiểu Thần, vào thời khắc này, cõi lòng của hắn tràn đầy nhu tình, ngọt ngào trào dâng, đối với tương lai càng hết mực tin tưởng.
+</p>
+
+<p>
+ Nhan Hiểu Thần mơ mơ màng màng, không biết mình đang ở đâu, chỉ cảm thấy lòng tràn ngập đau khổ khó chịu, cả người kinh hãi không chỗ nương tựa, cô giùng giằng hơi cử động tay, lập tức cảm giác được có một bàn tay ấm áp đang nắm tay mình, mặc dù chỉ là những cử chỉ nhỏ, nhưng dịu dàng cầm nắm, cẩn thận che chở, cô có thể cảm nhận được tất cả, khiến bản thân an tâm trong khoảnh khắc.
+</p>
+
+<p>
+ Cô chậm rãi mở mắt, nhìn thấy Thẩm Hầu đang cúi đầu, giúp cô điều chỉnh ống truyền dịch, cô sửng sốt, nghĩ tới những chuyện xảy ra trước lúc ngất xỉu, “Em đang ở bệnh viện? Sao anh lại ở đây?”
+</p>
+
+<p>
+ Thẩm Hầu khẽ cười nói: “Em đột nhiên bị ngất xỉu, bệnh viện dùng điện thoại của em gọi cho mẹ em, dì không quen đường xá ở đây, nêu gọi anh đi cùng. Em có biết em đã té xỉu giữa đường hay không?”
+</p>
+
+<p>
+ Tâm trạng của Nhan Hiểu Thần căng thẳng, hy vọng cô tỉnh lại kịp thời, chắc là chưa có kiểm tra gì, “Bởi vì em chưa ăn điểm tâm, chắc là tuột huyết áp?”
+</p>
+
+<p>
+ Thẩm Hầu cười lắc đầu, nắm tay cô, dịu dàng nói: “Em có thai.”
+</p>
+
+<p>
+ Nhan Hiểu Thần sững người nhìn Thẩm Hầu, cô không muốn đối mặt trực tiếp với vấn đề đang bày sẵn trước mặt mình thế này, đầu óc trống rỗng, cô không biết nên nói với Thẩm Hầu cái gì nữa.
+</p>
+
+<p>
+ Thẩm Hầu lại hiểu lầm phản ứng của cô, nắm tay, đặt lên bụng cô, “Có phải thật khó tin hay không? Nếu không phải là chính miệng bác sĩ nói, anh cũng không thể tin. Tiểu Tiểu, anh biết có nhiều chuyện anh không làm tốt, nhưng anh sẽ cố gắng, cố gắng làm người chồng tốt, người cha tốt, cả nhà chúng ta nhất định sẽ vui vẻ hạnh phúc.”
+</p>
+
+<p>
+ Thẩm Hầu nhẹ nhàng ôm lấy Nhan Hiểu Thần, Nhan Hiểu Thần tự nói với chính mình là phải đẩy hắn ra, nhưng cô rất tham lam những cử chỉ dịu dàng này, quyến luyến lồng ngực của hắn, cô không thể dồn nén cảm xúc được nữa, nhắm hai mắt lại, tiếp nhận hơi ấm của hắn.
+</p>
+
+<p>
+ Thẩm Hầu cảm giác được cô không muốn xa rời, trong lòng ngọt lịm như mật tẩm, hắn hơi nghiêng đầu, khẽ hôn lên tóc mai của cô, “Khi nào truyền dịch xong, chúng ta lập tức về nhà, dì đã đi mua gà về nấu canh tẩm bổ cho em. À, phải rồi, mẹ em cũng đã biết chuyện mang thai, anh đã nói với dì là ngày kia sẽ đi đăng ký kết hôn.”
+</p>
+
+<p>
+ Giống như bị một chậu nước lạnh tạt vào đầu, Nhan Hiểu Thần lập tức bừng tỉnh, cô đẩy Thẩm Hầu ra, nhắm hai mắt lại. Thẩm Hầu tưởng cô mệt, giúp cô đắp chăn cẩn thận, đặt tay đúng tư thế, “Em ngủ một lát đi, truyền dịch xong, anh sẽ gọi em dậy.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhắm mắt lại, không ngừng hỏi bản thân nên làm gì bây giờ?
+</p>
+
+<p>
+ Nếu cô muốn báo thù, có thể lợi dụng đứa bé này, tra tấn Thẩm Hầu. Cô không có cách nào khiến cho ba mẹ của Thẩm Hầu lấy mạng đền mạng, nhưng có thể khiến bọn họ phải nếm trải máu mủ tình thân đau khổ dày vò. Nhưng mà, cô không thể nào làm được, dù có hận ba mẹ Thẩm Hầu đến đâu, không có cách nào tha thứ cho bọn họ, nhưng lại không thể gây tổn thương cho hắn.
+</p>
+
+<p>
+ Nếu cô tuyệt đối không thể tha thứ cho ba mẹ của Thẩm Hầu, thì cô và hắn chỉ có một con đường duy nhất chính là chia tay, vĩnh viễn không có quan hệ.
+</p>
+
+<p>
+ Cho dù xuất phát từ nguyên nhân gì, ba mẹ hắn không nói rõ cho hắn biết chân tướng sự thật, là vô tình hay cố ý, cô cũng sẽ lựa chọn giống nhau, đó là bảo vệ mẹ, bảo vệ Thẩm Hầu tránh khỏi đau khổ. Cô biết chính mình cả đời này mãi mãi sẽ không thoát khỏi quá khứ, cô cũng đã chuẩn bị còng lưng đeo gông cùm thống khổ đi tiếp hết đường đời, Thẩm Hầu không giống cô, chỉ cần không còn liên quan đến cô, thế giới của hắn sẽ sáng lạn ánh nắng, hắn sẽ vui vẻ tiếp tục đi trên con đường của hắn, không bận lòng mà hưởng thụ cuộc sống hạnh phúc đã được định sẵn.
+</p>
+
+<p>
+ Nhưng đứa con ngoài ý muốn này lại khiến cho cô và Thẩm Hầu gắn chặt với nhau. Nhan Hiểu Thần rất hiểu hắn, cô tàn nhẫn thay lòng đổi dạ, có thể khiến Thẩm Hầu rời xa cô, nhưng tuyệt đối không thể khiến Thẩm Hầu xa con của hắn, nhưng bọn họ vĩnh viễn không thể nào trở thành người một nhà!
+</p>
+
+<p>
+ Cô nên làm gì bây giờ? Nên làm cái gì bây giờ…
+</p>
+
+<p>
+ Điện thoại của Nhan Hiểu Thần ở trong túi rung lên vài cái, Thẩm Hầu nhìn thấy Nhan Hiểu Thần vẫn đang nhắm mắt, không nhúc nhích, không muốn quấy rầy cô nghỉ ngơi, hắn rón rén mở túi, lấy điện thoại ra.
+</p>
+
+<p>
+ Trước kia, khi hai người ở một phòng, bọn họ thường giúp đối phương nhận điện thoại, cùng xem xét tin nhắn, Thẩm Hầu không nghĩ nhiều, nên trực tiếp đến xem qua điện thoại, là lời thăm hỏi ân cần của Trình Trí Viễn: “Em đang ở nhà nghỉ ngơi phải không? Đã khỏe lên chưa? Có thời gian gặp mặt không? Tôi muốn nói chuyện với em.”
+</p>
+
+<p>
+ Không phải việc gấp, không cần phải lập tức trả lời, để sau khi Nhan Hiểu Thần về nhà rồi xử lý! Thẩm Hầu muốn để lại điện thoại vào trong túi, ma xui quỷ khiến thế nào, hắn lại lướt lướt màn hình di động một chút, thấy được nội dung Nhan Hiểu Thần và Trình Trí Viễn nói chuyện qua blog vài ngày trước.
+</p>
+
+<p>
+ Đọc qua từng hàng chữ cẩn thận, từng câu như liều độc dược, đốt cháy tận xương cốt, Thẩm Hầu không thể kiềm chế bản thân phẫn nộ, bi thương, ghê tởm, huyệt thái dương đập thình thịch, tay nổi gân xanh, cả người run rẩy, “Bộp” một tiếng, di động rơi xuống đất.
+</p>
+
+<p>
+ Nhan Hiểu Thần nghe được tiếng động, mở mắt thì nhìn thấy sắc mặt của Thẩm Hầu quái lạ, ánh mắt sắc như dao, hung hăng nhìn cô chằm chằm, giống như gặp phải chuyện gì nhục nhã, muốn nhào đến giết chết cô.
+</p>
+
+<p>
+ “Anh bị sao vậy?” Rõ ràng đã tự nói với chính mình không cần quan tâm đến hắn nữa, nhưng Nhan Hiểu Thần vẫn không thể kiềm chế mà lập tức dịu dàng hỏi han.
+</p>
+
+<p>
+ Thẩm Hầu nắm chặt tay lại thành quyền, nghiến răng nghiến lợi nói: “Khi nào em biết mình mang thai? Chắc không phải hôm nay chứ? Vậy mà tỏ vẻ như vừa mới biết!”
+</p>
+
+<p>
+ Nhan Hiểu Thần không rõ hắn có ý gì, không nói tiếng nào.
+</p>
+
+<p>
+ Thẩm Hầu xanh mặt, nhặt di động dưới đất lên, “Đây là điện thoại anh cho em, vậy mà em lại dùng nó… đến một chút xấu hổ em cũng chẳng có.”
+</p>
+
+<p>
+ Nhan Hiểu Thần vẫn không hiểu rốt cuộc đã xảy ra chuyện gì, lại khiến cho tâm tình của hắn thay đổi như vậy, dùng lời lẽ khinh thường ghê tởm, ánh mắt căm hận đau khổ nhìn cô.
+</p>
+
+<p>
+ Thẩm Hầu cầm điện thoại ném tới trước mặt cô, “Em cũng thật biết giả tạo! Còn muốn coi anh là kẻ ngốc nữa sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cầm điện thoại lên, thấy được blog của cô và Trình Trí Viễn nói chuyện, cô không hiểu, ngoại trừ giải thích việc cô đã sớm biết mình có thai, còn vấn đề gì nữa?
+</p>
+
+<p>
+ Trình Trí Viễn: Em mang thai à?
+</p>
+
+<p>
+ Nhan Hiểu Thần: Sáng hôm nay vừa mua que thử thai, còn chưa kiểm tra.
+</p>
+
+<p>
+ Trình Trí Viễn: Khả năng bao nhiêu phần trăm?
+</p>
+
+<p>
+ Nhan Hiểu Thần: Tôi không biết, kiểm tra qua một chút mới biết kết quả.
+</p>
+
+<p>
+ Trình Trí Viễn: Việc này trước hết đừng nói cho Thẩm Hầu và mẹ em biết.
+</p>
+
+<p>
+ Trình Trí Viễn: Chúng ta nên bàn qua chuyện này một chút, sau đó mới quyết định nên làm thế nào.
+</p>
+
+<p>
+ Nhan Hiểu Thần: Được!
+</p>
+
+<p>
+ Trình Trí Viễn: Kết quả còn chưa có, có lẽ chúng ta quá khẩn trương rồi.
+</p>
+
+<p>
+ Nhan Hiểu Thần: Có lẽ vậy, chắc là do nội tiết hơi rối loạn một chút.
+</p>
+
+<p>
+ Trình Trí Viễn: Tôi vừa lên mạng tra cứu, que thử thai có thể kiểm tra bất cứ lúc nào.
+</p>
+
+<p>
+ Nhan Hiểu Thần: Vâng, tôi biết.
+</p>
+
+<p>
+ Trình Trí Viễn: Bây giờ có thể lập tức đi kiểm tra, em cứ đến phòng làm việc của tôi.
+</p>
+
+<p>
+ Nhan Hiểu Thần cẩn thận đọc qua từng câu chữ, rốt cuộc cũng hiểu ra nguyên nhân tại sao thái độ của Thẩm Hầu đột nhiên thay đổi như vậy. Nếu không phải người trong cuộc, đoạn nói chuyện của cô và Trình Trí Viễn đích thực đầy gian tình, hơn nữa mẹ của Thẩm Hầu đã gửi mấy tấm ảnh chụp, cộng với thái độ quái lạ của cô, đột nhiên quyết định chia tay, Thẩm Hầu không hiểu lầm mới là chuyện lạ.
+</p>
+
+<p>
+ Nhan Hiểu Thần “ha ha” cười rộ lên, cô đang không biết nên giải quyết chuyện đứa bé này thế nào, không ngờ có ngay cách giải quyết! Thế giới này có phải thật vớ vẫn hay không? Rõ ràng ba mẹ của Thẩm Hầu hại chết ba của cô, vậy mà bây giờ Thẩm Hầu phẫn nộ bi thống nhìn cô giống như đang nhìn kẻ giết cha mình.
+</p>
+
+<p>
+ Nhan Hiểu Thần cười nói: “Em không có lừa anh, là chính anh tự nguyện cho rằng đứa bé là của anh.”
+</p>
+
+<p>
+ Thẩm Hầu không ngờ Nhan Hiểu Thần thật sự không thấy xấu hổ, ngược lại tỏ ra bộ mặt châm biếm. Con người trước mặt này chính là cô gái hắn đã từng yêu sao? Hắn nắm chặt tay, hận không thể đánh tan nát nụ cười trơ trẽn trên gương mặt của Nhan Hiểu Thần, nhưng đứa con gái như vậy, đánh cô, hắn còn ngại bẩn tay! Những điều tốt đẹp đáng nhớ nhất lại khiến cho người ta cảm thấy buồn nôn nhất, tất cả tình cảm thắm thiết nhất đều biến thành vở hài kịch trào phúng nhất, lòng hắn đã lạnh nhạt đến cực điểm.
+</p>
+
+<p>
+ “Nhan Hiểu Thần, anh có thể chấp nhận em thay lòng đổi dạ, dễ dàng yêu người khác. Nhưng em như vậy, thật khiến anh ghê tởm! Tại sao em có thể đồng thời cùng với cả hai người đàn ông… Con mẹ nó anh đích thực bị mù rồi, bị mỡ heo làm mê muội rồi!” Hắn dùng sức tháo chiếc nhẫn trên tay ra, vẫn nhớ như in ngày trời biển xanh trong đó, ánh nắng chiều chiếu rọi, hắn quỳ với ánh mắt âu yếm nhìn người con gái trước mặt, trao trọn hết con tim cho cô, thuyết phục cô đeo lên chiếc nhẫn một đời một kiếp chung tình, rồi chính mình cũng đeo nó, hứa hẹn trăm năm. Nhưng mà hắn đã sai lầm, có lẽ hắn yêu sai người; có lẽ cô gái đó trước giờ không tồn tại, chỉ có một mình hắn cam tâm tình nguyện yêu mù quáng.
+</p>
+
+<p>
+ “Tháo nhẫn trên tay của em xuống đi!” Thẩm Hầu không chỉ mau chóng loại bỏ dấu ấn của hắn đối với Nhan Hiểu Thần, mà còn muốn loại bỏ dấu ấn hắn lưu lại cho cô.
+</p>
+
+<p>
+ Nhan Hiểu Thần nắm lấy ngón tay đang đeo nhẫn, không cử động.
+</p>
+
+<p>
+ Thẩm Hầu rống lên giận dữ, “Tháo ra ngay! Chúng ta không còn quan hệ nữa, em để lại thứ đó không cảm thấy ghê tởm hay sao?” Nhan Hiểu Thần một bên cười, một bên chậm rãi tháo nhẫn ra, cứ cười như vậy, bất ngờ không kịp chuẩn bị tâm lý, nước mắt của cô rơi xuống. Hốc mắt của Thẩm Hầu cũng đỏ lên, dường như cũng muốn rơi lệ, nhưng khóe môi của hắn hơi nhếch, vẫn duy trì nét cười nhạo báng kỳ quái.
+</p>
+
+<p>
+ Tình cảm sâu đậm, liền đau thương sâu đậm; có bao nhiêu phụ lòng, liền có bấy nhiêu thống hận; nồng ấm trả giá thế nào, liền quyết tuyệt ra đi thế đó. Thẩm Hầu nhìn vào ánh mắt của Nhan Hiểu Thần, càng ngày càng lạnh lùng, giống như nhìn một kẻ xa lạ đến bây giờ mới biết xa lạ, hắn đưa tay ra, lạnh nhạt nói: “Đưa đây!” Nhan Hiểu Thần khóc, đặt chiếc nhẫn vào lòng bàn tay của hắn. Hai cái nhẫn, một lớn một nhỏ, đang ở trong tay hắn rạng rỡ tỏa sáng.
+</p>
+
+<p>
+ Thẩm Hầu chán ghét nhìn qua chúng, giơ tay lên, không chút thương xót ném thật mạnh vào thùng rác, cũng giống như đem tất cả những gì thuộc về bọn họ ném vào thùng rác.
+</p>
+
+<p>
+ Hắn xoay người, không thèm quay đầu lại mà rời khỏi phòng bệnh.
+</p>
+
+<p>
+ Nhan Hiểu Thần biết, lúc này hắn đã thật sự rời khỏi cuộc đời cô.
+</p>
+
+<p>
+ Không chỉ có thể xác rời xa, mà cả những ký ức về cô ở trong lòng hắn, toàn bộ sẽ bị loại bỏ.
+</p>
+
+<p>
+ Tất cả những gì thuộc về cô, giờ đây đối với hắn là ghê tởm xấu xa, từ nay về sau, cô chính là người xa lạ đối với hắn, mặc kệ cô khóc hay cười, hắn sẽ không có một chút nhíu mày.
+</p>
+
+<p>
+ Đây không phải là kết quả mà cô muốn hay sao? Hai người không còn quan hệ, hắn sẽ sống ở thế giới sáng lạn vui vẻ của hắn, cô sẽ sống nơi thế giới mốc meo hư thối của cô. Nhưng tại sao tim lại đau đến vậy, tại sao nước mắt vẫn rơi mãi không ngừng?
+</p>
+
+<p>
+ Y tá đến rút kim truyền dịch trên tay của Nhan Hiểu Thần, không thấy bạn trai của cô, rồi thấy cô cứ khóc mãi, nghĩ là tái diễn cảnh tượng quen thuộc, bạn gái mang thai, bạn trai không muốn chịu trách nhiệm nên bỏ đi, cô ta tùy ý an ủi cô vài câu, sau đó bảo cô ký tên xuất viện.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-032.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-034.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

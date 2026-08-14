@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 19 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 19</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-018.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-020.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ “Thưa ngài! Cổng mở rồi ạ!”
+</p>
+
+<p>
+ Roran ngẩng đầu lên từ tấm bản đồ anh đang nghiên cứu, nhìn người người lính gác chạy vào lều, mặt đỏ ửng và đồ mồ hôi.
+</p>
+
+<p>
+ “Cổng nào?” Roran hỏi với sự bình tĩnh chết người. “Nói rõ đi.” Anh đặt thước dây sang bên cạnh.
+</p>
+
+<p>
+ “Cổng gần nhất, thưa ngài... trên đường, không phải trên kênh.”
+</p>
+
+<p>
+ Roran rút búa ra khỏi thắt lưng, rời khỏi trại và chạy về phía nam khu trại. Anh đứng đó quan sát Aroughs. Anh nản lòng nhìn hàng trăm kỵ binh ùa ra từ trong thành phố, cờ hiệu tung bay trong gió trước khi cánh cổng đen xì khép lại.
+</p>
+
+<p>
+ Họ sẽ chém chúng ta thành từng mảnh mất, Roran tuyệt vọng nghĩ. Chỉ có một trăm năm mươi người còn trong trại, trong đó rất nhiều người bị thương không có khả năng chiến đấu. Phần còn lại vẫn còn ở khu xay sát anh tới thăm ngày hôm trước hoặc ở mỏ khai thác đá dọc bờ biển, hoặc trên bờ sông chính tây tìm những xà lan mà họ cần nếu muốn kế hoạch thành công. Giờ anh không kịp gọi viện binh về chống trả những kỵ binh này.
+</p>
+
+<p>
+ Khi ra lệnh cho binh lính làm nhiệm vụ, Roran đã hiểu anh đang khiến khu trại yếu ớt trước sức tấn công trực diện của kẻ thù. Nhưng, anh đã hy vọng dân cư trong thành vẫn còn hoang mang vì những cuộc tập kích gần đây nên không dám làm gì mạo hiểm – và những những chiến binh anh giữ lại có thể khiến những kẻ quan sát từ xa nghĩ lực lượng chính vẫn còn trong trại.
+</p>
+
+<p>
+ Giả thuyết đầu tiên dường như đã sai. Dù những binh lính trong Aroughs có nghe tới tên anh không, nhưng anh nghĩ cho một số lượng kị binh ít ỏi dàn quân trước thành phố chỉ là một đòn thăm dò. Nếu quân đội hoặc tướng sĩ của họ đã từng nếm mùi lợi hại của đội quân Roran chỉ huy, anh nghĩ họ sẽ cho một đội quân động gấp đôi ra. Nhưng giờ, anh phải nghĩ ra cách chống trả đòn tấn công và cứu binh lính khỏi cuộc tàn sát.
+</p>
+
+<p>
+ Baldor, Carn và Brigman chạy tới với vũ khí trong tay. Carn vội vàng mặc áo giáp thì Baldor nói, “Chúng ta sẽ làm gì?”
+</p>
+
+<p>
+ “Chúng ta không thể làm gì,” Brigman nói. “Chúng ta xong đời chỉ vì sự ngu ngốc của anh đó, Cây Búa Dũng Mãnh. Chúng ta phải tẩu tán – ngay bây giờ - trước khi những tên kị binh đáng nguyền rủa kia dày xéo lên chúng ta.”
+</p>
+
+<p>
+ Roran vỗ mặt đất. “Rút lui ư? CHúng ta sẽ không rút lui. Binh lính của chúng ta không thể chạy trốn nổi, và cứ cho là có thể đi, tôi cũng không bỏ lại những người bị thương.”
+</p>
+
+<p>
+ “Anh không hiểu sao? Chúng ta thua rồi. Nếu chúng ta ở lại, chúng ta sẽ bị giết – hoặc tệ hơn, bắt làm tù binh!”
+</p>
+
+<p>
+ “Thôi nào, Brigman! Tôi không định quay đuôi bỏ chạy đâu!”
+</p>
+
+<p>
+ “Sao lại không? Vậy là anh không chịu thừa nhận thất bại? VÌ anh mong sẽ vớt vat danh dự từ trận chiến vô vọng cuối cùng hả? Có phải không? Anh không thể anh đang gây cho Varden tổn thất nghiêm trọng hơn à?”
+</p>
+
+<p>
+ Những kỵ binh giơ cao thanh kiếm và giáo lên quá đầu và – với một tràng gào rú, la thét có thể nghe rõ từ khoảng cách rất xa – họ thúc ngựa và bắt đầu lao tới như sấm rung chớp giật về phía khu đóng trại của Varden.
+</p>
+
+<p>
+ Brigman tiếp tục bài đả kích, “Tôi không để anh lãng phí mạng sống của chúng tôi để giành lấy lòng tự trọng cho anh. THích thì anh cứ việc ở lại, nhưng...”
+</p>
+
+<p>
+ “Im!” Roran gầm lên. “Im mồm nếu không tôi khâu mồm ông lại đó! Baldor, trông chừng ông ta. Nếu ông ta làm bất cứ việc gì anh không thích, anh tự do chém giết.” Brigman căng người vì tức giận nhưng ông ta không dám nói gì vì Baldor đang giơ thanh kiếm nhắm vào ngực ông ta.
+</p>
+
+<p>
+ Roran đoán anh có chừng năm phút để quyết định hành động ra sao. Năm phút quá ngắn ngủi.
+</p>
+
+<p>
+ Anh cố tưởng tượng cảnh họ sẽ biết hoặc cầm chân kỵ binh thế nào, nhưng anh nghĩ thấy chuyện đó không có khả năng. Anh không tìm ra chỗ nào để đặt bẫy đoàn quân này. Mảnh đất quá bằng phẳng, trống trải cho bất cứ kế hoạch nào tương tự.
+</p>
+
+<p>
+ Chúng ta không thể thắng nếu chiến đấu, vậy – Vậy nếu chúng ta dọa được chúng thì sao? Nhưng bằng cách nào? Hỏa công? Hỏa công có thể là con dao hai lưỡi. Hơn nữa, cỏ còn ẩm ướt chỉ khiến lửa cháy âm ỉ. Khói? Không ăn thua.
+</p>
+
+<p>
+ Anh liếc nhìn Carn. “Anh có thể tạo ra hình Saphira gầm thét ra lửa như thể cô bé ở đây không?”
+</p>
+
+<p>
+ Đôi má gầy gò của pháp sư không còn màu sắc. Anh ta lắc đầu, biểu tình hỗn loạn. “Có thể, tôi không chắc, tôi chưa từng thử. Tôi sẽ tạo ra một hình ảnh của cô rồng từ trí nhớ của tôi. Nhưng có thể trông sẽ không giống một sinh vật sống.” Anh hất hàm về người kỵ sĩ đang phi nước đại tới. “Họ sẽ nhận ra có gì không đúng.”
+</p>
+
+<p>
+ Roran ấn móng tay vào lòng bàn tay. Chỉ còn bốn phút.
+</p>
+
+<p>
+ “Nhưng cũng đáng để thử,” anh ta nói khẽ. “Chúng ta chỉ cần làm cho họ sao nhãng, bối rối...” Anh liếc nhìn bầu trời, hy vọng thấy những đám mây mang mưa tới, nhưng lạy chúa, trên trời chỉ có hai đám mây đang bay bay. Bối rối, không chắc chắn, nghi ngờ....Con người sợ cái gì? Họ sợ những thứ họ không biết, không hiểu.
+</p>
+
+<p>
+ Ngay lập tức, Roran nghĩ tới hàng tá kế hoạch có thể làm nản lòng quân thù, kế hoạc sau càng kỳ lạ hơn kế hoạch trước, cuối cùng anh nghĩ ra một ý tưởng rất đơn giản và liều lĩnh tới mức hoàn hảo. Hơn nữa, không giống những ý tưởng khác, cái này đúng với con người anh hơn, nhưng cần có sự hợp tác của một người khác: Carn.
+</p>
+
+<p>
+ “Ra lệnh cho mọi người trốn trong lều!” anh hét và chuẩn bị bước đi. “Nói họ im lặng; tôi không muốn nghe một tiếng động dù là khẽ nhất trừ khi chúng ta bị tấn công!”
+</p>
+
+<p>
+ Anh bước tới cái lều trống gần nhất, nhét búa vào thắt lưng và cầm một tấm chăn len cáu bẩn từ đất lên. Sau đó anh chạy tới khu nấu ăn và cầm lấy một đoạn gỗ to bản mà các chiến binh thường dùng làm ghế ngồi.
+</p>
+
+<p>
+ Một tay cầm khúc gỗ, một tay cầm chăn, Roran quay trở lại lều tiến tới một ụ đất cao khoảng trăm mét ngay phía trước khu trại. “ai đó lấy cho tôi mấy khúc xương và một chai bia mật ong lại đây!” anh hét. “Và mang tới bàn có tấm bản đồ nữa. Ngay lập tức, quỷ tha ma bắt, nhanh lên!”
+</p>
+
+<p>
+ Đằng sau, anh nghe có tiếng bước chân hỗn loạn và tiếng binh khí va vào nhau loảng xoảng khi những binh sĩ rút vào lều. Một sự im lặng kỳ quái bao trùm khu trại trong vài giây sau, trừ có âm thanh do những người anh sai đi mang đồ gây ra.
+</p>
+
+<p>
+ Roran không thèm nhìn lại. Ở chân dốc ụ đất, anh dựng đứng khúc gỗ và kiểm tra vài lần cho chắc nó không đung đưa sau lưng anh. Khi đã hài lòng, anh ngồi xuống nhìn cánh đồng dốc trước mắt những tên kị binh.
+</p>
+
+<p>
+ Chúng sẽ tới đây trong ba phút nữa. Anh cảm nhận được mặt đất rung lên qua thanh gỗ bên dưới – càng lúc cảm giác đó càng mạnh.
+</p>
+
+<p>
+ “Xương với rượu mật ong đâu rồi?!: anh hét lên, mắt vẫn dán chặt vào đội quân đang lao tới.
+</p>
+
+<p>
+ Anh xoa râu và cho tay vào trong áo trấn thủ. Nỗi sợ làm anh ước gì mình mặc áo giáp nhưng phần lạnh lẽo, tàn nhẫn hơn trong con người anh nói anh sẽ khiến kẻ thù khiếp sợ hơn khi ngồi đó không áo giáp như thể anh đang sống thư thái nhàn tản. Phần đó cũng bảo anh để nguyên cây búa trên thắt lưng để khiến anh thấy an toàn.
+</p>
+
+<p>
+ “Xin lỗi,” Carn nói không ra hơi khi chạy tới chỗ Roran cùng với người đang mang chiếc bàn nhỏ từ trong lều của Roran. Họ đặt bàn trước mặt anh và đặt chăn lên đó, Carn đặt lên trên rượu cũng như một cái cốc da đựng năm khúc xương.
+</p>
+
+<p>
+ “Thôi, đi đi,” anh nói. Carn quay người định đi nhưng Roran giữ tay anh lại. “Anh có thể làm không khí xung quanh tôi mờ ảo như ở lửa cháy trong những ngày đông không?
+</p>
+
+<p>
+ Carn nheo mắt. “Có thể, nhưng để...”
+</p>
+
+<p>
+ “Cứ làm đi. Giờ đi trốn đi.”
+</p>
+
+<p>
+ Khi người pháp sư cao lêu nghêu chạy về phía lều trại, Roran lắc những chiếc xương trong cốc rồi đổ nó lên bàn và bắt đầu chơi một mình, ném xương lên không khí – đầu tiên là một cái, rồi hai, ba và bốn – rồi bắt lấy chúng. Cha anh, ông Garrow thường khiến anh thích thú khi chơi trò này trong lúc hút thuốc và ngồi trên chiếc ghế đã lung lay trong nhà suốt những tối mùa hefcuar Thung lũng Palancar. Thi thoảng Roran chơi cùng ông, nhưng thường anh là người thua thường ông Garrow thích chơi một mình.
+</p>
+
+<p>
+ Dù tim anh đập nhanh mạnh, còn bàn tay ướt đẫm mồ hôi,anh vẫn tỏ ra bình tĩnh. Nếu anh muốn có cơ hội thắng dù là nhỏ nhất, anh phải tỏ ra bình tĩnh dù thực tâm anh cảm thấy ra sao.
+</p>
+
+<p>
+ Anh cứ nhìn đống xương và không chịu nhìn lên khi những kỵ binh đang tới càng lúc càng gần. Tiếng những con ngựa phi nước đại càng lúc càng lớn cho tới khi anh nghĩ chúng sắp nhảy bổ lên người anh.
+</p>
+
+<p>
+ Cách chết kỳ lạ, anh nghĩ và cười dứt khoát. Sau đó anh nghĩ tới Katrina và đứa con chưa chào đời của họ và anh thấy được an ủi vì nếu anh chết, huyết mạch nhà anh vẫn còn. Không phải theo kiểu bất tử như Eragon nhưng cũng là một dạng bất tử.
+</p>
+
+<p>
+ Vào giây phút cuối, khi dội quân chỉ còn cách bàn vài mét, có ai đó hét lên, “Dừng! Dừng lại! Kìm cương lại! Tôi nói, kìm cương lại!” Và, với tiếng xiết dây, những con vật bất đắc dĩ chạy chậm lại rồi dừng hẳn.
+</p>
+
+<p>
+ Roran vẫn nhìn xuống.
+</p>
+
+<p>
+ Anh nhấp một hớp rượu và ném mấy cục xương lên lần nữa và dùng mui bàn tay đỡ hai khúc xương.
+</p>
+
+<p>
+ Roran ngửi thấy mùi đất ẩm bốc lên thoang thoảng, ấm áp và dễ chịu, cùng với đó là cái mùi đặc trưng không dễ chịu bằng của mồ hôi ngựa.
+</p>
+
+<p>
+ “Chào đằng đó!” người vừa hô dừng ngựa nói. “Chào đằng đó! Anh là ai mà lại ngồi ở đây trong buổi sáng trong lành, uống rượu và chơi trò mả rủi thế? Chúng tôi không xứng được so kiếm cùng anh sao? Anh là ai vậy?”
+</p>
+
+<p>
+ Từ từ như thể không để ý tới sự hiện diện chủa những binh lính và cho rằng việc này không quan trọng, Roran nhìn lên người đàn ông để râu quai nón nhỏ thó đội một chiếc mũ trụ khoa trương ngồi trước mặt anh trên con hắc mã to lớn đang thở khò khè.
+</p>
+
+<p>
+ “Tôi không phải đằng đó của ai, và tất nhiên không phải của anh,”Roran nói, không cần cố che giấu vẻ không thích thú người kia. “Tôi có thể hỏi anh là ai mà đi can thiệp vào trò chơi của tôi?”
+</p>
+
+<p>
+ Chiếc lông chim dài gắn trên mũ trụ của người đàn ông lắc lư khi hắn nhìn Roran, như thể anh là một sinh vật lạ lùng hắn săn được. “Tôi là Tharos Tốc độ, Đội trưởng đội cảnh vệ. Tôi nói cho biết, với sự khinh thường người khác như thế, tôi có thể chém bay đầu anh mà không cần biết anh là ai.” Như để nhấn mạnh lời nói của mình, Tharos hạ thấp ngọn giáo chỉ thẳng vào Roran.
+</p>
+
+<p>
+ Ba hàng kị binh tụ họp sau lưng Tharos. Trong đám người đó, Roran để ý có một người đàn ông gầy, mũi khoằm mặt và tay xương xâu – vai trần – mà Roran và các pháp sư của Varden có từng nói qua. Đột nhiên, anh thấy hy vọng Carn đã thành công tạo ra không khí lung linh mờ ảo quanh anh. Nhưng anh không dám quay đầu lại nhìn.
+</p>
+
+<p>
+ “Tên tôi là Cây Búa Dũng Mãnh,” anh nói. Anh khéo léo thu mấy khúc xương lại, ném lên trời và đón lấy ba khúc. “Roran Cây Búa Dũng Mãnh, và Eragon Khắc tinh của Tà Thần là em họ tôi. Nếu chưa nghe tới tôi thì chắc cũng phải nghe tới cậu ấy chứ nhỉ.”
+ <br/>
+ Những tiếng thì thầm lo lắng vang lên trong hàng kị binh, Roran nghĩ mình đã thấy đồng tử Tharos mở rộng trong thoáng chốc. “Một tuyên bố ấn tượng nhưng làm sao tôi biết anh có nói thật không? Tất cả mọi người đều có thể nói mình là người khác vì mục đích của bản thân.”
+ <br/>
+</p>
+
+<p>
+ Roran rút cây búa và đặt lên mặt bàn đánh cái rầm. Rồi, không để ý tới những người lính, anh chơi tiếp. Anh lẩm bẩm ra vẻ tức tối khi hai khúc xương rơi xuống khỏi mu bàn tay mình.
+</p>
+
+<p>
+ “À,” Tharos húng hắng nói. “Anh rất nổi tiếng đó Cây Búa Dũng Mãnh, dù nhiều người nói rằng những lời đồn chỉ toàn phóng đại sự thật. Ví dụ, có đúng là tại làng Deldarad của Surda anh một mình hạ gục ba trăm binh sĩ?”
+</p>
+
+<p>
+ “Tôi không biết chỗ đó tên gì, nhưng nếu tên nó là Deldarad thì đúng, tôi đã hạ gục rất nhiều binh sĩ ở đó. Nhưng thực ra chỉ có một trăm chín ba tên tôi và tôi được yểm trở bởi vài người bạn đồng hành nữa.”
+</p>
+
+<p>
+ “Chỉ có một trăm chín mươi ba?” Tharos nói bằng giọng không tin. “Anh khiêm tốn quá, Cây Búa Dũng Mãnh. Một chiến thắng như vậy cũng đủ mang lại sự truyền tụng tới muôn đời rồi.”
+</p>
+
+<p>
+ Roran nhún vai và đưa vại rượu lên uống một ngụm cho xong vì anh không chịu nổi việc đầu óc lâng lâng vì rượu của người lùn. “Tôi chiến đấu để chiến thắng chứ không phải để thất bại. Để tôi mời anh một chén, như một người lính với một người lính,” anh nói và đưa vại rượu cho Tharos.
+</p>
+
+<p>
+ Người chiến binh thấp lùn ngần ngừ, mặt đảo nhìn pháp sư đằng sau lưng trong một giây. Sau đó hắn ta liếm môi và nói. “Có lẽ tôi sẽ uống.” Hắn ta xuống ngựa, đưa giáo cho một người lính khác, cởi găng tay và đi tới chỗ cái bàn, cẩn trọng nhận rượu từ tay Roran.
+</p>
+
+<p>
+ Tharos ngửi mùi rượu sau đó uống một ngụm lớn. Lông vũ trên vũ trụ phất phơ.
+</p>
+
+<p>
+ “Anh không thích rượu này à?” Roran tò mò hỏi.
+</p>
+
+<p>
+ “Tôi thừa nhận, loại rượu nấu trên núi này cay quá,” Tharos nói và đưa vại rượu về cho Roran. “Tôi thích uống rượu nấu trên quê mình hơn, ấm, ngọt và khó say.”
+</p>
+
+<p>
+ “Đối với tôi loại rượu này ngọt như sữa mẹ ấy,” Roran nói dối. “Tôi uống nó mỗi sáng, trưa và tối.”
+</p>
+
+<p>
+ Tharos đeo găng tay lại và quay lại leo lên lưng ngựa, cầm lại giáo. Hắn một lần nữa đưa mắt nhìn tên pháp sư mũi khoằm đằng sau, người mà Roran để ý nước da đã tái đi như da người chết trong khoảnh khắc ngắn ngủi Tharos đặt chân xuống ngựa. Có lẽ Tharos cũng nhận ra sự thay đổi đó nên biểu tình trở nên căng thẳng.
+</p>
+
+<p>
+ “Cám ơn sự hiếu khách của anh, Cây Búa Dũng Mãnh,” hắn nói to hơn để tất cả cùng nghe rõ. “Có lẽ tôi sẽ sớm có cơ hội được hàn huyên trò chuyện với anh trong thành Aroughs. Nếu có dịp, tôi hứa sẽ phục vụ anh loại rượu ngon nhất trong trang viên nhà tôi, và có lẽ tôi sẽ giúp anh cai loại sữa kinh khủng này. Tôi nghĩ anh sẽ thấy rượu ở đây rất đáng để thưởng thức. Chúng tôi ủ nó bên trong những thùng gỗ sồi hàng tháng thậm chí là hàng năm. Thật đáng tiếc nếu tất cả những công trình đó bị phí phạm và những thùng rượu mở ra chảy lênh láng trên đường, nhuộm đường phố đỏ màu nho.”
+</p>
+
+<p>
+ “Thế thì quả là đáng tiếc,” Roran trả lời. “nhưng thi thoảng anh không thể tránh chuyện đổ rượu khi dọn bàn đâu.” Anh cầm vại và đổ rượu xuống lớp cỏ dưới chân.
+</p>
+
+<p>
+ Tharos không nói gì trong một lúc – kể cả lông vũ trên mũ trụ hắn cũng không động đậy – rồi, gầm lên một tiếng giận dữ, hắn hét với những người lính xung quanh. “Dàn trận lại! Dàn trận lại, Ta nói... Yah!” Và với tiếng hét cuối cùng hắn thúc ngựa chạy mất, những người lính còn lại theo sau chạy về Aroughs.
+</p>
+
+<p>
+ Roran vẫn tỏ vẻ bàng quan không lo lắng tới khi những tên lính đã đi hết. Sau đó anh từ từ thở hắt ra và chống khuỷu tay lên đầu gối. Tay anh hơi run run.
+</p>
+
+<p>
+ Thành công, anh vui mừng nghĩ thầm.
+</p>
+
+<p>
+ Anh nghe thấy tiếng chân người chạy tới từ phía khu trại và liếc mắt thấy Baldor, Carn đang tiến tới, cùng với ít nhất năm mươi chiến binh vừa trốn trong lều.
+</p>
+
+<p>
+ “Thành công rồi!” Baldor hét lớn khi họ tới gần. “Anh làm được rồi! Tôi không thể nào tin nổi!” Anh ta cười và vỗ vai Roran mạnh tới nỗi khiến Roran đập tay xuống bàn.
+</p>
+
+<p>
+ Những người còn lại bao quanh anh, cười lớn cũng như ca tụng anh, nói rằng dưới sự chỉ huy của anh, họ sẽ chiếm được Aroughs không mất một binh một tố và họ hạ thấp lòng dũng cảm và tính cách con người thành phố này. Ai đó ấn túi da đựng rượu còn ấm, đầy một nửa vào tay anh khiến anh nhìn nó với vẻ chán ghét. Sau đó anh nhìn người đàn ông đứng bên trai anh.
+</p>
+
+<p>
+ “Anh có phù phép không?” anh hỏi Carn, lời anh nói hầu như không nghe rõ dưới sự ồn ào của đám đông.
+</p>
+
+<p>
+ “Cái gì?” Carn nhoài lại gần hơn. Roran nhắc lại câu hỏi và lần này pháp sư cười và gật đầu. “Có. Tôi đã khiến không khí mờ ảo đúng như anh mong muốn.”
+</p>
+
+<p>
+ “Anh có tấn công pháp sư bên kia không? Khi chúng bỏ đi, tôi thấy hắn như sắp ngất ấy.”
+</p>
+
+<p>
+ Nụ cười của Carn rộng hơn. “Đấy là do hắn tự chuốc lấy. Hắn cố phá ảo ảnh hắn nghĩ là do tôi tạo ra – cố chọc thủng lớp không khí mờ ảo để thấy cái gì đằng sau – nhưng làm gì có cái gì để phá, để chọc thủng vì thế hắn đã tốn sức không đâu.”
+</p>
+
+<p>
+ Sau đó Roran cười thầm, sau đó tiếng cười nho nhỏ biến thành trận cười rung người vang tới tận Aroughs.
+</p>
+
+<p>
+ Trong vài phút anh để mình tận hưởng những lời tán dương tới khi anh nghe tiếng thét cảnh báo lớn vang lên từ trạm gác ở một góc trại.
+</p>
+
+<p>
+ “TRánh ra! Để tôi xem!” Roran nói và đứng bật dậy. NHững chiến binh tuân lệnh và anh nhìn người đàn ông duy nhất đứng ở phía tây – là một trong những người anh gửi đi xem xét bờ kênh – đang khó nhọc phi ngựa trên cánh đồng, nhắm hướng trại mà phi tới. “Đưa anh ta tới đây,” Roran ra lệnh và một người kiếm sĩ tóc đỏ gầy nhẳng chạy tới đón người kị sĩ.
+</p>
+
+<p>
+ TROng khi đợi người kia tới, Roran cầm mấy khúc xương lên rồi đặt xuống, từng cái một, vào cốc. NHững khúc xương kêu lanh canh khi rơi xuống.
+</p>
+
+<p>
+ Ngay khi nhìn thấy người lính kia, Roran gọi lớn, “Này anh! Thế nào? Mọi người bị tấn công à?”
+</p>
+
+<p>
+ Người đàn ông kia vẫn giữ im lặng mãi tới khi chỉ còn cách vài mét. Anh ta xuống ngựa và đứng trước Roran, cử động cứng nhắc như một cây thông thiếu năng, và lớn giọng báo cáo, “Có mặt, thưa ngài!” Khi quan sát gần hơn, Roran nhận thấy cậu ta chỉ là một thiếu niên – đúng hơn, cậu ta chính là cậu thiếu niên đã nắm dây cương cho anh hồi anh mới tới trại. Nhưng điều này không khiến Roran tò mò.
+</p>
+
+<p>
+ “THế nào? Tôi không có thì giờ mà dông dài.”
+</p>
+
+<p>
+ “Báo cáo! Hamund gửi tôi tới nói rằng chúng tôi đã tìm thấy tất cả những xà lan chúng ta cần và rằng ngài ấy đang cho dựng xe trượt mang nó tới một con kênh khác.”
+</p>
+
+<p>
+ Roran gật đầu. “Tốt. Anh ấy có cần thêm trợ giúp không”
+</p>
+
+<p>
+ “Báo cáo! Không ạ!”
+</p>
+
+<p>
+ “Có thế thôi à?”
+</p>
+
+<p>
+ “Vâng, thưa ngài!”
+</p>
+
+<p>
+ “Đừng luôn miệng thưa ngài thế. Một lần là đủ rồi. Hiểu không?”
+</p>
+
+<p>
+ “Vâng, thưa ngài – à, vâng th...à, ý tôi là vâng, tất nhiên rồi.”
+</p>
+
+<p>
+ Roran mỉm cười. “Cậu làm tốt lắm. Kiếm gì ăn đi rồi đi tới khu mỏ rồi báo cáo lại cho tôi. Tôi muốn biết họ làm tới đâu rồi.”
+</p>
+
+<p>
+ “Vâng, thưa...Xin lỗi ngài – Tôi không... Tôi sẽ làm ngay lập tức, thưa Chỉ huy.” Má cậu thanh niên hồng lên vì nói lắp. Cậu ta cúi đầu chào nhanh rồi nhanh chóng lên ngựa và đi về lều.
+</p>
+
+<p>
+ Roran càng nghiêm túc hơn vì anh biết, họ đang may mắn khi tránh được lần đụng độ này. Họ còn nhiều việc cần làm và nếu không làm tốt cuộc chiến của họ cũng thua chắc.
+</p>
+
+<p>
+ Anh nói với tất cả những người lính. “Về trại! Tôi muốn có hai hào quân sự xung quanh lều vào tối này; mấy gã lính da vàng bụng bự đó có thể sẽ đổi ý và quay lại tấn công và tôi muốn có sự chuẩn bị.” Vài người càm ràm vì phải đào hào nhưng phần đông có vẻ vui vẻ đồng ý.
+</p>
+
+<p>
+ Carn hạ giọng nói, “Anh không muốn họ kiệt sức vào sáng mai chứ?”
+</p>
+
+<p>
+ “Tôi biết,” Roran trả lời bằng giọng nhẹ nhàng tương tự. “Nhưng chúng ta cần củng cổ khu đóng quan và chúng ta cần làm điều này để tránh bị đánh úp. Hơn nữa, dù sáng mai họ mệt thế nào thì trận chiến cũng sẽ tiếp thêm sức lực cho họ. Luôn luôn như thế.”
+</p>
+
+<p>
+ Đối với Roran một ngày trôi qua rất nhanh khi anh tập trung vào những vấn đề thiết yếu và cố gắng tăng cường thể lực. Những binh lính làm việc hăng say – khi cứu họ, anh đã có được lòng trung thành và tận tụy từ họ - nhưng anh đã thấy rõ ràng hơn rằng, dù họ cố gắng thế nào cũng không thể hoàn thành chuẩn bị trong thời gian quá ngắn.
+</p>
+
+<p>
+ Suốt sáng, chiều và đầu buổi tối, Roran càng lúc càng cảm thấy hết hy vọng và anh tự nguyền rủa mình vì đã đưa ra một kế hoạch tham vọng và phức tạp tới vậy.
+</p>
+
+<p>
+ Từ đầu mình phải hiểu rằng chúng ta không có thời gian chứ, anh nghĩ. Nhưng giờ đã quá muộn để thử một kế hoạch mới. Lựa chọn duy nhất là cố gắng hết sức và hy vọng, những nỗ lực đó sẽ đủ để giành lấy chiến thắng.
+</p>
+
+<p>
+ Trời nhá nhem tối, những tia sáng lạc quan đã tới với anh, vì đột nhiên tất cả những sự chuẩn bị đều hoàn thành với tốc độ nhanh không ngờ. Chỉ vài giờ sau, khi trời tối đen và sao chiếu lấp lánh trên đầu, anh thấy mình đứng ở khu xay sát cùng với gần bảy trăm người, mọi sự chuẩn bị đã hoàn thành cho việc chiếm Aroughs vào cuối ngày hôm sau.
+</p>
+
+<p>
+ Roran cười vì nhẹ nhõm, tự hào và có chút ngờ vực vì công trình của họ.
+</p>
+
+<p>
+ Anh chúc mừng những người lính xung quanh và cùng họ về lều. “NGhỉ ngơi đi nếu có thể. Chúng ta sẽ tấn công vào lúc bình mình!”
+</p>
+
+<p>
+ Những người lính reo vui, dù họ mệt mỏi thấy rõ.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-018.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-020.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

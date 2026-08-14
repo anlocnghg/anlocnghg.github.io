@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 31 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 31</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-030.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-032.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ “Đúng là đồ ngu,” Angela tuyên bố khi bà bước tới rìa hình tròn hoa văn. Bà bị chảy máu từ vài vết cắt và vết xước, quần áo dính nhiều máu khô hơn nhưng Eragon không nghĩ đó là máu của bà. Hơn nữa, trông bà vẫn mảy may vô sự. “Tất cả những gì hắn phải làm là –thế này!”
+</p>
+
+<p>
+ Bà vung kiếm lên và chém xuống một trong những cột đá thạch anh hình thành vòng tròn. Viên pha lên vỡ tan với một tiếng rắc kỳ lạ, như khi bị giật tĩnh điện và ánh sáng từ đó chập chờn rồi biến mất. Những tảng đá khác vẫn sáng.
+</p>
+
+<p>
+ Angela không dừng lại. Bà tiến tới tảng đá thạch anh bên cạnh chém vỡ nó, hết cái này tới cái khác.
+</p>
+
+<p>
+ Chưa bao giờ trong đời Eragon lại thấy hạnh phúc khi nhìn thấy người khác như lúc này.
+</p>
+
+<p>
+ Nó vừa nhìn bà lang vừa nhìn vết nứt loang rộng trên đỉnh quả trứng. Ra’zac sắp ra được, vì nó đang kêu chói lói và mổ vào vỏ trứng mạnh hơn. Giữa những mảnh vỏ trứng, Eragon thấy lớp màng trắng dày và cái đầu nhọn của Ra’zac đang đập một cách điên cuồng vào vỏ trứng.
+</p>
+
+<p>
+ Nhanh lên, nhanh lên, Eragon nghĩ khi lỗ hổng to bằng cỡ bàn tay nó và càng nhiều vỏ trứng rơi xuống sàn nhà nghe như tiếng đĩa bằng đất nung rơi xuống.
+</p>
+
+<p>
+ Lớp màng rách ra và con Ra’zac non chui đầu ra khỏi quả trứng để lộ ra cái lưỡi tim tím có gai khi kêu ré lên tiếng kêu chiến thắng. Chất nhờn nhễu xuống từ mai nó và mùi nấm mốc bay nồng nặc trong phòng.
+</p>
+
+<p>
+ Con Ra’zac lại rít lên rồi cố chui hẳn ra khỏi vỏ trứng. Nó lôi một bàn tay đầy móng vuốt ra, nhưng lại làm đổ quả trứng nghiêng sang một bên khiến chất lỏng vàng đặc quánh chảy ra hình tròn họa tiết. Con non kệch cỡm đó nằm im một lúc vì choáng váng. Sau đó nó quẫy đạp đứng lên, xoay tròn như một con sâu hoảng loạn.
+</p>
+
+<p>
+ Eragon nhìn mà sợ hãi nhưng thấy thích thú.
+</p>
+
+<p>
+ Ngực Ra’zac chia thành từng rãnh sâu nhô lên trông giống như xương sườn mọc bên ngoài cơ thể. Tứ chi của sinh vật gầy và có bướu, trông như nhưng cái que còn phần eo bé hơn so với loài người. Chân nó có thêm khớp phía sau mà Eragon chưa bao giờ nhìn thấy vì giờ con Ra’zac non chưa đi đứng vững vàng. LỚp mai của nó mềm và mỏng, không giống những Ra’zac trưởng thành mà Eragon từng đụng độ. Theo thời gian nó sẽ cứng lên thôi.
+</p>
+
+<p>
+ Ra’zac nghiêng đầu – đôi mắt không con ngươi to thô lố của nó nhìn về phía ánh sáng – và kêu ríu rít như phát hiện ra cái gì đó hay ho. Nó bước một bước về phía Arya... và một bước nữa... rồi thêm bước nữa, cái mào của nó rẽ ra khi vươn tới vũng máu dưới chân nàng.
+</p>
+
+<p>
+ Eragon hét ú ớ mong đánh lạc hướng sinh vật nhưng Ra’zac không thèm nhìn nó.
+</p>
+
+<p>
+ “Xong!” Angela reo lên khi đập vỡ tảng pha lê cuối cùng.
+</p>
+
+<p>
+ Dù những mảnh vụn đá thạch anh rải rác trên nền nhà nhưng Solebum vẫn nhào tới con Ra’zac. Hình dáng con mèo ma nhạt nhòa trong không khí – đầu rung lên – chân thu ngắn lại, lông dựng đứng – và nó hạ xuống bằng cả bốn chân trong hình dáng động vật.
+</p>
+
+<p>
+ Con Ra’zac rít lên và cào Solemum nhưng con mèo ma tránh được và nhanh như chớp, đánh gẫy cổ con Ra’zac bằng bàn chân to lớn.
+</p>
+
+<p>
+ Cổ Ra’zac gẫy cái rắc. Sinh vật nằm lăn ra đất nơi nó vừa đi loạng choạng vài phút trước.
+</p>
+
+<p>
+ Solembum phun phì phì, một bên tai lành lặn ép sát vào đầu; sau đó cậu ta giật cái khổ treo quanh hông và ngồi xuống chờ đợi quả trứng còn lại.
+</p>
+
+<p>
+ “Cô xem cô đã làm gì bản thân mình rồi?” Angela nói khi vội vã chạy lại với Arya. Arya yếu ớt ngước lên nhưng không định trả lời.
+</p>
+
+<p>
+ Với ba nhát chém, bà lang tháo cái cùm trên tay Arya ra như thể nó là pho mát không bằng.
+</p>
+
+<p>
+ Arya ngã quỵ xuống và ấn bàn tay bị thương vào bụng. Cô dùng tay còn lại gỡ giẻ ra.
+</p>
+
+<p>
+ Cái đau cháy bỏng trên vai Eragon biến mất khi Angela thả nó ra để nó hạ tay xuống. Nó lôi giẻ ra và hoảng hốt nối, “Chúng cháu tưởng bà đã chết.”
+</p>
+
+<p>
+ “Nếu muốn giết ta chúng phải cố gắng nhiều hơn. Trong số đó chủ yếu toàn mấy tay trộm vặt ấy mà.”
+</p>
+
+<p>
+ Arya vẫn ngồi và lẩm nhẩm thầm chú trị thương. Những từ ngữ của cô nhẹ nhàng và bay bổng nhưng không hề có chút sai sót.
+</p>
+
+<p>
+ Trong khi cô chữa trị vết thương trên cánh tay, Eragon chữa lành vết cắt trên lồng ngực và vết thương trên cổ tay. Sau đó nó nhìn Solembum và nói, “Tránh ra.”
+</p>
+
+<p>
+ Con ma mèo vẫy đuôi làm theo những gì Eragon bảo.
+</p>
+
+<p>
+ Eragon giơ tay phải lên và nói, “Brisingr!”
+</p>
+
+<p>
+ Một cột lửa xanh lơ bốc lên từ quả trứng thứ hai. Sinh vật bên trong đó gào thét: những âm thanh nghe kinh khủng và không bình thường, giống như tiếng cào lên kim loại hơn là tiếng gào thét của con người hay động vật.
+</p>
+
+<p>
+ Eragon nhíu mắt lại vì nóng khi hài lòng quan sát quả trứng bi đốt cháy. Mong đây là con cuối cùng. Khi tiếng thét biến mất, nó dập lửa. Sau đó là một khoảng im lặng bất thường vì Arya đã kết thúc câu thần chú trị thương.
+</p>
+
+<p>
+ Angela là người phá vỡ sự im lặng. BÀ đến bên Solembum lẩm nhẩm làm phép bằng ngôn ngữ cổ để làm lành cái tai và những vết thương khác.
+</p>
+
+<p>
+ Eragon quỳ xuống cạnh Arya và đặt tay lên vai nàng. Nàng nhìn nó rồi thả lỏng người cho nó nhìn thấy tay nàng. Lớp da dưới đốt thứ ba ngón cai cũng như dưới lòng bàn tay và ngang mu bàn tay sáng lên màu đỏ tươi. Nhưng thớ thịt bên dưới có vẻ đã lành lại.
+</p>
+
+<p>
+ “Sau nàng không chữa lành luôn đi?” nó hỏi. “Nếu nàng quá mệt, tôi có thể,”
+</p>
+
+<p>
+ Nàng lắc đầu. “Vết thương động tới một vài dây thần kinh... và tôi không thể chữa trị được. Tôi cần Blödhgarm giúp; ông ấy giỏi hơn tôi trong khoản chữa vết thương ngoài da.”
+</p>
+
+<p>
+ “Nàng còn chiến đấu nổi không?”
+</p>
+
+<p>
+ “Nếu tôi cẩn thận.”
+</p>
+
+<p>
+ Nó nắm chặt lấy vai nàng một lúc. “Những gì nàng làm...”
+</p>
+
+<p>
+ “Tôi chỉ làm những gì tôi cho là cần làm.”
+</p>
+
+<p>
+ “Hầu hết không có khả năng... tôi đã thử, nhưng bàn tay của tôi quá to. Thấy không?” Nó giơ tay cho nàng xem.
+</p>
+
+<p>
+ Nàng gật đầu rồi nắm lấy tay nó để đứng lên. Eragon đứng lên để giúp nàng đứng vững.
+</p>
+
+<p>
+ “Chúng ta phải tìm vũ khí,” nó nói. “cùng với nhẫn, thắt lưng, và vòng cổ của tôi.”
+</p>
+
+<p>
+ Angela nhíu mày. “Sao lại là thắt lưng? Nó được yểm chú à?”
+</p>
+
+<p>
+ Trong khi Eragon lưỡng lự chưa biết nói sao thì Arya cất tiếng, “Có thể bà không biết tên người chế tạo ra nó nhưng trong cuộc hành trình đời mình, chắc bà đã nghe tới thắt lưng của mười hai ngôi sao.”
+</p>
+
+<p>
+ Mắt bà lang mở to. “Thắt lưng đó ư? Nhưng ta nghĩ nó đã thất lạc từ bốn thế kỷ trước, bị hủy diệt trong...”
+</p>
+
+<p>
+ “Chúng tôi đã phục chế nó,” Arya nhàn nhạt nói.
+</p>
+
+<p>
+ Eragon có thể thấy bà lang muốn hỏi thêm, nhưng cuối cùng bà chỉ nói, “Ta hiểu...nhưng chúng ta nào có thời gian mà lật từng phòng mà tìm kiếm. Một khi các thầy tu biết hai người đã trốn thoát, họ sẽ bám sát gót chúng ta.”
+</p>
+
+<p>
+ Eragon chỉ về phía tên thầy tu trẻ đang nằm dưới đất mà nói, “Có thể hắn sẽ cho chúng ta biết đồ đạc của chúng ta ở đâu.”
+</p>
+
+<p>
+ Bà lang đặt hai ngón tay bắt mặt cho gã thanh niên. Sau đó bà vỗ má hắn và banh mắt hắn ra.
+</p>
+
+<p>
+ Gã thầy tu vẫn bất tỉnh nhân sự.
+</p>
+
+<p>
+ Hắn không phản ứng khiến bà lang bực mình. “Đợi một lát,” bà nói rồi nhắm mắt lại. Bà hơi nhăn trán. Trong một lúc bà cứ bất động; sau đó bà lao về phía trước một cách đột ngột. “Thằng ranh con ích kỷ! Thể nào bố mẹ hắn chô hắn làm tu sĩ. Ta ngạc nhiên là họ chịu được hắn lâu tới vậy đấy.”
+</p>
+
+<p>
+ “Hắn có biết gì có ích không?” Eragon hỏi.
+</p>
+
+<p>
+ “Chỉ biết lối lên mặt đất.” Bà chỉ về cánh cửa bên trái điện thờ, cùng cánh cửa các tu sĩ đã bước vào và đi ra. “Lạ là hắn muốn thả tự do cho hai người; ta ngờ rằng đây là lần đầu tiên hắn làm việc tốt.”
+</p>
+
+<p>
+ “Chúng ta phải mang hắn theo.” Eragon ghét phải nói nhưng nhiệm vụ bắt buộc nó làm thế. “Cháu đã hứa là chúng tôi sẽ mang hắn theo nếu hắn giúp.”
+</p>
+
+<p>
+ “HẮn muốn giết cháu!”
+</p>
+
+<p>
+ “Nhưng cháu đã hứa.”
+</p>
+
+<p>
+ Angela thở dài và đảo mắt. Bà nói với Arya. “Ta nghĩ cô cũng không thuyết phục được câu ta nhỉ?”
+</p>
+
+<p>
+ Arya lắc đầu rồi nhấc gã thanh niên lên vai mà không cần cố gắng nhiều. “Tôi sẽ cõng hắn,” nàng nói.
+</p>
+
+<p>
+ “Trong trường hợp này,” bà lang nói với Eragon, “tốt nhất cháu nên cầm cái này vì có lẽ ta và cháu sẽ phải chiến đấu dài dài.” Bà đưa cho nó thanh đoản kiếm rồi rút ra một con dao găm chuôi nạm đá quý giấu trong váy ra.
+</p>
+
+<p>
+ “Cái này làm từ gì vậy?” Eragon hỏi khi nhìn vào lưỡi kiếm trong suốt, để ý thấy nó nhận và phản chiếu ánh sáng. Vật liệu này khiến nó nghĩ tới kim cương nhưng nó không thể nào tưởng tượng ra có ai có thể làm vũ khí từ đá quý; bất kỳ một pháp sư bình thường nào cũng có thể kiệt sức nếu muốn duy trì hình dạng đá kiếm sau mỗi lần quai búa.
+</p>
+
+<p>
+ “Không phải đá cũng chẳng phải kim loại,” bà lang nói. “Dùng cẩn thân. Đừng chạm vào lưỡi kiếm hay bất cứ phần nào không cháu sẽ hối hận. Đừng để thanh kiếm gần bất cứ bộ phận cần thiết nào của cháu – chân chẳng hạn.”
+</p>
+
+<p>
+ Eragon cảnh giác đặt thanh kiếm ra xa. “Vì sao?”
+</p>
+
+<p>
+ “Vì,” bà lang nói với vẻ thích thú hiện rõ trên mặt, “Đây là lưỡi kiếm sắc nhất từng tồn tại. Không một thanh kiếm, con dao hay lưỡi rìu nào có thể sắc bằng nó, kể cả Brisingr. Nó là vật thể sắc bén độc nhất vô nhị. Cái này” – bà dừng lại để nhấn mạnh –“là nguyên mẫu của lưỡi bào dốc... Cháu sẽ không tìm ra thứ nào sánh bằng nó. Nó có thể cắt xuyên qua những thứ được phép thuật bảo vê. Cứ thử đi nếu không tin.”
+</p>
+
+<p>
+ Eragon nhìn xung quanh xem co gì để thử kiếm. Nó đi tới bàn thờ và chém xuống một cạnh.
+</p>
+
+<p>
+ “Không nhanh thế chứ!” Angela rên rẩm.
+</p>
+
+<p>
+ Lưỡi kiếm trong suốt chém ngọt qua tảng đá dày 10cm như chém quá bánh trứng, rồi nhắm xuống chân nó mà tiến tới. Eragon la lên và lùi lạ, dừng tay để không chém vào chân.
+</p>
+
+<p>
+ Góc bàn thờ rơi xuống bậc tam cấp bên dưới rồi nảy lên và lăn lông lốc về giữa phòng.
+</p>
+
+<p>
+ Eragon nhận ra lưỡi kiếm này phải cứng như kim cương. Nó không cần được bảo vệ nhiều vì khó vật liệu nào đối chọi nổi với nó.
+</p>
+
+<p>
+ “Đây,” Angela nói. “Tốt hơn cháu nên cầm cái này nữa.” Bà đưa vỏ kiếm cho nó. “Đây là một trong số ít những thứ thanh kiếm không thể cắt xuyên qua.”
+</p>
+
+<p>
+ Mất một lúc Eragon mới nói được sau khi suýt mất ngón chân. “Thanh kiếm này có tên không?”
+</p>
+
+<p>
+ Angela cười. “Tất nhiên là có. Theo ngôn ngữ cổ, nó mang tên Albitr, đúng theo nghĩa cháu đang nghĩ. Nhưng ta thích gọi nó là Tinkledeath (Thần chết – leng keng) hơn.”“Tinkledeath!”
+</p>
+
+<p>
+ “Đúng, vì tiếng kêu của nó phát ra khi cháu búng vào nó.” Bà dùng đầu móng tay chạm vào và mỉm cowif khi nghe nốt nhạc cao âm vang lên trong căn phòng tối như một tia sáng mặt trời. “Giờ thì chúng ta đi được chưa?”
+</p>
+
+<p>
+ Eragon kiểm tra xem họ có bỏ quên gì không; sau đó nó gật đầu, rảo bước về cánh cửa bên trái và mở nhẹ nhàng hết mức có thể.
+</p>
+
+<p>
+ Sau cánh cửa là hành lang dài thắp đuốc. Dọc đó là hai hàng lính gác chính là hai mươi tên lính mặc đồ đen mà họ đã đụng độ lúc trươc.
+</p>
+
+<p>
+ Chúng nhìn Eragon và rút vũ khí.
+</p>
+
+<p>
+ Eragon thầm nguyền rủa và nó lao về phía trước định tấn công trước khi những tên lính kịp rút kiếm và sắp xếp đội ngũ tấn công hiệu quả. Nó mới chỉ đi được vài mét thì một chuyển động thoáng qua từng tên lính: một bóng mờ như khi cờ xí bay phấp phới trong gió vậy.
+</p>
+
+<p>
+ Không kịp rên lên một tiếng, hai mươi tên giật lùi lại rồi ngã xuống đất chết.
+</p>
+
+<p>
+ Eragon hoảng hốt dừng lại trước khi đụng vào mấy cái xác. Tất cả bọn chúng đều bị chọc vào mắt rất gọn.
+</p>
+
+<p>
+ Nó quay lại định hỏi Arya và bà Angela xem chuyện gì thì im luôn khi nhìn bà lang. Bà đứng chống tay vào tường, một tay chống lên đầu gối, thở dốc. Da bà trắng như da người chết và tay run lên. Máu nhỏ ra từ con dao găm.
+</p>
+
+<p>
+ Eragon vừa sợ vừa nể. Dù bà lang vừa làm gì cũng vượt qua tầm hiểu biết của nó.
+</p>
+
+<p>
+ “Thưa Nhà Thông thái,” Arya nói có vẻ chính cô cũng không hiểu lắm về chuyện xảy ra. “sao bà có thể làm vậy?”
+</p>
+
+<p>
+ Bà lang cười khúc khích rồi nói, “Ta dùng mánh... học từ sư phụ ta... Tenga... nhiều năm về trước. Có lẽ hàng ngàn con nhện đã cắn nát tai ông ấy rồi.”
+</p>
+
+<p>
+ “Vâng, nhưng bà làm thế nào?” Eragon gặng hỏi. Mánh này có thể sẽ hữu dụng ở Urû’baen.
+</p>
+
+<p>
+ Bà lang lại cười. “Cái gì là thời gian nhưng không là chuyển động? Là chuyển động nhưng không phải lửa? Là lửa và năng lượng nhưng lại là những cái tên khác nhau đặt cho cùng một vật?” Bà dựa vào tường và lần tới chỗ Eragon đứng và vỗ vào má nó, “Khi nào cháu hiểu câu đó đó, cháu sẽ hiểu ta làm gì và làm thế nào... Hôm nay ta không thể dùng lại câu thần chú đó nếu không sẽ làm chính ta bị thương, vì thế dừng mong ta giết thêm ai nữa khi chúng ta gặp một đống người nhé.”
+</p>
+
+<p>
+ Eragon khó khăn lắm mới nuốt trôi cơn tò mò và gật đầu.
+</p>
+
+<p>
+ Nó cởi áo trấn thủ và áo da của một tên lính chết sau đó mặc quần áo vào. Làm xong, nó dẫn đường đi qua hành lang xuống cổng vòm phía xa.
+</p>
+
+<p>
+ Họ không đụng độ thêm một ai trong những căn phòng và hành lang nối sau đó và cũng không tìm thấy đồ đạc. Dù Eragon mừng vì không bị phát hiện nhưng không có bất kỳ tên lính nào cũng khiến nó lo lắng. Nó mong nó và những người đồng hành không báo động cho những tên thầy tu biết rằng họ đã trốn thoát.
+</p>
+
+<p>
+ Không giống những căn phòng trống không trước đó, những căn phòng bây giờ chứa đầy đồ nội thất, thảm trải phòng và những thiết bị kỳ lạ bằng đồng và phe lê mà Eragon không thể đoán nổi mục đích sử dụng. Hơn một lần, những cái bàn hoặc tủ sách khiến nó muốn dừng lại xem xét nhưng nó luôn cưỡng lại được. Họ không có thời gian cho những trang giấy cũ mủn dù trong đó chứa những thông tin gì.
+</p>
+
+<p>
+ Bà Angela chọn đướng mỗi khi có hơn một lựa chọn nhưng Eragon vẫn đi đầu. Nó nắm chắt chuôi kiếm Tinkledeath quá khiến tay nó bắt đầu bị chuột rút.
+</p>
+
+<p>
+ Rất nhanh sau đó, họ tới một hành lang nhỏ kết thúc bằng những bậc đá dốc lên. Hai thầy tu trẻ đứng hai bên cầu thang, cầm theo những cái chuông mà Eragon đã nhìn thấy từ trước.
+</p>
+
+<p>
+ Nó chạy về phía bọn họ và đâm vào một tên trước khi hắn kịp la hét hay rung chuông. Nhưng tên còn lại có thời gian làm cả hai việc trước khi Solembum nhảy lên người hắn và đè ngửa hắn xuống đất, xé tan mặt hắn và khiến cả hành lang vang lên tiếng la hét.
+</p>
+
+<p>
+ “Nhanh!” Eragon hét khi nhảy lên cầu thang.
+</p>
+
+<p>
+ Ở bậc cầu thang trên cùng là một bức tường không có gì đỡ rộng khoảng 3m5, trên đó có khắc hình cuộn sách trang trí hoa mĩ và những hình khắc trông khá quen mắt. Nó vòng qua bức tường và đi vào một luồng sáng cường độ mạnh khiến nó loạng choạng và bối rối. Nó đưa vỏ Tinkledeath lên che mắt.
+</p>
+
+<p>
+ Cách nó chưa tới 1.5m là Giám mục đang ngồi trên quan tài, máu chảy xuống từ vết cắt trên vai. Một thầy tu khác – một phụ nữ mất cả hai bàn tay – quỳ cạnh quan tài, hứng máu vào một cái ly vàng mà bà ta giữ bằng phần cẳng tay. Cả Giám mục lẫn bà ta đều kinh ngạc nhìn Eragon.
+</p>
+
+<p>
+ Sau đó Eragon nhìn qua vai họ thấy những hàng cột chống lên trần nhà biến mất trong bóng tôi. Trên bức tường cao vút là các cửa sổ kính – cửa số bên trái sáng lên nhờ ánh bình minh trong khi phía bên phải tối om, không có sắc màu của sự sống. Những bức tượng trắng bệch đứng giữa các cửa sổ. Các hàng ghế bằng đá hoa cương với màu sắc khác nhau kéo dài từ lối vào từ đằng xa tới tận chính điện. Và, ngồi hàng đầu là các thầy tu mặc đồ da, mặt ngửng lên hát như chim non đòi ăn.
+</p>
+
+<p>
+ Eragon muộn màng nhận ra nó đang đứng ở Đại Thánh Đường Dras – Leona, ở phía bên kia ban thờ mà nó từng quỳ gối cách đâu rất lâu.
+</p>
+
+<p>
+ Người đàn bà cụt tay hạ cái ly xuống và đứng dậy, mở rộng tay như định che chắn cho giám mục. Bên cạnh bà ta, Eragon nhìn thấy màu xanh của vỏ bao Brisingr nằm cạnh quan tài, và nó nghĩ nó thấy Aren ở cạnh đó.
+</p>
+
+<p>
+ Trước khi nó đoạt được gươm, hai tên bảo vệ vội chạy về phía nó và dùng ngọn giáo chạm trổ có quả tua đỏ trên đầu chém vào nó. Nó bước sang một bên tên lính đầu tiên và chém thân giáo ra làm đôi khiến cho lưỡi giáo bay vòng trong không khí. Sau đó Eragon chém hắn làm đôi; Tinkledeath lượt dọc các thớt thịt và xương nhẹ như không.
+</p>
+
+<p>
+ Eragon hạ gục tên thứ hai rất nhanh và quay lại nghênh chiến hai tên đang lao tới từ đằng sau. Bà lang tham dự cùng nó; giơ cao con dao găm, và Solembum đang gào thét từ bên trái nó. Arya vẫn chưa tham gia cuộc chiến vì phải cõng gã thanh niên.
+</p>
+
+<p>
+ Máu từ cốc lênh láng khắp sàn nhà xung quanh bục thờ. Những tên lính trượt trên vũng máu và tên ngoài cùng trượt chân ngã lên ngời gã phía trước. Eragon tiến tới – không nhấc chân lên để không mất thăng bằng – và trước khi những tên lính gác kịp phản ứng, nó chém cả hai trong khi vẫn cẩn trọng với thanh kiếm của bà lang.
+</p>
+
+<p>
+ Eragon có nghe thấy tiếng la hét của Giám mục như vang từ nơi xa xăm nào đó, “Giết bọn ngoại đạo! Giết chúng! Đừng để những kẻ báng bổ đó chạy thoát! Chúng phải trả giá vì tội ác với Thần Tối Cổ!”
+</p>
+
+<p>
+ Những thầy tu bắt đầu la hét và giậm chân và Eragon cảm nhận được tư tưởng chúng đang cào xé tư tưởng nó nhưng một đàn chó sói cào xé con nai yếu ớt. Nó lùi vào sâu bên trong, lập lá chắn theo như Glaedr đã dạy. Thật khó khăn cho nó khi phải chống trả quá nhiều kẻ thù nên nó sợ nó sẽ không thể duy trì hàng phòng thủ lâu. Nó chỉ có một lợi thế duy nhất là các thầy tu đang tấn công nó đơn lẻ, không có tổ chức chứ không phải theo một khối; nếu chúng kết hợp với nhau có thể làm nó thất thủ.
+</p>
+
+<p>
+ Sau đó tư tưởng của Arya ép lên nó – một sự hiện diện thân thuộc mềm mại an ủi nó chống lại những kẻ thù đang cào xé lên lớp vỏ bảo vệ đầu óc của nó. Nó an tâm đón nhận luồng tư tưởng của nàng, họ hòa nhập tư tưởng, như nó và Saphira vẫn làm, khiến nó không còn biết có bao nhiêu luồng tư tưởng đang nhắm tới nó nữa.
+</p>
+
+<p>
+ Họ cùng nhau tấn công tư tưởng một thầy tu. Y cố chuồi thoát như một con cá quẫy khỏi tay họ nhưng họ nắm chặt hơn không cho hắn thoát. Y một cụm từ kỳ lạ, khoa trương để khiến họ tránh xa tư tưởng y: Eragon đoán y sử dụng một đoạn kinh trong cuốn sách của Tosk.
+</p>
+
+<p>
+ Nhưng tên thầy tu thiếu luyện tập nên hắn nhanh chóng mất tập trung khi nghĩ, “Những tên ngoại đạo này quá gần Chủ nhân. CHúng ta phải giết chúng trước khi... Đợi đã! Không! Không....!
+</p>
+
+<p>
+ Eragon và Arya lợi dụng phút sơ hở và khuất phục suy tưởng của y. Một khi họ chắc chắn hắn không còn chống lại họ bằng ý chí hay thân xác, Arya đọc câu thần chú kiểm tra trí nhớ tên thầy tu, từ đó nàng biết nàng có thể vượt quá lá chắn phòng thủ của y.
+</p>
+
+<p>
+ Ở hàng ghế thứ ba, một tên hét lên và cháy rừng rực, ngọn lửa xanh bốc lên từ mắt, tai và mồm y. Ngọn lửa bén vào quần áo vài thầy tu bên cạnh khiến chúng chạy toán loạn, không thể tấn công Eragon lâu hơn. Ngọn lửa lách tách cháy như tiếng cành cây bị quậy gẫy trong cơn bão.
+</p>
+
+<p>
+ Bà lang chạy xuống từ ban thờ và lẫn trong đám thầy tu, đâm chém tên này tên khác. Solembum bám sát gót, kết liễu đời những gã vừa ngã xuống.
+</p>
+
+<p>
+ Sau đó, Eragon và Arya dễ dàng kiểm soát tư tưởng kẻ thù. HỌ tiếp tục cùng nhau giết bốn thày tu nữa còn những kẻ khác bỏ chạy tứ tán. Vài tên bỏ chạy qua hành lang mà Eragon nhớ là dẫn tới tu viện cạnh giáo đường, trong khi những kẻ khác trốn dưới các hàng ghế và cho tay lên che đầu.
+</p>
+
+<p>
+ Nhưng sáu thầy tu không thèm bỏ chạy hay trốn mà đứng thách thức Eragon với con dao cong giơ cao. Eragon chém trúng tên đầu tiên trước khi hắn kịp đâm nó. Eragon tức giận vì mụ ta lập lá chắn bảo vệ khiến lưỡi kiếm Tinkledeath đi chật 15cm khỏi cổ mụ; lưỡi kiếm phản lực lại làm rung tay nó. Eragon dùng tay trái đánh vào mụ. Không hiểu vì lý do gì, câu thần chú không ngăn được nắm đấm của nó và nó cảm thấy xương gò má mụ gãy vụn khi nó đánh bay mụ về những người đằng sau.
+</p>
+
+<p>
+ Những thầy tu còn lại ổn định vị trí. Eragon bước lên chặn nhát gươm vụng về của tên thầy tu đứng đầu – cùng tiếng hét Ha! – nó thụi vào bụng hắn và khiến hắn bay một đường đẹp mắt về các hàng ghế.
+</p>
+
+<p>
+ Eragon giết gã tiếp theo bằng cách tương tự. Một mũi lao xanh vàng găm vào họng tên thầy tu bên trái Cùng lúc đó, bóng hình màu hung của Solembum vụt qua nó và tấn công những kẻ còn lại.
+</p>
+
+<p>
+ Chỉ còn một tông đồ của Tosk đứng sau nó. Arya dùng cánh tay còn lại nắm lấy đằng trước áo choàng da và ném mụ bay xa 9m.
+</p>
+
+<p>
+ Bốn tên thầy tu học việc nâng quan tài của Giám mục lên và mang nó về phía đông qua cổng chính giáo đường.
+</p>
+
+<p>
+ Thấy chúng trốn chạy, Eragon gầm lên và nhảy lên bệ thờ làm đổ đĩa và ly thánh xuống đất. Từ đó, nó nhảy trên người những thầy tu đã chết. Nó hạ cánh nhẹ nhàng xuống hành lang và lao tới cuối giáo đường, nhằm thẳng những tên thầy tu học việc mà tới.
+</p>
+
+<p>
+ Bốn gã thanh niên dừng lại khi thấy Eragon. “quay lại!” Giám mục bài hải hét. “Quay lại!” Những nô bộc của nó vâng lệnh nhưng bị chặn đứng bởi Arya, một trong số đó bị Arya quật qua vai.
+</p>
+
+<p>
+ Chúng hoảng hốt la hét và quay người vụt chạy giữa hai hàng ghế. Trước khi chúng đi thêm được vài bước, Solembum bước ra chặn đường và lao vào chúng. Tai con mèo ma dán chặt xuống xương sọ và tiếng gầm trầm trầm của nó khiến Eragon dựng tóc gáy. Sát sau con mèo ma là Angela đi xuống từ bệ thờ, một tay cầm dao găm một tay cầm ngọn giáo xanh vàng.
+</p>
+
+<p>
+ Eragon không hiểu bà mang theo bao nhiêu vũ khí.
+</p>
+
+<p>
+ Họ ấn tượng vì các thầy tu học việc không hề run sợ hay bỏ chủ nhân lại. Thay vào đó chúng la hét và lao nhanh tới Solembum, có lẽ vì cho rằng mèo ma là kẻ thù nhỏ nhất và gần nhất; và vì chúng tin đây là kẻ thù dễ chơi nhất.
+</p>
+
+<p>
+ Nhưng chúng đã lầm.
+</p>
+
+<p>
+ Solembum nhún người nhảy từ nền nhà lên ghế. Sau đó, không dừng lại, cậu ta hạ cánh trên người một trong hai gã dẫn đầu.
+</p>
+
+<p>
+ Khi mèo ma bay trong không khí, Giám mục hét gì đó bằng ngôn ngữ cổ - Eragon không nhận ra từ đó là từ gì nhưng chắc chắn là ngôn ngữ chính thống của thần tiên. Dù câu thần chú đó là gì, nó cũng không ảnh hưởng tới Solembum, dù Eragon thấy bà Angela lảo đảo như dính đòn.
+</p>
+
+<p>
+ Solembum đụng trúng một tên thầy tu đang bay tới và hắn ngã ngửa xuống sàn, la hét khi Solembum vồ hắn. NHững tên con lại vấp lên xác đồng đạo, ngã xuống khiến Giám mục rơi khỏi quan tài trúng một trong những cái ghế. Nó nằm đó giãy giụa như giòi.
+</p>
+
+<p>
+ Một giây sau Eragon đuổi kịp chúng và bằng ba nhát kiếm, nó giết hết những gã thày tu chỉ trừ một tên đang bị Solembum gặm cổ.
+</p>
+
+<p>
+ Khi Eragon chắc chắn chúng đã chết hết, nó quay người định đâm chết Giám mục diệt trừ hậu họa. Khi nó tiến tới sinh vật không chi, một tư tưởng xâm nhập đầu óc nó, xục xạo đầu óc nó hòng khống chế đầu óc nó. Đòn tấn công xấu xa đó buộc nó dừng lại tập trung để chống lại kẻ xâm lăng.
+</p>
+
+<p>
+ Nó liếc thấy cả Arya và Solembum đều bất động. Chỉ có bà lang là không. Bà dừng lại một thoáng khi tên tấn công tiếp cận, nhưng sau đó bà chậm chạp tiến tới chỗ Eragon.
+</p>
+
+<p>
+ Giám mục nhìn Eragon chằm chằm, đôi mắt trũng sâu có quầng thâm của nó cháy lên sự hận thù và tức giận. Nếu sinh vật đó có tay và chân, Eragon tin nó sẽ xé tan tim mình ra bằng tay không. Với ánh nhìn ác ý đó, Eragon còn nghĩ sinh vật sẽ bò khỏi ghế và cắn chân nó nữa.
+</p>
+
+<p>
+ Cuộc tấn công vào đầu óc nó càng lên cao độ khi bà Angela tới gần. Giám mục – chắc chắn là do tên Giám mục này – giỏi hơn bất cứ tên đồng đạo nào. Vừa đấu tư tưởng với bốn người một lúc lại còn đe dọa từng người quả là đáng kinh ngạc, đặc biệt khi đối thủ của nó lại là một tiên nhân, một Kỵ sĩ Rồng, một phù thủy và một ma mèo. Giám mục là một trong những đối thủ khó chơi nhất mà Eragon từng đụng độ; nếu không có sự giúp đỡ của những bạn đồng hành, Eragon nghi nó đã bị sinh vật này hạ gục. Điều giám mục làm là điều Eragon chưa bao giờ chứng kiến, kể như cắt đứt luồng tư tưởng liên kết giữa Eragon, Arya và Solembum, khiến họ bối rối. Eragon còn tưởng mình đã quên bản thân là ai trong một lúc.
+</p>
+
+<p>
+ Cuối cùng Angela bước tới giữa hàng ghế. Bà đi qua Solembum – đang co mình bên cạnh tên thầy tu học việc cậu ta vừa giết chết, mọi sợi lông trên cơ thể đều xù lên – rồi cẩn trọng bước qua xác ba gã Eragon vừa giết.
+</p>
+
+<p>
+ Khi bà tới gần, giám mục bắt đầu quẫy như con cá mắc câu nhằm đẩy mình xa hàng ghế hơn. Cùng lúc đó, áp lực lên tư tưởng Eragon nhẹ hơn dù không đủ để nó dám cử động.
+</p>
+
+<p>
+ Bà lang dừng lại khi tới gần Giám mục và Eragon ngạc nhiên khi Giám mục không cử động mà nằm thở dốc trên ghế. Trong một phút, sinh vật mắt trũng sâu và người phụ nữ thấp bé, gương mặt cương nghị nhìn nhau trong một trận đấu trí vô hình.
+</p>
+
+<p>
+ Sau đó Giám mục náo núng còn bà Angela mỉm cười. Bà hạ con dao găm xuống và lấy trong váy ra một chủy thủ nhỏ màu đỏ vàng của ánh hoàng hôn. Bà nhoài người về phía Giám mục, thì thầm nho nhỏ, “Ngươi nên biết tên ta, đồ không lưỡi. Nếu ngươi biết, ngươi sẽ không dám chống lại chúng ta. Đây, để ta nói cho ngươi hay...”
+</p>
+
+<p>
+ Bà hạ giọng rất nhỏ khiến Eragon không nghe được. Nhưng Giám mục trắng bệch đi, cái mồm héo quắt của nó mở ra thành một hình ô van đen sì, một tiếng thét thoát ra từ họng nó. Cả giáo đường rung lên.
+</p>
+
+<p>
+ “Ôi, im lặng nào!” bà lang nói to và bà đâm chủy thủ vào ngực Giám mục.
+</p>
+
+<p>
+ Lưỡi dao lóe màu trắng sáng và biến mất cùng âm thanh như tiếng sấm nổ từ đằng xa. Khu vực xung quanh vết thương sáng lên như gỗ cháy; rồi da thịt Giám mục biến thành muội đen lan trên ngực nó. Với một tiếng ọc, tiếng hét của sinh vật ngừng lại đột ngột như khi bắt đầu.
+</p>
+
+<p>
+ Câu thần chú nhanh chóng lan khắp người Giám mục, khiến cơ thể hắn biến thành một lớp bụi đen có hình đầu và thân nó.
+</p>
+
+<p>
+ “Siêu thoát nhé,” Angela gật đầu nói.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-030.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-032.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

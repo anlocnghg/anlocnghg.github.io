@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 8 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 8</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-007.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Tất cả đàn ông và phụ nữ trên đời này đều có một nỗi đau riêng, tâm tư của bọn họ luôn bị che giấu —Charles Dickens (1)
+</p>
+
+<p>
+ (1) Charles John Huffam Dickens (7 tháng 2 năm 1812 – 9 tháng 6 năm 1870), là tiểu thuyết gia người Anh nổi tiếng nhất thời đại Nữ hoàng Victoria. Charles Dickens được xem là một trong những nhà văn vĩ đại viết bằng ngôn ngữ tiếng Anh, ông được ca ngợi về khả năng kể chuyện và trí nhớ, được nhiều người ở khắp nơi yêu mến trong suốt quãng đời của ông. Ông là tác giả hiện thực lớn nhất của nước Anh thế kỷ 19. Các tác phẩm của ông chủ yếu dành cho thiếu nhi và mang tính chất hiện thực. Sang thế kỷ 20, thiên tài văn học của ông đã được các nhà phê bình và các học giả thừa nhận rộng rãi. Tiểu thuyết và những chuyện ngắn của ông tiếp tục được phổ biến.(Theo wiki)
+</p>
+
+<p>
+ Qua tết tây, rất nhanh sẽ đến kì thi cuối kỳ.
+</p>
+
+<p>
+ Chị cả Ngụy Đồng đã thi xong nghiên cứu sinh, mặc kệ kết quả cuối cùng thế nào, cực khổ cố gắng một năm cuối cùng cũng đã kết thúc, có thể được nghỉ ngơi thư giãn. Ngô Thiến Thiến và Nhan Hiểu Thần đều có đề nghị đi làm, tuy công việc không đến nỗi nào, nhưng hai cô không hẹn mà cùng lựa chọn không ký hợp đồng, cũng có nghĩa là chưa có việc làm, dù sao đã có thu hoạch về kinh nghiệm xin việc, các cô cũng phần nào tin tưởng vào năng lực bản thân. Không khí của cả phòng bây giờ dễ chịu hơn rất nhiều.
+</p>
+
+<p>
+ Vì phải thi cuối kỳ, mọi người tạm thời gác mọi chuyện qua một bên, nghiêm túc tập trung ôn thi, bốn cô gái cùng phòng lại giống như trước kia, nói nói cười cười, lâu lâu còn cùng nhau đi phòng tự học ôn tập. Nhan Hiểu Thần bình thường trong lúc học đã dùng rất nhiều thời gian nghiêm túc học tập, đến kỳ thi thì ngược lại không cần phải tốn nhiều thì giờ để ôn, nhưng do giúp Thẩm Hầu đi thi, cô lại phải tập trung nhiều thời gian và công sức vào việc này. Lần thi trước, điểm kinh tế học vĩ mô của Nhan Hiểu Thần rất cao, nhưng đã qua hai năm, thầy dạy và giáo trình cũng đã đổi khác, cô sợ xảy ra chuyện ngoài ý muốn, nên bảo Thẩm Hầu đưa tài liệu năm nay cho cô xem, để cô ôn lại từ đầu đến cuối một lần nữa.
+</p>
+
+<p>
+ Thẩm Hầu thấy Nhan Hiểu Thần vì hắn mà cố gắng như vậy, cũng tỏ ra là người nói-được-làm-được, mỗi ngày đều đem tập sách lên phòng tự học, nghiêm túc ôn tập các môn cuối khóa. Nhan Hiểu Thần nhìn thấy hắn như thế cũng tạm yên tâm.
+</p>
+
+<p>
+ Buổi tối, Nhan Hiểu Thần và Thẩm Hầu lên phòng tự học, lúc ra về tự dưng lại đụng mặt Lưu Hân Huy. Nhan Hiểu Thần trước giờ sợ gặp bạn cùng khoa, cố ý chọn phòng học xa nhất, điều kiện kém nhất, thường ở trên lầu cao, cô không nghĩ là người tính không bằng trời tính, vậy mà cũng bị bắt gặp.
+</p>
+
+<p>
+ Lưu Hân Huy cười đầy ngụ ý, “Sao các cậu lại đến đây học vậy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút không tự nhiên, “Đang mùa thi, các phòng tự học khác đã đầy người rồi, mấy phòng học không tốt thì vẫn còn chỗ.”
+</p>
+
+<p>
+ Thẩm Hầu thì tỏ ra bình thường, tùy tiện chào hỏi, “Cậu cũng tới đây học à?” Lưu Hân Huy trả lời: “Mình đến tìm bạn. Các cậu từ từ về nhé, mình về ký túc xá trước đây.”
+</p>
+
+<p>
+ Cô lặng lẽ làm cái mặt quỷ với Nhan Hiểu Thần, sau đó lên xe đạp rời khỏi.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói với Thẩm Hầu: “Cậu ấy khẳng định là về phòng nói lung tung rồi!”
+</p>
+
+<p>
+ Thẩm Hầu cho là đúng nói: “Lung tung thì cứ để lung tung đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần trở về phòng ký túc xá, quả nhiên ba cô bạn cùng phòng hứng trí bừng bừng, nhìn cô chằm chằm, Ngụy Đồng nói: “Nhanh chóng khai thật! Thẳng thắn thì được khoan hồng, kháng cự sẽ bị nghiêm trị!”
+</p>
+
+<p>
+ Nhan Hiểu Thần bỏ túi xách lên bàn, “Mình với Thẩm Hầu đi ôn tập cùng, chẳng qua chỉ là bạn bè tốt giúp đỡ nhau lúc cần thôi, không phải là tư tình thân mật yêu đương gì đâu. Các cậu biết mà, sắp thi cuối kỳ rồi.”
+</p>
+
+<p>
+ Ngụy Đồng cười ha hả, “Ha Ha! Cám ơn Hân Huy bữa cơm trưa, cám ơn Thiến Thiến bữa cơm chiều!”
+</p>
+
+<p>
+ Nguyên nhân là, Lưu Hân Huy trở về phòng, đem chuyện đụng mặt Thẩm Hầu và Nhan Hiểu Thần bô bô ra, ba người thế là đánh cá, Ngụy Đồng cá Nhan Hiểu Thần chỉ bởi vì thi cuối kỳ mới giúp Thẩm Hầu ôn tập, Lưu Hân Huy và Ngô Thiến Thiến thì ngược lại cho rằng hai người đã nối lại tình xưa.
+</p>
+
+<p>
+ Lưu Hân Huy buồn bực  nói: “Nhan Hiểu Thần, cậu thật khiến mình sốt ruột, Thẩm Hầu đã chia tay với cậu rồi, lại còn đi giúp cậu ấy?”
+</p>
+
+<p>
+ Ngô Thiến Thiến cười cười, giờ có nói gì cũng như không, cô cầm lấy sách giáo khoa quay ra tiếp tục đọc.
+</p>
+
+<p>
+ Nhan Hiểu Thần thấy các bạn đều đã rửa mặt xong, cô xắn tóc buộc lên cao, một tay cầm chậu rửa và khăn mặt, một tay cầm ấm nước, đi vào nhà vệ sinh rửa mặt.
+</p>
+
+<p>
+ Đang rửa mặt, nghe được Lưu Hân Huy lớn tiếng hỏi: “Hiểu Thần, tài liệu môn kinh tế pháp luật của cậu ở đâu, cho mình mượn một chút!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhắm mắt lại, vừa vốc nước rửa sạch bọt xà phòng trên mặt, vừa nói: “Trong túi ấy!”
+</p>
+
+<p>
+ Nhan Hiểu Thần tắt vòi nước, dùng khăn lau mặt thì đột nhiên sực nhớ trong túi xách còn có tài liệu và giáo trình môn kinh tế học vĩ mô, cô vội vàng kéo cửa toilet đi ra.
+</p>
+
+<p>
+ Đã muộn rồi, Lưu Hân Huy đứng tại bàn học của Nhan Hiểu Thần, cầm giáo trình môn kinh tế học vĩ mô, hoang mang lật lật, nhìn thấy bìa bên trong có tên của Thẩm Hầu, đột nhiên hiểu được, đắc ý nhìn cả phòng, phẩy phẩy cuốn giáo trình, “Các cậu xem đây là cái gì! Hiểu Thần, cậu còn nói cậu với Thẩm Hầu là quan hệ bạn bè trong sạch à? Hừ! Mình không tin đâu! Giáo trình của Thẩm Hầu sao lại ở trong túi của cậu?”
+</p>
+
+<p>
+ Ngụy Đồng hay suy nghĩ cũng kịp phản ứng, “Thẩm Hầu học kỳ này muốn thi lại kinh tế học vĩ mô à?” Nhan Hiểu Thần đi ra khỏi nhà vệ sinh, vừa đặt chậu rửa và khăn mặt xuống, vừa làm bộ thật tự nhiên nói: “Cậu ấy nhờ mình xem qua tài liệu giúp cậu ấy chỉ ra trọng điểm để ôn tập.”
+</p>
+
+<p>
+ Lưu Hân Huy nhìn cuốn giáo trình sợ hãi than:  “Dày như vậy, cậu đối với cậu ta cũng quá thật lòng đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần lấy tài liệu kinh tế pháp luật từ trong túi ra đưa cho Lưu Hân Huy. Lưu Hân Huy một tay nhận tài liệu kinh tế pháp luật, một tay trả cuốn giáo trình kinh tế học vĩ mô cho Nhan Hiểu Thần, cô lập tức nhét vào túi. Ngụy Đồng tỏ ra là người từng trải, thấm thía nói: “Hiểu Thần, Thẩm Hầu không xứng đáng để cậu đầu tư công sức như vậy, chẳng thu được gì đâu.” Ngụy Đồng từ lúc học trung học đã có bạn trai, sau khi thi xong đại học, hai người một thì vào trường danh tiếng, một thì vào trường làng, Ngụy đồng không để ý đến cha mẹ phản đối, kiên trì cùng bạn trai quen nhau. Bỏ cả lòng tự trọng cô đi chăm sóc hắn, ngây thơ nghe lời hắn mọi chuyện. Đến năm thứ hai, hắn lại đi quen cô gái khác cùng trường, nhưng đó không phải là chuyện tệ nhất, Ngụy Đồng phát hiện ra hắn lên QQ (2) nói hươu nói vượn, nói rằng hắn chán ghét cô vì động tác trên giường của cô quá nhàm chán.
+</p>
+
+<p>
+ (2) Tencent QQ, thường được gọi là QQ, là một dịch vụ phần mềm nhắn tin tức thời phát triển bởi công ty Tencent Holdings Limited, Trung Quốc. QQ cũng cung cấp một loạt các dịch vụ, bao gồm cả trò chơi trực tuyến, âm nhạc, mua sắm, blog, nhóm và voice chat. (Theo wiki)
+</p>
+
+<p>
+ Nhan Hiểu Thần lấy chậu, hứng một ít nước lạnh, nói “Các cậu lại nghĩ lung tung rồi, chỉ là bạn bè giúp đỡ nhau thôi! Từ đây đến lúc tốt nghiệp cơ hội giúp cậu ấy không có nhiều nữa. Sau khi có việc làm, bạn bè đi đông đi tây, rất khó gặp lại, nhân lúc có cơ hội, giúp được bao nhiêu thì giúp!”
+</p>
+
+<p>
+ Ngô Thiến Thiến buồn cười nói: “Nếu không muốn ở bên cạnh cậu ấy, tại sao còn muốn tốt với cậu ấy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần hỏi lại: “Đối xử tốt với một người nhất định phải có hồi đáp hay sao?”
+</p>
+
+<p>
+ Ngô Thiến Thiến sắc bén nói: “Một người, nhất là phụ nữ, việc đầu tiên là phải yêu bản thân! Chính mình còn không yêu được mình, làm sao bảo người khác yêu mình! Trương Ái Linh (3) là một ví dụ, yêu quá hèn mọn trong xã hội đầy hiện thực này, bà ta còn tự cho rằng “hiện thực có thể khắc ra hoa”, căn bản không thực tế! Cậu nhìn cuộc đời bi thảm của bà ấy thì biết!”
+</p>
+
+<p>
+ (3) Trương Ái Linh  (30 tháng 9, 1920 – 8 tháng 9, 1995) là một nhà văn nữ của Trung Quốc. Những tác phẩm nổi tiếng nhất của bà bao gồm Sắc, Giới (Lust, Caution) và Tình yêu khuynh thành (Love in a Fallen City).Bà được chú ý vì những tác phẩm nói về những căng thẳng giữa nam giới và nữ giới trong tình yêu. Bà cũng được một số học giả nhận định là một trong những tác giả văn học Trung Quốc xuất sắc nhất trong thời kỳ bà sống. Những miêu tả của bà về bối cảnh ở Thượng Hải và Hong Kong bị Nhật chiếm đóng trong những năm 1940 gây ấn tượng vì chỉ tập trung vào cuộc sống đời thường chứ không có những ẩn dụ chính trị như những nhà văn cùng thời khác.Danh vọng và tiếng tăm của bà tương phản với cuộc sống cá nhân gặp nhiều trở ngại với những nỗi thất vọng, bi kịch, xa lánh và kết thúc bằng cái chết do bệnh tim vào tuổi 74. (Trích Wiki)
+</p>
+
+<p>
+ Ngụy Đồng gật đầu, cảm khái nói: “Muốn tốt với một kẻ, trước tiên phải biết lựa chọn! Đàn ông trên đời này không thiếu, nhất định phải có mắt nhìn người!”
+</p>
+
+<p>
+ Chuyện của Thẩm Hầu, Nhan Hiểu Thần chỉ muốn giấu kín trong lòng mình, cô cười cười, không nói gì cả.
+</p>
+
+<p>
+ Lưu Hân Huy đột nhiên cảm thấy có chút xót xa, không còn hứng thú trêu ghẹo Nhan Hiểu Thần nữa, “Hiểu Thần, nếu không thể dứt bỏ được tình cảm, thì luôn luôn nhớ rằng, nên tìm một người yêu mình, đừng tìm người mình yêu!” Nhan Hiểu Thần bê chậu nước đến ghế bên cạnh, bỏ thêm nước nóng vào, ngồi xuống rửa chân, lúc này phòng cũng đã tắt đèn, chằng còn ai muốn thảo luận những điều đáng hay không đáng trong tình yêu nữa.
+</p>
+
+<p>
+ Các môn tự chọn của Nhan Hiểu Thần đã xong, học kỳ này chỉ có hai môn chuyên ngành, bản thân dự thi tất cả đều suôn sẻ, giúp Thẩm Hầu thi môn kinh tế học vĩ mô cũng thuận lợi, giảng đường dùng để thi hôm nay chỉ có hơn 100 bạn, mười mấy bạn khác thì đi trễ, không được vào giảng đường, đành qua một phòng nhỏ khác dự thi.
+</p>
+
+<p>
+ Giám thị coi thi và trợ giảng căn bản không nhớ được mặt nhiều sinh viên như vậy, các bạn cũng không nhớ rõ mặt nhau, cười cười nói nói như chưa quen biết, Nhan Hiểu Thần ngồi ở một góc trống, không quan tâm vùi đầu làm bài thi.
+</p>
+
+<p>
+ Sau khi làm xong, cô cũng không dám đi nộp ngay, đợi cho thời gian làm bài chấm dứt, trợ giảng đi thu bài, cô mới đưa cho bạn bên cạnh, bạn bên cạnh sẽ gom luôn bài của mình đưa tiếp cho bạn bên cạnh nữa, cứ như vậy, người này truyền cho người kia, cuối cùng sẽ truyền đến tay của trợ giảng.
+</p>
+
+<p>
+ Nhan Hiểu Thần cúi đầu, theo dòng người nhanh chóng chạy ra khỏi phòng thi. Đợi đến khi ra khỏi tòa nhà, cô mới thở ra, cảm thấy khối đá tảng đè trong lòng mấy ngày nay cũng đã rơi xuống.
+</p>
+
+<p>
+ Lấy điện thoại ra, đang định gửi tin nhắn cho Thẩm Hầu, đột nhiên có người vồ lên vai cô, “Sao cậu lại ở đây?”
+</p>
+
+<p>
+ Nhan Hiểu Thần bị doạ thiếu chút nữa nhảy dựng lên, “Hân, Hân Huy!”
+</p>
+
+<p>
+ Lưu Hân Huy hoang mang nhìn toà nhà dạy học, “Cậu vào đây tự học à? Hôm nay không phải chỗ này đang thi, phòng học đều không có hay sao?”
+</p>
+
+<p>
+ “Mình…Mình không phải tự học, mình đi tìm giáo sư hỏi vài vấn đề.”
+</p>
+
+<p>
+ “Đúng là sinh viên ngoan! Mình bây giờ mà nhìn tài liệu, cảm thấy chúng đều là vấn đề!” Lưu Hân Huy làm cái mặt hề, nghĩ chẳng còn gì để nói, thân thiết kéo tay Nhan Hiểu Thần: “Cùng đi căng tin ăn cơm nhé?”
+</p>
+
+<p>
+ “Ừ!”
+</p>
+
+<p>
+ Nhan Hiểu Thần vừa đi vừa nhắn tin cho Thẩm Hầu, báo mọi việc thuận lợi, nhân tiện nói cho hắn biết, cô cùng với Hân Huy đi ăn cơm rồi, hắn không cần chờ cô ở căng tin nữa.
+</p>
+
+<p>
+ Buổi chiều Thẩm Hầu đến phòng tự học tìm cô, hai người cùng nhau ôn thi môn pháp luật kinh tế.
+</p>
+
+<p>
+ Buổi sáng ngày thứ hai, dự thi môn pháp luật kinh tế, bọn họ quả thật ngồi một trước một sau, Nhan Hiểu Thần không biết Thẩm Hầu làm bài được bao nhiêu, hỏi hắn, hắn trả lời là làm được khoảng bảy tám mươi điểm. Cô tính tính, kỳ thi giữa kỳ chiếm 30%, bình thường bài tập chiếm 20%, thi cuối kỳ chiếm 50%, bài tập cô có giúp hắn, chắc sẽ được điểm cao, bây giờ thi cuối kỳ có khoảng bảy tám mươi điểm, Thẩm Hầu qua được môn này chắc không thành vấn đề.
+</p>
+
+<p>
+ Hai tuần thi cuối kỳ, ôn tập và dự thi, thoáng một cái đã qua. Hơn một nửa học kỳ của năm thứ tư đại học đã kết thúc, kỳ nghỉ đông chính thức bắt đầu.
+</p>
+
+<p>
+ Nghỉ đông không giống như nghỉ hè, nghỉ hè có không ít sinh viên muốn ở lại trường để tham gia các lớp học TOEFL, GRE (4), ôn thi nghiên cứu sinh, đi làm thêm…Trường học sẽ vô cùng náo nhiệt. Kỳ nghỉ đông trời giá rét đông lạnh, làm gì cũng không được, mà trong đó còn có ngày cả nước nghỉ lễ, nhà nhà đoàn tụ tết âm lịch, nên các bạn đều vội vã về quê. Rất nhanh, trong phòng ký túc xá, ba cô bạn đều đã đi hết, hành lang cũng trở nên vắng vẻ. Quê nhà của Nhan Hiểu Thần và Thẩm Hầu cách Thượng Hải không xa lắm, có xe lửa, có xe buýt, giao thông lại thuận tiện, nên cũng không cần lo lắng đến chuyện về quê ăn tết.
+</p>
+
+<p>
+ (4) các loại chứng chỉ quốc tế tiếng Anh
+</p>
+
+<p>
+ Thẩm Hầu đến hỏi Nhan Hiểu Thần: “Vé xe cậu mua chưa? Khi nào thì về nhà?” Vốn hắn nghĩ hai người sẽ cùng về, bất quá hắn đi xa một chút, đưa cô về nhà trước, xem như đi du lịch. Lúc hai người đang ôn thi ở phòng tự học hắn đã có hỏi qua cô vài lần thời gian về quê, nhưng Nhan Hiểu Thần lại bảo sau khi thi xong mới tính, kết quả là ba mẹ hắn thấy hắn chưa chịu mua vé, đã trực tiếp sai người đến đón hắn về.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Một hai tuần nữa mình mới về.”
+</p>
+
+<p>
+ “Sao cậu về trễ vậy? Ở lại trường làm cái gì?”
+</p>
+
+<p>
+ “Còn có thể làm cái gì? Thì là làm thêm kiếm tiền!”
+</p>
+
+<p>
+ “Tham tiền!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cười cười, không phản bác lời nói của hắn.
+</p>
+
+<p>
+ Thẩm Hầu nhịn không được hỏi: “Nhan Hiểu Thần, nhà cậu phải dựa vào cậu kiếm tiền à? Hàng năm cậu đều có học bổng cao nhất, có thể nói học phí hay tiền thuê nhà đều miễn, cậu lại làm việc ở quán Bar, mỗi tháng chắc sẽ có một hai ngàn đồng, mà cậu lại tiết kiệm như vậy, căn bản là không tốn bao nhiêu tiền…”
+</p>
+
+<p>
+ Nhan Hiểu Thần nửa đùa nửa thật cắt lời của Thẩm Hầu, hỏi: “Mình tiêu tiền thế nào, kiếm tiền ra sao là chuyện của mình, không nhọc công “ngài” quan tâm!”
+</p>
+
+<p>
+ “Cậu cho rằng mình muốn quan tâm sao? Thuận miệng hỏi một chút thôi!” Thấy thái độ của Nhan Hiểu Thần đối với hắn như người xa lạ, hắn rất đau lòng nhưng không muốn thừa nhận, chỉ có thể mạnh miệng tỏ vẻ ta đây chẳng để ý gì.
+</p>
+
+<p>
+ Thẩm Hầu nghẹn một bụng tức giận bỏ đi.
+</p>
+
+<p>
+ Trở lại phòng, mở máy sưởi, ăn đồ ăn vặt, nằm trên ghế salon chơi game, nhớ đến Nhan Hiểu Thần một mình lẻ loi ở lại ký túc xá không có lò sưởi làm ấm người, cơn giận của hắn mới dần dần biến mất. Hắn nuốn biết thêm chút ít về cô, nhưng lại không có mặt mũi, còn cố tình làm như hắn và Nhan Hiểu Thần không có liên hệ gì với nhau, hắn tức giận nghiến răng nghiến lợi, nói yêu hắn là cô, bây giờ vô tư lạnh nhạt không để ý đến hắn cũng là cô!
+</p>
+
+<p>
+ Đang cùng tính khí cao ngạo của mình phân cao thấp thì may mắn sao thành tích cuối kỳ của hắn tệ hại, như vậy là thuận lý thành chương cho hắn có lý do đi tìm Nhan Hiểu Thần.
+</p>
+
+<p>
+ Thẩm Hầu lên trang mạng của trường tra kết quả thi, hắn nhắn cho Nhan Hiểu Thần một tin, “Kinh tế học vĩ mô 82 điểm, pháp luật kinh tế 68 điểm, toàn bộ thông qua, có thể thuận lợi tốt nghiệp! Cảm ơn!”
+</p>
+
+<p>
+ Hắn vừa chờ tin nhắn hồi âm của Nhan Hiểu Thần, vừa ở trên mạng lướt web lung tung, trong lúc vô tình nhìn đến tin tức các vụ án cướp giật, bài báo còn nhắc nhở lữ khách dịp tết về quê nhớ chú ý an toàn, Thẩm Hầu liền nhắn cho Nhan Hiểu Thần một tin nhắn: “Tết âm lịch cướp giật nhiều, nhớ chú ý an toàn, có chuyện gì thì gọi điện thoại cho mình!” Tin đã gửi đi, cảm thấy hơi mất mặt, vội vàng nhắn thêm một tin nữa: ”Cậu đã giúp mình rất nhiều, mình còn chưa trả công cho cậu, coi như lần này mình thiếu cậu một việc, có chuyện gì cần thì cứ mở miệng nói với mình!”
+</p>
+
+<p>
+ Thẩm Hầu lâu lâu lại liếc nhìn điện thoại, mong chờ tin nhắn hồi âm, nhưng Nhan Hiểu Thần vẫn chưa trả lời, đợi lâu đến nỗi hắn muốn nổi đóa lên thì tin nhắn của Nhan Hiểu Thần rốt cuộc cũng khoan thai mà đến, liên tục hai cái.
+</p>
+
+<p>
+ “Tốt quá rồi!”
+</p>
+
+<p>
+ “Được, mình sẽ nhớ mà đòi cả vốn lẫn lời.”
+</p>
+
+<p>
+ Thẩm Hầu vội vã gửi tin nhắn chất vấn: “Cậu vì sao lâu như vậy mới trả lời tin nhắn?” Viết xong, suy nghĩ lại, không được rồi! Viết như vậy không phải cho rằng hắn canh chừng điện thoại là để đợi tin nhắn của cô? Hắn lập tức xóa bỏ tin nhắn, quyết định muốn giống như Nhan Hiểu Thần, “ngoảnh mặt làm lơ”!
+</p>
+
+<p>
+ Hắn đi uống một chút nước, xong đứng bên cửa sổ ngắm phong cảnh một lát, cảm giác chờ cũng rất lâu rồi, nhìn đồng hồ, mới qua có năm phút, hiển nhiên là không đủ “ngoảnh mặt làm lơ”. Thẩm Hầu ở trong phòng đi vài vòng, thật sự chẳng có chuyện gì làm, mới qua có hơn mười phút, vẫn cảm thấy không đúng với “ngoảnh mặt làm lơ” lắm; hắn chạy xuống nhà bếp, sờ đông sờ tây, ngó chỗ này, ngó chỗ nọ, thậm chí hắn còn lấy ra một quả dứa, gọt gọt khoét khoét hết vỏ, cắt ra từng miếng, bưng đi cho dì bảo mẫu ăn, làm cho dì ấy kinh ngạc nhìn hắn đăm đăm.
+</p>
+
+<p>
+ Thẩm Hầu là một người rất giảo hoạt, hành sự trước giờ đều “một đường mà tiến”, không bận tâm đều gì, vậy mà lần đầu tiên trong đời bởi vì một người đã thành ra như vậy. Hắn tưởng hắn đã “làm lơ” với Nhan Hiểu Thần, nhưng thế này không đúng, thế kia cũng không phải, thật ra căn bản hắn chỉ là “làm lơ” với chính hắn thôi.
+</p>
+
+<p>
+ Tuy vẫn chưa mãn nguyện với mục tiêu mình đặt ra, nhưng Thẩm Hầu đã không chịu được nữa, hắn vọt nhanh vào phòng, lập tức gửi tin nhắn cho Nhan Hiểu Thần, “Cậu đang làm gì đó?”
+</p>
+
+<p>
+ Lần này thì tin nhắn của Nhan Hiểu Thần lập tức đến, “Tham tiền đương nhiên là đang vội vàng kiếm tiền!”
+</p>
+
+<p>
+ Tâm trạng của Thẩm Hầu tốt lên được một chút, cố ý trả lời mấy tin nhắn của người khác trên blog trước tiên, sau đó mới chậm rãi trả lời Nhan Hiểu Thần, “Cậu tìm việc làm thêm ban ngày nữa à?”
+</p>
+
+<p>
+ Tin nhắn của Nhan Hiểu Thần liền đến: “Đúng vậy!”
+</p>
+
+<p>
+ Thẩm Hầu cười rộ lên, tâm trạng mấy ngày không thoải mái toàn bộ tan thành mây khói, “Tham tiền cần phải nhớ rõ là thân thể khỏe mạnh quan trọng hơn tiền tài phú quý, chú ý sức khỏe!”
+</p>
+
+<p>
+ “Công việc rất nhẹ nhàng, chính là phát tờ rơi, sức khỏe hoàn toàn tốt!”
+</p>
+
+<p>
+ Thẩm Hầu nhe răng cười, mắng câu “Tham tiền!”, cảm thấy thật thỏa mãn mà buông điện thoại xuống.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-007.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

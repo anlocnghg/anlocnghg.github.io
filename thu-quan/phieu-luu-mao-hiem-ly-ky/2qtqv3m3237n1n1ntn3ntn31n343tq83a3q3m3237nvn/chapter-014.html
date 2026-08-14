@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 14 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 14</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-013.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Tiếng chuông đeo cổ của lũ chó săn sau họ vang lên càng lúc càng lớn, và chúng đang tru lên vì khát máu.
+</p>
+
+<p>
+ Roran nắm chặt dây cương và cúi rạp người trên con ngựa đang phi nước đại khiến bụng xóc lên từng hồi.
+</p>
+
+<p>
+ Anh và năm người đàn ông khác – Carn, Mandel, Baldor, Delwin và Hamund – đã trộm những con ngựa tốt từ chuồng ngựa một trang viên cách đây nửa dặm. Những người giữ ngựa nào có thể tử tế với trộm. Họ có thể dùng vài nhát kiếm để cướp ngựa nhưng những người giữ ngựa đã báo với những người gác cửa ngay khi Roran và những người bạn đồng hành trốn khỏi. Thế là mười tên gác cửa đuổi theo họ cùng với bầy chó săn.
+</p>
+
+<p>
+ “Đây rồi!” anh hét lên và chỉ vào một rặng cây phong chạy chạy dọc hai ngọn đồi gần đó, dẫn tới con suối.
+</p>
+
+<p>
+ Những người đàn ông thúc ngựa ra khỏi con đường đẹp và hướng về phía những rặng cây. Con đường dù có gồ ghề nhưng chỉ khiến họ châm lại chút đỉnh. Họ không thèm quan tâm tới nguy cơ lũ ngựa có thể bước vào các hố và gẫy chân hoặc họ bị ngã ngựa. Nguy hiểm chính là lũ chó săn đang đuổi sát sườn họ.
+</p>
+
+<p>
+ Roran thúc chân vào hai bên sườn ngựa và hét “Ya!”. Con ngựa lồng lên phía trước và từng bước đuổi kịp Carn.
+</p>
+
+<p>
+ Roran biết rằng sức lực của con ngựa sắp tới giới hạn, sau đó dù anh quất roi hay thúc ngựa thế nào nó cũng không đi nổi nữa. Anh ghét phải là người ngược đãi súc vật, anh không muốn bắt con vật chạy tới chết nhưng nếu không anh sẽ không hoàn thành nổi nhiệm vụ.
+</p>
+
+<p>
+ Khi đi song song với Carn, Roran hét lên, “Anh dùng phép thuật che giấu vết được không?”
+</p>
+
+<p>
+ “Tôi không biết cách!” Carn đáp, giọng nói bị tiếng gió rít và tiếng ngựa phi át mất. “Câu thần chú đó quá phức tạp!”
+</p>
+
+<p>
+ Roran chửi thề và liếc nhìn ra sau. Những con chó săn đã quặt ở khúc cua cuối cùng. Chúng chạy như bay với tốc độ quỷ khốc thần sầu. Thậm chí từ khoảng cách này, Roran có thể nhìn thấy màu lưỡi đỏ và những chiếc răng nanh trắng ởn của chúng.
+</p>
+
+<p>
+ Khi họ tới được rặng cây, Roran quay lại và đi ngược lên đồi, đi gần những cây phong nhất có thể. Những người còn lại làm tương tự, họ ngựa lại khi chúng chạy lên dốc.
+</p>
+
+<p>
+ Bên phải Roran, Mandel đang phi tới, trên mặt biểu hiện nét cau có. Chàng thanh niên này gây ấn tượng với Roran bởi sức chịu đựng và sự kiên cường trong ba ngày qua. Kể từ khi cha Katrina, lão Sloan phản bội dân làng, giết chết cha Mandel, ông Byrd, Mandel đã cực kỳ nỗ lực chưng minh cho mọi người thấy cậu ngang hàng với bất cứ thanh niên nào trong làng: cậu đã chứng minh được sự dũng cảm của mình trong hai trận giao tranh giữa quân Varden và quân Triều đình.
+</p>
+
+<p>
+ Một cành cây to vụt qua đầu Roran. Anh lùi lại, nghe ngón và cảm thấy những cành cây con va quệt trên mũ trụ. Một chiếc lá khô rơi xuống che mắt phải anh trong giây lát; sau đó cơn gió thổi nó đi mất.
+</p>
+
+<p>
+ Tiếng thở của con ngựa càng lúc càng nặng nề khi họ đi sâu hơn vào ngọn đồi. Roran che mắt nhìn thấy đàn chó săn chỉ còn cách bọn họ chưa đầy một phần tư dặm. Chắc chắn chỉ vài phút nữa chúng sẽ đuổi kịp bọn họ.
+</p>
+
+<p>
+ Quỷ tha ma bắt, anh nghĩ thầm. Anh đảo mắt nhìn những rặng cây rậm rạp bên trái và ngọn đồi mọc đầy cỏ dại bên phải như tìm kiếm một cái gì – bất kỳ thứ gì – có thể giúp họ cắt đuôi những kẻ đang bám đuôi.
+</p>
+
+<p>
+ Đầu óc anh ong ong vì kiệt sức khiến anh suýt bỏ qua nó.
+</p>
+
+<p>
+ Trước anh hai mươi mét và một con đường nai đi thành lối chạy xuống một bên sườn đồi, cắt ngang con đường họ đang đi sau đó biến mất trong rừng cây.
+</p>
+
+<p>
+ “Họ!...Họ!...” Roran hét, thúc ngựa và kéo dây cương. Con ngựa dừng lại đi nước kiệu, dù nó có phì phò phản đối và hơi lắc đầu, cố gắng cắn sợi dây cương trong miệng. “Ôi, đừng làm thế,” Roran gầm lên và giật mạnh dây cương hơn.
+</p>
+
+<p>
+ “Nhanh lên!” anh nói với những người còn lại và quay ngựa tiến vào khu rừng rậm. Không khí bên dưới những rặng cây mát mẻ, có khi lành lạnh khiến bọn họ nhẹ nhõm, bớt đi cơn nóng vì mệt nhọc. Nhưng khoảnh khắc tận hưởng cảm giác khoan khoái chỉ kéo dài trong chốc lát trước khi con ngựa lồng lên và trượt xuống con suối bên dưới. Những chiếc lá khô kêu xào xác dưới móng ngựa. Để không ngã ngựa, Roran gần như cúi rạp trên lưng nó, chân duỗi thẳng về phía trước.
+</p>
+
+<p>
+ Khi anh trượt xuống hẻm núi, con ngựa gõ móng lên lạch sông sỏi đá, làm nước bắn lên đầu gối Roran. Roran dừng ngựa quan sát xem có ai còn theo anh không. Có, và họ đang nối đuôi nhau trượt xuống khỏi rặng cây.
+</p>
+
+<p>
+ Phía trêm họ, đầu khu rừng rậm, anh có thể nghe thấy tiếng chó sủa ăng ẳng.
+</p>
+
+<p>
+ Chúng ta sẽ phải quay lại và đánh nhau thôi, anh nhận ra.
+</p>
+
+<p>
+ Anh chửi thề và thúc ngựa leo lên khỏi con suối, lên bờ suối mềm, đầy rêu, đi theo con đường anh mòn mờ mờ dấu chân người ngựa.
+</p>
+
+<p>
+ Không xa dòng suối mấy là bức tường dương xỉ và xa xa là một thung lũng lòng chảo. Roran để ý tới một thân cây đổ có thể làm một vật cản đường nếu anh kéo nó vào đúng vị trí.
+</p>
+
+<p>
+ Hy vọng họ không có cung, anh nghĩ.
+</p>
+
+<p>
+ Anh vẫy mấy người bạn, “Ở đây!”Anh giật cương, buộc con ngựa vượt qua bãi dương xỉ và phi vào thung lũng. Anh trượt khỏi yên ngựa nhưng vẫn bám chắc tay vào đó. Khi chân chạm mặt đất, anh nhăn mặt và ấn trán lên vai ngựa, thở hổn hển đợi cho chân hết run.
+</p>
+
+<p>
+ NHững người còn lại cho ngựa chạy quanh anh. Không khí ngập tràn mùi mồ hôi và tiếng yên cương kêu lọc cọc. Những con ngựa run rẩy, ngực phập phồng và sùi bọt mép.
+</p>
+
+<p>
+ “Giúp tôi với,” anh nói với Baldor và chỉ về phía thân cây đổ. Họ đặt tay dưới hai đầu thân gỗ dày và lăn nó xuống đất. Roran nghiến răng vì đau hông và lưng. Phi ngựa hết tốc lực trong ba ngày – cùng với việc ngủ chưa tới ba tiếng sau mười hai tiếng ngồi trên lưng ngựa – đã khiến anh suy kiệt.
+</p>
+
+<p>
+ Đằng nào thì vào trận chiến mình cũng ốm đau rồi bị đánh thừa sống thiếu chết thôi mà, Roran nghĩ vậy khi thả thân gỗ xuống. Ý nghĩ đó dù sao cũng làm anh bớt căng thẳng.
+</p>
+
+<p>
+ Sáu người đứng trước bầy ngựa, đối diện với bức tường phủ bức tường dương xỉ và rút vũ khí. Bên ngoài thung lũng, những con chó săn tru lên càng lúc càng lớn, những chiếc sủa giận dữ kích động của chúng vang lên hỗn loạn.
+</p>
+
+<p>
+ Roran căng người và giơ cây búa cao hơn. Sau đó trong tiếng chó sủa anh nghe thấy một giai điệu kỳ lạ, du dương bằng ngôn ngữ cổ xưa từ Carn và khiến anh dựng tóc gáy. Thầy pháp lẩm nhẩm vài từ ngắn, nhanh khiến từ ngữ quện vào nhau. Ngay khi anh ta đọcx ong, anh ra hiệu với Roran và những người khác, căng thẳng nói nhỏ, “Nằm xuống!”
+</p>
+
+<p>
+ Không hỏi thêm, Roran nằm sạp xuống. Đây không phải lần đầu tiên anh nguyền rủa bản thân không biết dùng phép thuật. Giờ đây tất cả những kỹ năng của một chiến binh đều vô dụng; không có nó buộc anh phải trông cậy vào những người có thể định hình lại thế giới bằng ý trí và vài từ.
+</p>
+
+<p>
+ Bức tường dương xỉ trước mặt họ rung lên; rồi một con chó thọc cái mõm đen của nó qua tán lá đánh hơi. Delwin rít lên và giơ cao thanh kiếm như thể chặt đầu con chó nhưng Carn húng hắng cảnh cáo và xua tay cho tới khi anh hạ thanh kiếm xuống.
+</p>
+
+<p>
+ Con chó nhăn trán bối rối. Nó đánh hơi thêm lần nữa rồi dùng cái lưỡi tím, dày bự liếm mép và đi mất.
+</p>
+
+<p>
+ Khi tán lá về đúng vị trí cũ, Roran từ từ thở hắt ra. Anh nhìn Carn nhướn mày hy vọng một lời giải thích nhưng Carn chỉ lắc đầu và đặt ngón tay lên môi.
+</p>
+
+<p>
+ Vài giây sau, thêm hai con chó nữa chúi mõm xuống đánh hơi thung lũng, rồi, cũng như con đầu tiên, chúng quay đi. Một lúc sau, đàn chó bắt đầu sủa ăng ẳng, chạy vào rặng cây tìm kiếm con mồi.
+</p>
+
+<p>
+ Khi ngồi chờ, Roran để ý thấy trên chân có vài vết tím chạy dọc lên hông. Anh chạm vào vùng bầm tím đó và ngón tay anh dính máu. Ở mỗi vết thâm đều có một chỗ rộp da. Anh không chỉ bị thâm ở đó, còn ở tay – nơi anh siết chặt cương đặt biệt là giữa ngón cái và ngón trỏ - và ở gót chân và một số chỗ không thoải mái hơn.
+</p>
+
+<p>
+ Anh chán ghét chùi những ngón tay xuống đất. Anh nhìn những người bạn đồng hành, nhìn cách họ đang ngồi và quỳ, nhìn thấy vẻ khó chịu trên nét mặt mỗi khi di chuyển và thấy họ đang nắm chắc vũ khí. Sức khỏe của họ đâu có hơn gì anh.
+</p>
+
+<p>
+ Roran quyết đinh lần tới khi dừng lại nghỉ ngơi anh sẽ nhờ Carn trị thương hộ. Nếu nhưng pháp sư đã quá mệt, Roran sẽ ráng nhịn đau; anh thà chịu đau còn hơn để Carn cạn kiệt sức lực trước khi tới Aroughs, vì Roran đoán khả năng của Carn sẽ rất hữu dụng trong lần vây thành này.
+</p>
+
+<p>
+ Nghĩ tới Aroughs, trận chiến và làm cách nào để chiến thắng khiến Roran đặt tay lên ngực kiểm tra xem những phong thư mà anh không thể đọc có còn không. Chúng vẫn ở đó.
+</p>
+
+<p>
+ Sau vài phút dài đằng đẵng căng thẳng, một trong những con chó săn bắt đầu sủa nhặng xị ở trong rặng cây phía trên bờ suối. Những con chó khác phóng nhanh về hướng đó và tiếng tru rú ầm ý đã có nghĩa là chúng đã đuổi rất sát con mồi.
+</p>
+
+<p>
+ Khi bầy chó đã bỏ đi hết, Roran từ từ đứng dậy và nhìn qua kẽ lá, “Chúng đi hết ròi,” anh nói bằng giọng khe khẽ.
+</p>
+
+<p>
+ Khi những người khác đứng lên, Hamund – một người đàn ông cao, tóc bóng dầu và có vết nhăn hằn sâu trên khóe miệng dù anh chỉ hơn Roran có một tuổi – quay lại phía Carn, rủa xả, “Sao anh không làm thế từ trước, thay vì để cho chúng tôi chạy như điên như dại qua khu nông thông và suýt gẫy chổ khi trượt xuống đồi hả?” Anh chỉ về phía rạch sông.
+</p>
+
+<p>
+ Carn đáp lại bằng giọng cáu giận tương tự, “Vì lúc trước tôi không nghĩ ra. Đáng ra anh nên biết ơn vì tôi đã cứu anh không bị đục lỗ đó.”
+</p>
+
+<p>
+ “Thế sao? Vậy tôi nghĩ anh nên dành nhiều thời gian nghiên cứu phép phiếc trước khi chúng ta bị đuổi chạy tới nơi khỉ ho cò gáy nào đó và...”
+</p>
+
+<p>
+ Sợ cuộc cãi vã của họ sẽ nghiêm trọng hơn, Roran đứng vào giữa hai người, “Đủ rồi,” anh nói, sau đó hỏi Carn, “Anh dựng lá chắn che giấu chúng ta được không?”
+</p>
+
+<p>
+ Carn lắc đầu. “Lũ người thông minh hơn lũ chó kia.” Anh nhìn Hamund vẻ xem thường. “Ít nhất là hầu hết. Tôi có thể giấu chúng ta nhưng không dấu được vết tích trên đường.” Và anh chỉ về phía trảng dương xỉ bị dẫm nát cũng như vết móng ngựa để lại trên mặt đất ẩm ướt. “Họ sẽ biết chúng ta ở đây. Nếu chúng ta đi trước khi họ tìm ra dấu vết, lũ chó sẽ chạy về phía họ và chúng ta sẽ...”
+</p>
+
+<p>
+ “Lên ngựa!” Roran ra lệnh.
+</p>
+
+<p>
+ Thêm vài tiếng chửi thề và rên rẩm nữa rồi những người đàn ông lên lên lưng ngựa. Roran nhìn về thung lũng lần cuối để đảm bảo họ không bỏ quên cái gì rồi dẫn đoàn người đi.
+</p>
+
+<p>
+ Họ cùng nhau phi nước đại dưới bóng cây và đi khỏi khe núi tiếp tục cuộc hành trình tưởng như không có điểm dừng tới Aroughs. Nhưng một khi đặt chân tới thành phố, Roran chưa biết họ sẽ phải làm gì.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-013.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

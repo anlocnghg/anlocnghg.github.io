@@ -1,0 +1,439 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 42 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 42</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-041.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-043.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Nasuada mở mắt.
+</p>
+
+<p>
+ Gạch lát che phủ trần nhà hình vòm tối tăm. Trên đó là họa tiết hình chữ nhật mang màu đỏ, xanh lơ và vàng kim: một ma trận phức tạp những đường kẻ khiến cô bần thần nhìn chăm chú.
+</p>
+
+<p>
+ Cuối cùng cô cố tập trung để nhìn đi chỗ khác.
+</p>
+
+<p>
+ Một ánh sáng vàng cam tỏa ra từ đâu đó đằng sau. Ánh sáng đủ mạnh để cô nhìn rõ căn phòng hình bát giác, nhưng lại quá mờ ảo để đẩy lùi bóng tối như sương mù phủ ở các góc phòng.
+</p>
+
+<p>
+ Cô nuốt nước bọt. Cổ họng cô khô rang.
+</p>
+
+<p>
+ Cô đang nằm trên mặt sàn lạnh lẽo, trơn nhẵn và cứng đến khó chịu. Cơn lạnh luồn lách trong xương và khiến cô nhận ra cổ chị mặc một chiếc váy ngủ trắng mỏng.
+</p>
+
+<p>
+ Mình đang ở đâu?
+</p>
+
+<p>
+ Ý ức tràn về cùng lúc không có cảm xúc hay thứ tự: Một loạt hình ảnh không vui vẻ gì ập vào đầu óc cô khiến đầu óc cô căng ra.
+</p>
+
+<p>
+ Cô thở hổn hển và cố ngồi thẳng dậy – để chạy trốn hoặc để chiến đấu nếu cô có thể - nhưng cô phát hiện mình không thể di chuyển nổi vài centimet. Cô đeo cùm ở tay và chân, một thắt lưng da ấn chặt đầu cô vào phiến đá, không cho cô ngồi lên hay trở mình.
+</p>
+
+<p>
+ Cô căng người lên nhưng xích quá chắc khiến cô không thể nào làm đứt nổi.
+</p>
+
+<p>
+ Cô thở ra và nằm im nhìn lên trần. Nhịp tim đập nện lên tai cô như tiếng trống đánh điên cuồng. Cô nóng người; má cô nóng, tay và chân có cảm giác như bị bôi mỡ.
+</p>
+
+<p>
+ Vậy là mình sẽ chết thế này đây.
+</p>
+
+<p>
+ Trong một lúc, sự tuyệt vọng và tự tiếc thương bản thân lấn át lý trí cô. Cô còn chưa đi hết đoạn đầu đời chứ n ói gì tới kết thúc, mà đặc biệt lại theo cái cách kinh tởm nhất thế này. Tệ hơn, cô không còn gì. Không còn kháng chiến, không còn tình yêu, không con cái và không có cả cuộc sống. Đứa con duy nhất của cô chỉ có chiến trận và những xác chết cùng những thứ cần thiết cho nó: quá nhiều mưu kế đến nỗi cô không nhớ nổi; những lời thế vì tình bạn và lòng trung thành giờ chẳng bằng lời hứa của diễn viên kịch câm; và đội quân quá yếu, què quặt và hay cau có được dẫn dắt bởi một Kỵ sĩ còn trẻ hơn cô. Có lẽ sẽ chẳng có nhiều người nhớ tới tên cô. Cô là người duy nhất còn lại trong dòng họ mình. Và khi cô chết, dòng họ cô sẽ tuyệt hậu.
+</p>
+
+<p>
+ Ý nghĩ đó làm cô đau và cô tự mắng nhiếc mình vì sao không sinh con khi có cơ hội.
+</p>
+
+<p>
+ “Con xin lỗi,” cô thì thầm, như nhìn thấy gương mặt cha trước mặt.
+</p>
+
+<p>
+ Sau đó cô phục hồi lại tinh thần và dẹp nỗi tuyệt vọng sang một bên. Cô chỉ tự kiểm soát bản thân mình mới vượt qua nổi tình hình này và cô không định buông xuôi mình gặm nhấm những sự nghi ngờ, nỗi sợ và hối hận. Miễn cô còn làm chủ đầu óc mình, cô sẽ không hoàn toàn vô vọng. Dù chỉ là chút tự do nhỏ nhoi nhất – tự do trong tư tưởng – nhưng thế là đủ, vì cô biết cô sẽ sớm không còn tự do.
+</p>
+
+<p>
+ Nhưng dù sao cô vẫn còn một nhiệm vụ phải làm: ngăn cản những câu hỏi của chính mình. Cô cẩn kiểm soát bản thân tới phút cuối đời. Nếu không, cô sẽ nhanh chóng bị gục ngã.
+</p>
+
+<p>
+ Cô thở chậm lại để bình tĩnh vượt qua các cảm xúc khác. Sau đó cô quyết định nên nghĩ về cái gì cho an toàn. Có rất nhiều vấn đề nguy hiểm – cho cô, cho Varden, cho quân đồng minh hoặc cho Eragon và Saphira. Cô không xem xét lại những vấn đề cô cần tránh, có thể sẽ đưa cho kẻ cai ngục ngoài kia thông tin hắn cần. Thay vào đó, cô nghĩ tới những hồi ức và suy tưởng vô hại – tự thuyết phục mình rằng mọi thứ mình đang có, đã có bao gồm những thứ nhỏ bé đó.
+</p>
+
+<p>
+ Cô cố gắng tạo nên một con người mới và đơn giản hơn để khi bị thẩm gia, cô có thể hoàn toàn tỏ ra ngu ngốc. Đây là một kỹ xảo nguy hiểm; để thành công, cô buộc phải tin cô thực sự như vậy, và nếu cô có ngày tự do, cô sẽ rất khó lấy lại tính cách thật sự của mình.
+</p>
+
+<p>
+ Nhưng mà cô nào có cơ hội được tự do hay giải cứu. Hy vọng của cô nằm trong tay kẻ bắt giữ cô kìa.
+</p>
+
+<p>
+ Gokukara, hãy cho con sức mạnh để chịu đựng hoàn cảnh trước mắt. Hãy bảo vệ con cú nhỏ bé của người, và nếu con chết, hãy mang con an toàn rời khỏi nơi này... nang con tới vùng đất của cha con.
+</p>
+
+<p>
+ Cô nhìn khắp căn phòng lát gạch kỹ lưỡng hơn. Cô đoán đang ở Urû’baen. Murtagh và Thorn chỉ có thể mang cô tới đây và nó giải thích cho phong cách thần tiên của căn phòng; các thần tiên đã xây dựng rất nhiều kiến trúc ở Urû’baen, thành phố họ gọi là Ilirea, hoặc trước khi xảy ra chiến tranh cùng loài rồng – từ rất, rất lâu rồi – hoặc sau khi thành phố trở thành thủ đô của Đế chế Broddring thời các Kỵ sĩ Rồng.
+</p>
+
+<p>
+ Hoặc như cha cô đã nói. Cô không nhớ gì về thành phố quê hương mình.
+</p>
+
+<p>
+ Nhưng cô cũng có thể ở một nơi hoàn toàn khác; một trong những dinh cơ riêng của Galbatorix chẳng hạn. Hoặc một căn phòng không có thật. MỘt pháp sư quyền năng có thể tạo ra cho cô mọi thứ cô đang thấy, cảm thấy, nghe thấy, ngửi thấy và làm thế giới xung quanh cô méo mó đi mà cô không hay biết.
+</p>
+
+<p>
+ Dù chuyên gì đang xảy ra – hoặc dường như xảy ra – cô cũng không được để bản thân bị lừa. Kể cả nếu Eragon xông vào cắt dây trói cho cô, cô cũng vẫn phải tin là trò bịp của kẻ bắt cóc. Cô không dám tin vào các giác quan.
+</p>
+
+<p>
+ Lúc Murtagh bắt cô khỏi doanh trại, thế giới đã trở nên dối trá và cô không thể biết bao giờ mới hết dối trá. Cô chỉ chắc chắn rằng mình còn sống. Ngoài ra tất cả đều phải nghi ngờ, kể cả suy nghĩ của cô.
+</p>
+
+<p>
+ Sau khi cú shock lúc đầu qua đi, khoảng thời gian chờ đợi mòn mỏi làm cô mệt mỏi. Cô không biết mấy giờ mà chỉ thấy mình đói khát. Cơn đói cứ tăng dần. Cô thử đếm số để tính giờ nhưng rồi chán và cô luôn quên mình đếm đến đâu khi đếm tới chục ngàn.
+</p>
+
+<p>
+ Dù cô biết ác mộng đang chờ đợi mình nhưng cô lại mong kẻ bắt cóc sẽ xuất hiện sớm. Cô hét lên mấy phút nhưng chỉ có sự im lặng trả lời cô.
+</p>
+
+<p>
+ Ánh sáng vàng vọt đằng sau chưa một lần xao động; cô đoán nó giống với ngọn đèn không dùng lửa của người lùn. ÁNh sáng khiến cô khó ngủ nhưng rồi sự kiệt sức chiến thắng. Cô lơ mơ thiếp đi.
+</p>
+
+<p>
+ Cô sọ nằm mờ. Cô dễ bị giết nhất khi đang ngủ và cô sợ đầu óc không tỉnh táo sẽ tiết lộ những thông tin cô muốn che giấu. Nhưng cô có nhiều lựa chọn đâu. Dù sớm dù muộn, cô vẫn phải ngủ và bắt mình thức chỉ khiến sức khỏe tệ hơn.
+</p>
+
+<p>
+ Thế là cô ngủ. Nhưng giấc ngủ không sâu và cô vẫn thấy mệt khi tỉnh dậy.
+</p>
+
+<p>
+ Một tiếng bùm khiến cô giật mình.
+</p>
+
+<p>
+ Ở đâu đó phía trên và đằng sau, cô nghe có tiếng mở then cửa và tiếng cọt kẹt của cánh cửa mở ra.
+</p>
+
+<p>
+ Nhịp tim của cô tăng lên. Cô đoán một ngày đã qua từ lúc tỉnh dậy. Cô khát tới khô cô, lưỡi dính lên vòm hongj và toàn bộ cơ thể đau nhừ tử vì nằm một chỗ quá lâu.
+</p>
+
+<p>
+ Tiếng chân đi xuống cầu thang. Tiếng bốt mềm đi trên đá. Dừng lại. Tiếng kim loại leng keng? Chìa khóa? Dao? Hay cái gì đó kinh khủng hơn?... Rồi tiếng bước chân tiếp tục. Giờ họ đang tới gần cô. Gần hơn... gần hơn.
+</p>
+
+<p>
+ Cô thấy một gã đàn ông béo tốt mặc áo trấn thủ len xám mang theo một đĩa thức ăn: bơ, bánh mỳ, thịt,, rượu và nước. Hắn dừng lại và đặt đĩa lên bệ tường rồi quay người tiến tới chỗ cô với sải chân ngắn, nhanh và chuẩn xác. Khá thanh lịch.
+</p>
+
+<p>
+ Gã ta thở khò khè dựa vào tấm ván mà nhìn cô. Đầu hắn giống hình quả bầu: phình trên phình dưới và tóp giữa. Hắn ta mày râu nhẵn nhụi tới mức gần như hói, trờ chút tóc đen, cắt ngắn. TRán gã sáng bóng, cái má nần nẫn thịt hồng hào còn môi xám như màu áo trấn thủ. Ánh mắt gã chẳng có gì đặc biệt: nâu híp.
+</p>
+
+<p>
+ Hắc tặc lưỡi và cô thấy răng hắn đua ra như bàn cào khiến hắn hắn hơi vổ.
+</p>
+
+<p>
+ Hơi thở ấm và ấm ướt của hắn hơi mùi gan và tỏi. Cô thấy buồn nôn.
+</p>
+
+<p>
+ Cô thừa biết mình đang trong tình trạng không một mảnh vải che thân. Cô cảm thấy mình không có sức chống cự giống như một thứ đồ chơi hay thú cưng bày ra đó. GIận dữ và mỉa mai khiến cô nóng má.
+</p>
+
+<p>
+ Không đợi hắn nói ra, cô cố nói, hỏi lấy nước nhưng cô họng cô khô cháy; cô chỉ có thể kêu trong họng.
+</p>
+
+<p>
+ Gã mặt đồ xám tặc lưỡi và tháo dây xích dưới sự ngạc nhiên của cô.
+</p>
+
+<p>
+ Khi vừa được thả ra, cô ngồi thẳng dậy, dùng tay phải như một lưỡi dao đánh vào cổ gã.
+</p>
+
+<p>
+ Hắn tóm lấy cổ tay cô dường như chẳng tốn sức mấy. Cô gầm gừ và dùng ngón tay kia chọc vào mắt gã.
+</p>
+
+<p>
+ Hắn lại tóm cổ tay cô. Cô giằng ra nhưng hắn nắm quá chặt ; cổ tay cô như thể bị giam trong đá.
+</p>
+
+<p>
+ Cô thất vọng ngả người về đằng trước và cắn vào tay hắn. Máu ngập trong mồm cô có mùi mằn mặn và mùi đồng. Cô ngưng thở nhưng vẫn cắn sâu xuống mặc cho máu chảy ra dưới môi. GIữa răng và lưỡi, cô cảm nhận được cơ bắp của gã căng ra xẹp xuống như hàng trăm con rắn đang tìm đường thoát.
+</p>
+
+<p>
+ Ngoài ra, hắn không phản ứng gì.
+</p>
+
+<p>
+ Cuối cùng, cô thả tay hắn ra và nhổ máu vào mặt hắn.
+</p>
+
+<p>
+ Kể cả lúc đó gã vẫn không tỏ thái độ, thậm chí chẳng chớp mắt hay tỏ ra đau hay tức giận.
+</p>
+
+<p>
+ Cô giằng tay ra lần nữa rồi quăng chân và hông sang đã vào bụng hắn.
+</p>
+
+<p>
+ Trước khi cô kịp đá trúng đích, hắn thả tay trái cô ra và tát mạnh vào mặt cô.
+</p>
+
+<p>
+ Cô nổ đom đóm mắt và sự bùng bổ im lặng dường như bùng phát. Mặt cô lệch sang một tên, răng nghiến ken két và cơn đau chạy dọc sống lưng lên tới sọ.
+</p>
+
+<p>
+ Khi nhìn rõ, cô ngồi nhìn chăm chăm gã nhưng không định tấn công thêm lần nữa. Cô hiểu mạng sống của cô nằm trong tay gã... Cô hiểu cô cần tìm thứ gì đó cắt cổ họng hắn hoặc đâm vào mắt hắn nếu muốn thắng hắn.Hắn thả tay kia của cô ra và lấy từ trong áo ra một chiếc khăn tay trắng. Hắn lau vết máu và nước bọt trên mặt hắn. Sau đó, hắn buộc khăn tay quanh cánh tay và dùng hàm răng vổ giữ một đầu vài (bẩn)
+</p>
+
+<p>
+ Cô giật lùi khi hắn vươn tay ra cầm lấy chân cô bằng đôi tay thô kệch. Hắn cái còng xám ra và chân cô chạm đất. Cô như một con búp bê hắn nắm trên tay.
+</p>
+
+<p>
+ Hắn nhấc bổng cô lên. Lần này, chân cô chạm đất. Hắn giúp cô tới một chiếc cửa nhỏ cô không thể thấy khi nằm. Bên cạnh đó là một cầu thang ngắn dẫn tới căn phòng thứ hai rộng rãi hơn – cùng cánh cửa gã cai ngục vừa bước vào. Ở giữa phòng có một khung sắt đóng chặt nhưng đằng sau nó cô thoáng thấy một bức tranh theo treo trên bức tường đá nhẵn nhụi.
+</p>
+
+<p>
+ Hắn đẩy cửa mở và dẫn cô vào một căn phòng bí mật hẹp. Cô an tâm vì hắn bỏ cô một mình. Cô tìm trong căn phòng xem có gì dung được làm vũ khí hay để trốn thoát, nhưng chung quanh cô chỉ có bụi, mùn cưa và vệt máu khô.
+</p>
+
+<p>
+ Thế cô đành làm những gì cần làm và sau khi đi ra khỏi căn phòng, gã đồ xám bóng nhẫy mồ hôi nắm tay cô dẫn về phiến đá xích.
+</p>
+
+<p>
+ Khi tới gần, cô bắt đầu đấm đá giãy giụa; cô thà bị đau còn hơn để hắn xích cô lại. Nhưng cô không thể nào khiến hắn dừng lại hay chậm bước. Hắn như sắt thép dưới những cú đấm đá của cô.
+</p>
+
+<p>
+ Hắn xử lý cô dễ dàng như với một đứa bé, hắn nhấc cô đặt tên tấm đá, đè vai cô xuống, xích chân tay cô lại. Cuối cùng, hắn khóa thắt lung trên đầu cô để giữ cô nằm yên nhưng không bị đau.
+</p>
+
+<p>
+ CÔ mong hắn sẽ đi ăn trưa – hoặc tối hay gì cũng được – nhưng hắn lại mang tới cho cô và đưa cô uống cốc rượu pha nước.
+</p>
+
+<p>
+ Cô khó lòng uống khi nằm ngửa vì thế cô phải nuốt thật nhanh. Cảm giác rượu trôi xuống họng thật dễ chịu và mát.
+</p>
+
+<p>
+ Khi cốc rượu đã hết, gã đặt nó sang một bên và cắt bánh mì và bơ rồi giơ trước mặt cô.
+</p>
+
+<p>
+ “Cái gì…” cô nói, giọng nói cuối cùng cũng trở lại. “Tên anh là gì.”
+</p>
+
+<p>
+ Gã nhìn cô vô cảm. Cái trán dô của hắn sang bóng dưới ngọn đèn không dùng lửa.
+</p>
+
+<p>
+ Hắn đẩy bánh mỳ và pho mát trước mặt cô.
+</p>
+
+<p>
+ “Anh là ai?... Đây là Urû’baen sao? Anh cũng là tù nhân à? CHúng ta có thể giúp nhau. Galbatorix không thể biết tất cả. Chúng ta có thể cùng tìm cách trốn. Tôi thề là dù chuyện này có vẻ không tưởng nhưng chúng ta có thể làm được.” Cô nói nhỏ và bình tĩnh, hy vọng gã sẽ đồng cảm hay hứng thú.
+</p>
+
+<p>
+ Cô biết cô có khả năng thuyết phục người khác – hàng giờ đại diện của Varden thương lượng đã chứng minh năng lực của cô – nhưng dường như từ ngữ của cô chẳng ảnh hưởng gì tới gã. Ngoại trừ thở, gã như người chết rồi khi chỉ đưa đó chìa bánh mỳ pho mát ra. Cô bỗng nghĩ có khả năng hắn điếc nhưng nhanh chóng loại bỏ vì vừa rồi hắn nghe thấy cô xin nước.
+</p>
+
+<p>
+ Cô nói hết nước hết cái và khi dừng lại – để tìm cách nói khác – gã đặt bơ và bánh mỳ lên môi cô và giữ nguyên đó. CÔ tức giận buộc hắn bỏ đi, nhưng tay hắn không buông, gã tiếp tục nhìn vào cô bằng vẻ lãnh cảm, vô tình như cũ.
+</p>
+
+<p>
+ Cô dựng tóc gáy khi nhận ra gã không bị ảnh hưởng; lời nói của cô không là gì với gã. Cô sẽ hiểu nếu gã ghét cô hoặc nếu hắn thích tra tấn cô, hoặc hắn là nô lệ vâng lệnh Galbatorix, nhưng dường như đều không đúng. Hắn khác biệt, thiếu những cảm xúc nhỏ nhất. Cô không nghi ngờ gì rằng hắn sẽ giết cô nếu muốn, như khi một ngươi di chết một con kiến.
+</p>
+
+<p>
+ Cô thầm chửi rủa, mở miệng và để hắn đặt bánh mỳ pho mát lên đầu lưỡi, dù thực tâm cô muốn cắt đứt ngón tay hắn.
+</p>
+
+<p>
+ Hắn cho cô ăn. Như một đứa bé. Hắn dùng tay bón thức ăn cẩn thận như thể miệng cô là một khối cầu mỏng manh dễ vỡ.
+</p>
+
+<p>
+ Một cảm xúc chôn vùi sâu bên trong trào dâng. Cô là lãnh tụ tối cao của đội quân đồng minh lớn nhất trong lịch sử Alagaësia. Nhưng cô là con gái cha cô. Cô đã sống trong cái nóng, cái bụi của Surda, giữa những tiếng rao hàng của lái buôn trong những khu chợ đông đúc. Cô chỉ là thế. Coi không được phép tự kiêu, không được gục ngã.
+</p>
+
+<p>
+ Nhưng cô ghét gã. Cô ghét mình bị bón ăn trong khi cô tự mình ăn được. Cô ghét rằng Galbatorix, hoặc ai đang quan sát cô, đang cố hạ nhục nhân phẩm của cô. Và cô ghét rằng, ở một mức độ nào đó, họ đã thành công.
+</p>
+
+<p>
+ Cô quyết định rằng mình sẽ giết gã. Nếu cô còn muốn cái gì trong đời thì đó là mạng sống của gã cai ngục. Ngoài trốn thoát ra, không còn gì có thể cho cô sự hài lòng tương đương. DÙ sao mình cũng phải tìm được cách.
+</p>
+
+<p>
+ Cô hài lòng và ăn hết phần còn lại.
+</p>
+
+<p>
+ Khi cô ăn xong, gã cầm cái khay rời đi.
+</p>
+
+<p>
+ Cô nghe tiếng bước chân hắn tới cánh cửa, đóng cửa và cài then ra đi. Sau đó tiếng bước chân xa dần.
+</p>
+
+<p>
+ Một lần nữa cô lại một mình, chờ đợi và tìm cách giết người.
+</p>
+
+<p>
+ Cô lại mất một lúc nhìn những đường kẻ trong hoa văn xem nó kết thúc và bắt đầu từ đâu. Cô chonj đường kẻ màu xanh lơ; màu tượng trưng cho con người cô không dám nghĩ tới.
+</p>
+
+<p>
+ Sau đó, cô chán và với ý muốn trả thù, cô nhắm mắt lại và ngủ lơ mơ khoảng vài giờ, với những cơn ác mộng ngược đời.
+</p>
+
+<p>
+ Khi gã đàn ông mặc đồ xám quay lại, cô gần như mừng vì gặp gã. Cô khinh thường bản thân vì cảm xúc này, coi đó là một điểm yếu.
+</p>
+
+<p>
+ Cô không chắc mình đã đợi bao lâu – sao biết chắc khi không ai nói cho biết – nhưng cô biết hắn tới sớm hơn lần trước. Nhưng, chờ đợi vẫn dài dằng dặc và cô sợ rằng cô bị bỏ lại một mình – nhưng chắc chắn không phải không ai để ý. Cô ghét khi mình mừng vì gã tới thăm cô thường xuyên hơn đã nghĩ. Nằm trên một phiến đá phẳng đã đủ đau đớn rồi, đừng nói là còn không được giao tiếp với bất kỳ sinh vật sống nào – kể cả một kẻ bị thịt và đáng ghét như gã cai ngục này.
+</p>
+
+<p>
+ Khi gã mở khóa, cô thấy vết thương trên tay hắn đã lành, da hẵn mịn và hồng như da lợn sữa.
+</p>
+
+<p>
+ Cô kiềm chế không đánh gã nhưng trên đường tới phòng nhỏ, cô giả vờ bị choáng ngã, hòng tới gần đĩa thức ăn cướp con dao nhỏ dùng để cắt thức ăn. Nhưng đĩa quá xa, gã quá nặng cứ lôi cô xềnh xệch khi không biết ý định của cô. Kế hoạch thất bại và cô buộc mình phải bình tĩnh trong suốt quá trình gã chăm sóc cô; cô cần thuyết phục gã rằng cô đã từ bỏ và hắn sẽ lơi là hoặc may mắn hơn, trở nên bất cẩn.
+</p>
+
+<p>
+ Trong khi gã cho cô ăn, cô quan sát móng tay gã. Lúc trước cô quá tực giận không để ý, nhưng giờ khi bình tĩnh hơn, cô thấy nó khác tường.
+</p>
+
+<p>
+ MÓng tay hắn dày và khá cong. Chúng nằm sâu trong da và phần da thừa trên móng lớn và rộng. MÓng tay hắn không giống người hay người lùn nào cô từng gặp.
+</p>
+
+<p>
+ Cô gặp họ lúc nào nhỉ?... Cô không nhớ.
+</p>
+
+<p>
+ Hắn chăm sóc móng khá cẩn thân. Chăm sóc theo cô là một từ miêu tả đúng, vì móng tay hắn như những cây hoa hiếm được người làm vườn quan tâm hàng giờ liền. Tay hắn không hề bị xước móng rô, móng tay cắt gọn gàng – không quá dài không quá ngắn – và được giữa gọn. Phần móng tay hắn bóng như sứ, lớp da xung quanh như thể bôi dầu hoặc bơ.
+</p>
+
+<p>
+ Trừ các thần tiên, cô chưa thấy gã đàn ông còn trai nào chăm sóc móng kỹ càng tới mức này.
+</p>
+
+<p>
+ Thần tiên ư? Cô bỏ qua và phát bực với chính mình. Cô có biết thần tiên nào đâu.
+</p>
+
+<p>
+ Móng tay là một điều bí ẩn; một thứ tạo hóa ban tặng dễ hiệu như kỳ lạ; một bí ẩn cô muốn khám phá, dù tốn công vô ích.
+</p>
+
+<p>
+ Cô không biết ai chăm sóc móng. Chính hắn sao? Hắn khá khó chiều và cô không tưởng tưởng nổi có một người vợ, con gái hay người hầu nào có thể gần gũi hắn tới mức giúp hắn chăm sóc cả ngón tay. Tất nhiên, cô nhận thấy cô có thể nhầm. Rất nhiều những thương binh mang vết sẹo chiến tranh – những người lầm lì ít nói dường như tình yêu duy nhất đời chỉ là rượu, gái gú và chiến tranh – lại khiến cô ngạc nhiên vì tích cách trái ngược với vẻ ngoài: thích khắc gỗ, nhớ những bài thơ tĩnh lãng mạn hay làm mọi điều vì gia đình để giúp họ sống yên ổn khỏi phần còn lại của thế giới. Cô phải mất rất nhiều năm mới biết Jör—
+</p>
+
+<p>
+ Cô quên ngay đi trước khi nghĩ xa hơn.
+</p>
+
+<p>
+ Lúc nào cũng vậy, trong đầu cô luôn vang lên câu hỏi: vì sao? Cô muốn được biết, kể cả khi đề tài đó là móng tay.
+</p>
+
+<p>
+ Nếu bộ móng tay này là sản phẩm của ai đó, thì họ hoặc là vì tình yêu hoặc vì sợ hãi mà giúp. Nhưng cô vẫn thấy có gì đó sai.
+</p>
+
+<p>
+ Nếu, chính gã chăm sóc móng thì nghe còn có lý. Có thể chăm sóc móng là cách gã kiểm soát cuộc đời không còn của gã. Hoặc có thể gã thấy đó là phần cơ thể đẹp duy nhất. Hoặc cũng có thể do thói quen thôi.
+</p>
+
+<p>
+ Dù thế nào đi nữa vẫn có một sự thực rằng một ai đó đã chăm sóc, bôi dầu, bơ cho móng tay gã không hề lơ đễnh chút nào.
+</p>
+
+<p>
+ Cô tiếp tục ngẫm nghĩ trong khi ăn. Thi thoảng, cô ngước lên nhìn khuôn mặt nặng bì bì của gã tìm một vài dấu hiệu, nhưng không thành công.
+</p>
+
+<p>
+ Sau khi đã cho cô ăn xong miếng bánh mỳ cuối cùng, gã bước khỏi phiến đá, cần cái đĩa và đi ra.
+</p>
+
+<p>
+ Cô nhau và nuốt miếng bánh mì nhanh nhất có thể mà không cần thở; sau đó giọng cô khàn khàn cất lên vì lâu không nói, “MÓng tay anh rất đẹp. Chúng rất...bóng.”
+</p>
+
+<p>
+ Gã dừng bước và cái đầu to, lù đù của gã quay lại nhìn cô. Trong một chốc, cô nghĩ gã sẽ lại đánh cô nhưng rồi đôi môi xám xịt của hắn mở ra thành một nụ cười, nhe hết hai hàm răng trên và dưới.
+</p>
+
+<p>
+ Cô kiềm chế cơn rùng mình; gã như thể định cắn đứt đầu một con gà.
+</p>
+
+<p>
+ Sau đó, vẫn với cảm xúc không bình thường đó, gã đi ra khỏi tầm nhìn cuả cô, và vài giây sau, cô nghe có tiếng cửa mở ra và đóng lại.
+</p>
+
+<p>
+ Nụ cười nở trên môi cô. Tự hào và thích nịnh bợ là những điểm yếu cô có thể khai thác. Nếu cô chỉ giỏi một chuyện thì đó là bắt người khác phục tùng ý chí của mình. Gã đã chìa cho cô một bàn tay – dù chỉ là đầu ngón tay, hay đúng hơn bằng cái móng tay – thế là đủ. Giờ cô có thể trèo lên.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-041.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-043.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

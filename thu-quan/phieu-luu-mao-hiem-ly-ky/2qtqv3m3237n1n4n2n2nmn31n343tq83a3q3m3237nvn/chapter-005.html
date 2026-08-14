@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 5 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 5</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-004.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-006.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Chỉ qua một đêm, khuôn viên trường đại học đầy ắp các áp phích, băng rôn của các công ty lớn thông báo tuyên truyền tuyển dụng công việc. Nhan Hiểu Thần và các chị em cùng phòng đến buổi tuyên truyền của công ty Unilever, có thể dùng bốn từ “biển người tấp nập” để hình dung sân trường lúc này, nhiều người chen chân đứng đợi, lâu lâu lại nghe thông báo từ loa truyền xuống, mặc dù đang là mùa đông, nhưng bọn Nhan Hiểu Thần ai nấy đều đổ mồ hôi.
+</p>
+
+<p>
+ Lúc đi, bốn người nói nói cười cười, vui vẻ hớn hở, lúc về, ai cũng đều buồn bã, trầm mặc. Tương lai phía trước quả thật rất mù mịt, giờ phút này mọi thứ đều trở thành áp lực.
+</p>
+
+<p>
+ Ngụy Đồng hỏi: “Trường chúng ta có tỷ lệ tìm được việc làm sau khi tốt nghiệp là bao nhiêu nhỉ? Hy vọng là 100%.” Ngô Thiến Thiến nói: “Muốn tìm được một công việc thì không khó, lương một hai chục ngàn đồng cũng là công việc, mà một hai ngàn đồng cũng là công việc, mình nghe một đồng hương nói, nếu mức lương thấp hơn 6000, cuộc sống sẽ rất vất vả, có lúc đau bụng muốn chết luôn mà không dám kêu xe đi khám, nói gì đến việc thuê nhà, mua xe, khỏi phải mơ!
+</p>
+
+<p>
+ Mọi người im lặng không nói gì, Ngô Thiến Thiến đột nhiên nói: “Mình muốn lấy chồng giàu!”
+</p>
+
+<p>
+ Ngụy Đồng nói: “Mình muốn lấy hoàng tử! Hoàng tử hói đầu cũng lấy luôn!”
+</p>
+
+<p>
+ Câu nói của Ngụy Đồng là có liên quan đến một chuyện trước đây, lúc hoàng tử Anh Quốc William kết hôn, giới truyền thông đưa tin khắp nơi, Lưu Hân Huy cùng Ngô Thiến Thiến đã cảm khái: “Ôi, đối với tất cả các cô bé lọ lem mà nói, trên đời này đã mất đi một hoàng tử tốt!” Ngụy đồng kinh thường nói: “Hoàng từ hói đầu, có cho cũng không thèm!”
+</p>
+
+<p>
+ Xưa nay vốn luôn đối lập, vậy mà Lưu Hân Huy lại khoa trương ôm lấy Ngụy Đồng, giả bộ dụi dụi đôi mắt chẳng có một giọt nước mắt nào, nức nở nói: “Chị cả, mình thật quá thất vọng, không ngờ cậu lại đi hạ yêu cầu của cậu xuống thấp như vậy!” Bốn người không nhịn được, cười hi hi ha ha, bầu không khí dể chịu đi một chút.
+</p>
+
+<p>
+ Nhan Hiểu Thần hỏi: “Mình định cuối tuần này đi mua đồ mới để dành phỏng vấn xin việc, có ai muốn đi với mình không?” Lưu Hân Huy kinh ngạc nói: “Sao đến giờ cậu mới đi mua? Lúc nghỉ hè, mẹ mình đã mua cho mình rồi, mẹ cậu không mua cho cậu à?”
+</p>
+
+<p>
+ Ngô Thiến Thiến nói: “Nhân lúc có đợt giảm giá, mình đi dạo trung tâm mua sắm đã tiện thể mua rồi.”
+</p>
+
+<p>
+ Ngụy Đồng nói: “Chị họ của mình có hai bộ mặc không vừa liền quăng qua cho mình, nên tạm thời không cần mua.”
+</p>
+
+<p>
+ “Ừ, mình đi một mình vậy!”
+</p>
+
+<p>
+ Học đại học ba năm, Nhan Hiểu Thần đã dùng quá nhiều thời gian để đi làm thêm, mỗi một khoản tiền đều tính toán chi dùng, có hoạt động gì phải tiêu tiền cô đều cố gắng không tham gia, cho dù chỉ là ra ngoài dạo chơi thôi, cô cũng không muốn đi, thử hỏi có nơi nào mà không dùng đến tiền? Lúc đầu, có người còn gọi cô đi cùng, dần dà, ai cũng có bạn của mình, cho nên chẳng ai tìm cô nữa. Nhan Hiểu Thần ở trong lớp giống như ngươi vô hình vậy, mọi người đối với cô không có ấn tượng gì, cô đối với mọi người cũng chẳng thân quen, chỉ có những người bạn cùng phòng ba năm sống chung đối với Nhan Hiểu Thần mới là thân nhất, nhưng bọn họ cũng có khoảng cách nhất định, những dịp đại loại như đi dạo, ăn cơm, tiêu tiền tuyệt nhiên sẽ không tìm đến cô.
+</p>
+
+<p>
+ Ba năm sống tại thành phố Thượng Hải, Nhan Hiểu Thần còn chưa có dịp đi đến trung tâm mua sắm, lần đầu tiên đi mua mà còn phải mua đồ rất quan trọng, cô muốn đầu tư một bộ có chất lượng thật tốt, nhưng hoàn toàn chẳng biết nên mua ở đâu.
+</p>
+
+<p>
+ Đang mò mẫm tra cứu trên mạng tìm chổ mua đồ tốt thì di động rung lên vài cái.
+</p>
+
+<p>
+ Là tin nhắn của Thẩm Hầu: “Cậu đang ở đâu vậy?”
+</p>
+
+<p>
+ “Mình ở phòng vi tính, còn cậu?”
+</p>
+
+<p>
+ “Bài tập pháp luật kinh tế mình không có thời gian làm, cậu giúp mình nhé?”
+</p>
+
+<p>
+ “Được.”
+</p>
+
+<p>
+ “Cảm ơn cậu, sẽ mời cậu ăn cơm sau.”
+</p>
+
+<p>
+ Nhan Hiểu Thần ngẫm nghĩ, rồi nhắn lại: “Mình muốn có đề nghị khác, được không?
+</p>
+
+<p>
+ “Cậu nói đi!”
+</p>
+
+<p>
+ “Mình muốn mua một bộ quần áo mới để đi phỏng vấn, cậu có thể đi mua với mình không?”
+</p>
+
+<p>
+ “Được thôi! Khi nào thì đi? Đừng đi cuối tuần, đông người lắm.”
+</p>
+
+<p>
+ “Ngày mai hai chúng ta đều không có tiết, ngày mai đi nhé?”
+</p>
+
+<p>
+ “Được.”
+</p>
+
+<p>
+ “Mình định mua trong vòng 500 đồng thôi, tìm chổ nào rẻ rẻ ấy.”
+</p>
+
+<p>
+ “Cậu cả ngày vội vàng cực khổ kiếm tiền, tiền đi đâu hết rồi?”
+</p>
+
+<p>
+ Nhan Hiểu Thần không biết trả lời thế nào, ngẩn người nhìn màn hình vi tính, chần chừ chưa trả lời tin nhắn của Thẩm Hầu.
+</p>
+
+<p>
+ Một lát sau, Thẩm hầu nhắn thêm một tin nữa: “Nhà cậu gặp chuyện gì khó khăn à?”
+</p>
+
+<p>
+ Nhan Hiểu Thần lập tức hồi âm: “Không có.”
+</p>
+
+<p>
+ “Thôi, mình không hỏi nữa. Ngày mai mười giờ mình đến tìm cậu.”
+</p>
+
+<p>
+ Buổi sáng, đúng 9 giờ 45, Nhan Hiểu Thần nhắn tin cho Thẩm Hầu: “Cậu đang ở đâu vậy? Mình đến đó nhé?”
+</p>
+
+<p>
+ Thẩm Hầu gọi điện trực tiếp cho cô, “Mình đang trên đường, có chút kẹt xe.”
+</p>
+
+<p>
+ “Cậu không ở trường học à?”
+</p>
+
+<p>
+ “Mấy ngày nay mình ở ngoài trường. Nửa tiếng nữa, cậu đến cổng phía Nam đợi mình.”
+</p>
+
+<p>
+ Nhan Hiểu Thần làm thêm bài tập một lúc, xem chừng gần đến giờ hẹn thì vội vàng rời khỏi ký túc xá.
+</p>
+
+<p>
+ Đến cổng phía Nam, nhìn một vòng xung quanh, không thấy Thẩm Hầu đâu, Nhan Hiểu Thần đang định nhắn tin cho hắn thì một chiếc xe chạy tới trước mặt cô, cửa kính xe trượt xuống, Thẩm Hầu ngồi trên xe, nhìn cô ngoắc ngoắc, “Lên xe.” Nhan Hiểu Thần ngẩn ngơ nhìn hắn.
+</p>
+
+<p>
+ Hắn thò người ra, kéo gọng kính mát trễ xuống mặt, liếc nhìn Nhan Hiểu Thần: “Sao vậy? Còn muốn mình xuống xe, thân chinh đến mở cửa mời cậu lên à?”
+</p>
+
+<p>
+ “Không phải.” Nhan Hiểu Thần vội vội vàng vàng lên xe, “Mình tưởng cậu đi xe buýt tới đây, xe này ở đâu ra vậy?” Cô và Thẩm Hầu là cùng quê ở tỉnh, không phải dân Thượng Hải, không thể nào mua xe ở đây được.
+</p>
+
+<p>
+ Thẩm Hầu vừa đánh tay lái quay đầu xe, vừa nói: “Mình mượn của bạn.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn người đi đường qua cửa xe, nhẹ giọng nói: “Không chừng ngày mai sẽ có người nói Nhan Hiểu Thần tiếp cận với đàn ông có tiền”
+</p>
+
+<p>
+ Thẩm Hầu cười nhạo, “Cậu cũng đi để ý mấy lời nói đó à?”
+</p>
+
+<p>
+ Thái độ của hắn đột nhiên làm cho Nhan Hiểu Thần có chút dũng khí, hỏi hắn một câu mà từ lâu đã rất muốn hỏi, “Vậy cậu nghĩ lời vừa rồi có đúng không?”
+</p>
+
+<p>
+ “Bạn học bàn tán sau lưng cậu à?”
+</p>
+
+<p>
+ “Đúng vậy.”
+</p>
+
+<p>
+ “Mình có chính kiến riêng, làm sao tin lời của họ được?”
+</p>
+
+<p>
+ “Ý của cậu là cậu tin tưởng chính mình đến vậy à? Cậu nghĩ mình là loại người gì?”
+</p>
+
+<p>
+ “Là sinh viên giỏi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút thất vọng, rốt cuộc không biết chính mình muốn nghe được cái gì nữa.
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Vậy cậu nghĩ mình là người thế nào?”
+</p>
+
+<p>
+ “Mình không biết.”
+</p>
+
+<p>
+ “Không biết mà nói thích mình? Rốt cuộc cậu có hiểu cái gì gọi là yêu thích không vậy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần lập tức vừa ngượng vừa ấm ức, chỉ cảm thấy mặt nóng bừng. Tuy rằng cô đã thổ lộ với hắn, nhưng mà lúc đó là tin nhắn, là qua cái màn hình điện thoại, không phải là người thật việc thật ngồi đây!
+</p>
+
+<p>
+ Thẩm Hầu liếc mắt nhìn Nhan Hiểu Thần, có vẻ như hắn không nghĩ là tới tuổi này rồi, còn có người xấu hổ đến lỗ tai cũng đỏ bừng, hơn nữa, lại là người mà từ trước tới giờ làm cho hắn luôn hình dung ra một người máy không có cảm xúc có tên Nhan Hiểu Thần.
+</p>
+
+<p>
+ Hắn sửng sốt một chút, nhe răng vui sướng cười rộ lên, cực kỳ vui vẻ tiếp tục hỏi “Cậu thích mình ở điểm nào?”
+</p>
+
+<p>
+ Nhan Hiểu Thần quả thực muốn tìm cái gì đó thật to che cái mặt lại, “Cậu có thể đừng bàn đến vấn đề này nữa, được không vậy?”
+</p>
+
+<p>
+ “Không thể! Mau chóng trả lời mình! Cậu thích mình ở điểm nào?”
+</p>
+
+<p>
+ Nhan Hiểu Thần ấp úng nói: “Mình thật sự không biết, dù sao chính là cậu rất tốt, cậu nói chuyện làm việc, đều rất tốt!”
+</p>
+
+<p>
+ Thẩm Hầu có chút nóng bừng mặt, tim đập nhanh, nhưng tư thái vẫn rất tùy tiện, giọng nói vẫn rất lưu manh, “Vậy cậu thích mình từ khi nào? Lúc nào thì cảm thấy mình tốt?”
+</p>
+
+<p>
+ Nhan Hiểu Thần sửng sốt, dường như cô nhớ ra gì đó, mặt không còn đỏ nữa, mím chặt môi, quay đầu lặng lẽ nhìn ra ngoài cửa sổ.
+</p>
+
+<p>
+ Thẩm Hầu nhận thấy nét mặt Nhan Hiểu Thần cũng đã thay đổi, hắn không còn tươi cười nữa, sắc bén hỏi lại: “Miệng thì nói thích, vậy mà chính cậu còn không biết ngoài “rất tốt” ra, còn điểm gì nữa?”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn chằm chằm ngoài cửa sổ, nhìn dòng người và xe cộ như nước chảy không ngừng, chậm rãi nói: “Mình không biết, khả năng của mình chỉ có bấy nhiêu thôi, chỉ biết đối với cậu thật tốt.”
+</p>
+
+<p>
+ Suốt quảng đường còn lại, Thẩm Hầu và Nhan Hiểu Thần không nói chuyện nữa, hắm im lặng tập trung lái xe. Đến trung tâm mua sắm, Thẩm Hầu trực tiếp dẫn Nhan Hiểu Thần đến khu bán đồ dành cho công chức để tìm một bộ cho cô, Nhan Hiểu Thần vừa đi vừa nhìn ngắm khu mua sắm rộng lớn, có chút hoa mắt, không biết chọn từ đâu.
+</p>
+
+<p>
+ Thẩm Hầu nói: “Cậu không đặc biệt thích nhãn hiệu nào à? Nếu không để mình chọn giúp cậu.”
+</p>
+
+<p>
+ Nghe được hắn giúp cô chọn lựa, Nhan Hiểu Thần như trút được gánh nặng, “Không có, cậu quyết định dùm mình đi!”
+</p>
+
+<p>
+ Vì đi vào buổi sáng, trong giờ làm việc, nên trung tâm mua sắm rất ít người, Thẩm Hầu và Nhan Hiểu Thần đi đến một cửa hàng, hai nhân viên bán hàng chạy ra nhiệt tình chào đón, mời họ tự nhiên xem qua.
+</p>
+
+<p>
+ Thẩm Hầu chọn một bộ quần áo, bảo Nhan Hiểu Thần mặc thử. Cô chưa nhìn qua kiểu dáng đã ngó đến thẻ giá, là 999 đồng, cô nhìn Thẩm Hầu thì thầm nói: “Không được, giá siêu cao!”
+</p>
+
+<p>
+ Nhân viên bán hàng đi tới, tươi cười niềm nở nói: “Nếu các bạn thích, có thể mặc thử, tất cả hàng hóa đang giảm giá 50%, đến cuối tháng có đợt giảm giá đặc biệt nữa, tổng cộng là giảm giá hai lần.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghe qua, yên tâm phần nào, khách sáo nói: “Tôi muốn thử bộ này.”
+</p>
+
+<p>
+ Nhân viên bán hàng chọn cho Nhan Hiểu Thần  một chiếc áo sơ mi thật hợp, rồi dẫn cô đến phòng thử đồ.
+</p>
+
+<p>
+ Sau khi mặc xong, cô đi ra ngoài, là một bộ Tây phục tiêu chuẩn, vô cùng kín đáo, nhìn rất chuyên nghiệp. Nhan Hiểu Thần nghĩ sẽ cho Thẩm Hầu xem qua, nhưng không hiểu sao, cô lại cảm thấy ngượng ngùng, không dám nhìn thẳng hắn, trực tiếp đi tới trước gương.
+</p>
+
+<p>
+ Nhân viên bán hàng đi đến giúp cô sửa sang lại quần áo, khen ngợi nói: “Rất đẹp, rất vừa với bạn.”
+</p>
+
+<p>
+ Bộ Tây phục này khéo thu gọn phần eo, nhìn rất vừa mắt, có lẽ thợ may là một người rất tinh tường tỉ mỉ, Nhan Hiểu Thần bản thân cũng cảm thấy rất thích.
+</p>
+
+<p>
+ Cô quay sang hỏi Thẩm Hầu: “Cậu thấy thế nào?”
+</p>
+
+<p>
+ Hắn nhìn cô từ đầu đến chân một lúc, chưa trả lời thế nào, đã đưa thêm cho cô hai bộ khác, “Thử thêm hai bộ này nữa xem sao.”
+</p>
+
+<p>
+ Nhan Hiểu Thần đang thử quần áo, thì có một chị gái tóc dài khoảng 25-26 tuổi đi đến, nhìn cô vài lần, cầm một bộ cô đang thử lên, xem qua thẻ giá. Một nhân viên thì đang tiếp điện thoại, một nhân viên khác thì đang cúi đầu chỉnh trang lại y phục cho Nhan Hiểu Thần nên nhất thời không ai tiếp đón chị ta, Nhan Hiểu Thần cười nói: “Đang giảm giá đó chị.”
+</p>
+
+<p>
+ Chị ta lập tức cười, “Thật sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần chỉ chỉ nhân viên bán hàng, cô ta đứng lên nhìn thấy vị khách kia, giống như có một chút choáng váng, trong lúc nhất thời không nói chuyện, ngẩn ngơ đứng nhìn.
+</p>
+
+<p>
+ Thẩm Hầu ho khan một tiếng, cô ta liền nói: “Đúng, đang giảm giá tất cả.”
+</p>
+
+<p>
+ Chị gái tóc dài kia lập tức đi chọn quần áo, vừa lấy đồ, vừa lấy điện thoại di động ra, gọi cho bạn bè.
+</p>
+
+<p>
+ “Lần trước mày thích một bộ quần áo phải không? Đang giảm giá đấy! Giảm giá hết, nhanh đến mua đi…Cái gì? Không tin là đang giảm giá à? Tao đang ở đó đây này…Đúng rồi, ngay tại đó luôn! Phải! Phải! Mày mau mau gửi tin nhắn cho mấy đứa khác biết đi, kêu tụi nó nhanh qua đây mua, hết bây giờ đó!”
+</p>
+
+<p>
+ Cô nhân viên bán hàng mặt biến sắc, Nhan Hiểu Thần hỏi: “Cô không sao chứ?”
+</p>
+
+<p>
+ Cô ta miễn cưỡng trả lời, “Không có gì, tôi hay bị tuột huyết áp, có chút choáng váng. Cô chọn được bộ nào rồi?” Tổng cộng Nhan Hiểu Thần thử hết bốn bộ, ưng ý nhất bộ thứ ba, đó cũng là bộ được giảm giá đặc biệt, giảm đến 4 lần so với giá ban đầu.
+</p>
+
+<p>
+ Cô nói với Thẩm Hầu: “Bộ này được không?”
+</p>
+
+<p>
+ Thẩm Hầu nói: “Được.”
+</p>
+
+<p>
+ Lúc tính tiền Nhan Hiểu Thần đem áo sơ mi trả lại, “Tôi không cần sơ mi.”
+</p>
+
+<p>
+ Nhân viên bán hàng vừa đem sơ mi đi đến giá treo thì nhận được chuông báo có tin nhắn, cô ta xem qua một lúc, cười quay đầu lại, nói với Nhan Hiểu Thần: “Áo sơ mi này bạn mặc rất hợp, thật sự không cần sao? Áo này cũng được giảm giá đặc biệt đấy, giảm gấp đôi!” Cô ta đánh máy tính, “Là giảm còn 39 đồng.”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút do dự, chi tiêu quá 30 đồng rồi, nhưng hôm nay nhờ Thẩm Hầu mà tiết kiệm được tiền đi lại, chắc không đến nỗi nào.
+</p>
+
+<p>
+ Vẫn còn phân vân, Nhan Hiểu Thần quay lại hỏi Thẩm Hầu, “Cậu cảm thấy thế nào? Mình có cần cái áo sơ mi đó không?”
+</p>
+
+<p>
+ Thẩm Hầu đang cắm cúi chơi điện thoại, trả lời qua loa: “Mình không phải tủ đồ của cậu! Tự cậu quyết định đi!”
+</p>
+
+<p>
+ Cô nhân viên bán hàng thuyết phục Nhan Hiểu Thần, “Bạn xem, cái áo này chất liệu rất tốt, giá cả lại rất phải chăng, bạn mua đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghĩ bỏ qua thì thật uổng nên vội nói: “Vậy tôi lấy!”
+</p>
+
+<p>
+ Chị gái tóc dài ôm một đống quần áo đi ra từ phòng thử đồ, vui vẻ hớn hở nói với Nhan Hiểu Thần: “Giá rất là hời, sao em không mua thêm vài bộ?”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Hiện tại em chỉ cần một bộ.”
+</p>
+
+<p>
+ Từ trong cửa hàng, nhân viên bán hàng đem túi đồ đã xếp gọn cẩn thận đưa cho Nhan Hiểu Thần, cô cầm lấy túi đồ, cùng Thẩm Hầu đi ra đến cửa thì gặp 3 người bạn của chị gái tóc dài vừa chạy tới, nhân viên bán hàng nói: “Hoan nghênh quý khách!”, Nhan Hiểu Thần cảm thấy biểu hiện của cô ta rất kỳ lạ, mặt mếu như muốn khóc vậy.
+</p>
+
+<p>
+ Thẩm Hầu nói với Nhan Hiểu Thần: “Cậu có muốn đi xem thêm một chút không?”
+</p>
+
+<p>
+ “Không cần đâu.”
+</p>
+
+<p>
+ Hắn lấy xe, đưa Nhan Hiểu Thần về trường học.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Hôm nay rất cảm ơn cậu!”
+</p>
+
+<p>
+ Thẩm Hầu đang muốn nói chuyện thì di động vang lên, hắn nhìn thoáng qua, không muốn bắt máy, nhưng mà nó cứ vang lên không ngừng, cuối cùng hắn cũng bắt lên nghe. Thẩm Hầu không nói tiếng nào, chỉ ậm ừ cho qua chuyện, càng về sau, hắn hết kiên nhẫn mới lên tiếng: “Được rồi, được rồi! Bao nhiêu cũng được, tính hết cho tôi đi!”
+</p>
+
+<p>
+ Thẩm Hầu cúp điện thoại, nói với Nhan Hiểu Thần: “Hai người bạn của mình tranh cãi chuyện tiền bạc, mình cũng bị kéo vào.”
+</p>
+
+<p>
+ “Có nghiêm trọng lắm không?”
+</p>
+
+<p>
+ Thẩm Hầu cười lắc đầu: “Không có gì! Chỉ là giúp họ hòa hoãn thôi mà.”
+</p>
+
+<p>
+ Nhan Hiểu Thần thấy hắn không lo lắng gì, nên cũng không tiện hỏi nhiều.
+</p>
+
+<p>
+ Trở lại trường thì đã hơn một giờ chiều, căng tin chẳng còn gì để ăn, ký túc xá đúng lúc lại không có ai ở nhà, chỉ cần kiếm cớ nói với dì gác cổng vài câu vậy là nam sinh có thể đi vào ký túc xá nữ.
+</p>
+
+<p>
+ Nhan Hiểu Thần dẫn Thẩm Hầu vào ký túc xá, “Mình nấu mì cho cậu ăn!”
+</p>
+
+<p>
+ “Được.”
+</p>
+
+<p>
+ Ngụy đồng có một cái nồi nấu điện nhỏ, bình thường mọi người trong phòng hay dùng nó để nấu mì, bây giờ trời đã trở lạnh, trong phòng bọn họ còn trữ lại mấy quả trứng gà với một ít rau xanh.
+</p>
+
+<p>
+ Nhan Hiểu Thần lấy ra một gói mì, đánh một quả trứng, thêm một ít rau xanh, vậy là có một tô mì ngon lành bốc khói nghi ngút sau khi được lấy ra từ nồi điện.
+</p>
+
+<p>
+ Thẩm Hầu nếm một ngụm, “Thật là, con gái bọn cậu đúng là biết hành hạ, nhưng mà con trai bọn mình tự nguyện cho hành.” Bởi vì bếp điện hơi nhỏ, nên mỗi lần chỉ nấu được một gói mì, sau khi nấu cho Thẩm Hầu xong cô mới quay ra nấu cho mình, hắn vẫn chưa chịu ăn mà lại ngồi chờ. Nhan Hiểu Thần hỏi: “Sao cậu không ăn đi? Mì ăn liền để nguội ăn không ngon.”
+</p>
+
+<p>
+ “Mình chờ cậu ăn cùng luôn.”
+</p>
+
+<p>
+ Chỉ là một câu nói bình thường thôi nhưng Nhan Hiểu Thần lại cảm thấy trong lòng có cái gì đó cồn cào, tay nhất thời thiếu chính xác, gõ trứng mãi mà không vỡ.
+</p>
+
+<p>
+ Thẩm Hầu cười ha ha: “Cậu lại đỏ mặt! Ba năm học cùng với cậu, mình lần đầu phát hiện thì ra cậu dể đỏ mặt như vậy.”
+</p>
+
+<p>
+ Nhan Hiểu Thần tự giễu, “Tự mình cũng vừa phát hiện ra hôm nay thôi.”
+</p>
+
+<p>
+ Hai người ngồi trên ghế, nhìn chằm chằm vào nồi nấu điện, chờ mì chín. Trong không khí tràn ngập hương vị mì ăn liền, có một chút gì đó ấm áp. Nhan Hiểu Thần hơi sửng sốt, bao lâu rồi cô không có lại loại cảm giác này? Nếu tính kỹ, cùng lắm chỉ mới hơn ba năm, nhưng cô lại cảm thấy đã lâu lắm rồi, như cả một đời vậy.
+</p>
+
+<p>
+ “Mì chín rồi kìa.” Thẩm Hầm nhắc nhở Nhan Hiểu Thần.
+</p>
+
+<p>
+ Nhan Hiểu Thần loay hoay tắt điện, cười nói: “Được rồi! Ăn thôi!”
+</p>
+
+<p>
+ Ăn xong mì, Nhan Hiểu Thần đi rửa nồi và bát, Thẩm Hầu đến chổ bàn học của cô, xem qua kệ sách. Nhan Hiểu Thần gọt táo và chuối, bày lên khay có nắp đậy, mang ra cho hắn.
+</p>
+
+<p>
+ Thẩm Hầu tùy tiện lấy ra một quyển sách trong góc kệ, là cuốn “Đối diện với nỗi sợ hãi” của Lý Mạn, “Cậu đọc sách tâm lý à?”
+</p>
+
+<p>
+ “Xem qua cho biết thôi.”
+</p>
+
+<p>
+ Hắn nhét quyển sách trở lại, “Sách này có thể dạy người ta đối diện sợ hãi được sao?”
+</p>
+
+<p>
+ “Không thể.”
+</p>
+
+<p>
+ Thẩm Hầu ăn mấy miếng chuối, đột nhiên hỏi: “Cậu sợ hãi cái gì?”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút sững sốt, cô phát hiện ra hắn cố tình làm cho cô không chú tâm mà để lộ ra vấn đề của mình, nếu như không sợ hãi thì làm sao biết bộ sách đó không thể giải quyết nỗi sợ hãi?
+</p>
+
+<p>
+ Nhan Hiểu Thần cười nói: “Được! Nếu có cơ hội, chúng ta sẽ bàn đến việc giúp cậu ôn thi môn Pháp luật kinh tế nhé, mình đảm bảo cậu sẽ được 90 điểm.”
+</p>
+
+<p>
+ Thẩm Hầu biết cô lảng tránh vấn đề, cũng không hỏi nữa, cười nói: “Đáng tiếc người đó không phải là cậu, không phải dạng thông minh tài giỏi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần hỏi: “Nghe nói cậu muốn thi IELTS? Cậu định đi nước ngoài à?”
+</p>
+
+<p>
+ “Sao vậy? Không nỡ để mình đi à?”
+</p>
+
+<p>
+ “Không phải. Chỉ là tự nhiên nghĩ tới, muốn hỏi cậu sau khi tốt nghiệp định làm gì thôi.”
+</p>
+
+<p>
+ Thẩm Hầu nhìn cô chằm chằm, “Cậu nghiêm túc đấy chứ? Mình đi hay không đi, cậu cũng không nghĩ gì?”
+</p>
+
+<p>
+ “Mỗi người đều có con đường riêng của mình.” Cho dù Thẩm Hầu không đi nước ngoài, Nhan Hiểu Thần cũng không có hy vọng xa vời là cô và hắn có thể ở bên nhau, cho nên, chỉ cần hắn lựa chọn ra đi, cô cũng sẽ chân thành chúc phúc cho hắn.
+</p>
+
+<p>
+ Thẩm Hầu cúi đầu, ăn mấy miếng trái cây, thản nhiên nói: “Mẹ mình rất gia trưởng, muốn mình lúc nào cũng phải làm nở mày nở mặt gia đình, mình chán thấy cảnh bà ấy khóc lắm rồi, cho nên trước hết đi thi cái đã, sau đó từ từ mà tính.” Thẩm Hầu quay đầu lại, nhìn qua cánh cửa phòng ký túc xá đã khóa, cười nói: “Cậu biết rõ mà, mình học đại học không được tốt cho lắm, vì vậy bốn năm này đành phải dựa vào cậu thôi.”
+</p>
+
+<p>
+ Năm thứ nhất đại học, Nhan Hiểu Thần lần đầu tiên đến thành phố lớn, không quen với mọi thứ, chỉ biết đi dạy kèm để kiếm chút tiền sinh hoạt. Có lần cần gấp một số tiền lớn, không còn cách nào khác cô đã phải đi bán máu của mình, nhưng vẫn còn thiếu hơn 3000 đồng. Trong khi đó, Thẩm Hầu thì đang mê chơi World Of Warcraft, lười làm bài tập, lười viết luận văn. Một bên thì có nhu cầu cấp bách cần hổ trợ, một bên thì cần tiền gấp, cơ duyên hảo hợp, Nhan Hiểu Thần và Thẩm Hầu đã hình thành thỏa thuận, cô giúp hắn làm bài tập, viết luận văn, hắn sẽ trả cho cô một học kỳ là 4000 đồng.
+</p>
+
+<p>
+ Thẩm Hầu biết Nhan Hiểu Thần lấy giá hơi cao, yêu cầu đến 3500 đồng thì có hơi quá, nhưng khi thấy cô bạn ít nói này, ma xui quỷ khiến thế nào hắn lại đồng ý, không những vậy, còn chủ động trả 4000. Thẩm Hầu đã nói với Nhan Hiểu Thần một cách thờ ơ rằng: “Dù sao mình cũng muốn trả cho cậu, thêm có 500 đồng thôi, đỡ phải áy náy.” Hắn đưa 4000 đồng cho cô, cô lại xấu hổ đỏ mặt bừng bừng, không dám nhận. Hắn làm như không thấy, đem hết mớ tiền nhét vào tay cô, cố ý trêu chọc nói: “Cậu tên Nhan Hiểu Thần phải không? Đứng nhất ngành tài chính? Mình thật kiếm không lầm người!”
+</p>
+
+<p>
+ Nhan Hiểu Thần và Thẩm Hầu tuy rằng học cùng một khoa nhưng lại khác ngành. Cô là sinh viên học tự do, hắn cũng là sinh viên học tự do, hai người hoàn toàn không cùng xuất hiện, cho dù là phải đi học môn bắt buộc với cả khoa, nhưng toàn khoa đến hơn hai trăm người, làm sao có thể nhớ hết, thậm chí đến lúc tốt nghiệp có nhiều người còn chẳng nhớ tên nhau. Vốn dĩ, cuộc sống của hai người bọn họ là hai đường thẳng song song không bao giờ gặp nhau, nhưng do viết giùm bài tập, làm giùm luận văn mà Nhan Hiểu Thần dần dần bước vào tầm mắt của Thẩm Hầu. Khi hắn muốn làm bài tập, muốn nộp luận văn, muốn thi cuối kỳ, thì mượn tập chép, lấy tài liệu, ôn bài chung… Thẩm Hầu đều sẽ tìm đến Nhan Hiểu Thần, mà Nhan Hiểu Thần cũng chưa bao giờ từ chối. Cô chỉ lấy 4000 đồng của hắn lần đầu tiên thôi, sau này, dù là gì đi nữa cô cũng không muốn lấy tiền. Bởi vì Nhan Hiểu Thần không đòi tiền, Thẩm Hầu mới nghiêm túc tìm cô viết bài dùm, nghiêm túc học hành, nghiêm túc mượn bài tập, nghiêm túc qua lại, vô tình hay cố ý, biến thành Nhan Hiểu Thần giúp hắn nghiêm túc phụ đạo, Thẩm Hầu cũng dần dần nghiêm túc bỏ chơi game.
+</p>
+
+<p>
+ Thẩm Hầu nhìn Nhan Hiểu Thần: “Lần đó, cậu đã dùng công phu sư tử ngoạm hết của mình không ít tiền! Cậu nói đi, nếu lúc đó mình muốn làm quen với cậu thì cậu sẽ miễn phí chứ?
+</p>
+
+<p>
+ Nhan Hiểu Thần cười nhạt lắc đầu, số tiền kia thật sự là cần gấp để cứu mạng!
+</p>
+
+<p>
+ Hắn cầm lấy một cuốn sách, gõ lên đầu Nhan Hiểu Thần, “Cậu quả thật rất nhàm chán! Lời ngon ngọt sẽ không bao giờ nói ra!”
+</p>
+
+<p>
+ Nhan Hiểu Thần xoa xoa đầu vẫn chưa bị gì, không hiểu hỏi: “Mẹ cậu luôn hy vọng cậu ra nước ngoài học, vì sao không đơn giản khi cậu vừa tốt nghiệp phổ thông là cho đi luôn? Dể chọn ngành học, lại dể thi tuyển?”
+</p>
+
+<p>
+ Thẩm Hầu không chút do dự nói: “Có hai nguyên nhân. Mẹ mình chỉ có một đứa con là mình, khi sinh mình ra mẹ đã lớn tuổi, đã chịu không ít vất vả mới có được mình, cho nên lúc nào cũng lo lắng, không an tâm khi mình mới 19 tuổi mà cho ra nước ngoài. Còn một nguyên nhân cũng không kém phần quan trọng nữa đó là, lúc mình học cấp ba chỉ thích đi chơi game, có chút mê muội, trên tin tức lại đưa tin có đứa nhỏ kia, vì quá nhỏ mà đã đưa ra nước ngoài, nó liền học theo cái xấu, trở thành người xấu. Mẹ mình sợ mình tính tình chưa hình thành, cũng giống như đứa nhỏ kia, cũng học theo cái xấu, cũng trở thành người xấu, nên không dám cho đi.”
+</p>
+
+<p>
+ Điện thoại của Thẩm Hầu đột nhiên vang lên, hắn bắt máy nghe xong sau đó quay lại nói: “Mình phải đi rồi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần đưa hắn đến dưới lầu, “Hôm nay thật sự rất cảm ơn cậu.”
+</p>
+
+<p>
+ “Được rồi! Hôm nay cậu đã nói mấy lần rồi? Cậu không mệt nhưng mình mệt lắm!”Hắn không kiên nhẫn, phất phất tay, bước nhanh rời khỏi.
+</p>
+
+<p>
+ Nhan Hiểu Thần trở lại ký túc xá, ngồi trên ghế hắn vừa ngồi, cầm cái nĩa hắn vừa ăn, cảm thấy có những dư vị ngọt ngào ấm áp từng chút một quanh quẩn trái tim, một giây sau đó, nghĩ đến hắn phải đi ra nước ngoài, dư vị ấm áp ngọt ngào dường như vơi đi một nửa, rồi lại nghĩ đến, sau khi tốt nghiệp hắn sẽ dần dần đi ra khỏi thế giới của cô, sẽ không còn gặp nhau nữa, chút ấm áp ngọt ngào còn lại đều biến thành chua xót.
+</p>
+
+<p>
+ Nhan Hiểu Thần khẽ thở dài, lý trí tuy rằng biết rất rõ, nhưng cảm xúc lại là thứ không thể kiểm soát.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-004.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-006.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

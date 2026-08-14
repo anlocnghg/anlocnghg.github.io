@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 21 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 21</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-020.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-022.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ “Cảm giác có em thích chứ?” Roran hỏi Baldor khi họ sánh bước đi tới khu xay sát gần nhất trong ánh hừng đông.
+</p>
+
+<p>
+ “Không phải thích hay không thích. Ý tôi là, em tôi đâu có lớn gì. Trông như con mèo con ấy.” Baldor kìm cương khi con ngựa của cậu ta định xông ra đám cỏ ven đường. “Tôi thấy chuyện có em – dù là trai hay gái – sau một thời gian quá dài cứ nhột nhạt thế nào ấy.”
+</p>
+
+<p>
+ Roran gật đầu. Anh dịch mông trên lưng ngựa, nhìn lại sau đảm bảo sáu trăm năm mươi lính đang giữ đúng khoảng cách với anh. Khi tới khu xay sat, Roran xuống ngựa và buộc ngựa trước điểm thấp nhất của ba căn nhà. Một người lính đứng sau dắt lũ ngựa về trại.
+</p>
+
+<p>
+ Roran đi tới lạch sông và bước xuống cầu kênh. Sau đó anh đặt chân lên xà lan gần bờ nhất trong bốn cái đang nổi dập dềnh.
+</p>
+
+<p>
+ Những xà lan trong giống mấy mảng bè đơn sơ hơn là một con thuyền độc mộc được những dân làng dùng làm phương tiện chuyên chở từ Narda tới Teirm. Roran rất thích điểm này vì bè đồng nghĩa với không có mũi tàu nhọn. Nhờ vậy, họ buộc, đóng cọc chúng được vào với nhau thành một mảng bè duy nhất dài tới 45m.
+</p>
+
+<p>
+ Roran đã chỉ đạo đem toàn bộ số đá phiến họ có từ mỏ khai thác chất lên xe bò chở tới đây, chất lên đầu chiếc xà lan thứ nhất và dọc xà lan thứ hai và ba. Trên đống đá phiến, họ chất những bao bột – tìm thấy trong nhà máy xay – tới khi tạo thành một bức tường cao ngang hông.Ở tảng đá cuối cùng trên xà lan thứ hai, bức tường tiếp tục chỉ với các bao bột.
+</p>
+
+<p>
+ Sức nặng của các phiến đá cùng đống bột kèm theo sức nặng của bản thân xà lan đã biến những chiếc thuyền nổi thành khúc gỗ công thành theo đường thủy khổng lồ. Roran mong sao nó có thể chọc thủng cánh cổng ở cuối con lạch. Kể cả khi cánh cổng được yểm bùa – mặc dù Carn không cho là thế - Roran cũng không nghĩ có bất cứ pháp sư nào, trừ Galbatorix có thể vô hiệu hóa lực tấn công của những chiếc xà lan này một khi chúng trôi xuống từ thượng nguồn.
+</p>
+
+<p>
+ Ngoài ra, đống đá và bột kia là một lá chắn phòng thủ chống giáo, tên và những vũ khí sát thương khác bay tới.
+</p>
+
+<p>
+ Roran cẩn trọng đi lại giữa những mảng thuyền dập dềnh tới đầu xà lan. Anh chèn giáo khiên của mình vào một chồng đá phiến rồi quay người quan sát các chiến binh tập hợp giữa các bức tường.
+</p>
+
+<p>
+ Mỗi lúc xà lan càng lún xuống sâu hơn xuống nước do sức nặng của các chiến binh. Cuối cùng nó chỉ còn nổi trên mặt nước có vài centimet.
+</p>
+
+<p>
+ Carn, Baldor, Hamund, Delwin và Mandel đứng cạnh Roran. Họ tự mình chọn vị trí nguy hiểm nhất. Nếu muốn có Aroughs, họ cần có sự đồng hành của kinh nghiệm cũng như sự may mắn. Họ không thể trao trách nhiệm nặng nề cho ai.
+</p>
+
+<p>
+ Ở rìa xà lan, Roran thấy Brigman đứng cùng với những người lính ông từng chỉ huy. Sau hành động bất tuân quân lệnh gần đây của Brigman, Roran đã giáng chức và giam ông ta trong lều. Nhưng, Brigman xin được tham gia trận chiến cuối cùng ở Aroughs, và Roran miễn cưỡng đồng ý; Brigman giỏi dùng đao kiếm và chỉ cần một thanh kiếm cũng tạo nên sự khác biệt trong trận chiến sắp tới.
+</p>
+
+<p>
+ Roran vẫn băn khoăn liệu anh có quyết định đúng không. Anh khá tự tin giờ các binh lính trung thành với anh chứ không phải với Brigman, nhưng Brigman đã là chỉ huy của họ trong nhiều tháng. Mối liên kết đó không thể quên trong một sớm một chiều. Kể cả trong trận chiến này Brigman không gây chuyện nhưng ai mà biết ông ta có chịu nghe lời hay lờ quân lệnh đi, ít nhất là khi Roran là người ra lệnh.
+</p>
+
+<p>
+ Nếu ông ta khiến mình không tin, mình sẽ chém chết ngay tại chỗ, Roran nghĩ. Nhưng giải pháp này rất phù phiếm. Nếu Brigman thật sự phản bội thì Roran sẽ không nhận ra cho tới khi quá muộn.
+</p>
+
+<p>
+ Khi chỉ còn lại sáu người lính đứng trên bờ, Roran cúp tay trước miệng hô lớn. “Mở cửa đập!”
+</p>
+
+<p>
+ Hai người đang đứng trên con đê ở đỉnh đồi – con đê có nhiệm vụ làm chậm dòng chảy của sông từ thượng nguồn về phía bắc. Dưới đó 6m có guồng nước đầu tiên và một hồ nước bên dưới. Phía trước cái hồ là con đê thứ hai, tại đó có thêm hai người lính. Dưới đó thêm 6m là một guồng nước nữa và một hồ nước sâu yên ả. Cuối hồ là con đê thứ ba và là con đê cuối cùng cùng hai người lính nữa. Ở chân dê cuối cùng là guồng nước cuối cùng. Từ đó, dòng chảy uốn lượn êm đềm chảy tới Aroughs.
+</p>
+
+<p>
+ Trên các con đê là ba cổng đập Roran bắt đóng lại trong lần đầu tới thăm khu xay sát. Qua hai ngày, đội binh lính đã lặn dưới dòng nước đang ngày một dâng cao nạo vét lòng hồ. Sau đó họ cắm những xà gỗ dài, chắc khỏe xuống hai bên cửa đập.
+</p>
+
+<p>
+ Những người đứng ở giữa và trên đầu đang nắm lấy những xà gỗ - chúng thò ra khỏi đê vài mét – và bắt đầu kéo đẩy chúng theo một nhịp điệu nhất định. Theo như kế hoạch, hai người đứng cuối sẽ đợi một lúc trước khi họ cũng làm theo.
+</p>
+
+<p>
+ Roran nắm chặt một bao bột trong lúc quan sát. Nếu họ chỉ tính lệch thời gian vài giây, chắc chắn một thảm họa sẽ xảy đến.
+</p>
+
+<p>
+ Gần một phút trôi qua, không có gì xảy ra.
+</p>
+
+<p>
+ Rồi, với một tiếng ầm lớn, cửa đập đầu tiên mở ra. Đê phình lên, đất nứt toác và nước phù sa chảy ầm ầm xuống guồng nước bên dưới khiến nó quay nhanh hơn bao giờ hết.
+</p>
+
+<p>
+ Đập sập, những người đứng trên đó nhảy lên bờ cách đó vài centimet.
+</p>
+
+<p>
+ Dòng nước từ độ cao hơn 9m đổ ầm xuống hồ nước đen êm ả bên dưới guồng nước. Một cơn sóng cao vài mét lao xuống đập bên dưới.
+</p>
+
+<p>
+ Thấy chuyện sắp xảy tới, hai chiên binh ở giữa rời vị trí, lao xuống khu đất an toàn.
+</p>
+
+<p>
+ May mà họ đã kịp. Khi cơn sóng đập tới đã phá vỡ cửa đập thứ hai như thể một con rồng đá tan nó và cuốn trôi đi những tàn tích của con đập.
+</p>
+
+<p>
+ Dòng lũ điên cuồng đâm vào guồng nước thứ hai với lực mạnh hơn trước. Gỗ kêu cọt kẹt và lần đầu tiên, Roran nghĩ tới khả năng một hoặc nhiều hơn một guồng nước sẽ bị cuốn trôi. Nếu chuyện đó thực sự xảy ra, những chiến binh và kể cả các xà lan sẽ bị nguy khốn; có thể cuộc tấn công Aroughs sẽ kết thúc từ trong trứng nước.
+</p>
+
+<p>
+ “Cắt dây neo!” anh hô.
+</p>
+
+<p>
+ Một trong những người lính cắt dây neo trong khi những người khác cúi xuống kéo một sợi dây dài độ 3 mét giữ xà lan đứng yên bằng tốc độ nhanh nhất.
+</p>
+
+<p>
+ Chiếc xà lan nặng nề lao lên phía trước, tốc độ chậm hơn mong muốn của Roran quá nhiều.
+</p>
+
+<p>
+ Mặc kệ cho dòng thác đang đổ ào ào về phía hai người lính, họ vẫn tiếp tục đứng ở đê thấp nhất để đẩy xà gỗ. Chỉ chưa đến một giây trước khi cơn lũ ào lên họ, những người lính mới rời bỏ vị trí.
+</p>
+
+<p>
+ Dòng nước đục một lỗ lớn trên đập đất dễ như thể nó là bánh mũ và cuồn cuộn lao tới guồng nước cuối cùng. Gỗ kêu kẹt ket – âm thanh lớn và sắc như đập đá – guồng nước nghiêng đi vài độ nhưng vẫn đứng vững. Sau đó, với một tiếng gầm to như tiếng sấm, dòng nước lao xuống chân đồi, nước bắn lên như sương mù.
+</p>
+
+<p>
+ Từng cơn gió lạnh vuốt lên mặt Roran đứng cách đó hai trăm mét.
+</p>
+
+<p>
+ “Nhanh nữa lên!” anh tri hộ với những người đang cắt dây neo khi cơn lũ giận dữ tràn xuống con kênh.
+</p>
+
+<p>
+ Lũ tiến tới với một tốc độ khó tin. Khi nó đập vào đuôi bốn chiếc thuyền, cả đoàn thuyền nhào về phía trước khiến Roran và các chiến binh nhào khỏi đuôi tàu và làm một số người ngã dúi dụi. Vài bao bột rơi xuống sông hoặc rơi ngược về phía những người lính.
+</p>
+
+<p>
+ Dòng nước tràn dâng nâng xà lan gần rìa nhất cao lên vài mét, đoàn thuyền dài gần 50 mét bắt đầu xoay tròn. Roran biết, nếu quá trình này tiếp tục, đoàn thuyền sẽ bị xé tan.
+</p>
+
+<p>
+ “Giữ thẳng thuyền!” anh rống lên, nhảy bật dậy khỏi bao bột anh vừa ngã đè lên. “Đừng cho thuyền xoay!”
+</p>
+
+<p>
+ Nghe thấy tiếng anh, các chiến binh lục tục chống thuyền trôi khỏi dòng nước xoáy và đi về giữa sông. Roran đứng trên đống đá phiến chỉ huy và cùng nhau điều khiển những chiếc xà lan trôi xuống.
+</p>
+
+<p>
+ “Chúng ta làm được rồi!” Baldor hét lên, trên mặt hiện một nụ cười ngu ngốc.
+</p>
+
+<p>
+ “Đừng mừng vội,” Roran cảnh cáo. “Chúng ta còn cả một đoạn đường dài.”
+</p>
+
+<p>
+ Bầu trời phía đông chuyển màu vàng chanh khi họ chỉ cách Aroughs một dặm. Với tốc độ di chuyển hiện tại, họ sẽ tới thành phố trước khi mặt trời ló rạng và màu trời xám xịt sẽ giúp họ tránh được những tên lính canh trên tường thành và chòi gác phát hiện.
+</p>
+
+<p>
+ Mặc cho những ghềnh đá trên đường đi, chiếc thuyền vẫn gia tốc băng băng tiến tới thành phố bên dưới khu xay sát và không còn một ghềnh thác nào cản bước họ.
+</p>
+
+<p>
+ “Nghe này,” Roran chụm tay trước miệng và nói lớn để mọi người cùng nghe. “Chúng ta có thể rơi xuống nước khi đâm vào cổng ngoài, vì thế chuẩn bị tinh thần bơi đi. Tới khi chúng ta vào đất liền, chúng ta sẽ là những mục tiêu dễ tấn công. Một khi lên bờ, chúng ta chỉ có một mục đích duy nhất: leo lên bức tường trong trước khi họ nghĩ tới chuyện đóng cổng, vì nếu họ làm vậy, chúng ta sẽ không bao giờ có được Aroughs. Nếu chúng ta có thể vượt qua bức tường thứ hai, chúng ta sẽ dễ dàng tìm thấy Lãnh chúa Halstead và buộc ông ta đầu hàng. Nếu ông ta không chịu, chúng ta sẽ chiếm trung tâm thành phố, sau đó tản vào các con đường cho tới khi toàn bộ Aroughs thuộc về chúng ta.
+</p>
+
+<p>
+ “Nhớ, chúng ta có thể sẽ phải một chọi hai hoặc ba, vì vậy hãy ở gần nhau bảo vệ và che chắn cho nhau. Đừng một mình đơn độc, đừng tách mình ra khỏi nhóm. BỌn lính trong thành hiểu rõ địa bàn hownc húng ta, và họ có thể tấn công chúng ta vào lúc chúng ta không ngờ nhất. Nếu anh một mình, hãy chạy tới trung tâm thành phố, vì chúng tôi sẽ ở đó.
+</p>
+
+<p>
+ “Hôm nay chúng ta sẽ cống hiến hết mình vì Varden. Hôm nay chúng ta sẽ giành lấy vinh quang và danh dự tất cả đàn ông đều mơ ước. Hôm nay... hôm nay chúng ta sẽ đánh dấu tên tuổi chúng ta lên lịch sử. Những gì chúng ta làm trong vài giờ nữa sẽ truyền tụng cả trăm năm sau. Hãy nghĩ tới bạn bè, gia đinh, bố mẹ, vợ con các anh. Hãy chiến đấu hết mình vì chúng ta chiến đấu vì họ. Chúng ta chiến đấu vì tự do!”
+</p>
+
+<p>
+ Những người lính hô to hưởng ứng.
+</p>
+
+<p>
+ Roran để họ say men chiến đấu; sau đó anh giơ tay và nó. “Giơ khiên!” Và, mọi người như một giơ khiên lên, che chở cho họ và cho chiến hữu khiến cho khu giữa gỗ công thành như một con vật khổng lồ có vảy.
+</p>
+
+<p>
+ Roran hài lòng nhảy xuống nhìn Carn, Baldor và bốn người bạn đồng hành với anh trên quãng đường từ Belatona. Người trẻ nhất, mandel có vẻ sợ hãi nhưng Roran biết cậu ta biết cách kiềm chế nó.
+</p>
+
+<p>
+ “sẵn sàng chưa?” anh hỏi và họ gật đầu đồng lòng.
+</p>
+
+<p>
+ Sau đó Roran cười, khi Baldor hỏi lý do, anh nói, “Giá mà cha tôi nhìn thấy tôi lúc này!”
+</p>
+
+<p>
+ Sau đó cả Baldor cũng cười.
+</p>
+
+<p>
+ Roran nhìn chằm chằm dòng nước. Một khi tiến vào thành phố, các chiến binh sẽ nhận ra có gì không bình thường và sẽ ra hiệu báo nguy. Anh muốn họ báo nguy hiểm, nhưng không phải vì lý do này. Vì thế, khi dòng lũ chỉ cách Aroughs 5 phút, anh bảo Carn, “Gửi tín hiệu.”
+</p>
+
+<p>
+ Pháp sư gật đầu và môi di chuyển kiểu kỳ lạ nói ngôn ngữ cổ xưa. Sau vài phút, anh đứng thẳng và nói. “Xong rồi.”
+</p>
+
+<p>
+ Roran nhìn đằng tây. Ở đó, trên cánh đồng phía trước Aroughs là máy bắn đá, máy phóng tên và tháp chiến đấu của Varden. Tháp chiến đấu vẫn không có động tĩnh nhưng những máy móc khác đã chuẩn bị để hành động, bắn tên và đá theo đường vòng cung lên những bức tường trắng của thành phố. Anh biết rằng năm mươi người lính ở đầu kia thành phố đã thổi kèn, la hét, bắn hỏa tiễn, làm mọi thứ để thu hút sự chú ý của những tên lính trong thành và giả bộ như một đội quân lớn hơn sắp sửa tấn công thành phố từ đằng đó.
+</p>
+
+<p>
+ Roran cảm thấy bình tĩnh lạ thường.
+</p>
+
+<p>
+ Anh sắp tham chiến.
+</p>
+
+<p>
+ NHững binh lính của anh sắp chết.
+</p>
+
+<p>
+ Anh có thể là một trong số đó.
+</p>
+
+<p>
+ Anh hiểu và anh thấy thông suốt, anh không còn thấy kiệt sức hay run rẩy nữa. Không gì có thể tiếp sức lực cho con người nhiều như chiến tranh – không phải thức ăn, tiếng cười hay lao động chân tay, cả cả tình yêu cũng không phải – và dù ghét chiến tranh nhưng anh không thể chống lại sức quyến rũ của nó. Anh chưa bao giờ muốn làm một chiến binh nhưng anh đã trở thành một chiến binh và anh sẽ làm điều tốt nhất,
+</p>
+
+<p>
+ Roran che mắt nhìn qua đống đá phiến về cánh cổng đang nhanh chóng tiến tới. Trên mặt nước, cổng làm bằng sồi cứng, đen lại vì dùng lâu và ăn mòn. Bên dưới mặt nước, anh biết là lưới đan bằng sắt thép và gỗ cho dòng nước dễ dàng lưu thông. Phần bên trên là phần khó bẻ gẫy nhất, nhưng anh đoán thời gian sử dụng lâu đã khiến phần dưới yếu đi. Khi phần bên dưới bị đâm thủng, phần bên trên cũng dễ dàng đi tong thôi. Vì thế, anh đã ra lệnh cho đặ hai khúc gỗ gắn chặt bên dưới chiếc xà lan đầu tiên. Chúng sẽ tổng thẳng vào nửa dưới của cổng khi phần gỗ sẽ tổng vào phần trên.
+</p>
+
+<p>
+ Đây là một kế hoạch thông minh nhưng anh không biết có thành công không.
+</p>
+
+<p>
+ “Đững vững nha,” anh nói với mình anh hơn là nói với mọi người khi cánh cổng ngày càng gần.
+ <br/>
+ Vài chiến binh bên rìa xa f lan tiếp tục điều khiển dùng gậy điều khiển xà lan, nhưng phần còn lại vẫn trốn bên dưới lớp khiên.
+ <br/>
+</p>
+
+<p>
+ Cánh cổng gần hơn bao giờ hết, đường vòng cung dẫn tới cổng lớn lên trước mắt họ, trông nó như lối vào động. Khi đầu xà lan trôi vào trong đường vòm tối om, Roran nhìn thấy khuôn mặt một người lính, tròn và trắng như trăng rằm xuất hiện trên bức tường, cao hơn họ độ chín mét nhìn xuống cảnh cổng với sự kinh ngạc tới kinh hoàng.
+</p>
+
+<p>
+ Những chiếc xà lan di chuyển quá nhanh, Roran chỉ có thể thời lẩm bẩm một câu chửi duy nhất trước khi dòng nước đẩy họ đi vào con đường tôi om, anh không còn nhìn thấy tên lính kia nữa.
+</p>
+
+<p>
+ Xà lan đâm vào cổng.
+</p>
+
+<p>
+ Lực tác động khiến Roran nhào vào bức tường đá phiến đằng sau. Đầu anh đập vào đá và dù anh đội mũ trụ và mũ bảo vệ bên trong, tai anh vẫn ong lên. Xà lan rung lên và dù anh đang ù tai anh vẫn nghe thấy tiếng gỗ gẫy và tiếng kim loại bị cong vênh.
+</p>
+
+<p>
+ Một trong những tảng đá phiến trượt ra phía sau rơi trúng anh khiến anh thâm tím tay và vai. Anh dùng hết sức đẩy nó ra khỏi thuyền.
+</p>
+
+<p>
+ Trong ánh sáng nhờ nhờ, anh không thể nhìn thấy rõ chuyện gì xảy ra; tất cả chỉ có những cử động không rõ ràng và những âm thanh vọng lại. Nước tràn lên chân anh, anh nhận ra xà lan bị dò nhưng liệu có bị chìm không thì anh không chắc.
+</p>
+
+<p>
+ “Đưa rìu cho tôi!” anh hét và giơ tay ra sa, “Rìu, đưa tôi rìu!”
+</p>
+
+<p>
+ Anh loạng choạng vì chiếc xà lan vọt lên trước độ nửa mét. Cánh cổng bị lung lay nhưng không nhiều. Lực nước vẫn đẩy thuyền vô cổng nhưng anh không thể chờ đợi nổi nữa.
+</p>
+
+<p>
+ Ai đó đặt rìu vô lòng bàn tay anh. Anh nhìn thấy sáu ô trên trần hầm phát sáng vì những cung thủ đã tháo gạch giơ cung nhắm bắn.
+</p>
+
+<p>
+ Có người kêu thét lên.
+</p>
+
+<p>
+ “Carn!” Roran hét. “LÀm gì đi!”
+</p>
+
+<p>
+ Kệ cho pháp sư với nhiệm vụ của mình, Roran bắt đầu trèo lên đầu thuyền. Xà lan hơi lún về phía trước một chút. Một tiếng gào chói tai khác vang lên từ giữa cánh cổng và ánh sáng rọi qua những vết nứt trên cảnh cổng gỗ sồi.
+</p>
+
+<p>
+ Một mũi tên nữa bắn trúng đống đá phiến bên tay phải anh, để lại một vệt kim loại khắc lên tảng đá.
+</p>
+
+<p>
+ Anh cần nhanh gấp đôi.
+</p>
+
+<p>
+ Khi tới mũi thuyền, một âm thanh chói lói vang lên khiến anh bịt tai lùi lại.
+</p>
+
+<p>
+ Một cơn sóng lớn chùm lên người anh, che khuất tầm nhìn của anhh trong giây lát. Anh chớp mắt nhìn cho rõ và thấy một phần canahs cổng đã sập; giờ đoàn xà lan có thể tiến vào thành phố rồi. Nhưng, bên trên đoàn thuyền, những mảnh gỗ vụn đâm tua tủa từ phần còn lại của cánh cổng cao ngang với ngực, cổ và đầu người.
+</p>
+
+<p>
+ Roran không chần chừ lăn lùi lại và nằm xuống. “Cúi đầu xuống!” anh hét và dùng khiên che người.
+</p>
+
+<p>
+ Xà lan lao về phía trước, vượt qua những tên cung thủ đang nhắm bắn và lao vào căn phòng đá lớn với đuốc thắp sáng trên tường.
+</p>
+
+<p>
+ Ở đầu kiam nước từ con sông chảy vào một canh cổng thấp khác, từ đầu đến cuối đều là khung lưới. Qua những ô vuông, Roran có thể nhìn rõ những tòa nhà bên trong.
+</p>
+
+<p>
+ Hai bên căn phòng là những bậc thang đá cho người ta chất và dỡ hàng. Ròng rọc, dây kép và những cái lưới không treo trên tường và những cần trục đặt trên một mặt đá phẳng. Phía đầu căn phòng và đằng cuối, những cầu thang và lối đi dẫn người ta đi qua con sông mà không dính nước. Những lối đi gần rìa tiến được tới phòng bảo vệ bên trên đường hầm họ đã đi qua và Roran đoán và dẫn tới những khu phòng thủ lớn hơn khác của thành phố, như tới bức tường phòng thủ mà anh đã nhìn thấy tên lính.
+</p>
+
+<p>
+ Anh thất vọng khi nhìn cánh cổng thấp kia. Anh hy vọng sẽ tiến thẳng vào trong thành phố và tránh khỏi bị những tên lính tấn công khi họ đang trên thuyền.
+</p>
+
+<p>
+ Được, vậy là giờ không dùng cách này được nữa rồi, anh nghĩ.
+</p>
+
+<p>
+ Đằng sau anh, những tên lính mặt đỏ tía tai chạy ra từ phòng bảo vệ, quỳ xuống và bắt đầu giương cung nhắm bắn.
+</p>
+
+<p>
+ “Đằng đó!” Roran hét và chỉ về phía cầu cảng phía tay trái. Những chiến binh nắm lấy xào một lần nữa và đẩy xà lan về cuối con kênh. Hàng tá hàng ta mũi tên cắm vào khiên khiến chiếc thuyền có hình con nhím
+</p>
+
+<p>
+ Khi xà lan gần các bến cảng, hai mươi tên lính rút kiếm và chạy xuống cầu thang đón đầu quân Varden trước khi họ bước xuống.
+</p>
+
+<p>
+ “Nhanh!” anh hét.
+</p>
+
+<p>
+ Một mũi tên căm lên khiến của anh và đầu mũi tên hình kim cương chỉ còn cách tay anhh có 0.5cm. Anh suýt ngã và anh biết anh chỉ có vài giây nữa trước khi có nhiều tên khác muốn bắn vào anh.
+</p>
+
+<p>
+ Roran nhảy lên cầu cảng, giang rộng tay giữ thăng bằng. Anh hạ cánh nặng nề, một bên đầu gối đập xuống sàn nhà và chỉ có đủ thời gian lôi cây búa trước khi những tên lính tới gần.
+</p>
+
+<p>
+ Anh cảm thấy nhẹ nhóm và vui thú khi nhìn thấy họ. Anh ốm về hoạch định vẽ vời kế hoạch. Giờ anh được đối mặt với kẻ thù thực sự. Không phải những tên thích khác kinh tởm – mà an có thể đánh giết.
+</p>
+
+<p>
+ Vụ đụng dộ diễn ra ngắn ngủi nhưng dữ dội và đẫm máu. Roran giết hoặc làm bị thương ba tên linh ngay từ những giây đầu tiên. Sau đó, Baldor, Delwin, Halmund, Mandel và những người khác cùng anh khiến những tên lính tránh xa dòng sông.
+</p>
+
+<p>
+ Roran không phải một kiếm sĩ, vì thế anh không cố đấu kiếm với kẻ thù. Thay vào đó, anh để chúng đánh trúng khiên nếu muốn trong khi dùng búa đập gẫy xương chúng. Đôi lúc, anh phải đỡ kiếm nhưng anh cố không giao đấu nhiều hơn vài đường với một người vì anh biết sự thiếu kinh nghiệm của anh sẽ để anh lộ ra những sơ hở chết người. Anh đã phát hiện ra ngón nghề hay nhất trong đánh nhau không phải là những pha xoay kiếm tuyệt vời hay những động tác giả phức tạp do nhiều năm rèn luyện mà là chiếm thế chủ động và làm những gì kẻ thù ít ngờ tới nhất.
+</p>
+
+<p>
+ Thoát khỏi cuộc vây đánh, Roran lao lên cầu thang dẫn tới lối đi bộ có các cung thủ đang nắm bắn binh lính trên thuyền.
+</p>
+
+<p>
+ Roran nhảy lên ba bậc thang một và vung búa đập thẳng vào mặt tên cung thủ thứ nhất. Tên thứ hai đã bắn tên vì thế hắn đành hạ cùng xuống, vươn tay tìm đoản kiếm.
+</p>
+
+<p>
+ Nhưng hắn chỉ rút được nửa con dao khỏi vỏ thì Roran đã đánh mạnh vào ngực hắn,, khiến hắn gẫy xương sườn.
+</p>
+
+<p>
+ Một trong những điều Roran thích khi dùng búa là anh không phải quan tâm nhiều tới loại giáp đối thủ dùng. Một cây búa, giống như bất cứ loại vũ khí tù đầu khác, gây ra vết thương bởi lực tác động chứ không phải vì những vết chém cắt lên da thịt. Anh thích sự đơn giản đó.
+</p>
+
+<p>
+ Tên lính thứ ba trên đường định bắn anh trước khi anh bước thêm một bước. Lần này, mũi tên chọc qua khiên tới nửa và suýt xuyên vào ngực anh. Anh giữ mũi nhọn chết người đó tránh xa, anh tấn công vào vai hắn. Hắn sử dụng cung để đỡ vì thế Roran dùng mặt khiên đánh ngã hắn, hiến hắn la thét khi ngã dập người vào lan can đường đi bộ.
+</p>
+
+<p>
+ Kế hoach của Roran biến anh thành một mục tiêu dễ công kích. Khi anh chú ý tới năm tên còn lại thì ba tên đã nhắm thẳng vào ngực anh.
+</p>
+
+<p>
+ Những tên lính bắn cung.
+</p>
+
+<p>
+ Trước khi những mũi tên xuyên qua anh, chúng vặn vẹo và lệch sang phải, bay chéo qua những bức tường tối đen như những con ong vò vẽ khổng lồ đang giận dữ.
+</p>
+
+<p>
+ Roran biết Carn đã cứu anh, và anh sẽ tìm cách cám ơn pháp sư ngay khi họ không còn trong cơn nguy hiểm chết người này nữa.
+</p>
+
+<p>
+ Anh lao về phía những tên lính còn lại và hạ gục chúng bằng những cú đánh mạnh mẽ như thể chúng chỉ là những cái đinh cong anh cần đóng xuống. Sau đó anh bẻ gẫy mũi tên cắm trên khiên vf quay lại quan sát trận chiến.
+</p>
+
+<p>
+ Lúc đó tên lính cuối cùng đã đổ gục trên mặt đất bê bết máu, đầu hắn đứt lìa, rơi xuống sông.
+</p>
+
+<p>
+ Hai phần ba số quân Varden đã lên bờ, xếp hàng bên bờ sông.
+</p>
+
+<p>
+ Roran mở miệng định ra lệnh cho họ tản khỏi dòng sông – để những người còn trên thuyền có chỗ mà lên – thì cánh cửa bên trái mở toang và một đội lính xông vào.
+</p>
+
+<p>
+ Chết tiệt! Chúng tới từ đâu vậy! Có bao nhiêu tên đây?
+</p>
+
+<p>
+ Ngay khi Roran định bước lên cầu thang giúp đồng đội chống đỡ những kẻ mới, Carn – từ này giờ vẫn đứng đầu thuyền – giơ tay chỉ vào những tên lính và niệm chú bằng ngôn ngữ cổ.
+</p>
+
+<p>
+ Như anh ta muốn, hai túi bột và một tảng đá phiến bay lên khỏi thuyền và bay về phía những tên lính, hạ gục 12 tên. Sau ba bốn lần va chạm, túi bột bung ra, thứ bột trắng ngà phủ lên người chúng, khiến chùng mù mắt và khó thở.
+</p>
+
+<p>
+ Một giây sau, một ngọn lửa xuất hiện đằng sau chúng – một quả cầu lửa lớn màu vàng cam chạy qua đám mây bột, tham tàn nuốt chúng và tạo ra âm thanh như hàng trăm lá cờ bay phấp phới trong gió.
+</p>
+
+<p>
+ Roran che khiến và cảm nhận được sức nóng trên chân và lớp da trần ở ngực khi quả cầu thiêu cháy chỉ cách đó vài mét biến những hạt bột thành bụi rơi xuống: một cơn mưa đen, chết chóc chỉ hợp cho một đám tang.
+</p>
+
+<p>
+ Khi thứ ánh sáng chết chóc đó yếu đi, Roran cẩn trong ngẩng đầu. Khói có mùi hôi thối, nóng nực xộc vào mũi anh, làm cay mắt anh và anh nhận ra râu bị cháy. Anh nguyền rủa và hạ búa xuống dập lửa.
+</p>
+
+<p>
+ “Này!” anh hét gọi Carn. “Anh đốt râu tôi rồi! Cẩn thận hơn đi, không tôi phi giáo vào đầu anh đấy!”
+</p>
+
+<p>
+ Hầu hết những tên lính đang nằm lăn lộn dưới đất tay che khuôn mặt bị bỏng. Những tên khác dập lửa cháy quần áo, trên giáp trong khi cố chống những đòn tấn công khác của Varden. Những binh sĩ của Roran có vẻ chỉ bị vài vết bỏng nhỏ - hầu hết đều tránh xa tầm ảnh hưởng của quả cầu lửa – dù trận hỏa hoạn bất ngờ đó khiến họ bối rối đôi chút.
+</p>
+
+<p>
+ “Đừng đừng nhìn như mấy gã ngốc nữa mà hãy tóm lấy mấy thằng nhãi mù dở trước khi chúng phục hồi đi!” anh ra lệnh và gõ búa lên lan can để họ chú ý.
+</p>
+
+<p>
+ Varden đông hơn số lính và khi Roran xuống thang, họ đã giết chết ba phần tư số linh gác.
+</p>
+
+<p>
+ Roran đi về phía cánh cửa đôi lớn dẫn ra khỏi con kênh – cánh cửa lớn đủ cho hai xe ngựa đi song song qua. Anh đi qua Carn, đang ngồi trên đường, ăn đồ ăn từ túi da anh luôn mang theo. Roran biết trong túi đó là hỗn hợp của mỡ lợn, mật ong, gan bò giã nhỏ, tim cừu và quả việt quất. Có một lần Carn cho anh một miếng, anh nhổ ra – nhưng chỉ một miếng thôi đã đủ giúp một người duy trì thể lực sau cả ngày làm việc cực nhọc.
+</p>
+
+<p>
+ Pháp sư trông kiệt sức. “Anh tiếp tục nổi không?” Roran hỏi.
+</p>
+
+<p>
+ Carn gật đầu. “Tôi chỉ cần nghỉ một lát... Mấy mũi tên trong đường hầm rồi túi bột và đá...” Anh cắn thêm một miếng nữa. “Hơi quá sức chút.”
+</p>
+
+<p>
+ Roran thấy yên tâm định bỏ đi thì carn nắm lấy tay anh. “Tôi không làm,” anh nói và mắt hấp hay vui vẻ. “Đốt râu anh ấy. Đấy là do mấy ngọn duốc.”
+</p>
+
+<p>
+ Roran càu nahuf và tiếp tục đi về cửa. “Tập hớp!’ anh hét và dùng búa đập lên khiên. “Baldor, Delwin cùng tôi đứng hàng tiên phong. Những người còn lại đi sau. Chuẩn bị sẵn sàng. Có thể Halstead chưa biết chúng ta đã vào thành phố nhưng đừng để ai trốn thoát báo tin... Sẵn sàng chưa? Vậy thì đi với tôi!”
+</p>
+
+<p>
+ Anh cùng Baldor – má và mũi đỏ lựng vì vụ cháy – mở toang cửa bước vào Aroughs.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-020.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-022.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

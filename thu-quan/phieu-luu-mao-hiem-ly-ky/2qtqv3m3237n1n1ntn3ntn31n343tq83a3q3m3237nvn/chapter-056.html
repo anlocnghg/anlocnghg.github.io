@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 56 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 56</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-055.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-057.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Trên hành trình trở về Urû’baen từ Vroengard, Saphira không gặp phải cơn bão nào và may mắn bắt được luồng gió thuận chiều, cùng lúc các Eldunarí chhir bảo cô nàng cách tìm những luồng khí mạnh thổi quanh năm. Chúng cũng cấp cho cô nàng năng lượng liên tục để khỏi mệt.
+</p>
+
+<p>
+ Cứ thế, thành phố hiện ra phía đường chân trời sau hay ngày bay về từ đảo.
+</p>
+
+<p>
+ Trong chuyến đi, có hai lần khi mặt trời sáng chói nhất, Eragon nghĩ nó bắt gặp lối vào của túi không gian nơi các Eldunarí ẩn náu phía sau Saphira. Trông có vẻ như một điểm đen nhỏ xíu, đến nỗi nó không thể tập trung nhìn vào hơn một giây. Lúc đầu nó nghĩ đó chỉ là một hạt bụi, nhưng rồi nó nhận ra điểm đên chưa bao giờ thay đổi vị trí so với Saphira, và luôn ở cùng một vị trí khi nó nhìn vào.
+</p>
+
+<p>
+ Khi họ bay, thông qua Umaroth những con rồng truyền trí nhớ của chúng vào Eragon và Saphira: tầng tầng lớp lớp những kinh nghiệm – những cuộc chiến có thắng có bại, tình yêu, hận thù, thần chú, những sự kiện khắp lục địa, thống hận, nhận thức và những suy nghĩ sâu xa về cách thế giới vận hành. Những con rồng sở hữu kiến thức của hàng ngàn năm, và dường như chúng muốn chia sẻ không sót một chút nào.
+</p>
+
+<p>
+ Quá nhiều rồi! Eragon la lên phản đối. Chúng tôi không thể nào nhớ tất cả được, đừng nói đến còn hiểu nữa.
+</p>
+
+<p>
+ Không, Umaroth thở dài. Nhưng cậu có thể nhớ được một phần, và may ra chúng sẽ là những gì cậu cần để đánh bại Galbatorix. Rồi, tiếp tục nào.
+</p>
+
+<p>
+ Dòng thác thông tin trở nên ào ạt; có đôi lúc Eragon cảm thấy nó quên mất mình là ai, khi trí nhớ của rồng áp đảo trí nhớ của chính nó. Những lúc đấy, Eragon phải tách tâm trí mình ra và lặp đi lặp lại tên thật của nó để thấy an tâm hơn.
+</p>
+
+<p>
+ Những gì nó và Saphira học được làm chúng kinh ngạc lẫn bối rối, thường xuyên khiến nó tự vấn niềm tin của chính mình. Nhưng nó không có thời gian chìm đắm vào những suy nghĩ như vậy, vì luôn có luồng trí nhớ mới bồi tiếp chúng. Nó biết phải hàng năm trời mới có thể lý giải được những gì lũ rồng đang cho chúng thấy.
+</p>
+
+<p>
+ Càng học thêm về loài rồng, nó càng thấy chúng đáng kính sợ. Những sinh vật sống qua hàng trăm năm có cách suy nghĩ rất lạ thường, và những con rồng cổ nhất khác xa với Glaedr và Saphira cũng như chúng khác xa đỉnh Fanhur ở rặng Beor Hùng Vĩ vậy. Tiếp xúc với rồng cổ đại thực khiến nó bối rối lẫn khó chịu; chúng thường nhảy cầu, liên kết, so sánh có vẻ vô nghĩa, nhưng Eragon biết bao hàm một tầng nghĩa sâu sắc. Thỉng thoảng nó hiểu được những gì lũ rồng nói, còn lũ rông thì chẳng thèm giải thích theo cách mà nó có thể hiểu.
+</p>
+
+<p>
+ Sau một thời gian, nó nhận ra chúng không thể bày tỏ bản thân bằng cách khác. Sau hàng thế kỉ, trí óc của chúng dần dà đổi thay; những gì có vẻ đơn giản và thẳng như cái cẳng thì đối với chúng lại rất phức tạp, và ngược lại cũng vậy. Nó cảm thấy lắng nghe tư tưởng của lũ rồng cũng hệt như đang nghe tư tưởng của một vị thần vậy.
+</p>
+
+<p>
+ Khi nó nghĩ như vậy, Saphira khịt mũi nói, Có hơi chút khác đó.
+</p>
+
+<p>
+ Như thế nào?
+</p>
+
+<p>
+ Không như thần thánh, rồng tham gia vào những sự kiện của thế giới.
+</p>
+
+<p>
+ Có khi thần thánh lại không muốn bị nhìn thấy.
+</p>
+
+<p>
+ Thế thì có gì hay chứ?
+</p>
+
+<p>
+ Em tin là rồng thì tốt hơn thần thánh à? Nó hỏi tếu.
+</p>
+
+<p>
+ Uh, khi rồng trưởng thành hoàn toàn. Sinh vật nào hùng mạnh hơn bọn em? Kể cả Galbatorix cũng phải dựa vào rồng để có sức mạnh của hắn.
+</p>
+
+<p>
+ Thế còn Nïdhwal thì sao?
+</p>
+
+<p>
+ Cô nàng hít sâu. Bọn em bơi được, còn chúng thì bay sao nổi.
+</p>
+
+<p>
+ Eldunarí cổ nhất, một con rồng tên Valdr – có nghĩa “người cầm quyền” trong cổ ngữ - nói chuyện trực tiếp với họ một lần. Từ con rồng, họ như thấy hàng chùm tia sáng biến thành những cơn sóng cát, cũng như cảm giác bối rối khi mọi thứ có vẻ đặc cứng hầu hết là những khoảng rỗng (cấu trúc nguyên tử với lưỡng tính sóng-hạt chăng ^_^). Rồi Valdr cho họ thấy tổ của con sáo đá đang ngủ, Eragon có thể giấc mơ của chúng cũng lập lòe trong tâm trí mình như cái chớp mắt. Lúc đầu cảm xúc của Valdr là khinh miệt – giấc mơ của con chim sáo dường như tí hơn, tủn mủn và không liền mạch – nhưng rồi tâm trạng của ông thay đổi ấm áp và cảm thông hơn, khi những quan tâm nhỏ nhất của con sáo đá dần trở nên quan trọng, cho đến khi nó ngang với sự lo lắng của những bậc vua chúa.
+</p>
+
+<p>
+ Valdr cứ loanh quanh ở đó, như thể để đảm bảo Eragon và Saphira sẽ nhớ đến chúng trong biết bao luồng trí nhớ. Tuy thế cả hai đều không chắc chắn con rồng có ý gì, còn Valdr thì từ chối giải thích thêm.
+</p>
+
+<p>
+ Cuối cùng Urû’baen cũng hiện ra trước mắt, các Eldunarí ngừng chia sẻ trí nhớ với Eragon và Saphira, Umaroth nói, Bây giờ tốt nhất là xem xét hang ổ của kẻ địch.
+</p>
+
+<p>
+ Rồi họ nhìn thành phố khi Saphira hạ cánh xa mục tiêu hàng dặm. Khung cảnh trước mắt không có vẻ khích lệ chút nào, cũng chẳng khá hơn khi Glaedr thở dài, Galbatorix đã xây nhiều thứ từ khi hắn xua chúng ta khỏi nơi này. Bức tường trước đây không dày cũng không cao như bây giờ.
+</p>
+
+<p>
+ Umaroth bổ sung thêm: Ilirea cũng không được gia cố như thế này trong chiến tranh của rồng với tiên nhân. Tên Phản Đồ rúc sâu xuống đất và chồng cả núi đá lên hang ổ. Hắn sẽ không ra quyết đấu đâu. Hắn hệt như con lửng lúc nào cũng nằm lì trong hang và cắn chảy máu kẻ nào cố kéo hắn ra.
+</p>
+
+<p>
+ Một dặm về hướng Tây Nam từ phía thành phố là doanh trại của Varden. Nó có vẻ lớn ra đáng kể so với những gì Eragon nhớ, cho đến khí nó nhận ra Nữ hoàng Islanzadí và quân đội của bà rốt cục cũng gia nhập vào quân Varden. Nó thở phào nhẹ nhõm. Kể cả Galbatorix cũng kiêng dè sức mạnh của tiên nhân.
+</p>
+
+<p>
+ Khi nó và Saphira còn cách hàng dặm xa doanh trại, các Eldunarí giúp Eragon nới rộng tầm tâm thức cho đến khi nó cảm nhận tâm trí của con người, người lùn, tiên nhân, và các Urgal trong doanh trại. Sự tiếp xúc của nó nhẹ đến mức không ai có thể chú ý trừ khi họ tập trung quan sát, rồi chợt nó thấy một giai điệu nhạc lạ thường chứng tỏ tư tưởng của Blödhgarm, nó tập trung vào một mình tiên nhân đó.
+</p>
+
+<p>
+ Blödhgarm’s, nó nói. Là tôi đây, Eragon. Nó càng lúc càng ăn nói trang trọng tự nhiên sao thời gian dài chìm đắm trong kinh nghiệm thời cổ đại.
+</p>
+
+<p>
+ Khắc tinh của Tà Thần! Cậu có ổn không? Tâm trí cậu lạ thường quá. Saphira có ở cùng cậu không? Cô rồng có bị thương không? Có chuyện gì xảy ra với Glaedr?
+</p>
+
+<p>
+ Họ ổn cả, như tôi vậy.
+</p>
+
+<p>
+ Thế thì … Blödhgarm rõ ràng rất bối rối.
+</p>
+
+<p>
+ Ngắt lời ông, Eragon nói, Chúng tôi ở không xa, nhưng giờ này tôi đang ẩn thân. Người ta vẫn còn thấy ảo ảnh Saphira và tôi chứ.
+</p>
+
+<p>
+ Đúng vậy, Khắc tinh của Tà thần. Chúng tôi cho Saphira lượn vòng quanh khu trại trên khoảng một dặm. Thi thoảng chúng tôi ẩn cô rồng vào lùm mây, hoặc có vẻ như hai người đang đi tuần tra, nhưng chúng tôi không dám để Galbatorix nghĩ cậu đi quá lâu. Chúng tôi sẽ làm ảo ảnh của cậu bay đi ngay bây giờ, rồi cậu có thể quay lại mà không có ai nghi ngờ.
+</p>
+
+<p>
+ Không được. Thế này, cứ chờ và tiếp tục duy trì thần chú thêm nữa đi.
+</p>
+
+<p>
+ Vậy Khắc tinh của Tà Thần…?
+</p>
+
+<p>
+ Chúng tôi không bay trực tiếp về trại. Eragon nhìn xuống bình nguyên. Có một ngọn đồi nhỏ tầm hai dặm về phía Đông Nam. Ông có biết không?
+</p>
+
+<p>
+ Đúng, tôi có thể thấy nó.
+</p>
+
+<p>
+ Saphira sẽ hạ cánh phía sau đó. Gọi Arya, Orik, Jörmundur, Roran, Nữ hoàng Islanzadí và vua Orrin tới đây, nhưng phải chắc họ không rời trại cùng lúc. Ông giúp họ ẩn đi là tốt nhất. À mà ông cũng nên tới nữa.
+</p>
+
+<p>
+ Như cậu muốn … Khắc tinh của Tà Thần, cậu đã tìm thấy gì ở …
+</p>
+
+<p>
+ Không! Đừng hỏi tôi. Giờ quá nguy hiểm để nghĩ về chuyện đó. Cứ đến và tôi sẽ nói với ông, nhưng tôi không thể om sòm trả lời khi người khác có thể nghe trộm.
+</p>
+
+<p>
+ Tôi hiểu. Chúng tôi sẽ tới gặp cậu nhanh nhất có thể, nhưng sẽ mất chút thời gian bố trí chuyến đi đấy.
+</p>
+
+<p>
+ Dĩ nhiên. Tôi tin ông sẽ làm điều tốt nhất.
+</p>
+
+<p>
+ Eragon ngắt kết nối và tựa lưng vào yên cương. Nó cười khẽ tưởng tượng biểu tình của Blödhgarm khi biết về những Eldunarí.
+</p>
+
+<p>
+ Một cơn lốc ào đến, Saphira hạ cánh lên khoảng đất phía chân đồi, làm đàn cừu gần đó giật mình, vừa chạy trối chết vừa thét be be ai oán.
+</p>
+
+<p>
+ Thu cánh lại, Saphira nhìn theo đàn cừu nói, Bắt chúng còn dễ hown nhiều, chúng có thấy em đâu. Cô nàng liếm láp miếng thịt khô.
+</p>
+
+<p>
+ “Phải, nhưng thế thì còn thể thao gì nữa?” Eragon tháo rời yên cương khỏi chân.
+</p>
+
+<p>
+ Thế thao làm sao mà đầy bụng được.
+</p>
+
+<p>
+ “Không, nhưng sau đó em đâu có đói, phải không?” Luồng năng lượng từ các Eldunarí dù không đáng kể cũng đủ khiến cô nàng chẳng buồn ăn.
+</p>
+
+<p>
+ Cô nàng phì ra một hơi lớn như thể thở dài. Không, không hẳn …
+</p>
+
+<p>
+ Khi họ chờ đợi, Eragon dang chân cho đỡ nhức, rồi ăn bữa trưa ít ỏi từ những gì còn lại cho túi đựng. Nó biết thừa Saphira đang nằm ườn ra trên khoảng trống bên cạnh, dù nó không trông thấy cô nàng. Sự hiện diện của cô nàng bị lộ bởi khoảng lớn cỏ bị cô nàng đè xuống thành hình dáng kì cục. Không rõ vì sao những cảnh ấy làm nó rất thích chí.
+</p>
+
+<p>
+ Khi đang ăn, nó nhìn chăm chú cánh đồng yên bình quanh đồi, quan sát những cơn gió lùa qua kẽ lá lúa mạch. Những vách đá dài thấp chia cắt cánh đồng, chắc phải mất hàng trăm năm mới đào được từng ấy đá.
+</p>
+
+<p>
+ Ít ra thì không thành vấn đề ở Thung Lũng Palancar nhỉ, nó thầm nhủ.
+</p>
+
+<p>
+ Giây lát sau, một luồng trí nhớ của rồng tràn vào tâm trí, nó biết chính xác bức tường có từ bao giờ, từ thời mà con người bắt đầu tới sống ở khu tàn tích của Ilirea, sau khi các tiên nhân đánh bại quân đội của vua Palancar. Nó có thể thấy như thế nó ở đó, hàng đoàn đàn ông, phụ nữ và trẻ nhỏ cày xới cánh đồng và chất đá lên nơi giờ làn những bức tường.
+</p>
+
+<p>
+ Một lúc sau, Eragon để luồng trí nhớ nhạt đi, rồi nó mở tâm thức đến những con sóng năng lượng xung quanh. Nó lắng nghe tư tưởng của một chú chuột đồng, một con sâu trong lòng đất, hay một chú chim bay vọt trên đầu. Có vẻ hơi mạo hiểm khi nó có thể tiết lộ cho bất cứ kẻ dùng phép thuật nào xung quanh về sự hiện diện của mình, nhưng nó thấy tốt hơn là biết ai hay cái gì ở gần, rồi không kẻ nào có thể bất ngờ tấn công nó.
+</p>
+
+<p>
+ Rồi nó cảm nhận Arya, Blödhgarm và Nữ hoàng Islanzadí đang dần tiến đến, nó cũng không phản ứng lại khi họ tiến tới từ vạt chân đồi phía tây.
+</p>
+
+<p>
+ Không khí bị rẽ ra như nước, rồi ba tiên nhân xuất hiện trước mặt nó. Nữ hoàng Islanzadí đi đầu, lúc nào trông cũng vương giả. Bà mặc chiếc áo giáp làm từ vảy, với mũ miện trang sức trên đầu, cùng áo choàng đỏ trắng cài trên vai. Một thanh gươm dài thuôn đeo trên phần hông nhỏ nhắn của bà. Một tay bà là thành giáo dài nhọn đầu, tay kia là một chiếc khiên hình lá phong – vành khiên thậm chí cũng có răng cưa như lá vậy.
+</p>
+
+<p>
+ Y như vậy, Arya cũng mặc áo giáp rất đẹp. Cô đổi bộ đồ đen sang áo giáp như mẹ - dù áo giáp của Arya là màu xám của thép, không phải vàng – và cô đội mũ giáp trang điểm bằng những dây bện rủ xuống mũi, và một đôi chim ưng dang cánh hai bên thái dương. So với sự lộng lẫy của Islanzadí, giáp của Arya trông có vẻ hơi ảm đạm, nhưng lại càng chết chóc hơn. Hai mẹ con trông như một cặp kiếm, một cái để trưng ra còn một cái để chiến đấu.
+</p>
+
+<p>
+ Cũng như hai tiên nữ, Blödhgarm mặc chiếc áo giáp làm từ vảy, nhưng để đầu trần, và không mang vũ khí gì ngoài con dao nhỏ giắt trên lưng.
+</p>
+
+<p>
+ “Hiện thân đi, Eragon Khắc tinh của Tà Thần,” Islanzadí nhìn về phía nó đứng.
+</p>
+
+<p>
+ Eragon phá bỏ thần chú che giấu nó và Saphira, rồi cúi chào nữ hoàng tiên nhân.
+</p>
+
+<p>
+ Bà lướt đôi mắt đen trên người nó, xem xét như thế nó là con ngựa đắt giá. Không như trước, giờ nó hoàn toàn nắm rõ ánh mắt của bà. Sau vài giây, nữ hoàng thở nhẹ, “Cậu đã khá hơn rồi, Khắc tinh của Tà Thần.”
+</p>
+
+<p>
+ Nó lại cúi xuống lần nữa. “Đa tạ, thưa Nữ hoàng.” Giọng nói của bà lúc nào cũng làm nó bồi hồi. Cứ như thể ngâm nga với phép thuật và âm nhạc vậy, mỗi lời tựa như một phần của bài thơ thiên cổ. “Lời khen tặng từ một người thông thái và đẹp như người thực sự rất có ý nghĩa.”
+</p>
+
+<p>
+ Các tiên nhân hỏi dồn dập nó, Saphira và Glaedr, nhưng cả ba từ chối trả lời cho đến khi những người khác tới. Dù vậy, Eragon nghĩ họ cảm nhận một chút về Eldunarí, vì nó chú ý họ thi thoảng liếc mắt về phía tim-của-tim, dù họ có vẻ không nhận ra.
+</p>
+
+<p>
+ Orik là người kế tiếp đến. Từ phía Nam ông cưỡi con ngựa bờm xờm, vã mồ hôi và thở hổn hển. “Ho, Eragon! Ho, Saphira!” vua Lùn giơ tay la lên. Ông trượt xuống con ngựa mệt lử, dậm chân bước tới ôm Eragon thật chặn như thể nghiền nát sống lưng nó.
+</p>
+
+<p>
+ Khi họ chào nhau xong – Orik chà xát nhẹ vào mũi Saphira, làm cô nàng rên ư ử - Eragon hỏi, “Lính canh của anh đâu?” Orik nhún vai. “Đang ngồi tết râu trong một nông trại một dặm về phía tây, và anh cho là cũng không vui vẻ gì cho cam. Anh tin tưởng hoàn toàn bọn họ - cùng tộc ấy mà – nhưng Blödhgarm nói tốt nhất là anh tới một mình, thế đấy. Giờ nói với anh nào, có bí mật gì nào? Cậu tìm thấy gì ở Vroengard?
+</p>
+
+<p>
+ “Anh phải chờ những người còn lại của hội đồng tới mới biết được,” Eragon phì cười. “Nhưng em rất mừng vì gặp lại anh.” Nó vỗ vỗ vào vai Orik.
+</p>
+
+<p>
+ Roran đi bộ tới ngay sau đó, nhìn chán nản và bụi bặm. Anh nắm lấy cánh tay Eragon chào mừng nó, rồi kéo qua một bên khẽ nói, “Chú có thể khiến họ không nghe thấy mình không?” Anh hất hàm về phía Orik và các tiên nhân.
+</p>
+
+<p>
+ Eragon chỉ mất vài giây để cách âm. “Xong rồi.” Cùng lúc, nó ngăn tâm trí mình với Glaedr và các Eldunarí, nhưng vẫn duy trì với Saphira.
+</p>
+
+<p>
+ Roran gật gù và nhìn về phía cánh đồng. “Anh đã có vài lời với vua Orrin khi chú đi.”
+</p>
+
+<p>
+ “Lời à? Như thế nào?
+</p>
+
+<p>
+ “Ông ta như một tên ngốc, và anh đã nói thẳng như vậy.”
+</p>
+
+<p>
+ “Em cho là ổng không đáp trả tử tế đâu.”
+</p>
+
+<p>
+ “Chú nói vậy cũng được. Ông ta cố đâm anh.”
+</p>
+
+<p>
+ “Ông ta làm cái gì?”
+</p>
+
+<p>
+ “Anh đã đánh văng gươm trước khi ông ta kịp đâm, nhưng nếu ông ta thuận lợi, ông ta dám chắc giết anh lắm.”
+</p>
+
+<p>
+ “Orrin?” Eragon khó tưởng tượng một vị vua lại làm như vậy. “Anh có làm ổng bị thương không?”
+</p>
+
+<p>
+ Lần đầu tiên Roran mìm cười: biểu tình ấy nhanh chóng biến mất dưới bộ râu. “Anh làm ông ta sợ, chắc thế còn tệ hơn.”
+</p>
+
+<p>
+ Eragon càu nhàu siết chặt chuôi thanh Brisingr. Nó nhận ra nó và Roran có tư thế ý hệt nhau; họ cùng nắm chặt vũ khí, và tựa trên hai chân đối diện nhau. “Ai biết chuyện này nữa?”
+</p>
+
+<p>
+ “Jörmundur – ông ấy ở đó – và bất kể ai Orrin kể cho.”
+</p>
+
+<p>
+ Eragon đăm chiêu bước tới lui, cố quyết định phải làm gì. “Thời điểm không tệ hơn được.”
+</p>
+
+<p>
+ “Anh biết. Anh sẽ không lỗ mãng với Orrin, nhưng ổng định gửi “chào mừng hoàng gia” tới Galbatorix cùng mấy chuyện nhảm nhí nữa. Ổng sẽ làm chúng ta bị nguy hiểm mất. Anh không thể để chuyện đó xảy ra. Chú chắc cũng làm như thế thôi.”
+</p>
+
+<p>
+ “Có lẽ vậy, nhưng chuyện này làm mọi thứ khó khăn hơn đấy. Giờ em là lãnh đạo Varden. Tấn công anh hay bất kì binh sĩ nào dưới quyền cũng hệt như tấn công em vậy. Orrin biết thừa, mà ổng còn biết chúng ta có chung dòng máu. Ông có thể quăng bao tay vào mặt em lắm chứ.”
+</p>
+
+<p>
+ “Ổng đang say,” Roran nói. “Anh không rõ ông ta có nghĩ gì không khi rút gươm nữa.”
+</p>
+
+<p>
+ Eragon thấy Arya và Blödhgarm liếc nhìn họ tò mò. Nó dừng bước và quay lưng lại với họ.
+</p>
+
+<p>
+ “Anh rất lo cho Katrina,” Roran thêm vào. “Nếu Orrin cay cú quá, ổng có thể cho người theo anh hoặc cô ấy. Thế nào đi nữa, cô ấy cũng sẽ tổn thương. Jörmundur đã cho người gác lều cô ấy rồi, nhưng thế không đủ đâu.”
+</p>
+
+<p>
+ Eragon lắc đầu. “Orrin không dám làm chị ấy bị thương đâu.”
+</p>
+
+<p>
+ “Không dám à? Ổng không thể làm hại chú, cũng chả có đủ gan đối mặt với anh, thế thì còn gì nữa? Chỉ có mai phục thôi. Dao nhọn trong bóng tối. Giết Katrina là Orrin dễ dàng trả được thù rồi.”
+</p>
+
+<p>
+ “Em ngờ chuyện Orrin phải viện đến sát thủ - hay làm hại Katrina.”
+</p>
+
+<p>
+ “Nhưng chú làm sao chắc được.”
+</p>
+
+<p>
+ Eragon nghĩ trong giây lát. “Em sẽ đặt vài bùa chú lên Katrina để giữ chị ấy an toàn, và em sẽ cho Orrin biết em đã làm chuyện đó. Thế đủ để đánh tan mọi kế hoạch ổng đang ấp ủ rồi.”
+</p>
+
+<p>
+ Nét căng thẳng trên mặt Roran tan dần đi. “Anh rất cảm kích.”
+</p>
+
+<p>
+ “Em sẽ đặt vài tuyến phòng hộ lên anh nữa.”
+</p>
+
+<p>
+ “Đừng, chú phải giữ sức. Anh có thể tự lo được.”
+</p>
+
+<p>
+ Eragon nài nỉ nhưng Roran kiên quyết từ chối. Cuối cùng Eragon gắt, “Khỉ thật! Nghe em này. Chúng ta sẽ đánh nhau với quân của Galbatorix đấy. Anh phải có vài sự bảo vệ, ít ra cũng để chống lại phép thuật. Em sẽ đặt phòng hộ lên người anh dù anh muốn hay không, rồi anh sẽ cười và cảm ơn em đấy!”
+</p>
+
+<p>
+ Roran nhìn trừng trừng nó, rồi càu nhàu giơ tay. “Rồi, chú cứ làm đi. Chú chả bao giờ biết từ bỏ cái gì hết.”
+</p>
+
+<p>
+ “Ờ, anh thì có chắc?”
+</p>
+
+<p>
+ Roran cười khúc khích sâu trong bộ râu. “Có lẽ không. Chắc là di truyền quá.”
+</p>
+
+<p>
+ “Mmh. Em không rõ Brom hay Garrow thì cứng đầu hơn nữa.”
+</p>
+
+<p>
+ “Cha đấy.” Roran chắc nịch
+</p>
+
+<p>
+ “Eh … Brom thì như – Không, anh nói phải. Bác Garrow đấy.”
+</p>
+
+<p>
+ Cả hai cười toe toét, hồi tưởng lại khoảng đời ở nông trại. Rồi Roran đổi tư thế và nhìn Eragon kì lạ. “Chú trông khác nhiều đấy.”
+</p>
+
+<p>
+ “Thật không?”
+</p>
+
+<p>
+ “Ừ, đúng. Chú nhìn có vẻ tự tin hơn nhiều.”
+</p>
+
+<p>
+ “Có lẽ vì em hiểu rõ bản thân hơn nhiều.”
+</p>
+
+<p>
+ Roran không nói được gì hết.
+</p>
+
+<p>
+ Nửa giờ sau, Jörmundur và vua Orrin cưỡi ngựa cùng nhau tới. Eragon chào Orrin lịch sự, nhưng Orrin đáp trả cộc lốc và lẩn tránh ánh mắt nó. Kể cả từ khoảng vài thước, Eragon vẫn có thể ngửi thấy mùi rượu trong hơi thở ông.
+</p>
+
+<p>
+ Khi họ tập trung phía trước Saphira, Eragon bắt đầu nói. Đầu tiên, nó buộc mọi người thề bằng cổ ngữ giữ bí mật. Rồi nó giải thích khái niệm Eldunarí cho Orik, Roran, Jörmundur và Orrin, rồi nó tóm tắt lịch sử của trái tim như ngọc của loài rồng đối với các Kỵ Sỹ và Galbatorix.
+</p>
+
+<p>
+ Các tiên nhân có vẻ không thoải mái khi Eragon tự nhiên bàn luận về Eldunarí với người khác, nhưng nó mừng là không ai phản đối. Ít nhất nó cũng đươc tin tưởng ngần ấy. Orik, Roran và Jörmundur có vẻ ngạc nhiên, không tin và đặt hàng tá câu hỏi. Đặc biệt trong mắt Roran có một tia sáng lóe lên, như thế thông tin này gợi cho anh ý tưởng có thể giết Galbatorix.
+</p>
+
+<p>
+ Từ đầu đến cuối, Orrin vẫn cáu kỉnh và tỏ vẻ bấn cần không tin vào sự tồn tại của các Eldunarí. Cuối cùng, Eragon dập tắt nghi ngờ của ông khi lấy tim-của-tim Glaedr ra khỏi túi yên cương, giới thiệu con rồng với bốn người.
+</p>
+
+<p>
+ Vẻ kính sợ của họ khi gặp Glaedr làm hài lòng Eragon. Kể cả Orrin cũng rất ấn tượng, nhưng sau khi nói vài lời với Glaedr, ông quay qua Eragon hỏi, “Nasuada có biết về chuyện này không?”
+</p>
+
+<p>
+ “Có. Tôi nói cho công nương biết ở Feinster.”
+</p>
+
+<p>
+ Như Eragon đoán trước, chuyện này làm Orrin phật ý. “Và một lần nữa các người bỏ lơ ta. Không có sự hỗ trợ của binh sĩ và lương thực của đất nước ta, quân Varden không có hy vọng đối mặt với Đế chế. Ta là một lãnh đạo một trong bốn vương quốc trên toàn lãnh thổ Alagaësia, binh sĩ của ta chiếm đáng kể trong tổng binh lực, và cả hai người cho là hợp lý khi không nói gì cho ta hết!”
+</p>
+
+<p>
+ Trước khi Eragon kịp phản ứng, Orik bước lên. “Họ không nói gì cho tôi nữa, Orrin,” vua Lùn gầm gừ. “Và người của tôi cũng giúp đỡ Varden lâu hơn ông nhiều. Ông không nên công kích họ. Eragon và Nasuada đã làm những điều họ nghĩ là tốt nhất, chứ không phải bất kính ông.”
+</p>
+
+<p>
+ Orrin cau có như thế sẽ tiếp tục tranh cãi, nhưng Glaedr nói với ông, Họ làm thế vì được yêu cầu, Vua của Surda à. Eldunarí là bí mật lớn nhất của giống loài chúng tôi, và không dễ để chia sẻ với loài người, kể cả các vị vua.
+</p>
+
+<p>
+ “Thế sao bây giờ lại làm thế?” Orrin thắc mắc. “Các người có thể bắt đầu cuộc chiến mà không cần lộ diện cơ mà.”
+</p>
+
+<p>
+ Để trả lời, Eragon nhắc lại câu chuyện hành trình của họ đến Vroengardm, kể cả lần chạm trán với bão biển và cảnh tượng trên tầng mây. Arya và Blödhgarm có vẻ rất chú ý, trong khi Orik không thoải mái cho lắm.
+</p>
+
+<p>
+ ““Barzûl, nhưng có vẻ đấy là một kinh nghiệm đáng tởm,” ông nói. “Nó làm tôi rùng hết cả mình. Với người lùn thì lòng đất ổn hơn bầu trời rất nhiều.”
+ <br/>
+ Tôi đồng ý, Saphira phì cười, khiến Orik cau có xoắn hai cái khuyên trên râu của ông.
+ <br/>
+</p>
+
+<p>
+ Trở lại câu chuyện, Eragon kể làm thế nào nó, Saphira và Glaedr vào được Hầm mộ của những Linh Hồn, thế nhưng nó nhịn không tiết lộ chuyện đó yêu cầu tên thật của họ. Khi nó kể những gì căn hầm chứa đứng, một khoảng lặng sốc trong giây lát diễn ra.
+</p>
+
+<p>
+ Rồi Eragon yêu cầu, “Mở tâm trí mọi người ra.”
+</p>
+
+<p>
+ Giây lát sau, âm thanh thì thầm tràn ngập không khí, Eragon cảm thấy Umaroth và những con rồng khác đang hiện diện quanh họ.
+</p>
+
+<p>
+ Các tiên nhân lảo đảo, Arya thì quỳ xuống trên một đầu ống, dí bàn tay lên một bên đầu như thế cô vừa bị đánh. Orik phụt ra một tiếng kêu mà nhìn rất hoang dã, trong khi Roran, Jörmundur và Orrin thì chết lặng.
+</p>
+
+<p>
+ Nữ hoàng Islanzadí cũng quỳ xuống, bắt chước khá giống con gái bà. Trong tâm thức, Eragon nghe bà nói với lũ rồng, chào hỏi rất nhiều cái tên và chào mừng chúng như những cố nhân. Blödhgarm cũng thế, trong vài phút những luồng ý nghĩ xáo động qua lại giữa lũ rồng và những người dưới chân đồi.
+</p>
+
+<p>
+ Tạp âm trở nên kinh khủng, Eragon phải chặn bản thân nó khỏi nó và ngồi trở về chân trước của Saphira, chờ đợi tiếng ồn lắng xuống. Các tiên nhân có vẻ bị ảnh hưởng nhiều nhất: Blödhgarm nhìn trân trối vào không khí với biểu tình vui mừng và lo lắng, trong khi Arya tiếp tục quỳ, Eragon ngỡ nó thấy hàng nước mắt chảy dài trên má cố. Islanzadí cười rạng rỡ, đến nỗi từ khi gặp bà tới giờ, Eragon nghĩ đây là lần đầu bà thực sự hạnh phúc.
+</p>
+
+<p>
+ Orik rùng mình thoát khỏi cơn mơ màng. Nhìn Eragon ông nói, “Thề với búa của Morgothal, cái này thực sự là bước ngoặt đây! Với sự giúp đỡ của họ, chúng ta thực sự có thể giết Galbatorix!”
+</p>
+
+<p>
+ “Anh không nghĩ chúng ta có thể trước đây sao?” Eragon cười tủm tỉm.
+</p>
+
+<p>
+ “Dĩ nhiên là có. Nhưng không chắc như bây giờ.”
+</p>
+
+<p>
+ Roran cũng rùng mình, như thế tỉnh khỏi cơn mê. “Anh không hề … I biết chú và các tiên nhân sẽ chiến đấu hết mình, nhưng anh không tin chú có thể thắng.” Ánh mắt anh bắt gặp Eragon. “Galbatorix đã đánh bại rất nhiều Kỵ Sỹ, mà cậu chỉ có một, lại còn quá trẻ nữa. Chuyện đó có vẻ không thể.”
+</p>
+
+<p>
+ “Em biết.”
+</p>
+
+<p>
+ “Giờ thì, …” Ánh hoang dại lóe lên trong mắt Roran. “Giờ chúng ta có cơ hội rồi.”
+</p>
+
+<p>
+ “Phải,” Jörmundur thở phào. “Chỉ cần nghĩ rằng chúng ta không phải lo lắng về Murtagh nữa. Hắn chẳng thấm vào đâu so với cậu và những con rồng cộng lại.”
+</p>
+
+<p>
+ Eragon không trả lời, dậm nhẹ gót xuống chân trước Saphira. Nó có ý tưởng khác về chuyện đó. Ngoài ra, nó không muốn phải giết Murtagh.
+</p>
+
+<p>
+ Rồi Orrin lên tiếng. “Umaroth nói cậu đã xem xét lại kế hoạch trận chiến. Cậu có sẵn lòng chia sẻ với chúng tôi không, Khắc tinh của Tà thần?”
+</p>
+
+<p>
+ “Tôi cũng muốn được nghe,” Islanzadí yêu cầu với giọng nhẹ nhàng hơn.
+</p>
+
+<p>
+ “Tôi nữa,” Orik nói.
+</p>
+
+<p>
+ Eragon nhìn họ không chớp mắt trong giây lát, rồi gật đầu. Nó nói với Islanzadí, “Quân đội của người có sẵn sàng chiến đấu không?”
+</p>
+
+<p>
+ “Chắc chắn. Chúng tôi đã chờ trả thù quá lâu rồi, chúng tôi sẽ không đợi thêm nữa.”
+</p>
+
+<p>
+ “Và chúng ta?” Eragon hướng gươm về phía Orrin, Jörmundur và Orik.
+</p>
+
+<p>
+ “Dân tộc của tôi rất trông chờ trận chiến này,” Orik tuyên bố.
+</p>
+
+<p>
+ Jörmundur liếc nhìn vua Orrin. “Các binh sĩ của chúng ta mệt mỏi và đói khát, nhưng ý chí của họ là sắt thép.”
+</p>
+
+<p>
+ “Cả các Urgal nữa chứ?”
+</p>
+
+<p>
+ “Cả họ nữa”.
+</p>
+
+<p>
+ “Thế thì chúng ta tấn công.”
+</p>
+
+<p>
+ “Khi nào?” Orrin hỏi.
+</p>
+
+<p>
+ “Khi bình minh lên.”
+</p>
+
+<p>
+ Trong khoảnh khắc, không ai lên tiếng.
+</p>
+
+<p>
+ Roran phá vỡ sự im lặng. “Nói thì dễ hơn làm đấy. Như thế nào?”
+</p>
+
+<p>
+ Eragon giải thích. Khi kết thúc, lại một tràng im lặng dài nữa.
+</p>
+
+<p>
+ Roran ngồi xổm xuống, bắt đầu vẽ vẽ trên đất bằng đầu ngón tay. “Quá mạo hiểm”.
+</p>
+
+<p>
+ “Nhưng táo bạo,” Orik nói. “Rất táo bạo.”
+</p>
+
+<p>
+ “Không còn cách nào an toàn cả,” Eragon quả quyết. “Nếu chúng ta có thể chộp được Galbatorix không chuẩn bị, dù chỉ một chút thôi, là đủ đáng để làm rồi.”
+</p>
+
+<p>
+ Jörmundur cúi đầu trầm ngâm. “Sao không giết murtagh trước? Tôi không hiểu chuyện đó. Vì sao không giải quyết hắn và Thorn khi ta có cơ hội?”
+</p>
+
+<p>
+ “Bởi vì,” Eragon đáp, “khi đó Galbatorix sẽ biết về họ.” Nó ngước về phía các Eldunarí đang trôi nổi. “Chúng ta sẽ mất lợi thế bất ngờ”.
+</p>
+
+<p>
+ “Thế còn đứa trẻ thì sao?” Orrin nôn nóng hỏ. “Điều gì khiến cậu nghĩ nó sẽ giúp cậu? Con bé chưa từng làm thế.”
+</p>
+
+<p>
+ “Lần này thì có,” Eragon hứa, tự tin nhiều hơn nó thực sự thấy.
+</p>
+
+<p>
+ Nhà vua càu nhàu có vẻ không tin.
+</p>
+
+<p>
+ Rồi Islanzadí hỏi, “Eragon, thực ra một chuyện kinh khủng lẫn vĩ đại. Cậu có sẵn sàng không? Không phải vì tôi nghi ngờ sự tận tâm và lòng dũng cảm của cậu, mà tôi hỏi vì chuyện này cần rất cân nhắc rất kĩ. Nên tôi hỏi: cậu có sẵn sàng, bất kể cái giá phải trả, hay không?”
+</p>
+
+<p>
+ Eragon không đứng lên, nhưng giọng của nó trở nên sắt đá hơn. “Có. Đây là điều cần làm, và chúng ta là người phải thực hiện nó. Dù có phải trả giá thế nào, chúng ta không thể lui bước được.”
+</p>
+
+<p>
+ Tỏ vẻ đồng ý, Saphira khẽ mở miệng và cắn nhẹ, đúng lúc hết câu của nó.
+</p>
+
+<p>
+ Islanzadí ngước mắt nhìn bầu trời. “Ngài và những người ngài đại diện có đồng ý không, Umaroth-tiền-bối?”
+</p>
+
+<p>
+ Chúng tôi đồng ý, con rồng trắng đáp.
+</p>
+
+<p>
+ “Thế thì tiến thôi,” Roran lẩm bẩm.
+</p>
+
+<p>
+ Chuyện nghĩa vụ (A matter of duty)
+</p>
+
+<p>
+ Mười người bọn họ, kể cả Umaroth, tiếp tục nói chuyện thêm một tiếng nữa. Orrin cần được thuyết phục thêm, và có nhiều chi tiết được quyết định: thời điểm, vị trí và các tín hiệu.
+</p>
+
+<p>
+ Eragon thấy nhẹ nhõm khi Arya quả quyết, “Trừ khi cậu hay Saphira phản đối, tôi sẽ đi cùng ngày mai.”
+</p>
+
+<p>
+ “Chúng tôi rất mừng được có nàng đi theo,” nó nói.
+</p>
+
+<p>
+ Islanzadí nghẹn giọng. “Con đi thì làm được gì chứ? Năng lực của con cần ở chỗ khác, Arya. Blödhgarm và các phù thủy ta phân phó cho Saphira và Eragon tinh thông pháp thuật hơn, mà cũng có kinh nghiệm chiến đấu hơn con nhiều. Đừng quên họ đã chiến đấu lại những Kẻ Phản Tặc (Forsworn), và không như những người khác, họ đã sống sót. Nhiều tiền bối của dân tộc ta sẽ sẵn sàng thế chỗ con. Nài ép vào vị trí hợp với người khác sẵn sàng và có khả năng hơn chỉ đơn thuần ích kỉ mà thôi.”
+</p>
+
+<p>
+ “Tôi cho là không ai phù hợp với nhiệm vụ này hơn Arya,” Eragon lặng lẽ nói. “Và tôi sẽ không muốn ai khác, trừ Saphira, bên mình trong chuyện này.”
+</p>
+
+<p>
+ Islanzadí trân trối nhìn Arya và Eragon, “Cậu còn quá trẻ, Khắc tinh của Tà Thần, và rõ ràng cậu để cảm xúc che mờ lý trí.”
+</p>
+
+<p>
+ “Không phải đâu, thưa Mẹ,” Arya nói. “Chính là mẹ đang để cảm xúc che mờ lý trí.” Cô uyển chuyển sải bước tiến lại phía Islanzadí. “Mẹ nói đúng, có nhiều người mạnh mẽ hơn, thông thái hơn và nhiều kinh nghiệm hơn con. Những con là người chuyên chở trứng của Saphira trên đất Alagaësia. Con đã cứu Eragon khỏi tay Tà thần Durza. Với sự giúp đỡ của Eragon, con đã tiêu giết Tà thần Varaug ở Feinster. Như Eragon, giờ con là Khắc tinh của Tà thần, và mẹ biết rõ con thề sẽ phục vụ dân tộc ta từ rất lâu rồi? Thậm chí nếu con muốn, con sẽ không chạy trốn đâu. Con sẽ chết sớm thôi. Con đã sẵn sàng cho thử thách này cũng như bất kì bậc tiền bối nào, vì chuyện đó con sẵn sàng cống hiến cả đời mình, như Eragon vậy.”
+</p>
+
+<p>
+ “Và toàn bộ cuộc đời của con quá ngắn,” Islanzadí khe khẽ. Bà đặt tay lên khuôn mặt Arya. “Con đã cống hiến vào cuộc đấu tranh chống Galbatorix suốt từ khi cha con mất, nhưng con biết quá ít về những niềm vui cuộc đời này ban tặng. Bao năm qua chúng ta đã không ở cạnh nhau: chỉ vài ngày rải rác trong suốt thế kỉ. Chỉ từ khi con đem Saphira và Eragon tới Ellesméra thì chúng ta mới lại nói chuyện như mẹ và con gái lần nữa. Ta sẽ không để mất con sớm như vậy đâu, Arya.”
+</p>
+
+<p>
+ “Con không phải là người chọn cách chia cắt,” Arya lặng lẽ.
+</p>
+
+<p>
+ “Không,” Islanzadí nói, rút lại bàn tay. “Nhưng con đã chọn cách rời Du Weldenvarden.” Nét mặt bà giãn ra. “Ta không muốn tranh cãi, Arya. Ta hiểu con nghĩ chuyện này là nghĩa vụ của mình, nhưng làm ơn, vì ta, con hãy để người khác thế chỗ mình được không?”
+</p>
+
+<p>
+ Arya cúi đầu im lặng. Rồi cô nói, “Con không thể để Eragon và Saphira đi mà không có mình, cũng như mẹ sẽ không thể để quân đội của mình tiến lên mà không có mẹ dẫn đầu. Con không thể … Mẹ sẽ để con tự trách mình là một kẻ hèn nhát ư? Gia đình ta không bao giờ trốn tránh chuyện phải làm; đừng yêu cầu con khinh bỉ chính mình.”
+</p>
+
+<p>
+ Ánh mắt Islanzadí lấp lánh như nước mắt nhìn về phía Eragon. “Phải,” nữ hoàng khẽ nói, “nhưng chiến đấu với Galbatorix thì …”
+</p>
+
+<p>
+ “Nếu mẹ quá sợ điều đó,” Arya nói giọng ấm áp, “thì hãy đi với con.”
+</p>
+
+<p>
+ “Ta không thể. Ta phải chỉ huy quan đoàn của mình.”
+</p>
+
+<p>
+ “Và con phải đi với Eragon và Saphira. Nhưng con hứa con sẽ không chết đâu.” Arya đặt bàn tay lên khuôn mặt mẹ cô như bà vừa làm. “Con sẽ không chết.” Rồi Arya lặp lại câu nói, lần này bằng cổ ngữ.
+</p>
+
+<p>
+ Quyết tâm của Arya khiến Eragon ấn tượng; để nói điều đó bằng cổ ngữ chứng tỏ cô phải tin tưởng mà không cần bằng cớ gì hết. Islanzadí cũng ấn tượng như vậy, và tự hào nữa. Bà mỉm cười và hôm lên má Arya. “Vậy thì đi đi, với lời cầu chúc của ta. Và đừng có mạo hiểm hơn cần thiết.”
+</p>
+
+<p>
+ “Cả mẹ nữa.” Rồi hai người ôm nhau.
+</p>
+
+<p>
+ Khi họ tách ra, Islanzadí nhìn về phía Eragon lẫn Saphira nói, “Hãy trông chừng nó, ta cầu khẩn cậu, nó không có một con rồng hay Eldunarí bảo vệ cả.”
+</p>
+
+<p>
+ Chúng tôi hứa, Eragon và Saphira đồng thanh đáp bằng cổ ngữ.
+</p>
+
+<p>
+ Khi mọi chuyện đã dàn xếp xong, hội đồng lãnh đạo giải tán, các thành viên dần đi mất. Ngồi cạnh Saphira, Eragon dõi theo những người khác dần khuất bóng. Cả hai đều không cử động chút nào. Saphira phải ẩn mình dưới chân đồi đến khi cuộc tấn công bắt đầu, còn nó thì đợi đêm xuống trước khi vào doanh trại.
+</p>
+
+<p>
+ Orik là người thứ hai rời đi sau Roran. Vua Lùn đi tới Eragon ôm nó thật mạnh. “À, anh ước có thể đi cùng hai người,” hai mắt ông trang trọng.
+</p>
+
+<p>
+ “Và em ước anh cũng đi,” Eragon đáp.
+</p>
+
+<p>
+ “Rồi, ta sẽ gặp lại nhau sớm thôi, ăn mừng chiến thắng với những thùng bia, eh?”
+</p>
+
+<p>
+ “Em trông chờ lắm đấy.”
+</p>
+
+<p>
+ Tôi nữa, Saphira nói.
+</p>
+
+<p>
+ “Tốt lắm,” Orik hồ hởi, gật đầu chắc nịch. “Ổn rồi nhé. Tốt nhất cậu không được để Galbatorix đánh bại đâu, nếu không danh dự sẽ buộc tôi phải tiếp chiến hắn đấy.”
+</p>
+
+<p>
+ “Bọn em sẽ cẩn thận mà,” Eragon mỉm cười.
+</p>
+
+<p>
+ “Anh cũng hy vọng thế, vì anh ngờ mình không làm được gì nhiều hơn vặn mũi Galbatorix.”
+</p>
+
+<p>
+ Ồ cái này em muốn thấy đấy, Saphira cười.
+</p>
+
+<p>
+ Orik làu bàu. “Các vị thần phù hộ cho cậu, Eragon, và cho ngươi nữa, Saphira.”
+</p>
+
+<p>
+ “Và cho anh, Orik, contrai của Thrifk.” Rồi Ork vỗ vai Eragon, bước huỳnh huỵch về phía con ngựa lùn sau bụi cây.
+</p>
+
+<p>
+ Trong khi Islanzadí và Blödhgarm rời đi, Arya ở lại. Cô nói chuyện rất lâu với Jörmundur, Eragon cũng không để ý nhiều. Tuy nhiên khi Jörmundur cưỡi ngựa rời khỏi, Arya vẫn còn chần chờ ở đó, nó nhận ra cô muốn nói chuyện riêng với họ.
+</p>
+
+<p>
+ Sau khi chắc chắn mọi người đều đi khỏi, cô nhìn nó và Saphira nói, “Có chuyện gì xảy ra khi cậu đi, chuyện gì đó cậu không muốn nói trước mặt Orrin hay Jörmundur, hay … mẹ tôi?”
+</p>
+
+<p>
+ “Vì sao nàng hỏi như thế?”
+</p>
+
+<p>
+ Cô ngập ngừng. “Bởi … cả hai dường như đã thay đổi. Có phải là do các Eldunarí, hay liên quan đến cơn bão?”
+</p>
+
+<p>
+ Eragon mỉm cười với nhận định của cô. Nó hỏi ý Saphira, công nàng đồng ý, nó nói, “Chúng tôi đã biết được tên thật của mình.”
+</p>
+
+<p>
+ Đôi mắt Arya mở to. “Tên thật? Thế … hai người có hài lòng không?”
+</p>
+
+<p>
+ Một phần, Saphira nói.
+</p>
+
+<p>
+ “Chúng tôi biết được tên thật của mình,” Eragon lặp lại. “Chúng tôi thấy trái đất hình tròn. Và trong hành trình về đây, Umaroth và các Eldunarí khác chia sẽ rất nhiều trí nhớ với chúng tôi.” Nó cười nhăn nhỏ. “Tôi không dám nói mình hiểu hết được chúng, nhưng chúng mọi thứ … khác đi.”
+</p>
+
+<p>
+ “Tôi hiểu,” Arya lẩm bẩm. “Cậu có nghĩ thay đổi này tốt hơn không?”
+</p>
+
+<p>
+ “Tôi cho là thế. Thay đổi tự nó không tốt hay xấu, nhưng kiến thức thì lúc nào cũng hữu dụng.”
+</p>
+
+<p>
+ “Tìm ra tên thật của mình có khó không?”
+</p>
+
+<p>
+ Và thế là nó nói cho cô hay làm thế nào họ làm được chuyện đó, kể cả sinh vật kì lạ họ chạm trán ở đảo Vroengard, cô tỏ vẻ rất thích thú nghe.
+</p>
+
+<p>
+ Khi Eragon đang kể, một ý tưởng lóe lên trong đầu nó, có vẻ rất hợp lý để bỏ qua. Nó giải thích cho Saphira, và cô nàng đồng ý, dù có vẻ miễn cưỡng hơn lúc trước.
+</p>
+
+<p>
+ Anh buộc phải sao? Cô nàng hỏi.
+</p>
+
+<p>
+ Uh.
+</p>
+
+<p>
+ Thế cứ làm đi, nhưng chỉ nếu cô ấy đồng ý thôi.
+</p>
+
+<p>
+ Khi họ xong chuyện về Vroengard, nó nhìn vào mắt Arya và nói, “Nàng có muốn nghe tên thật của tôi không? Tôi sẵn lòng chia sẻ nó với nàng.”
+</p>
+
+<p>
+ Đề nghị của nó có vẻ gây sốc cô. “Không! Cậu không nên nói với tôi hoặc bất kì ai khác. Đặc biết là khi chúng ta tới gần Galbatorix. Lão có thể đánh cắp được từ tâm trí tôi. Ngoài ra, cậu chỉ nên nói tên thật cho … ai đó cậu tin tưởng hết thảy thôi.”
+</p>
+
+<p>
+ “Tôi tin nàng.”
+</p>
+
+<p>
+ “Eragon, kể cả khi tiên nhân chúng tôi trao đổi tên thật, chúng tôi cũng không làm điều đó cho đến khi biết nhau rất, rất nhiều năm. Kiến thức từ đó quá cá nhân, quá mật thiết để có thể đem ra tan dóc, và không có hiểm họa nào lớn hơn chia sẻ nó. Khi cậu nói tên thật cho người khác, cậu đặt toàn bộ những gì cậu có vào tay họ.”
+</p>
+
+<p>
+ “Tôi biết, nhưng tôi có thể không bao giờ có cơ hội đó lần nữa. Đây là thứ duy nhất tôi phải, và sẽ nói cho nàng.”
+</p>
+
+<p>
+ “Eragon, điều cậu đề xuất… Đó là thứ trân quý nhất mà một người có thể cho người khác.”
+</p>
+
+<p>
+ “Tôi biết.”
+</p>
+
+<p>
+ Một cơn rùng mình thoáng quá Arya, rồi cô có vẻ khép mình lại. Một lát sau cô nói, “Chưa ai từng đề nghị cho tôi món quà lớn như thế… Tôi lấy làm vinh dự vì lòng tin của cậu, Eragon, và tôi hiểu điều đó có nghĩa như thế nào với cậu, nhưng không, tôi phải từ chối. Sẽ thật sai lầm nếu cậu làm điều đó và nếu tôi chấp nhận chỉ vì ngày mai chúng ta có thể bị giết hoặc cầm tù. Hiểm nguy không phải là lý do để hành động ngốc nghếch, dù nó có lớn chừng nào đi nữa.”
+</p>
+
+<p>
+ Eragon gật đầu. Lý do của cô rất hợp lý, và nó sẽ tôn trọng lựa chọn của cô. “Được rồi, như nàng muốn.” Nó thở dài.
+</p>
+
+<p>
+ “Cảm ơn, Eragon.”
+</p>
+
+<p>
+ Một khoảnh khắc thoáng quá. Rồi nó nói, “Nàng đã bao giờ nói tên thật cho ai khác chưa?”
+</p>
+
+<p>
+ “Chưa.”
+</p>
+
+<p>
+ “Kể cả mẹ nàng?”
+</p>
+
+<p>
+ Vành môi cô cong lại. “Không.”
+</p>
+
+<p>
+ “Nàng có biết tên thật của mình không?”
+</p>
+
+<p>
+ “Đương nhiên. Sao cậu lại nghĩ như vậy?”
+</p>
+
+<p>
+ Nó khẽ so vai. “Tôi không nghĩ thế, tôi chỉ không chắc lắm.” Cả hai người im lặng trong phút chốc. Rồi, “Khi nào … làm sao nàng biết tên thật của mình?”
+</p>
+
+<p>
+ Arya im lặng hồi lâu, nó bắt đầu nghĩ cô sẽ từ chối không nói. Nhưng rồi cô thở dài bắt đầu, “Rất nhiều năm sau khi tôi rời Du Weldenvarden, khi tôi đã quen thuộc với phận sự của mình đối với Varden và những người lùn. Faolin và những người đồng hành ở xa, tôi có một thời gian dài một mình. Hầu hết tôi dành để thám hiểm Tronjheim, lang thang ở những rìa trống của thành-phố-núi, nơi người khác hiếm khi đến. Tronjheim lớn hơn nhiều người tưởng, có nhiều thứ lạ lùng trong nó: phòng ốc, con người, sinh vật, những đồ vật bị lãng quên… Khi tôi lang thang, tôi suy ngẫm, và dần tôi hiểu bản thân mình nhiều hơn tôi từng. Một ngày tôi khám phá một căn phòng ở rất cao trong Tronjheim – tôi ngờ rằng mình có thể đến được đó lần nữa, kể cả khi cố thử. Một tia nắng ùa vào căn phòng, dù trần nhà rất kín, và giữa căn phòng có mọt bệ đá, trên đó nở ra một bông hoa. Tôi không biết đó là loại hoa gì, tôi chưa bao giờ thấy nó trước đấy. Cánh hoa màu tím, nhưng nhụy hoa thì như giọt máu vậy. Gốc hoa có gai, và bông hoa thì tỏa ra ra mùi hương tuyệt vời và nó có vẻ như ngân nga điệu nhạc. Đó thật là một cảnh tượng tuyệt vời và hiếm có, tôi đứng ở đó, chăm chú nhìn vào bông hoa lâu hơn tôi có thể nhớ, rồi tại đó, lúc đó, tôi bật thốt ra từ ngữ tôi đã và đang là.”
+</p>
+
+<p>
+ “Tôi muốn nhìn bông hoa ấy một ngày nào đó.”
+</p>
+
+<p>
+ “Có lẽ cậu sẽ thấy.” Arya liếc nhìn phía trại của Varden. “Tôi nên đi. Còn nhiều thứ phải làm.”
+</p>
+
+<p>
+ Nó gật đầu. “Chúng ta sẽ gặp lại sáng mai.”
+</p>
+
+<p>
+ “Ngay mai.” Arya thoải bước đi. Sau vài bước, cô dừng nhìn lại. “Tôi mừng vì Saphira chọn cậu làm Kỵ Sỹ, Eragon. Và tôi tự hào đã chiến đấu bên cạnh cậu. Cậu đã trở nên hơn thất cả chúng tôi có thể hy vọng. Dù chuyện gì xảy ra ngày mai, hãy nhớ như vậy.”
+</p>
+
+<p>
+ Rồi cô tiếp tục sải bước, nhanh chóng biết mất sau vách đồi, để nó một mình lại với Saphira và các Eldunarí.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-055.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-057.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

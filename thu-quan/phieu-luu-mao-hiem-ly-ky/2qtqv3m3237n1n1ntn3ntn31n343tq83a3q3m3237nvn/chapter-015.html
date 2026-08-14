@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 15 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 15</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-014.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-016.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon xoay vai khi đi trong trại của quân Varden, cố gắng chữa chứng ngoẹo cổ vì đấu kiếm với Arya và Blödhgarm đầu chiều.
+</p>
+
+<p>
+ Khi nó bước lên đỉnh một ngọn đồi nhỏ trông như một hòn đảo cô đơn giữa một rừng lều bạt, nó chống tay lên hông và quan sát cảnh vật. Trước mắt nó là mặt nước hồ Leona đen lấp loáng trong ánh chạng vạng và ánh đuốc vàng chiếu ra từ khu lều. Varden đã hành quân trên con đường giữa khu lều và bờ sông: theo như Jeod bảo nó, con đường đá cuội đó có trước khi Galbatorix giết chết các Kỵ sĩ. Cách đây một phần tư dặm về phía bắc là một ngôi làng chài nhỏ ngay sát bờ sông. Eragon thừa biết dân làng chẳng vui vẻ gì khi quân đội tới đóng quân ngay trên cửa ngõ ra vào của họ.
+</p>
+
+<p>
+ Trò phải học... nhìn những gì trò thấy.
+</p>
+
+<p>
+ Từ khi rời khỏi Belatona, Eragon dành hàng giờ nghiền ngẫm lời khuyên của Glaedr. Nó không biết ông rồng định nói gì, vì Glaedr không chịu nói thêm gì sau đó. Và thế là Eragon đành tự mình suy diễn câu nói đó theo nghĩa đen. Nó đang thực sự nhìn những gì trước mắt nó, dù cho thứ đó nhỏ và không đáng chú ý tới đâu, và cố gắng hiểu xem câu nói của ông rồng có ngụ ý gì.
+</p>
+
+<p>
+ Dù nó cố gắng lắm nhưng chỉ chuốc lấy thất bại. Dù nhìn thấy gì, thấy bao nhiêu nó vẫn không nhìn ra thứ nó cần thấy. Tệ hơn, giờ nó còn chẳng hiểu gì, ví dụ như vì sao khói lại bốc lên từ ba ống khói trong khu làng chài.
+</p>
+
+<p>
+ Dù nó cảm thấy chưa hiểu gì nhưng những nỗ lực của nó ít nhất cũng thu về một thành quả: Arya không còn có thể đánh bại nó trong mỗi lần giao chiến. Nó quan sát nàng cẩn trọng gấp đôi, quan sát nàng như thể nàng là một con nai còn nó là kẻ săn mồi – về cuối cùng, nó cũng thắng được vài hiệp. Nhưng, nó vẫn chưa ngang cơ với nàng, vẫn kém nàng quá nhiều. Nó chưa biết nó cần học gì – hay ai có thể dạy nó – để trở thành tay kiếm lão luyện như nàng.
+</p>
+
+<p>
+ Có lẽ Arya nói đúng, kinh nghiệm là thầy dạy tốt nhất cho mình lúc này, Eragon nghĩ. Cần có thời gian để đúc rút kinh nghiệm, nhưng mình lại đâu có nhiều thời gian. Mình sắp tới Dras-Leona và rồi tớ Urȗ’baen. Nhiều nhất là vài tháng nữa mình và mọi người sẽ phải đối mặt với Galbatorix và Shruikan.
+</p>
+
+<p>
+ Nó thở dài và xoa mặt, cố nghĩ tới chuyện gì nhẹ nhàng hơn. Nhưng cuối cùng bao giờ nó cũng quay lại nghĩ tới những chuyện nó khúc mắc trong lòng, lo lắng về những chuyện đó nhưu một con chó nghĩ tới khúc xương, càng lúc càng căng thẳng.
+</p>
+
+<p>
+ Không nghĩ thêm được gì, nó đi xuống đồi. Nó lang thang trong những căn lều dưới ánh chiều chạng vạng, đi về phía lều của nó nhưng chẳng để ý gì tới đường đi. Đi bộ lúc nào cũng giúp nó bình tĩnh. Những người đàn ông luôn luôn tránh đường cho nó đi và đặt nắm tay lên ngực cùng một tiếng chào nho nhỏ, “Chào Khắc tinh của tà thần,” còn Eragon lịch sự gật đầu đáp lễ.
+</p>
+
+<p>
+ Nó đi bộ khoảng mười lăm phút, dừng lại và bắt đầu nghĩ ngợi thì nghe thấy một tiếng phụ nữ la chói lói đầy hứng khởi. Nó tò mò đi về phía âm thanh phát ra cho tới khi thấy một căn lều năm xa cách khu trại, gần gốc liễu khẳng khiu, cái cây duy nhất gần hồ mà quân đội không đốn hạ làm củi đun.
+</p>
+
+<p>
+ Ở đó, dưới những tán cây là một cảnh tượng kỳ lạ nhất nó từng thấy.
+</p>
+
+<p>
+ Mười hai Urgal bao gồm cả thủ lĩnh của bọn họ, Nar Garzhvog, ngồi thành hình bán nguyệt quanh đám lửa đang bập bùng cháy. Vẻ sợ hãi nhảy nhót trên gương mặt họ, khắc họa rõ nét hàng lông mày rậm, xương gò má rộng và quai hàm lớn cũng như những chóp sừng trên trán và cong xuống hai bên đầu. Urgal để trần tay và ngực, trừ một bao da quanh cổ tay và một dải vải da đeo chéo vai xuống eo. Trừ Garzhvog còn có ba Kull nữa hiện diện. Kích thước khổng lồ của họ khiến cho những Urgal còn lại – không ai dưới mét tám – trở nên nhỏ như một đứa bé.
+</p>
+
+<p>
+ Lẫn trong đám Urgal, là vài tá mèo ma ở lốt thú. Rất nhiều con mèo ngồi thẳng trước đống lửa, im lìm, không quật đuôi, tai dựng đứng. Những con khác nằm bò trên mặt đất, trong lòng Urgal hoặc nằm trên tay họ. Eragon kinh ngạc khi thấy một con mèo ma – một con mèo trắng cái gầy nhẳng – nằm cuộn tròn trên đầu một Kull, chân trước của nó đặt lên một bên sương xọ hắn và móng bấu chặt vào lông mày. Dù mèo ma nhỏ bé hơn Urgal nhưng chúng cũng dữ đằn tương tự và Eragon biết nó cần dè chừng tộc nào hơn; nó hiểu Urgal nhưng mèo ma thì... thật khó đoán.
+</p>
+
+<p>
+ Đối diện với chúng, ở bên kia đống lửa, phía trước khu lều là bà lang Angela. Bà ngồi khoanh chân trên một chiếc chăn và quay sợi. Cả mèo ma và Urgal đều chăm chú nhìn bà, không dời mắt nghe bà nói: “...nhưng hắn quá chậm và con thỏ mắt đỏ giận dữ đã xé toạc cổ họng Hord, giết chết hắn ngay lập tức. Sau đó con thỏ chạy tọt vào rừng, không ai còn biết tới nó nữa. Nhưng” – nói tới đây Angela hạ thấp giọng – “nếu các người đi qua khu rừng đó, như tôi từng có dịp... thi thoảng, thậm chí trong ngày hôm nay, các người sẽ thấy một con nai vừa mới bị giết hoặc một Feldȗnost trông như thể bị nhấm nháp ăn dần, như một cây củ cải. Và quanh nó, các người sẽ thấy những dấu chân thỏ lớn khác thường. Thi thoảng một chiến binh của Kvôth sẽ mất tích, khi người ta tìm thấy thì hắn ta đã chết với cổ họng bị xé toạc... luôn luôn trong tình trạng cổ họng bị xé toạc.
+</p>
+
+<p>
+ Bà chỉnh lại tư thế ban đầu. “Terrin rất buồn vì mất bạn và cậu ta muốn bắt được con thỏ nhưng những người lùn vẫn cần sự giúp đỡ từ cậu. Vì thế cậu ta trở lại thành lũy và vì thành đã bị vây hãm trong ba ngày ba đêm, nguồn lương thực cạn kiệt và binh lính đều bị thương.
+</p>
+
+<p>
+ “Cuối cùng, vào buổi sáng ngày thứ tư, khi tưởng như đã hết hy vọng, những đám mây tản ra và từ xa, Terrin ngạc nhiên nhìn thấy Mimring bay tới thành dẫn đầu một trận sấm rồng. Cảnh tượng về những con rồng khiến những kẻ công thành vô cùng hoảng sợ và họ ném vũ khí bỏ chạy vào rừng sâu.” Bà Angela cong môi. “Đó, như các người có thể tưởng tượng ra những người lùn của Kvôth vui mừng như thế nào.
+</p>
+
+<p>
+ “Khi Mimring đậu xuống, Terrin ngạc nhiên nhìn thấy những vẩy trên người nó sáng như kim cương vì Mimring bay quá gần mặt trời – để dẫn đường cho những con rồng khác, nó phải lượn qua lượn lại trên đỉnh núi Beor, cao hơn bất cứ con rồng nào trước và sau đó. Từ đó trở đi, Terrin trở thành anh hùng trong Trận chiến Kvôth, và con rồng của cậu mang tên Mimring Rực rỡ vì lớp vảy trên người và họ sống hạnh phúc mãi mãi. Nhưng, đúng ra mà nói, Terrin luôn luôn bị ám ảnh bởi lũ thỏ cho tới lúc già. Và đó là chuyện thực sự xảy ra với Kvôth.”
+</p>
+
+<p>
+ Sau đó bà im lặng, bầy mèo ma rên rừ rừ và Urgal gầm gừ vài tiếng tán thưởng.
+</p>
+
+<p>
+ “Bà kể rất hay, thưa Uluthrek,” Garzhvog nói, giọng nói của ông ta như thể đá lăn từ núi xuống.
+</p>
+
+<p>
+ “Cám ơn.”
+</p>
+
+<p>
+ “Nhưng đó không phải câu chuyện tôi từng được nghe,” Eragon nhận xét khi bước về phía đống lửa.
+</p>
+
+<p>
+ Biểu hiện trên khuôn mặt Angela sáng lên. “Ừ, cậu đừng mong những người lùn thừa nhận họ được con thỏ tha mạng chứ. Cậu trốn trong bóng tôi nghe lỏm toàn bộ à?”
+</p>
+
+<p>
+ “Không, chỉ vài phút thôi,” nó thú nhận.
+</p>
+
+<p>
+ “Vậy thì cậu đã bỏ qua phần hay nhất rồi, và tối nay tôi sẽ không kể lại đâu. Cổ họng tôi khô rát rồi.”
+</p>
+
+<p>
+ Eragon cảm thấy mặt đất rung lên khi Kull và các Urgal khác đứng dậy khiến lũ mèo ma nằm trong lòng họ không vui, vài con còn gào lên phản kháng khi rơi xuống đất.
+</p>
+
+<p>
+ Khi nó nhìn những khuôn mặt có sừng xấu xí tập trung quanh đống lửa, nó phải kìm lắm mới không rút kiếm. Kể cả sau một thời gian chiến đấu, hành quân và đi săn cùng Urgal thậm chí trao đổi tư tưởng cùng vài kẻ trong số họ, sự hiện diện của họ vẫn khiến nó ngỡ ngàng. Nó hiểu họ là quân đồng minh, nhưng xương cốt và cơ bắp vẫn không thể nào quên đi sự kinh hoàng thấm sâu trong người nó khi chiến đâu với đồng bọn của họ trong những trận chiến.
+</p>
+
+<p>
+ Garzhvog bỏ cái gì đó ra từ cái túi da nhỏ đeo trên thắt lưng. Ông ta đưa bàn tay dày cui qua đổng lửa, đưa vật đó cho Angela lúc đó đang hạ con suốt xuống và nhận lấy vật đó. Đó là một pha len màu xanh nước biển thô ráp trông rống như bông tuyết bị đông cứng sáng lấp lánh. Bà bỏ nó vào ống tay áo rồi cầm con suốt lên.
+</p>
+
+<p>
+ Garzhvog nói, “Thi thoảng bà phải tới lều của chúng tôi đó Uluthrek và chúng tôi sẽ kể cho bà nghe rất nhiều câu chuyện của chúng tôi. Chúng tôi có người kể chuyện. Anh ta rất khá; khi bà nghe anh ta ngâm câu chuyện về chiến thắng của Nar Tulkhqua tại Stavarosk, máu bà sẽ sôi lên và bà sẽ thấy như mình đang tru lên dưới ánh trăng và đấu sừng với những kẻ thù mạnh nhất.”
+</p>
+
+<p>
+ “Điều này còn tùy thuộc anh có sừng để đấu không chứ,” Angela nói. “Tôi rất vinh hạnh được ngồi nghe chuyện với anh. Có lẽ tối mai đi?”
+</p>
+
+<p>
+ Kull khổng lồ đồng ý; sau đó Eragon hỏi. “Stavarosk ở đâu? Tôi chưa bao giờ nghe.”
+</p>
+
+<p>
+ Urgal rì rầm không vui và Garzhvog hạ đầu khụt khịt như một con bò đực. “Anh đùa gì thế, Hỏa kiếm?” ông ta hỏi. “Anh muốn thách thức chúng tôi sao?” Ông ta đóng mở nắm tay thể hiện rõ ý đe dọa.
+</p>
+
+<p>
+ Eragon đề phòng nói, “Tôi không có ý xúc phạm, thưa Nar Garzhvog. Tôi thành thực có ý hỏi vậy; tôi chưa bao giờ nghe tới cái tên Stavarosk.”
+</p>
+
+<p>
+ Những tiếng rầm rì ngạc nhiên vang lên giữa các Urgal. “Sao lại có thể?” Garzhvog nói “Không phải con người nào cũng biết về Stavarosk sao? Không phải những con người ở phía bắc rặng Beor luôn nói về chiến thắng lớn nhất của chúng tôi sao? Nếu các nơi khác không biết thì quân Varden chắc chắn biết.”
+</p>
+
+<p>
+ Angela thở dài và không thèm nhìn lên nói. “Tốt nhất anh phải bảo bọn họ kể thôi.”
+</p>
+
+<p>
+ Eragon cảm thấy Saphira đang quan sát và nó biết cô sắp sửa bay tới nếu cuộc ẩu đả là không thể tránh.
+</p>
+
+<p>
+ Nó cẩn trọng lựa chọn từ ngữ và nói, “Không ai kể cho tôi nghe, nhưng vì tôi không ở cùng Varden lâu nên...”
+</p>
+
+<p>
+ “Drajl!” Garzhvog chửi thề. “Kẻ phản bội không có sừng thậm chí không có đủ dũng khí thừa nhận thất bại. Hắn là kẻ hèn nhát và dối trá!”
+</p>
+
+<p>
+ “Ai? Galbatorix à?” Eragon cẩn trọng hỏi.
+</p>
+
+<p>
+ Những con mèo rít lên khi nghe nhắc tới tên bạo chúa.
+</p>
+
+<p>
+ Garzhvog gật đầu. “Đúng. Khi hắn lên nắm quyền, hắn đã đuổi cùng giết tận loài chúng tôi. Hắn đã gửi một đội quân lớn tới núi Spine. Binh lính của hắn đã xông vào làng của chúng tôi, đốt xương chúng tôi và để lại mắt đất đen sì và nỗi cay đắng ở lại sau. Chúng tôi đã đánh trả - lúc đầu vì vui, sau là trong tuyệt vọng, nhưng vẫn chống trả. Đó là điều duy nhất chúng tôi có thể làm. Chúng tôi không có chốn dung thân, không có chỗ trốn. Ai sẽ bảo vệ Urgalgra khi các Kỵ sĩ đã ngã xuống?
+</p>
+
+<p>
+ “Chúng tôi may mắn. Chúng tôi có một thủ lĩnh tài ba, Nar Tulkha. Ông ấy từng bị loài người bắt giữ, từng dành nhiều năm chiến đấu với họ nên hiểu cách nghĩ của họ. Vì thế, ông có thể tập hợp rất nhiều bộ tộc lại. Sau đó ông lừa quân đội của Galbatorix vào trong một khe núi hẹp và chúng tôi từ trên ném gỗ xuống. Đó là một trận chiến đẫm máu đó Hỏa kiếm. Máu chảy lênh láng, người chất thành đống cao hơn đầu tôi. Cho tới ngày hôm nay, nếu anh tới Stavarosk, anh vẫn cảm thấy xương kêu răng rắc dưới chân và có thể tìm thấy những đồng tiền, kiếm và những mảnh áo giáp dưới lớp rong rêu.
+ <br/>
+ “Hóa ra là các người!” Eragon reo lên. “Cả đời tôi từng nghe nói Galbatorix đã từng mất một nửa số quân lính trong rặng Spine nhưng không ai nói cho tôi biết vì sao hay thế nào.”
+ <br/>
+</p>
+
+<p>
+ “Hơn một nửa số lính đấy Hỏa kiếm.” Garzhavog xoay vai và gầm gừ trong họng. “Và giờ tôi thấy chúng ta cần lan truyền câu chuyện đó để mọi người đều biết về chiến thắng của chúng tôi. Chúng tôi sẽ tìm những người kể chuyện, những thi sĩ loài người, dạy họ bài hát về Nar Tulkhqua và đảm bảo họ nhớ rằng phải hát thường xuyên và hát lớn.” Ông gật đầu như thể đã quyết ý rồi nói, “Tạm biệt, Hỏa kiếm. Tạm biệt, Uluthrek.” Sau đó ông ta và những chiến binh biến mất trong bóng tối.
+</p>
+
+<p>
+ Angela tặc lưỡi khiến Eragon giật mình.
+</p>
+
+<p>
+ “Gì thế?” nó hỏi và quay lại nhìn bà.
+</p>
+
+<p>
+ Bà mỉm cười. “Tôi đang tưởng tượng ra cảnh mấy tay thổi sáo tội nghiệp sẽ thế nào trong vài phút nữa khi về lều, thấy mười hai Urgal, bốn Kull đứng ngoài, vui vẻ dạy anh ta về văn hóa của Urgal. Tôi sẽ ấn tượng nếu chúng ta không nghe tiếng hét đó.” Bà lại tặc lưỡi.
+</p>
+
+<p>
+ Eragon cũng hứng thú tượng tự. Nó ngồi xuống dùng một cành cây gẩy đống than củi. Nó cảm nhận một vật nặng nề ấm áp trong lòng, khi nhìn xuống nó thấy con mèo ma trắng cuộn tròn trên chân. Nó đưa tay vuốt lông nó rồi nghĩ ngợi gì đó lên tiếng hỏi. “Có được không?”
+</p>
+
+<p>
+ Con mèo trắng vẫy đuôi phớt lờ nó.
+</p>
+
+<p>
+ Hy vọng mình không làm gì sai, Eragon cẩn trong gãi gãi cổ sinh vật. Một lát sau, một tiếng rừ rừ to vang lên.
+</p>
+
+<p>
+ “Cô ấy thích cậu,” Angela nhận xét.
+</p>
+
+<p>
+ Không hiểu vì sao Eragon lại thấy cực kỳ phấn chấn. “Cô ấy là ai thế ạ? Ý tôi là, cô tên gì? Tên cô là gì?” Nó liếc nhìn con mèo ma lo lắng mình khiến cô mèo phật ý.
+</p>
+
+<p>
+ Angela cười. “Tên cô ấy là Thợ săn đêm. Hay đúng hơn, đó là nghĩa tên cô ấy dịch ra từ ngôn ngữ mèo ma. Đúng hơn, cô ấy là.” Nói tới đây, bà lang húng hắng ho, âm thanh đó khiến Eragon dựng tóc gáy. “Thợ săn đêm là vợ Grimrr Nửa vuốt, có người nói cô ấy từng là nữ hoàng của loài mèo ma.”
+</p>
+
+<p>
+ Tiếng rừ rừ cáng lúc càng lớn.
+</p>
+
+<p>
+ “Tôi hiểu.” Eragon nhìn quanh những con mèo ma khác. “Solembum đâu?”
+</p>
+
+<p>
+ “Đang bận đuổi theo một con mèo vằn bằng nửa số tuổi của cu cậu. Cậu ta hành động như thể mèo con ấy... nhưng dù sao trong đời ai chẳng có một lần ngốc nghếch.” Bà lang giữ quay xa bằng tay trái, dừng nó lại và đưa một sợi bông mới vào đĩa sợi. Sau đó và tiếp tục xe sợi. “Có vẻ cậu có nhiều câu hỏi đó, Khắc tinh của tà thần.”
+</p>
+
+<p>
+ “Mỗi khi tôi gặp bà, tôi luôn luôn cảm thấy càng lúc càng mông lung.”
+</p>
+
+<p>
+ “Luôn luôn? Cậu chuyên chế nhỉ. Được rồi, tôi sẽ cố trả lời xem. Hỏi đi.”
+</p>
+
+<p>
+ Thấy bà ta cởi mở, Eragon cân nhắc nên hỏi gì trước. Cuối cùng nó hỏi, “Một cơn sấm rồng? Ý bà là…”
+</p>
+
+<p>
+ “Đấy là cụm từ đúng để chỉ một đàn rồng. Nếu cậu có cơ hội nghe tiếng chúng vỗ cánh, cậu sẽ hiểu. Khi mười, mười hai hoặc nhiều hơn bay trên đầu cậu, cậu sẽ thấy không khí rền rĩ xung quanh cậu như thể cậu đang ngồi trong một cái trống cỡ cực đại. Không thì cậu gọi một đàn rồng là gì? Cậu goi là một bầy quả, một đội đại bàng, một đàn ngỗng trời, một lũ vịt, một đàn chim giẻ cùi, một bầy cú, v.v... nhưng còn rồng thì sao? Một sự đói khát chắc? Không được. Không thể gọi chúng là một ngọn lửa hay nỗi sợ, dù ta thích từ nỗi sợ, Nhưng không, một đàn rồng gọi là một cơn sấm. Cậu sẽ biết nếu như cậu có thời gian đầu tư vào sách vở hơn là mua kiếm và vài từ bằng ngôn ngữ cổ.”
+</p>
+
+<p>
+ “Chắc chắn là bà đúng,” nó nói. Qua mối liên kết luôn hiện hữu giữa nó và Saphira, nó biết cô nàng đồng ý với cụm “một cơn sấm rồng.” Nó cũng nghĩ như vậy vì so sánh như thế rất hợp lý.
+</p>
+
+<p>
+ Nó cân nhắc một lúc lâu hơn rồi hỏi, “Sao Garzhvog lại gọi bà là Uluthrek?”
+</p>
+
+<p>
+ “Đó là danh xưng Urgal đã đặt cho ta từ rất lâu, từ hồi ta sống cùng họ.”
+</p>
+
+<p>
+ “Nghĩa là gì?”
+</p>
+
+<p>
+ “Thực nguyệt nhân.”
+</p>
+
+<p>
+ “Thực nguyệt nhân? Tên lạ nhỉ? Sao bà lại có tên đó?”
+</p>
+
+<p>
+ “Ta ăn mặt trăng chứ còn làm sao nữa?”
+</p>
+
+<p>
+ Eragon nhíu mày và quan tâm vào việc vuốt ve con mèo ma trong chốc lát. “Sao Garzhvog lại đưa bà viên đá?”
+</p>
+
+<p>
+ “Vì ta kể chuyện cho hắn. Rõ ràng thế còn gì.”
+</p>
+
+<p>
+ “Nhưng viên đá đó là gì?”
+</p>
+
+<p>
+ “Một mẩu đá. Cậu không thấy sao?” Bà kêu khục khục vẻ không tán đồng. “Cậu thật sự nên để ý tới những gì xung quanh hơn. Nếu không sẽ có ngày có người cầm dao đâm cậu khi cậu không để ý. Nếu cậu chết tôi sẽ nói những điều bí ẩn của tôi cho ai?” Bà hất tóc. “Tiếp đi. Tôi rất thích chơi trò này.”
+</p>
+
+<p>
+ Cậu nhướn lông mày và dù biết câu hỏi vô nghĩa, nhưng vẫn hỏi, “Chiếp chiếp?”
+</p>
+
+<p>
+ Bà lang cười váng lên và vài con mèo ma mở miệng nở một nụ cười đầy răng. Nhưng Thợ săn đêm có vẻ không hài lòng vì cô ta cắm móng lên chân Eragon khiến nó nhăn mặt.
+</p>
+
+<p>
+ “Ờm,” Angela vừa cười vừa nói, “nếu cậu phải có câu trả lời thì tôi sẽ kể cho cậu nghe một câu chuyện hay ho. Xem nào... Vài năm trước khi ta đi lang thang dọc biên giới phía tây Du Weldenvarden, cách xa các thành phố, làng mạc, thị trấn. Ta tình cờ gặp Grimrr. Lúc đó cậu ta chỉ là một thủ lĩnh một bộ tộc nhỏ và còn đủ móng vuốt. Lúc đó tôi gặp cậu ta đang đua với một con sáo non rơi từ tổ xuống. Tôi sẽ không để ý nếu cậu ta giết và ăn nó – mèo nào chẳng làm thế - nhưng cậu ta hành hạ con vật tội nghiệp: giang cánh nó ra, cắn đuôi nó, làm què chân nó rồi đè ngửa nó ra. Angela nhăn mũi khó chịu. “Tôi nói rằng cậu ta phải ngừng lại nhưng cậu ta gào trả và lờ tôi đi.” Bà nhìn Eragon bằng ánh mắt lạnh lùng. “Tôi không thích mọi người lờ tôi. Vì thế tôi lấy con chim và chỉ tay niệm thần chú. Thế là trong một tuần, cứ hễ cậu ta mở mồm ra là lại kêu như chim.”
+</p>
+
+<p>
+ “Ông ấy kêu chiếp chiếp á?”
+</p>
+
+<p>
+ Angela gật đầu. “Tôi chưa bao giờ cười đau ruột tới vậy. Không một con mèo ma nào dám lại gần cậu ta trong một tuần.”
+</p>
+
+<p>
+ “THể nào ông ấy ghét bà.”
+</p>
+
+<p>
+ “Thế đã sao? Nếu cậu không có kẻ thù, cậu là kẻ hèn nhát – có khi còn tệ hơn. Nhưng nhìn thấy phản ứng của cậu ta cũng đáng. Ôi, cậu ta đã rất tức giận!’
+</p>
+
+<p>
+ Thợ săn đêm gừ nhẹ cảnh cáo và co vuốt lại lần nữa.
+</p>
+
+<p>
+ Đau, Eragon nói. “Có lẽ tốt hơn chúng ta nên chuyển đề tài.”
+</p>
+
+<p>
+ “Ừm.”
+</p>
+
+<p>
+ Trước khi nó nghĩ ra một câu hỏi mới, một tiếng thét lớn vang lên từ trong khu trại. Tiếng thét vang lên ba lần trước khi tất cả rơi vào im lặng.
+</p>
+
+<p>
+ Eragon nhìn Angela và bà nhìn nó rồi cả hai bật cười.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-014.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-016.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

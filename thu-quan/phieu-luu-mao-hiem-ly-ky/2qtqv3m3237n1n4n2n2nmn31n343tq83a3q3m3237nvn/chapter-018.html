@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 18 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 18</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-017.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-019.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Đóa hoa hôm nay còn xinh tươi, ngày mai sẽ héo úa; Chúng ta ao ước được lưu lại, quyến rũ khoe sắc và bay lên; Trên đời này cái gì là rực rỡ nhất? Đó là tia chớp chợt lóe lên cười nhạo giữa màn đêm, dù sáng ngời nhưng lại quá ngắn ngủi. — Shelly (1)
+</p>
+
+<p>
+ (1) Nguyên văn trích trong bài thơ “The flower that smiles today”:
+</p>
+
+<p>
+ “The flower that smiles today, tomorrow dies; All that we wish to stay, tempts and then flies; What is this world’s delight? Lightning, that mocks the night, brief even as bright…”
+</p>
+
+<p>
+ Trung tuần tháng 5 là thời hạn nộp luận văn, toàn bộ học phần xem như đã hoàn thành, sinh viên có thể chuẩn bị làm lễ tốt nghiệp. Cho dù đang thực tập bên ngoài hay đang đi du lịch, các bạn đều phải trở về trường, nộp các tài liệu liên quan, sau đó sẽ chuẩn bị quay chụp hình ảnh tốt nghiệp… Vào thời điểm sắp tốt nghiệp cả trường tràn ngập một loại không khí lười biếng, vì vừa chẳng có việc gì để làm, lại vừa nôn nóng bất an đợi chờ ngày tốt nghiệp. Trong ký túc xá, rất nhiều sinh viên nữ thường rủ nhau cùng xem phim Hàn đến hai ba giờ sáng; Ở bên ngoài thì cứ năm ba hôm lại tổ chức ca múa nhạc, hát tình ca, hò thổ lộ; rồi lại còn thường xuyên tổ chức liên hoan chia tay, lâu lâu lại nghe tiếng khóc của mấy bạn nữ say rượu.
+</p>
+
+<p>
+ Lưu Hân Huy cũng đã về ký túc xá, mái tóc hình như có thay đổi, là kiểu xoăn gợn sóng đang thịnh hành, còn đeo trang sức tinh xảo trang nhã. Nàng ta từ một cô gái sinh viên quê mùa liền trở thành phụ nữ thời thượng, thế nhưng vừa mở miệng ra là lộ ngay một kẻ nhanh nhảu bộp chộp, do cha mẹ che chở từ nhỏ nên nàng ta mang chút gì đó bướng bỉnh ngây thơ, tính tình hoạt bát thoải mái.
+</p>
+
+<p>
+ Cuối tháng 5, MG công bố danh sách số lượng nhân viên do các phòng ban đề cử để chọn đi công tác ở New York, phòng của Nhan Hiểu Thần chỉ đề cử một người. Tuy rằng danh sách chính thức đến cuối tháng 6 mới công bố, nhưng tin đồn đã bay đầy trời, không ít người đều nói rằng Nhan Hiểu Thần chắc chắn đã được chọn.
+</p>
+
+<p>
+ Dưới bao cặp mắt hâm mộ, Nhan Hiểu Thần vẫn như cũ không để ý gì. Theo như cô nghĩ, trước khi danh sách chính thức công bố, công ty chắc chắn sẽ bàn bạc trước với người được chọn, thăm dò ý muốn của bọn họ, khi đó cứ việc nói rõ ràng cô không muốn đi New York, vậy là xong.
+</p>
+
+<p>
+ Đầu tháng 6, Nhan Hiểu Thần được thêm một tháng tiền lương, giống như tháng trước, cô chuyển cho mẹ 1500 đồng, gửi trả Trình Trí Viễn số tiền nợ còn lại là 1000 đồng.
+</p>
+
+<p>
+ Nợ đã được trả hết, tâm trạng của Nhan Hiểu Thần rất tốt, cô mời Trình Trí Viễn đi ăn món Thái. Và dĩ nhiên, trước khi mời Trình Trí Viễn, cô đã chủ động mời Thẩm Hầu cũng đến nhà hàng đó dùng cơm. Thẩm Hầu cuối cùng đã chấp nhận sự thật là “Nhan Hiểu Thần có một người bạn rất khó ưa”, không giống như lần trước, một mực phản đối cô và Trình Trí Viễn đi ăn cùng nhau, lần này hắn chỉ lải nhải nhắc nhở vài câu, hy vọng Trình Trí Viễn ăn bị đau bụng, làm cho Nhan Hiểu Thần cười thầm. Thứ năm, lớp trưởng thông báo với mọi người thứ ba tuần sau chụp ảnh tốt nghiệp, thợ chụp hình thời gian có hạn, cho nên trước hết cần chuẩn bị thuê bộ lễ phục tốt nghiệp và không được đến trễ.
+</p>
+
+<p>
+ Nhan Hiểu Thần và Ngô Thiến Thiến trước tiên đều xin nghỉ, đến hôm thứ ba, lúc đầu cả khoa chụp một tấm ảnh tập thể. Sau khi cả khoa chụp xong thì đến các lớp chụp chung.
+</p>
+
+<p>
+ Kiếm được mấy chỗ trống giữa các lớp đang chụp ảnh tập thể, các sinh viên cầm máy ảnh của mình, mình tìm bạn chụp, bạn tìm mình chụp, chụp cá nhân, chụp thầy trò, chụp người yêu, chụp bạn cùng phòng, chụp luôn bạn thân… Dù sao chính là liên tục thay đổi người, thay đổi cảnh, thay đổi kiểu dáng.
+</p>
+
+<p>
+ Nhan Hiểu Thần bị Thẩm Hầu kéo đi chụp ảnh chung, các bạn cùng khoa ồn ào la ó, “Chụp hôn nhau đi! Chụp hôn nhau đi!” Ngụy Đồng cùng Lưu Hân Huy cũng lớn tiếng hùa theo, “Thẩm Hầu, Chụp hôn nhau đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần giả vờ không nghe thấy, chỉ là hơi tựa đầu lên vai của Thẩm Hầu, nhưng Thẩm Hầu lại thật sự hưởng ứng tiếng kêu gọi của quần chúng, hắn sáp lại gần Nhan Hiểu Thần. Nhan Hiểu Thần vừa ngượng ngùng né tránh, vừa ngọt ngào tươi cười, một tay giữ cái mũ tốt nghiệp sắp rớt ra, một tay theo bản năng chặn Thẩm Hầu lại, Thẩm Hầu vẫn quyết tâm, nhất định muốn sáp lại gần, lôi kéo Nhan Hiểu Thần, không cho cô trốn tránh. Các bạn cùng khoa lại càng vỗ tay ủng hộ, nhao nhao la hét chói tai, ồn ào không thể tả…
+</p>
+
+<p>
+ Dưới bầu trời sắc lam, trên cỏ sắc lục, từng nhóm từng nhóm thanh niên tràn đầy sức sống, vui vẻ nhốn nháo giành nhau mấy tấm ảnh chụp.
+</p>
+
+<p>
+ Bởi vì chụp ảnh tốt nghiệp, Nhan Hiểu Thần và Ngô Thiến Thiến phải nghỉ nguyên một ngày. Tuy rằng công ty rất thông cảm cho các sinh viên sắp tốt nghiệp xin phép được nghỉ, nhưng các cô cũng cảm thấy có chút lo lắng, tự nhủ với lòng thứ tư đi làm phải càng cố gắng hơn nữa.
+</p>
+
+<p>
+ Khoảng 10 giờ sáng, khi Nhan Hiểu Thần đang cùng đồng nghiệp bàn luận một sự kiện, thì điện thoại trên bàn đột nhiên vang lên. Tuy cô đã điều chỉnh tắt tiếng, nhưng di động rung lên phát ra tiếng rè rè khá lớn, làm cho mọi người đều chú ý, một đồng nghiệp cười nói: “Không sao, em cứ nhận điện thoại trước đi, chúng ta sẽ nói sau.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn thấy trên điện thoại là số người lạ nên có chút không muốn nhanh chóng tiếp nhận, “A Lô?”
+</p>
+
+<p>
+ Đầu bên kia là tiếng một nam thanh niên xa lạ, “Chào bạn, xin hỏi bạn có phải là Nhan Hiểu Thần?”
+</p>
+
+<p>
+ “Là tôi.”
+</p>
+
+<p>
+ “Tôi là sinh viên nghiên cứu sinh của giáo sư Vương, tôi đã xin số điện thoại từ các bạn cùng lớp với bạn, giáo sư Vương muốn gặp bạn.”
+</p>
+
+<p>
+ Nhan Hiểu Thần vội hỏi: “Xin hỏi là giáo sư Vương nào?”
+</p>
+
+<p>
+ “Giáo sư Vương dạy môn Kinh tế học vĩ mô.”
+</p>
+
+<p>
+ Giáo sư Vương môn Kinh tế học vĩ mô? Trong đầu Nhan Hiểu Thần lập tức phản ứng, một cơn ớn lạnh bất chợt truyền từ lòng bàn chân lên tới trán, cơ thể không lạnh mà run, đang là giữa hè, vậy mà trong phút chốc toàn thân của cô đổ mồ hôi lạnh.
+</p>
+
+<p>
+ Bên kia đầu điện thoại nhận thấy Nhan Hiểu Thần vẫn im lặng, cho rằng tín hiệu có vấn đề, “A lô? A Lô? Nhan Hiểu Thần, bạn còn nghe không?”
+</p>
+
+<p>
+ “Tôi còn.” Nhan Hiểu Thần cố gắng trấn tĩnh lại, “Khi nào tôi có thể gặp?”
+</p>
+
+<p>
+ Nam sinh ôn hòa nói: “Bây giờ được không? Giáo sư Vương đang ở văn phòng chờ bạn.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Được, tôi đang ở ngoài trường, lập tức chạy về ngay.”
+</p>
+
+<p>
+ “Được, lát nữa gặp lại.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cúp điện thoại, đi tìm Jason xin phép, Jason nghe nói trong trường học có chuyện nên lập tức đồng ý.
+</p>
+
+<p>
+ Ngô Thiến thiến thấy cô muốn đi, thân thiết hỏi: “Có chuyện gì vậy? Mình có cần phải cùng về với cậu không?”
+</p>
+
+<p>
+ Nhan Hiểu Thần miễn cưỡng cười cười, “Không cần, không có liên quan đến cậu.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cầm lấy túi xách, vội vã rời khỏi văn phòng.
+</p>
+
+<p>
+ Không phải giờ cao điểm tan tầm nên không có kẹt xe, không đến một tiếng đồng hồ, Nhan Hiểu Thần đã về đến trường học.
+</p>
+
+<p>
+ Cô gọi điện thoại cho nam sinh viên vừa rồi, “Chào bạn, tôi là Nhan Hiểu Thần, đã từ công ty trở về rồi.”
+</p>
+
+<p>
+ “Tốt, bạn lên đây đi, tại tầng 5, tôi đợi bạn ở thang máy.”
+</p>
+
+<p>
+ Nhan Hiểu Thần ra khỏi thang máy, nhìn thấy một nam sinh viên đeo kính nhìn cô cười cười, “Nhan Hiểu Thần?”
+</p>
+
+<p>
+ Nhan Hiểu Thần một chút cũng không cười nổi, chỉ là khẩn trương nhìn cậu ta, lòng hoang mang hy vọng: “Giáo sư tìm tôi có việc gì?” Có lẽ hoàn toàn không phải là điều cô đoán trước, có lẽ có nguyên nhân khác.
+</p>
+
+<p>
+ “Tôi không biết.” Nam sinh viên thấy cô đi gặp giáo sư có chút lo sợ nên ôn hòa an ủi, “Giáo sư Vương tuy nhìn có vẻ lớn tuổi nghiêm khắc, nhưng thực tế ông ấy đối với sinh viên rất tốt.”
+</p>
+
+<p>
+ Nam sinh viên dẫn Nhan Hiểu Thần đi đến trước văn phòng giáo sư Vương, cửa đang đóng, cậu ta gõ cửa, “Thưa Giáo sư, Nhan Hiểu Thần đã đến.”
+</p>
+
+<p>
+ “Mời vào!”
+</p>
+
+<p>
+ Nam sinh viên đẩy cửa, ra ý bảo Nhan Hiểu Thần đi vào. Nhan Hiểu Thần chân đứng không vững, một lúc lâu sau cũng không thể rời bước. Nam sinh viên lấy làm lạ, nhịn không được đẩy nhẹ Nhan Hiểu Thần một cái, “Giáo sư cho phép bạn vào rồi đó.” Nhan Hiểu Thần nhích từng bước một đi vào văn phòng, nam sinh viên thấy Giáo sư không sai bảo gì, cung kính nói: “Thưa Giáo sư, em đi đây!” Anh ta nhẹ nhàng khép hờ cửa, rời khỏi.
+</p>
+
+<p>
+ Trước bàn làm việc có một chiếc ghế dựa, nhưng Nhan Hiểu Thần căn bản không dám ngồi, cũng căn bản không nghĩ đến là muốn ngồi, chỉ ngây ngốc đứng trước bàn làm việc, giống như tội nhân đang chờ đợi quan toà tuyên án tử hình vậy.
+</p>
+
+<p>
+ Giáo sư Vương ngẩng đầu nhìn Nhan Hiểu Thần, nghiêm túc hỏi: “Có biết tại sao tôi muốn gặp em hay không?”
+</p>
+
+<p>
+ Đến giờ phút này, tất cả may mắn mong chờ toàn bộ tan thành mây khói, Nhan Hiểu Thần tái mặt, không nói tiếng nào.
+</p>
+
+<p>
+ Giáo sư Vương nói: “Mấy ngày trước, tôi nhận được một email nặc danh, nói rằng học kỳ đầu em đã giúp một sinh viên tên Thẩm Hầu thi môn Kinh tế học vĩ mô. Tôi đã xem qua bài thi của Thẩm Hầu, cũng đã xem qua bài thi môn pháp luật kinh tế của em, còn có một bài thi pháp luật kinh tế của Thẩm Hầu.”
+</p>
+
+<p>
+ Giáo sư Vương lấy ra từ trong ngăn kéo ba bài thi, vứt ngay trước mặt Nhan Hiểu Thần, “Tôi nghĩ không cần phải nhờ đến chuyên gia giám định chữ viết, đã có thể rõ ràng mọi chuyện rồi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn chứng cứ ở trên bàn, mặt xám ngoét như tro. Tuy rằng cô thông minh hiếu học, thành tích nổi trội xuất sắc, nhưng do điều kiện gia đình không quan trọng lắm việc luyện chữ viết, nên chữ của cô tinh tế có lực, khi nhìn qua lại không có nét gì là bút pháp chính quy. Thẩm Hầu thì ngược lại, từ nhỏ hắn đã bị mẹ kỳ vọng cao, năm tuổi đã bắt đầu luyện chữ, giáo viên vỡ lòng đều là mời từ các hiệp hội chuyên luyện bút pháp, tuy Thẩm Hầu sau khi học trung học không còn luyện chữ nữa, nhưng căn cơ đã ăn sâu vào máu, nên chữ viết của hắn cực kỳ đẹp, nhìn qua thấy rõ đây là người đã khổ công luyện chữ.
+</p>
+
+<p>
+ Giáo sư Vương nghiêm nghị nói: “Bất kể là nghiên cứu học hỏi, nhưng làm người, kiêng kị nhất vẫn là lừa gạt! Trường học đối với gian lận thi cử luôn luôn nghiêm trị, một khi bị phát hiện lập tức khai trừ học tịch.” (1)
+</p>
+
+<p>
+ (1) Có nghĩa là đuổi học, không cho nhận bằng tốt nghiệp.
+</p>
+
+<p>
+ Thân thể của Nhan Hiểu Thần hơi chao đảo một chút, sắc mặt trắng bệch, gắt gao cắn môi, một tay chống xuống bàn, giống như nếu cứ đứng như vậy sẽ làm cho cả người ngã sấp xuống.
+</p>
+
+<p>
+ Tuy rằng từ chữ viết có thể nhìn ra bài thi môn kinh tế vĩ mô và môn pháp luật kinh tế của Thẩm Hầu là không phải cùng một người viết, nhưng chung quy không thể xem là chứng cứ rõ ràng được, chuyên gia giám định bút tích chỉ xuất hiện trong phim ảnh và truyện xưa, ở ngoài đời Giáo sư Vương căn bản chưa từng gặp qua loại người này, càng không biết đi đâu mà tìm, nếu Nhan Hiểu Thần có chết cũng không nhận, ông ta ngược lại còn phải nghĩ cách khác. Nhưng lúc này xem ra Nhan Hiểu Thần không có mặt dày mà phủ nhận, sắc mặt của Giáo sư Vương dịu đi một chút, “Đối với sinh viên tên Thẩm Hầu tôi không có ấn tượng gì, nhưng đối với tên của em thì tôi không xa lạ, nếu em muốn tiếp tục học lên cao thì trong khoa nhất định sẽ có người nhận em, đã có hai giáo viên chuẩn bị tìm em nói chuyện, hy vọng em có thể làm nghiên cứu sinh của bọn họ, nhưng không ngờ em lại không muốn tham gia, vài lần lúc ăn cơm, tôi cũng đã được nghe bọn họ tiếc nuối nhắc đến em. Lần này xảy ra chuyện như vậy, tôi cố ý hỏi thăm qua thành tích học tập của em trong 4 năm, quả thật phải nói rằng, giáo viên nào đã dạy qua em cũng đều rất hài lòng vì có một sinh viên giỏi như vậy! Tôi cũng có nghe nói đến điều kiện kinh tế của gia đình em rất khó khăn, lại vừa tìm được một công việc rất tốt, em hẳn biết rất rõ, khai trừ học tịch sẽ có hậu quả như thế nào. Tôi có thể nói với nhà trường là em đã chủ động thẳng thắn nhận sai, có thể nói tốt cho em vài câu, họ sẽ nể tình mà giảm nhẹ tội.” Nhan Hiểu Thần đang sắp bị chết đuối như vớ được khúc gỗ, lập tức nói: “Em đồng ý!”
+</p>
+
+<p>
+ Giáo sư Vương chỉ cái ghế ở bên cạnh cô, “Em ngồi trước đi.” Ông ta đem một sấp giấy viết thư và một cây viết đưa ra trước mặt cô, “Em viết một bức thư hối cãi, thừa nhận em đã bị Thẩm Hầu uy hiếp bắt buộc làm như vậy, nên nhất thời hồ đồ phạm phải sai lầm lớn. Nhiều lần nghĩ lại đã ý thức được hành động sai trái của mình, nên chủ động đến tìm tôi thẳng thắn nhận lỗi.”
+</p>
+
+<p>
+ Hoảng sợ trong hoảng loạn, đầu óc Nhan Hiểu Thần có chút lơ mơ, cô cầm cây viết bắt đầu viết quá trình gây ra chuyện sai lầm này, viết được một hàng chữ, đột nhiên phản ứng kịp— bức thư hối cãi này chính là đem toàn bộ tội lỗi đổ lên đầu Thẩm Hầu. Cô dừng bút, ngập ngừng hỏi: “Thưa Giáo sư, trường học sẽ xử lý Thẩm Hầu thế nào ạ?”
+</p>
+
+<p>
+ Giáo sư Vương là sinh viên của trường sau khi khôi phục việc thi đại học lần thứ 3 trong những năm 70, ông ta là người kiên trì khó có thể tưởng tượng được, đã nếm trải đủ khổ cực, chịu rất nhiều sai lầm, trong mắt của ông ta, được học là cơ hội vô cùng quý giá, ông ta đang ở lứa tuổi trung niên, nên không hiểu được tâm tình của tuổi trẻ. Giáo sư Vương thờ ơ nói: “Theo nội quy mà xử lý! Tôi sẽ điều tra thành tích 4 năm học của Thẩm Hầu, cũng như sẽ hỏi qua một chút biểu hiện của cậu ta, nếu cậu ta không phải là kẻ quý trọng cơ hội học tập tại trường, thì việc trừng phạt là vô cùng thích hợp!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy trái tim của mình như bị bóp nghẹt, vừa tưởng như vớ được khúc gỗ hy vọng lại hóa thành cục đá tuyệt vọng, cô đang bị nó nhấn chìm hoàn toàn. Nhan Hiểu Thần cầu xin hỏi: “Thẩm Hầu cũng có thể chủ động thẳng thắn nhận sai, giáo sư, thầy có thể giúp cậu ấy nói lời tốt đẹp hay không?”
+</p>
+
+<p>
+ Giáo sư Vương lúc âm thầm điều tra cũng đã biết Nhan Hiểu Thần và Thẩm Hầu có quan hệ yêu đương, nhưng ông ta đối với loại tình cảm này không tán thành. Ông ta vô cùng buồn bực nói: “Em là một sinh viên chăm chỉ chịu cực khổ, thành tích nổi trội xuất sắc, lại bị cậu ta hại thành ra như vậy, còn đi nói giúp cho cậu ta? Cái gì gọi là tình yêu? Tình yêu chân chính là phải giống như Marie Curie và Pierre Currie, hay ngài Tiền Chung Thư (Qian Zhongshu) và cô Dương Giang (Yang Jiang) (2), yêu một người thì phải thể hiện hết lòng với người đó, thể hiện thì tốt! Nhưng tình yêu của các em căn bản không phải là tình yêu! Đó gọi là tuổi trẻ thiếu suy nghĩ, tình yêu mù quáng!”
+</p>
+
+<p>
+ (2) Marie Currie và Pierrie Currie là hai vợ chồng nhà khoa học nổi tiếng, họ không những được biết đến với những công trình nghiên cứu Vật Lý và Hóa Học mà còn nổi tiếng về tình yêu chung thủy của nhau. Tiền Chung Thư và Dương Giang cũng là hai vợ chồng nhà văn giỏi, đều có nhiều tác phẩm để đời, hai người cũng nổi tiếng với sự đồng cam cộng khổ và tình yêu chung thủy giành cho nhau. (wiki)
+</p>
+
+<p>
+ Ngay lập tức, Nhan Hiểu Thần đã ra quyết định, cô nhẹ nhàng buông viết, cúi đầu nói: “Cảm ơn Giáo sư đã muốn giúp em, nhưng nếu vì giảm bớt tội cho em mà tăng thêm tội cho Thẩm Hầu, em không thể nghe theo!”
+</p>
+
+<p>
+ Giáo sư Vương răn dạy nói: “Nếu em không chịu làm theo, trường học cũng vẫn sẽ như vậy, dựa theo nội quy nghiêm túc xử lý Thẩm Hầu! Không cần phải làm việc vô ích nữa, nhanh chóng viết thư nhận lỗi đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhẹ giọng nói: “Tình yêu chân chính không phải chỉ có thể hiện tình cảm và mơ tưởng đến điều tốt đẹp, nó cũng chính là đồng cam cộng khổ, vinh nhục cùng chịu, em đã có xem qua tác phẩm “Ba chúng ta” (3) của cô Dương Giang, 10 năm một kiếp sống chung mặc dù có nhiều gian khổ, nhưng cô ấy vẫn biết luôn tự giữ mình, cùng với Tiền Chung Thư tiên sinh không có chút gì là vượt quá mức đạo nghĩa phu thê.”
+</p>
+
+<p>
+ (3) tên tiếng Hoa《我们仨》, là một cuốn hồi ký, được chia thành hai phần, phần đầu nói về việc gặp chồng bà là Tiền Chung Thư, cùng cô con gái ba người vượt qua khó khăn cực khổ, tình cảm gắn bó cùng sống hạnh phúc, phần thứ hai nói về cái chết của chồng bà, cuộc sống đau buồn khổ cực, nói về chiến tranh Trung Nhật, nội chiến, tệ nạn, nạn đói, Cách mạng văn hóa, cải cách và mở cửa, là một loạt các sự kiện lớn của Trung Quốc từ lịch sử tới hiện đại (wiki).
+</p>
+
+<p>
+ Giáo sư Vương giận tím mặt, tức giận vỗ bàn: “Thẩm Hầu mà có thể so sánh với Tiền Chung Thư tiên sinh sao? Ngoan cố cứng đầu, thị phi bất phân! Ra ngoài! Ra ngoài! Thu dọn hành lý, chuẩn bị cuốn gói về nhà đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần đứng lên, hướng Giáo sư Vương cúi đầu thật thấp khom người chào: “Rất xin lỗi, cảm ơn Giáo sư!” Nói xong, cô xoay người, loạng choạng đi ra khỏi văn phòng.
+</p>
+
+<p>
+ Trong đầu của Nhan Hiểu Thần bây giờ là một mảnh tối đen, cô như cái xác không hồn phất phơ đi xuống lầu, trong lòng chỉ nghĩ có một việc, cô sắp bị trường khai trừ học tịch, mất hết tất cả.
+</p>
+
+<p>
+ Đại não của cô đã không còn có thể hoạt động nữa rồi, theo thói quen thành tự nhiên, đôi chân cứ như thế mà bước dọc theo con đường rợp bóng cây, hướng về ký túc xá.
+</p>
+
+<p>
+ Hôm nay là ngày chụp ảnh tốt nghiệp của khoa khác, khắp nơi đều là sinh viên mặc lễ phục, túm năm tụm ba mà tốt nghiệp, lâu lâu lại có tiếng thét chói tai cùng tiếng hoan hô vang lên. Mới hôm qua thôi, cô và bọn họ cũng giống như vậy, mặc dù phải chia tay với sân trường cùng bạn bè đã gắn bó mấy năm trời, nhưng cô lại có rất nhiều hưng phấn và vui vẻ, khát khao một tương lai tươi sáng hơn, khát vọng một cuộc sống tốt đẹp hơn sẽ bắt đầu.
+</p>
+
+<p>
+ Nhưng giờ đây, cuộc đời của cô đã đột nhiên trở nên tối đen mù mịt, tất cả mọi khát khao ước muốn đều biến mất, thế giới này đã quay lưng lại mà đóng sập cánh cửa ngay trước mắt cô.
+</p>
+
+<p>
+ Nhan Hiểu Thần trở lại ký túc xá, trong phòng không có ai. Cô chậm rãi ngồi lên ghế, sững sờ nhìn đống sách của mình trên bàn. Trên giá sách bày biện ngay ngắn gọn gàng tài liệu và tập ghi chép, đều là những thứ Nhan Hiểu Thần cho rằng có giá trị cần giữ lại, tài liệu hay sách nào không có giá trị cô sẽ nhường lại cho mấy nhóm sinh viên khóa dưới.
+</p>
+
+<p>
+ Những thứ này đã chứng kiến bốn năm đại học khổ cực của cô, có lẽ trên đời này chỉ có chúng mới hiểu được cô đã phải kiên trì cố gắng đến cỡ nào. Đối với cô mà nói, mất đi công việc có lương cao, hay mất đi cuộc sống tươi sáng sắp có kia không phải là đau khổ nhất, mà đau khổ tuyệt vọng nhất chính là mất đi bốn năm chịu đựng phấn đấu để có được học vị.
+</p>
+
+<p>
+ Đó không chỉ là một cái học vị, mà chính là để trả lại công sức của ba! Tuy Nhan Hiểu Thần không biết trên thế giới này có tồn tại cái gọi là hồn ma hay không, học vị của cô có hay không có cũng không biết là có thể an ủi được vong hồn của ba cô vài phần hay không, nhưng đây là điều cô nhất định phải làm, đó là sự chịu cực chịu khổ kiên trì đạt mục tiêu trong bốn năm ròng rã. Nhưng mà, hiện tại đã mất hết rồi.
+</p>
+
+<p>
+ Khoảng giữa trưa vào giờ cơm, Ngụy Đồng và Lưu Hân Huy quay về phòng, nhìn thấy Nhan Hiểu Thần, giật mình hỏi: “Sao cậu không đi làm?”
+</p>
+
+<p>
+ Nhan Hiểu Thần miễn cưỡng cười nói: “Có chút việc nên trở về.”
+</p>
+
+<p>
+ Lưu Hân Huy vui vẻ nói: “Tốt quá, phòng kế bên chiều nay đi ca hát, chúng ta cùng đi nhé!”
+</p>
+
+<p>
+ Nhan Hiểu Thần không nghĩ sẽ đối mặt với nhóm bạn của cô, nên nói cho có lệ, “Bây giờ mình đi ăn cơm, buổi chiều còn có việc khác, các cậu đi đi!” Cô cầm lấy túi xách vội vàng rời khỏi ký túc xá, nhưng tâm trạng giống như bị tảng đá đè lên vậy, ép xuống lục phủ ngũ tạng đến hoảng loạn, căn bản không có thời gian đi thưởng thức món ăn.
+</p>
+
+<p>
+ Nhan Hiểu Thần đi lang thang không mục tiêu trong sân trường, vô tình đi đến bên bờ hồ, cô ngồi trên băng ghế gần đó, ngẩn ngơ nhìn cảnh vật xung quanh.
+</p>
+
+<p>
+ Một lúc sau, cô cầm ví tiền ra, là cái ví sọc ca rô màu nâu mà Thẩm Hầu đã tặng làm quà năm mới, từ khi có nó, cô đã đem tiền cùng vài thứ linh tinh bỏ vào đó.
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn chằm chằm ví tiền một lúc lâu, sau đó cô mở ví ra, tại một ngăn nhỏ có nhét hai tấm ảnh chụp, một tấm là hình của cô lúc 15 tuổi, đã thi đậu điểm cao vào trường trung học của thị xã, cả nhà ba người cười vui vẻ chụp ở bên ngoài cổng trường trung học, trên ảnh chụp ba gương mặt của ba người đều thể hiện tâm trạng vui vẻ đầy hy vọng; còn một tấm là hình chân dung trắng đen của ba cô, lúc ba cô được chôn cất đã lấy nó làm ảnh thờ.
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn mấy tấm ảnh, khối đá đang đè nén trong lòng liền biến thành máy khoan điện, từng nhát từng nhát khoan sâu vào người cô, làm cho toàn thân đau nhức từng hồi.
+</p>
+
+<p>
+ Di động đột nhiên vang lên vài tiếng, âm thanh dễ nghe khiến Nhan Hiểu Thần như từ trong mộng bừng tỉnh, lập tức đem mấy tấm ảnh nhét lại vào ví, lấy điện thoại ra.
+</p>
+
+<p>
+ Màn hình di động nhắc nhở có tin nhắn từ blog của một chú khỉ, từ lúc Nhan Hiểu Thần tặng cho Thẩm Hầu bức tượng gỗ Tôn Ngộ Không làm quà năm mới, hắn không còn từ chối cái tên “Hầu ca” nữa, chủ động đổi hình nền của Blog là một chú khỉ, tên blog của Nhan Hiểu Thần cũng bị hắn đổi thành tên thân mật là Tiểu Tiểu.
+</p>
+
+<p>
+ “Ăn cơm chưa? Trưa nay ăn cái gì?”
+</p>
+
+<p>
+ Nhan Hiểu Thần không biết nên trả lời Thẩm Hầu thế nào. Thẩm Hầu biết cô bận rộn công việc, trong giờ làm sẽ không bao giờ nhắn tin hay đăng blog quấy rầy cô, nhưng thời gian nghỉ giữa trưa, hắn sẽ gửi tin nhắn, đăng blog hoặc gọi điện thoại, chỉ là mỗi người sẽ miêu tả bữa ăn trưa ăn gì, ăn như thế nào, sau đó sẽ thì thầm tâm sự vài câu.
+</p>
+
+<p>
+ Nhan Hiểu Thần biết chuyện này trước sau gì cũng phải nói cho Thẩm Hầu nghe. Căn cứ vào thái độ của Giáo sư Vương đối với hắn, chắc chắn ông ta sẽ không thông báo cho hắn biết trước, chỉ là đem hết chứng cứ trực tiếp nộp lên văn phòng khoa, mặc kệ cho trường xử lý. Tuy rằng nếu có biết sớm hơn cũng chỉ là đau khổ sớm hơn, nhưng so với nghe tin sét đánh đến bất ngờ thì có thể sẽ đỡ hơn. Có điều hiện tại cô cũng không biết nên nói với hắn thế nào nữa.
+</p>
+
+<p>
+ Bởi vì thấy cô chưa trả lời blog có vẻ hơi khác thường, Thẩm Hầu trực tiếp gọi điện thoại, “Tiểu Tiểu, không nhận được blog của anh à?”
+</p>
+
+<p>
+ Nhan Hiểu Thần thấp giọng nói: “Nhận được.”
+</p>
+
+<p>
+ “Em đang làm gì đó? Tại sao không trả lời anh?”
+</p>
+
+<p>
+ Nhan Hiểu Thần không lên tiếng, Thẩm Hầu gọi: “Tiểu Tiểu? Tiểu Tiểu!”
+</p>
+
+<p>
+ Nhan Hiểu Thần rất muốn nói nhưng cổ họng khô khốc, không thể phát ra tiếng được. Giọng nói bá đạo của Thẩm Hầu lập tức thu lại, thanh âm trở nên vững vàng bình tĩnh, “Tiểu Tiểu, công ty xảy ra chuyện gì sao? Mặc kệ xảy ra chuyện gì, em đều có thể nói cho anh biết.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói một cách khó hiểu: “Không phải là công ty, là…trường học.”
+</p>
+
+<p>
+ “Làm sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần thấp giọng nói: “Giáo sư Vương phát hiện em giúp anh thi môn kinh tế học vĩ mô.”
+</p>
+
+<p>
+ Thẩm Hầu ở đầu bên kia điện thoại khiếp sợ im lặng, dĩ nhiên, Thẩm Hầu cũng hoàn toàn không nghĩ đến, hắn chỉ muốn nhanh chóng tốt nghiệp, đã qua được nửa năm rồi, bây giờ sự việc giống như một quả bom lớn phát nổ. Sau một lúc lâu, hắn không hiểu hỏi lại, “Trong khoa có rất nhiều người cũng thi hộ, không có lý nào phát hiện ra!”
+</p>
+
+<p>
+ “Có người gửi email nặc danh.”
+</p>
+
+<p>
+ Trong điện thoại vang lên một tiếng, đoán chừng Thẩm Hầu bực bội đập phá một cái gì đó, nhưng hắn lập tức kềm nén cơn giận, “Bây giờ không phải là lúc nói lại vấn đề này, trước hết phải nghĩ cách giải quyết, để xem Giáo sư Vương có thể xử lý nhẹ hơn được không, anh cúp điện thoại đây.”
+</p>
+
+<p>
+ “Ừ.”
+</p>
+
+<p>
+ Thẩm Hầu gọi: “Tiểu Tiểu!”
+</p>
+
+<p>
+ “Sao?”
+</p>
+
+<p>
+ “Việc này là do anh hại em, anh sẽ cố gắng giảm bớt thiệt hại cho em nhiều nhất có thể.”
+</p>
+
+<p>
+ Nhan Hiểu Thần tâm bình khí hòa ngược lại an ủi Thẩm Hầu, “Đừng nghĩ vậy, mặc kệ kết quả là gì, khẳng định anh sẽ thiệt hại nhiều hơn em, chỉ cần anh không sao thì em cũng sẽ không sao. Anh đừng quá lo lắng, cũng đừng quá tuyệt vọng, ông trời sẽ không tuyệt đường con người, nếu như bị trường học khai trừ rồi, chúng ta vẫn sống được mà.”
+</p>
+
+<p>
+ Tim của Thẩm Hầu như bị một bàn tay độc ác vặn xoắn lại, bốn năm đại học hắn thường xuyên ngồi ở cuối lớp, đã nhìn thấy Nhan Hiểu Thần chăm chỉ cố gắng đến thế nào, cô là người duy nhất trong khoa không bao giờ trốn tiết, mỗi một môn cô đều ghi chép cẩn thận đến nỗi có thể lấy làm mẫu. Bị đặt vào tình huống sắp mất hết tất cả, vậy mà cô đối với hắn chẳng có chút gì là “giận chó đánh mèo”mà oán hận, đừng nói là tình yêu mơ hồ dễ thay đổi của tuổi trẻ, đến tình cảm gắn bó của vợ chồng già đã kết hôn nhiều năm cũng khó có thể làm được đều này. Ngay lập tức, Thẩm Hầu nảy sinh một ý nghĩ, rốt cuộc kiếp trước hắn đã làm được việc gì tốt, để kiếp này hắn có thể tu được một Nhan Hiểu Thần? Trong lòng của Thẩm Hầu vừa kích động, vừa áy náy, lại đầy cảm xúc, muốn nói với Nhan Hiểu Thần chút gì đó, nhưng nếu là “Thực xin lỗi” thì quá đáng kinh, “Đừng sợ” thì quá vô dụng, hắn chỉ có thể cứng rắn mà nói: “Anh cúp điện thoại đây, chờ tin của anh.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cầm điện thoại nhét vào trong túi, mệt mỏi nhắm hai mắt lại.
+</p>
+
+<p>
+ Theo tính cách của Thẩm Hầu mà nói, lẽ ra lúc này hắn đã vọt đến bên cô để an ủi vỗ về, nhưng hắn lại chưa xuất hiện, chỉ có thể lý giải là hắn đang có chuyện gì đó rất quan trọng phải làm. Chuyện quan trọng đó chỉ có thể là nghĩ đến biện pháp đem chuyện lớn hóa nhỏ, chuyện nhỏ hóa không, loại gian lận thi cử này, chỉ cần giáo sư đồng ý mắt nhắm mắt mở cho qua là xong, cũng đã có nhiều trường hợp xảy ra rồi. Nhưng Thẩm Hầu chỉ là một sinh viên, hắn đi đâu để có các mối quan hệ xã hội và khả năng giúp đỡ đây? Điều duy nhất hắn có thể làm chính là nhờ người thân trong gia đình. Tuy rằng hai người có quan hệ yêu đương, nhưng Nhan Hiểu Thần không biết hết gia đình của Thẩm Hầu, ấn tượng của bạn học đối với hắn chỉ là nhà hắn có chút tiền, tuy rằng hắn tiêu tiền như tiêu nước, nhưng hiện giờ gia đình con một, tiêu tiền hào phóng cũng có đầy ra, Thẩm Hầu như vậy cũng không có gì đặc biệt. Chuyện ăn mặc hắn cũng chẳng để ý tới, rất ít khi mặc hàng hiệu, cũng chưa từng chạy xe sang rêu rao khắp nơi, nhưng Nhan Hiểu Thần cảm thấy gia đình Thẩm Hầu không chỉ là một gia đình có chút tiền, xét trên nhiều khía cạnh về cách ăn nói, kiến thức của hắn thì không phải một gia đình bình thường cấp trung có thể nuôi dạy được. Nhưng Giáo sư Vương cũng không phải là một giáo sư bình thường, ông ta tính tình cổ hủ, nghiêm khắc, có ý thức cương quyết, khẳng định không phải loại người vì quan hệ tình nghĩa gì đó mà nương tay. Nhan Hiểu Thần đang suy nghĩ miên man thì di động lại vang lên, cô lấy di động ra xem qua thì thấy một số lạ nhìn khá quen mắt.
+</p>
+
+<p>
+ “A lô?”
+</p>
+
+<p>
+ “Nhan Hiểu Thần, chào bạn! Tôi là nghiên cứu sinh của Giáo sư Vương, buổi sáng chúng ta vừa gặp qua rồi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Chào bạn!”
+</p>
+
+<p>
+ “Giáo sư Vương bảo tôi nói với bạn, nghèo khó mà sinh ra được một sinh viên giỏi thật không dễ dàng, thầy sẽ cho bạn thời hạn một ngày, ngày mai trước khi hết giờ làm, giáo sư hy vọng có thể gặp bạn ở văn phòng.”
+</p>
+
+<p>
+ Nhan Hiểu Thần im lặng một chút, nói: “Tôi biết rồi, cảm ơn bạn.” Mặc kệ Giáo sư Vương chỉ là muốn giữ lại tài năng, nhưng sự thật đã thông cảm cho cô, ông ta muốn giúp cô một lần, có điều Nhan Hiểu Thần không thể thông suốt việc đem toàn bộ tội lỗi đổ lên Thẩm Hầu để tự cứu mình. Tuy rằng sự việc đích thực giống như Giáo sư Vương nói, mặc kệ cô có ra sao, thì Thẩm Hầu gian lận thi cử sự thật vẫn không thể thay đổi, vẫn phải dựa vào nội quy mà nghiêm trị, nhưng Nhan Hiểu Thần không làm được, có một số việc quan trọng không chỉ là kết quả, mà còn là quá trình.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-017.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-019.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

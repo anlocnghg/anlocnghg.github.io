@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 9 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 9</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-008.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-010.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ “Thôi nào tiểu thư. Tiểu thư không cần những thứ này nữa đâu. Vứt nó đi thôi.”
+</p>
+
+<p>
+ Cô hầu gái của Nasuada, Farica nhẹ nhàng tháo lớp vải lanh băng quanh cánh tay cô. Nasuada đã phải băng bó như thế từ hồi cô và thủ lĩnh Fadawar so độ dũng cảm trong Thách đấu Trường Đao.
+</p>
+
+<p>
+ Nasuada đứng nhìn chằm chằm vào tấm thảm dài rách tả tơi trong khi Farica chăm sóc cô. Sau đó cô cố gắng nhìn xuống. Từ khối chiến thắng trong Thách đấu Trường đao tới giờ, cô vẫn không dám nhìn những vết thương, lúc mới đầu trông chúng đã rất xấu xí nên cô không thể nhìn lại cho tới khi chúng sắp lành.
+</p>
+
+<p>
+ Những vết sẹo nằm rải rác trên cánh tay cô: sáu vết nằm ở dọc bụng cánh tay trái và ba vết khác ở tay phải. Mỗi vết sẹo dài khoảng 7 tới 10cm trừ vết cuối cùng ở bên tay phải. Lúc đó đầu óc cô đã không còn kiểm soát nổi và con dao trượt đi tạo nên vết sẹo dài gấp đôi những cái khác. Lớp da quanh vết sẹo ửng hồng và dúm lại trong khi vết sẹo chỉ hơi trắng hơn phần da còn lại của cô một chút. Cô đã sợ rằng trông chúng trắng bệch đập vào mắt người khác. Vết sẹo lồi lên khoảng 0,5cm, trông như thể có ai đó ấn một cái roi sắt nhỏ dưới làn da cô.
+</p>
+
+<p>
+ Tư tưởng của Nasuada mâu thuẫn khi quan sát chúng. Khi cô lớn, cha cô đã dạy cho cô những tập tục của dân tộc cô, nhưng cả cuộc đời cô lại sống cùng Varden và những người lùn. Cô chỉ được đi xem những buổi lễ của dân du mục và hiếm lắm mới tham gia vào buổi cầu nguyện của họ. Cô chưa bao giờ Nhảy Trống giỏi và cũng chưa bao giờ tham gia buổi Cầu Hồn, hay – cái này là đặc biệt nhất – đánh bại ai trong Thách đấu trường Đao. Thế mà giờ đây khi cô vẫn còn trẻ đẹp lại mang trên mình chín vết sẹo lớn trên cánh tay. Cô có thể ra lệnh cho một trong những pháp sư của Varden xóa mờ chúng nhưng sau đó có thể cô sẽ mất đi chiến thắng của mình ở Thách Đấu Trường Đao, và những bộ lạc du mục sẽ lại bảo cô chỉ là kẻ nô bộc của họ.
+</p>
+
+<p>
+ Trong khi cô tiếc nuối nhìn cánh tay không còn mềm mượt của mình và không bao giờ còn thu hút ánh nhìn của cánh nam giới nữa, cô cũng tự hào về những vết sẹo. Chúng là vật chứng cho sự dũng cảm và là bằng chứng hữu hình cho những gì cô cống hiến cho Varden. Bất cứ ai đối diện với cô sẽ biết được con người cô và cô thấy điều đó còn quý giá hơn nhiều so với vẻ bề ngoài.
+</p>
+
+<p>
+ “Chàng nghĩ sao?” cô hỏi và giơ cánh tay về trước mặt Vua Orrin đang đứng bên cửa sổ thư phòng ngắm nhìn thành phố.
+</p>
+
+<p>
+ Orrin quay lại, nhíu mày, mắt tối lại bên dưới hàng lông mày rậm rạp. Lúc trước ông đã thay bộ giáp chiến đáu bằng bộ áo vải đỏ dày và áo choàng gắn lông chồn trắng.
+</p>
+
+<p>
+ “Trẫm thấy hài lòng khi nhìn thấy những vết sẹo,” ông nói và quay lại nhìn thành phố. “Băng lại đi. Để như thế không hợp với xã hội lịch sự.”
+</p>
+
+<p>
+ Nasuada quan sát cánh tay thêm một lúc. “Không, tôi không nghĩ thế.” Cô giật dải dây buộc ở cánh tay và đưa cho Farica. Cô bước qua tấm thảm của người lùn đặt ở giữa phòng tới gần Orrin ngắm nhìn thành phố tan tác sau chiến tranh.Cô thấy hài lòng khi hai trong số các đám cháy ở phóa thành tây đã bị dập tắt. Sau đó cô quay sang nhìn nhà vua.
+</p>
+
+<p>
+ Chỉ trong một khoảng thời gian ngắn từ khi Varden và Surdan bắt đầu chống lại đế chế, Orrin đã già đi rất nhiều, vẻ nhiệt tình và tính cách kỳ cục vốn cố có ông đã biến mất dưới vẻ ngoài sắt đá. Lúc đầu, cô thích những thay đổi đó vì cô cảm thấy ông người lớn hơn, nhưng khi chiến tranh kéo faif, cô bắt đầu nhớ cách ông hào hứng thảo luận như thể một nhà hùng biện cũng như nhớ tính cách thất thường của ông. Cô nhớ ông đã từng làm cô thấy nhẹ nhõm dù cho lắm lúc cuộc sống với cô quá là nặng nề. Hơn nữa những thay đổi đã biến ông nguy hiểm hơn; nếu xét như tâm trạng hiện tai của ông, cô nghĩ ông đang có ý định tiếm quyền thủ lĩnh Varden của cô.
+</p>
+
+<p>
+ Liệu mình có hạnh phúc khi lấy ngài? Cô phân vân. Orrin không đẹp mã. Mũi ông quá cao và nhỏ nhưng hàm lại bạnh mà môi lại quá mỏng. Sau hàng năm trời luyện tập đã cho ông một thân hình cơ bắp. Trí tuệ của ông không ai có thể nghi ngờ và tính cách của ông cũng dễ chịu. Nhưng nếu như ông không phải vua của Surda và nếu như ông không quá đe dọa tới vị trí của cô và tới quyền tự chủ của Varden, cô biết cô sẽ không bao giờ để mắt tới ông ta. Liệu ngài có thể làm một người cha tốt không?
+</p>
+
+<p>
+ Orrin tì tay lên bậu cửa đá. Ông nói và không thèm nhìn cô. “Nàng phải chấm dứt thỏa thuận liên minh với Urgal.”
+</p>
+
+<p>
+ Câu nói của ông khiến cô lùi lại mấy bước. “Vì sao?”
+</p>
+
+<p>
+ “Vì chúng làm tổn thương chúng ta. Những người muốn làm đồng minh với chúng ta giờ lại quay sang nguyền rủa chúng ta vì liên minh với quỷ dữ và không chịu hạ vũ khí khi chúng ta tới quê hương họ. Đối với họ sự tại vị của Galbatorix có vẻ công bằng và có lý vì chúng ta liên quân với Urgal. Những người bình thường sẽ không thể hiểu vì sao chúng ta chấp nhận chúng. Họ sẽ không biết rằng chính Galbatorix đã lợi dụng Urgal hay Galbatorix lừa Urgal tấn công Tronjheim dưới sự chỉ huy của Tà thần. Nàng sẽ không thể giải thích những chuyện tế nhị như vậy cho những người nông dân đang sợ hãi. Tất cả những gì họ hiểu là những sinh vật họ sợ và thù ghét cả đời đang tiến tới quê hương họ, cùng với một con rồng và một kỵ sĩ giống tiên hơn là người.”
+</p>
+
+<p>
+ “Chúng ta cần sự giúp đỡ của Urgal,” Nasuada nói. “Chúng ta còn quá ít binh sĩ.”
+</p>
+
+<p>
+ “Chúng ta không cần chúng tới vậy. Nàng biết những gì trẫm đang nói là sự thật; thế còn vì lý do gì mà nàng không để Urgal tham chiến ở Belatona? Vì sao nàng ra lệnh cho chúng không được đặt chân vào thành phố? Không cho chúng tham chiến là chưa đủ đâu Nasuada. Tiếng xấu về chúng đã đồn đải khắp nơi rồi. Điều duy nhất nàng có thể làm để cải thiện tình hình là chấm dứt sự phối hợp kinh tởm này trước khi nó gây cho chúng ta nhiều thiệt hại hơn.”
+</p>
+
+<p>
+ “Thiếp không thể.”
+</p>
+
+<p>
+ Orrin quay lại nhin cô với vẻ tức giận. “Những binh sĩ đang chết dần vì nàng chấp nhận sự trợ giúp của Garzhvog. Những binh sĩ của ta, của nàng, những người dân của đế chế... chết và bị chôn. Vụ liên minh này không đáng để họ phải bỏ mạng. Còn trẫm, trẫm không thể hiểu vì sao nàng lại bảo vệ chúng.”
+</p>
+
+<p>
+ Cô không thể chịu nổi cái nhìn của ông ta, nó khiến cô nhớ tới cái cảm giác tội lỗi mỗi khi cô cố gắng ngủ. Cô quay mặt nhìn chăm chăm vào đám khói bốc từ ngọn tháp ở góc khuất của thành phố. Cô từ từ nói. “Thiếp bảo vệ họ vì thiếp hy vọng bảo trì sự liên minh giữa chúng ta và Urgal sẽ cứu sống nhiều người hơn cái giá chúng ta phải trả... Nếu chúng ta có thể đánh bại Galbatorix...”
+</p>
+
+<p>
+ Orrin lẩm rẩm tỏ ra không tin.
+</p>
+
+<p>
+ “Thiếp biết chúng ta không nắm chắc phần thắng,” cô nói. “Nhưng chúng ta phải vạch ra tất cả các khả năng. Nếu chúng ta đánh bại được lão ta thì chúng ta sẽ bước vào quá trình phục hồi nền văn minh từ đống tro tàn của Đế chế. Chúng ta phải chắc chắn chúng ta có được hòa bình sau cả trăm năm đấu tranh. Thiếp không thể nào hạ bệ Galbatorix để rồi Urgal sẽ đánh bại chúng ta vào thời điểm chúng ta yếu nhất.”
+</p>
+
+<p>
+ “Lúc nào chúng cũng có thể làm thế. Chúng luôn là thế.”
+</p>
+
+<p>
+ “Vậy thì chúng ta có thể làm gì nữa?” cô giận giữ nói. “CHúng ta phải cố gắng thuần phục chúng. Chúng ta càng khiến chúng không biết được mục đích chúng ta liên minh với chúng là gì thì nguy cơ chúng quay lưng với chúng ta càng thấp.”
+</p>
+
+<p>
+ “Trẫm sẽ nói cho nàng biết phải làm gì,” ông ta hét lên. “Đuổi chúng đi. Chấm dứt hòa ước với Nar Garzhvog và đuổi chúng đi. Nếu chúng ta chiến thắng trong cuộc chiến này, chúng ta có thể đưa ra bản hiệp định mới với chúng trong một tư cách cao hơn. Hoặc tốt hơn, cho Eragon và Saphira và một tiểu đoàn tiến vào dãy Spine giết sạch lũ Urgal như các Kỵ sĩ Rồng đã từng làm.”
+</p>
+
+<p>
+ Nasuada nhìn ông ta với vẻ khó tin. “Nếu thiếp chấm dứt hiệp ước với Urgal, có thể họ sẽ tức giận, họ sẽ ngay lập tức tấn công chúng ta, và chúng ta không thể cùng lúc đương đầu với chúng và quân đội triều đình. Chỉ có đồ ngu mới làm thế. Nếu như thần tiên, rồng và các Kỵ sĩ có thể chấp nhận sự tồn tại của Urgal – kể cả khi họ thừa sức tiêu diệt chúng – thì vì sao chúng ta không thể. Họ biết giết tất cả Urgal là sai, vậy thì chàng cũng phải thấy được điều đó.”
+</p>
+
+<p>
+ “Cứ theo gương họ đi. Họ bị sao rồi đó! Tốt thôi, cứ để một vài Urgal sống sót nhưng hay giết một lượng đủ để chúng không dám trả thù chúng ta trong một trăm năm nữa!”
+</p>
+
+<p>
+ Sự đau đớn hiện lên rõ ràng trong giọng nói của cô và trên mặt ông hiện rõ những gân xanh đỏ. Nasuada thấy choáng váng. Cô quan sát ông kỹ hơn để hiểu vì sao ông lại kích động tới vậy. Sau một lúc, cô đã hiểu.
+</p>
+
+<p>
+ “Chàng đã mất ai?” cô hỏi.
+</p>
+
+<p>
+ Orrin nắm chặt bàn tay, rồi từ từ mở bàn tay tựa vào bậu cửa sổ như thể ông muốn dồn toàn bộ sức mạnh ra nhưng lại không dám. Ông đấm lên cửa sổ hai lần rồi nói. “Một người bạn thời niên thiếu cùng ta lớn lên ở lâu đài Borromeo. Ta không nghĩ nàng đã có dịp gặp cậu ta. Cậu ta là trung úy trong quân kỵ binh.”
+</p>
+
+<p>
+ “Sao anh ấy chết?”
+</p>
+
+<p>
+ “Đúng như nàng đoán đó. CHúng ta tới khu chuồng ngựa phía tây xem xét để sử dụng thì một người giữ ngựa chạy ra dùng cây xỉa đập vào anh ta. Khi chúng ta tóm được hắn, hắn cứ la hét về Urgal và rằng hắn không bao giờ đầu hàng... Nếu hắn không làm thì cũng có kẻ khác làm. Sau đó ta tự mình giết chết hắn.”
+</p>
+
+<p>
+ “Thiếp rất tiếc,” Nasuada nói.
+</p>
+
+<p>
+ Những viên đá gắn trên vương miện của Orrin lấp lánh khi ông gật đầu vẻ thấu hiểu.
+</p>
+
+<p>
+ “Dù chàng có đau thương thế nào cũng không thể để nó tác động tới quyết định của chàng... Em biết nó không hề dễ dàng – nhưng chàng phải mạnh mẽ hơn con người thật của mình, vì lợi ích của con dân của chàng.”
+</p>
+
+<p>
+ “Phải mạnh mẽ hơn à,” ông nói bằng giọng chua chát và chế nhạo.
+</p>
+
+<p>
+ “Đúng. Chúng ta phải mạnh mẽ hơn những người khác, chúng ta phải chứng tỏ chúng ta có thể đứng ra chịu trách nhiệm... Urgal giết cha thiếp, chàng có nhớ không, nhưng chuyện đó không ngăn thiếp quyết định liên quân cùng Urgal để giúp Varden. Thiếp sẽ không để bất cứ chuyện gì khiến thiếp từ bỏ cái gì thiếp cho là tốt cho quân đội của chúng ta và cho cục diện chung, dù chúng ta sẽ phải trải qua đau đớn thế nào.” Cô giơ tay cho ông ta xem những vết sẹo.
+</p>
+
+<p>
+ “Vậy đây là câu trả lời của nàng? Nàng sẽ không phá vỡ hiệp ước với Urgal?”
+</p>
+
+<p>
+ “Không.”
+ <br/>
+ Orrin quá bình thản chấp nhận khiến Nasuada không yên tâm. Sau đó ông đặt cả hai tay lên bậu cửa sổ rồi quay người bỏ vào thư phòng. Trên tay ông đeo bốn chiếc nhẫn lớn; một trong số đó có khắc quốc huy Surda lên mặt đá thạch anh: hình một con hươu sừng tấm chân quấn tầm gửi đứng trên một chiếc đàn hạc, đối diện là một ngọn tháp cao sừng sững.
+ <br/>
+</p>
+
+<p>
+ “Ít nhất,” Nasuada nói. “Chúng ta không phải đụng độ những binh sĩ không biết đau.”
+</p>
+
+<p>
+ “Những thây ma biết cười ấy hả,” Orrin lầm bẩm, sử dụng cụm từ mà cô biết đã phổ biến trong quân Varden. “Đúng, và may là không có Murtagh lẫn Thorn, nếu không thì phiền lắm.”
+</p>
+
+<p>
+ Cả hai người không nói gì trong một lúc. Sau cùng cô cất tiếng, “Thí nghiệm tối qua thế nào? Thành công không?”
+</p>
+
+<p>
+ “Ta mệt quá nên đi ngủ.”
+</p>
+
+<p>
+ “Ờ.”
+</p>
+
+<p>
+ Sau đó cả hai cùng ngầm đồng ý đi về bàn làm việc đặt ở cạnh một bức tường. Trên bàn là hàng núi công văn, giấy tờ, báo cáo. Thế mà chỉ cách đây nửa tiếng, trên bàn làm gì có gì đâu.
+</p>
+
+<p>
+ Cô tập trung vào bản báo cáo quan trọng nhất, ước tính số lượng tù nhân quân Varden bắt giữ sau trận chiến ở Belatona, những tên quan trong đã được đánh dấu bằng mực đỏ. Cô và Orrin đang bàn về những con số thì Ferica bước vào tháo gạc cho cô.
+</p>
+
+<p>
+ “Thiếp không nghĩ mình có thể thoát được khỏi đống rắc rối này,” cô thừa nhận.
+</p>
+
+<p>
+ “Chúng ta có thể tuyển quân hộ thành từ những người này. Như vậy chúng ta không phải bỏ lại quá nhiều chiến binh.”
+</p>
+
+<p>
+ Cô cầm bản báo cáo lên. “Có thể, nhưng những người chúng ta cần lại hiếm mà thầy phép của chúng ta đang làm việc quá tải rồi...”
+</p>
+
+<p>
+ Khi thấy cô trả lời tiêu cực, nhà vua hỏi lại. “Vậy Du Vrangr Gata đã tìm ra cách phá bỏ lời thề bằng ngôn ngữ cổ chưa? Đã có chút tiến triển nào chưa?”
+</p>
+
+<p>
+ “Chưa. Thiếp đã hỏi ý kiến thần tiên nhưng họ cũng không hơn chúng ta.”
+</p>
+
+<p>
+ “Nếu chúng ta không giải quyết được vấn đề này, chúng ta sẽ thua trận,” Orrin nói. “Đây chính là vấn đề mấu chốt.”
+</p>
+
+<p>
+ Cô day day thái dương. “Thiếp biết.” Trước khi để lại người lùn bảo vệ Farthen Dȗr và Tronjheim, cô đã thử tính tới những thách thức quân Varden phải đối mặt khi ở thế phòng thủ. Nhưng vấn đề họ đang vấp phải lúc này lại khiến cô quá ngạc nhiên.
+</p>
+
+<p>
+ Mọi người đã thấy được rắc rối đó lần đầu tiên sau Trận chiến trên Đồng bằng cháy. Rõ ràng là những binh sĩ của Galbatorix đã phải thề trung thành với lão và đế chế bằng ngôn ngữ cổ. Cô và Orrin không thể tin tưởng họ, ít nhất là tới khi tiêu diệt đế chế và Galbatorix hoặc có thể là không bao giờ. Vì vậy họ không thể để tàn quân gia nhập quân đội Varden vì sợ lời thề sẽ khiến họ hành động khác thường.
+</p>
+
+<p>
+ Nasuada không quan tâm nhiều tới vấn đề này cho tới thời điểm hiện tại. Có chiến tranh tất có tù nhân và cô đã thỏa hiệp với Vua Orrin rằng sẽ đưa tù binh về Surda, đưa họ tới công trường xây dựng đường xá, đập đá, kè mương và làm những công việc nặng nhọc khác.
+</p>
+
+<p>
+ Nhưng tới khi Varden tiếp quản Feinster cô mới thấy hết được mức nghiêm trọng của vấn đề. Galbatorix không chỉ buộc binh lính, mà cả quý tộc và tùy tùng, thậm chí vài người dân thề trung thành với lão – một con số quá lớn khiến Varden không thể xác định nổi. Nhưng những ai họ xác định được, họ giam vào ngục thất, ít nhất là tới khi tìm cách phá giải lời thề. Sau đó việc tìm những người họ có thể tin tưởng và những người họ muốn đầu quân cho Varden còn khó hơn rất nhiều.
+</p>
+
+<p>
+ Để canh chừng những người đó, Nasuada phải để lại Feinster gấp đôi số lượng quan sĩ cô dự liệu lúc đầu. Và, vì có nhiều tù nhân nên số lượng lương thực cung cấp tới các thành phố lại tăng lên. Họ không thể duy trì tình thế này lâu hơn, và giờ mọi chuyện đang chuyển biến xấu khi họ đã có Belatona.
+</p>
+
+<p>
+ “Tiếc là người lùn không tới,” Orrin nói. “Chúng ta có thể tranh thủ sự giúp đỡ của họ.”
+</p>
+
+<p>
+ Nasuada đồng tình. Tại thời điểm này trong quân Varden chỉ có vài trăm người lùn; phần còn lại đã về Farthen Dȗr chôn cất tiên hoàng Hrothgar và để đợi các tộc trưởng chọn ra người kế nhiệm Hrothgar. Cô đã nguyền rủa việc này không biết bao nhiêu lần. Cô đã thuyết phục người lùn hãy chon ra quan nhiếp chính cho thời gian này, nhưng họ cứng đầu như đá và cứ khăng khăng làm theo nghi lễ đã có từ ngàn đời của mình, dù việc đó đồng nghĩa với việc bỏ rơi Varden. May là, cuối cùng họ đã chọn ra nhà vua mới – cháu họ của Hrothgar, Orik và hiện giờ đang đi từ rặng núi Beor xa xôi tới tiếp viện cho Varden. Tại thời điểm này, họ đã qua vùng đồng bằng rộng lớn ở bắc Surda, ở khu vực giữa hồ Tudosten và sông Jiet.
+</p>
+
+<p>
+ Nasuada không biết họ có thể tham chiến ngay khi tới không. Những người lùn dai sức hơn con người nhưng gì thì gì họ cũng đã đi bộ hành quân suốt hai tháng ròng, thế cũng đủ làm rệu rã những con người khỏe nhất. Chắc họ chán lắm khi cứ phải nhìn đi nhìn lại những cảnh giống nhau, cô nghĩ bụng.
+</p>
+
+<p>
+ “Chúng ta đã có quá nhiều tù binh rồi. Và một khi chúng ta chiếm được Dras Leona...” cô lắc đầu.
+</p>
+
+<p>
+ Đột nhiên biểu hiện trên khuôn mặt Orrin sáng lạng hẳn: “Nếu chúng ta bỏ qua Dras – Leona thì sao?” Ông lật tung đống giấy tờ cho tới khi tìm thấy tấm bản đồ Alagaësia do người lùn vẽ, mà ông đã cho sao làm nhiều bản. Trên bản đồ những ụ đất nhấp nhô khiến địa thế của vùng đất không bình thường: những đỉnh núi nằm ở phía tây Du Weldenvarden. Đồng bàng trũng nơi có dãy núi Beor; những khe núi và hẻm núi chạy dọc Sa mạc Hadarac; và hệ thống núi Sphine xếp như dẻ quạt ở phần chính bắc. “Nhìn đi.” Ông dùng ngón giữa chỉ theo đường nối giữa Belatona tới thủ phủ của Đế chế, thành phố Urȗ’baen. “Nếu chúng ta hành quân thẳng tới đây, chúng ta sẽ không phải đi qua Dras – Leona. Đi xa như thế rất có khăn nhưng chúng ta có làm được.”
+</p>
+
+<p>
+ Nasuada không cần phải cân nhắc về gợi ý này; cô đã nghĩ tới khả năng này rồi. “Nguy hiểm rất lớn. Galbatorix có thể vừa tấn công chúng ta bằng cánh quân ở Dras – Leona – với một số lượng không nhỏ, nếu như tình báo của chúng ta đáng tin – và như vậy chúng ta sẽ bị tấn công từ hai hướng. Cách đó là cách thua trận nhanh nhất. Không, chúng ta phải chiếm được Dras – Leona.”
+</p>
+
+<p>
+ Orrin thừa nhận cùng một cái gật đầu khe khẽ. “Vậy thì chúng ta cần quân sĩ từ Aroughs quay lại. Chúng ta cần huy động tổng lực nếu chúng ta muốn tiếp tục cuộc chiến.”
+</p>
+
+<p>
+ “Thiếp biết. Thiếp định kết thúc cuộc chiến ở đó trong tuần này.”
+</p>
+
+<p>
+ “Ta hy vọng không phải bằng cách cho Eragon tới đó.”
+</p>
+
+<p>
+ “Không, thiếp có kế hoạch khác.”
+</p>
+
+<p>
+ “Tốt. Và nhanh lên nhé. Vậy chúng ta làm gì với tù nhân đây?”
+</p>
+
+<p>
+ “Như chúng ta đã làm trước đây: canh giữ, đề phòng, cùm xích. Có thể chúng ta cần dùng phép thuật để hạn chế cử động của họ, như vậy chúng ta có thể trông chừng chúng kỹ lưỡng hơn. Ngoài ra, thiếp không nghĩ ra giải pháp khác, trừ việc giết hết họ. Thiếp thà...” Cô cố tưởng tượng ra viễn cảnh cô không hạ bệ được Galbatorix. “Thiếp thà không dùng... biện pháp kinh khủng này.”
+</p>
+
+<p>
+ “Ừ.” Orrin nói và quan sát vết mực đã mờ đánh dấu tam giác Belatona, Dras- Leona và Urȗ’baen.
+</p>
+
+<p>
+ Ông vẫn cứ nhìn thế cho tới khi nasuada nói, “Chúng ta còn cần làm gì không? Jörmundur đang đợi lệnh còn Hội Đồng Trưởng lão muốn gặp thiếp.”
+</p>
+
+<p>
+ “Ta thấy lo.”
+</p>
+
+<p>
+ “Vì chuyện gì?”
+</p>
+
+<p>
+ Orrin đặt tay lên tấm bản đồ. “Kế hoach này từ đầu đã khó khăn rồi... Lực lương của chúng ta, quân đồng minh đang tản mát quá nhiều, và nếu Galbatorix nghĩ tới việc tham chiến, lão có thể tự mình giết chết chúng ta dễ như Saphira chén một bầy dê vậy. Toàn bộ kế hoạch của chúng ta phải phụ thuộc vào khi nào Galbatorix sẽ đối đầu với Eragon và Saphira cũng như chúng ta sẽ chiêu gọi được bao nhiêu thầy phép. Giờ số lượng thầy phép của chúng ta quá ít và chúng ta sẽ không thể triệu tập những người còn lại cho tới khi tới Urȗ’baen và hợp quân cùng Nữ hoàng Islandzandí và quân đội của bà ta. Tới lúc đó, quân chúng ta vẫn còn yếu. Chúng ta chỉ mong sao Galbatorix vẫn cứng đầu không chịu tham chiến cho tới khi chúng ta răng bẫy quanh hắn.”
+</p>
+
+<p>
+ Nasuada cũng nghĩ như vậy. Nhưng hiện giừ cô cần nâng cao sự tự tin của Orrin hơn là khiến ông suy nghĩ càng tiêu cực, vì nếu sự quyết tâm của ông yếu đi, nhiệm vụ và ảnh hưởng tới quyết tâm của nhà vua cũng như làm nản lòng binh lính. “Chúng ta không phải hoàn toàn không có sức phòng vệ,” cô nói. “Không còn như thế. Chúng ta đã có thanh Dauthdaert, và với nó thiếp nghĩ chúng ta có thể giết chết Galbatorix và Shruikan khi bọn họ xuất hiện ở Urȗ’baen.”
+</p>
+
+<p>
+ “Có lẽ.”
+</p>
+
+<p>
+ “Ngoài ra, lo lắng chẳng ích gì. Chúng ta không thể khiến người lùn đi nhanh hơn, hay khiến tốc độ hành quân tới Urȗ’baen của chúng ta nhanh hơn hay quay đuôi bỏ chạy. Vì thế tốt hơn chàng đừng lo lắng thái quá. Tất cả những gì chúng ta có thể làm là bình thản chấp nhận số phận cho dù chuyện gì sắp đến. Thiếp không để những suy nghĩ về hành động của Galbatorix làm ảnh hưởng tới chúng ta. Thiếp không cho mình vì hắn mà yếu đuối.”
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-008.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-010.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 44 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 44</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-043.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-045.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon ngửng đầu, hít một hơi sâu cảm thấy sự lo lắng lùi dần.
+</p>
+
+<p>
+ Ngồi trên lưng rồng không lấy gì làm thoải mái nhưng gần Saphira giúp cả nó và cô em bình tĩnh. Sự vui vẻ đơn giản vì được tiếp xúc cơ thể với nhau giúp chúng được ản ủi theo cách mà ít thứ làm được. Hơn nữa, những âm thanh và chuyển động đều đều của đôi cánh giúp nó bỏ qua những suy nghĩ u ám trong đầu.
+</p>
+
+<p>
+ Dù chuyến đi của chúng rất gấp gáp và toàn quân Varden đang rơi vào cảnh hiểm nghèo nhưng Eragon lại mừng được rời xa quân đội. Những cuộc chém giết gần đây khiến nó cảm thấy như nó không còn là chính mình.
+</p>
+
+<p>
+ Từ hội gia nhập Varden ở Feinster, nó đã dành hầu hết thời giand dể chiến đấu hoặc chờ đợi chiến đấu, và nó bắt đầu thấy căng thẳng, đặc biệt sau sự kiện kinh hoàng đẫm máu ở Dras – Leona. Thay mặt Varden, nó đã giết hàng trăm tên lính – vài người trong đó thậm chí còn chẳng động nổi vào sợi lông chân của nó – và dù hành động của nó mang công lý nhưng nó vẫn thấy phiền. Nó không muốn cuộc chiến nào cũng tuyệt vọng và mọi đối thủ đều ngang cơ với mình hoặc giỏi hơn, nhưng đồng thời chém giết quá dễ dàng khiến nó thấy mình giống đồ tể hơn một chiến binh. Nó dần dà tin rằng cái chết là thứ ăn mòng và nó càng gần cái chết nó càng xa rời nhân cách của mình.
+</p>
+
+<p>
+ Nhưng, một mình cùng Saphira – và cả Glaedr, dù rồng vàng vẫn im lặng từ lúc khởi hành – giúp Eragon trở lại trạng thái bình thường. Nó thấy yên ổn nhất khi ở một mình hoặc trong một nhóm nhỏ, và nó không hề thích ở một thành phố hay thậm chí một doanh trại như của Varden. Không giống phần đông những người khác, nó không ghét hay sợ thiên nhiên hoang dã; vì tại những vùng đất không người luôn tiềm tang sự yên bình và vẻ đẹp không một nhà nghệ thuật nào diễn tả nổi và nó thấy mình sống lại.
+</p>
+
+<p>
+ Vì thế nó để tiếng đập cánh của Saphira làm nó xao nhãng và trong lúc trời sang, nó quan sát cảnh vật lướt qua.
+</p>
+
+<p>
+ Từ doanh trại Varden tới bờ hồ Leona, Saphira bay trên làn nước, nhứm về phía tây bắc và bay cao khiên Eragon phải dùng thần chú để chống rét.
+</p>
+
+<p>
+ Mặt hồ chia thành những khối màu rõ rệt: những con sóng phản chiếu ánh sáng mặt trời lên người Saphira lấp lánh, nơi không có ánh sáng mang mày tối xám. Eragon chưa bao giờ chán ngắm sự thay đổi thường xuyên của ánh sáng: không gì trên thế giới này có thể sánh bằng.
+</p>
+
+<p>
+ Chim bói cá, sếu, ngỗng, vịt, sáo đá và những loài chim khác thường bay là là trên mặt nước. Hầu hết những con chim không để ý tới Saphira nhưng một số chim bói cá bay lượn theo cô nàng một lúc, chủ yếu vì tò mò hơn sợ hãi. Hai con thậm chí còn lượn lờ trước mặt cô nàng, chỉ cách những chiếc răng dài sắc nhọn có vài chục cm.
+</p>
+
+<p>
+ Những con chim săn mồi mỏ khoằm, mào vàng làm Eragon nghĩ tới Saphira. SAphira thích chí với cách nhận xét đó, dù thực ra cả về vẻ bề ngoài lẫn kỹ năng săn mồi chúng đều không bằng Saphira.
+</p>
+
+<p>
+ Bờ sông phía sau họ dang dần biến vào trong đường chân trời tím nhạt, sau đó hoàn toàn khuất dạng. Khoảng hơn nửa tiếng, họ chỉ nhìn thấy những con chim và những đám mây trên trời và làn nước lóng lánh che phủ bề mặt trái đất.
+</p>
+
+<p>
+ Rồi, phía trước và bên trái họ xuất hiện đường viền xám mờ nhạt của rặng Spine chào đón Eragon. Dù đây không phải những ngọn núi của thời tuổi thơ nó, nhưng chúng vẫn thuộc cùng một dãy, và nhìn thấy chúng làm nó thấy mình không xa nhà lắm.
+</p>
+
+<p>
+ Rặng núi càng lúc càng gần cho tới khi đỉnh núi đá tuyết phủ xuất hiện trước mặt họ nhưng một bức tường phòng thủ bị thời gian bào mòn. Dọc bên dưới sườn núi xanh đậm là hàng tá những dòng suối chảy róc rách, uốn lượn tới khi hòa vào một hồ lớn dưới chân núi. Sáu ngôi làng gần chân núi, nhưng dưới phép thuật của Eragon, dân làng không hề thấy Saphira khi cô nàng bay qua.
+</p>
+
+<p>
+ Khi nó nhìn những ngôi làng, nó mới thấy sao chúng nhỏ bé và cô độc đến thế và làng Carvahall nhỏ bé và biệt lập thế nào. So với những thành phố lớn nó từng tới, những ngôi làng trông chẳng hơn vài ngôi nhà lụp xụp, chỉ dành cho những người cùng khổ. Nó biết rất nhiều người trong số họ chưa từng đi xa nơi họ sinh ra vài dặm và sẽ sống cả đời nơi này.
+</p>
+
+<p>
+ Quả là một sự tồn tại hạn hẹp, nó nghĩ.
+</p>
+
+<p>
+ Nhưng nó lại nghĩ liệu cứ sống ở một nơi và học tất cả những gì cần thiết có hơn việc nay đây mai đó không. Liệu biết nhiều nhưng chỉ hiểu bề nổi có tốt hơn biết ít nhưng hiểu sâu không?
+</p>
+
+<p>
+ Nó không chắc. Nó nhớ ông Oromis từng nói với nó rằng nếu ai đó nhìn kỹ sẽ thấy cả thế giới này bắt đầu từ hạt cát nhỏ nhất.
+</p>
+
+<p>
+ Rặng núi Spine chỉ bằng một mảnh nhỏ so với núi Beor nhưng những đỉnh núi cao dựng đứng vươn lên trên Saphira tới 350m khi cô nàng bay lượn giữa các vách núi, đi theo những hẻm núi và thung lũng phủ bóng tối chia cắt dãy núi. Thi thoảng cô nàng phải bay cao hơn để tránh những khe núi hẹp phủ tuyết. Lúc đó, tầm nhìn của Eragon được mở rộng, nó thấy các ngọn núi rất giống những chiếc răng mọc lên từ lợi là mặt đất nâu.
+</p>
+
+<p>
+ Khi Saphira đánh võng trên một thung lũng sâu, nó thấy cả đáy một dòng suối chạy lững lờ qua trảng cỏ. Và dọc theo bãi cỏ, nó hình như thoáng thấy mấy ngôi nhà – hoặc có thể là lều; khó mà phân biệt được - ẩn dưới tán lá cây vân sam vẫn mọc nhiều trên núi. Một ánh lửa nhỏ chiếu xuyên qua các cành cây, như một mẩu vàng nhỏ lẫn trong những lớp kim khâu, và nó nghĩ nó thấy một bóng người đốn gỗ bên bờ suối. Trông bóng người đó đồ sộ tới lạ thường, đầu nó quá to so với người.
+</p>
+
+<p>
+ Anh nghĩ có Urgal.
+</p>
+
+<p>
+ Đâu? Saphira hỏi,và nó cảm thấy cô nàng đang tò mò.
+</p>
+
+<p>
+ Ở tráng trống trước mặt đằng sau chúng ta ấy. Nó cho cô nàng xem ký ức vừa qua. Anh ước chúng ta có thời gian quay lại tìm hiểu. Anh muốn xem họ sống ra sao.
+</p>
+
+<p>
+ Cô nàng khụt khịt. Khói nóng bốc ra từ lỗ mũi rồi bay xuống dưới cổ và sang người nó. Họ sẽ không tử tế với một con rồng và Kỵ sĩ nếu họ hạ cánh không báo trước.
+</p>
+
+<p>
+ Nó ho hắng và chớp mắt vì nước mặt giàn giụa. Em có phiền không?
+</p>
+
+<p>
+ Cô nàng không trả lời, nhưng khói bốc ra từ lỗ mũi cô nàng dừng lại, và không khí quanh nó nhanh chóng trở về trạng thái trong lành.
+</p>
+
+<p>
+ Không lâu sau đó, hình dáng ngọn núi bắt đầu quen thuộc với Eragon, và một khe nứt lớn hiện ra trước khi Saphira và nó nhận ra chúng đang bay ngang qua khe núi dẫn tới Teirm – cùng khe núi nó và ông Brom đã hai lần cưỡi ngựa đi qua. Con đường vẫn y như trong tâm trí nó: nhánh sông chảy về phía tây của sông Toark vẫn chảy nhanh và hung hãn về đại dương xa xôi, mặt nước cuồn cuộn sóng. Con đường gồ ghề nó và ông Brom đi vẫn là con đường mòn bụi bặm chẳng to hơn đường hươu đi là mấy. Nó nghĩ nó thấy cả rặng cây họ dừng lại nghỉ ngơi ăn uống.
+</p>
+
+<p>
+ Saphira bay về hướng tây và chúi xuống con sông cho tới khi không còn thấy dãy núi mà chỉ còn thấy những cánh đồng ắp nước, từ đó cô nàng đảo hướng về phía bắc. Eragon không hỏi vì sao cô em quyết định bay như vậy; cô nàng chưa bao giờ đánh mất phong thái của mình, kể cả vào những đêm không sao hay khi ở sâu trong Farthen Dûr.
+</p>
+
+<p>
+ Mặt trời xuống gần đường chân trời khi họ bay qua Spine. Khi hoàng hôn dần phủ lên vùng đất, Eragon tự làm cho mình bận rộn bằng cách nghĩ cách bẫy, giết hoặc lừa Galbatorix. Sau một lúc, Glaedr rời khỏi hòn đảo cô độc của mình và cùng nó tìm cách. Họ dành khoảng một giờ để thảo luận vô số sách lược, sau đó tập tấn công và phòng thủ tâm tưởng. Saphira cũng tham gia bài tập, nhưng ít khi thành công, vì bay khiến cô nàng khó tập trung vào những thứ khác.
+</p>
+
+<p>
+ Sau đó, Eragon nhìn lên những ngôi sao lạnh lẽo. Rồi nó hỏi Glaedr, Liệu Cổng Linh HỒn có chứa những Eldunarí mà các Kỵ sĩ đã giấu khỏi Galbatorix không?
+</p>
+
+<p>
+ Không,Glaedr trả lời không chút đắn đo. Không thể. Oromis và ta sẽ biết nếu Vrael lập kế hoạch này. Và nếu có bất cứ Eldunarí còn sót lại tại Vroengard, chúng ta đã tìm thấy khi quay về tìm kiếm trên hòn đảo. Không dễ để che giấu những sinh vật sống đâu.
+</p>
+
+<p>
+ Vì sao không?
+</p>
+
+<p>
+ Vì nếu một con nhím có cuộn tròn lại, thì nó cũng không thể nào biến thành vô hình, đúng không? Tư tưởng cũng chẳng có gì khác biệt. Ngươi có thể giấu suy nghĩ không cho những người khác đọc được nhưng sự tồn tại của ngươi vẫn rõ rành rành trước mắt những người rà soát khắp một vùng...
+</p>
+
+<p>
+ Chắc chắn thầy có thể dùng thần chú để...
+</p>
+
+<p>
+ Nếu một câu thần chú có thể che mờ các giác quan, chúng ta sẽ biết, vì chúng ta có lập lưới phòng hộ tránh điều đó xảy ra.
+</p>
+
+<p>
+ THế là, không có Eldunarí, Eragon chán nản kết luận.
+</p>
+
+<p>
+ Không may là không.
+</p>
+
+<p>
+ Họ bay trong im lặng tới khi mặt trăng khuyết xuất hiện trên đỉnh núi nham nhở của rặng Spine. Dưới ánh trăng, mặt đất trông như thể rải thiếc, và Eragon tưởng tượng ra rằng đây chính là tác phẩm của người lùn tạc khắc và cất giữ trong một hang động lớn bằng cả Alagaësia.
+</p>
+
+<p>
+ Eragon có thể cảm nhận sự hài lòng của Glaedr trong chuyến bay. Giống Eragon và Saphira, ông rồng già thích được rời mặt đất, dù chỉ trong một thời gian ngắn, để tự do bay lượn trên bầu trời.
+</p>
+
+<p>
+ Saphira là người cất tiếng trước. Giữa những tiếng đập cánh chầm chậm, từ từ, cô nói với Glaedr. Kể chuyện cho bọn con nghe đi, Ebrithil.
+</p>
+
+<p>
+ Con muốn nghe thể loại truyện gì?
+</p>
+
+<p>
+ Về làm sao người và Oromis bị THập Tam Phản đồ bắt rồi thoát được.
+</p>
+
+<p>
+ Lúc này, sự hứng thú của Eragon tăng lên. Nó luôn luôn tò mò vì vấn đề này nhưng chưa bao giờ đủ can đảm để hỏi Oromis.
+</p>
+
+<p>
+ Glaedr im lặng rồi nói, Khi Galbatorix và Morzan trở lại từ miền hoang dã và bắt đầu xử lý những người chống lại chúng, lúc đầu chúng ta không nhận ra mối nguy hiểm tiềm tàng. Tất nhiên chúng ta có lo lắng nhưng nếu biết Tà thần bước chân vào mảnh đất này thì hành động của chúng ta không chỉ dừng lại ở mức đó. Galbatorix không phải Kỵ sĩ đầu tiên điên loạn, dù hắn là người đầu tiên có môn đệ như Morzan. Vì Morzan chúng ta biết mình đang đối diện với mối nguy hiểm như thế nào, nhưng sự thực chỉ hiển hiện vào phút cuối.
+</p>
+
+<p>
+ Lúc đó, chúng ta không ngờ Galbatorix có thể tụ tập những kẻ đồng lõa hay hắn có ác tâm làm chuyện đó. Chúng ta luôn cho chuyện những kẻ đồng đạo có thể bị những lời đường ngọt chứa độc của Galabatorix dụ dỗ là điều vô lý. Morzan là Kỵ sĩ trẻ, hắn yếu lòng cũng dễ hiểu. Nhưng những Kỵ sĩ trưởng thành thì sao? Chúng tôi chưa bao giờ nghi ngờ lòng trung thành của họ. Chỉ tới khi họ bị dụ dỗ họ mới để lộ ra rằng họ đã bị lòng hận thù và những điểm yếu đánh gục. Vài người trong số đó muốn trả thù cũ; vài người tin rằng, vì có sức mạnh nên Kỵ sĩ và Rồng phải là đấng thống trị Alagaësia; và những kẻ khác, ta sợ phải nói rằng, đơn giản họ chỉ thích có cơ hội xe tan những gì vốn có và tự làm theo những gì mình muốn
+</p>
+
+<p>
+ Ông rồng già ngừng lại, và Eragon cảm thấy sự hận thù và nỗi buồn từ ngày xa xưa phủ lên tâm trí ông. Sau đó Glaedr tiếp tục: Những sự kiện tại thời điểm đó...hỗn loạn. Chúng ta biến rất ít và những báo cao chúng ta nhận được chỉ toàn là xuất phát từ những lời đồn đãi nên không có tính hữu dụng. Oromis và ta bắt đầu nghi ngờ có gì đó cực kỳ xấu đang xảy ra mà chúng ta không nhận ra. Chúng ta cố thuyết phục vài con rồng và Kỵ sĩ lớn tuổi hơn nhưng họ không đồng ý và bác bỏ mối lo ngại của chúng ta. Họ không ngu ngốc, nhưng nhiều thế kỷ hòa bình đã làm tầm nhìn của họ kém tinh anh và họ không thể thấy rõ thế giới đang biến động quanh họ.
+</p>
+
+<p>
+ Thất vọng vì không kiếm được thông tin, Oromis và ta rời Ilirea để tự tìm hiểu. Chúng ta đi cùng hai Kỵ sĩ trẻ hơn, cả hai đều là thần tiên và là chiến binh được tôi luyện, vừa trở về từ chuyến do thám phía bắc rặng Spine. Một phần do họ mà chúng ta đã mạo hiểm viễn chinh. Có thể các con nhận ra họ, vì họ là Kialandí và Formora.
+</p>
+
+<p>
+ “À,” Eragon nói, đột ngột hiểu chuyện.
+</p>
+
+<p>
+ Đúng. Sau một ngày rưỡi đi lại, chúng ta dừng lại ở Edur Naroch, tòa tháp canh cổ quan sát toàn bộ Cánh rừng Silverwood. Chúng ta không hề biết trước đó Kialandí và Formora đã tới tòa tháp giết chết ba yêu tinh trông giữ cánh rừng. Sau đó, họ đặt bẫy trên những tảng đá bao vòng quanh tòa tháp. Chính bẫy đó đã tóm được chúng ta khi ta đặt móng xuống đất. Đây là một câu thần chú thông minh; Galbatorix đã tự mình dạy cho họ. Chúng ta thèm phòng vệ lại, vì câu thần chú không gây hại cho chúng ta, mà chỉ giữ chân và làm chậm tiến độ của chúng ta, giống như thể chúng ta bị đổ mật lên đầu óc và thân thể. Trong khi chúng ta đừng đó gầm ghè, từng phút trôi qua như từng giây. Kialandí, Formora, và con rồng của họ bay lượn quanh chúng ta còn nhanh hơn chim ruồi; họ chỉ như những mảnh loang loáng tối.
+</p>
+
+<p>
+ Khi họ sẵn sàng, họ thả chúng ta ra. HỌ đã niệm hàng ta câu thần chú – để giữ chúng ta tại chỗ, khiến chúng ta mù và không cho Oromis nói làm ông ấy khó lòng niệm chú. Một lần nữa, thần chú của họ không làm hại chúng tôi và chúng tôi và vì thế chúng tôi không phòng vệ lại... Lúc có thể, bọn ta tấn công Kialandí, Formora,và con rồng của họ bằng tư tưởng. Chúng ta giằng co hàng giờ và phần thắng thuộc về chúng ta. Kỷ niệm đó....chẳng lấy gì làm vui vẻ. Họ yếu và thiếu kinh nghiệm hơn Oromis và ta, nhưng hai đấu một mà, và họ có trái tim của con rồng Agaravel – họ đã lấy từ Kỵ sĩ bị họ bức hại – và gia tăng sức mạnh. Kết quả là chúng ta phải chầy chật để bảo vệ mình. Chúng ta sau đó phát hiện ra, mục đích của họ là buộc chúng ta giúp Galbatorix và Thập Tam Phản Đồ có thể tiến vào Ilirea mà không bị để ý, sau đó họ có thể đánh úp các Kỵ sĩ và lấy những Eldunarí trong thành phố.
+</p>
+
+<p>
+ “Vậy sao hai người trốn được?” Eragon hỏi.
+</p>
+
+<p>
+ Lúc đó, rõ ràng chúng ta không thể thắng nổi họ. Vì thế, Oromis quyết định liều dùng pháp thuật để chúng ta tự do, dù ông ấy biết nó sẽ làm cho Kialandí và Formora dùng pháp thuật phản kích lại. Chúng ta làm vậy vì tuyệt vọng nhưng làm gì còn lựa chọn nào khác.
+</p>
+
+<p>
+ Vào một lúc, ta không biết kế hoạch của Oromis, ta đã đánh trả hai kẻ tấn công, cố làm bị thương họ. Oromis đợi thời cơ đó. Ông ấy biết Kỵ sĩ hướng dẫn Kialandí và Formora dùng pháp thuật, chính vì thế ông ta quen với cách dùng chú của họ. Vì thế, ông ấy đoán ra Kialandí và Formora sẽ dùng thần chú thế nào, và lỗ hổng trên đòn chú nằm ở đâu.
+</p>
+
+<p>
+ Oromis chỉ có vài giây để hành động; giây phút ông sử dụng pháp thuật, Kialandí và Formora nhận ra ông định làm gì, họ hoảng loạn bắt đầu dùng thần chú. Oromis phải mất ba lần để bẻ gẫy vòng trói của họ. Ta không thể nói chính xác ông ấy làm thế nào. Ta nghi có khi ông ấy còn chẳng hiểu nữa là. Hiểu theo cách đơn giản nhất, ông ấy di chuyển chúng ta dịch đi một ngón tay từ chỗ chúng ta đang đứng.
+</p>
+
+<p>
+ Giống như cách Arya đưa quả trứng của con từ Du Weldenvarden tới Spine phải không ạ? Saphira hỏi.
+</p>
+
+<p>
+ Đúng và không đúng, Glaedr trả lời. Đúng, ông ấy di chuyển chúng ta từ nơi này tới nơi khác bằng dịch chuyển tức thời. Nhưng ông ấy không chỉ di chuyển vị trí mà còn thay đổi da thịt khiến chúng ta không còn là mình. Rất nhiều điểm nhỏ nhất trên cơ thể chúng ta đã thay đổi nhưng không gây ra hậu quả nghiêm trọng, và ông ấy là thế với tất cả các cơ bắp, xương và nội tạng.
+</p>
+
+<p>
+ Eragon nhíu mày. Câu thần chú đó đòi hỏi sự sắp xếp cao nhất, một đòn vô tiền khoáng hậu trong lịch sử. Nhưng, Eragon có ấn tượng tới đâu nó vẫn không thể đừng hỏi, “Nhưng làm thế nào ạ? Giờ ngài vẫn như cũ mà.”
+</p>
+
+<p>
+ Có thể như cũ, cũng có thể không. Sự khác biệt của chúng ta trước và sau rất nhỏ, nhưng đủ để làm hỏng đòn phép Kialandí và Formora ếm lên chúng ta.
+</p>
+
+<p>
+ Vậy họ dùng thần chú gì khi phát hiện ra điều tiền bối Oromis làm? Saphira hỏ
+</p>
+
+<p>
+ i.
+</p>
+
+<p>
+ Eragon thấy Glaedr giã cánh xuống như thể ông đã quá mệt mỏi vì đứng một tư thế quá lâu. Thần chú đầu tiên của Formora định giết chúng ta, nhưng lưới phòng vệ của chúng ta đã ngăn lại. Câu thứ hai từ Kialandí … khác. Đó là câu thần chú hắn học từ Galbatorix và lão học từ những linh hồn ác chiếm trụ Durza. Cái này ta biết, vì ta tiếp cận trí óc của Kialandí trong khi hắn đọc thần chú. Đó là một câu thần chú thông minh, xảo quyệt nhằm không cho Oromis sử dụng dòng năng lượng quanh ông ấy, như vậy chúng ta sẽ không dùng pháp thuật được.
+</p>
+
+<p>
+ “Kialandí có làm vậy với ông không?”HẮn có thể nhưng hắn sợ câu thần chú sẽ giết ta hoặc ta và trái tim sẽ không còn liên hệ với nhau. Như vậy tạo ra hai bản thể của ta thì làm sao họ chống chịu được. Rồng còn phụ thuộc vào pháp thuật để tồn tại nhiều hơn thần tiên; không có nó chúng ta sẽ chết.
+</p>
+
+<p>
+ Eragon có thể cảm nhận sự tò mò của Saphira dâng cao. Có thể sao? Liên kết giữa rồng của Eldunarí của rồng có thể ngắt trong khi cơ thể rồng vẫn sống?
+</p>
+
+<p>
+ Có thể, nhưng đây là câu chuyện khác ta sẽ kể lúc khác.
+</p>
+
+<p>
+ Saphira im lặng nhưng Eragon thừa biết cô nàng sẽ hỏi lại cơ hội đó sớm nhất có thể.
+</p>
+
+<p>
+ “Nhưng câu thần chú của Kialandí không ngăn nổi sư phụ Oromis dùng phép đúng không ạ?”
+</p>
+
+<p>
+ Không hoàn toàn. Đáng ra câu thần chú phải làm được điều đó nhưng khi Kialandí dùng câu thần chú đó thì Oromis di chuyển chúng ta từ nơi này tới nơi khác, chính vì thế ảnh hưởng của nó giảm đi. Nhưng dù sao ông ấy chỉ có thể sử dụng một phần phép thuật nhỏ nhất. Câu thần chú đó để lại di chứng cả đời ông ấy, dù những thầy thuốc giỏi nhất đã cố gắng thế nào.
+</p>
+
+<p>
+ “Sao lưới phòng hộ không bảo vệ ông ấy?”
+</p>
+
+<p>
+ Glaedr hình như đang thở dài. Không ai biết. Không ai làm điều này trước đó, Eragon, và trong những người còn sống sót, chỉ có Galbatorix biết bí mật của nó. Phép thuật đó ếm lên tư tưởng Oromis nhưng lại không trực tiếp ảnh hưởng tới ông ấy. Thay vào đó, nó ảnh hưởng lên nguồn năng lượng và liên kết của ông với năng lượng. THần tiên đã nghiên cứu pháp thuật từ lâu nhưng họ cũng không hoàn toàn hiểu các thế giới vật chất và phi vật chất tương tác thế nào. Đó là một câu đố không bao giờ có lời giải. Tuy vậy, hình như các linh hồn hiểu về vật chất và phi vật chất rõ hơn chúng ta, vì họ là đại diện cho cái thứ hai và họ trở thành cái thứ nhất khi ở dạng Tà thần.
+</p>
+
+<p>
+ Dù sự thật thế nào thì chúng ta cũng biết: Oromis đọc thần chú, chúng ta tự do, nhưng ông ấy đã bị ảnh hưởng quá nặng. Cả đời ông ấy không thể nào dùng một câu thần chú quyền năng tới vậy nữa và từ đó trở đi, thân thế ông ấy rất dễ bị tổn thương. Ông ấy rất dễ bị giết. Điểm yếu này đã tồn tại khi Kialandí và Formora bắt chúng ta, nhưng khi ông ấy di chuyển chúng ta và thay đổi hình dạng cơ thể, điểm yếu này còn trở nên tệ hơn.
+</p>
+
+<p>
+ Oromis ngã xuống và trở nên yếu ớt như một con chim non. Lúc đó Fomora và con rồng của bà ta, một con vật màu nâu xấu xí lao tới, hai kẻ kia theo sát sau. Nếu họ biết ông ấy đã yếu, họ sẽ tận dụng thời cơ để chui vào đầu óc mà điều khiển ông ấy. Ta phải đánh lạc hướng họ cho tới khi Oromis phục hồi... Ta chưa bao giờ chiến đấu dũng mãnh như vậy trong đời. Bốn chọi một, hoặc năm nếu các trò tính cả Agaravel. Cả hai con rồng, con màu nâu và màu tím của Kialandí đều nhỏ hơn ta nhưng răng chúng sắc còn móng vuốt thì sắc nhọn. Nhưng cơn giận đã tiếp sức mạnh cho ta, ta gây ra những vết thương chí mạng cho chúng. Kialandí ngu ngốc khi tiến tới tầm đánh của ta và ta đã dùng móng vuốt tóm hắn và ném trả về. Glaedr hét lên một tiếng. Phép thuật không bảo vệ ông ấy khỏi mũi lao phóng tới từ lưng con rồng tím, và đáng ra ta đã giết chết hắn nếu như không có con rồng nâu ngáng đường.
+</p>
+
+<p>
+ Chúng ta chiến đấu thêm gần năm phút nữa thì Oromis kêu rút lui. Ta ném đất vào mặt kẻ thù và trở về chỗ Oromis, dùng móng phải nắm lấy ông ấy và bay đi từ Edur Naroch. Kialandí và con rồng không thể đuổi theo, nhưng Formona và con rồng nâu lại có thể.
+</p>
+
+<p>
+ Họ bắt kịp chúng ta khi chúng ta mới bay khỏi tòa tháp canh một dặm. Thi thoảng chúng và ta rất gần, rồi con rồng nâu bay dưới ta, ta thấy Formora định dùng kiếm đâm chân phải ta. Bà ta muốn ta đánh rơi Ormis hoặc muốn giết ông ấy. Ta vặn mình, vì thế thay vì mất chân phải, ta mất chân trái.
+</p>
+
+<p>
+ KÝ ức của Glaedr thảm khốc, lạnh lẽo như thể lưỡi kiếm của Formona làm bằng băng chứ không phải thép. Cảm giác đó khiến Eragon nôn nao. Nó nuốt nước bọt và nắm chặt dây cương, mừng vì Saphira được an toàn.
+</p>
+
+<p>
+ Không đau như các con tưởng tượng nhưng ta biết ta không thể tiếp tục chiến đấu, vì thế ta quay người bay về Ilirea nhanh nhất có thể. Formora mờ mắt vì chiến thắng, vì dù chân đâu nhưng ta vẫn cắt đuôi được con rồng nâu và trốn thoát.
+</p>
+
+<p>
+ Oromis có thể ngăn máu chảy nhưng ông ấy lực bất tòng tâm, còn không thể nào liên kệ với các Kỵ sĩ tiền bối để cánh báo về kế hoạch của Galbatorix. Một khi Kialandí và Formora báo cáo lại, Galbatorix sẽ tấn công Ilirea ngay lập tức. Nếu hắn chờ đợi sẽ cho chúng ta thời gian củng cố lực lượng, và dù hắn có sưc mạnh song yếu tố bất ngờ vẫn là vũ khí mạnh nhất của hắn vào hồi đó.
+</p>
+
+<p>
+ Khi chúng ta tới Ilirea, chúng ta đã thất vọng khi thấy vài lệnh vẫn còn đó, trong lúc chúng ta vắng mặt, có nhiều người bỏ đi tìm Galbatorix hoặc đi gặp Vrael ở Vroengard. Chúng ta thuyết phục những người còn lại là họ đang gặp nguy hiểm, và chúng tôi nhớ họ cảnh báo Vrael và những con rồng và Kỵ sĩ tiền bối. Họ không tin Galbatorix có lực lượng để tấn công Ilirea – hoặc lão dám làm chuyện đó – nhưng cuối cùng chúng tôi cũng khiến họ nhìn vào sự thật. Thế là họ quyết định tất cả các Eldunarí ở Alagaësia phải được đưa tới Vroengard để giữ an toàn.
+</p>
+
+<p>
+ Đó có vẻ là một biện pháp bảo đảm nhưng chúng tôi đáng ra phải đưa tới Ellesméra. Nếu không, chúng ta nên để chúng lại tại Du Weldenvarden. Ít nhất vài tim rồng có thể an toàn trước Galbatorix. Chúa ơi, nhưng không ai nghĩ rằng họ sẽ an toàn cùng các thần tiên hơn ở Vroengard.
+</p>
+
+<p>
+ Vrael ra lệnh cho rồng và Kỵ sĩ trong vài ngày phải tới trợ thủ cho Ilirea nhưng Oromis và ta sợ rằng họ đã quá trễ. Và chúng ta không thể nào tăng cường hàng phòng thủ cho Ilirea. Vì thế chúng ta đã tập hợp tất cả các nguồn trợ cấp cần thiết và cùng với hai học trò – Brom và con rồng giống tên con, Saphira – chúng ta rời thành phố ngay trong đêm. Ta nghĩ con đã hiểu Oromis đau khổ thế nào khi quyết định ra đi.
+</p>
+
+<p>
+ Eragon vô thức gật đầu khi nhớ lại thành phố với những tòa tháp tuyệt đẹp nằm trên vách núi và được ánh trăng rọi sang.
+</p>
+
+<p>
+ Chính vì thế chúng ta không ở Ilirea và Thập Tam Phản đồ tấn công chỉ vài giờ sau đó. Và đó là lý do vì sao chúng ta không ở Vroengard khi những tên đó đánh bại toàn bộ lực lượng và chiếm giữ Doru Araeba. TỪ Ilirea chúng ta tới Du Weldenvarden với hy vọng những thầy thuốc loài tiên có thể chữa bệnh cho Oromis và phục hồi khả năng dùng phép.Khi họ không thể, chúng ta quyết định ở lại vì ở lại sẽ an toàn hơn bay tới Vroengard trong khi cả hai đều bị thương và có thể bị tấn công trong khi bay.
+</p>
+
+<p>
+ Brom và Saphira không ở lại cùng chúng ta. Dù chúng ta khuyên ngăn nhưng họ vẫn tham chiến và trong cuộc chiên này, Saphira đã hy sinh... Và giờ hai con đã biết sao mà Thập Tam phản đồ bắt được chúng ta và chúng ta đã thoát ra sao.
+</p>
+
+<p>
+ Sau một lúc, Saphira nói, Cám ơn người đã kể chuyện, Ebrithil.
+</p>
+
+<p>
+ Không có gì, Bjartskular, nhưng đừng bao giờ bảo ta kể lại.
+</p>
+
+<p>
+ Khi trăng lên tới ngọn, Eragon thấy một chùm ánh sáng vàng cam nhạt trôi trong bóng tối. Nó mất một lúc mới nhận ra đó là ánh đuốc và đèn từ Teirm cách đó rất xa. Và, cao hơn những ánh đèn là một điểm sáng màu vàng xuất hiên trong tích tắc như một con mắt lớn liếc nhìn nó, rồi biến mất rồi xuất hiện, lóe chớp như thể đôi mắt đang chớp.
+</p>
+
+<p>
+ Đèn hải đăng Teirm đã lên đèn, nó nói với cả Saphira và Glaedr.
+</p>
+
+<p>
+ Vậy là sắp có bão, Glaedr nói.
+</p>
+
+<p>
+ Saphira thôi đập cánh và Eragon cảm nhận cô nàng đang lượn xuống chầm chậm trên mặt đất.
+</p>
+
+<p>
+ Nửa tiếng sau cô nàng đáp xuống. Lúc đó, Teirm chỉ còn là một đốm sáng mờ nhạt phía bắc và ánh sáng từ ngọn đèn hải đăng chẳng sáng hơn ánh sao là bao.
+</p>
+
+<p>
+ Saphira thổi lừa đốt lửa trại ở bờ biển vắng. Dưới ánh trăng, bờ biển cứng, phẳng trở nên trắng trong khi những con sóng vỗ bờ mang màu xám và đen trông giận dữ, như thể biển đang tham lam ngốn lấy đất liền.
+</p>
+
+<p>
+ Eragon tháo đai đeo ở chân và trượt khỏi Saphira, mừng vì được duỗi cơ bắp. Nó để ý thấy mùi nước biển khi đi dọc bãi biển tới đám lửa lớn, áo choàng phấp phới sau lưng. Sau đó, nó quay người chạy về chỗ Saphira.
+</p>
+
+<p>
+ Cô nàng vẫn ở nguyên chỗ cũ, nhìn xa xăm ra biển. Nó ngừng lại không biết cô nàng định nói gì đây – nhưng vì cô em nó vẫn giữ im lặng, nó quay người một lần nữa tới bên đống lửa. Cô em nó sẽ nói khi sẵn sàng.
+</p>
+
+<p>
+ Eragon chạy đi chạy lại cho tới khi ấm người và chân bắt đầu run.
+</p>
+
+<p>
+ Nhưng trong suốt thời gian đó, Eragon chỉ nhìn ra biển.
+</p>
+
+<p>
+ Khi Eraagon ngồi xuống cạnh cô nàng, Glaedr cất tiếng. Thử là trò ngu ngốc.
+</p>
+
+<p>
+ Eragon nghiêng đầu không biết con rồng già đang nói với ai.
+</p>
+
+<p>
+ Con biết con làm được, Saphira nói.
+</p>
+
+<p>
+ Con chưa bao giờ tới Vroengard, Glaedr nói. Và nếu có bão, con sẽ bay thẳng ra biển hoặc còn tệ hơn. Rất nhiều con rồng đã chết vì tự tin thái quá. Cơn gió không phải bạn của con, Saphira. Nó có thể giúp con nhưng cũng có thể giết chết con.
+</p>
+
+<p>
+ Con không phải con rồng con bị cơn gió điều khiển!
+</p>
+
+<p>
+ Không, nhưng con vẫn còn trẻ và ta không nghĩ con đã sẵn sàng.
+</p>
+
+<p>
+ Nếu đợi chúng ta sẽ tốn rất nhiều thời gian!
+</p>
+
+<p>
+ Có thể, nhưng thà an toàn tới đó còn hơn.
+</p>
+
+<p>
+ “Hai người nói gì vậy?” Eragon hỏi.
+</p>
+
+<p>
+ Cát dưới chân trước Saphira kêu lạo xạo khi cô nàng ấn móng xuống.
+</p>
+
+<p>
+ Chúng ta phải quyết đinh, Glaedr nói. Từ đây, Saphira hoặc có thể bay thẳng tới Vroengard hoặc theo bờ biển phía bắc tới khi tới đất liền gần nhất và sau đó – chỉ tới lúc đó – mới rẽ về hướng tây và bay qua biển.
+</p>
+
+<p>
+ Đường nào nhanh hơn? Eragon hỏi dù đã đoán ra câu trả lời.
+</p>
+
+<p>
+ Bay thẳng, SAPhira nói.
+</p>
+
+<p>
+ Nhưng nếu thế, cô ấy sẽ phải bay suốt không nghỉ.
+</p>
+
+<p>
+ Saphira chen vào vì tức giận. Nhưng chặng đường cũng chẳng xa hơn đoạn đường từ Varden tới đây. Con có nói sai không?
+</p>
+
+<p>
+ GIờ con mệt rồi, và nếu có bão.
+</p>
+
+<p>
+ Vậy thì con sẽ bay qua bão! Cô nàng nói và thở ra một ngọn lửa xanh vàng từ lỗ mũi.
+</p>
+
+<p>
+ Ngọn lửa biến mất ngay trước mắt Eragon chỉ để lại dư ánh sáng loáng. “Á! Giờ anh không thấy gì.” Nó dụi mắt để dư ảnh biến mất. Chẳng nhẽ bay thẳng từ đây thật sự chỉ toàn nguy hiểm?
+</p>
+
+<p>
+ Đúng, Glaedr gầm.
+</p>
+
+<p>
+ Thế nếu bay theo đường bờ biển chúng ta sẽ mất thêm bao nhiêu thời gian?
+</p>
+
+<p>
+ Nửa ngày hoặc hơn.
+</p>
+
+<p>
+ Eragon hãi cằm khi cô nàng nhìn chằm chằm vào mặt nước. Sau đó nó ngước nhìn Saphira và, bằng giọng trầm, nó nói. “Em chắc chắn mình làm được không?”
+</p>
+
+<p>
+ Cô nàng xoay cổ nhìn nó bằng một con mắt to tướng. Con ngươi nó mở rộng tới khi gần thành một hình tròn; nó quá đen và lớn, Eragon có cảm giác mình bị hút và sẽ biến mất trong đó.
+</p>
+
+<p>
+ Em chắc, cô em nó nói.
+</p>
+
+<p>
+ Nó gật đầu và vuốt tóc khi cân nhắc. Vậy chúng ta phải thử...Glaedr, nếu cần, người hướng dẫn em ấy nhé? Người có thể giúp em ấy đúng không?
+</p>
+
+<p>
+ Con rồng già im lặng một lúc lâu; sau đó ông khiến Eragon ngạc nhiên khi rên rừ rừ trong tư tưởng giống như khi Saphira rên rừ rừ vì hài lòng hay vui sướng. Rất tốt. Nếu chúng ta phải liều thì chúng ta không được phép hèn nhát. Chúng ta sẽ bay qua biển.
+</p>
+
+<p>
+ Vấn đề giải quyết xong, Eragon leo lên lưng Saphira và mới một cú nhảy, cô nàng để lại mảnh đất an toàn bên dưới và bay theo những con sống nối nhau không kết.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-043.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-045.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

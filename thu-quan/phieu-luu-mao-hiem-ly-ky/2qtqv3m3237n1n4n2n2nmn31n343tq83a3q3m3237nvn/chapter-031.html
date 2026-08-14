@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 31 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 31</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-030.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-032.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Thế giới này có không ít đau buồn, nhưng nỗi đau lớn nhất chính là: muốn trốn thoát khỏi bóng tối chạy theo sự quyến rũ, lại không thể hiểu ánh sáng là gì, cho dù cố gắng giãy giụa như thế nào đi nữa, tất yếu sẽ chìm trong đau khổ. —Rodion Shchedrin (14.1)
+</p>
+
+<p>
+ (14.1)  Rodion Konstantinovich Shchedrin ( sinh ngày 16/12/1932) là một nhà soạn nhạc Nga. Ông là một trong những nhà soạn nhạc Liên Xô hàng đầu, và là chủ tịch Liên hiệp Nhạc sĩ nước Nga từ 1973 cho đến 1990.
+</p>
+
+<p>
+ Bình thường, kinh nguyệt của Nhan Hiểu Thần đều rất đúng ngày, chỉ chênh lệch chút ít không quá 3 hôm, thế nhưng hôm nay, đã qua mười ngày, mà vẫn chưa có.
+</p>
+
+<p>
+ Lúc đầu, cô cảm thấy không thể nào xảy ra chuyện được, cô và Thẩm Hầu mỗi lần quan hệ đều có bảo vệ, chắc là nội tiết mất cân bằng một chút, có lẽ vài hôm nữa sẽ có kinh nguyệt lại thôi. Nhưng hơn hai tuần sau đó, vẫn chẳng có. Nhan Hiểu Thần bắt đầu lo lắng, nhớ lại chuyện của cô với Thẩm Hầu, cô không thể không nghi ngờ — Đêm trừ tịch hôm đó, bọn họ xem xong pháo hoa trở về nhà, Thẩm Hầu đưa cô lên lầu ngủ, vốn chỉ là cách một cái chăn, một chút hôn môi, nhưng bởi vì hai người đều có hơi men, khó kềm lòng biến thành một trận mây mưa triền miên, tuy rằng cuối cùng trong một thoáng Thẩm Hầu có rút ra khỏi người cô, chẳng lẽ không giống như bọn họ nghĩ là đã an toàn rồi?
+</p>
+
+<p>
+ Nhan Hiểu Thần lên mạng tra cứu xem làm cách nào để xác định mình có thai, phương pháp hóa ra cũng đơn giản, đi tiệm thuốc mua que thử thai về dùng, nghe nói là chính xác khoảng 98%.
+</p>
+
+<p>
+ Mặc dù đã biết nên làm gì, nhưng cô luôn nghĩ mình sẽ gặp may, cảm thấy có lẽ sáng sớm hôm sau khi thức dậy, sẽ phát hiện trên quần lót có vệt máu, nên rề rà chưa chịu đi mua. Mỗi ngày khi vào nhà vệ sinh cô đều mang hi vọng, cẩn thận kiểm tra quần lót, nhưng không có một vệt máu nào. Kinh nguyệt là thứ đem đến rất nhiều phiền toái, nhưng nếu không có nó, lại mang đến bao nhiêu phiền muộn.
+</p>
+
+<p>
+ Buổi tối, lúc Nhan Hiểu Thần đưa Thẩm Hầu ra về, hắn nhìn thấy bà Nhan đang ở phòng tắm, liền kéo cô đến hành lang, ôm ấp gần gũi với cô một chút. Nhan Hiểu Thần đang có tâm sự, có chút không yên lòng, Thẩm Hầu than thở: “Tiểu Tiểu, từ tết âm lịch tới giờ, em lạnh nhạt với anh lắm! Muốn ôm một chút cũng phải lén lút, tiếp tục như vậy thật không ổn, chúng ta kết hôn đi!”
+</p>
+
+<p>
+ Đây không phải là lần đầu tiên Thẩm Hầu nói đến chuyện kết hôn, nhưng Nhan Hiểu Thần vẫn chưa muốn nghĩ đến, nói chung giữa bọn họ có rất nhiều vấn đề phải đối mặt: Ba mẹ của Thẩm Hầu còn đang phản đối bọn họ quyết liệt, cô và mẹ đang thích nghi với cuộc sống mới, cô còn đang thiếu nợ hơn 100 ngàn, sự nghiệp của Thẩm Hầu vẫn chưa đi tới đâu…Nhưng lần này, cô đã động lòng.
+</p>
+
+<p>
+ “Kết hôn…Có thể sao?”
+</p>
+
+<p>
+ Thẩm Hầu nghe được lời này, lập tức tỉnh táo, “Sao lại không được? Chúng ta đều lớn hết rồi, cầm theo chứng minh thư với hộ khẩu, có thể đến nơi lập hộ tịch để đăng ký kết hôn. Hộ khẩu của anh ở Thượng Hải, em thì ở quê, em xin nghỉ một ngày, về quê đăng ký một chút là xong.”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút kinh ngạc, “Anh đã hỏi rõ rồi à?”
+</p>
+
+<p>
+ Thẩm Hầu cầm tay cô, chỉ vào chiếc nhẫn, “Em nghĩ tâm huyết của anh là đùa giỡn hay sao? Anh rất nghiêm túc! Em nói đi! Khi nào thì được? Anh thì lúc nào cũng được!”
+</p>
+
+<p>
+ “Ba mẹ của anh…”
+</p>
+
+<p>
+ “Thôi đi! Anh đã bao nhiêu tuổi rồi? Luật hôn nhân cũng không yêu cầu ba mẹ đồng ý mới được đăng ký kết hôn, luật hôn nhân viết rất rõ ràng, nam nữ hai bên nguyện lòng, không có liên quan gì tới ba mẹ hết!”
+</p>
+
+<p>
+ “Nhưng mẹ em…”
+</p>
+
+<p>
+ “Em đã từng tuổi này, nếu là con gái ở quê đều đã tay bồng tay bế hết rồi, về chuyện hôn sự, mẹ em so với em còn sốt ruột hơn. Yên tâm đi, mẹ em thích anh, chắc chắn sẽ đồng ý.”
+</p>
+
+<p>
+ Những lời này Nhan Hiểu Thần rất tin tưởng, tuy rằng trong khoảng thời gian này mẹ của cô chưa bàn luận một lời nào về Thẩm Hầu, nhưng có thể thấy được, bà đã chấp nhận Thẩm Hầu, Nhan Hiểu Thần cắn môi suy nghĩ.
+</p>
+
+<p>
+ Thẩm Hầu lay người cô nói: “Bà xã à, chúng ta đăng ký đi! Anh thử việc như vậy cũng quá lâu rồi, cho anh làm chồng chính thức đi! Chẳng lẽ em không hài lòng anh, còn muốn tìm người khác nữa sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần bực bội phì cười, đập hắn một cái, “Được rồi, để em suy nghĩ đã.”
+</p>
+
+<p>
+ Thẩm Hầu mừng rỡ ôm siết cô, xoay một vòng, cô cười nói: “Em phải vào nhà rồi, anh đi đường nhớ cẩn thận.”
+</p>
+
+<p>
+ Hắn nói: “Nhanh chọn ngày đi nhé!”
+</p>
+
+<p>
+ Nhan Hiểu Thần đấm hắn một cái, xoay người trở vào nhà.
+</p>
+
+<p>
+ Bởi vì thái độ của Thẩm Hầu như vậy, đột nhiên Nhan Hiểu Thần không còn lo lắng chuyện kinh nguyệt có chậm nữa. Cô và hắn thật sự không giống nhau, dù có xảy ra chuyện gì cô sẽ nghĩ đến mặt xấu nhất, còn hắn thì chẳng để ý gì đến hậu quả, sẽ hứng trí phấn khởi đối mặt với mọi chuyện, từ trước đến nay đều như vậy. Tuy rằng lúc này, bọn họ chưa chuẩn bị tâm lý có con, nhưng Nhan Hiểu Thần nghĩ, nếu như cô thật sự có thai, Thẩm Hầu chỉ có vui sướng mà hét to thôi. Về chuyện khó khăn, chắc chắn hắn sẽ nói, có thể có khó khăn gì chứ? Mà cho dù có, thì cũng có thể vượt qua tất cả!
+</p>
+
+<p>
+ Nhan Hiểu Thần đi đến tiệm thuốc mua que thử thai, chuẩn bị chọn thời gian thích hợp, kiểm tra qua một lần.
+</p>
+
+<p>
+ Bởi vì là thuê nhà trọ, tất cả ngăn kéo tủ trong nhà đều không khóa, mẹ cô dọn dẹp vệ sinh nhà cửa, thế nào cũng mở mấy cái ngăn tủ đó, Nhan Hiểu Thần không dám để que thử thai ở nhà, chỉ có thể cất kỹ ở trong túi xách, lúc nào cũng mang theo.
+</p>
+
+<p>
+ Vốn định đợi buổi chiều về nhà rồi tính, nhưng đầu óc cứ nghĩ tới que thử thai đang ở trong túi, nên tâm trạng không được yên ổn, mấy hôm trước, cô vẫn trốn tránh không dám đối mặt, bây giờ lại muốn biết kết quả khẩn cấp. Theo bảng hướng dẫn, thì chỉ cần chờ 3 phút là sẽ biết kết quả, cô đấu tranh tư tưởng trong chốc lát, cuối cùng quyết định lập tức đi kiểm tra.
+</p>
+
+<p>
+ Cầm lấy túi, đi vào nhà vệ sinh, cô nhìn ngó xung quanh một chút, rất là bí mật, chắc không có vấn đề gì. Cô đọc bản hướng dẫn, chuẩn bị dựa theo lời ghi chú trên hình ảnh hướng dẫn, di động đột nhiên vang lên, là điện thoại của Trình Trí Viễn. Từ lúc đi làm đến nay anh ta chưa gọi điện thoại cho cô bao giờ, dù có việc gì cũng là thư ký riêng thông qua công ty gọi cô lên gặp mặt. Nhan Hiểu Thần có chút ngoài ý muốn, cũng có chút chột dạ, “A lô?”
+</p>
+
+<p>
+ “Hiểu Thần…” Trình Trí Viễn gọi một tiếng tên của cô, liền giống như biến thành người câm, không nói thêm lời nào, chỉ có thể nghe được tiếng thở gấp của anh ta, hào hển giống như âm thanh của sóng biển.
+</p>
+
+<p>
+ Nhan Hiểu Thần cố hết sức giữ cho giọng nói của mình bình tĩnh dịu dàng, “Sao ạ? Có chuyện gì?”
+</p>
+
+<p>
+ “Tôi có chút chuyện muốn nói với em, là chuyện khá quan trọng.”
+</p>
+
+<p>
+ “Tôi lập tức tới ngay!”
+</p>
+
+<p>
+ “Không cần, không cần! Không phải chuyện công…Không cần phải vội vàng như vậy…Quên đi! Em cứ thong thả, chúng ta nói sau!”
+</p>
+
+<p>
+ “Được ạ.”
+</p>
+
+<p>
+ Trình Trí Viễn không nói hẹn gặp lại, liền cúp điện thoại. Nhan Hiểu Thần cảm thấy Trình Trí Viễn có chút lạ, không giống với tính cách tự tin bình tĩnh trước kia của anh ta, giống như xảy ra việc gì đó rất khó khăn gây phiền lòng, có vẻ bối rối, dường như hoàn toàn không biết cách giải quyết.
+</p>
+
+<p>
+ Cô nhìn que thử thai trong tay, cảm thấy thật ngượng ngùng vì vừa nói chuyện với cấp trên xong, lại còn sử dụng giờ làm công để giải quyết chuyện riêng tư, cô chỉ có thể nhét que thử thai và bảng hướng dẫn vào túi, rời khỏi nhà vệ sinh.
+</p>
+
+<p>
+ Tuy rằng lời nói của Trình Trí Viễn không tỏ ra nôn nóng, nhưng Nhan Hiểu Thần ngẫm nghĩ, vẫn là quyết định trước hết đi gặp anh ta. Cô không đi thang máy, mà chọn đi cầu thang bộ, nép vào góc cầu thang, cô vội vàng hướng lên, Trình Trí Viễn bưng cà phê, không yên tâm đi xuống dưới, hai người đụng trực tiếp vào nhau, cà phê trong tay anh ta văng lên cánh tay của Nhan Hiểu Thần, cô bị nóng “A” lên một tiếng, túi xách cầm không chắc bị rơi xuống đất, bao nhiêu thứ trong túi rơi hết ra ngoài, hộp que thử thai như vậy cũng văng ra từng món.
+</p>
+
+<p>
+ “Xin lỗi! Xin lỗi! Em có bị phỏng không?” Trình Trí Viễn vội vàng xin lỗi.
+</p>
+
+<p>
+ “Chỉ có vài giọt thôi, không sao cả!” Nhan Hiểu Thần vội vàng ngồi xổm xuống nhặt đồ lên, muốn nhanh chóng không để anh ta phát hiện, tiêu hủy hết chứng cứ phạm tội.
+</p>
+
+<p>
+ Nhưng lúc ấy, bởi vì lo sợ kiểm tra qua một lần không ra kết quả gì, hoặc là kết quả không được chính xác, để an tâm, cô quyết định sẽ thử qua nhiều lần, nên cố ý mua một hộp lớn, có đến mười sáu cái!
+</p>
+
+<p>
+ Lúc đầu, Trình Trí Viễn hẳn là hoàn toàn không nhận ra mấy thứ dưới đất là gì, lập tức hạ thấp người, cũng giúp cô nhặt lên, liên tục nhặt lên mấy cây, rồi nhặt được cái hộp, rốt cuộc cũng đã ý thức được chính mình đang cầm cái gì, anh im lặng như hóa đá, mặt đầy sợ hãi, nhìn chằm chằm vật ở trong tay.
+</p>
+
+<p>
+ Nhan Hiểu Thần quả thực muốn tìm một cái lỗ ở dưới đất, chôn sống mình đi cho rồi, cô nhét đống đồ đang rơi vãi lung tung vào túi, lại vội vàng giật lấy thứ đang ở trong tay của anh ta. Trình Trí Viễn căn bản không để ý đến động tác của cô, anh ta vẫn sợ hãi nhìn vào tay của mình một lúc lâu.
+</p>
+
+<p>
+ Nhan Hiểu Thần muốn ăn miếng đậu hủ nghẹn chết đi cho rồi, cô không dám nhìn anh ta, chỉ ngắc ngứ nói: “Mấy thứ đó…là của tôi…Cám ơn!”
+</p>
+
+<p>
+ Trình Trí Viễn rốt cuộc cũng phản ứng kịp đang xảy ra chuyện gì, đưa lại mấy thứ đó cho cô. Cô lập tức dùng sức nhét mạnh chúng vào trong túi, quay người chạy đi, “Tôi đi làm việc!”
+</p>
+
+<p>
+ Rầm rầm chạy xuống lầu, trốn về bàn làm việc của mình, cô thở ra một hơi, oán hận gõ vào đầu mình, Nhan Hiểu Thần, ngươi đúng là cái đầu heo! Đồ ngốc! Đồ đầu heo ngu ngốc!
+</p>
+
+<p>
+ Cô ảo não buồn bực trong chốc lát, lại lo lắng không biết anh ta có nói với Thẩm Hầu và mẹ của cô hay không nữa, theo lý thì Trình Trí Viễn không phải là loại người nhiều chuyện, nhưng mấy chuyện nhạy cảm thế này thật không thể không khẩn trương, không phải nên đề phòng hay sao? Chẳng lẽ bảo cô đi tìm anh ta, cầu xin anh ta giữ bí mật giùm?
+</p>
+
+<p>
+ Nhan Hiểu Thần nghĩ đến việc phải đi gặp Trình Trí Viễn, lập tức cảm thấy sau gáy của chính mình khắc hai chữ “Mất mặt”, thật sự không có dũng khí đi tìm anh ta.
+</p>
+
+<p>
+ Rối rắm suy nghĩ trong chốc lát, cô quyết định vẫn là đăng blog kéo dài thời gian, không cần phải mặt đối mặt nói chuyện, chắc sẽ tốt hơn một chút. Đang viết blog cho anh ta, không ngờ cô lại nhận được tin nhắn của anh ta trước.
+</p>
+
+<p>
+ “Em mang thai à?”
+</p>
+
+<p>
+ Nhan Hiểu Thần hung hăng gõ vào trán của mình, trả lời: “Sáng hôm nay vừa mua que thử thai, còn chưa kiểm tra.”
+</p>
+
+<p>
+ “Khả năng bao nhiêu phần trăm?”
+</p>
+
+<p>
+ Vị đại ca này tuy rằng ở trên thương trường rất là anh minh thần võ, nhưng xem ra đối với mấy chuyện đại loại như thế này, hóa ra hoàn toàn không có kinh nghiệm, “Tôi không biết, kiểm tra một chút mới biết kết quả.”
+</p>
+
+<p>
+ “Việc này trước hết không cần nói cho Thẩm Hầu và mẹ của em biết.”
+</p>
+
+<p>
+ Oái…Trình Trí Viễn không phải đang cướp lời nói của cô sao? Nhan Hiểu Thần thẫn thờ trong chốc lát, đang gõ vài chữ trả lời, thì tin nhắn mới của anh ta tiếp tục đến, “Chúng ta nên bàn qua chuyện này một chút, sau đó mới quyết định nên làm thế nào.”
+</p>
+
+<p>
+ Nhan Hiểu Thần hoàn toàn thẫn thờ, anh ta phải chăng rất là buồn chán? Chẳng lẽ bởi vì cô sẽ phải nghỉ việc tạm thời lo chuyện sinh con, sẽ ảnh hưởng đến công việc? Anh ta thân là ông chủ cũng là chủ nợ, tỏ ra buồn bực có phải cũng rất bình thường? Nhưng mà buồn bực đến bất thường như vậy, là bình thường sao?
+</p>
+
+<p>
+ Nhan Hiểu Thần mờ mịt trong chốc lát, gửi cho anh ta một chữ: “Được!”
+</p>
+
+<p>
+ Trình Trí Viễn gửi blog an ủi cô: “Kết quả còn chưa có, có lẽ chúng ta quá khẩn trương rồi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy anh ta rõ ràng là khẩn trương vớ vẩn, cô vốn đã không khẩn trương, lại bị anh ta làm cho thật sự khẩn trương, “Có lẽ vậy, chắc là do nội tiết hơi rối loạn một chút.”
+</p>
+
+<p>
+ “Tôi vừa lên mạng tra cứu, que thử thai có thể kiểm tra bất cứ lúc nào.”
+</p>
+
+<p>
+ Nhan Hiểu Thần đã hoàn toàn không biết nên trả lời vị đại ca này thế nào, “Vâng, tôi biết.”
+</p>
+
+<p>
+ “Bây giờ có thể lập tức đi kiểm tra, em cứ đến phòng làm việc của tôi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần ôm đầu, nghẹn họng, nhìn trân trối vào cái màn hình điện thoại, Trình Trí Viễn bị sao vậy? Anh ta chắc là đang đùa?
+</p>
+
+<p>
+ Đang ngẩn người, đột nhiên cảm thấy xung quanh yên tĩnh đến bất thường, cô thẫn thờ ngẩng đầu lên, một đồng nghiệp ngồi đối diện nhìn cô chỉ chỉ ra cửa, cô quay đầu lại nhìn, thì thấy Trình Trí Viễn đang đứng ở cửa.
+</p>
+
+<p>
+ Anh ta dĩ nhiên rất là nghiêm túc! Nhan Hiểu Thần cảm thấy máu huyết toàn thân dồn lên tới đầu,lập tức đứng lên, vọt ra cửa, đè nén giọng nói: “Anh bị sao vậy?”
+</p>
+
+<p>
+ Trình Trí Viễn cũng đè nén giọng nói: “Em không có mang theo…”
+</p>
+
+<p>
+ “Không mang theo cái gì?” Nhan Hiểu Thần hoàn toàn không hiểu.
+</p>
+
+<p>
+ Trình Trí Viễn xem ra nói không rõ ràng, trực tiếp đi đến bàn làm việc của cô, làm cho mấy đồng nghiệp nhìn ngó với ánh mắt quái lạ, anh ta cầm lấy túi xách của cô, đi đến bên cạnh Nhan Hiểu Thần nói, “Đến phòng làm việc của tôi.”
+</p>
+
+<p>
+ Trước mặt đồng nghiệp, cô không thể tỏ ra là không tôn trọng cấp trên, chỉ có thể đi theo anh ta, hướng lên lầu. Tầng bốn của anh ta khác hẳn với ba tầng còn lại dành cho phía đối tác, lúc này không có cuộc họp nào, chỉ có thư ký riêng của bọn họ đang ở bên ngoài làm việc, cả tầng trông có vẻ yên ắng, thanh tĩnh.
+</p>
+
+<p>
+ Nhan Hiểu Thần đã đến rất nhiều phòng làm việc, nhưng lại là lần đầu tiên đến văn phòng của Trình Trí Viễn, phòng của anh ta rất lớn, có một nhà vệ sinh riêng, còn trang bị cả phòng tắm, bên trong bày hoa tươi và cây cảnh, trang trí giống như mấy nhà vệ sinh ở khách sạn năm sao.
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Em cứ tự nhiên, nếu muốn uống nước, thì có đây.” Anh ta mang một ly nước lớn đặt trước mặt Nhan Hiểu Thần.
+</p>
+
+<p>
+ Xem ra anh ta lên mạng tra cứu thật là đúng, Nhan Hiểu Thần không nói gì nhìn anh ta một lúc, “Anh sao vậy? Nếu có gấp, thì chẳng phải tôi và Thẩm Hầu nên gấp hay sao?”
+</p>
+
+<p>
+ “Em cứ coi như tôi xen vào chuyện của người khác đi, chẳng lẽ em không muốn biết kết quả?”
+</p>
+
+<p>
+ Nếu đổi là người khác, Nhan Hiểu Thần khẳng định sẽ lấy ly nước hắt vào mặt của anh ta, nói một câu “Bớt lo chuyện bao đồng đi”, sau đó sẽ rời khỏi. Nhưng anh ta là Trình Trí Viễn, là cấp trên, là chủ nợ, là bạn tốt của cô, là người mà cô đã từng vô số lần quyết định muốn báo đáp thật tốt, tuy rằng tình hình trước mắt rất là quái lạ, nhưng cô chỉ có thể cầm lấy túi, đi vào nhà vệ sinh.
+</p>
+
+<p>
+ Dựa theo bảng hướng dẫn, ở bên trong lúng túng một lúc lâu, hơn mười phút sau đó, Nhan Hiểu Thần rửa sạch tay, chậm rãi đi ra khỏi nhà vệ sinh.
+</p>
+
+<p>
+ Trình Trí Viễn lập tức đứng lên, khẩn trương nhìn cô.
+</p>
+
+<p>
+ Cô khẽ cười nói: “Tôi có thai rồi.”
+</p>
+
+<p>
+ Ánh mắt của Trình Trí Viễn cực kỳ quái lạ, luống cuống mờ mịt, nôn nóng bi thương, anh ta che giấu tâm trạng nhìn Nhan Hiểu Thần cười cười, chậm rãi ngồi xuống ghế sô pha, thì thào nói: “Có thai rồi sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần ngồi vào phía đối diện anh ta, thân thiết hỏi: “Rốt cuộc anh bị sao vậy?”
+</p>
+
+<p>
+ “Không có gì.” Anh ta lấy mắt kiếng xuống, day day trán, dường như muốn thư giãn một chút.
+</p>
+
+<p>
+ “Trước đó anh có gọi điện thoại, nói có chuyện rất quan trọng muốn nói với tôi, là chuyện gì vậy?”
+</p>
+
+<p>
+ “Không có gì, chỉ là một ít việc công.”
+</p>
+
+<p>
+ “Đúng không?” Nhan Hiểu Thần không tin, rõ ràng trong điện thoại anh đã nói là không phải chuyện công.
+</p>
+
+<p>
+ “Nếu không, còn là chuyện gì nữa?”
+</p>
+
+<p>
+ “Làm sao tôi biết được.”
+</p>
+
+<p>
+ Trình Trí Viễn đeo mắt kính lên, khẽ cười nói: “Em định làm gì?”
+</p>
+
+<p>
+ “Trước tiên nói cho Thẩm Hầu biết, sau đó sẽ đi đăng ký kết hôn với anh ấy.”
+</p>
+
+<p>
+ Trình Trí Viễn đan xen mười ngón tay vào nhau, trầm mặc suy nghĩ trong chốc lát, “Em có thể khoan hãy nói với Thẩm Hầu được không?”
+</p>
+
+<p>
+ “Vì sao?”
+</p>
+
+<p>
+ “Coi như là tôi có một yêu cầu, được không? Thời gian sẽ không quá lâu, tôi chỉ cần…nghĩ kỹ một chút…” Anh ta lại nhíu mày trầm mặc.
+</p>
+
+<p>
+ Nhan Hiểu Thần thật sự không đành lòng nhìn anh ta khó chịu như vậy, “Được rồi! Tôi sẽ không nói cho Thẩm Hầu biết.” Chỉ là nói chậm vài hôm thôi mà, cũng không phải là chuyện vi phạm pháp luật hay chuyện xấu gì, đồng ý với anh ta cũng chẳng sao.
+</p>
+
+<p>
+ “Cảm ơn em!”
+</p>
+
+<p>
+ “Anh còn gì để nói nữa không, tôi đi làm việc nhé?”
+</p>
+
+<p>
+ “Được rồi, em đi đi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần đứng lên, “Tôi không biết rốt cuộc đã xảy ra chuyện gì, nhưng lúc nào anh muốn nói, thì gọi điện thoại cho tôi, lúc nào cũng được.”
+</p>
+
+<p>
+ Trình Trí Viễn gật đầu, Nhan Hiểu Thần mang tâm trạng đầy nghi hoặc, rời khỏi phòng làm việc của anh ta. Tuy rằng đồng ý với Trình Trí Viễn là giữ bí mật, nhưng trong lòng có một bí mật, cử chỉ lời nói khẳng định sẽ khác với bình thường một chút.
+</p>
+
+<p>
+ Khi ngồi xe buýt, Nhan Hiểu Thần sẽ theo bản năng bảo vệ cái bụng của mình, sợ bị người khác đè ép vào nó. Cô sẽ lên mạng tra cứu xem lúc mang thai, những món ăn nào kiêng kỵ, hay các loại rau quả nào không được đụng tới. Trước kia khi cô và Thẩm Hầu ở bên nhau, thì rất là cao hứng, liền giống như mấy đứa trẻ điên điên khùng khùng, chân tay lung tung không kiêng cử gì, bây giờ thì lại luôn cẩn thận dè chừng.
+</p>
+
+<p>
+ Lúc Thẩm Hầu bế bổng cô lên, Nhan Hiểu Thần không giống như trước kia, vừa kêu hốt hoảng, vừa cười đánh hắn, bây giờ cô sợ tới mức sắc mặt cũng thay đổi, lời nói mau lẹ, nghiêm giọng ra lệnh: “Bỏ em xuống!”
+</p>
+
+<p>
+ Thẩm Hầu sợ đến mức lập tức buông cô xuống, “Tiểu Tiểu? Em sao vậy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần khoát tay lên bụng, không nói tiếng nào.
+</p>
+
+<p>
+ Thẩm Hầu buồn bực nói: “Anh cảm thấy dạo này em rất kỳ lạ, đối với anh rất lạnh nhạt.”
+</p>
+
+<p>
+ “Em lạnh nhạt với anh lúc nào?” Nhan Hiểu Thần ngược lại cảm thấy cô hoàn toàn dựa vào hắn, trước kia, hắn chỉ là người yêu của cô, hiện tại hắn lại là ba của đứa nhỏ đang ở trong bụng cô.
+</p>
+
+<p>
+ “Hôm nay em không cho người ta ôm em, đêm qua lại đẩy người ta ra, dù sao thì em không giống như trước nữa! Có phải em không còn yêu anh như trước?”
+</p>
+
+<p>
+ Nghe Thẩm Hầu buồn bực kể tội, Nhan Hiểu Thần dở khóc dở cười, đêm qua hắn thừa dịp bà Nhan đi tắm thì bày trò, lập tức đẩy cô ngã trên giường, cô sợ hắn không biết nặng nhẹ, đè lên bụng của cô, chỉ có thể hết sức đẩy hắn ra, làm cho hắn đứng dậy bực bội cả buổi.
+</p>
+
+<p>
+ “Em yêu anh hơn lúc trước rất nhiều. Có khác trước kia hay không? Sau này anh sẽ biết!”
+</p>
+
+<p>
+ Nhan Hiểu Thần ôm bụng suy nghĩ, chắc là không giống nhau?
+</p>
+
+<p>
+ Thẩm Hầu hỏi: “Khi nào chúng ta mới đi đăng ký kết hôn đây? Anh đã dò hỏi qua ý của mẹ em rồi, dì nói em là người lớn rồi, dì mặc kệ, tùy ý của em, nhưng vậy coi như là đồng ý rồi.”
+</p>
+
+<p>
+ “Chờ em chọn xong ngày, sẽ nói cho anh biết.”
+</p>
+
+<p>
+ Thẩm Hầu buồn bực, vuốt ve mặt của Nhan Hiểu Thần, nói: “Em nhanh lên có được không? Vì sao anh muốn cưới em như vậy, em lại không có chút gì là muốn lấy anh? Anh cảm thấy em không thương anh nữa!”
+</p>
+
+<p>
+ “Được rồi mà! Em sẽ cố gắng!” Không phải chỉ có hắn sốt ruột đâu nha, cô cũng vậy chứ bộ! Đợi cho đến lúc bụng nhô lên mới đám cưới, không phải là càng xấu hổ hay sao?
+</p>
+
+<p>
+ Nhan Hiểu Thần gọi điện thoại hỏi Trình Trí Viễn, có thể nói cho Thẩm Hầu được chưa, Trình Trí Viễn lại xin thêm thời gian cho anh ta hai ba ngày. Trình Trí Viễn lần nào cũng dùng đến chữ “xin”, cô thật sự không có cách nào từ chối, chỉ có thể đồng ý đợi thêm vài ngày.
+</p>
+
+<p>
+ Thẩm Hầu đối với thái độ do dự của cô càng ngày càng không hài lòng, lúc đầu hắn vừa bá đạo vừa cầu xin, vừa chơi xấu vừa giả bộ đáng thương, nhưng hai ngày nay lại đột nhiên im lặng, thậm chí không còn thân mật với cô nữa, lâu lâu lại đăm chiêu suy nghĩ nhìn cô, trong ánh mắt tràn đầy nghiên cứu đánh giá, dường như có thể nhìn thấu suy nghĩ của cô để thấy rõ nội tâm.
+</p>
+
+<p>
+ Nhan Hiểu Thần không sợ Thẩm Hầu bá đạo giận dữ, nhưng lại có chút sợ hắn bình tĩnh xa cách. Thẩm Hầu chắc chắn là phát hiện cô có chuyện gạt hắn, lại không rõ cô vì cái gì mà muốn làm như vậy, hắn cảm thấy bị xúc phạm.
+</p>
+
+<p>
+ Nhan Hiểu Thần đi tìm Trình Trí Viễn, tính toán cùng anh ta nói chuyện kỹ càng một chút, anh ta tất yếu phải cho cô một lời giải thích rõ ràng tại sao muốn làm như vậy, nếu không cô sẽ lập tức đi nói hết với Thẩm Hầu.
+</p>
+
+<p>
+ Trình Trí Viễn không có ở văn phòng, thư ký riêng của anh ta là Tân Lỵ xem như là người quen cũ. Trước kia lúc còn học ở trường đại học, mỗi tuần đến đây phỏng vấn đều là do cô ta đón tiếp cô. Sau khi vào công ty làm việc, tuy rằng cả hai người đều không nhắc chuyện cũ, làm bộ như đồng nghiệp mới quen biết, nhưng có nhiều việc nhỏ nhặt, Nhan Hiểu Thần cảm  thấy Tân Lỵ rất chiếu cố mình, cô cũng rất biết ơn cô ta.
+</p>
+
+<p>
+ Xung quanh không có đồng nghiệp nào khác, Tân Lỵ cũng tự nhiên được vài phần, cười nói với Nhan Hiểu Thần: “Trình tổng mới vừa ra ngoài, trước khi đi anh ấy có nói, xế chiều nay phải xử lý một chút chuyện riêng, không có chuyện gì quan trọng thì không nên quấy rầy. Cô muốn tìm anh ấy, cứ gọi điện thoại trực tiếp.”
+</p>
+
+<p>
+ “Không cần đâu, tôi tìm anh ấy nói chuyện cũng không gấp lắm.”
+</p>
+
+<p>
+ Tân Lỵ đùa nói: “Chỉ cần là chuyện của cô, đối với Trình tổng mà nói, đều là việc gấp, anh ấy nhất định rất vui vẻ nhận điện thoại của cô.”
+</p>
+
+<p>
+ Nhan Hiểu Thần lập tức đỏ mặt, vội nói: “Chị hiểu lầm rồi, tôi đã có bạn trai.”
+</p>
+
+<p>
+ Tân Lỵ bình thường là người rất cẩn trọng, không nghĩ đến nhất thời không để ý đùa vui đến chuyện riêng tư của cấp trên, cô ta khẩn trương nói: “Thật xin lỗi, tôi không biết! Tôi thấy Trình tổng như vậy, nên cho là… Thật xin lỗi! Thật xin lỗi! Cô xem như vừa rồi tôi bị mê sảng, đừng bao giờ để trong lòng.” Cô ta đang sắp xếp lại giấy tờ, vô cùng khẩn trương, để một trang giấy rơi xuống, “Không sao cả, không sao cả!” Nhan Hiểu Thần giúp cô nhặt lên, là lịch làm việc của Trình Trí Viễn, trong lúc vô tình tầm mắt liếc qua, một cái tên và một hàng chữ lọt vào mắt của cô: Thứ sáu, 2 PM, Hầu Nguyệt Trân, tiệm cà phê Kim Nguyệt.
+</p>
+
+<p>
+ Thứ sáu, không phải là hôm nay hay sao? Nhan Hiểu Thần bất động nói: “Cô bận việc rồi! Tôi phải đi đây.”
+</p>
+
+<p>
+ Vào đến thang máy, trong đầu cùa Nhan Hiểu Thần có rất nhiều dấu chấm hỏi, Trình Trí Viễn và mẹ của Thẩm Hầu gặp nhau? Anh ta nói với thư ký riêng của mình là đi xử lý chuyện riêng tư, còn căn dặn không có chuyện gì quan trọng thì không được quấy rầy?
+</p>
+
+<p>
+ Nhan Hiểu Thần mang tâm trạng không yên trở lại bàn làm việc, mở máy tính lên, nhưng hoàn toàn không thể nào mà ổn định tâm trạng để làm việc. Tại sao Trình Trí Viễn lại muốn gặp mẹ của Thẩm Hầu? Mấy ngày nay anh ta kỳ lạ như vậy, không phải là có quan hệ gì đó với mẹ của Thẩm Hầu chứ? Hay là bởi vì cô, mẹ của Thẩm Hầu đã uy hiếp Trình Trí Viễn cái gì?
+</p>
+
+<p>
+ Nghĩ đến đây, Nhan Hiểu Thần không ngồi yên được nữa, cô cầm lấy túi xách, quyết đi muốn đi xem thế nào.
+</p>
+
+<p>
+ Cô thuê xe chạy đến tiệm cà phê Kim Duyệt, hoàn cảnh rất tốt, nhưng đây là ngoại ô của thành phố, không thể không nói bọn họ muốn có một chỗ tuyệt đối yên tĩnh riêng tư, cho dù là Trình Trí Viễn hay bà Thẩm chọn nơi này, thì cũng đều cho thấy bọn họ không muốn người khác chú ý.
+</p>
+
+<p>
+ Nhan Hiểu Thần gọi một tách cà phê, giả bộ như khách hàng của quán uống vài ngụm, rồi làm như đi tìm nhà vệ sinh, bắt đầu vừa đi tìm vừa nhìn ngó xung quanh.
+</p>
+
+<p>
+ Tại một góc ít người phía sâu trong quán, cô nhìn thấy Trình Trí Viễn và mẹ của Thẩm Hầu. Bức tường nghệ thuật cùng với mấy chậu cây cảnh hoàn toàn che hết tầm nhìn của người bên ngoài, nếu không phải cô cố ý tìm kiếm, chắc chắn sẽ không nhìn thấy.
+</p>
+
+<p>
+ Nhan Hiểu Thần đi trở về, bưng ly cà phê lên, nói với bồi bàn muốn đổi chỗ. Đang trong giờ làm việc, chỗ này cũng không phải nơi sầm uất gì, nên trong quán hơn phân nửa là còn chỗ trống, bồi bàn lười biếng trả lời: “Được ạ, chỉ cần không có ai, cô cứ tự nhiên.”
+</p>
+
+<p>
+ Nhan Hiểu Thần lặng lẽ ngồi xuống chỗ ngồi bên cạnh bàn của Trình Trí Viễn, tuy rằng không thể nhìn thấy bọn họ, nhưng chỉ cần chú ý lắng nghe, có thể sẽ nghe được bọn họ nói chuyện.
+</p>
+
+<p>
+ Giọng nói của mẹ Thẩm Hầu: “Rốt cuộc cậu muốn gì?”
+</p>
+
+<p>
+ Trình Trí Viễn: “Tôi muốn biết nguyên nhân thật sự khiến bà phản đối Thẩm Hầu và Nhan Hiểu Thần yêu nhau.”
+</p>
+
+<p>
+ “Tôi nói rồi, là môn không đăng hộ không đối, chẳng lẽ lý do này còn chưa đầy đủ hay sao?”
+</p>
+
+<p>
+ “Đúng là rất đầy đủ! Nhưng đầy đủ đến mức từng bước một ép buộc, không tiếc hủy đi sự nghiệp của con trai để chia rẽ bọn họ, tôi thấy có hơi khác thường. Bà không phải là loại phụ nữ thiếu suy nghĩ, xây dựng sự nghiệp từ hai bàn tay trắng để có được một thị trường kinh doanh trang phục to lớn như vậy, nếu bà không muốn bọn họ yêu nhau, hẳn là có rất nhiều cách chia rẽ, nhưng thủ đoạn hiện tại có vẻ quá kịch liệt, cũng quá hấp tấp.”
+</p>
+
+<p>
+ Bà Thẩm cười rộ lên: “Tôi muốn làm thế nào là chuyện của tôi, ngược lại là Trình Trí Viễn cậu đây, vì sao quan tâm đến chuyện riêng tư của một nhân viên bình thường nhiều như vậy? Tôi chia rẽ chúng nó, không phải là rất hợp ý của cậu hay sao?”
+</p>
+
+<p>
+ Trình Trí Viễn không để ý gì đến lời nói bà Thẩm, bình tĩnh trả lời: “Tôi cảm thấy bà làm việc hơi bất thường, cũng là muốn giúp Hiểu Thần tìm cách khiến bà đồng ý, tôi nghĩ ra có biết một vài người trong lĩnh vực kinh doanh của bà, nên nhờ một người bạn giúp tôi điều tra.”
+</p>
+
+<p>
+ Giọng nói của bà Thẩm lập tức căng thẳng, phẫn nộ chất vấn: “Cậu, cậu… dám điều tra nhà chúng tôi?”
+</p>
+
+<p>
+ Trình Trí Viễn không nói tiếng nào, cho thấy là tôi dám đấy!
+</p>
+
+<p>
+ Bà Thẩm lời mạnh nhưng trong lòng đã mềm yều hỏi: “Cậu điều tra được gì?”
+</p>
+
+<p>
+ “Hiểu Thần và Thẩm Hầu là học sinh thi đại học cùng một khóa.”
+</p>
+
+<p>
+ Tới đây, Trình Trí Viễn không nói thêm gì nữa, mẹ của Thẩm Hầu cũng không hỏi lại, giữa bọn họ thật hiểu ý nhau, dường như biết được nội dùng phía sau là cái gì, nhưng Nhan Hiểu Thần lại không biết!
+</p>
+
+<p>
+ Cô lo lắng muốn biết, nhưng lại cảm thấy sợ hãi, “Hiểu Thần và Thẩm Hầu là học sinh thi đại học cùng một khóa”, là lời nói vô cùng bình thường, bọn họ học chung một trường đại học, là bạn học cùng một khoa, làm sao không phải là thi đại học chung một khóa?
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy chính mình thực sự đã nghĩ tới điều gì, nhưng bộ não của cô không muốn suy nghĩ, cô tự nói với mình không cần phải nghe nữa, bây giờ nhanh chóng chạy đi, làm bộ như không biết gì cả, tất cả vẫn còn kịp!
+</p>
+
+<p>
+ Nhưng cô không cử động được, cô gắt gao cầm ly cà phê, thân thể hơi run rẩy.
+</p>
+
+<p>
+ Không gian yên ắng rất lâu sau đó, bà Thẩm hỏi: “Cậu muốn thế nào?” Bà ta giống như đột nhiên biến thành người khác, trong giọng nói không còn vênh váo tự đắc nữa, mà lại là yếu đuối, không có sức lực.
+</p>
+
+<p>
+ “Không phản đối Hiểu Thần và Thẩm Hầu yêu nhau nữa.”
+</p>
+
+<p>
+ “Cậu nói cái gì?” Bà Thẩm vừa nhỏ giọng vừa gắt gỏng.
+</p>
+
+<p>
+ “Tôi nói không phản đối bọn họ nữa, làm cho bọn họ thật hạnh phúc, thật tâm chúc phúc cho bọn họ.”
+</p>
+
+<p>
+ “Cậu…Cậu điên rồi sao? Thẩm Hầu làm sao có thể cùng Nhan Hiểu Thần yêu nhau? Tuy rằng hoàn toàn không phải là lỗi của Thẩm Hầu, nhưng mà…” Giọng của bà Thẩm nghẹn ngào, chắc là rốt cuộc nhịn không được, khóc òa lên.
+</p>
+
+<p>
+ Người kiên cường thật sự rất giỏi kềm chế, ít khi biểu lộ cảm xúc, chỉ khi nào tâm trạng quá đau khổ, cảm xúc sẽ càng thể hiện mạnh mẽ hơn người thường, bà Thẩm nức nở nói: “Thẩm Hầu từ nhỏ đến lớn học tập rất tốt, chúng tôi đều kỳ vọng rất lớn ở nó! Cấp ba đột nhiên lại mê chơi game, thi đại học không được tốt như chúng tôi mong muốn, tôi thì lại… Tôi chính là không được đi học, bị bên nội của Thẩm Hầu lời ong tiếng ve đã nửa đời người, không muốn cho nó lại bị bên đó xem thường, nên dùng chút tiền, nhờ bạn bè trong sở giáo dục hỗ trợ tìm cách. Thẩm Hầu được nhận vào một trường đại học tốt, Nhan Hiểu Thần bị cho rớt. Bọn họ nói tuyệt đối sẽ không có phiền toái, vì đã xem xét qua hồ sơ, người nhà đó không quyền không thế, ba làm thợ mộc, mẹ làm tóc thuê cho người ta, gia đình như vậy có thể học được đại học là tốt lắm rồi, khẳng định sẽ không có chuyện gì! Nhưng không ai ngờ ba của Nhan Hiểu Thần lại là người cố chấp như vậy, mỗi ngày đều ngồi canh cửa sở giáo dục, muốn hỏi cho ra. Chúng tôi đã nghĩ hết cách đuổi ông ta đi, đúng là loại người cố chấp thật thà không ai bằng, mắng chửi không nói gì, đánh cũng không đánh lại, chỉ biết nhẫn nhịn chịu đựng, muốn tìm cái cớ để bắt ông ta cũng chẳng được, so với cục đá còn trơ lỳ hơn, vẫn là canh giữ ở cửa, không ngừng nói, không ngừng cầu xin. Thời gian dài sau, sở giáo dục bị giới truyền thông chú ý, tôi cũng không muốn lại xảy ra chuyện phiền phức, chỉ có thể tốn thêm một khoản tiền lớn nữa, tìm bạn bè nghĩ cách, rốt cuộc Nhan Hiểu Thần cũng được nhận vào trường đại học. Vốn là kết quả vui vẻ cho cả hai, là giải quyết tốt nhất… Nhưng ba của cô bé bởi vì quá vui mừng, vội vàng muốn về nhà, không đợi đèn đỏ liền băng qua đường… Nên bị xe đụng chết…”
+</p>
+
+<p>
+ Bà Thẩm khóc nức nở, Nhan Hiểu Thần lại không thể chảy được giọt nước mắt nào, chỉ có thể thẫn thờ nhìn vào khoảng không. Thì ra mọi chuyện là như thế này, có phải không? Thì ra là như vậy…
+</p>
+
+<p>
+ Bà Thẩm dùng khăn tay che khuất đi ánh mắt của mình, nói với Trình Trí Viễn: “Nếu quả thật có báo ứng, thì hãy báo ứng lên người tôi và ba của nó! Thẩm Hầu… Thẩm Hầu cái gì cũng không biết, nó không nên bị cuốn vào chuyện này! Cậu và nhà của Nhan Hiểu Thần hẳn là thân quen, chắc là hiểu rõ, đã nhiều năm như vậy rồi, cô bé cùng mẹ mình đều không tha thứ cho người tài xế đã đụng chết người ba. Tôi là phụ nữ, tôi hoàn toàn có thể hiểu được bọn họ, đổi lại là tôi, nếu có người xúc phạm đến Thẩm Hầu hay ba của nó, tôi cũng sẽ tuyệt đối không tha thứ, tôi cũng nguyện chết chung với bọn chúng, cũng không muốn bọn chúng được dễ chịu dù chỉ một ngày! Nhan Hiểu Thần và mẹ của cô bé căn bản không thể nào tha thứ cho chúng tôi! Nếu Nhan Hiểu Thần và Thẩm Hầu còn tiếp tục yêu nhau, nếu có một ngày cô bé biết hết sự thật… Hai chúng nó sẽ đau khổ đến chết mất! Tôi đã thật sự mang tội lỗi đối với nhà bọn họ, không thể lại khiến hai đứa nó phải chịu tội thêm nữa, thà rằng tôi làm kẻ ác độc, thà rằng hủy đi sự nghiệp của Thẩm Hầu, làm cho Thẩm Hầu hận tôi, cũng không thể để cho bọn nó yêu nhau!”
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Tôi rất hiểu, nhưng đã muộn rồi! Chúng ta có thể đem bí mật này vĩnh viễn giấu kín, đưa Thẩm Hầu và Nhan Hiểu Thần ra nước ngoài, 10 năm sau, những người biết được sự việc năm đó sẽ về hưu nghỉ hết. Hiểu Thần có mối quan tâm đến gia đình và con cái của chính mình, cũng sẽ không nghĩ đến việc điều tra chuyện quá khứ, chỉ cần vĩnh viễn không cho Nhan Hiểu Thần biết, sẽ không có việc gì…”
+</p>
+
+<p>
+ “Tôi đã biết!” Nhan Hiểu Thần đứng ở phía sau bọn họ, nhẹ giọng nói.
+</p>
+
+<p>
+ Bà Thẩm cùng Trình Trí Viễn thất kinh sợ hãi, lập tức đứng lên.
+</p>
+
+<p>
+ Bà Thẩm không còn là phụ nữ lạnh lùng quật cường nữa, nước mắt rơi lã chã, khóc không thành tiếng, hai tay bà hướng Nhan Hiểu Thần, như muốn cầu xin, “Xin lỗi…”
+</p>
+
+<p>
+ “Không cần phải nói xin lỗi, như bà đã nói, chúng tôi tuyệt đối sẽ không tha thứ cho bà!” Nhan Hiểu Thần nói xong, quay người bỏ chạy.
+</p>
+
+<p>
+ Trình Trí Viễn lập tức đuổi theo, “Hiểu Thần, Hiểu Thần…”
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-030.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-032.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

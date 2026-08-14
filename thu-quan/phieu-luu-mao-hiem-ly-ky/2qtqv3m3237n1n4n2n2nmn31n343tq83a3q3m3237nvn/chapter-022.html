@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 22 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 22</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-021.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-023.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Cuộc sống luôn biến đổi, luôn mê hoặc, luôn mỹ miều, hết thảy đều do ánh sáng thiên thần cùng bóng ma đêm tối kết hợp thành — Lev Tolstoy (10.1)
+</p>
+
+<p>
+ (10.1) Bá tước Lev Nikolayevich Tolstoy ( 9/9/1828 – 20/11/1910) là một tiểu thuyết gia người Nga, nhà triết học, người theo chủ nghĩa hoà bình, nhà cải cách giáo dục, người ăn chay, người theo chủ nghĩa vô chính phủ, tín hữu Cơ Đốc giáo, nhà tư tưởng đạo đức, và là một thành viên có ảnh hưởng của gia đình Tolstoy. (wiki)
+</p>
+
+<p>
+ Cuối tháng 12, mẹ của Thẩm Hầu đến Thượng Hải, xử lý xong công việc, bà ta mời Judy bí mật dùng cơm.
+</p>
+
+<p>
+ Judy nhắc tới trợ lý mới của mình, không tiết kiệm từ ngữ, hết lời khen ngợi. Bà Thẩm nhất thời có hứng thú, nói với Judy: “Biết cô nhiều năm như vậy, ít khi nghe được cô khen người ta như thế, làm cho tôi thật sự hiếu kỳ, vừa hay ngày mai tôi có chút thời gian rảnh, chắc sẽ qua chỗ cô một lát, lúc đó cứ giới thiệu người đó cho tôi biết, nếu quả thật không sai, tôi sẽ đề bạt, chỗ tôi cũng đang cần một người trẻ có tài.”
+</p>
+
+<p>
+ Judy bất mãn bĩu môi, “Tôi đào tạo chăm sóc bấy lâu mới có được, chị lại lấy đi? Tôi không tài giỏi hay sao?”
+</p>
+
+<p>
+ Bà Thẩm biết cô ta mở miệng ra là rất lợi hại, không thèm để ý cười cười, “Chị em tốt, cô không giúp tôi, ai giúp tôi đây?”
+</p>
+
+<p>
+ Judy cũng không hề làm bộ làm tịch, sảng khoái nói: “Đi, ngày mai cứ ghé qua chỗ tôi! À, đúng rồi, bên Lưu tổng cũng có một người mới bán hàng rất lợi hại, dáng vẻ cao ráo đẹp trai, nếu cũng thấy tốt, chị cũng lấy đi luôn đi, đỡ phải chỉ có một mình tôi chịu thiệt!”
+</p>
+
+<p>
+ Bà Thẩm vừa nghe qua là biết cô ta đang nói đến Thẩm Hầu, cười khổ nói: “Việc này hiện tại không phải lúc để nói chi tiết với cô, về sau cô sẽ tự biết.”
+</p>
+
+<p>
+ Judy đã giao tiếp với khách hàng nước ngoài nhiều năm, nên tính tình cũng giống như họ, bàn luận vấn đề thẳng thắn trực tiếp, ngoại trừ công việc, những chuyện khác tuyệt đối không hỏi nhiều, cô ta đoán được là chuyện nhà, nên lập tức chuyển đề tài, “Ăn tráng miệng gì đây?”
+</p>
+
+<p>
+ Ngày thứ hai, bà Thẩm quả thật có ghé công ty, trước hết đi gặp Lưu tổng. Lưu tổng tự mình pha trà, “Chị dâu, lần này ở lại Thượng Hải mấy ngày?”
+</p>
+
+<p>
+ “Ngày mai về rồi.”
+</p>
+
+<p>
+ “Thẩm Hầu đang ở Trường Sa công tác, chiều hôm qua mới vừa đi, ngày mai chỉ sợ không về kịp.”
+</p>
+
+<p>
+ “Không sao, chị ghé qua không phải để gặp nó.”
+</p>
+
+<p>
+ Lưu tổng châm nước nói: “Em thấy Thẩm Hầu nó ương bướng quá, chị đi nói anh cả một tiếng, đừng có làm cho cháu nó nổi giận nữa.”
+</p>
+
+<p>
+ Bà Thẩm uống một ngụm trà, nói: “Lão Thẩm chỉ là đang quá nóng giận muốn trừng trị nghiêm khắc với Thẩm Hầu thôi, không nghĩ đến nó lại làm cho ông ấy nhìn với cặp mắt khác. Mà cho dù có bực bội hơn nữa, nhìn thấy con trai cố gắng như vậy, bao nhiêu nóng giận cũng tiêu biến hết rồi, hiện tại là đang chưa bỏ được tự ái mà chủ động nói chuyện với nó đó thôi.”
+</p>
+
+<p>
+ Lưu tổng dò hỏi: “Bán hàng cực lắm, nếu không thì cho làm thêm một tháng, chờ qua tết âm lịch, chuyển nó đến phòng khác đi!”
+</p>
+
+<p>
+ Bà Thẩm nói: “Xem xét ý tứ của lão Thẩm, chị nghĩ ông ấy cũng đã biết chính bản thân Thẩm Hầu cần cái gì. Bán hàng đúng là có khổ thật, nhưng bán hàng trực tiếp cũng có nghĩa là giao tiếp trực tiếp với thị trường, nếu Thẩm Hầu làm giỏi, tương lai quản lý công ty, sẽ không ai dám coi thường nó, nếu đây là nguyên nhân khiến cho ba của nó muốn nó làm thì chị không phản đối.” Bà Thẩm nhìn Lưu tổng, cười đứng dậy, “Chị lên lầu gặp Judy đây.”
+</p>
+
+<p>
+ Lưu tổng cùng bà Thẩm đi lên lầu, vào đến văn phòng, bà ta cảm thấy không gian tươi mới, hoàn toàn khác với căn phòng trước đây, “Mới sửa phòng lại à?”
+</p>
+
+<p>
+ Lưu tổng nói: “Không có.”
+</p>
+
+<p>
+ Bà Thẩm quan sát qua một chút, nhận ra đúng là không phải đã sửa sang lại, mà là sắp xếp vật dụng so với trước kia có trật tự hơn. Trước kia, quần áo mẫu không phải chất đống trên bàn thì cũng dồn cục trên ghế, bây giờ quần áo được phân loại gọn gàng để trong mấy cái thùng nhựa lớn; trước kia, hình ảnh tạp chí thời trang đều vứt bừa trên cửa sổ, bây giờ, chúng được đặt trên một cái giá sách nhỏ đơn giản, cửa sổ vốn đầy ắp sách báo tạp chí hiện tại đang được đặt mấy chậu hoa, nhìn căn phòng có sinh khí hẳn.
+</p>
+
+<p>
+ Judy năm nay hơn 40 tuổi, nhưng vẫn là một người rất bừa bộn, nhà của cô ta nhìn giống như chỗ ở của bọn thổ phỉ, cô ta chưa biến văn phòng thành ra như vậy đã là may mắn lắm rồi. Bà Thẩm đi vào phòng làm việc của Judy, chỉ chỉ ra bên ngoài, cười hỏi: “Là trợ lý mới làm à?”
+</p>
+
+<p>
+ Judy nhún nhún vai, “Là một cô bé, rất thích tỉ mỉ mấy chuyện như vậy! Bất quá làm xong rồi, tìm kiếm cái gì cũng rất dễ dàng.”
+</p>
+
+<p>
+ Bà Thẩm vẫn luôn tin tưởng chắc chắn vào câu nói, “Chi tiết biểu lộ thái độ, thái độ quyết định tất cả”, còn chưa nhìn thấy trợ lý của Judy, bà ta đã muốn có Nhan Hiểu Thần, “Cô bé này rất tốt.”
+</p>
+
+<p>
+ Judy không biết nên vui hay nên buồn, vui vì có “tư tưởng lớn gặp nhau”, buồn vì nhân tài của của mình sắp bị lấy đi mất. Bà Thẩm cũng vẫn giữ nguyên ý định, cười nhìn cô ta, Judy cầm điện thoại lên, buồn bực nói: “Olivia, vào đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần theo Judy làm việc, để tiện việc đón tiếp khách hàng, nên cũng dùng tên tiếng Anh.
+</p>
+
+<p>
+ Nhan Hiểu Thần bước nhanh đi vào phòng, nhìn thấy Lưu tổng chỉ dám ngồi ghế phụ thấp hơn, trên ghế chính giữa bàn là một phụ nữ trung niên trang điểm sắc sảo, cô nhìn thấy rất quen. Nhan Hiểu Thần có chút giật mình, đã đoán được là ai, không dám biểu lộ gì cả, làm bộ như không có việc gì, chào hỏi, “Chào Lưu tổng!”
+</p>
+
+<p>
+ Judy nói: “Vị này là Tổng giám đốc Hầu của công ty chúng ta, là sếp cấp cao của tôi và Lưu tổng.”
+</p>
+
+<p>
+ Có chút cảm giác như con dâu lần đầu tiên gặp cha mẹ chồng, Nhan Hiểu Thần cực kỳ khẩn trương, hơi cúi đầu, cung kính nói, “Chào Hầu tổng!”
+</p>
+
+<p>
+ Bà Thẩm thì lại cực kỳ ôn hòa, tự nhiên mà nói, “Judy ở trước mặt tôi khen cô rất nhiều, cô tên gì? Đến công ty làm được bao lâu rồi?”
+</p>
+
+<p>
+ “Tôi tên Nhan Hiểu Thần, Nhan của nhan sắc, Hiểu trong bình minh, Thần của buổi sáng. Đã đến công ty làm việc nửa năm.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghĩ rằng bà Thẩm còn có thể hỏi thêm vài việc, nhưng bà ta chỉ im lặng nhìn chằm chằm cô, không nói một lời. Nhan Hiểu Thần nhỏ tuổi, lại là cấp dưới, cô biết không nên biểu hiện gì cả, chỉ có thể đứng im lặng. Lưu tổng và Judy đều có vẻ mặt ngạc nhiên nhìn Hầu tổng, bọn họ trước giờ hiểu con người của sếp lớn rất lợi hại, đừng nói là ngẩn người, vẻ mặt thất thần trước giờ đều rất ít gặp. Judy không kềm chế được, ho khan một tiếng, “Hầu tổng?” Bà Thẩm giống như vừa hồi phục lại tinh thần, bóp trán, sắc mặt rất khó nhìn, “Tôi có chút không khỏe. Lưu tổng, bảo tài xế đến dưới lầu đón chị, Judy, cô đưa tôi xuống.”
+</p>
+
+<p>
+ Lưu tổng và Judy có chút buồn bực, Lưu tổng lập tức gọi cho tài xế, hỏi xem gần đây có bệnh viện nào không, Judy đỡ bà Thẩm đi ra ngoài. Nhan Hiểu Thần muốn giúp bọn họ, đi được hai bước, lại cảm thấy căn bản cô chẳng giúp được gì, ngây ngẩn đứng một lát, sau đó thì trở lại bàn làm việc của mình.
+</p>
+
+<p>
+ Trong lòng của Nhan Hiểu Thần cảm thấy bất an lo lắng, vất vả lắm mới đợi được Judy quay lại, cô vội vàng chạy tới hỏi, “Hầu tổng bị sao ạ? Có nghiêm trọng lắm không?”
+</p>
+
+<p>
+ Judy không trả lời, mặt có chút kỳ lạ nhìn cô chằm chằm, Nhan Hiểu Thần phát hiện ra sự quan tâm của mình hơi vượt quá mức cho phép của một cấp dưới bình thường, cô lúng túng cúi đầu.
+</p>
+
+<p>
+ Judy nói: “Hầu tổng nhất thời hơi choáng váng, ra ngoài hít thở một chút đã tốt hơn rồi.” Cô ta nhìn ngó xung quanh, “Đến phòng làm việc của tôi!” Nhan Hiểu Thần theo sau Judy đi vào văn phòng, Judy bảo: “Đóng cửa lại.”
+</p>
+
+<p>
+ Nhan Hiểu Thần vội vàng đóng cửa. Judy vừa muốn nói lại vừa không muốn nói, suy tư một thoáng, nhưng thiện cảm của cô ta đối với Nhan Hiểu Thần lại chiếm ưu thế hơn, nên đã nói ra một cách lưu loát: “Vừa rồi tôi đưa Hầu tổng xuống dưới lầu, bà ấy hỏi ai đã tuyển cô vào công ty làm, tôi nói là Lưu tổng giới thiệu, Hầu tổng sắc mặt rất khó coi, chất vấn Lưu tổng là thế nào. Lưu tổng giải thích với Hầu tổng, cô là bạn của Thẩm Hầu, Thẩm Hầu đã lén nài nỉ anh ta rất lâu, anh ta ở mặt ngoài lén đồng ý không nói cho Thẩm tổng và Hầu tổng biết, nhưng vì để cho chắc chắn, anh ta đã gọi điện thoại hỏi trước Thẩm tổng. Thẩm tổng nghe nói là bạn thân của Thẩm Hầu, ông ta liền nói con trai cũng lớn rồi, đã có xã giao bạn bè, sắp xếp được thì cứ việc sắp xếp, dù sao vẫn có 3 tháng thử việc, dùng được thì giữ lại, không dùng được thì dựa theo quy định của công ty mà giải quyết, Lưu tổng còn sợ người khác biết chuyện anh ta là “chiếu cố người nhà”, nên cố ý đưa cô đến chỗ tôi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghe đến đó đã hiểu rõ ràng, bà Thẩm cũng không biết Thẩm Hầu giúp cô sắp xếp vào làm ở đây, cô ngắc ngứ hỏi: “Có phải Hầu tổng không thích tôi được tuyển vào do quen biết?”
+</p>
+
+<p>
+ “Theo lý thì không thể nào, làm việc ở Trung Quốc gặp chuyện như vậy là bình thường, rất nhiều loại tình thân lui tới, cô không phải là người đầu tiên của công ty được tuyển vào nhờ quen biết, tuyệt đối cũng không phải là người cuối cùng, nếu như có nhân viên nào được tuyển vào nhờ quen biết mà làm được việc giống như cô, chúng tôi đều muốn cười đến chết, ước gì mỗi ngày đều có mấy người như vậy. Nhưng mà dù sao…Tôi mới vừa biết Thẩm Hầu là con trai của Hầu tổng, đoán chừng bà ấy đã để ý quan hệ giữa cô và Thẩm Hầu!”. Judy cười híp mắt nhìn Nhan Hiểu Thần, “Cô và Thẩm Hầu là quan hệ gì vậy? Bạn thân đến cỡ nào?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cắn môi, không biết nên trả lời thế nào.
+</p>
+
+<p>
+ Judy sớm đoán được vài phần, khẽ thở dài, đỡ trán nói: “Con trai Hầu tổng đã có bạn gái, chúng tôi già quá rồi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần thấp thỏm bất an hỏi: “Hầu tổng không phải là đang tức giận chứ?”
+</p>
+
+<p>
+ Judy khẽ cười nói: “Bà ấy chỉ là có chút không khỏe. Nhưng mà, đừng quá lo lắng, Hầu tổng rất rộng lượng, chắc là nhất thời mất hứng, qua vài ngày sẽ nghĩ thông suốt thôi, huống chi bà ấy rất thích cô, còn muốn xin cô về giúp bà ấy làm việc, Thẩm Hầu tìm được một cô gái xinh đẹp như vậy làm bạn gái, bà ấy phải vui vẻ mới đúng.”
+</p>
+
+<p>
+ Nhan Hiểu Thần vẫn cảm thấy bất an, Judy phất phất tay, “Chắc là không có việc gì lớn đâu, đi ra ngoài làm việc đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần đi ra khỏi văn phòng, do dự có nên gọi điện thoại cho Thẩm Hầu biết hay không. Thẩm Hầu đang đi công tác xa, nói cho hắn biết, nếu hắn lập tức quay về, vậy thì công việc sẽ trễ nải, chỉ sợ trong mắt của ba mẹ hắn, đó là chuyện không tốt, nếu hắn không quay về, thì lại thêm một người nữa lo lắng, suy nghĩ miên man một lúc, nhận thấy chẳng có ý nghĩa gì. Nhan Hiểu Thần quyết định, vẫn là trước hết không nói cho Thẩm Hầu biết, dù sao qua hai ba ngày nữa, Thẩm Hầu cũng sẽ quay lại, chờ hắn về đến nhà, nói sau cũng được!
+</p>
+
+<p>
+ Nhan Hiểu Thần thấp thỏm bất an hai ngày, phát hiện mọi thứ đều bình thường, mẹ của Thẩm Hầu không có tìm cô nói chuyện.
+</p>
+
+<p>
+ Nhan Hiểu Thần hỏi Judy: “Hầu tổng còn ở Thượng Hải không?”
+</p>
+
+<p>
+ Judy không để ý nói: “Không biết nữa, bà ấy nói ở lại một hai ngày, chắc là đã đi rồi.” Nhan Hiểu Thần nhẹ nhàng thở ra, là do cô quá khẩn trương, có lẽ người ta căn bản không coi chuyện yêu đương của con trai ra gì, không muốn lập tức phải kết hôn.
+</p>
+
+<p>
+ Nhan Hiểu Thần trầm tĩnh lại, bắt đầu có tâm trạng suy nghĩ đến chuyện khác. Thẩm Hầu sắp trở về, cô quyết định bớt chút thời gian quét dọn nhà cửa gọn gàng một chút.
+</p>
+
+<p>
+ Buổi tối, Nhan Hiểu Thần xắn tóc lên cao, mặc tạp dề, mang bao tay cao su, đang vệ sinh bồn cầu thì chuông cửa vang lên.
+</p>
+
+<p>
+ Thẩm Hầu về sao? Cô vội vội vàng vàng chạy ra cửa, từ trong lỗ kính nhỏ trên cửa nhìn ra, phía ngoài là mẹ của Thẩm Hầu.
+</p>
+
+<p>
+ Nhan Hiểu Thần kinh ngạc ngây ngốc đứng im, không biết nên làm thế nào. Bà Thẩm lại ấn chuông cửa một lần nữa, Nhan Hiểu Thần mới vội vàng cởi bao tay, rũ tóc xuống, muốn mình nhìn đẹp mắt một chút. Cô hít một hơi thật sâu, mở cửa, “Hầu tổng.”
+</p>
+
+<p>
+ Mẹ của Thẩm Hầu nhìn cô chằm chằm, sắc mặt hết sức khó coi.
+</p>
+
+<p>
+ Thẩm Hầu thuê căn hộ 4 năm, ba mẹ của hắn chưa từng đặt chân tới, nhưng không thể nào không biết, nếu không tối nay bà ấy làm sao tìm được nơi này. Nhan Hiểu Thần nhìn giống như một đứa trẻ đã gây ra lỗi lầm, chột dạ cúi đầu.
+</p>
+
+<p>
+ Bà Thẩm không nói một lời, nhanh chóng đi vào phòng ngủ của Thẩm Hầu, rồi đi vào phòng ngủ của Nhan Hiểu Thần, nhìn qua một vòng, xác định hai người nhìn bề ngoài vẫn đang là “Ở riêng”, còn chưa chính thức “Ở chung”. Bà ta giống như nhẹ bớt tâm trạng đi một chút, ngồi trên ghế sô pha, nói với Nhan Hiểu Thần: “Cô cũng ngồi đi!” Nhan Hiểu Thần thấp thỏm bất an ngồi lên một góc sô pha.
+</p>
+
+<p>
+ “Giúp Thẩm Hầu thi hộ môn kinh tế vĩ mô chính là cô sao? “ Bà Thẩm đang dùng câu nghi vấn, nhưng biểu hiện giống như câu khẳng định.
+</p>
+
+<p>
+ “Dạ đúng.”
+</p>
+
+<p>
+ “Tôi đã xem qua thành tích của cô, không có môn thi nào thấp hơn 9/10, là Thẩm Hầu nhà tôi đã hại cô, rất xin lỗi!” mẹ của Thẩm Hầu đứng lên, hướng Nhan Hiểu Thần cúi thấp người chào.
+</p>
+
+<p>
+ Nhan Hiểu Thần bị dọa sợ, lập tức đứng lên, tay chân luống cuống đỡ bà Thẩm dậy, “Không sao ạ, mọi việc đã qua rồi, không có sao hết, thật sự không ngại.”
+</p>
+
+<p>
+ Bà Thẩm đau xót nói: “Nhưng tôi để ý!”
+</p>
+
+<p>
+ Nhan Hiểu Thần không biết nên nói cái gì, chân tay luống cuống nhìn bà Thẩm.
+</p>
+
+<p>
+ Mẹ của Thẩm Hầu cảm xúc dịu lại một chút, ngồi xuống ghế, ra ý bảo Nhan Hiểu Thần cũng ngồi. Bà ta nói: “Cô và Thẩm Hầu khi nào thì…ở chung với nhau?”
+</p>
+
+<p>
+ “Năm thứ tư đại học vừa khai giảng thì xác định chuyện tình cảm nam nữ, nhưng lúc đó vẫn còn ở riêng, đến học kỳ hai năm thứ tư mới ở chung với nhau.”
+</p>
+
+<p>
+ Bà Thẩm suy tính một chút, nhận thấy thời gian bọn họ thật sự ở chung với nhau không lâu lắm, khó trách lúc hỏi Thẩm Hầu có bạn gái hay chưa thì hắn luôn trả lời là chưa có. Bà ta ngẫm nghĩ nói: “Nếu hai người đã ở riêng một lần, thì bây giờ cũng có thể ở riêng một lần nữa.”
+</p>
+
+<p>
+ “Sao ạ?” Nhan Hiểu Thần không hiểu lời nói của bà Thẩm.
+</p>
+
+<p>
+ “Tôi không đồng ý cô và Thẩm Hầu quen nhau, hai người phải chia tay!”
+</p>
+
+<p>
+ Nhan Hiểu Thần choáng váng trong chốc lát mới thật sự hiểu rõ lời nói của bà Thẩm, trong lòng cô như có một cơn bão vừa càn quét qua, lộn xộn lung tung lên hết rồi, nhưng vẻ ngoài vẫn hết sức bình tĩnh, cô không kiêu ngạo cũng không có ý nịnh nọt, nói: “Bác là mẹ của Thẩm Hầu, cháu rất kính trọng bác, nhưng cháu sẽ không chia tay với Thẩm Hầu.”
+</p>
+
+<p>
+ “Nếu cô chia tay với Thẩm Hầu, tôi sẽ sắp xếp cho cô một công việc lương cao làm cô hài lòng, sẽ tặng cô một căn hộ đôi tại Thượng Hải để bù đắp lại, có thể nói, sự chia tay của cô so với bốn mươi năm phấn đấu của người khác, tốt hơn rất nhiều. Nhưng nếu cô và Thẩm Hầu vẫn muốn ở bên nhau thì tình trạng xấu hơn cũng sẽ có, tôi sẽ khiến cho công ty dùng một lý do hoàn toàn hợp lý mà đuổi việc cô. Cô thử nghĩ đi, một kẻ phẩm hạnh chẳng ra gì, bị trường đuổi học, lại bị công ty loại bỏ, còn chỗ nào muốn nhận cô làm việc nữa?”
+</p>
+
+<p>
+ Nhan Hiểu Thần không tin nhìn bà Thẩm, “Bác vì cái gì mà muốn làm như vậy? Cháu đã làm gì sai mà khiến bác chán ghét?”
+</p>
+
+<p>
+ “Cô nghĩ là cái gì? Trong trường đại học, toàn con nít ranh mà đã nghĩ đến chuyện yêu đương cũng không phải là vấn đề quan trọng, nhưng nói đến hôn nhân đại sự thì lại là chuyện khác, môn không đăng, hộ không đối, cô xứng làm con dâu nhà chúng tôi hay sao? Tôi đã cho người đi điều tra nhà của cô, chẳng những nghèo rớt mùng tơi, mẹ của cô còn là một con ma bài bạc, còn nghiện luôn thuốc lá! Hôn nhân và tình yêu có sự khác nhau rất lớn, tình yêu chỉ là chuyện của hai người, còn hôn nhân là chuyện của cả hai gia đình, người con tôi sống chung cả đời không chỉ là cô, mà còn cả gia đình cô, tôi không nghĩ con mình lại có quan hệ với một đám nghèo hèn, gia đình hỗn loạn phiền toái như vậy! Tôi cũng tuyệt đối không muốn cùng một gia đình bát nháo như vậy làm thông gia!”
+</p>
+
+<p>
+ Nhan Hiểu Thần giống như bị đá một cước văng vào hầm băng, giá lạnh thấu xương, cô muốn phản bác lại mẹ của Thẩm Hầu, nhà cô không phải là một đám lộn xộn nghèo hèn, mẹ của cô cũng không phải là con ma bài bạc! Nhưng mà, mỗi một câu của bà ấy đều là sự thật. Ở trong mắt của người ngoài, gia đình của cô đúng là không ra gì.
+</p>
+
+<p>
+ “Bần cùng có lẽ sẽ có thay đổi, nhưng mà nhà của cô… Đã hết thuốc chữa rồi!” Bà Thẩm cười lạnh nhạt lắc đầu, “Tôi sẽ không từ bất kỳ thủ đoạn nào để buộc cô phải rời xa Thẩm Hầu, mặc dù tôi không muốn làm như vậy, nhưng là một người mẹ, tôi tất yếu phải bảo vệ con trai của mình, giúp cho cuộc sống của nó không phải khổ sở vì bị cô quấy rầy! Tôi xin cô, không nên ép tôi phải bức bách cô, lại càng không nên buộc tôi phải bức bách Thẩm Hầu!”
+</p>
+
+<p>
+ Nhan Hiểu Thần ngây ngốc nhìn mẹ của Thẩm Hầu một lúc, cô chỉ muốn cùng người mình yêu ở bên nhau, làm sao lại biến thành cô ép buộc ba mẹ của hắn?
+</p>
+
+<p>
+ Bà Thẩm đem một tấm danh thiếp cùng mấy tấm ảnh chụp để lên bàn, “Đây là một bộ ảnh chụp nhà ở, giá trị hơn 8 triệu, cô có thể gọi số điện thoại trên danh thiếp này, lúc nào cũng có thể làm thủ tục sang tên. Còn nữa, tôi hy vọng cô mau chóng rời khỏi đây.” Bà Thẩm kéo cửa ra, dừng bước một chút, không quay đầu lại, giọng trầm thấp nói: “Cô là một cô gái tốt, nhưng cô thật sự không hợp với Thẩm Hầu! Cuộc đời còn dài, tình yêu không phải là duy nhất, buông bỏ đoạn tình cảm này, cuộc sống mới tốt lên được.”
+</p>
+
+<p>
+ “Rầm” một tiếng đóng cửa lại, Nhan Hiểu Thần thật giống như bị rút hết sức lực, ngồi bệt xuống ghế sô pha, đứng lên cũng không nổi.
+</p>
+
+<p>
+ Từ trong một góc khác của căn phòng vang lên tiếng tình tính tang của âm nhạc, Nhan Hiểu Thần đầu óc trống rỗng, không rõ vì sao lại có tiếng nhạc ở đây, thẩn thờ ngồi nghe.
+</p>
+
+<p>
+ Tiếng nhạc biến mất, nhưng chốc lát sau, lại tình tính tang vang lên, Nhan Hiểu Thần lúc này mới phản ứng được, đó là tiếng nhạc chuông điện thoại di động của mình. Cô chống tay lên ghế sô pha đứng dậy, phất phơ đi đến bên bàn ăn, cầm lấy điện thoại, là Thẩm Hầu gọi. Từ sáng đến tối, lúc này là cuộc gọi hắn thường gọi cho cô để chúc ngủ ngon.
+</p>
+
+<p>
+ Lần đầu tiên Nhan Hiểu Thần không nhận điện thoại của Thẩm Hầu, cô đặt nó lại lên bàn, nhìn nó vang inh ỏi.
+</p>
+
+<p>
+ Nhưng Thẩm Hầu không chịu buông tha, lần này rồi lần khác gọi lại, tiếng chuông không biết nói, nhưng lại rõ ràng biểu đạt ý muốn nếu không đáp ứng sẽ không bỏ qua.
+</p>
+
+<p>
+ Chuông điện thoại vang lên đến lần thứ năm thì Nhan Hiểu Thần rốt cuộc cũng nhận. Giọng nói của Thẩm Hầu lập tức truyền tới, tràn đầy nôn nóng bất an, “Tiểu Tiểu? Tiểu Tiểu em đang ở đâu? Em không sao chứ?”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Em ở nhà, không có việc gì.”
+</p>
+
+<p>
+ Thẩm Hầu nhẹ nhàng thở ra, nhưng liền tức giận, “Sao không nghe điện thoại, làm anh sợ muốn chết!”
+</p>
+
+<p>
+ “Em đang tắm, không nghe thấy điện thoại.”
+</p>
+
+<p>
+ “Làm sao lại tắm muộn như vậy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần hàm hồ nói: “Đi làm về hơi trễ.”
+</p>
+
+<p>
+ Thẩm Hầu đau lòng nói: “Công việc chỉ là công việc, nhiều cỡ nào cũng không thể bằng sức khỏe được, thân thể là quan trọng nhất.”
+</p>
+
+<p>
+ “Em biết rồi, anh thế nào rồi? Sắp về chưa?”
+</p>
+
+<p>
+ “Chắc là chiều mai có thể về.” Thẩm Hầu cao hứng phấn chấn kể cho Nhan Hiểu Thần nghe về hiểu biết thu thập được từ chuyến đi Trường Sa lần này, Nhan Hiểu Thần đột nhiên ý thức, Thẩm Hầu vô cùng yêu thích công ty của bọn họ, không phải là vì tiền tài, mà chính là lòng tự tôn và thật tâm yêu thích. Từ nhỏ hắn đã được “mưa dầm thấm đất” (10.2), lại có được bốn năm học ngành thương nghiệp, đối với công ty của gia đình mình có rất nhiều kế hoạch tương lai, cho nên hắn mới không cần xuất ngoại, cho dù lấy lương thấp cũng phải làm nhân viên bán hàng. Có lẽ, Thẩm Hầu đối với học vấn của mình không đủ chú tâm nghiêm túc, nhưng đối với cuộc sống của mình thì thật nghiêm túc chú tâm, hắn rất hiểu rõ bản thân muốn gì, nên tự nguyện dấn thân xây dựng kế hoạch tương lai cẩn thận, cũng như cố gắng trả giá để có được nó.
+</p>
+
+<p>
+ (10.2) ý nói từ nhỏ Thẩm Hầu đã được nhìn nhiều, nghe nhiều về công việc của ba mẹ, nên từng chút một ngấm vào máu của hắn.
+</p>
+
+<p>
+ Thẩm Hầu nói huyên thuyên một lúc lâu, nhận thấy Nhan Hiểu Thần không nói gì, cho rằng cô mệt, thân thiết nói: “Bận cả ngày có mệt không? Em mau đi ngủ đi!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhẹ giọng hỏi: “Thẩm Hầu, anh có phát hiện ra là vừa rồi anh đã đứng ở góc độ quản lý cấp cao của công ty mà phân tích vấn đề hay không?”
+</p>
+
+<p>
+ Thẩm Hầu ngượng ngùng cười hai tiếng, “Chẳng lẽ lời nói của anh dễ phát hiện vậy sao? Xem ra lần sau có nói chuyện phiếm với người khác phải chú ý một chút, lỡ như có kẻ không biết còn nói anh có dã tâm chiếm đoạt công ty. Ba mẹ anh chỉ có một mình anh, văn hóa sản xuất ở các công ty phương Đông hoàn toàn khác với văn hóa sản xuất ở các công ty phương Tây, không thể nào hoàn toàn dựa vào người quản lý được, sớm hay muộn gì anh cũng phải tiếp quản công ty, nghĩ nhiều một chút để không có thêm sai sót gì. Nói thật, anh muốn mình làm tốt hơn cả ba mẹ.”
+</p>
+
+<p>
+ Nhan Hiểu Thần có chút kinh ngạc, rồi lại cảm thấy đương nhiên, đàn ông con trai dường như trời sinh đã là mãnh thú, xã hội hiện đại không cần bọn họ phải đi săn bắt đánh nhau, cho nên dã tâm chiến đấu ở trong máu của bọn họ tất cả đều tập trung vào việc theo đuổi sự nghiệp, tính tình của Thẩm Hầu vốn đã kiêu căng bá đạo hơn bình thường, bây giờ hắn không nghĩ trèo lên đỉnh cao mới là kỳ lạ. Thẩm Hầu nhận thấy Nhan Hiểu Thần không có tinh thần nói chuyện phiếm, “Tiểu Tiểu, em nghỉ ngơi đi, anh cũng ngủ đây, ngày mai mua được vé máy bay rồi, sẽ gọi điện thoại cho em.”
+</p>
+
+<p>
+ “Ừ, ngủ ngon.” Cúp điện thoại, Nhan Hiểu Thần ngồi trước bàn ăn, kinh ngạc nhìn ra ngoài cửa sổ.
+</p>
+
+<p>
+ Sáng sớm, Nhan Hiểu Thần đi vào văn phòng của Judy, đem toàn bộ tổng kết công việc cùng báo cáo giao tiếp rõ ràng chính xác đưa cho Judy, “Tôi muốn từ chức.”
+</p>
+
+<p>
+ Judy chấn động, “Vì sao lại muốn từ chức? Điều gì làm cô không thoải mái, hay là bất mãn với công việc tôi đã giao?” Tuy rằng Nhan Hiểu Thần biểu hiện thật nổi trội xuất sắc, nhưng chỉ mới làm việc có nửa năm, các công ty khác không thể nào biết được mà đến cướp người, khả năng duy nhất chính là Nhan Hiểu Thần tự mình bất mãn với công việc.
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Công việc rất thoải mái, theo chị cũng học tập được nhiều thứ, từ chức chỉ là lý do cá nhân.”
+</p>
+
+<p>
+ “Có công việc ở công ty khác hay sao?”
+</p>
+
+<p>
+ “Không có ạ.” Nhan Hiểu Thần cũng muốn tìm đến một công ty khác, nhưng tìm việc mới ít nhất cũng phải cần hai ba tuần, không thích hợp với tình hình hiện tại của cô.
+</p>
+
+<p>
+ Vẻ mặt của Judy không đồng tình, “Bất kể là lý do cá nhân, ít nhất phải kiên trì làm việc một năm, lý lịch công tác của cô như vậy tìm việc làm khác là rất bất lợi! Kinh nghiệm làm việc quá ít, không thể cho cô thêm điểm tốt được, lại còn gây ấn tượng xấu đối với các công ty khác vì có tính cách không được tốt, không kiên trì, dễ thay đổi, gặp một chút khó khăn liền trốn tránh, có công ty nào tuyển một nhân viên chỉ muốn làm có nửa năm rồi từ chức đâu?”
+</p>
+
+<p>
+ “Cám ơn chị, nhưng tôi nhất định phải từ chức.”
+</p>
+
+<p>
+ “Cô với Thẩm Hầu cãi nhau à? Tình yêu là tình yêu, công việc là công việc, hai chuyện khác nhau!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nói: “Không có liên quan đến Thẩm Hầu, đơn giản chỉ là lý do cá nhân.”
+</p>
+
+<p>
+ Judy nhận thấy thái độ của Nhan Hiểu Thần rất kiên quyết, cảm thấy lòng tốt của mình biến thành lòng lang dạ thú, thật thất vọng, cũng có chút tức giận, thái độ lạnh nhạt lại, “Được, tôi chấp nhận yêu cầu từ chức của cô, công ty sẽ nhanh chóng xử lý.” Nhan Hiểu Thần vừa đi ra từ văn phòng của Judy liền nhận được điện thoại của trợ lý Lưu tổng, bảo cô đi gặp anh ta.
+</p>
+
+<p>
+ Nhan Hiểu Thần đi vào văn phòng của Lưu tổng, anh ta khách khí mời cô ngồi.
+</p>
+
+<p>
+ Lưu tổng đem một xấp văn kiện đưa cho cô. Nhan Hiểu Thần lật ra xem một chút, là biên lai tài vụ trước kia Nhan Hiểu Thần có ghi chép vào. Cô không rõ, “Lưu tổng cho tôi xem mấy thứ này là có ý gì?”
+</p>
+
+<p>
+ Lưu tổng hắng giọng một cái nói: “Mấy biên lai này của cháu có gian lận.”
+</p>
+
+<p>
+ Nhan Hiểu Thần đầu tiên cảm thấy kinh ngạc, là do cô không cẩn thận phạm sai lầm sao? Nhưng rất nhanh sau đó cô đã phản ứng kịp, Lưu tổng bọn họ đều là người từng trải, không cẩn thận phạm sai lầm hay giả tạo văn kiện cho thành sai lầm, chắc hẳn bọn họ phân biệt được rất rõ ràng.
+</p>
+
+<p>
+ Nhan Hiểu Thần đặt văn kiện đặt trở lại bàn của Lưu tổng, im lặng nhìn anh ta.
+</p>
+
+<p>
+ Ánh mắt của Nhan Hiểu Thần phẳng lặng quang minh, trong sáng như gương. Lưu tổng lảng tránh ánh mắt của cô, “Nếu có gian lận, sẽ bị công ty lập tức đuổi việc, muốn tìm lại công việc khác rất là khó khăn, cháu rất rõ là…”
+</p>
+
+<p>
+ Nhan Hiểu Thần ngắt lời anh ra, trào phúng nói: “Tôi rất rõ ràng, bất quá tôi chỉ là một cô gái yếu đuối không có gì cả, các chú lại là công ty lớn có vài tỷ đồng; tôi chỉ có thể há miệng ra mà biện bạch cho mình, các chú đã chuẩn bị xong văn kiện giấy trắng mực đen để làm bằng chứng; tôi muốn mời luật sư tốt để bảo vệ mình cũng chẳng có tiền, các chú có văn phòng luật sư tốt nhất Thượng Hải, sẽ có đến hàng trăm luận sư ưu tú từng giờ từng phút chờ được phục vụ; tôi ở Thượng Hải không thân không thích, các chú ở đây lại quan hệ rất nhiều. Lưu tổng, chú không cần nói năng rườm rà nữa, tôi thật sự rất rõ ràng.”
+</p>
+
+<p>
+ Lưu tổng cũng không hổ danh là người đã trải qua thăng trầm trong ngành thương nghiệp mấy chục năm, thể hiện thái độ tâm bình khí hòa, “Rõ ràng là tốt! Chỉ cần cháu nghe lời, Hầu tổng sẽ sắp xếp một công việc khác tốt hơn bây giờ.”
+</p>
+
+<p>
+ “Tôi không cần bà ấy giúp tôi tìm công việc khác, tôi có thể tự nuôi sống chính mình!” Nhan Hiểu Thần đứng dậy đi ra ngoài, ra tới cửa thì cô đột nhiên nhớ tới mình còn quên nói thêm một câu, liền quay người lại nói với Lưu tổng: “Nhờ chú chuyển lời cho Hầu tổng giùm tôi là tôi xin từ chức.” Nói xong cô đi nhanh ra khỏi văn phòng của anh ta.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-021.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-023.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

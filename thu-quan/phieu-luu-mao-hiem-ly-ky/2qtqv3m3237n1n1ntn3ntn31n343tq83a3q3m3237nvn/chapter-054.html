@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 54 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 54</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-053.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-055.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Trong một lát, Eragon không thể cử động. Hay hít thở.
+</p>
+
+<p>
+ Sau đó nó thì thầm,“Những quả trứng đó, Saphira... Trứng.”
+</p>
+
+<p>
+ Cô nàng rùng mình như bị lạnh. Những cái vảy trên xương sống dựng đứng khỏi lớp da.
+</p>
+
+<p>
+ Các vị là ai? Nó hỏi tư tưởng. Sao chúng tôi biết có thể tin các vị hay không?
+</p>
+
+<p>
+ Họ nói thật, Eragon, Glaedr nói bằng ngôn ngữ cổ. Ta biết, vì Oromis là một trong những người đã lên kế hoạch cho nơi này.
+</p>
+
+<p>
+ Sư phụ Oromis...?
+</p>
+
+<p>
+ Trước khi Glaedr cất lời, tư tưởng kia nói, Tên ta là Umaroth. Kỵ sĩ của ta là tiên nhân Vrael, người lãnh đạo vùng đất này trước ngày tàn của chúng ta tới. Ta đại diện nhưng không ra lệnh cho những người khác, vì mặc dù một số trong chúng ta được ràng buộc với Kỵ sĩ nhưng phần đông thì không. Những trí tuệ hoang dã có quyền kiểm soát bản thân họ. Khi nói tới đây, ông rồng có chút bực bội. Nếu tất cả chúng ta đều nói cùng lúc, ngươi sẽ khó hiểu nổi. Vì thế ta sẽ nói hộ họ.
+</p>
+
+<p>
+ Còn ông là...? Eragon chỉ người đàn ông đầu rồng màu bạc đằng trước nó và Saphira.
+</p>
+
+<p>
+ Không, Umaroth trả lời. Hắn là Cuaroc, Thợ săn Nïdhwal và Khắc tinh của Urgal. Bà phù thủy Silvarí đã tạo nên cơ thể hiện giờ cho hắn, để hắn giúp chúng ta chống lại Galbatorix hoặc bất cứ kẻ thù nào xâm nhập Hầm mộ của Những Linh Hồn.
+</p>
+
+<p>
+ Khi Umaroth nói, người đàn ông đầu rồng dùng tay phải đặt lên một cái then ẩn, mở phần trước ngực ra như mở một cái chạn bát đĩa. Bên trong ngực Cuaroc là một trái tim rồng màu tím được bao quanh bởi hàng ngàn sợi dây bạc mỏng như sợi tóc. Sau đó Cuaroc đóng giáp ngực lại. Uraroth nói. Không, ta ở đây, rồi ông ta hướng ánh nhìn của Eragon tới một cái hõm chứa một Eldunarí trắng lớn.
+</p>
+
+<p>
+ Eragon chậm rãi tra Brisingr vào bao.
+</p>
+
+<p>
+ Trứng và Eldunarí. Eragon không thể tin nổi. Đầu óc của nó chậm chạp và trị trệ như vừa bị quai vào đầu – có khi nó lãnh đòn thật chứ chẳng chơi.
+</p>
+
+<p>
+ Nó bắt đầu đi về vòng tròn tới phía bên phải mái vòm đen khắc những con chữ tượng hình. Sau đó, nó dừng lại trước Cuaroc và nói, nói lớn và bằng tinh thần. “Tôi có thể chứ?”
+</p>
+
+<p>
+ Người đàn ông đầu rồng nghiến răng và lùi lại vài bước. Hắn đứng cạnh cái bình phát sáng ở giữa phòng. Nhưng hắn vẫn rút gươm, khiến Eragon không thể không đề phòng gã.
+</p>
+
+<p>
+ Eragon vừa phân vân vừa tôn kính khi tiến gần những quả trứng. Nó dựa người vào vòng tròn thấp và thở một hơi run rẩy trong khi nhìn quả trứng màu đỏ vàng cao gần 1.5m. Nó đột nhiên thấy vội vã. Nó tháo găng tay và dùng lòng bàn tay chạm vào quả trứng. Quả trứng thật ấm. Khi nó vươn đầu óc cùng bàn tay ra, nó cảm thấy được tư tưởng đang ngủ say của con rồng chưa nở.
+</p>
+
+<p>
+ Hơi thở nóng ấm của Saphira phả vào cổ nói khi cô nàng tới gần.
+</p>
+
+<p>
+ Quả trứng của em nhỏ hơn thế này, nó nói.
+</p>
+
+<p>
+ Vì mẹ em không quá lớn tuổi và không lớn như con rồng đã đẻ ra quả trứng này.
+</p>
+
+<p>
+ À. Anh chưa bao giờ nghĩ tới điều đó.
+</p>
+
+<p>
+ Nó nhìn lên toàn bộ những quả trứng còn lại. Cổ họng nó khô cứng. “Có quá nhiều,” nó thì thầm. Nó tì vai lên hàm Saphira và thấy cô nàng đang run. Nó biết, cô em nó không muốn gì hơn ngoài việc được ôm trong tư tưởng với đồng loại. Nhưng giống như nó, cô nàng không dám tin những gì đang chứng kiến là thực.
+</p>
+
+<p>
+ Cô nàng khụt khịt và nhìn vòng quanh hết phòng. Sau đó cô nàng gầm làm bụi trên trần nhà rơi lả tả. Làm thế nào? Cô nàng gầm lên bằng tư tưởng. Sao các vị có thể trốn khỏi Galbatorix? Những con rồng chúng ta không trốn chạy khi chiến đấu. Chúng ta không phải những kẻ hèn nhát trốn chạy nguy hiểm. Hãy giải thích đi!
+</p>
+
+<p>
+ Đừng nói lớn vậy, Bjartskular, không con sẽ làm những con rồng non trong trứng buồn đấy, Umaroth khiển trách.
+</p>
+
+<p>
+ Vậy nói đi, ông già, nói cho chúng tôi biết đi.
+</p>
+
+<p>
+ Umaroth hình như phấn khích trong chốc lát. Nhưng khi trả lời, ông nói nghe ảm đạm. Con nói đúng: chúng ta không phải kẻ hèn nhát. Chúng ta không trốn chạy khi chiến đấu. Nhưng kể cả rồng cũng phải nằm chờ thời cơ. Con có đồng ý không, Saphira?
+</p>
+
+<p>
+ Cô nàng khụt khịt và đập đuôi từ bên này sang bên kia.
+</p>
+
+<p>
+ Và chúng ta không giống lũ Fanghur hay những con rắn độc thấp kém bỏ con cái mình tự sinh tự diệt. Nếu chúng ta tham chiến ở Doru Araeba, chúng ta sẽ tuyệt diệt hết. Chiến thắng của Galbatorix là điều chắc chắn – đúng như hắn đã tin – và loài chúng ta sẽ bị xóa sổ hoàn toàn khỏi trái đất.
+</p>
+
+<p>
+ Ngay khi chúng ta biết rõ về sức mạnh và tham vọng của Galbatorix, Glaedr nói, và ngay khi chúng ta biết hắn và những kẻ phản bội định tấn công Vroengard, Vrael, Umaroth, Oromis và ta, cùng một số người khác đã quyết định giấu những quả trứng cùng một số Eldunarí. Chúng ta cũng dễ thuyết phục những con rồng hoang dã thôi. Galbatorix săn đuổi họ, và họ không thể chống lại pháp thuật của hắn. Họ đã tới đây, họ đưa những đứa con còn đang trong trứng cho Vrael cùng những người có thể đẻ trứng được. Chúng ta biết sự sống còn của nòi giống đang bị đe dọa. Chúng ta đã đúng.
+</p>
+
+<p>
+ Eragon day thái dương. “Vì sao các vị không biết từ trước? Vì sao không phải là sư phụ Oromis? Sao các vị có thể giấu tư tưởng được? Người nói với con là không thể cơ mà.”
+</p>
+
+<p>
+ Không thể, Glaedr trả lời, hay ít nhất không thể chỉ bằng pháp thuật. Nhưng trong trường hợp này, nơi pháp thuật không thành công, khoảng cách lại làm nên chuyện. Đó là lý do vì sao chúng ta ở sâu trong lòng đất, sâu dưới núi Erolas những một dặm. Kể cả nếu Galbatorix hay Thập Tam phản đồ nghĩ tới dùng tư tưởng tìm kiếm những nơi không ai ngờ tới, những tảng đá cản đường sẽ khiến họ chỉ cảm tháy có một nguồn năng lượng bất thường. Họ sẽ cho đó là mạch sống của trái đất. Cái đó cũng nằm rất gần chúng ta. Hơn nữa, trước Trận chiến Doru Araeba, hơn một trăm năm trước, tất cả các Eldunarí đã được đặt ở trạng thái hôm mê sâu như chết giả. Chính vì thế chúng càng khó lòng tìm ra họ. Kế hoạch của chúng ta là sẽ đánh thức họ sau khi trận chiến kết thúc. Nhưng những ai xây dựng nơi này cũng ếm câu thần chú đánh thức họ dậy sau vài tuần trăng.
+</p>
+
+<p>
+ Đúng như vậy, Umaroth nói. Hầm mộ của Những Linh Hồn được đặt tại đây còn vì một lý do khác. Cái bình trước mặt các con là cánh cửa mở vào một bể nham thạch nằm dưới dãy núi này kể từ ngày khai sinh lập địa. Nó cung cấp nhiệt độ cho những quả trứng và cung cấp ánh sáng cho các Eldunarí duy trì sức lực.
+</p>
+
+<p>
+ Eragon nói với Glaedr, Người vẫn chưa trả lời câu hỏi của con: vì sao Người và sư phụ Oromis không nhớ nơi này?
+</p>
+
+<p>
+ Umaroth là người trả lời: Vì tất cả những người biết về Hầm mộ của Những Linh Hồn đã đồng ý bị tẩy não và thay vào đó một ký ức giả. Kể cả Glaedr. Đây không phải một quyết định dễ dàng, đặc biệt với mẹ của những quả trứng. Nhưng chúng ta không thể ai ngoài những người trong căn phòng này biết sự thật. Ít nhật là Galbatorix. Vì thế chúng ta từ biệt bạn bè và chiến hữu. Chúng ta biết mình sẽ không bao giờ gặp lại họ và rằng, nếu những điều xấu nhất qua đi, họ sẽ nghĩ rằng chúng ta đã tan biến vào hư vô… Như ta đã nói, đây không phải một quyết định dễ. Chúng ta cũng phải xóa tên tảng đá đánh dấu cổng vào nơi thần thánh này, cũng như đã xóa tên mười ba con rồng phản bội chúng ta.
+</p>
+
+<p>
+ Cả trăm năm cuối đời, ta đã tin loài giống mình đã tuyệt diệt, Glaedr nói. Giờ, khi biết tất cả những đau khổ đã không còn gì...Ta rất mừng rằng sự ngu dốt của ta đã giúp ta bảo vệ họ.
+</p>
+
+<p>
+ Sau đó Saphira nói với Umaroth, Vì sao Galbatorix không biết người và những quả trứng đã biến mất?
+</p>
+
+<p>
+ Hắn nghĩ chúng ta chết trận. Chúng ta chỉ là một số lượng Eldunarí ở Vroengard. Hắn không thể nào nghi ngờ sự biến mất của chúng ta. Đối với những quả trứng, chắc chắn hắn điên lên vì chúng không còn. Nhưng hắn không đời nào nghĩ hai chuyện có liên hệ với nhau.
+</p>
+
+<p>
+ Ờ đúng, Glaedr buồn buồn nói. Thế nên Thuviel đồng ý tự sát: để Galbatorix không biết chúng ta chơi khăm hắn.
+</p>
+
+<p>
+ “Nhưng không phải chính Thuviel cũng giết chết rất nhiều chiến hữu sao?” Eragon hỏi.
+</p>
+
+<p>
+ Ừ, và đó là một đại họa, Umaroth nói. Nhưng dù sao chúng ta cũng đã thỏa thuận rằng ông ta sẽ không hành động nếu như chúng ta chúng ta chắc chắn chiến bại. Ông ấy đã hy sinh bản thân, hủy diệt toàn bộ những tòa nhà thường là nơi giữ trứng. Ông ấy biến hòn đảo thành một kho thuốc độc để Galabatorix không chọn đóng đô tại đây.
+</p>
+
+<p>
+ “Ông ấy có biết vì sao ông ấy phải tự sát không?”
+</p>
+
+<p>
+ Lúc đó thì không. Chỉ khi cần thiết ông ấy mới biết. Một trong Thập tam Phản đồ đã giết chết con rồng của Thuviel cách đó một tháng. Dù Thuviel không tan biến, vì chúng ta cần càng nhiều chiến binh càng tốt để chống trả Galbatorix, ông ấy đã không thiết sống nữa. Ông ấy mừng vì mình được nhận nhiệm vụ đó. Ông ấy sẽ được giải thoát mà vẫn phục vụ mục đích cao cả của chúng ta. Nhờ món quà sự sống đó, chúng ta đã bảo vệ được giống nòi và các Kỵ sĩ. Ông ấy là một người anh hùng vĩ đại dũng cảm. Rồi sẽ có một ngày, mọi ngóc ngách Alagaësia đều vang lên bài ca về ông ấy.
+</p>
+
+<p>
+ Vậy là sau khi trận đánh kết thúc, mọi người ở lại chờ đợi, Saphira nói.
+</p>
+
+<p>
+ Ừ, Umaroth đồng tình. Suy nghĩ dành hàng trăm năm sống trong môt căn phòng nằm sâu trong lòng đất khiến Eragon nao núng. Nhưng chúng ta không lười biếng. Khi chúng ta thức giấc, chúng ta bắt đầu phóng tư tưởng ra, lúc đầu chậm thôi.Sau đó với một sự tự tin hơn bao giờ hết, vì Galbatorix và Thập tam phản đồ đã bỏ đi. Khối sức mạnh của chúng ta rất lớn. Chúng ta có thể nhìn trước những chuyển biến trên mảnh đất này. Thường thì chúng ta không thể nhìn thấy rõ. Nhưng chúng ta có thể thấy những sợi năng lượng rối rắm trên toàn Alagaësia. Chúng ta có thể lắng nghe suy nghĩ của những kẻ không biết bảo vệ tư tưởng. Nhờ vậy, chúng ta nắm bắt được thông tin.
+</p>
+
+<p>
+ Hàng thập kỷ trôi qua, chúng ta tuyệt vọng vì không có ai có thể đánh bại Galbatorix. Chúng ta đã chuẩn bị để chờ đợi hàng thế kỷ nếu cần thiết. Nhưng ta có thể cảm nhận sức Phá- trứng đang lớn lên. Chúng ta sợ rằng chúng ta sẽ phải đợi hàng ngàn hay vì hàng trăm năm. Chúng ta đồng ý rằng, điều này là không thể chấp nhận, vì lợi ích của cả chúng ta và những con rồng con trong trứng. Chúng bị ếm phép làm chậm nở. Chúng có thể mãi là trứng trong nhiều năm. Nhưng dù gì việc ở trong trứng quá lâu cũng không tốt. Nếu vậy, tư tưởng của chúng sẽ biến động và khác thường.
+</p>
+
+<p>
+ Vì lo lắng, chúng ta bắt đầu can thiệp vào những sự kiện mình nhìn thấy. Lúc đầu chỉ rất nhỏ: ở đây thì thuyết phục ai đó, đằng kia thì đưa ra lời khuyên, hay cảnh bảo cho ai sắp bị hại. Không phải lúc nào chúng ta cũng thành công. Tuy nhiên chúng ta có thể giúp những người vẫn ngoan cường chống trả Galbatorix. Thời gian trôi qua, càng lúc chúng ta càng tự tin hơn vào khả năng của mình. Trong một số ít trường hợp, người ta phát hiện ra sự hiện diện của chúng ta dù không biết chúng ta là ai hay cái gì. Chúng ta ba lần sắp đặt cái chết của một trong Thập tam Phản đồ. Khi không bị cảm xúc che mờ mắt, Brom là một vũ khí hữu hiệu.
+</p>
+
+<p>
+ “Các người đã giúp ông Brom!” Eragon reo lên.
+</p>
+
+<p>
+ Đúng, và giúp nhiều người khác nữa. Khi con người tên Hefring trộm trứng của Saphira khỏi phòng báu vật của Galbatorix – vào một buổi đêm cách đây hai mươi năm – chúng ta đã giúp hắn thoát, nhưng chúng ta đã đi quá đà. Hắn phát hiện ra chúng ta và sợ hãi. Hắn tháo chạy và không gặp mặt quân Varden như dự kiến. Sau đó, sau khi Brom cứu quả trứng của con, Varden cùng thần tiên bắt đầu truyền tay nhau quả trứng của con, trước khi tìm ra cho con một người kỵ sĩ thích hợp. Chúng ta quyết định rằng mình phải chuẩn bị sẵn sàng cho tình huống đó. Vì thế chúng ta đã vươn tư tưởng tới gặp ma mèo. Họ là bạn lâu năm với rồng. Chúng ta nói chuyện với họ. Họ đồng ý giúp. CHúng ta cho họ biết về Tảng đá Kuthian và thép sáng dưới rễ cây Menoa. Sau đó chúng ta tẩy tất cả những ký ức về cuộc nói chuyện khỏi trí não họ.
+</p>
+
+<p>
+ “Người làm tất cả ư, từ đây?” Eragon phân vân hỏi.
+</p>
+
+<p>
+ Và còn nhiều hơn thế. Con đã bao giờ nghĩ vì sao quả trứng của Saphira lại tình cờ xuất hiện trước mặt con khi con đang ở giữa đại ngàn Spine?
+</p>
+
+<p>
+ Người làm ư? SAphira cất tiếng. Cô nàng cũng choáng nặng như Eragon.
+ <br/>
+ “Con cứ nghĩ vì Brom là cha con, Arya đã đưa nhầm.”
+ <br/>
+</p>
+
+<p>
+ “Không, Umaroth nói. Phép thuật của thần tiên không có chỗ cho lầm lẫn. Chúng ta đã thay đổi dòng chảy pháp thuật để con và SAphira gặp nhau. Chúng ta nghĩ có thể có – dù cơ hội rất nhỏ, nhưng dù sao vẫn là cơ hội – rằng con sẽ phù hợp với cô bé này. Chúng ta đã đúng.
+</p>
+
+<p>
+ “Nhưng sao người không cho chúng con tới đây sớm hơn?” Eragon hỏi.
+</p>
+
+<p>
+ Vì con cần thời gian để tôi luyện, và chúng ta cũng sợ sẽ đánh động Galbatorix về sự hiện diện của chúng ta trước khi con và Varden sẵn sàng đối diện với hắn. Ví dụ, nếu chúng ta liên hệ với các con ngay sau Trận chiến trên Cánh đồng cháy, chúng ta sẽ được lợi gì nào, khi Varden vẫn còn cách Urû’baen quá xa?
+</p>
+
+<p>
+ Một phút im lặng.
+</p>
+
+<p>
+ Eragon từ từ nói, “Người còn làm gì cho chúng con nữa?”
+</p>
+
+<p>
+ Vài điều nho nhỏ, chủ yếu là cảnh báo thôi. Hình ảnh Arya ở Gil’ead, khi cô ấy cần sự giúp đỡ của con. Giúp chữa lành lưng cho con ở Agaetí Blödhren.
+</p>
+
+<p>
+ Glaedr không đồng ý. Anh gửi chúng tới Gil’ead, không hề được huấn luyện và không có lưới phòng hộ, trong khi các anh biết chúng phải đối mặt với một Tà thần ư?
+</p>
+
+<p>
+ CHúng ta nghĩ Brom sẽ ở cùng họ. Nhưng ngay khi ông ta chết, chúng ta không thể chặn hai đứa nhỏ lại, vì chúng vẫn phải tới Gil’ead để tìm quân Varden.
+</p>
+
+<p>
+ “Đợi đã,” Eragon nói. “Vậy sự...thay đổi của con là do mọi người?”
+</p>
+
+<p>
+ Một phần. Chúng ta chạm vào hình ảnh phản chiếu giống loài ta khi các thần tiên triệu hồi nó trong buổi lễ. Chúng ta đã tạo hình ảnh, còn cái đó tạo nên sức mạnh cho câu thần chú.
+</p>
+
+<p>
+ Eragon nhìn xuống và nắm tay thành quyền trong giây lát. Nó không giận, nhưng lại bùng lên những cảm xúc khác. Saphira, Arya, thanh kiếm của nó, vẻ ngoài của nó – nó nợ những con rồng trong căn phòng này. “Elrun ono,” nó nói. Cám ơn.
+</p>
+
+<p>
+ Không có gì đâu con, Khắc tinh của Tà thần.
+</p>
+
+<p>
+ “người cũng giúp anh Roran nữa ư?”
+</p>
+
+<p>
+ Anh họ con không cần chúng ta giúp. Umaroth dừng lại. Chúng ta quan sát cả hai con, Eragon và Saphira trong nhiều năm liền. Chúng ta quan sát các con lớn lên từ khi còn là đứa bé tới khi trở thành một chiến binh dũng mãnh. Chúng ta tự hào vì các con. Con, Eragon, con là tất cả những gì chúng ta hy vọng ở một Kỵ sĩ mới. Còn con, Saphira, con đã chứng minh mình xứng đáng đứng vào hàng ngũ những con rồng vĩ đại nhất.
+</p>
+
+<p>
+ Sự vui sướng và tự hào của Saphira tràn ngập trong eragon. Nó quỳ một chân xuống, kể cả cô nàng cũng đặt chân xuống sàn và cúi gục đầu. Eragon muốn nhảy lên, la hét và ăn mừng nhưng nó kìm lại. Nó chỉ nói, “Thanh kiếm của con là của người...”
+</p>
+
+<p>
+ ♣ ♣ ♣
+</p>
+
+<p>
+ “Tới ngày tận thế,” họ đồng thanh nói. “Người muốn gì ở chúng cơn, Ebrithilar?”
+</p>
+
+<p>
+ Umaroth hài lòng. Ông rồng trả lời, Giờ các con đã tìm thấy chúng ta, những ngày trốn chạy của chúng ta đã kết thúc. Chúng ta sẽ cùng các con tới Urû’baen và sát cánh chống lại Galbatorix. Giờ là lúc rời tổ và đối diện với kẻ đập-trứng phản bội kia một lần cho xong. Không có chúng ta, hắn có thể mở toang đầu óc con dễ như chúng ta vừa làm. Vì hắn có rất nhiều Eldunarí dưới trướng.
+</p>
+
+<p>
+ Con không thể mang theo tất cả mọi người, Saphira nói.
+</p>
+
+<p>
+ Con không cần làm thế, Umaroth nói. Năm người sẽ ở lại trông chứng cùng với Cuaroc. Nếu chúng ta thua Galbatorix, họ sẽ không còn nhiều năng lương nhưng cũng đủ để chờ đợi tới lúc an toàn trở lại để chu du trong Alagaësia. Nhưng các con đừng lo lắng; chúng ta sẽ không trở thành gánh nặng cho con. Chúng ta sẽ cho con mượn sức.
+</p>
+
+<p>
+ “Ở đây có bao nhiêu người ạ?” Eragon hỏi và đảo mắt nhìn quanh phòng.
+</p>
+
+<p>
+ Một trăm ba mươi sáu. Nhưng đừng nghĩ chúng ta có thể đánh bại những Eldunarí bị Galbatorix nô dịch. Chúng ta quá ít, những người được chọn ở lại hầm mộ này hoặc quá già không thể hy sinh trong trận chiến hoặc quá trẻ và quá ít kinh nghiệm thực chiến. Chính vì thế ta mới ở lại đây với họ. Ta là cầu nối trong nhóm, ở mốc hiểu biết thông thường nếu không có sẽ là một sự thiếu sót. Những người già thông thái và có nhiều quyền năng. Nhưng trí óc họ đi lang thang theo những con đường kỳ lạ. Khó có thể thuyết phục họ tập trung vào những điều nằm ngoài giấc mơ. Những con rồng khác trẻ hơn và kém may mắn hơn: họ đã rời bỏ thân thể quá sớm. Chính vì thế đầu óc bị hạn chế theo kích thước của Eldunarí. Họ sẽ không thể lớn hơn khi đã rời bỏ cơ thể. Hãy để đó làm bài học cho con, Saphira, đừng từ bỏ Eldunarí của con. Trừ khi con đã đạt tới một kích cỡ đáng nể hoặc đối diện với sự nguy hiểm một sống một chết.
+</p>
+
+<p>
+ “Vậy là chúng ta vẫn kém hơn chúng,” Eragon ảo não nói.
+</p>
+
+<p>
+ Đúng đó Khắc tinh của Tà thần. Nhưng giờ Galbatorix không thể bắt con khuất phục ngay khi nhìn thấy con. Chúng ta có thể không đánh bại được chúng, nhưng chúng ta có thể cầm chân Eldunarí của hắn đủ lâu để con và Saphira làm những gì phải làm. Chúng ta biết nhiều điều, nhiều bí mật về chiến tranh và pháp thuật và cách thế giới xoay vần. Chúng ta sẽ dạy cho con những gì chúng ta có thể dạy. Có thể những kiến thức đó sẽ giúp con đánh bại nhà vua.
+</p>
+
+<p>
+ Sau đó, Saphira hỏi về những quả trứng. Ở đây có tổng cộng hai trăm bốn mươi ba quả. Hai mươi sáu quả đã được kết nối với các kỵ sĩ; số còn lại thì chưa. Sau đó họ nói chuyện về chuyến bay tới Urû’baen. Trong khi Umaroth và Glaedr đưa ra lời khuyên về cách bay nhanh nhất tới thành phố cho Saphira, người đàn ông đầu rồng tra kiếm vào bao, hạ khiên xuống và lần lượt đưa các Eldunarí trên tường xuống. Hắn đặt từng viên đá như ngọc đó vào một túi lụa sau đó nhẹ nhàng đặt trên nền nhà cạnh cái bình phát sáng. Eldunarí lớn nhất có kích cỡ kinh khủng. Người đàn ông mình sắt đầu rồng không thể ôm trọn tay quanh nó được.
+</p>
+
+<p>
+ Khi Cuaroc làm việc và bọn họ nói chuyện, Eragon vẫn thấy ngờ vực. Nó không dám mơ rằng còn có những con rồng trốn tại Alagaësia. Thế mà giờ họ ở đây như một phần của những năm tháng đã mất. Như thể câu chuyện của những người già biến thành sự thực. Nó và Saphira bị lạc giữa câu chuyện.
+</p>
+
+<p>
+ Cảm xúc của Saphira còn phức tạp hơn. Biết nòi giống không bị đe dọa tuyệt diệt nữa đã bỏ bớt gánh nặng trong lòng cô nàng – gánh nặng đã nằm đó rất lâu – và cô nàng quá vui mừng. Niềm vui ấy dường như khiến đôi mắt và vảy cô nàng sáng hơn bình thường. Nhưng, cô nàng vẫn có chút tự vệ vì cô nàng rất tỉnh táo đối mặt với Eldunarí.
+</p>
+
+<p>
+ Dù bị lạc trong cảm xúc, Eragon vẫn nhận thức thấy sự thay đổi cảm xúc của Glaedr; ông không hoàn toàn quên đi nỗi buồn, nhưng đây là khoảnh khắc hạnh phúc nhất của ông kể từ ngày Oromis mất. Và khi giờ đây Glaedr không khác gì Umaroth, ông đối xử với những con rồng khác với sự kính trọng mà Eragon chưa từng thấy, kể cả khi Glaedr nói chuyện với Nữ hoàng Islanzadí.
+</p>
+
+<p>
+ Khi Cuaroc gần hoàn tất công việc, Eragon đi tới cạnh cái bình và nhìn vào đó. Nó thấy một cần trục hình tròn chìm sâu trong tảng đá hơn ba mươi mét, mở vào một cái động chìm một nửa trong những viên đá phát sáng. Chất lỏng màu vàng đặc sệt nổi bóng như một chậu keo sôi. Khí bốc lên từ bề mặt. Nó nghĩ nó thấy một ánh sáng, như ánh sáng của một linh hồn bay trên bề mặt biển nham thạch. Nhưng nó biến mất quá nhanh khiến Eragon không dám chắc.
+</p>
+
+<p>
+ TỚi đây, Eragon, Umaroth nói khi người đàn ông đầu rồng đặt những Eldunarí cuối cùng vào túi. Con phải đọc thần chú ngay bây giờ. Như thế này này...
+</p>
+
+<p>
+ Eragon nhíu mày lắng nghe. “Cái gì...vặn ở câu thứ hai ạ? Con phải vặn cái gì cơ, không khí ư?”
+</p>
+
+<p>
+ Umaroth giải thích còn làm Eragon điên đầu hơn. Umaroth thử lại, nhưng Eragon vẫn không hiểu. Những con rồng già hơn khác cùng ní chuyện, nhưng giải thích của họ còn khó hiểu hơn. Vì họ chỉ truyền cho nó xem hàng loạt những hình ảnh, những cảm giác, những sự so sánh kỳ dị khiến Eragon hoang mang rối trí.
+</p>
+
+<p>
+ Saphira và Glaedr cũng choáng tương tự. Vì thế Eragon cũng thoái mải phần nào. Nhưng dù sao Glaedr cũng nói, Ta nghĩ là ta hiểu, nhưng cái này giống như là bắt một con cá đang sợ vậy. Cứ khi nào ta nghĩ ta bắt được nói, nó lại chuồi khỏi miệng ta.
+</p>
+
+<p>
+ Cuối cùng Umaroth nói. Đây là bài học dành cho lúc khác. Con biết câu thần chú dùng để làm gì nhưng không biết làm thế nào. Thế là đủ. Hãy lấy sức mạnh từ chúng ta và đọc thần chú. Sau đó chúng ta đi.
+</p>
+
+<p>
+ Eragon lo lắng nghĩ lại những từ ngữ trong đầu để tránh phạm lỗi. Sau đó nó bắt đầu đọc. Nó rút năng lượng từ Eldunarí. Da thịt nó ngứa ngáy khi dòng năng lượng khổng lồ truyền vào nó, như một dòng nước vừa nóng vừa lạnh.
+</p>
+
+<p>
+ Không khí xung quanh bao Eldunarí rung chuyển. Sau đó cái túi tự khóa miệng lại và biến mất. Một luồng gió thổi bạt tóc Eragon. Một tiếng thịch nho nhỏ vang lên trong phòng.
+</p>
+
+<p>
+ Eragon kinh ngạc quan sát Saphira ngửa đầu ra sau và bổ đầu vào chỗ những Eldunarí vừa biến mất. Họ biến mất hoàn toàn như chưa bao giờ tồn tại. Nhưng nó và cô em vẫn cảm nhận được tư tưởng của của những con rồng đang rất gần.
+</p>
+
+<p>
+ Một khi rời khỏi hầm mộ, Umaroth nói, lối vào túi không gian này lúc nào cũng ở gần các con trong một khoảng cách nhất định, trừ khi các con ở khu vực bị hạn chế hoặc khi có một cơ thể con người đi qua. Lối vào không lớn hơn một đầu kim, nhưng nó chết người hơn bất kỳ một thanh kiếm nào. Nó có thể cắt xuyên da thịt con nếu con chạm vào.
+</p>
+
+<p>
+ Saphira khụt khịt. Cả mùi của người cũng biến mất.
+</p>
+
+<p>
+ “Ai tìm ra cách thực hiện câu thần chú này thế?” Eragon ngạc nhiên hỏi.
+</p>
+
+<p>
+ Một ẩn sĩ sống ở bờ biển phía bắc Alagaësia cách đây hai trăm năm, Umaroth trả lời. Đây là một đòn hay nếu con muốn giấu một thứ gì khỏi con mắt người thường. Nhưng đồng thời nó rất khó và nguy hiểm buộc con phải làm chính xác. Sau đó con rồng im lặng. Eragon có thể cảm nhận ông ta đã tập trung suy nghĩ. Sau đó Umaroth nói, Giờ còn có một điều con và Saphira cần biết. Ngay khi con đi qua cổng vòm đằng sau kia – Cánh cổng Vergathos – con sẽ quên Cuaroc và những quả trứng. Khi con tới cánh cửa cuối đường hầm, tất cả những ký ức sẽ bị xóa sạch. Kể cả chúng ta, những Eldunarí cũng quên mất những quả trứng. Nếu chúng ta giết được Galbatorix, cánh cổng sẽ trả lại ký ức cho chúng ta. Nhưng cho tới lúc đó, chúng ta sẽ không biết gì. Umaroth dường như đang gầm lên. Ta biết, chuyện này...không vui, nhưng chúng ta không thể để Galbatorix biết về những quả trứng.
+</p>
+
+<p>
+ Eragon không thích, nhưng nó không thể nghĩ ra phương án hợp lý hơn.
+</p>
+
+<p>
+ Cám ơn đã nói cho chúng con biết, Saphira nói. Eragon cũng nói lời cám ơn.
+</p>
+
+<p>
+ Sau đó chiến binh kim loại vĩ đại, Cuaroc nhặt khiên lên, rút gươm và đi tới cái ngai xưa cũ rồi ngồi xuống. SAU khi đặt lưỡi gươm lên đùi và đặt khiên xuống cạnh ngai, hắn đặt tay lên hông và bất động như tượng, chỉ trừ những tia lửa nhảy múa trong đôi mắt đỏ thẫm đang chăm chăm vào những quả trứng.
+</p>
+
+<p>
+ Eragon rùng mình quay lưng khỏi cái ngai. Có cái gì đó ám ảnh và bóng người cô đơn nơi cuối căn phòng. Khi biết Cuaroc và những Eldunarí sẽ phải ở lại trông trừng trong một trăm năm nữa – có khi hơn – khiến Eragon khó lòng rời đi.
+</p>
+
+<p>
+ Tạm biệt, Nó dùng tư tưởng nói.
+</p>
+
+<p>
+ Tạm biệt, Khắc tinh của tà thần, năm tiếng thì thầm trả lời, Tạm biệt, Vảy sáng. Chúc các con may mắn.
+</p>
+
+<p>
+ Sau đó Eragon mở rộng vai. Nó cùng Saphira rảo bước đi qua Cánh cổng Vergathos và rời khỏi Hầm mộ của những Linh hồn.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-053.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-055.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

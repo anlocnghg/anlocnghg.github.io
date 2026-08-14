@@ -1,0 +1,839 @@
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<!--[if IE 7 ]>		 <html class="no-js ie ie7 lte7 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 8 ]>		 <html class="no-js ie ie8 lte8 lte9" lang="en-US"> <![endif]-->
+<!--[if IE 9 ]>		 <html class="no-js ie ie9 lte9>" lang="en-US"> <![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!-->
+<html class="js multiplebgs boxshadow cssgradients wf-klavikaweb-i7-active wf-klavikaweb-n7-active wf-sourcecodepro-n4-active wf-sourcecodepro-n7-active wf-active" lang="en-US"><!--<![endif]--><head data-live-domain="vnthuquan.net">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<link rel="SHORTCUT ICON" href="image/vnthuquan.ico">
+<title>Việt Nam thư quán - Thư viện Online</title>
+	<meta name="author" content="PHH - vnthuquan.net">
+	<meta name="description" content="Thu vien truyen, tho, Nhac, dien dan">
+	<meta name="viewport" content="width=device-width">
+	<link rel="stylesheet" href="vnthuquanmobil-Dateien/base.css">
+    <link rel="stylesheet" href="vnthuquanmobil-Dateien/danhsach.css">
+ <script language="javascript">
+function Truyendulieu_timkiem(){var theoObj=document.getElementById("theo");
+	var chuObj=document.getElementById("chu").value;
+	if (chuObj.length>2){
+		thong_so="theo=";
+		thong_so+=theoObj.options[theoObj.selectedIndex].value;
+		thong_so+="&chu=";thong_so+=encodeURI(chuObj.split(' ').join('+'));
+		Timkiemtruyen_moi('truyen/timkiem_trangchinh.aspx?','DisplayHTML("khungchinh")','POST',0, thong_so);
+		}
+		return true;	
+		}	
+				
+	</script>
+<script language="JavaScript" src="ajax_allconfig/xThuvien.js"></script>
+<script language="JavaScript" src="ajax_allconfig/xVntq.js"></script>
+	<script src="ajax_allconfig/amlich.js" type="text/javascript"></script>
+    <script src="ajax_allconfig/jquery-1.9.1.min.js"></script>
+    <script src="vnthuquanmobil-Dateien/scrolltopcontrol.js" type="text/javascript"></script>
+   
+<meta name="generator" content="WordPress 4.2.1">
+<style type="text/css">
+
+#khungchinh img {
+    width: auto;
+    height: auto;
+	padding: 3px;
+    border-radius: 9px;
+    border: 3px solid #ffffff;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 15px 40px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+    transform-origin: center;
+}
+
+
+#khungchinh img:hover {
+    transform: scale(1.1);
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.4), 20px 20px 60px rgba(0, 0, 0, 0.4);
+	
+@media (max-width: 768px) {
+    div#anhbia {
+        width: 100%; 
+        height: auto;
+    }
+
+    img {
+        transform: scale(1.2); 
+    }
+}
+@media (max-width: 576px) {
+    div#anhbia {
+        width: 100%; 
+        height: auto;
+    }
+}
+</style>
+</head>
+<body class="jquery">
+
+
+<header>
+	<section id="global-nav">
+		<nav>
+				<ul class="links l_tinynav1">
+					<li><a href="http://vnthuquan.org/">Home</a></li>
+					<li class="dropdown"><a href="#">Menu Thư viện</a>
+						<ul>
+							
+<li class="submenu"><a href="http://vnthuquan.org/truyen">Trang Truyện</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/Tho">Trang Thơ</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/nhac">Nhạc Online</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/Phim">Phim Online</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/anh">Tranh Ảnh</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/amthuc">Ẩm Thực</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/chuviet">Tiếng Việt</a></li>
+<li><a href="http://vietnamthuquan.eu/diendan">Diễn Đàn</a></li>
+
+
+						</ul>
+					</li>
+					<li><a href="#">Xoá</a></li>
+                    
+				</ul>
+			</div>
+		</nav>
+	</section>
+</header>
+
+<div id="container">
+	<div id="logo-events" class="constrain clearfix">
+		<h2 class="logo"><a href="http://vietnamthuquan.eu/" title="Thu Vien Online">Viet Nam Thu Quan</a></h2>
+        
+</div>
+		
+	
+
+	<nav id="main" class="constrain clearfix">
+		<div class="menu-top-container">
+	<ul id="menu-top" class="menu l_tinynav">
+<li class="home"><a href="http://vnthuquan.org/">Trangchính</a></li>
+<li class="submenu"><a href="http://vnthuquan.org/truyen">Trang Truyện</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/Tho">Trang Thơ</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/nhac">Nhạc Online</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/Phim">Phim Online</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/anh">Tranh Ảnh</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/amthuc">Ẩm Thực</a></li>
+<li class="submenu"><a href="http://vietnamthuquan.eu/chuviet">Tiếng Việt</a></li>
+<li class="offers"><a href="http://vietnamthuquan.eu/diendan">Diễn Đàn VNTQ</a></li>
+	</ul>
+</div>
+
+                   
+<form id="search-box" class="searchform">
+                    	<fieldset>
+                       
+                     <input onKeyUp="Truyendulieu_timkiem()" type="text" name="chu" id="chu" placeholder="Tìm Kiếm Sách..."> 
+                  </fieldset>
+				   
+	<select class="se-search" name='theo' id="theo">
+                        <option value='tua'>Tên Sách</option>
+                        <option value='tacgia'>Tác Gi&#7843; </option>
+                      </select> </form>
+	</nav>
+          
+       
+	<div id="content-wrapper" class="clearfix row">
+
+<div class="content-right twelve columns listing">
+	<div id="content">
+    <div id="ebookimg1" align="center"><img src="vnthuquanmobil-Dateien/images/thongtin.gif" class="noborder"/></div>
+		<article id="thanbai" class="hentry nenrong">
+<div id="noidung"><div>
+<div id="khungchinh" align="justify">
+	<div class="truyen_text">
+<p><strong>&quot;S&aacute;ch kh&ocirc;ng chỉ l&agrave; s&aacute;ch, ch&uacute;ng l&agrave; cuộc sống, l&agrave; tr&aacute;i tim v&agrave; hạt nh&acirc;n của những thời đại đ&atilde; qua, l&agrave; l&yacute; do m&agrave; con người lao động v&agrave; chết, l&agrave; cốt l&otilde;i v&agrave; tinh hoa của bao cuộc đời</strong>.&quot;</p>
+
+<p><em>&quot;For books are more than books, they are the life, the very heart and core of ages past, the reason why men worked and died, the essence and quintessence of their lives.&quot;</em></p>
+
+<p style="text-align:right"><em><strong>Marcus Tullius Cicero</strong></em></p>
+
+<p>&nbsp;</p>
+
+<p><strong>&ldquo;Một người m&ecirc; đọc s&aacute;ch sống h&agrave;ng ngh&igrave;n cuộc đời trước khi anh ta chết đi. Một người kh&ocirc;ng bao giờ đọc s&aacute;ch chỉ sống duy nhất một cuộc đời&rdquo;</strong></p>
+
+<p><em>&ldquo;A reader lives a thousand lives before he dies. The man who never reads lives only one&rdquo;</em></p>
+
+<p style="text-align:right"><em><strong>George R. R. Martin</strong></em></p>
+</div>
+
+<div class="hr">&nbsp;</div>
+
+<div class="chuto30" style="text-align: center;">&nbsp;</div>
+
+<div class="chuto30" style="text-align: center;">S&aacute;ch mới, s&aacute;ch đ&aacute;ng ch&uacute; &yacute;:</div>
+    
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/mua-do-epub-21917/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach09/21917_M%C6%AFA_%C4%90%E1%BB%8E__epub__20251120_0109.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>16.02.2024</h3>
+<h3>Mưa Đỏ</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Mưa Đỏ là một trong những tác phẩm tiêu biểu của nhà văn – cựu chiến binh Chu Lai, người được biết đến với phong cách văn chương đậm chất sử thi nhưng cũng đầy hiện thực và cảm xúc. Tác phẩm khắc họa chân thực và sâu sắc về cuộc chiến tranh chống Mỹ cứu nước, tái hiện một giai đoạn lịch sử oanh liệt nhưng cũng vô cùng khốc liệt, nơi những người lính trẻ phải đối mặt không chỉ với kẻ thù mà còn với nỗi đau, sự mất mát và cả cuộc chiến nội tâm. Với Mưa Đỏ, Chu Lai không chỉ kể lại chiến tranh, mà còn đặt ra những câu hỏi day dứt về lý tưởng, nhân tính và cái giá của hòa bình.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vietnamthuquan.eu/Phim/phim.aspx?tid=2qtqv3m3237n1n2n1n31n343tq83a3q3m3237nvn"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/Hinh%20bia%20phim/Mua_do_poster.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>20.11.2025</h3>
+<h3>Phim: Mưa Đỏ</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Mưa đỏ (tên đầy đủ: Mưa đỏ: Máu xương đổ xuống – Đất trời lưu danh; tiếng Anh: Red Rain) là một bộ phim điện ảnh Việt Nam thuộc thể loại lịch sử – chiến tranh – chính kịch ra mắt năm 2025 do Đặng Thái Huyền làm đạo diễn, được chuyển thể từ tiểu thuyết cùng tên của nhà văn Chu Lai và đồng thời lấy cảm hứng từ sự kiện 81 ngày đêm chiến đấu để bảo vệ Thành cổ Quảng Trị năm 1972.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/chuyen-nghe-cua-thuy-32711/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach09/Chuy%E1%BB%87n%20Ngh%E1%BB%81%20C%E1%BB%A7a%20Th%E1%BB%A7y.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>18.11.2025</h3>
+<h3>Chuyện Nghề Của Thuỷ</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Chuyện nghề của Thủy là một cuốn tự truyện của đạo diễn Trần Văn Thủy và Lê Thanh Dũng, xuất bản lần đầu năm 2013 bởi Nhà xuất bản Hội nhà văn và Công ty sách Phương Nam.<br>Tại thời điểm ra mắt, tác phẩm đã trở thành cuốn sách bán chạy cũng như nhận về nhiều phản hồi tích cực từ độc giả. Bản chuyển ngữ tiếng Anh của sách ra mắt tại Mỹ vào năm 2016.<br>Cuốn sách gồm 29 chương, là lời thuật lại của Trần Văn Thủy về quãng đời làm phim của ông, từ ấn tượng ban đầu với phim ảnh thuở nhỏ đến những ngày hoạt động gian khó trong chiến tranh để làm phim tài liệu; những khó khăn, ngăn trở bởi chính quyền trong quá trình làm hai bộ phim tài liệu nổi tiếng "Hà Nội trong mắt ai" và "Chuyện tử tế" cùng những dự án phim ảnh quốc tế của ông; các buổi hội thảo lớn về tác phẩm của đạo diễn và sự công nhận dành cho Trần Văn Thủy. Một số chương còn lại được viết bởi Lê Thanh Dũng – người ghi chép câu chuyện của Trần Văn Thủy thành sách – tâm sự về cuộc đời bạn mình. Một số chương của cuốn Nếu đi hết biển cũng được đưa vào sách.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/loan-tu-cuoc-doi-cua-mot-con-chim-phuong-hoang-31645/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/loan-tu-cuoc-doi-cua-mot-con-chim-phuong-hoang.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>06. 06. 2025</h3>
+<h3>Loan - Từ cuộc đời của một con chim phượng hoàng</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Loan – cái tên mang số phận một người phụ nữ có quãng đường đời thăng trầm trong cuộc sống. Từ một đứa trẻ bị xua đuổi, bị ruồng bỏ bởi gia đình của mình rồi trở thành những kẻ cô đơn. Tuy số phận nghiệt ngã, Loan – một trong hai cái tên được chọn trong cuộc đời – bất chấp khắc nghiệt thúc đẩy bởi cuộc sống, mang dấu hỏi của số phận tương lai, người phụ nữ ấy vững tin thay đổi số phận của chính mình và chính đó là hành trang kinh nghiệm, là khát vọng cuộc sống, đã thôi thúc niềm hy vọng tương lai xây dựng một thế giới tốt đẹp hơn so với thế giới của riêng cô – là thành quả, là điều tốt đẹp nhất mà cô dành cho các con.<br>Sách dựa trên một câu chuyện có thật với tựa sách “LOAN từ cuộc đời của một con chim Phượng Hoàng” – Nguyên bản Loan – Aus dem Leben eines Phonix của tác giả Isabelle Muller – là con gái của bà Đậu Thị Cúc, tự là Loan – nhân vật truyện. Đồng thời, tác giả chính là người thành lập Quỹ LOAN, một tổ chức phi lợi nhuận thực hiện các dự án giáo dục giúp đỡ trẻ em nghèo ở Việt Nam.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Nguyễn Đan Thanh</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/van-la-alice-31642/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinh%20bia%20sach/van-la-alice-lisa-genova.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>22. 05. 2025</h3>
+<h3>Vẫn Là Alice</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Alice là giáo sư đại học Harvard. Ở tuổi 50, cô có một sự nghiệp rực rỡ và gia đình đầm ấm cùng những đứa con thành đạt. Bất ngờ, một ngày nọ, cô được chẩn đoán mắc bệnh Alzheimer khởi phát sớm, khiến mọi thứ trong cuộc sống của cô đều đảo lộn. Alice và người thân đã làm thế nào để chống chọi lại căn bệnh quái ác này? Mời bạn đọc cùng đồng hành với hành trình chống chọi lại căn bệnh Alzheimer của nữ giáo sư Alice qua tiểu thuyết này nhé!</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/mo-hoi-cua-da-31633/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/mohoi-cua-da.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>20.05. 2025</h3>
+<h3>Mồ Hôi Của Đá</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Có những nhà văn dùng tiểu thuyết để nói lên thực trạng của cuộc đời, để miêu tả đời sống , để chứng minh cuộc đời hiện hữu.<br>Có những nhà văn dùng tiểu thuyết để cải tạo xã hội, minh định một lập trường, giãi bầy một khái niệm tư tưởng và hy vọng thông điệp của mình sẽ đến tay người đọc qua tác phẩm.<br>Nhật Tiến ở trong loại thứ nhì. Ông bắt đầu viết Mồ Hôi Của Đá tại trại tỵ nan Songkhla Thái Lan  từ năm 1980 rồi phải rời trại tỵ nạn sang định cư tại Hoa Kỳ. Do nhu cầu sinh sống, tác phẩm phải đình lại. Sự chậm trễ này là dịp  để Nhật Tiến suy nghĩ hêm về thực trạng quê hương. Vào năm 1988 khi tác phẩm ra đời, Mồ Hôi Của Đá mang những nhận xét mới về tình thế của quê hương, đất nước, chủ yếu ở phần kết ông đề nghị một con đường những người ở hai phía đã từng chiến đấu  dưới mầu cờ này hay mầu cờ khác cùng ngồi lại với nhau tìm một đường lối đấu tranh ôn hòa cho tự do, dân chủ . (Thụy Khuê)</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/manh-vo-8194/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/manh-vo-minato-kanae.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>30 . 04. 2025</h3>
+<h3>Mảnh Vỡ</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Những mảnh vỡ tưởng chừng như rời rạc được góp nhặt từ những câu chuyện quá khứ và hiện tại chồng chéo nhưng khớp nhau đến ngạc nhiên, đã vẽ lên bức tranh tổng thể về đời sống xã hội Nhật Bản, nơi chủ nghĩa ngoại hình được tôn vinh và con người quên đi những giá trị thực, lòng trắc ẩn cũng như hạnh phúc giản đơn. Suy cho cùng, vẻ đẹp ngoại hình không bất biến cả đời. Có những thứ sẽ dần hao tổn như làn da đàn hồi hay mái đầu óng ả, và cũng có những thứ sẽ thừa ra như bụng và eo, lưng và bắp tay, hết chỗ này đến chỗ nọ. Hãy cứ thoải mái với những gì mình có, đừng để người khác đặt ra tiêu chuẩn cho bản thân mình.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/tap-truyen-ngan-nguyen-ngoc-tu-31545/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/TruyenNganNguyenNgocTu.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>06 . 04. 2025</h3>
+<h3>Tập Truyện Ngắn Nguyễn Ngọc Tư</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Nguyễn Ngọc Tư, sinh năm 1976 tại Đầm Dơi, Cà Mau, là một trong những nữ nhà văn tiêu biểu của văn học Việt Nam hiện đại. Với niềm đam mê mãnh liệt dành cho nghệ thuật viết lách, bà đã cống hiến cuộc đời mình để khám phá và tái hiện những sắc thái đa dạng của cuộc sống qua từng trang văn. Các tác phẩm của bà nổi bật với giọng văn mang đậm hơi thở Nam Bộ, vừa mềm mại vừa sâu sắc, khắc họa chân thực cuộc sống và số phận của những con người miền quê sông nước. Nhờ sự nhạy bén và tinh tế trong cách miêu tả các hoàn cảnh éo le, đầy cảm xúc và gần gũi, Nguyễn Ngọc Tư đã trở thành một biểu tượng trong nền văn học đương đại Việt Nam. Hãy cùng Waka khám phá một số tác phẩm nổi bật của nhà văn Nguyễn Ngọc Tư trong bài viết dưới đây nhé!</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/tri-nho-suy-tan-31528/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/tri-nho-suy-tan.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>31 . 03. 2025</h3>
+<h3>Trí Nhớ Suy Tàn</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Chỉ vỏn vẹn ngoài trăm trang, nhưng “Trí nhớ suy tàn” tựa như một cuốn nhật ký do chính tay em viết. "Em" đã chép nhanh, chép vội vì những thứ không còn nhiều ấy sắp tan biến. Kể vội nhưng êm đềm, tạo cho người đọc một cảm giác không gấp, không hối hả như hoa điệp vàng cứ thả mình rơi trên phố. Đọc tác phẩm là đọc em lần cuối, một chút thương nhưng không lưu luyến, một khoảng buồn nhưng không trống trải. Em tan biến nhưng mãi hiện diện. Khi kết thúc, tôi chợt nhận ra rằng, chuyện của em là một quyển nhật ký không tác giả mang tên “Trí nhớ suy tàn”.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách, Ct.Ly, Thanh Vân</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/nhan-dau-mua-31522/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/nhan-dau-mua-xuan-tung.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>27 . 03. 2025</h3>
+<h3>Nhãn Đầu Mùa</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1"> Chuyển biến tâm lý của nhân vật trong truyện rất hay - cô gái trẻ bị giằng xé giữa bên tình bên nghĩa, bà mẹ thoát khỏi nếp nghĩ cũ để yêu con và yêu nước, các thanh niên nam nữ đấu tranh giữa ích kỷ cá nhân và hi sinh lớn lao vì đất nước. Các cảnh đánh giáp lá cà với lính Lê dương (giặc Pháp) cũng bị cắt/ làm giảm độ gay cấn. Truyện này cần được gán nhãn "Dành cho người trên 15 tuổi" :)) - truyện có rất nhiều cảnh chiến đấu rất thật với bối cảnh chiến tranh bấy giờ, nên phải nói rất bạo lực<br>Tình yêu trong truyện cũng rất trong sáng và lãng mạn, các nhân vật phá bỏ khỏi hủ tục, đấu tranh cho hạnh phúc bản thân. Mình đồng cảm với từng đôi lứa trong truyện và cả kết cục rất buồn nhưng rất đẹp của truyện.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/nguoi-vo-paris-31441/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/nguoi-vo-paris.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>17 . 03. 2025</h3>
+<h3>Người Vợ Paris</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Với nội dung về thời điểm những năm 1920 của cuộc gặp gỡ của Hadley Richardson với văn hào Ernest Hemingway tại Paris, “Người vợ Paris” đã tái hiện lại thời khắc đáng nhớ và cuộc tình sét đánh mau chóng đi đến hôn nhân của hai người chênh lệch tuổi tác. Hơn Hemingway 8 tuổi, Hadley đã ở bên văn hào này khi ông bắt đầu theo đuổi nghiệp văn chương. Họ đã trở thành cặp đôi vàng của giới viết lách Paris khi châu Âu vừa qua khỏi cuộc Thế chiến thứ I. Tiểu thuyết cũng khắc họa mối quan hệ của họ với một nhóm văn sĩ nổi danh tạo nên một “thế hệ mất mát” như Gertrude Stein, Ezra Pound và F. Scott Fitzgerald.<br>Mặc dù yêu nhau say đắm, nhưng vợ chồng Hemingway phải đối diện với những khủng hoảng của hôn nhân trong những năm tháng “hội hè miên man” của Paris, nhạc Jazz và rượu mạnh. Câu chuyện gây chú ý bởi đã bám sát những dữ kiện đời thực của Hadley Richardson và đưa ra cách quan sát từ góc nhìn người vợ của một văn hào được mệnh danh là cây bút có ảnh hưởng nhất trong văn học thế giới hiện đại</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/chi-dao-chi-ly-4302/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach08/Ch%E1%BB%8B%20%C4%90%C3%A0o%20Ch%E1%BB%8B%20L%C3%BD.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>17 . 03. 2025</h3>
+<h3>Chị Đào, Chị Lý</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Hai em Đào với Lý biết đi biết nói. Xẩn bẩn trong nhà chơi với nhau, vì con gái nên êm thắm chớ không chạy giỡn như con trai; lại trìu mến thương yêu nhau nên không rầy rà xích mích. Tuy vậy mà chị Hòa không chịu rời xa hai con, chị mướn một người đàn bà đi chợ nấu ăn để chị rảnh mà chăm nom săn sóc 2 đứa nhỏ, sớm mơi thay áo quần, trưa dắt vô tắm rửa, tối thì giũ mùng trải chiếu dỗ ngủ. Hai đứa nhỏ bận áo quần một thứ với nhau luôn luôn, ai cũng tưởng là con sanh đôi, không ai nghi điều chi hết, mặc dầu gương mặt không giống nhau, mà Đào thì vui vẻ nhậm lẹ, còn Lý thì trầm tĩnh ôn hoà, lại bộ tướng thanh bai yểu điệu hơn.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/ben-kia-vung-bien-sang-trang-31379/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/ben-kia-vung-bien-sang-trang-julianne-maclean.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>16 . 02. 2025</h3>
+<h3>Bên Kia Vùng Biển Sáng Trăng</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Sau nhiều năm chờ đợi, cuối cùng Olivia cũng phải buông bỏ niềm hy vọng mong manh rằng người chồng yêu dấu của mình có thể vẫn còn sống. Melanie Brown là một nhà vật lý học ngày đêm nghiên cứu về bí ẩn của Tam giác Quỷ Bermuda. Nhưng hứng thú nghiên cứu của cô dần mất khi mẹ của cô qua đời trong một tai nạn thương tâm. Để làm lại cuộc đời và cứu vãn sự nghiệp của mình, cô quyết định tìm đến một phòng khám tâm lý, và bất ngờ bước vào cuộc tình ngang trái với chính bác sĩ trị liệu của mình. Tưởng chừng như cuộc đời của hai người phụ nữ này chẳng liên quan, nhưng họ lại bất ngờ giao nhau ở một điểm.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/mua-xuan-den-31376/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/mua-xuan-den.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>14.02.2025</h3>
+<h3>Mùa Xuân Đen</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">“Mùa Xuân Đen” là tập hợp mười truyện ngắn của nhà văn người Mỹ Henry Miller, ra mắt độc giả lần đầu vào năm 1936 bởi Obelisk Press ở Paris, Pháp. Cuốn sách này đặt mình làm tác phẩm thứ hai của Miller sau “Tropic of Cancer” và trước “Tropic of Capricorn”. Miller viết “Mùa Xuân Đen” trong giai đoạn 1932-1933 khi ông đang cư trú tại Clichy, một vùng ngoại ô ở phía Tây Bắc của Paris. Không khác gì “Tropic of Cancer”, tác phẩm này được t dedicated cho Anaïs Nin.<br>Mặc dù “Mùa Xuân Đen” được xuất bản bởi Obelisk Press ở Paris vào năm 1936, nó đã không được phép xuất bản tại Hoa Kỳ cho đến năm 1963 do những nguyên tắc kiểm duyệt. Khi bản “Black Cat” của Grove Press được phát hành, một số truyện không bị coi là tục tĩu đã được tái bản trong các tập khác của Miller như “The Cosmological Eye”, do New Directions xuất bản. Các truyện khác đã xuất hiện trên tạp chí New Directions hàng năm, trong “New Directions in Prose and Poetry”.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/bai-vang-da-quy-tram-huong-31366/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/BaiVang%2CTram-NguyenTri.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>13.02.2025</h3>
+<h3>Bãi Vàng, Đá Quý, Trầm Hương</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Bãi vàng, Đá quý, Trầm hương là tập truyện của những trải nghiệm độc đáo, lạ lùng cùng những phận giang hồ và hảo hán gác kiếm. Với giọng văn và lối viết rất riêng, tác giả Nguyễn Trí đem lại cho độc giả chất Nam Bộ “không lạ mà lạ” của lời ăn tiếng nói thông thường. Nguyễn Trí dường như thừa kế mạch văn của Sơn Nam, có chút kỳ bí xa xưa hơn của truyện đường rừng Thế Lữ, Thanh Tịnh. Những câu chuyện thô phác nhưng kỳ thực lại rất có ý thức về chữ, những con chữ cứ tự nhiên xô đẩy mà dậy gắt lên xung đột mạnh mẽ.<br>Ngay cuộc đời của người viết cũng đã là một câu chuyện ly kỳ. Tác giả ở độ quá tuổi năm mươi, quê gốc Quảng Bình, sinh ra ở Bình Định, phiêu bạt từ Huế lên Tây Nguyên, vào Sài Gòn, hiện định cư ở Đồng Nai. Ông trải qua nhiều nghề như đi tìm trầm, đào đãi vàng, tìm đá quý, chặt củi đốt than, dạy tiếng Anh… rồi bây giờ làm thợ ở Đồng Nai để nuôi hai cháu nội.<br>Chính chất liệu cuộc sống của một con người làm đủ nghề đó đã là thế mạnh để Nguyễn Trí dựng nên những nhân vật giang hồ khét tiếng nơi rừng sâu ma thiêng nước độc, ham vàng mà nợ ngãi, cho đến những số phận công nhân hay gái làng chơi dựa vào nhau để tìm chút hạnh phúc tạm bợ. Người đọc bị hút vào mê hồn trận của những mánh lới, những quy tắc dị thường của dân đào vàng hay đao búa phố thị, vắt từ thời chiến tranh cho đến thời kỳ nườm nượp người tứ xứ đổ về các khu công nghiệp miền Đông Nam Bộ kiếm ăn bây giờ.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/cai-bong-kinh-hoang-31348/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach08/C%C3%A1i%20B%C3%B3ng%20Kinh%20Ho%C3%A0ng.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>13.02.2025</h3>
+<h3>Cái Bóng Kinh Hoàng</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Cái bóng kinh hoàng  là một cuốn tiểu thuyết trinh thám, đã được trao giải Marseillais và giải Cognac, là hai giải thưởng danh giá nhất ở Pháp dành cho thể loại tiểu thuyết trinh thám, hình sự.<br>Nội dung tiểu thuyết kể về Cloé, một cô gái xinh đẹp, cuốn hút, rất thành công và mạnh mẽ. Cô hiện làm Phó tổng giám đốc, và được đích thân Tổng giám đốc sắp về hưu thông báo là sẽ được thay thế ông. Chuyện tình cảm cũng đang thăng hoa, cô có một người tình hết sức ưng ý.<br>Một đêm, trên đường về nhà, cô bị một cái bóng bám theo. Và từ đó trở đi, lúc nào cô cũng có cảm giác đang bị theo dõi: đồ vật trong nhà bị xê dịch, một số thứ tự nhiên biến mất rồi lại xuất hiện, cô mất ngủ, căng thẳng, hoảng loạn, đi làm muộn, không tập trung, … Nhưng khi cô kể lại thì không ai tin, tất cả mọi người từ bạn bè, người yêu, thậm chí cả cảnh sát đều nghĩ cô có vấn đề về tâm thần.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/va-mua-thu-cham-cham-di-qua-31310/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/va-mua-thu-cham-cham-di-qua-thuy-duong.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>10.02.2025</h3>
+<h3>Và Mùa Thu Chầm Chậm Đi Qua</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">“Và Mùa Thu Chầm Chậm Đi Qua: Hành Trình Tâm Hồn Và Những Kỷ Niệm Đẹp”<br>Mùa thu là khoảnh khắc đầy lãng mạn và bình yên, nơi mà thiên nhiên cất lên những tác phẩm nghệ thuật tuyệt vời với sắc màu vàng óng. Cuốn sách “Và Mùa Thu Chầm Chậm Đi Qua” của tác giả Thùy Dương là một bức tranh đan xen giữa hạnh phúc và tâm hồn, lưu giữ những kỷ niệm tươi đẹp của một cô gái nhỏ trên cuộc hành trình từ làng quê ra phố.<br>Trang sách được viết bằng một lối văn nhẹ nhàng như cánh hoa lay động trong làn gió mùa thu. Thùy Dương đã dùng từ ngôn ngữ tinh tế để đắp lên những dòng chữ cảm xúc, làm nổi bật vẻ đẹp tinh khôi của quê hương, và đồng thời lột tả sâu thẳm tâm hồn cô gái nhỏ đang bước chân vào cuộc sống lớn.<br>“Và Mùa Thu Chầm Chậm Đi Qua” không chỉ là một tập nhật ký, mà còn là một hành trình tìm hiểu về tình yêu, về sự trưởng thành và về những giá trị đích thực trong cuộc sống. Từng trang sách là một cuộc hòa mình vào khung cảnh thiên nhiên thơ mộng, cùng với những chân tình và xúc cảm ngọt ngào.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/hieu-sach-cuoi-cung-o-london-31333/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach08/Hi%E1%BB%87u%20S%C3%A1ch%20Cu%E1%BB%91i%20C%C3%B9ng%20%E1%BB%9E%20London.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>12.02.2025</h3>
+<h3>Hiệu Sách Cuối Cùng Ở London</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Hiệu sách cuối cùng ở London là cuốn tiểu thuyết tình cảm hấp dẫn, là những trang sử ghi lại quãng thời gian khó khăn của người dân London trong Chiến tranh Thế giới thứ Hai. Được truyền cảm hứng từ quá khứ có thật của số ít hiệu sách còn tồn tại sau cuộc oanh kích của Đức quốc xã, cuốn sách đã kể lại một câu chuyện về những mất mát của thời chiến, về tình yêu và sức mạnh của văn chương giúp con người ta vượt qua giai đoạn đen tối nhất.<br>Cuốn sách đưa bạn quay trở lại thời điểm tháng 8 năm 1939, lúc ấy người dân London đang ráo riết chuẩn bị cho chiến tranh khi lực lượng của Hitler tràn qua châu Âu. Người hùng trong cuốn sách, Grace Bennett, là một cô gái luôn ấp ủ mong ước được chuyển đến London sinh sống. Khi cô cùng người bạn thân Viv đặt chân đến đây thì chiến tranh sắp sửa nổ ra. Hai cô gái đến sống cùng người bạn thân nhất của mẹ Grace, bà Weatherford, và cậu con trai của bà. Sau đó, Grace được giới thiệu tới làm việc tại hiệu sách Đồi Primrose. Vốn không phải là người được đọc nhiều sách do hoàn cảnh khách quan, cô chỉ dự định làm tại đó 6 tháng để xin được thư giới thiệu của ông chủ hiệu sách, rồi chuyển sang nơi khác làm việc cùng cô bạn thân.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/thanh-pho-di-vang-31306/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/ThanhPhoDiVangB.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>07.02.2025</h3>
+<h3>Thành Phố Đi Vắng</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Tôi viết truyện ngắn này sau một chuyến đi xa trở về. Bước xuống sân bay bất chợt thấy thời gian, không gian chẳng còn ý nghĩa gì nữa. Tôi tự hỏi đây có phải nơi chốn của mình không hay của ai khác? Tất cả trôi qua trong nháy mắt. Âm thanh vẫn còn đây mà không phải âm thanh quen thuộc ngày nào. Mùi con người đây mà không phải mùi con người ngày nào. Thực sự sợ hãi, chỉ còn tình yêu của tôi, chỉ còn anh bên cạnh nắm lấy tay tôi bảo đừng xa anh. Nhưng rồi chính trong giờ phút ấy tôi linh cảm thấy chúng tôi rồi sẽ xa nhau. Tình yêu và những cảm xúc như lớp màng mỏng phủ trùm lên mọi vật, nơi chốn thân quen, làm tất cả trở nên lấp lánh. Khi không còn tình yêu nữa con người bỗng thành cận thị bước đi trong màn mưa ướt nhòe vừa gần vừa xa. Sống mà như chết, vô cảm với bản thân, với mọi người, cảnh vật xung quanh. Không ai còn biết ai, không ai quan tâm đến ai và mỉm cười với ai. Tất cả chỉ trong nhắm, mở mắt, một thành phố đã đi vắng từ lúc nào. (Nguyễn Thị Thu Huệ)</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/sau-len-ngon-ai-31298/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/saulenngonai-LANKHAI.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>05.02.2025</h3>
+<h3>Sầu lên Ngọn Ải</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Đầu những năm 30 của thế kỷ trước, truyện đường rừng xuất hiện trên văn đàn có một sức thu hút mạnh mẽ với bạn đọc, nguyên do suốt thời kỳ trung đại cho tới ba thập niên đầu thế kỷ XX hình bóng cuộc sống và con người trong văn xuôi còn mờ nhạt. Sự xuất hiện các truyện đường rừng của Lan Khai là hiện tượng mới trong đời sống văn học. Năm 1936, tiểu thuyết Tiếng gọi của rừng thẳm của Lan Khai được Hội Trí tri trao giải nhất. Sau gần 15 năm đua sức cùng các cây bút Thế Lữ, Lưu Trọng Lư, Tchya, Nguyễn Tuân, Thanh Tịnh, Lý Văn Sâm, Vũ Trọng Phụng v.v... vào thế giới hoang vu, cuối cùng Lan Khai trở thành Người mở đường vào thế giới sơn lâm đi trước Tô Hoài, Nguyên Ngọc, Mạc Phi, Ma Văn Kháng, Vi Hồng, Nguyễn Huy Thiệp về mặt thời gian. Thế giới thiên nhiên, phong tục tập quán và con người miền núi trong các truyện đường rừng của Lan Khai gần gũi với mọi người, tạo nên sự đồng cảm giữa con người với con người trong cộng đồng các dân tộc Việt Nam. Các truyện đường rừng của Lan Khai chia làm hai loại chính: tiểu thuyết và truyện ngắn.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/buoc-den-tu-do-31286/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach08/B%C6%B0%E1%BB%9Bc%20%C4%91%E1%BA%BFn%20t%E1%BB%B1%20do.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>04.02.2025</h3>
+<h3>Bước đến tự do</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Tác phẩm Bước đến tự do được xuất bản lần đầu vào năm 1958, là những hồi ức của ông về sự kiện tẩy chay xe buýt ở bang Montgomery. Và đây, lần đầu tiên, phiên bản tiếng Việt sẽ được xuất bản tại Việt Nam.<br>Ông nói: "Tôi có một giấc mơ, rồi có một ngày khi đất nước này trỗi dậy để sống theo ý nghĩa thật của niềm xác tín của chính mình. Chúng ta tin rằng chân lý này là đầy trọn, ấy là mọi người sinh ra đều bình đẳng. Tôi có một giấc mơ, rồi có một ngày trên những ngọn đồi đất đỏ của Georgia, con của nô lệ và con của chủ nô sẽ ngồi lại cùng nhau bên bàn ăn của tình huynh đệ. Tôi có một giấc mơ, rồi có một ngày vùng đất hoang mạc Mississippi, bức bối vì hơi nóng của bất công và áp bức, sẽ chuyển mình để trở thành ốc đảo của tự do và công bằng. Tôi có một giấc mơ, rồi có một ngày bốn con nhỏ của tôi sẽ sống trong một đất nước mà chúng không còn bị đánh giá bằng màu da, mà bằng tính cách của chúng. Hôm nay, tôi có một giấc mơ...".</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/khoi-se-lam-mat-toi-cay-31024/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/khoi-se-lam-mat-toi-cay%20A.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>31.01.2025</h3>
+<h3>Khói Sẽ Làm Mắt Tôi Cay</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Tác phẩm thứ hai của Hoàng Công Danh, “Khói Sẽ Làm Mắt Tôi Cay,” là một bức tranh văn hóa tinh tế và sâu sắc về quê hương, nơi mà mỗi trang văn như những dòng thủ thỉ, nhẹ nhàng, thấm thía như những giọt sương buổi sớm. Tác giả không chỉ kể về những câu chuyện giản dị, mà còn chạm đến những khoảnh khắc tinh tế như bẫy chim và thả, sự lựa chọn tình cảm giữa trai gái tại phiên chợ Tết, hay mặt sông rực sáng đêm rằm trong ngọn khói thơm mỗi mùa.<br>Người đọc, dù là người quê hay xa quê, sẽ cảm nhận được sự gần gũi và đồng cảm với những câu chuyện, những nhân vật làm nên vẻ đẹp riêng của mỗi miền quê Việt Nam. Tác giả đã thành công trong việc chuyển tải cảm xúc, làm cho nhung nhớ của những người cùng quê trở thành cảm xúc chung của độc giả, và khiến những người xa quê cảm thấy mềm lòng trước vẻ đẹp đơn giản và chân thực của cuộc sống nông thôn.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Ct.Ly</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/dung-bao-gio-tu-bo-khat-vong-31168/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach08/%C4%90%E1%BB%ABng%20bao%20gi%E1%BB%9D%20t%E1%BB%AB%20b%E1%BB%8F%20kh%C3%A1t%20v%E1%BB%8Dng.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>24.01.2025</h3>
+<h3>Đừng bao giờ từ bỏ khát vọng</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">“Đừng bao giờ từ bỏ khát vọng” là quyển sách thứ hai của Nick Vujicic. Nguồn cảm hứng để anh viết cuốn sách này đến từ những người thuộc mọi lứa tuổi trên khắp thế giới, những người anh đã cho lời khuyên và hướng dẫn họ đương đầu với những thách thức trong cuộc sống. Từ những buổi diễn thuyết của Nick, họ biết rằng anh đã vượt qua nghịch cảnh, thậm chí vượt qua ý định tự vẫn đã thoáng hiện trong anh vài lần khi còn nhỏ, khi Nick vật vã với những câu hỏi làm thế nào để có thể tự nuôi sống mình, liệu anh có tìm được một người phụ nữ yêu anh hay không… khi anh chìm trong cảm giác buồn khổ và chán chường vì bị bắt nạt, bị chế giễu, và vì nhiều vấn đề khác, nhiều nỗi bất ổn khác bủa vây.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/ke-toi-pham-30989/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/KeToiPham-MacBich01.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>03.01.2035</h3>
+<h3>Kẻ Tội Phạm</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Vị chánh án lên tiếng ra lệnh cho buổi xử án bắt đầu như mọi phiên tòa trước đây.<br>Công tố viện mở đầu ngắn gọn tóm tắt vì sao có vụ xử án ngày hôm nay và những vụ án mạng khởi đầu từ nạn nhân Christine Baker ở Tyler. Ông công tố viên chưa kịp kể tiếp sang tên nạn nhân thứ hai thì bên dưới đã nghe tiếng khóc của một phụ nữ, chắc là gia đình của nạn nhân Christine Baker.<br> Mọi người xôn xao nhốn nháo. Vị chánh án phải ra lệnh cho giữ trật tự để phiên tòa được tiếp diễn.<br>Tiếng khóc lúc nãy bây giờ nhỏ hẳn đi chỉ còn là những tiếng sụt sùi.<br>Những người ngồi nghe bên dưới lần lượt được nghe công tố viện nhắc đến tên nạn nhân thứ hai là Olivia Ramirez. Rồi sang đến nạn nhân thứ ba là Sophia Lores.<br> Có lẽ những cái chết tức tưởi của những nạn nhân còn trẻ tuổi đã chết một cách oan nghiệt làm không khí trong tòa xử nặng nề hẳn lên.<br>Bị cáo Larry Cruz ngồi trên đó như một cái đinh cho mọi sự chú ý nhưng hắn ta cúi gầm đầu và không chút phản ứng nào, ngay cả những lúc tên của các nạn nhân được nhắc đến.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mặc Bích - Nguyễn Đình Phùng</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/ba-gioi-30944/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/ba_gioi.png" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>01.01.2025</h3>
+<h3>Bả Giời</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Viết về cuộc sống của những con người bình thường nếu không nói là tầm thường, nên ngôn ngữ giọng điệu của những con người ấy được Nguyễn Bình Phương thể hiện rất sinh động và chân thật trong tác phẩm của mình. Sống là tồn tại và suy tư, như Descartes nói: “Tôi tư duy, vậy tôi tồn tại” (Je pense, donc je suis). Nhân vật của Nguyễn Bình Phương sống trong những suy tư miên man về thân phận con người. Có lẽ hiếm có nhà văn Việt Nam nào như Nguyễn Bình Phương lại để nhân vật của mình trầm tư và suy nghĩ nhiều đến vậy. Bả Giời là một trong những tác phẩm thuộc giai đoạn đầu trong gia tài tiểu thuyết của Nguyễn Bình Phương. Cuốn sách tuy mỏng nhưng ẩn chứa trong đó là sức nặng của câu chữ. Nó cho ta nhận diện một gương mặt văn chương độc đáo, cá tính với văn phong mạnh và kết cấu lạ hóa. Đặc biệt là trong giai đoạn sôi động của văn chương sau Đổi mới, đầu những năm 90.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/tren-dinh-namsan-ngam-mat-troi-21584/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/tren-dinh-namsan-ngam-mat-troi-hoai-thanh.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>28.12.2024</h3>
+<h3>Trên Đỉnh Namsan Ngắm Mặt Trời</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Trên Đỉnh Namsan Ngắm Mặt Trời. Là hành trình trải nghiệm, khám phá đất nước Hàn Quốc của một cô gái không-biết-tiếng-Hàn. Cuốn sách là trải nghiệm của cá nhân tác giả Hoài Thanh kể về cuộc sống, học tập khi ở Hàn Quốc. <br>Trên đỉnh Namsan ngắm mặt trời sẽ cho bạn thấy du học là một cuộc chiến với chính mình, một cuộc chiến giữa lý trí và con tim. Hình ảnh chinh phục tháp Namsan cũng giống như chặng đường du học, có buồn vui, hạnh phúc, nản chí và những điều tốt đẹp sẽ đợi bạn trên đỉnh. Tháp Namsan chỉ là một trong nhiều “đỉnh tháp” bạn cần chinh phục trong cuộc đời này. Hãy can đảm bước đi để được sải rộng đôi cánh của mình!</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/mong-trinh-29885/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/Mong-Trinh-MB.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>27. 11 . 2024</h3>
+<h3>Mộng Trinh</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Mộng Trinh tên một người con gái, sớm đã phải rời quê hương định cư quê người, xứ lạ trôi nỗi theo giòng đời xuôi, ngược. Tuy đươc sống trong một xứ văn minh, giáo dục và tập tục khác với người Việt Nam, và cô đã lập gia đình theo lời "Cha mẹ đặt đâu con ngồi đó" nhưng cô đã làm tròn bổn phận người đàn bà , một người vợ, người mẹ Việt Nam nơi đất khách, mặc dầu có bao nhiêu người đã yêu mến cô từ lúc còn ở VN, ... và cho đến cuối cuộc đời cô cũng được tình yêu thương của chồng con.  </div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mặc Bích - Nguyễn Đình Phùng</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/khi-hoi-tho-hoa-thinh-khong-28932/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach01/Khi-Hoi-Tho-Hoa-Thinh-Khong.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>10.11.2024</h3>
+<h3>Khi Hơi Thở Hóa Thinh Không</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Khi hơi thở hóa thinh không là một tuyên ngôn dõng dạc của những bệnh nhân mắc phải căn bệnh quái ác nhất lịch sử nhân loại tới thế giới mà trong đó, tác giả Paul Kalanithi chính là đại diện cho những con người ấy - kiêu hãnh, mạnh mẽ và can đảm. Qua cuốn sách ta thấy được hành trình từ lúc phát hiện ra căn bệnh, khoảng thời gian giãy giụa, phủ nhận sự thật đến khi chấp nhận và cống hiến đến giây phút cuối cùng. Ta cũng thấy rõ bộ mặt của Cái Chết và cách mà Paul đã can đảm đối diện với nó. Cuốn sách như một chuyến tàu lượn siêu tốc, có đoạn cao trào nhưng cũng có khoảng an yên tĩnh lặng. Mời bạn cùng ngắm nhìn cuộc đời của bác sĩ, nhà văn Paul Kalanithi qua Khi hơi thở hóa thinh không.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt Sách</span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+   
+
+ 
+                                               <p><a href="http://vnthuquan.org/TacPham/britt-marie-da-o-day-26717/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach05/Britt%20Marie%20%C4%91%C3%A3%20%E1%BB%9F%20%C4%91%C3%A2y.jpg" style="border-style:solid; border-width:0pt; float:right; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>17 tháng 10 năm 2024</h3>
+<h3>Britt Marie đã ở đây</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">Britt-Marie không chịu được sự bừa bãi. Một cái khay đựng đầy dao kéo vô tổ chức luôn nằm ở đầu danh sách những tội ác không thể dung thứ của bà. <br>Bà không phải là kẻ đi phán xử khác người – bất kể họ là kẻ có cư xử kém văn hóa hay bê bối, hoặc khả nghi đạo đức. Chỉ là đôi khi người ta cứ suy diễn sai những gợi ý đầy tính giúp đỡ của bà như là sự chỉ trích, mà thực sự không phải ý định của bà. <br>Nhưng ẩn bên trong sự kỳ quặc về mặt xã hội và dáng điệu tất bật đó là một người phụ nữ có nhiều trí tưởng tượng, những đam mê bay bổng và một trái tim nồng hậu mà không ai xung quanh nhận ra.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt sách </span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+                                              
+
+ 
+    
+                                              <p><a href="http://vnthuquan.org/TacPham/ly-hon-tuoi-len-muoi-26718/"><img alt="" src="http://vietnamthuquan.eu/userfiles/images/hinhbiasach05/LY%20H%C3%94N%20TU%E1%BB%94I%20L%C3%8AN%20M%C6%AF%E1%BB%9CI.jpg" style="border-style:solid; border-width:0pt; float:left; height:100%; margin:7px; width:300px" /> </a></p>
+
+<h3>17 tháng 10 năm 2024</h3>
+<h3>LY HÔN TUỔI LÊN MƯỜI</h3>
+<div style="font-size: 20px;" class="truyen_text chuhoa1">“Em tên là Nojoud, và là người Yémen. Bị bố mẹ ép gả cho một người đàn ông nhiều gấp ba lần tuổi mình, em đã bị lạm dụng tình dục và bị đánh đập. Ba tháng sau đám cưới, em trốn khỏi nhà, đến tòa án và xin được ly hôn...”<br><br>Gây chấn động thế giới, câu chuyện có thật về vụ ly hôn ở tuổi lên mười của cô bé Nojoud là sự kiện hy hữu tại Yémen, nơi phân nửa các bé gái kết hôn dưới tuổi mười lăm mà không được ai biết đến. Trải qua quãng đường dài đầy nhọc nhằn, cam go để tìm tới công lý, trong nỗi lo sợ bị đe dọa và trong tâm trạng đau đớn vì phải tố cáo cả người thân, rốt cuộc Nojoud cũng gặp được những người có trái tim quả cảm. Cô được giúp đỡ để lên tiếng, và sau cô là nhiều cô bé Yémen đồng cảnh ngộ cũng được lên tiếng, phá tan im lặng và những cấm kỵ tàn nhẫn, tìm lại cho mình con đường sống tự do.<br>Trở thành một biểu tượng với câu chuyện tự thuật xúc động có một không hai đó, Nojoud còn là một trong 10 gương mặt của năm 2008 do tạp chí Glamour bầu chọn.</div>
+<div class="camonphai">-Xin ch&acirc;n th&agrave;nh cảm ơn bạn <strong><span style="color:rgb(0, 128, 128)">Mọt sách </span><span style="color:rgb(0, 128, 128)"> </span></strong>đ&atilde; gởi đến thư viện VN Thư qu&aacute;n t&aacute;c phẩm n&agrave;y.</div>
+
+<div class="hr">&nbsp;</div>
+
+
+
+
+ 
+ </div></div>   </div>
+	</article>
+<div class="pagination"><img src="vnthuquanmobil-Dateien/images/thu2.gif" class="noborder"/></div>	</div>
+	<div id="sidebar" align="center">
+   
+   <div class="hr"></div>  <div id="lich" align="center" class="khunglich">
+    <script language="javascript">
+
+	var MoS='';
+	var LastMoS='';
+	var sm;
+	var count;
+	
+	function findPosX(obj)
+	{
+		var curleft = 0;
+		if (obj.offsetParent)
+		{
+			while (obj.offsetParent)
+			{
+				curleft += obj.offsetLeft
+				obj = obj.offsetParent;
+			}
+		}
+		else if (obj.x)
+			curleft += obj.x;
+		return curleft;
+	}
+	
+	function HAll(){
+		if(MoS!='amlich'){
+		    var amlich = document.getElementById('amlich');
+			if (amlich) amlich.style.visibility="hidden";
+		}
+		
+	}
+	
+	function SSub(selId){
+		MoS=selId;
+		sm=document.getElementById(selId);
+		var m=findPosX(document.getElementById('Mamlich'))+ -20;
+		HAll();
+		sm.style.left=5+"px";
+		sm.style.top="143px";
+		sm.style.visibility="visible";
+	}
+	
+	function HSub(){
+		setTimeout('HAll()', 1000);
+	}
+
+</script>
+<script language="JavaScript">
+
+	showVietCal();
+
+</script>
+<img src="img3/logo3a0001.png" width="111" height="111" />
+<table width="140" height="131" border="0" cellpadding="0" cellspacing="0" background="img/lich1.jpg">
+                        <tr>
+                          <td style="cursor:hand; BORDER-RIGHT: 1px solid; BORDER-TOP: 5px solid; BORDER-LEFT: 1px solid" bordercolor="#000000" width="140" colspan="2" height="117" ><div id="Mamlich" onMouseOver="SSub('amlich');" onMouseOut="MoS=''; HSub();">
+                            
+                            <div align="center" class="lichthang"><font color="#006600">Tháng N&#259;m</font></div>
+                            
+                              <div align="center"  class="lichchung"><font color="#006600">Ngày</font></div>
+                              <div align="center"  class="lichngay"><font color="#006600">30</font></div>
+                              <div align="center"  class="lichthu"><font color="#006600">Th&#7913; B&#7843;y</font></div>
+                              <div align="center"  class="lichchung"> <font color="#006600">
+                                <script language="javascript" type="text/javascript">
+                        <!--
+                            document.write("<div><b>"+getDayAmlich()+ " th&#225;ng " + getMonthAmlich()+"</b> &#226;m l&#7883;ch"+" </div><div>"+ngayName(currentLunarDate) + "</div><div>"+ thangName(currentLunarDate)+"</div>");
+                        -->
+                    </script>
+                              </font></div>
+                          </div>
+                            <div id="amlich" class="smenu" display:none="display:none" onMouseOver="MoS='amlich';" onMouseOut="MoS='';HSub();" onClick="MoS='';HSub();">
+                              <script language="javascript" type="text/javascript">
+setOutputSize("small");
+document.writeln(printSelectedMonth());
+            </script>
+                            </div></td>
+                        </tr>
+                        <tr>
+                          <td align="right" style="BORDER-LEFT: 1px solid; BORDER-BOTTOM: 1px solid" 
+          bordercolor="#000000" width="112" height="2" class="lichnam"><font color="#006600"><b>
+                            <script language="javascript" type="text/javascript">
+                        <!--
+                            document.write("n\u0103m  "+getCanchi());
+                        -->
+                    </script>
+                          </b></font></td>
+                          <td height="2" with="28"><font face="Verdana"><img 
+            src="images/goclich.gif" alt="" width="28" height="22" 
+      border="0" /></font></td>
+                        </tr>
+                      </table>
+    </div>
+    
+          <hr>
+	<aside id="letrai" class="hentry nentruyentrai">
+    <div class="hr"></div>
+		<h2 class="widget-title"><a href="http://vnthuquan.org/Truyen/">Sách Truyện</a></h2>
+        <div align="center" class="nguon">Hi&#7879;n c&oacute; 25644 t&aacute;c ph&#7849;m</div>
+        <div class="new"></div>
+        
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnn3n31n343tq83a3q3m3237nvn">Cánh tay phải  của Tử Thần</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnntn31n343tq83a3q3m3237nvn">Ma thuật giết người sự kiện bộ</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnn2n31n343tq83a3q3m3237nvn">Côn Luân truyền thuyết - Thiên tẫn vân thương</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnnnn31n343tq83a3q3m3237nvn">Côn Luân truyền thuyết - Nguyệt ảnh truyện thuyết</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnn1n31n343tq83a3q3m3237nvn">Côn Luân truyền thuyết - Côn luân kiếp hôi</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnnvn31n343tq83a3q3m3237nvn">Tu La đạo</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntnnn0n31n343tq83a3q3m3237nvn">Lịch Sử Thế Giới Hiện Đại</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntn1nmn31n343tq83a3q3m3237nvn">Văn Miếu-Quốc Tử Giám Thăng Long</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntn1n4n31n343tq83a3q3m3237nvn">Thời Hùng Vương Và Bí Ẩn Lục Thập Hoa Giáp</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="truyen/truyen.aspx?tid=2qtqv3m3237nnnnntn1nqn31n343tq83a3q3m3237nvn">Chính Sử Trung Quốc Qua Các Triều Đại</a></li><div>
+                          
+        <h4><a href="truyen/default.aspx">Xem Tiếp »</a></h4>
+        <h2></h2>
+                      
+                      <div class="hr"></div>
+		<h2 class="widget-title"><a href="http://vietnamthuquan.eu/nhac/">Âm Nh&#7841;c</a></h2>
+        <div align="center" class="nguon">Hi&#7879;n c&oacute; 5662 B&#7843;n Nh&#7841;c </div>
+        <div class="new"></div>
+        
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6356&nhacsiid=1192&casiid=452">Nỗi buồn tàn phai</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6355&nhacsiid=1192&casiid=1720">Em Không Cần Phải Nói Em Yêu Tôi</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6354&nhacsiid=1312&casiid=1742">Cơm Đoàn Viên</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6353&nhacsiid=1192&casiid=1720">Tôi chờ em đã nửa cuộc trăm năm</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6352&nhacsiid=1311&casiid=1741">Tuổi Nàng Mười Lăm</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6351&nhacsiid=1311&casiid=1586">Tuổi Nàng Mười Lăm</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6350&nhacsiid=769&casiid=1740">Hai Quê</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6349&nhacsiid=1304&casiid=319">Mùa Xuân Đặt Tên</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6348&nhacsiid=769&casiid=1586">Hai Quê</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="Nhac/loinhac.aspx?tuaid=6347&nhacsiid=1288&casiid=1700">Thì Thôi Xuân Đến Chi</a></li><div>
+                          
+        <h4><a href="nhac/default.aspx">Xem Ti&#7871;p »</a></h4>
+        <h2></h2>
+                     
+                    <div class="hr"></div>
+		<h2 class="widget-title"><a href="http://vietnamthuquan.eu/tho/">Trang Th&#417;</a></h2>
+        <div align="center" class="nguon">Hi&#7879;n c&oacute; 20477 Bài Th&#417;</div>
+        <div class="new"></div>
+        
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21586&thisi=Từ Kế Tường">Mưa Chiều Cuối Năm</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21585&thisi=Nguyễn Ngoạt">Mùa Giáng Sinh Xa Xứ</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21584&thisi=Nguyễn Trung">mưa đầu đông</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21583&thisi=Lãng Thi">Có Chưa Hài Hòa</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21582&thisi=Sương Anh">MẸ ƠI!!! CON NHỚ...</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21581&thisi=Nhữ Mai Liêm">Sắc Mai Buổi Sớm</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21580&thisi=Cá Mặn">Hoa Tuyết Mùa Đông</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21579&thisi=Ngã Du Tử">Hạt Thơm Chừng Đã tách Mầm</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21578&thisi=Viễn Phương">Cảm Ơn Đời</a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="tho/tho.aspx?id=21577&thisi=Nguyễn Chu Nhạc">Nhũng Nhẵng Tháng Giêng</a></li><div>
+                          
+        <h4><a href="tho/default.aspx">Xem Tiếp »</a></h4>
+       
+                     
+		  <div class="hr"></div>
+		<h2 class="widget-title"><a href="http://vietnamthuquan.eu/nhac/">Ẩm Thực</a></h2>
+        <div align="center" class="nguon">Hi&#7879;n c&oacute; 2443 Món Ăn </div>
+        <div class="new"></div>
+        
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2593">Rau củ nhồi chà cá                                                                                                                                    </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2592">Chè mè đen                                                                                                                                            </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2591">Bánh giò                                                                                                                                              </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2590">BÁNH CUỐN NGỌT                                                                                                                                        </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2589">Cá hấp bia riềng                                                                                                                                      </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2588">Bánh cupcake cam                                                                                                                                      </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2587">Mì bò lạnh Hàn Quốc                                                                                                                                   </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2586">Chả giò thịt gà nhân nấm mỡ                                                                                                                           </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2585">Chân giò hầm kiểu Hàn Quốc                                                                                                                            </a></li><div>
+                          
+                            <div align="left"><li class="menutruyen"><a href="amthuc/monan.aspx?id=2584">Bánh bao                                                                                                                                              </a></li><div>
+                          
+        <h4><a href="amthuc/default.aspx">Xem Ti&#7871;p »</a></h4>
+         <div class="hr"></div>
+	</aside>
+    <h2></h2>
+    
+	</div>
+</div>
+
+	</div>
+</div>
+
+<footer>
+<div  align="center">
+<div id="sohuu" >
+ <h5>Nhóm qu&#7843;n tr&#7883;: Ct.Ly, Cumusic, Easyman, Huy&#7873;n B&#259;ng, KeDangGhet, Mercury, Mars, M&#7885;t Sách.</h5>
+        <h5>Nhóm &#273;i&#7873;u hành: B&#259;ng Nguy&#7879;t, Canary, Ct.Ly, Cumusic, Di&#234;n V&#7929;, Donation, Easyman, Ho&#224;ng Dung, HongYen, Huy&#7873;n B&#259;ng, James Jee, KeDangGhet, Kh&#225;nh Qu&#7923;nh, Kim_Bang_2, Lang Thang, Mars, Mickey, n.trang, NCD, nguyen.bamboo, Nguy&#234;n &#272;&#7895;, NKT, Phongvans, QV, Saomai1268, Sunflower, Thanh V&#226;n, Tommyboy, Viet Duong Nhan.</h5>
+        <h4>Bài vi&#7871;t và sách t&#7841;i vnthuquan.net, thu&#7897;c quy&#7873;n s&#7903; h&#7919;u c&#7911;a ng&#432;&#7901;i vi&#7871;t và c&#7911;a vnthuquan.net.</h4>
+            <h5>
+          • Copyright ©  2002 - 2026 <a href="http://vietnamthuquan.eu">Viet Nam Thu Quan</a> • Designed by Ph&#7841;m Huy Hùng •</h5>
+                        <h5> Trang S&#225;ch Truy&#7879;n hi&#7879;n c&#243; 
+                2529
+                ng&#432;&#7901;i &#273;ang online </h5>
+                <img src="img3/LOGO1d.png" width="100" height="57" />
+                <div class="chutoso">170187604</div>
+	</div></div>
+</footer>
+
+
+
+
+

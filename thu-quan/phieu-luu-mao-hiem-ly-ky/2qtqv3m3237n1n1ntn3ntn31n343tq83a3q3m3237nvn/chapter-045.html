@@ -1,0 +1,1366 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 45 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 45</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-044.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-046.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ “Aaaaaaaaaaa!”
+</p>
+
+<p>
+ “Cô có thề trung thành với ta hay không?”
+</p>
+
+<p>
+ “Không bao giờ!”
+</p>
+
+<p>
+ Câu hỏi và câu trả lời của hai bên cứ liên tục lặp lại như hai đứa con nít chơi trò chơi nhưng chỉ trừ có điều cô thua ngay cả khi thắng.
+</p>
+
+<p>
+ Nhờ việc này mà Nasuada còn tỉnh táo. Cô vẫn nắm được thế giới của mình – co có thể chịu đừng từng thời khắc trôi qua, vì chúng cho cô cơ hội nắm một cái gì đó khi mà mọi thứ khác đang vuột khỏi tầm tay. Những suy nghĩ, hành động, nỗi đau và sự nhẹ nhõm: cô sống nhờ vào những thứ đó. Không có chúng, có lẽ cô đã thua cuộc, trở thành một con cừu không có người chăn dắt, một con chiên mất lòng tin... một Kỵ sĩ xa rời con rồng.
+</p>
+
+<p>
+ Nhưng không may thay, diễn biến luôn kết thúc cùng một cách: với ngọn sắt nung đỏ.
+</p>
+
+<p>
+ Cô hét lên và cắn phải lưỡi, máu chảy tràn ra miệng. Cô ho, cố thông cổ họng nhưng có quá nhiều máu khiến cô bị sặc. Phổi cô cháy bỏng vì thiếu ô xi, và những đường viền trên trần nhà uốn éo và trở nên mờ nhạt, sau đó, ký ức của cô bay biến chảng còn lại gì, thậm chí chẳng còn màu đen.
+</p>
+
+<p>
+ Sau đó, Galbatorix nói với cô trong khi nung nóng thanh sắt.
+</p>
+
+<p>
+ Đó cũng là một phần trong diễn biến.
+</p>
+
+<p>
+ Lão chữa lành lưỡi cho cô – ít nhất là cô nghĩ đó là lão chứ không phải Murtagh – và nói. “Lưỡi cô mà đứt thì sao cô nói được? Làm sao ta biết khi nào cô đồng ý phục tùng ta?”
+</p>
+
+<p>
+ Như trước, lão bạo chúa ngồi bên phải, cô chỉ thấy hắn là một bóng người khuất trong bóng tối, ẩn dưới lớp áo choàng dài và nặng nề.
+</p>
+
+<p>
+ “Cô biết rằng ta đã gặp cha cô, khi ông ấy là người quản lý tài sản của Enduriel,” Galbatorix nói. “Ông ấy nói cho cô nghe chưa?”
+</p>
+
+<p>
+ Cô rùng mình và nhắm mắt cảm nhận nước mắt lăn ra từ khóe mi. Cô ghét nghe lão nói. Giọng nói của lão quá quyền lực, quá quyến rũ; nó khiến cô muốn làm tất cả những gì lão sai khiến.
+</p>
+
+<p>
+ “Đúng,” cô thì thào.
+</p>
+
+<p>
+ “Lúc đó ta hầu như không để ý nhiều tới ông ta. Vì sao ư? Ông ấy chỉ là một nô bộc, không ai để ý. Enduriel cho phép ông ấy có chút tự do, để quản lý cơ nghiệp cho hắn – nhưng hóa ra lại là tự do quá đáng.” Lão bạo chúa vung tay không chủ đích, và ánh sáng chiếu vào bàn tay gầy như móng vuốt của lão. “Enduruel luôn là người dễ tính. Con rồng của hắn mới quái tính; Enduriel thường làm theo những gì con rồng bảo...Thật là trò đùa kỳ lạ của số phận. Khó lòng mà tin được một người đàn ông chỉ soi mặt lên đôi giày bóng lộn của ta lại trở thành kẻ thù khó chơi nhất chỉ sau Brom, và giờ cô, con gái của ông ta, trở lại Urû’baen và sắp sửa phục mệnh ta, như cha cô. Thật là mỉa mai, phải không nhỉ?”
+</p>
+
+<p>
+ “Cha tôi đã trốn thoát và ông ấy đã suýt giết Durza,” cô nói. “Tất cả các câu thần chú và lời thề của ông không thể giữ ông ấy cũng như sẽ không ràng buộc được tôi.”
+</p>
+
+<p>
+ Cô nghĩ Galbatorix vừa nhíu mày. “Đúng, thật không may làm sao. Lúc đó Durza đã suýt mất mạng. Gia đình dường như dễ dàng giúp một con người thay đổi bản thân và tên thật của mình, vì thế sau này ta chọn tâm phúc là những kẻ không vướng bận gia đình. Nhưng, cô đã nhầm nếu nghĩ có thể tìm ra lỗ hổng trong lời chú của ta. Cách duy nhất thoát khỏi Căn Phòng của Nhà tiên tri là thề trung thành với ta hoặc là chết.”
+</p>
+
+<p>
+ “Vậy ta thà chết.”
+</p>
+
+<p>
+ “Thật là thiển cận.” BÓng bạo chúa nhoài về phía cô. “Cô đã bao giờ nghĩ tới thế giới này sẽ hỏng nếu ta không lật đổ các Kỵ sĩ chưa?”
+</p>
+
+<p>
+ “Các kỵ sĩ giúp thế giới hòa bình,” cô nói. “Họ bảo vệ Alagaësia không lâm vào cảnh nồi da nấu thịt, bệnh dịch hoành hành... khỏi các Tà thần. Lúc gặp nạn dịch hạch, họ mang thức ăn cho những người chết đói. Làm sao không có họ lại làm thế giới tốt đẹp hơn chứ?”
+</p>
+
+<p>
+ “Vì chúng ta phải trả giá cho sự phục vụ của họ. Cô và mọi người đều biết cái gì cũng có giá của nó, hoặc là bằng vàng, thời gian hoặc bằng máu. Không có gì mà không có giá, kể cả các Kỵ sĩ. Đặc biệt là các Kỵ sĩ.
+</p>
+
+<p>
+ “Đúng, họ giữ hòa bình, nhưng họ đàn áp mọi giống loài trên mảnh đất này, dù là tiên, người lùn hay thậm chí là con người. Những người hát rong thường ca ngợi họ cái gì nhỉ? Rằng họ trị vì hàng ngàn năm, rằng trong suốt ‘kỷ nguyên vàng’ đó rất ít có biến cố hoàng gia nào. Ồ, ở đây có những nguy hiểm nho nhỏ: tà thần ở đây, Urgal tấn công, hai bộ lạc người lùn xung đột vì một mỏ khoáng thạch nhưng chẳng ai quan tâm. Nhưng nhìn tổng thể, trật tự mọi thứ vẫn giữ nguyên như khi các Kỵ sĩ mới nắm quyền.”
+</p>
+
+<p>
+ Cô nhe có tiếng kim loại leng keng khi Murtagh đảo than trong lò. Cô ước gì cô thấy được khuôn mặt hắn để xem phản ứng của hắn trước những gì Galbatorix vừa nói, nhưng hắn vẫn đứng đó cúi mặt nhìn đống than hồng. Hắn chỉ nhìn cô khi nhấn que sắt nóng lên da thịt cô. Đó là những gì hắn làm và cô nghi hắn cần nó như cô cần những lời đáp trả Galabtorix của mình.
+</p>
+
+<p>
+ Galbatorix vẫn ra rả nói: “Thế không phải quá tàn ác hay sao Nasuada? Đời thay đổi nhưng các Kỵ sĩ vẫn xích chặt mảnh đất này không cho nó phát triển, hay thụt lùi theo quy luật tự nhiên... không thể trở thành một thứ mới mẻ. Ta tận mắt chứng kiến những công văn tại Vroengard và ở đó, ở Ilirea, rằng những phát hiện nhỏ nhặt nhất – về phép thuật, cơ khí, và những triết lý tự nhiên – bị các Kỵ sĩ giấu kín vì họ sợ điều xảy ra nếu ai cũng biết những kiến thức đó. Các Kỵ sĩ hèn nhát muốn đi theo lối mòn trong cách sống và tư duy. Họ cố gắng duy trì nó tới hơi thở cuối cùng. Có thể sự chuyên chế của họ mang lại hòa bình nhưng sẽ duy trì thế giới theo một hình thái tới mãi mái.”
+</p>
+
+<p>
+ “Nhưng giết người và phản bội có thực sự là giải pháp?” cô hỏi, không quan tâm hắn sẽ trừng phạt cô thế nào.
+</p>
+
+<p>
+ Lão cười, dường như hứng khởi. “Đạo đức giả! Cô buộc tội ta vì bất cứ điều gì cô nghĩ ra. Nếu có thể, cô nên giết ta ngay tại đây, đừng do dự. Cứ cho ta là một con chó dại mà giết đi.”
+</p>
+
+<p>
+ “Ông là kẻ phản bội còn tôi thì không.”
+</p>
+
+<p>
+ “Ta là kẻ chiến thắng. Thế là đủ. Chúng ta không khác nhau nhiều như cô nghĩ đâu Nasuada. Cô muốn giết ta vì cô tin cái chết của ta sẽ giúp Alagaësia tiến một bước mới và vì cô – một đứa nhỏ - tin rằng cô có thể trị vì Vương QUốc tốt hơn ta. Sự ngốc nghếch của cô sẽ khiến cho kẻ khác muốn trừ khử cô. Nhưng tất nhiên không phải ta. Ta đã chống lại Kỵ sĩ vì nguyên do tương tự, ta có quyền làm vậy.”
+</p>
+
+<p>
+ “Vậy ông không hề có ý định trả thù?”
+</p>
+
+<p>
+ Cô nghĩ lão cười. “Có thể ta xuất phát từ mục đích cá nhân nhưng hận thù hay trả thù không phải động cơ thúc đẩy của ta. Ta nghĩ về Kỵ sĩ là gì và rằng chỉ khi họ bị xóa sổ chúng ta mới lớn mạnh được.”
+</p>
+
+<p>
+ Trong một lúc cơn đau từ vết thương quá kinh khủng khiến cô không mở miệng nổi. Sau cùng cô cũng thì thầm: “Nếu những gì ông nói là thực – và tôi không có lý gì mà tin ông, nhưng nếu đúng là thật – vậy thì ông cũng đâu hơn các Kỵ sĩ. Ông cướp lấy thư viện và thu thập kho kiến thức của họ nhưng ông cũng không chia sẻ với một ai.”
+</p>
+
+<p>
+ Lão tới gần cô hơn, cô cảm thấy hơi thở lão bên tai. “Vì, trong những bí mật của họ, ta đã tìm thấy một sự thực vĩ đại hơn, một sự thật có thể trả lời cho bất kỳ câu hỏi nào trong lịch sử.”
+</p>
+
+<p>
+ Một cơn rùng mình chạy dọc xương sống cô. “Câu hỏi... nào?”
+</p>
+
+<p>
+ Hắn ngả người ra ghế và cầm lấy đuôi áo choàng. “Câu hỏi làm thế nào mà một vị vua hay nữ hoàng có thể ban hành luật lệ trị vì những sinh vật sử dụng pháp thuật. Khi ta nhận ra điều đó, ta đã bỏ qua những thứ khác và tự mình lần theo sự thật đó, câu trả lời đó, vì ta biết nó cực kỳ quan trọng. Vì thế ta giữ cho mình những bí mật của Kỵ sĩ rồng; vì ta còn bận nghiên cứu. Tới khi ta tìm ra câu trả lời ta sẽ công bố những bí mật kia. Thế giới này vốn là một nơi nhiều vấn đề và tốt nhất nên để nước lặng trước khi khuấy động nó lên... Ta mất gần một thế kỷ để tìm ra thông tin mình cần, và giờ khi đã có, ta sẽ dùng nó để thay đổi Alagaësia.
+</p>
+
+<p>
+ Pháp thuật làm thế giới này không có công bằng. Sẽ là công bằng nếu kẻ yếu có khả năng đó – nhưng không. Thường kẻ mạnh mới có khả năng dùng phép và họ có được nhiều hơn những người khác. Cứ nhìn thần tiên thì biết. Vấn đề này không chỉ ảnh hưởng tới một cá nhân mà còn gây ảnh hưởng tới quan hệ giữa các giống loài. Thần tiên dễ dàng duy trì trật tự xã hội hơn chúng ta vì hầu hết họ có thể sử dụng pháp thuật và rất ít trong số họ phải cần người khác ban ơn. Họ may mắn nhưng chúng ta, người lùn và kể cả Urgal thì không. Chúng ta chỉ có thể sống ở Alagaësia vì thần tiên đồng ý. Nếu họ muốn, họ có thể xóa sổ chúng ta khỏi mặt đất dễ dàng như cơn lũ cuốn phăng một tổ kiến. Nhưng giờ khi ta có thể đối địch với họ thì họ không thể làm được nữa.”
+</p>
+
+<p>
+ “Những Kỵ sĩ sẽ không bao giờ để họ giết hoặc đuổi chúng ta đi.”
+</p>
+
+<p>
+ “Không, nhưng hồi các Kỵ sĩ tồn tại, chúng ta phải sống dựa vào lòng nhân ái của họ và chúng ta không nên sống phụ thuộc vào sự gia ơn của kẻ khác. Các kỵ sĩ lúc đầu là công cụ duy trì hòa bình giữa tiên và rồng, nhưng cuối cùng, mục đích chính của họ lại là duy trì luật lệ trên mảnh đất này. Nhưng họ không đủ tài cán, cũng giống như những pháp sư của ta, Bàn ta đen. Vấn đề này là vấn đề nan giải. Cuộc đời ta là bằng chứng đây. Kể cả nếu có đủ lượng pháp sư sống trên Alagaësia – đủ để can thiêp vào những trường hợp lạm dụng quyền hành nhỏ nhặt nhất – chúng ta vẫn phải nhờ cậy vào những kẻ quyền lực hơn chúng ta. Mảnh đất này lúc đó chẳng an toàn hơn hiện giờ là bao. Không, để giải quyết vấn đề này, chúng ta phải tìm hiểu tới gốc rễ vấn đề. Những người cổ đại biết và giờ ta cũng biết.”
+</p>
+
+<p>
+ Galbatorix dịch người trên ghế và cô thấy ánh nhìn sắc lẹm trong mắt lão, nhờ ánh đèn hắt ra trong một hang động. “Ta sẽ khiến các pháp sư không thể làm hại người khác, dù đó là người, người lùn, hay thần tiên. Không ai được dùng thần chú trừ khi ta cho phép và chỉ có phép thuật phục vụ lợi ích con người mới được dùng. Kể cả thần tiên cũng bắt buộc phải theo và họ sẽ học được cách dùng từ đúng đắn hoặc câm họng lại.”
+</p>
+
+<p>
+ “Ai là người cho phép?” cô hỏi. “Ai sẽ quyết định nên dùng câu thần chú nào và không dùng câu nào? Ông ư?”
+</p>
+
+<p>
+ “Ai đó. Ta biết cái gì cần và ta tìm ra cách và ta sẽ thi hành. Cô nghi ngờ ư? Được, hãy tự hỏi mình, Nasuada: ta có phải một quân vương tồi không? Thành thực đi. Nếu chiếu theo người tiền nhận, ta không hề quá đáng.”
+</p>
+
+<p>
+ “Ông độc ác.”
+</p>
+
+<p>
+ “Không giống nhau.... Cô dẫn dắt Vardenl cô hiểu gánh nặng của người chỉ huy. Chắc chắn cô thấy được phép thuật đe dọa các Vương quốc thế nào? Ta cho cô một ví dụ. Ta đã nhiều lần tìm câu thần chú bảo vệ lãnh thổ. Nhưng chắc chắn sẽ có kẻ tìm được cách lách luật và cũng có kẻ tìm cách lừa tiền cả quý tộc lẫn dân thường. Vậy cô nghĩ vì sao ta phải cẩn trọng hạn chế sử dụng pháp thuật trong Vương quốc?”
+</p>
+
+<p>
+ “Vì ông sẽ gặp nguy.”
+</p>
+
+<p>
+ “sai! Cô hoàn toàn sai. Không gì đe dọa được ta. Không ai và không một cái gì. Nhưng những pháp sư là những kẻ đe dọa sự bình yên cho vương quốc và ta sẽ không dung thứ cho chúng. Một khi ta buộc tất cả các pháp sư trên thế giới thực hiện luật, hòa bình và trật tự sẽ được thiết lâp. Không một con người hay người lùn nào phải e dè thần tiên. Chúng ta không cần núp dưới bóng các Kỵ sĩ. Những kẻ bình thường không còn phải tôn thờ kẻ có pháp thuật. Alagaësia sẽ thay đổi, và với sự an toàn mới thiết lập này, chúng ta sẽ xây nên một tương lai hoành tráng hơn, và cô có thể trở thành một phần trong đó.
+</p>
+
+<p>
+ “Phục tùng ta, Nasuada và cô sẽ có cơ hội thấy sự kiến tạo thế giới này – một thế giới con người dựa nào sức mạnh cơ bắp và ý chí chứ không phải phép thuật. Con người có thể tập luyện để khỏe mạnh và rèn luyện ý chí nhưng không phải ai sinh ra cũng có khả năng dùng phép. Như ta đã nói, phép thuật thiếu tính công bằng và vì sự tốt đẹp, ta sẽ hạn chế khả năng của các pháp sư.”
+</p>
+
+<p>
+ Cô nhìn những đường kẻ trên trần nhà và cố lờ lão đi.Lão nói rất nhiều thứ giống với suy nghĩ của cô. Lão đúng: pháp thuật là năng lực có sức hủy diệt thế giới này nhất, và nếu ban hành điều luật hạn chế dùng pháp thuật, Alagaësia sẽ trở nên tốt hơn. Cô ghét phải thừa nhận không có gì có thể ngăn Eragon khỏi...
+</p>
+
+<p>
+ Xanh. Đỏ. Những màu sắc đan xen trên thảm. Cơn đau nhói. Cô tuyệt vọng cố tập trung vào những thứ khác. Dù cô có nghĩ gì thì thứ đó cũng không tồn tại.
+</p>
+
+<p>
+ “Cô cho ta là quỷ dữ. Cô nguyền rủa tên ta và tìm cách hạ bệ ta. Nhưng hãy nhớ, Nasuada: ta không khơi mào chiến tranh và ta không chịu trách nhiệm cho những kẻ chết trong trận chiến ấy. Ta không phải kẻ khơi mào. Cô cơ. Ta giành thời gian nghiên cứu, nhưng Varden cứ cố lấy cắp quả trứng của Saphira khỏi kho báu của ta và cô cũng những kẻ đồng bọn của cô phải chịu trách nhiệm cho cảnh đầu rơi máu chảy. Cô là kẻ đã reo rắc tang thương trên miền đất này, chứ không phải ta. Và giờ cô lại to mồm kêu ta sai! Nếu cô vào thăm những người nông dân, họ sẽ nói cho cô hay họ sợ nhất là Varden. Họ sẽ nói cho cô nghe họ trông mong binh lính của ta bảo vệ họ thế nào và họ hy vọng Triều đình sẽ đánh bại Varden và mọi chuyện lại trở về như cũ thế nào.”
+</p>
+
+<p>
+ Nasuada liếm môi. DÙ cô biết sự cứng đầu của mình sẽ phải trả giá thế nào nhưng cô vẫn nói, “Tôi thấy ông phản biện quá nhiều...Nếu sự thịnh vương là mối quan tâm chính của ông, vậy ông nên đầu hàng Varden từ hàng tuần trước, thay vì để quân đội đi lại lung tung. CHỉ có khả năng ông không chắc chắn như ông đang giả bộ. Hoặc ông sợ thần tiên sẽ chiếm lại Urû’baen khi ông bỏ đi?” Như một thói qune. Cô nói về Varden như thể cô chỉ là một người bình thường nghe danh về họ thôi vậy.
+</p>
+
+<p>
+ Galbatorix nhúc nhích và cô biết hắn định đáp lời nhưng cô chưa nói xong.
+</p>
+
+<p>
+ “Và Urgal nữa chứ? Ông không thể thuyết phục tôi rằng mục đích khi xóa sổ cả một giống loài là để xoa dịu nỗi đau khi mất đi con rồng đầu tiên. Ông có câu trả lời không, kẻ Phản bội?...Giờ nói cho tôi nghe về những con rồng đi. GIải thích vì sao ông giết hại quá nhiều khiến chúng gần như lâm vào tuyệt diệt. Và cuối cùng, hãy giải thích cách ông dùng các Eldunarí một cách sai trái đi.” Trong cơn giận dữ, cô để cho mình nói ra một điều. “Ông đã buộc họ cúi mình làm theo những gì ông muốn. Ông sai, ích kỷ và thèm khát quyền lực.”
+</p>
+
+<p>
+ Galbatorix đánh giá co một lúc. Sau đó cô thấy hắn khoanh tay. “Ta nghĩ sắt đủ nóng rồi. Murtagh, nếu ngươi có thể...”
+</p>
+
+<p>
+ Cô nắm chặt tay, móng tay chọc vào da, không khống chế nổi cơ bắp đang run lên. Một trong những thanh sắt chạm vào vành lò than khi Murtagh kéo nó ra. Hắn đối mặt với cô, và cô không thể không nhìn chằm chằm vào đầu sắt nóng đỏ. Sau đó cô nhìn vào mắt Murtagh. Cô thấy sự tội lấy và đau đớn trong đó, cô cũng cảm nhận nỗi buồn đang dâng lên trong cô.
+</p>
+
+<p>
+ Chúng ta thật ngốc, cô nghĩ. Những kẻ ngốc đáng thương yếu đuối.
+</p>
+
+<p>
+ Sau đó, cô không còn sức mà nghĩ và thế là cô làm theo tiến trình cũ, bám vào đó mà sống như một người chết đuối bám láy cọc.
+</p>
+
+<p>
+ Khi Murtagh và Galbatorix rời đi, cô quá đau đớn chỉ còn sức nhìn mông lung lên hoa văn trên trần nhà trong khi cố không khóc. Cô đổ mồ hôi và run lẩy bẩy, như thể đang lên cơn sốt. Cô không thể tập trng vào một thứ trong vài giây. Cơn đau không hề thuyên giảm như khi cô bị cắt hay bị thâm tím; ngược lại, cơn đau tỉ lệ thuận với thời gian.
+</p>
+
+<p>
+ Cô nhắm mắt và tập trung thở chậm lại cho bình tĩnh.
+</p>
+
+<p>
+ Lần đầu tiên Galbatorix và Murtagh tới, cô rất dũng cảm. Cô chửi bới họ và làm tất cả những gì có thể để khiến họ tổn thương. Nhưng, sau những màn tra tấn của Murtagh và Galbatorix, cô đã dần dần hết hứng phản kháng ra ngoài. Sắt nóng làm cô sợ hãi; dù những ký ức về nó thôi cũng đủ khiến cô muốn cuộn tròn lại thành một quả bóng nhỏ. Trong lần thăm thứ hai gần đây nhất, cô đã nói ít nhất có thể.
+</p>
+
+<p>
+ Cô đã cố thử xem có thực sự Galbatorix và Murtagh không lừa cô. Cô đã hỏi họ về những công việc Triều chính, những điều gián điệp đã báo cáo cô trừ những điều Gabatorix không tin rằng cô biết. Tới giờ, Galbatorix và Murtagh vẫn nói thật, nhưng cô không tin bất cứ điều gì nhà vua nói khi cô không có bằng chứng lão nói thật.
+</p>
+
+<p>
+ Cô không chắc về Murtagh. Khi đi cùng nhà vua, cô không tin những gì hắn nói, nhưng khi hắn tới một mình...
+</p>
+
+<p>
+ Vài giờ sau cuộc gặp mặt đau đớn đầu tiên với Bạo chúa Galbatorix – khi cô đã ngủ lơ mơ một lúc lâu – Murtagh tới một mình, mắt mờ và hơi thở có mùi rượu. Hắn đứng trước khối đá cô nằm, và hắn nhìn chằm chằm cô với biệu hiện lạ lùng, khiến cô không chắc hắn định làm gì.
+</p>
+
+<p>
+ Cuối cùng, hắn quy người bước tới bức tường gần nhất và trượt ngồi xuống. Hắn ngồi đó, bó gối lên gần ngực, mái tóc dài nhờn bóng của hắn che gần hết khuôn mặt, máu chảy ra từ đốt ngón tay phải. Sau vài phút, hắn cho tay vào trong áo choàng nâu 0 hắn vẫn mặc nguyên bộ đồ cũ chỉ có điều không đeo mặt nạ - và lấy ra một chai đá nhỏ. Hắn uống vài ngụm rồi bắt đầu nói.
+</p>
+
+<p>
+ Hắn nói còn cô nghe. Cô không còn lựa chọn nhưng cô không cho phép mình tin lời hắn. Lúc đầu thì không. Theo như những gì cô biết, những gì hắn nói và làm đều nhằm chiếm lòng tin của cô.
+</p>
+
+<p>
+ Murtagh bắt đầu bằng việc kể cho cô nghe về một người đàn ông tên Tornac, về tai nạn và vài lời khuyên Tornac cho hắn về một người đàn ông nên sống như thế nào. Cô không thể biết Tornac là bạn, kẻ tôi bộc, người họ hàng xa hay kết hợp của mấy thứ đó. Nhưng dù ông ta là gì, rõ ràng ông ta rất quan trọng với Murtagh.
+</p>
+
+<p>
+ Khi hắn kể gần hết hắn nói, “Galbatorix định giết cô. Lão biết Elva không bảo vệ cô nhưng trước, vì thế hắn quyết định giờ là thời khắc hoàn hảo để ám sát cô. Tôi chỉ tình cơ biết được kế hoạch đó; tôi tình cờ ben cạnh lão khi lão ra lệnh cho Bàn tay đen.” Murtagh lắc đầu. “Đó là lỗi của tôi. Tôi thuyết phục lão đưa cô tới đây. Lão thích nó; lão biết cô sẽ khiến Eragon đâm đầu vào rọ nhanh hơn...Nhưng chỉ có cách đó tôi mới cứu được cô... Tôi xin lỗi...Tôi xin lỗi.” Và hắn vùi đầu vào cánh tay.
+</p>
+
+<p>
+ “Tôi thà chết còn hơn.”
+</p>
+
+<p>
+ “Tôi biết,” hắn nói bằng giọng khàn khàn. “Cô tha thứ cho tôi nhé?”
+</p>
+
+<p>
+ Cô không trả lời. Cô cảm thấy khó chịu. Vì sao hắn lại muốn cứu mạng cô, và hắn muốn cô làm gì cho hắn?
+</p>
+
+<p>
+ Murtagh không nói gì thêm. Sau đó, hắn kể cô nghe về lần hắn bị diễu tới trước Galbatorix, về việc lão đã không tin và ghen tị thế nào khi gặp con trai của Morzan, về những tên quý tộc muốn dùng hắn để chiếm được sự sủng ái của nhà vua, và niềm khao khát người mẹ hắn hầu như không nhớ mặt. Hai lần hắn nhắc tới Eragon và chửi cậu ta vì được định mệnh ưu ái. “Hắn sẽ không làm tốt nếu như chúng tôi đổi vị trí. Nhưng mẹ chúng tôi đã chọn hắn để đưa tới Carvahall, chứ không phải tôi.” Hắn vỗ lên sàn nhà.
+</p>
+
+<p>
+ Coo thấy toàn bộ màn diễn đều là tự khóc thương bản thân, là điểm yếu của hắn không có gì ngoài mong sự thương cảm từ cô cho tới khi hắn kể lại Cặp song sinh đã bắt hắn khỏi Farthen Dûr thế nào và chúng đã xử tệ với hắn thế nào trên đường tới Urû’baen, và Galbatorix đã tra tấn hắn thế nào. Hắn kể ra vài trò tra tấn còn tệ hơn của cô và, nếu thật sự có, khiến cô có chút thương cảm cho hắn.
+</p>
+
+<p>
+ “Tôi sống được là nhờ có Thorn...” Cuối cùng hắn thừa nhận. “Khi cu cậu nở ra vì tôi và chúng tôi kết nối....” hắn lắc đầu. “Tôi yêu nó. Sao lại không thể yêu nó chứ? Tôi yêu nó như Eragon yêu Saphira. Giây phút tôi chạm vào nó tôi đã lạc lối. Galbatorix dùng nó để chống lại tôi. Thorn mạnh hơn tôi. Nó chưa bao giờ từ bỏ. Nhưng tôi không thể trơ mắt nhìn nó chịu đau vì thế tôi đã thề trung thành với nhà vua, và sau đó...” Môi Murtagh cong lên vì kinh sợ. “Sau đó, Galbatorix đi vào trong tư tưởng tôi. Lão biết mọi thứ về tôi, sau đó hắn biết tên thật của tôi. Giờ tôi là của lão...Mãi mãi.”
+</p>
+
+<p>
+ Sau đó hắn dựa đầu vào tường, nhắm mắt và cô thấy nước mắt chảy ra từ khóe mắt hắn.
+</p>
+
+<p>
+ Sau dần hắn đứng lên, khi bước về cửa, hắn dừng lại cạnh cô và chạm vào vai cô. Cô để ý móng tay hắn sạch sẽ và hồng hào, nhưng không được chăm sóc kỹ lưỡng như gã cai ngục. Hắn nói gì đó bằng ngôn ngữ cổ và một lát sau, cơn đau của cô bay biến, dù vết thương vẫn như cũ.
+</p>
+
+<p>
+ Sau đó hắn rút tay thì cô nói. “Tôi không thể tha thứ...nhưng tôi hiểu.”
+</p>
+
+<p>
+ Nghe tới đó hắn gật đầu và đi mất, để lại cô phân vân không biết có phải mình đã tìm ra đồng minh mới không.
+</p>
+
+<p>
+ Cuộc nổi loạn nhỏ.
+</p>
+
+<p>
+ Khi Nasuda đặt mình lên phiến đá, run lẩy bẩy và vã mồ hôi, cơ thể cô đau ê ẩm. cô ước Murtagh quay trở lại, giải phóng cô khỏi sự đau đớn tột cùng về thể xác lẫn tinh thần này.
+</p>
+
+<p>
+ cuối cùng cánh cửa dẫn tới buồng giam mở ra, cô không thể ngăn cản mình nghỉ ngơi, nhưng cô đã vô cùng thất vọng khi nghe thấy tiếng bước chân xáo trộn của gã cai ngục đang đi xuống cầu thang dẫn vào phòng
+</p>
+
+<p>
+ Gã đàn ông đậm người có bờ vai hẹp,lần trước khi gã xuất hiện, đã để mặc cho vết thương do cô gây ra chảy máu, rồi băng lại bằng 1 chiếc khăn tay. Khi hắn tháo cùm cho cô để đưa cô đi vệ sinh, cô đã cố gắng đoạt lấy con dao trên khay thức ăn, nhưng cô nhận ra mình không còn chút sức lực nào. Thay vì hành động, cô chấp nhận rằng mình phải cám ơn sự giúp đỡ của hắn, và lần thứ hai, khen ngợi móng tay hắn. bộ móng tay ấy thậm chí còn sáng bóng hơn so với lần đầu tiên cô thấy và rõ rang là hắn muốncô thấy, bởi hắn luôn để tay ở nơi cô k với tới đc, nhưng lại nhìn thấy được.
+</p>
+
+<p>
+ Sau khi hắn cho cô ăn và rời đi, cô đã cố gắng ngủ, nhưng sự đau đớn của những vết thương làm giấc ngủ cứ chập chờn.
+</p>
+
+<p>
+ Mắt cô bừng tỉnh khi nghe thấy chốt cửa phòng giam mở ra.
+</p>
+
+<p>
+ Không phải là 1 lần nữa chứ! – cô nghĩ, và sợ hãi
+</p>
+
+<p>
+ Không phải sớm vậy chứ! Mình không thể nào chịu đựng được nữa, mình không đủ mạnh mẽ. sau đó cô kìm chế nỗi sợ hãi và tự nhủ: không, đừng nói bất kỳ điều gì, bằng không mày sẽ bắt đầu tin họ mất. Mặc dù cô vẫn hoàn toàn kiểm soát ý thức và cảm xúc, cô cũng không thể ngăn quả tim cô đập loạn xạ. tiếng bước chân 1 ai đó vọng lại trong căn phòng, và Murtagh xuất hiện. Anh ta không đeo mặt nạ, và trông có vẻ ủ rũ. Lần trước anh ta đã chữa lành vết thương cho cô, cảm giác khi thoát khỏi sự đau đớn, nó giống như là 1 điều hạnh phúc. Trong cuộc đời cô, chưa khi nào cô có cảm xúc mãnh liệt giống như khi mọi nỗi đau về tinh thần và thể xác được giải phóng.
+</p>
+
+<p>
+ Cô thở hổn hển xúc động nói: “ cảm ơn”
+</p>
+
+<p>
+ Murtagh gật đầu, bước qua bức tường và ngồi xuống đúng nơi lần trước anh ta ngồi.
+</p>
+
+<p>
+ Cô nhìn anh trong phút chốc. da ở ngón tay anh đã lành trở lại. Anh xuát hiện với dáng vẻ nghiêm trang, dù ít nói và rầu rĩ. Bộ quần áo lành lặn, giờ đây xuất hiện những vết sờn, vết rách, và những miếng vá. Cô nhận ra một vài vết cắt ở mặt bên cánh tay áo.
+</p>
+
+<p>
+ Cô tự hỏi, có phải anh vừa trải qua 1 trận chiến.
+</p>
+
+<p>
+ “ Galbatorix có biết anh ở đây?”- cô hỏi.
+</p>
+
+<p>
+ “ có thể, nhưng tôi không tin lắm. Ông ta còn đang bận rộn với những người đàn bà. Hoặc la Ông ấy đang ngủ, bây giờ chẳng phải là nửa đêm sao. Tôi đã đặt 1 câu thần chú để không ai có thể nghe thấy chúng ta nói gì. Ông ấy có thể phá vỡ câu thần chú ấy, nhưng khi ấy, tôi sẽ biết”
+</p>
+
+<p>
+ “ chẳng may ông ta tìm thấy chúng ta”
+</p>
+
+<p>
+ Murtagh nhún vai
+</p>
+
+<p>
+ “ ông ta có thể tìm thấy chúng ta, nếu ông ta làm suy yếu sự phòng vệ của tôi “
+</p>
+
+<p>
+ “ đừng để ông ta làm điều đó. Anh mạnh mẽ hơn tôi, và anh không có thứ gì mà ông ta có thể uy hiếp. anh có thể chống lại ông ta, không như tôi….lực lượng Varden đang đến gần, các thần tiên cũng vậy, họ đang đến từ phương bắc. nếu anh có thể chịu đựng them 1 vài ngày, chúng ta sẽ có cơ hội….cơ hội giải phóng cho a”
+</p>
+
+<p>
+ “ cô không tin họ có thể làm được điều đó đúng k?”
+</p>
+
+<p>
+ Murtagh lại nhún vai
+</p>
+
+<p>
+ “…..và giúp tôi trốn thoát”
+</p>
+
+<p>
+ Một tràng cười lớn phát ra từ miệng Murtagh.
+</p>
+
+<p>
+ “ bằng cách nào? Tôi chẳng thể làm gì mà không có lệnh của Galbatorix”
+</p>
+
+<p>
+ “ anh có thể nới lỏng dây trói cho tôi, và khi đi ra, hãy quên khóa cửa”
+</p>
+
+<p>
+ Môi trên anh ta nhếch lên, vẻ cười khinh bỉ: “ có 2 người đàn ông canh gác ngoài kia, và có những sự phòng vệ được thiết lập trong căn phòng này, cảnh báo cho Galbatorix nếu có 1 tù nhân nào trốn thoát. Cũng có hang trăm binh lình từ đây cho đến cánh cổng gần nhất. Cô chắc hẳn là rất may mắn nếu đến được tiền sảnh”
+</p>
+
+<p>
+ “có thể, nhưng tôi muốn thử”
+</p>
+
+<p>
+ “cô sẽ tự giết chết bản thân mình”
+</p>
+
+<p>
+ “ giúp tôi, nếu a muốn, a có thể đánh lừa sự phòng vệ của lão”
+</p>
+
+<p>
+ “ tôi không thể. Lời thề không cho phép tôi dùng phép thuật chống lại lão”
+</p>
+
+<p>
+ “thế còn những người lính, hãy nghĩ đi? Nếu anh cầm chân chúng đủ lâu để tôi tới được cánh cổng, tôi có thể ẩn nấp trong thành phố, và sẽ không còn là vấn đề nữa khi Galbatorix biết…..”
+</p>
+
+<p>
+ “ thành phồ này là của ông ta. Ngoài ra, dù cô đi đâu, ông ấy cũng có thể tìm ra cô chỉ bằng 1 câu thần chú. Cách duy nhất cô có thể an toàn là cách xa nơi đây trước khi lão biết, nhưng cô không thể làm được điều ây, thậm chí ngay cả khi cô bay trên lưng rồng”
+</p>
+
+<p>
+ “ phải có cách nào đó”
+</p>
+
+<p>
+ “ nếu có….” Anh ta cười chua xót và nhìn xuống “thì là đừng nghĩ đến nó nữa”
+</p>
+
+<p>
+ Thất vọng, cô nhìn chằm chằm lên trần nhà trong giây lát. “ ít nhất, hãy cởi những cái cùm cho tôi”
+</p>
+
+<p>
+ Anh ta thở dài.
+</p>
+
+<p>
+ “ như thế tôi có thể đứng dậy” – cô nói “ tôi ghét phải nằm trên tảng đá này và ngước nhìn anh, nó làm tôi mỏi mắt”
+</p>
+
+<p>
+ Anh ta lưỡng lự, rồi sau đó đứng dậy, lại gần phiến đá, và bắt đầu tháo những dây trói xung quanh cổ tay và cổ chân cô: “ đừng nghĩ cô có thể giết tôi”-anh ta thì thầm “ cô không thể”
+</p>
+
+<p>
+ Ngay khi cô được tự do, anh ta trở lại vị trí ban đầu, ngồi trên sàn nhà, nhìn chằm chằm vào khoảng không. Cô nghĩ, đó là cách anh ta thử dành cho cô 1 chút riêng tư khi cô ngồi dậy và đung đưa chân qua 1 bên phiến đá. Quần áo cô rách tả tơi, và thật khó để che kín toàn bộ thân thể.
+</p>
+
+<p>
+ Sàn nhà bằng đá cẩm thạch thật lạnh lẽo dưới bàn chân cô,khi cô lại gần Murtagh và ngồi xuống bên cạnh anh. Cô vòng 2 tay ôm lấy mình, vẻ dịu dành thùy mị.
+</p>
+
+<p>
+ “ Tornac có phải là người bạn từ thủa thiếu thời duy nhất của anh?” – cô hỏi.
+</p>
+
+<p>
+ Murtagh vẫn không nhìn về phía cô. “ không, nhưng anh ấy còn thân thiết hơn cả cha tôi. anh ấy dạy dỗ rôi, dỗ dành tôi…. Mắng mỏ tôi khi tôi quá kiêu ngạo, và cứu tôi khỏi những điều ngớ ngẩn do chính tôi tạo ra, rất nhiều lần, nhiều hơn cả những gì tôi có thể nhớ được. nếu anh ấy còn sống, anh ấy hẳn sẽ đập tôi vài phát cho đến khi tôi choáng váng như 1 thàng say hôm nọ”
+</p>
+
+<p>
+ “ anh nói anh ấy đã chết khi anh chạy trốn khỏi Ure’bean?”
+</p>
+
+<p>
+ Anh ta cười hố hố: “ tôi đã nghĩ là tôi thong minh. Tôi đã hối lộ 1 tên lích gác để hắn bỏ ngỏ 1 bên cổng. chúng tôi định trốn ra khỏi thành phố trong bóng đêm, và chúng tôi tin rằng, khi Galbatorix biết được chuyện gì xảy ra, thì đã quá muộn để bắt chúng tôi lại. ông ta đã biết ngay từ đầu. nhưng bằng cách nào, tôi không rõ, tôi đoán ông ta đã bói cầu tôi mọi lúc. Khi tôi và Tornac qua khỏi cánh cổng, những người lính đã chờ chúng tôi ở đó. Họ được lệnh mang chúng tôi về, không trầy xước, nhưng chúng tôi đã chiến đẫu, và 1 trong số họ đã giết Tornac. Kiếm sĩ tài ba nhất trong vương quốc đã ngã xuống bằng 1 con dao từ sau lưng”
+</p>
+
+<p>
+ “ nhưng Galbatorix đã để anh thoát”
+</p>
+
+<p>
+ “ tôi nghĩ ông ấy cho rằng chúng tôi sẽ không chiến đấu. Ngoài ra, đêm đó, Galbatorix đã bị thu hút đến 1 nơi nào đó”
+</p>
+
+<p>
+ Nasuda cau mày khi nhìn thấy nụ cười khểnh trên khuôn mặt Murtagh
+</p>
+
+<p>
+ “ tôi đã tính thời gian” – anh ta nói. “ đó là khi lũ Ra’zac xuất hiện tại thung lũng Palancar, tìm quả trứng của Saphira. Và cô thấy đấy, Eragon đã mất người cha dượng của mình, gần như cùng lúc khi tôi đánh mất Tornac. Số phận thật là hài hước, cô có nghĩ vậy không?”
+</p>
+
+<p>
+ “ phải…..nhưng Galbatorix có thể bói cầu anh, và sao lão không theo dõi anh, và mang anh về Ure’bean sau đó?”
+</p>
+
+<p>
+ “ lão muốn chơi đùa với tôi, toi nghĩ vậy. tôi tới sống tại 1 trang trại của 1 người mà tôi tin là có thể tin tưởng được. và như những lần trước, tôi lại phạm sai lầm, dù tôi chỉ biết điều đó sau này, khi cặp song sinh mang tôi về. Galbatorix biết tôi ở đâu, và ông ta biết tôi vẫn còn tức giận về cái chết của Tornac, vì thế ông ta tạm để tôi ở lại điền trang, trong khi đang săn lung Eragon và Brom…. Tôi đã làm lão ngạc nhiên, tôi rời đi, và trong khi lão đang tìm hiểu sự biến mất của tôi, tôi đã đến Dras_Leona. Đó là lý do tại sao Galbatorix đến Drax-Leona. Đó không phải là để trừng phạt bá tước Tabor vì hành động của ông ta, mặc dù lão đã làm thế- mà là để tìm tôi. Nhưng ông ta đã đến trễ. Khi ông ta đến Dras-leona, tôi đã gặp Eragon và Saphira, và trên đường đến Gil’ead”
+</p>
+
+<p>
+ “ tại sao anh lại rời đi?” – Nasuda hỏi
+</p>
+
+<p>
+ “ Eragon chưa từng kể cho cô nghe sao, bởi vì…”
+</p>
+
+<p>
+ “ không, không phải Dras-leona. Tại sao anh lại rời khỏi điền tranh đó? Anh an toàn ở đó, hoặc anh cũng đã cho là vậy. vậy tại sao anh lại rời đi?”
+</p>
+
+<p>
+ Murtagh im lặng trong giây lát. “ tôi muốn tra thù Galbatorix, và tôi muốn tạo nên tên tuối cho mình, hoàn toàn tách biệt với tên tuổi của cha tôi. Toàn bộ cuộc đời tôi, mọi người nhìn tôi với ánh mắt khác biệt, vì tôi là con trai của Morzan. Tôi muốn mọi người tôn trọng tôi vì những việc tôi làm, chứ không phải vì cha tôi” Murtagh quay lại nhìn Nasuda, một cái nhìn thoáng qua ngoài tầm mắt “ tôi cho rằng tôi có những gì tôi muốn, nhưng lại 1 lần nữa, số phận thật là nực cười”
+</p>
+
+<p>
+ Cô tự hỏi liệu còn ai trong số những quần thần của Galbatorix mà hắn quan tâm tới, và rồi cô quyết định, đây là 1 đề tài hết sức nguy hiểm để nói đến.
+</p>
+
+<p>
+ Vì thế, cô hỏi “ Galbatorix có biết nhiều về Varden?”
+</p>
+
+<p>
+ “ tất cả, nhiều hơn những gì tôi có thể nói. Ông ta có nhiều gián điệp hơn cô tưởng”
+</p>
+
+<p>
+ Cô thắt chặt vòng tay quang bụng khi bụng cô sôi lên. “ anh có biết làm thế nào giết được Galbatorix không?”. “ một con dao, 1 thanh kiếm, một mũi tên. Thuốc độc. phép thuật. tất cả những cách thông thường. vấn đề là lão có quá nhiều những câu thần chú bảo vệ, không ai hay 1 thứ gì có thể làm hại lão. Eragon may mắn hơn mọi người. Lão không muốn giết cậu ấy, và vì thế, cậu ấy có nhiều cơ hội tấn công lão hơn những người khác. Nhưng dù Eragon có tấn công lão cả trăm lần, Eragon cũng sẽ không tìm ra cách nào vượt qua được sự phòng vệ của lão”
+</p>
+
+<p>
+ “ mọi câu đố đều có lời đáp, và mọi con người đều có điểm yếu” Nasuda khẳng định. “ lão có yêu bất kỳ ai trong số những người đàn bà của lão”
+</p>
+
+<p>
+ Vẻ mặt của Murtagh trả lời cho cô tất cả. sau đó anh ta nói “ có quá tệ không nếu Galbatorix tiếp tục làm vua? Thế giới mà ông ta mong muốn là 1 thế giới tốt đẹp. nếu ông ta đánh bại Varden, toàn cõi Alagaesia sẽ hòa bình. Ông ta sẽ đặt dấu chấm hết cho sự lạm dụng phép thuật, thần tiên, người lùn và cả con người sẽ không còn lý do để căm ghét lẫn nhau. Còn gì hơn nữa, nếu Varden thất bại, tôi và Eragon sẽ ở bên nhau như anh em. Còn nếu Varden thắng, điều đó có nghĩa là tôi và Thorn phải chết. chẳng phải vậy sao”
+</p>
+
+<p>
+ “ ồ, thế còn tôi” – Nasuda hỏi “ nếu Galbatorix thắng, tôi sẽ thành nô lệ và phục tùng mọi mệnh lệnh mà ông ta muốn à?” Murtagh từ chối trả lời, nhưng cô thấy cơ trên cánh tay anh căng lên “ anh không thể từ bỏ, Murtagh”
+</p>
+
+<p>
+ “ tôi còn lựa chọn nào khác không” anh ta hét lên, âm thanh vọng khắp căn phòng.
+</p>
+
+<p>
+ Cô đứng dậy và nhìn chằm chằm vào anh. “ anh có thể chiến đấu. nhìn tôi đây….nhìn tôi đây”.
+</p>
+
+<p>
+ Anh ta miễn cưỡng nhìn lên.
+</p>
+
+<p>
+ “ anh có thể tìm cách chống lại hắn. đó là điều anh có thể làm. Ngay cả khi lời thề chỉ cho anh 1 sự phản kháng nhỏ nhất. 1 sự phản kháng nhỏ nhất cũng có thể trở thành sự sụp đổ của lão” cô nhắc lại câu hỏi của anh để nhấn mạnh “ anh còn sự lựa chọn nào khác không? Anh có thể trải qua cảm giác cùng cực, khốn khổ và vô dụng trong phần đời còn lại của anh. Anh có thể để Galbatorix biến anh thánh 1 con quái vật. hoặc anh có thể chiến đấu.” cô chìa rộng cánh tay cho anh thấy những vết bỏng “ anh có muốn làm tôi bị thương không?”
+</p>
+
+<p>
+ “ không” – anh ta la lên.
+</p>
+
+<p>
+ “ vậy thì hãy chiến đấu đi. Anh phải chiến đấu, hoặc anh sẽ mất tát cả mọi thứ của anh, cả Thorn”. Cô giữ nguyên vị trí, trong khi anh bật dậy trên đôi chân của mình, uyển chuyển như 1 con mèo, tiến lại phía cô đến khi chỉ còn cách vài centimet. 2 hàm răng nghiến chặt, trong khi anh nhìn trừng trừng về phía cô, thở dồn dập qua lỗ mũi. Cô nhận thấy cảm xúc của anh ta, thứ mà cô đã nhiều lần nhận thấy trước kia. Đó là dáng vẻ của 1 người đàn ông có niềm kiêu hãnh bị xúc phạm, người muốn tấn công bất ngờ kẻ đã xúc phạm anh ta. Thật là nguy hiểm khi thúc giục anh ấy, nhưng cô biết cô phải làm vậy, vì cô có thể sẽ không có cơ hội làm lại điều đó.
+</p>
+
+<p>
+ “ nếu tôi có thể tiếp tục chiến đấu” – cô nói “ anh cũng có thể”
+</p>
+
+<p>
+ “ quay lại tảng đá”- anh ta nói 1 cách gay gắt.
+</p>
+
+<p>
+ “ tôi biết anh không phải kẻ nhát gan. Chết vinh quang còn hơn làm 1 tên nô lệ cho 1 kẻ như Galbatorix. Ít nhất anh cũng có thể làm được vài điều tốt đẹp, và tên anh sẽ được nhắc đến như là thước đo cho long tốt và sự tử tế sau khi anh chết”
+</p>
+
+<p>
+ “ quay lại tảng đá” anh ta gầm lến, tóm lấy cô bằng tay và kéo lê cô về phía phiến đá.
+</p>
+
+<p>
+ Cô để cho anh đặt cô lên phiến đá, buộc dây trói quanh cổ tay và cổ chân cô, thít chặt dây da quanh đầu cô. Sau khi làm xong, anh đứng lại nhìn cô. Ánh mắt đen hoang dại, mọi đường nét trên cơ thể anh như sợi dây thừng được kéo căng ra.
+</p>
+
+<p>
+ “ anh phải quyết định rằng anh có sẵn sang mạo hiểm cả mạng sống để cứu lấy chính mình hay không? – cô nói “ cả anh và Thorn, và anh phải quyết định ngay bây giờ, khi vẫn còn thời gian. Hãy hỏi chính bản thân mình, điều gì Tornac muốn anh làm?”
+</p>
+
+<p>
+ Không trả lời, Murtagh đặt bàn tay phải lên ngực cô, bàn tay ấm áp chạm vào da thịt cô. Sự tiếp xúc làm cô ngừng thở trong giât lát vì bất ngờ.
+</p>
+
+<p>
+ Sau đó, gần như là thì thầm, anh ta bắt đầu nói bằng cổ ngữ. những từ ngữ lạ lung trôi ra từ miệng anh ta, làm cô chưa bao giờ thấy sợ hãi như vậy. anh ta nói điều gì đó trong vài phút. Và khi anh dừng lại, cô không thấy có gì khác biệt, không có điềm lành hay điềm dữ nào cả.
+</p>
+
+<p>
+ Không khí lạnh ùa vào ngực cô khi Murtagh bỏ bàn tay ra. Anh lùi lại, và bước qua cô về phía cửa. Nasuda lập tức gọi a để hỏi về điều mà anh vừa làm, anh dùng lại và nói “ nó sẽ bảo vệ cô khỏi mọi đau đớn, nhưng cô phải giả vờ, bằng không, Galbatorix sẽ phát hiện ra những gì tôi đã làm”
+</p>
+
+<p>
+ Và rồi anh bước đi.
+</p>
+
+<p>
+ “ cảm ơn” – cô nói thầm trong căn phòng trống. Cô dành nhiều thời gian để suy nghĩ về cuộc trò chuyện của họ. có vẻ như Galbatorix không nghe thấy những gì họ nói với nhau, cũng có thể là có. Tất cả đều có thể xảy ra. và rồi cô thấy tiếc thương cho anh, dù trong sâu thẳm tâm hồn, a có là người tốt hay xấu. Cô nghĩ về vua Hrothgar, người giống như chú cô từ khi cô còn nhỏ, và làm sao Murtagh có thể giết ông ở cánh đồng cháy. Và cô nghĩ về tuổi thơ của Murtagh, cũng như những khó khăn mà anh đã trải qua. Làm sao anh có thể để Eragon và Saphira tự do khi anh dễ dàng bắt được họ mang về Ure’bean.
+</p>
+
+<p>
+ Cho dù anh đã từng là 1 người chính trực và đáng tôn trọng, thì giờ đây việc anh bị ép buộc phục tùng có thể hủy hoại cuộc đời anh.
+</p>
+
+<p>
+ Cuối cùng, cô quyết định bỏ qua quá khứ của anh, và sẽ chỉ phán xét anh trên những hành động mà anh làm ở hiện tại. Là tốt hay xấu, hay là cái gì đó ở giữa, anh vẫn là 1 đồng minh lớn, và cô sẽ cần sự giúp đỡ của anh nếu có. Và nếu anh sai, đối với cô sẽ không thể còn điều gì tồi tệ hơn bây giờ được nữa. còn nếu anh đúng, cô có thể trốn khỏi Ure’bean, và đó là sự mạo hiểm đáng giá.
+</p>
+
+<p>
+ Khi không còn bị những nỗi đau hành hạ, cô ngủ ngon lành 1 giấc dài và sâu, đó là lần đầu tiên cô ngủ ngon lành từ khi bị bắt đến Ure’bean. Cô tỉnh dậy, thấy hy vọng nhiều hơn trước. và lại nằm xăm xoi những hình vẽ trên mái nhà. Đường kẻ nhỏ màu xanh mà cô dõi theo làm cô để ý thấy 1 hình vẽ màu trắng nằm ở 1 góc của phiến đá mà trước đây cô không hề nhìn thấy. mất 1 lúc cô mới nhận ra chỗ mất màu ấy là do 1 mảnh vỡ nhỏ rơi xuống.
+</p>
+
+<p>
+ Khung cảnh làm cô thấy thích thú, chúng thật ngộ nghĩnh, và cô có phần thoải mái khi biết rằng căn phòng hoàn hảo của Galbatorix thực sự không phải là hoàn hảo, và dù lão có khoe khoang thế nào, lão cũng không phải là người biết hết mọi điều và không phải không bao giờ phạm sai lầm.
+</p>
+
+<p>
+ Cánh cửa phòng giam lại mở ra, là tên cai ngục, và cô đoán là hắn mang bữa trưa đến. cô hỏi hắn là cô có thể ăn trước khi hắn dựng cô dậy được không, vì cô đói và muốn ăn hơn bất kỳ việc gì khác, mặc dù đó không hoàn toàn là sự thật. đáp lại yêu cầu của cô, hắn đồng ý, và dù không nói lời nào, hắn cười nhe hàm răng gớm giếc như bồ cào ra, ngồi xuống bên thành của phiến đá. Khi hắn đút những thìa cháo nóng vào miệng cô, đầu óc cô đang suy nghĩ để lên kế hoạch cho 1 điều bất ngờ, mà cô biết là cô chỉ có 1 cơ hội duy nhất để thành công.
+</p>
+
+<p>
+ cô thấy thật buồn nôn và khó nuốt những thứ đồ ăn nhạt nhẽo. tuy nhiên, cô kìm nén, và khi bát cháo hết, cô đã no, thì cô đã sẵn sang.
+</p>
+
+<p>
+ Gã này luôn luôn đặt khay thức ăn trên bệ tường phía xa, gần chỗ Murtagh ngồi, và có lẽ khoảng cách từ cửa đến nhà vệ sinh là vài mét/
+</p>
+
+<p>
+ Khi được tháo cùm, cô trườn khỏi phiến đá. Gã cai ngục với tay định túm lấy tay trái cô, nhưng cô nâng tay lên, và bằng giọng ngọt ngào nhất có thể “ tôi có thể tự đứng dậy, cảm ơn anh”
+</p>
+
+<p>
+ Gã cai ngục lưỡng lự, hắn lại mỉm cười và 2 hàm răng lại chạm vào nhau như thế nói: “ được thôi”
+</p>
+
+<p>
+ Họ tiến tới nhà vệ sinh, cô đi trước, hắn theo sau. Khi bước được 3 bước, cô cố tình xoay chân phải và giả vờ vấp ngã. Gã cai ngục la lên và cố đỡ lấy cô. Hắn quá chậm, và những ngõn tay thô kệch của gã túm lấy ngay phía trên cổ cô, cô thoát được.
+</p>
+
+<p>
+ Cô ngã sõng xoài trên cái khay thức ăn, làm vỡ cái bình vẫn còn 1 ít rượu, và làm cái bát bằng gỗ lăn long lóc trên sàn nhà. Như kế hoạch, cô chống tay phải xuống, và ngay khi thấy cái khay bên dưới mình, cô lần mò tìm lấy 1 cái thìa kim loại.
+</p>
+
+<p>
+ “ ah” – cô kêu lên vẻ đau đớn, rồi quay lại nhìn gã cai ngục, vẻ rất khó chịu “ có lẽ tôi chưa thực sự khỏe” – cô nói, và nở 1 nụ cười xin lỗi. ngón cái chạm vào cái thìa, cô túm lấy nó khi gã cai ngục kéo tay trái cô để cô đứng dậy.
+</p>
+
+<p>
+ Hắn nhìn cô từ trên xuống dưới, nhăn mũi vẻ khó chịu về cái váy ượt đẫm rượu vang. Trong khi đó, cô vòng tay ra sau, nhét cái thìa vào cái lỗ gần cạp quần. rồi cô đưa tay lên, như thể cô không cầm gì hết.
+</p>
+
+<p>
+ Gã cai ngục càu nhàu, túm lấy tay cô, đưa cô vào nhà vệ sinh. Khi đã vào phòng, cô xoay người lại, hướng về phía cái khay, thì thầm.
+</p>
+
+<p>
+ Ngay sau khi đóng cửa, cô lấy cái thìa ra khỏi gẫu quần, ngáng ngang miệng khi cô giật những sợi tóc dài nhất ở phía sau đầu. nhanh hết mức có thể, cô kẹp 1 đầu búi tóc ở tay trái, và lăn trúng trên đùi bằng tay phải, bện chúng thành 1 đoạn dây.
+</p>
+
+<p>
+ Cô thất vọng vì nhận ra đoạn dây quá ngắn. long ngóng và vội vàng, cô bỏ 1 đầu của sợi dây ra và vất chúng trên sàn nhà.
+ <br/>
+ Cô giựt 1 búi tóc khác và tết thành 1 sợi dây thứ 2, sau đó bỏ ra giống sợi đầu tiên.
+ <br/>
+</p>
+
+<p>
+ Biết rằng mình chẳng còn bao nhiêu thời gian, cô để chúng lên đầu gối và nối 2 búi tóc lại với nhau.
+</p>
+
+<p>
+ Sau đó cô lấy cái thìa từ trong miệng ra, buộc nó vào chân trái bằng sợi dây mỏng mảnh đó, để quàn áo che đi.
+</p>
+
+<p>
+ Cô phải buộc vào chân trái, vì Galbatorix luôn ngồi ở phía bên phải cô.
+</p>
+
+<p>
+ Cô đứng dậy, kiểm tra lại để đảm bảo đã giấu kín cái thìa, và đi thử vài bước để chắc là nó sẽ không rơi ra.
+</p>
+
+<p>
+ Xong việc, cô thở dài. Bây giờ cô phải trở lại phiến đá mà không để cho gã cai ngục biết được những gì cô vừa làm.
+</p>
+
+<p>
+ Gã cai ngục đứng chờ cô mở cửa nhà vệ sinh. Hắn cau có nhìn cô, đôi long mày thưa thớt xúm lại, tạo thành 1 đướng ngang thẳng trên mặt.
+</p>
+
+<p>
+ “ cái thìa” – hắn nói, ngấu nghiến từng từ như thể đó là món củ cải linh nhừ.
+</p>
+
+<p>
+ Cô hất cằm chỉ về phía cầu tiêu.
+</p>
+
+<p>
+ Hắn quắc mắt. bước vao nhà vệ sinh, kiểm tra trần, tường, sàn nhà và tất cả những thứ còn lại trước khi quay trở ra. Hắn nghiến 2 hàm răng, vò đầu bứt tai vẻ buồn rầu và đau đớn – cô nghĩ vậy – vì cô đã ném cái thìa đi. Cô nên tử tế với hắn, và cô biết 1 hành động khiêu khích nhỏ thôi cũng có thể làm hắn bối rối và tức giận.
+</p>
+
+<p>
+ Cô khựng lại khi gã để tay lên đầu cô, lùa ngón tay vào tóc cô, đẩy cô tiến về phía trước. khi không tìm ra cái thìa, mặt hắn dài thượt ra. Hắn túm lấy tay cô, lôi cô về chỗ phiến đa, và trói cô lại.
+</p>
+
+<p>
+ Sau đó hắn lấy cái khay, ra khỏi phòng vẻ rầu rĩ ủ rũ.
+</p>
+
+<p>
+ Cô đợi đến khi hắn đi hẳn, dùng ngón tay trái, cố gằng từng tí từng tí một, kéo cạp quần lên
+</p>
+
+<p>
+ Mội nụ cười rạng rỡ xuất hiện trên khuôn mặt cô khi cô chạm được ngón tay trỏ vào cái thìa. Giờ, cô đã có 1 thứ vũ khí.
+</p>
+
+<p>
+ Đỉnh núi của băng và tuyết.
+</p>
+
+<p>
+ Khi những vệt sang mờ nhạt đầu tiên ló ra, tạo thành những đường kẻ dọc theo mặt biển gợn song, chiếu sáng những con song lờ mờ, tạo nên vẻ lấp lánh như pha lê. Eragon tỉnh giấc, nhìn về phía tây bắc, tò mò nhìn những tia nắng ló ra từ những đám mây, tạo thành những hình ảnh trong không gian.
+</p>
+
+<p>
+ Những gì Eragon thấy khiến người ta phải bối rối. những đám mây che phủ gần nửa đường chân trời, và đám mây trắng lớn nhất nhìn cao như đỉnh của rặng Bore, quá cao để Saphira có thể bay qua. Chỉ có bầu trời rộng mở ở phía sau, và họ có thể lạc đường, khi cơn bão đến gần.
+</p>
+
+<p>
+ “ chúng ta phải bay xuyên qua nó” – Glaedr nói, và Eragon thấy Sahira lo lắng.
+</p>
+
+<p>
+ “ tại sao không cố bay vòng qua” – Saphira hỏi.
+</p>
+
+<p>
+ Cả Saphira và Eragon đều nhận ra là Glaedr đã kiểm tra những đám mây. Cuối cùng ông rồng vàng nói: “ đương nhiên là ta không muốn ngươi bay quá xa. Chúng ta vẫn còn quãng đường dài cần bay, và nếu ngươi trở nên yếu…”
+</p>
+
+<p>
+ “ và thầy có thể cho con sức mạnh để bay”
+</p>
+
+<p>
+ “ hmph. Kể cả vậy, thì đó vẫn là điều cẩn trọng nhất trong số những việc liều lĩnh của chúng ta. Ta đã thấy những cơn bão như vậy trước kia. Nó lớn hơn con tưởng. để đi vòng qua nó, con sẽ phải bay rất xa, về phía tây, tới phía bên kia của Vroengard, và có thể sẽ mất 1 ngày mới tới được đất liền”
+</p>
+
+<p>
+ ‘ khoảng cách tới Vroengard không quá xa” – Saphira nói.
+</p>
+
+<p>
+ “ không, nhưng gió sẽ làm chậm bước chúng ta, ngoài ra, linh tính của ta mach bảo, cơn bão sẽ mở rộng tới tận hòn đảo. chỉ có 1 cách là bay xuyên qua nó. Tuy nhiên, k cần thiết phải bay qua tâm bão. Con có thấy cái khe giữa 2 cái cột mây ở phía tây kia không?”
+</p>
+
+<p>
+ “ Có”
+</p>
+
+<p>
+ “ đi tới đó, và có thể chúng ta sẽ tìm được con đường an toàn để đi qua những đám mây”
+</p>
+
+<p>
+ Eragon túm chặt lấy yên khi Saphira nghiêng cánh trái, rẽ về phía tây, nhắm thẳng tới cái khe mà Glaedr đã nói đến. Eragon ngáp, dụi mắt khi Saphira bay là là, sau đó anh xoay người, lục tìm 1 quả táo và vài miếng thịt bò khô trong cái bao da đeo bên người.
+</p>
+
+<p>
+ Đó là 1 bữa sáng đạm bạc. nhưng anh không thấy đói lắm, và ăn nhiều vào bữa sáng khi đang bay trên lưng Saphira làm anh thấy buồn nôn.
+</p>
+
+<p>
+ Khi ăn, anh hết nhìn ngắm những đám mây, lại nhìn chằm chằm xuống mặt biển lấp lánh. Anh thấy lo lắng khi bên dưới họ toàn là nước, và như anh ước lượng, đất liền ít nhát cũng cách họ 50 dặm. anh rung mình khi tưởng tượng cứ chìm sâu, sâu dần vào long biển lạnh lẽo.
+</p>
+
+<p>
+ Anh tự hỏi, có cái gì dưới đáy biển. 1 suy nghĩ lóe lên trong đầu anh, anh có thể dùng phép thuật để du ngoạn và tìm hiểu dưới đáy biển. nhưng suy nghĩ ấy chả có gì thú vị. những vực nước quá tối và nguy hiểm, và anh cảm thấy, đây k phai là nơi anh nên khám phá. Tốt hơn là để kệ nó cho những sinh vật đã sống ở đó.
+</p>
+
+<p>
+ Khi trời sáng rõ, những đám mây rõ ràng là xa hơn nhiều so với những gì họ đã thấy, và như Glaedr nói, cơn bão lớn hơn nhiều những gì Eragon và Saphira tưởng tượng.
+</p>
+
+<p>
+ 1 cơn gió nhẹ ngược chiều nổi lên làm đôi cánh Saphira trở nên nặng hơn, nhưng cô nàng vẫn tiếp tục hành trình.
+</p>
+
+<p>
+ Khi chỉ còn cách cơn bão 1 khoảng k xa, Saphira làm Eragon và Glaedr bất ngờ vì cô nàng lao xuống và bay là là ngay trên mặt biển.
+</p>
+
+<p>
+ Khi cô nàng lao xuống, Glaedr hỏi: “ Saphira, con định làm gì thế?”
+</p>
+
+<p>
+ “ con muốn biết” – cô ả nói – “và con muốn cho đôi cánh nghỉ ngơi chút ít trước khi bay vào những đám mây”
+</p>
+
+<p>
+ Cô ả bây là là mặt nước, cái bóng và hình phản chiếu dưới nước của cô nàng di chuyển cứ như 1 cặp bóng ma, 1 tối, 1 sáng. Sau đó cô nàng xoay cánh, đập mạnh 3 cái, hạ cánh ngay trên mặt nước. những con sóng ập vào cổ cô nàng khi ngực nó cày 1 đường xuống mặt biển, làm hành trăm bọt nước bắn tung tóe lên người Eragon.
+</p>
+
+<p>
+ Nước lạnh, nhưng sau 1 quãng thời gian dài bay trên cao, giờ không khí lại có cảm giác ấm hơn.Eragon cũng cởi bỏ áo choàng và găng tay.
+</p>
+
+<p>
+ Saphira gấp cánh lại, trôi bập bềnh theo những con song. Người Eragon dính đầy những đám rong tảo. chúng phân nhánh như bụi rậm, dọc theo thân là những bong bóng nhỏ cỡ bằng quả nho.
+</p>
+
+<p>
+ Phía xa, ở trên cao là những đàn hái âu trắng, với chấm đen ở dầu cánh, đang bay ra từ những đám mây khổng lồ.
+</p>
+
+<p>
+ Cảnh sắc càng làm Eragon lo lắng, những con chim biển khiến anh nhớ về cảnh tượng nhứng con sói, những con hươu chạy toán loạn trong 1 đám cháy rừng ở Spine.
+</p>
+
+<p>
+ “ nếu khôn ngoan, chúng ta nên quay lại” - a nói với Saphira
+</p>
+
+<p>
+ “ nếu không ngoan, chúng ta nên rời Alagaesia và không bao giờ quay lại”- cô rồng đáp lại.
+</p>
+
+<p>
+ Uốn cong cái cổ, Saphira thọc đầu xuống nước, lắc lắc cái đầu và lưỡi thì thè ra thụt vào vài lần, như thể cô ả nếm phải cài gì ghê ghê.
+</p>
+
+<p>
+ Sau đó Eragon cảm nhận được sự sợ hãi trong tâm trí con rồng già, Glaedr gầm lên trong tâm trí Eragon: “bay lên, nhanh, nhanh”.
+</p>
+
+<p>
+ Saphira không thắc mắc. nó xòe cánh, bay lên khỏi mặt nước, tạo thành những âm thanh như tiếng sấm.
+</p>
+
+<p>
+ Tiến về phía trước, eragon túm chặt lấy cái yên để k bị đổ về phía sau, cú đập cánh của Saphira làm nước bắn tung tóe, tạo ra 1 màn sương mù khiến Eragon chẳng nhìn thấy gì. Chàng dùng tâm trí để xem điều gì đã làm Glaedr hoảng hốt.
+</p>
+
+<p>
+ Từ dưới sâu, 1 cái gì đó đang tiến về phía Saphira nhanh hơn cả Eragon có thể tin được. Một thứ gì to lớn, lạnh lẽo….. và đói khát. Anh tìm cách làm nó sợ, tìm cách đuổi nó đi, nhưng sinh vật đó xa lạ và không nhân nhượng trước những nỗ lực của a.
+</p>
+
+<p>
+ Hết sức lạ lung,ký ức của sinh vật đó như 1 cái hang không ánh sáng, trải qua hang nghìn năm dưới đáy biển đóng băng, vơi những chuyến đi săn và bị săn.
+</p>
+
+<p>
+ Sự sợ hãi lớn dần, Eragon lần mò tìm thanh Brisingr, ngay khi Saphira bay vọt lên từ mặt nước.
+</p>
+
+<p>
+ “Nhanh lên, Saphira”. Anh hét lên.
+</p>
+
+<p>
+ Cô ả chậm chạp bay lên, đạt được vận tốc và độ cao, sau đó 1 cái vòi nước trắng xóa phun ra ngay phía dưới, và Eragon thấy 1 cặp hàm trắng xám. Cặp hàm đủ lớn để nuốt 1 con ngựa mà không cần phải nhai, với hang trăm cái răng sáng bóng.
+</p>
+
+<p>
+ Saphira sợ hãi khi thấy những gì Erragon thấy, cô ả vòng đột ngột sang bên, để tránh cái miệng đang há hốc, đầu cánh rẽ xuống mặt nước. ngay sau đó, Erragon cảm thấy hàm con quái vật cắn lại. những cái răng nhọn hoắt đớp hụt đuôi Saphira trong gang tấc.
+</p>
+
+<p>
+ Trong Khi con quái vật rơi xuống nước, 1 phần cơ thể nó trở nên rõ rang hơn. Cái đầu to và góc cạnh. 1 cái mào đầy xương mọc ra phía trên đôi mắt, và từ cái mào ấy, có những cái tua mà Eragon đoán nó phải dài hơn 6 feet. Cái cổ trông như 1 con rắn khổng lồ. thân hình nó trơn nhẵn, mạnh mẽ và nặng nề đến không tin nổi. 2 cái vây chèo 2 bên thân mình, quơ quơ trong không trung.
+</p>
+
+<p>
+ Con quái vật rơi xuống nước, và 1 luồng bụi nước khổng lồ bay lên. Trước khi những con song nhấn chìm con quái vật, Eragon nhìn vào đôi mắt nó, đôi mắt đen hướng về phía trước như 2 giọt nhựa đường. đôi mắt chứa đầy sự tức giận, căm ghét, và thất vọng khiến cho Eragon ước gì mình đang ở giữa sa mạc Hadarac.
+</p>
+
+<p>
+ Chỉ có ở đó, a mới cảm thấy an toàn trước những con quái vật già đói khát.
+</p>
+
+<p>
+ Tim đập thình thịch, Eragon nới lỏng thanh Brisngr, nằm thụp xuống cái yên rồng: “ cái quái gì vậy?”
+</p>
+
+<p>
+ Một Nidhwal – Glaedr nói.
+</p>
+
+<p>
+ Eragon nhăn mặt. chàng chưa từng nghe về nó trong cuốn Ellesmera. “ Nidhwal là cái gì vậy thầy?”
+</p>
+
+<p>
+ “ chúng hiếm khi được nhắc đến. chúng thuộc về biển cả cũng như Fanghur thuộc về bầu trời. cả 2 đều là anh em của rồng. tuy nhiên vẻ bề ngoài lại rất khác nhau, giống Nidhwal gần với loài rồng hơn là những con Fanghur. Chúng cũng có 1 thứ tương tự như “ trái tim trong trái tim Eldunari” ở trong ngực, cho phép chúng lặn sâu dưới đáy biển trong khoảng thời gian dài”
+</p>
+
+<p>
+ “ chúng có thổi ra lửa không?”
+</p>
+
+<p>
+ “ không, nhưng giống như loài Fanghur, chúng cũng thường sử dụng sức mạnh ý trí để đánh bại con mồi, ý trí ấy mạnh hơn cả việc 1 con rồng khám phá ra sự sợ hãi của mình”
+</p>
+
+<p>
+ “ chúng có thể ăn thịt chính đồng loại mình” – Saphira nói.
+</p>
+
+<p>
+ “ đối với chúng, chúng ta không phải đồng loại” – Glaedr nói – “ tuy nhiên chúng ăn thịt chính đồng loại mình, và đó là lý do khiến chúng còn lại rất ít. Chúng không có hứng với bất kỳ việc gì xảy ra ngoài lãnh thổ của chúng, và tất cả mọi lỗ nực lien lạc với chúng đều thất bại. phải mất vài ngày bay từ đất liền, tới vùng biển sâu nhất, mới tìm thấy chúng. Và chúng có vẻ đã táo bạo và liều lĩnh hơn kể từ thời kỳ suy tàn của kỵ sĩ.”
+</p>
+
+<p>
+ Eragon rung mình khi nhớ lại cảm giác khi xâm nhập vào tâm trí Nidhwal. “ tại sao thầy hay Orimis chưa bao giờ chỉ cho bọn con về chúng?”
+</p>
+
+<p>
+ “có rất nhiều thứ ta không dạy con, Eragon. Chúng ta không có quá nhiều thời gian, và tốt nhất là dạy con làm sao chống lại được Galbatorix, chứ không phải là 1 sinh vật sống trong bóng tối ở 1 vùng đất chưa được khám phá của Alagaesia”.
+</p>
+
+<p>
+ “ vậy còn có thứ gì tương tự như Nidhwal mà chúng con chưa biết không?”
+</p>
+
+<p>
+ “ 1 vài”
+</p>
+
+<p>
+ “ thầy sẽ nói cho bọn con chứ ah. Ebrithil?” – Saphira hỏi.
+</p>
+
+<p>
+ “ chúng ta thỏa thuận thế này nhé, Saphira và Eragon. Cho ta 1 tuần, và nếu sau 1 tuần, chúng ta vẫn sống sót và tự do, ta sẽ rất vui long dành 10 năm tiếp theo để dạy cho các con về từng giống loài 1 mà ta biết, bao gồm cả vô số những loài côn trùng. Nhưng từ giờ đến lúc đó, hãy tập trung vào nhiệm vụ trước mắt đã. Các con có đồng ý k?”
+</p>
+
+<p>
+ Eragon và Saphira miễn cưỡng đồng ý, và họ không còn bàn luận về chúng nữa.
+</p>
+
+<p>
+ Những cơn gió ngược chiều ngày càng mạnh dần khi họ tới gần cơn bão, làm Saphira chỉ bay được 1 nửa tốc độ bình thường của cô ả. Những cơn gió mạnh làm cô nàng lắc lư, và thi thoảng làm cô ả khựng lại trong phút chốc.khi những con gió giật mạnh, mặt biển cuộn sóng, như những vảy cá bạc trắng xóa.
+</p>
+
+<p>
+ Từ khi trời sáng, những đám mây càng lúc càng lớn và tụ lại gần. nhìn chúng thật đáng sợ. ở phía dưới, chúng có màu đen và đỏ tía, nối với 1 mặt biển bằng 1 màn mưa như thể 1 cái dây rốn.
+</p>
+
+<p>
+ Cao hơn phía trên, những đám mây có màu bạc sỉn, trong khi phía trên cùng là 1 màu trắng hoàn toàn trong trẻo, và vững chắc như sườn của dãy Tronjheim. Nhìn về phía bắc, qua tâm cơn bão, những đám mây tạo thành hình 1 cái đe bằng phẳng khổng lồ, hiện ra lờ mờ, như thể các vị thần đang muốn tạo ra 1 thứ dụng cụ gì đó kỳ lạ và ghê gớm.
+</p>
+
+<p>
+ Khi Saphira bay vọt lên, vào giữa 2 cột mây khổng lồ, nhìn cô ả không khác gì một hại bụi. mặt biển biến mất, và phía dưới họ chỉ còn 1 tấm đệm mây. Những cơn gió ngược trở nên nhẹ hơn, nhưng lại đổi hướng lien tục và xoáy tròn mà không có 1 phương hướng cụ thể nào. Eragon nghiến chặt 2 hàm răng để chúng khỏi va vào nhau, dạ dày anh muốn ói khi Saphira lao xuống 12 feet và rồi ngay tức khác bay thẳng lên trên 20 feet.
+</p>
+
+<p>
+ Glaedr nói: “ con đã bao giờ bay trong những cơn bão, ngoại trừ lần gặp cơn bão giữa thung thũng Palancar và Yazuac chưa?”
+</p>
+
+<p>
+ “ chưa” – Saphira trả lời, ngắn gọn và đầy lo lắng.
+</p>
+
+<p>
+ Glaedr dường như mong chờ câu trả lời đó, và không hề do dự, ông bắt đầu giảng giải cho Saphira về sự phức tạp khi định hướng những đám mây khổng lồ. “ tìm kiếm mọi sự chuyển động và ghi nhận mọi sự sắp đặt xung quanh con”- ông rồng già nói, “dựa vào chúng, con có thể tìm được nơi nào gió mạnh nhất, và hướng gió”
+</p>
+
+<p>
+ Những gì Glaedr nói, Saphira đều biết, nhưng khi Glaedr nói, thái độ bình tĩnh của ông làm yên long cả Saphira và Eragon. Nếu có bất kỳ sự sợ hãi nào trong tâm trí con rồng già, nó sẽ làm họ nghi ngờ chính bản thân mình, và có lẽ Glaedr nhận thức được điều đó.
+</p>
+
+<p>
+ 1 đám mây bay lạc trước mặt Saphira. Thay vì né tránh, cô nàng lao thẳng vào như 1 mũi giáo xanh lấp lánh. Khi màn mây mù bao bọc lấy họ, gió trở nên im bặt. Eragon nheo mắt, dùng 1 tay che mặt để chúng không bay vào mắt.
+</p>
+
+<p>
+ Khi bay ra khỏi đám mây, hành triệu triệu những giọt nhỏ bám đầy trên cơ thể Saphira như thể kim cương trên những cái vảy rồng lấp lánh.
+</p>
+
+<p>
+ Saphira vẫn tiếp tục bay chuệnh choạng. đang bay cân bằng, bỗng 1 cơn gió đẩy cô ả sang 1 bên, hay nâng 1 cánh của nó lên, làm nó xoay tròn 180 độ.
+</p>
+
+<p>
+ Ngồi trên lưng rồng trong khi cô nàng chiến đấu với những cơn gió đổi chiều liên tục thực sự là mệt mỏi, và với Saphira, đó cũng là 1 nhiệm vụ cực khổ và khó chịu, và còn thấy khó khăn hơn khi biết rằng còn rất xa nữa mới đến đích. Nhưng cô nàng không còn sự lựa chọn nào ngoại trừ việc tiếp tục.
+</p>
+
+<p>
+ Sau 1 hay 2 giờ bay, họ vẫn chưa thoát ra được khỏi cơn bão. “ chúng ta phải đổi hướng” – Glaedr nói: “ chúng ta đã đi đủ xa về phía Tây. Và nếu chúng ta dám đương đầu với cơn bão, thì đó là lúc này, trước khi tát cả mọi người kiệt sức”
+</p>
+
+<p>
+ Không nói 1 lời, Saphira vòng về phía bắc, tiến thẳng tới bức tường mây khổng lồ, cao chót vót nằm ở trung tâm của cơn bão.
+</p>
+
+<p>
+ Càng lại gần cơn bão, càng thấy nó to lớn hơn bất kỳ thứ gì Eragon từng thấy, lớn hơn cả Farthen Dur. Một tia chớp xanh lẹt kéo thẳng lên trời, tới chỗ những đám mây bằng phẳng tạo thành hình như cái đe. 1 giây sau đó, 1 tiếng sấm làm rung chuyển bầu trời. Eragon bịt tai lại.
+</p>
+
+<p>
+ Dù anh biết những câu thần chú sẽ bảo vệ anh khỏi sấm sét, nhưng a vẫn thấy sợ hãi về việc liều mạng đến gần nhưng tia sét đầy năng lượng.
+</p>
+
+<p>
+ Saphira có vẻ không sợ hãi, vì anh không cảm thấy điều ấy. tất cả những gì anh ảm nhận được là sự quyết tâm của cô nàng. Cô ả đập nhanh đôi cánh, và chỉ 1 vài phút sau, bức tưởng mây khổng lồ đã hiện ra trước mặt. Họ lao qua, tiến vào trung tâm cơn bão.
+</p>
+
+<p>
+ Ánh sáng chập chờn xung quang họ, xám xịt và chả có gì đặc biệt. Như thể toàn bộ phần còn lại của thế giới không còn tồn tại.
+</p>
+
+<p>
+ Những đám mây làm Eragon không thể nào nhìn thấy đầu, đuôi và cánh của Saphira. Họ gần như là mù. Và chỉ có sức kéo của trọng lục khiến họ phân biệt được là mình đanh bay lên hay xuống.
+</p>
+
+<p>
+ Eragon mở rộng tâm trí, nhưng anh không cảm nhận được bất kỳ 1 sinh vật sống nào, ngoại trừ Saphira và Glaedr, thậm chí là 1 con chim lạc đàn.
+</p>
+
+<p>
+ May mắn là Saphira vẫn giứ được phương hướng, và nhờ đó mà họ không bị lạc. Bằng cách Tiếp tục mở rộng tâm trí tìm kiếm sự sống xung quanh, bất kỳ 1 sinh vật hay cây cỏ nào, Eragon đảm bảo rằng họ sẽ k lao thảng vào sườn của 1 vách núi.
+</p>
+
+<p>
+ Eragon cũng niệm 1 câu thần chú mà Oromis đã từng dạy anh. Câu thần chú sẽ cho anh và Saphira biết chính xác khi họ gần đến mặt đất hay mặt nước.
+</p>
+
+<p>
+ Từ lúc bay vào trong những đám mây, hơi ẩm trong không khí bám đầy trên da anh, thấm đầy vào quần áo anh, làm chúng nặng trĩu xuống. đó thực sự là 1 điều phiền phức mà anh phải lờ đi. Nhưng gió và nước, chúng sẽ nhanh chóng làm anh chết cóng.
+</p>
+
+<p>
+ Vì thế, a niệm 1 câu thần chú khác, loai bỏ toàn bộ những giọt nước nhỏ trong không khi xung quanh anh, và xung quanh mắt Saphira – như cô nàng yêu cầu – vì hơi ẩm ngưng tụ lại càng nhiều trên mặt, khiến cô nàng phải lien tục chớp mắt.
+</p>
+
+<p>
+ Những cơn gió ở tâm bão yên ả 1 cách lạ thường. Eragon bình luận 1 vài câu về điều ây, nhưng ông rồng già vẫn giữ 1 thái độ nghiêm túc như lúc đầu: “ chúng ta vẫn chưa đối mặt với điều tồi tệ nhất cảu cơn bão đâu”
+</p>
+
+<p>
+ Những gì Glaedr nói sớm trỏ thành hiện thực. 1 con gió dữ dội bất ngờ đẩy Saphira lên cao cả ngàn feet. Không khí quá loãng làm cho Eragon không thể thở được. và hơi nước thì đóng băng thành trăm nghìn tinh thể nhỏ, đâm vào mũi, má Eragon và cánh Saphira như những con dao sắc nhọn.
+</p>
+
+<p>
+ Kẹp chặt cánh vào thân mình, Saphira lao thẳng về phía trước, cố gắng thoát khỏi luồng khí đang đẩy cô lên cao. Vài giây sau, luông gió đẩy cô lên cao biến mất, nhưng thay vào đó, 1 luông gió khác xô cô ả lao thẳng xuống những con sóng phía dưới với 1 tốc độ khủng khiếp.
+</p>
+
+<p>
+ Những tinh thể băng tan ra, tạo thành những giọt nước lớn hơn, trôi bồng bềnh quanh Saphira như thể không có trọng lực khi họ lao xuống. chớp lóe lên gần họ. 1 thú ánh sáng xanh kỳ quái xuyên thủng tấm màn mây. Eragon hét lên đau đớn khi sấm nổ xung quanh. Tai anh rung lên. Anh xé 2 mảnh vải nhỏ từ cái áo choàng, nhét chúng vào tai, càng sâu càng tốt.
+</p>
+
+<p>
+ Chỉ đến khi gần xuống đến đáy của đám mây, Saphira mới kiềm chế được cơn gió. Nhưng ngay khi cô nàng làm được điều đó, 1 cơn gió khac lại ập tới, túm lấy cô nàng như 1 bàn tay khổng lồ, kéo thẳng lên trới.
+</p>
+
+<p>
+ Nhứng cơn gió quá mạnh và dữ dội, Saphira khoogn thể chống lại, và cô nàng cứ bay lên lại lao xuống, giống như 1 miếng bọt biển trong 1 xoáy nước vậy.
+</p>
+
+<p>
+ Cô nàng cố tiến về phía trước được 1 ít, 1 vài dặm hiếm hoi, với những nỗ lực phi thường và đắt giá. Nhưng mỗi khi thoát ra khỏi luông không khí này, cô ả lại ngay lập tức bị cuốn vào luông không khí khác. Eragon thấy thiếu tự tin khi nhận ra anh, Saphira và Glaedr bất lực trước cơn bão. Và dù với tất cả sức mạnh của họ, họ cũng không có hy vọng đối đầu được với sức mạnh thiên nhiên.
+</p>
+
+<p>
+ Lần thứ 2, 1 cơn gió lại ném Saphira lao thẳng xuống những cơn sóng phía dưới. cả 2 lần, những cơn gió đều xô Saphira xuống gần đáy cơn bão, nơi những trận mưa rào rậm rập đổ xuống mặt biển.
+</p>
+
+<p>
+ ở làn thứ 2, Eragon nhìn về phía vai Saphira. TRong 1 khoảng khắc, anh nghĩ là mình nhìn thấy cái bóng dài, đen của con Nidhwal đang nằm nghỉ ngơi phía trên mặt biển nhấp nhô. Nhưng khi chớp lóe lên lần nữa, cái bóng biến mất. và anh tự hỏi, đó có phải là 1 trò bịp bợm với anh.
+</p>
+
+<p>
+ Saphira trở nên yếu hơn. Cô không còn chống trọi với những cơn gió, để mặc cho chúng mang cô đến nơi nào chúng muốn. cô chỉ cố gắng chống lại, khi rơi xuống gần mặt biển. cô cố gắng giữ yên đôi cánh và tốn càng ít sức cành tốt. Eragon nhận thấy Glaedr truyền cho cô nàng 1 dòng năng lượng để duy trì sức lực. Nhưng ngần đó là không đủ để cô ả làm được điều gì đó, ngoại trừ việc đứng yên.
+</p>
+
+<p>
+ Cuối cùng thì ánh sáng cũng mờ nhạt dần. Nỗi thất vọng tràn trề trong Eragon, Họ đã dành cả ngày phung phí vì cơn bão. Và nó chưa có dấu hiệu suy giảm, như thể Saphira vẫn chỉ ở đâu đó trong vành đai bão mà thôi.
+</p>
+
+<p>
+ Mặt trời lặn. Eragon thậm chí còn không nhì thây được cả mũi của mình. Chả có gì là khác biệt khi anh nhắm hay mở mắt cả. như thể đó la 1 đống len đen sì được chất đống xung quanh anh và SAphira. Quả thật,bóng tối như là 1 thứ vật chất nào đó, có sức nặng, và đang tác động lên họ từ mọi phía.
+</p>
+
+<p>
+ Cứ 1 vài giây, 1 tia sét lại lóe lên, xé tan màn đêm. Đôi khi ẩn mình trong những đám mây, đôi khi hiện ra ngay trước mắt họ, sáng chói như ánh mặt trời và làm cho không khí có vị tanh tanh như sắt.
+</p>
+
+<p>
+ Sau khi ánh sáng chói lòa của những tia sét biến mất, màn đêm trở nên đen tối gấp nhiều lần. cả Eragon và Saphira hết chói mắt vì nhứng tia sét, giờ lại chả nhìn thấy gì trong màn đêm den kịt.
+</p>
+
+<p>
+ Những tia chớp không đánh trúng Saphira, nhưng tiếng sấm vang rền làm cả 2 thấy mệt mỏi.
+</p>
+
+<p>
+ Chúng sẽ kéo dài bao lâu, Eragon thực k biết.
+</p>
+
+<p>
+ Saphira bị cuốn vào 1 cơn gió, lớn hơn và mạnh hơn những gì mà họ đối mắt trước đó.
+</p>
+
+<p>
+ Ngay khi nó ập đến, SAphira cố gắng chống lại nó, cố gắng thoát ra. Nhưng cơn gió quá mạnh, và cô nàng không sao giữ được cánh mình thăng bằng.
+</p>
+
+<p>
+ Cuối cùng, quá thất vọng, cô nằng rống lên 1 tiếng, phun lửa ra từ cái miệng, tỏa sáng 1 vùng nhỏ xung quanh, làm những tinh thể băng sáng long lanh như đá quý.
+</p>
+
+<p>
+ Giúp tôi – cô ả nói với Eragon và Glaedr: “ tôi không thể làm điều đó 1 mình”
+</p>
+
+<p>
+ Sau đó tâm trí họ hòa trộn vào nhau, với sức mạnh do Glaedr truyền sang, Eragon hét lớn:
+</p>
+
+<p>
+ “ Ganga fram”
+</p>
+
+<p>
+ Câu thần chú đẩy Saphira tiến về phía trước, nhưng hết sức chậm chạp, vì đi ngang 90 độ so với chiều gió không khác gì bơi qua dòng Anorak khi mùa xuân về ( xuân về tuyết tan). Dù Saphira có tiến lên theo chiều ngang, cơn gió vẫn tiếp tục thối cô nàng bay lên với 1 tốc độ chóng mặt. Eragon cảm thấy khó thở, và họ vẫn còn mắc kẹt trong con gió.
+</p>
+
+<p>
+ “ chúng ta mất quá nhiều thời gian và sức mạnh rồi. hãy kết thúc câu thần chú đi” – Glaedr nói
+</p>
+
+<p>
+ “ nhưng…”
+</p>
+
+<p>
+ “ kết thúc câu thần chú đi.chúng ta không thể thắng được những cơn gió trước khi cả 2 con kiệt sức đâu. Chúng ta phải nương theo những cơn gió cho đến khi chúng đủ yếu để Saphira thoát ra”
+</p>
+
+<p>
+ “ bằng cách nào” - Saphira hỏi trong khi Eragon làm theo chỉ dẫn của Glaedr. Sự kiệt sức và cảm giác thất bại làm rối trí cô rồng. điều đó làm Eragon thấy lo lắng cho cô.
+</p>
+
+<p>
+ “ Eragon, trò phải chỉnh sửa lại câu thần chú giữ ấm cho trò, và cả Saphira và ta. Trời đang lạnh dần, lạnh hơn cả mùa đông ở núi Spine. Và nếu không dùng phép thuật, chúng ta sẽ đóng băng mà chết”
+</p>
+
+<p>
+ “ cả thầy sao”
+</p>
+
+<p>
+ “ ta sẽ vỡ nát như 1 cái ly thủy tinh nóng rơi vào tuyết vậy. bây giờ hãy dùng 1 câu thần chú, gom không khí xung quanh con lại, như vậy con mới có thể thở được. nhưng phải nhớ là để những dòng khí con đã thở rồi thoát ra ngoài, nếu không con sẽ ngạt đấy. câu thần chú sẽ rất phức tạp, vì vậy con không được phép mắc lỗi. vậy, hãy nghe cho cẩn thận, nó phải như thế này….”
+</p>
+
+<p>
+ Khi Glaedr đọc những cụm từ cần thiết bằng ngôn ngữ cổ, Eragon đọc lại cẩn thận, cho đến khi con rồng già thấy hài long về cách phát âm của anh. Eragon niệm thần chú,chỉnh sửa câu thần chú trước của anh theo hướng dẫn của Glaedr. Cả 3 người đều được bảo vệ trước cái lạnh.
+</p>
+
+<p>
+ Họ chờ đợi.cho đến khi 1 cơn gió nâng họ nên. Cao nưa, cao nữa. Từng phút trôi qua, Eragon tự hỏi liệu họ có dừng lại được, hay là liệu họ có bay vút lên tận trăng sao hay không.
+</p>
+
+<p>
+ Một ý nghĩ chợt lóe lên trong đầu anh, có thể đó là cách tạo ra sao băng: 1 con chim, 1 con rồng hay 1 sinh vật sống nào đó bị tung lên cao bởi những cơn gió, sao đó bay ngang qua bầu trời, tỏa sáng như 1 múi tên.
+</p>
+
+<p>
+ Và nếu như thế, anh đoán, Saphira và Glaedr sẽ là những ngôi sao băng sáng nhất, hung vĩ nhất trong ký ức của những người còn sống, những người chứng kiến sự ra đi của họ từ 1 vị trí rất xa bờ biển.
+</p>
+
+<p>
+ Tiếng gió rít dần trở nên nhẹ nhàng hơn. Không còn tiếng sấm. Eragon rút 2 miếng vải nhét trong lỗ tai ra, bất ngờ vì sự im ắng xung quanh.
+</p>
+
+<p>
+ Chỉ còn nghe thấy những tiếng rì rào, mờ nhạt như tiếng 1 con suối rừng.
+</p>
+
+<p>
+ Tiếng gầm rú của cơn bão nhỏ dần. Eragon nhận ra sự căng thẳng do những câu thần chú tạo ra đang tăng dần – không phải từ câu thần chú ngăn cản sự mất nhiệt cơ thể, mà là từ câu thần chú gom không khí lại phía trước anh và Saphira. Chúng làm cả 2 không thể thở bình thường được.
+</p>
+
+<p>
+ Và dù là lý do gì chăng nữa, năng lượng cần để duy trì câu thần chú đó là đang nhân lên. Nó vượt quá tỷ lệ cân xứng với câu thần chú thứ nhất. và anh cảm thấy sức mạnh đang cạn kiệt. dường như chỉ còn 1 phần rất nhỏ duy trì cho sự sống. Bàn tay anh trở nên lạnh cóng, tim đập yếu ớt, và tâm trí mất minh mẫn. đó có lẽ là điều đáng lo lắng nhất.
+</p>
+
+<p>
+ Con rồng vàng liền giúp anh. 1 dòng năng lượng tràn vào người Eragon. Anh cảm thấy sức nặng trên vai giảm xuống. tâm trí minh mẫn trở lại và thể chất lại cường tráng như trước.
+</p>
+
+<p>
+ Họ lại tiếp tục.
+</p>
+
+<p>
+ Một lúc lâu sau, Saphira nhận thấy cơn gió suy yếu. và cô nàng thoát ra khỏi đó.
+</p>
+
+<p>
+ Mây bắt đầu tan dần trên đầu họ. Và Eragon nhìn thấy 1 vài chấm sáng; những ngôi sao: lấp lánh hơn bất kỳ thứ gì anh đã từng thấy.
+</p>
+
+<p>
+ Nhìn kìa. Eragon nói. Những đám mây mở ra phía trên họ. và Sphira bay thoát ra ngoài cơn bão, lơ lửng phía trên những cơn gió.
+</p>
+
+<p>
+ Ngay phía dưới họ, Eragon nhìn thấy toàn bộ cơn bão, mở rộng hàng trăm dặm về mọi phía.
+</p>
+
+<p>
+ Trung tâm cơn bão giống như cái mũ nấm, trơn nhẵn do được tạo ra từ rất nhiều những đám mây, trải dài từ đông sang tây, và luôn đe dọa đến Saphira.
+</p>
+
+<p>
+ Những đám mây có máu trắng sữa, tỏa sáng như thể ánh sáng phát ra từ bên trong. Trông chúng đẹp và thực sự yên bình. Chúng gần như không biến đổi, như là không có bất kỳ 1 sự dữ dội nào ẩn chứa bên trong.
+</p>
+
+<p>
+ Eragon ngẩng lên nhìn trời. há hốc mồm vì kinh ngạc. bầu trời chứa hành triệu ngôi sao, nhiều hơn những gì a đã từng nghĩ. Xanh, đỏ, trắng, vàng…chúng nằm rải rác trên bầu trời như những hạt bụi. những chòm sao mà a biết nằm xen kẽ với hàng nghìn những ngôi sao khác mà đây là lần đầu tiên a nhìn thấy. chúng không chỉ sáng hơn, mà khoảng không cũng trở nên tối hơn. Như thể là trước đây, mối lần a đều nhìn bầu trời xuyên qua 1 màn sương mù, khiến a chưa từng thấy vẻ đẹp thực sự của những ngôi sao.
+</p>
+
+<p>
+ Anh nhìn chằm chằm lên bầu trời, kinh ngạc trước vẻ đẹp rực rỡ, lộng lẫy của tự nhiên.
+</p>
+
+<p>
+ Chỉ đến khi anh nhìn xuống, a mới nhận ra có gì đó không bình thường. đường chân trời có màu đỏ tía.
+</p>
+
+<p>
+ Bầu trời và mặt biển đúng ra phải luôn luôn gặp nhau tạo thành 1 đường thẳng, nhưng giờ đây nó lại cong cong, giống như 1 đường tròn lớn ngoài sức tưởng tượng.
+</p>
+
+<p>
+ Đó thực sự là 1 cảnh tượng kỳ lạ. Eragon mất 1 lúc lâu để hiểu được mình đang ngắm nhìn điều gì. “ Thế giới có hình tròn” – anh lẩm nhẩm – “ bầu trời thì rỗng, và thế giới có hình tròn”
+</p>
+
+<p>
+ “ nó vốn là như vậy” – Glaedr nói: “ ta đã nghe điều này từ 1 con rồng hoang dã, nhưng ta chưa bao giờ nghĩ sẽ tận mắt chứng kiến nó”
+</p>
+
+<p>
+ ở phía đông, 1 thứ ánh sáng vàng mờ nhạt bao phủ 1 phần đường chân trời, báo hiệu mặt trời sắp mọc. nếu Saphira giữ nguyên vị trí trong 4 hay 5 phút nữa, có le họ sẽ được ngắm mặt trời mọc,cho dù phải mất hàng giờ đồng hồ nữa, nhưng tia nắng ấm áp mới tới được mặt biển phía dưới.
+</p>
+
+<p>
+ Saphira đứng yên đó trong 1 lúc. Lơ lửng ở giữa những ngôi sao và trái đất, trôi bập bềnh trong ánh chạng vạng như thể bị cuốn mất linh hồn. họ chẳng thuộc về nơi nào cả, không phải thiên đường, cũng không phải trái đất. lơ lửng như 1 hạt bụi giữa khoảng không ngăn cách 2 thế giới.
+</p>
+
+<p>
+ Saphira tiền về phía trước, nửa bay nửa rơi. Không khí quá loãng, do đó đôi cánh không thể nâng được trọng lượng của cô nàng,dù cô nàng cảm thấy có 1 luồng gió nổi lên.
+</p>
+
+<p>
+ Trong khi cô rồng đang bay xuống, Eragon nói: “ nếu chúng ta có đủ ngọc, thầy có nghĩ chúng ta có thể tích trữ năng lượng vào đó và bay tới mặt trang không?”
+</p>
+
+<p>
+ “ ai mà biết được”- Glaedr nói.
+</p>
+
+<p>
+ Khi Eragon còn nhỏ, làng Carvahall và thung lũng Palancar là tất cả những gì anh biết. anh có nghe về đế chế, nhưng nó không được thực tế, cho đến khi anh tiếp cận với nó. Khi đó, hình ảnh về thế giới trong tâm trí anh là cả những miền đất còn lại của Alagaesia, và những vùng đất khác mà a có dịp đọc về chúng.
+</p>
+
+<p>
+ Còn bây giờ, anh nhận ra, thế giới mà anh cho là rộng lớn đó, thực ra chỉ là 1 phần nhỏ của 1 thứ còn lớn hơn vậy nhiều. điều đó giống như là, quan điểm của anh về thế giơi, chỉ trong vài giây, đã biến đổi từ 1 con kiến thành 1 con đại bang vậy.
+</p>
+
+<p>
+ Bầu trời thì rỗng, và thế giới thì có hình tròn.
+</p>
+
+<p>
+ Điều đó làm anh xem xét, đánh giá và phân chia lại…tất cả mọi thứ. Cuộc chiến giữa Varden và đế chế dường như quá nhỏ bé khi so sánh với sự vĩ đại của cả thế giới. và anh nghĩ, những nỗi đau, mối bận tâm của con người thật quá ư nhỏ bé khi nhìn thế giới từ trên cao.
+</p>
+
+<p>
+ Eragon nói với Saphira: “ nếu mọi người có thể thấy những gì chúng ta thấy, có lẽ sẽ ít chiến tranh xẩy ra hơn”
+</p>
+
+<p>
+ “anh không thể mong những con sói có thẻ trở thành cừu”
+</p>
+
+<p>
+ “không. Nhưng những con sói có lẽ không cần tàn ác với những con cừu”
+</p>
+
+<p>
+ Saphira nhanh chóng rơi trở lại bóng tối của những đám mây, nhưng cô nàng tránh không để bị 1 cơn gió nào đó cuốn bay lên hay rơi xuống nữa. thay vào đó, cô nàng lướt bay nhiều dặm, trươt qua đỉnh của nhứng cơn gió, lợi dụng chúng để giữ sức.
+</p>
+
+<p>
+ 1 hoặc 2 giờ trôi qua, sương mù tan. Và họ bay ra khỏi đám mây lớn nhất ở tâm của cơn bão.
+</p>
+
+<p>
+ Họ quyết định hạ thấp xuống, bay là là trên những quả đồi không có thật mọc ra từ mây, thoai thoải dần tạo thành 1 vùng bằng phẳng. bao trùm lấy tất cả mọi thứ trong tầm mắt.
+</p>
+
+<p>
+ Khi mặt trời mọc, cả Eragon và Saphira đã không còn sức để để ý đến những gì xung quanh. Không có bất kỳ thứ gì bên dưới có thể thu hút sự quan tâm của họ.
+</p>
+
+<p>
+ Sau đó Glaedr nói: “ Saphira, ở đây, phía bên phải. con có thấy không?”
+</p>
+
+<p>
+ Eragon nhỏm đầu, liếc mắt về phía ánh sáng.
+</p>
+
+<p>
+ Đâu đó về phía bắc, 1 dãy núi hiện ra sau những đám mây. Đỉnh núi được bao phủ bởi băng và tuyết, trông giống như 1 chiếc mũ miện cổ xưa, nằm trên 1 lơp màn sương.
+</p>
+
+<p>
+ Những vách đá hướng về phía đông, tỏa sáng rực rỡ trong ánh bình minh, ngả bóng trên 1 vùng đồng bằng phía tây rộng lớn.
+</p>
+
+<p>
+ Eragon ngồi thẳng dậy. thật khó tin là chuyến phưu lưu của họ đã đến đích.
+</p>
+
+<p>
+ “ chú ý” – Glaedr nói – “ Aras Thelduin” – ngọn núi lửa nằm ở giữa trung tâm Vroengard. “ bay nhanh lên Saphira, chúng ta chỉ còn 1 đoạn đường ngắn nữa thôi”
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-044.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-046.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

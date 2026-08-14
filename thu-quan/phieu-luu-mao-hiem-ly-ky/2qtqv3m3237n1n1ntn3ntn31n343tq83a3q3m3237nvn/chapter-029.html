@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 29 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 29</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-028.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-030.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon xoay vai để điều chỉnh áo giáp bên trong sao cho thoái mải dưới lớp áo chấn thủ.
+</p>
+
+<p>
+ Xung quanh họ là bóng tối tới nặng nề và ngột ngạt. Tầng mây dày che khuất trăng sao. Nếu như không có ánh sang từ ngọn đèn ma trên tay Angela, kể cả Eragon và các tiên nhân cũng chẳng thấy gì.
+</p>
+
+<p>
+ Thời tiết ẩm ướt. THi thoảng đôi lần Eragon cảm thấy vài giọt mưa lạnh buốt rơi xuống má nó.
+</p>
+
+<p>
+ Elva đã cười và từ chối khi nó nhờ cô bé giúp. Nó đã tranh luận khá lâu nhưng chẳng đi tới kết quả gì. Saphira thậm chí đã can thiệp, cô em nó đã bay xuống lều đứa bé phù thủy ở, chui cái đầu khổng lồ vào chỉ cách con bé có một mét, bắt cô bé nhìn vào cặp mắt xanh sang không chớp của Saphira.
+</p>
+
+<p>
+ Lúc đó Elva không còn cười nữa nhưng cô nhóc vẫn không đồng ý. Sự cứng đầu của cô nhóc khiến Eragon thất vọng. Tuy vậy, nó vẫn ngưỡng mộ cá tính mạnh của Elva; với cô nhóc này cả Kỵ sĩ lẫn rồng đều không là gì. Nhưng dù sao, cô nhóc đã phải chịu đựng quá nhiều nỗi đau và trải qua nhiều chuyện đau khổ mà kể cả những chiến binh nhiều năm cũng hiếm khi gặp phải.
+</p>
+
+<p>
+ Arya đang đứng cạnh nó, choàng áo choàng lên cổ. Eragon cũng mặt một cái, cũng như Angela và tiên nhân tóc đen Wydren, người Blödhgarm chọn ra để đồng hành với họ. Họ cần mặc áo choàng để chống lại cái lạnh cắt da cắt thịt của ban đêm và che giấu vũ khí khỏi tầm nhìn của cư dân thành phố, nếu như họ tới được đó.
+</p>
+
+<p>
+ Nasuada, Jörmundur và Saphira đã đi với họ tới rìa doanh trại. Trong các khu lều, những binh lính Varden, người lùn và Urgal đang bận rộn chuẩn bị cho trận chiến sắp tới.
+</p>
+
+<p>
+ “Đừng quên,” Nasuada nói, hơi thở biến thành sướng khói trước mặt cô, “nếu tới bình minh mọi người không tới được cánh cổng, hãy đợi ở một nơi nào đó cho tới sáng hôm sau, và chúng ta sẽ thử lại.”
+</p>
+
+<p>
+ “Chúng ta làm gì có thì giờ mà chờ đợi,” Arya nói.
+</p>
+
+<p>
+ Nasuada xoa tay và nói. Cô có vẻ bồn chồn khác thường. “Tôi biết. Dù sao chúng tôi cũng sẽ sẵn sàng tấn công khi nhận được tín hiệu từ mọi người dù là lúc nào. Sự an toàn của mọi người quan trọng hơn việc chiếm được Dras – Leona. Hãy nhớ lấy.” Ánh mắt của cô dán chặt vào Eragon.
+</p>
+
+<p>
+ “CHúng ta nên đi thôi,” Wydren nói. “Sắp sáng rồi.”
+</p>
+
+<p>
+ Eragon áp trán vào đầu Saphira trong giây lát. Chúc anh đi săn thành công, cô bé nhẹ nhàng nói.
+</p>
+
+<p>
+ Em cũng thế nhé.
+</p>
+
+<p>
+ Chúng miễn cưỡng chia tay rồi Eragon cùng Arya và Wyrden đi theo Angela rời khỏi doanh trại, tiến tới khu phía đông thành phố. Nasuada và Jörmundur thì thầm chúc họ thượng lộ bình anh khi họ đi ngang qua, sau đó tất cả rơi vào tĩnh lặng chỉ còn tiếng thở và tiếng gót giày nện trên nền đất.
+</p>
+
+<p>
+ Angela điều chỉnh ánh sáng trong lòng bàn tay cho tới khi chỉ đủ sáng để Eragon nhìn thấy chân mình. Nó phải căng mắt ra để ý những cục đá hay nhánh cây chìa ra giữa đường.
+</p>
+
+<p>
+ Họ bước đi trong im lặng gần tiếng đồng hồ cho tới khi bà lang dừng lại nói nhỏ, “Theo tôi biết thì chúng ta đã tới nơi rồi. Tôi khá giỏi trong ước lượng khoảng cách nhưng có lẽ chúng ta đã đi hơn một ngàn mét rồi. Trong cảnh tranh sáng tranh tối này thì cũng khó nói lắm.”
+</p>
+
+<p>
+ Phía trên trái họ là những ánh sáng đâu đó từ phía chân trời, đó là bằng chứng duy nhất cho thấy họ đã tới gần Dras – Leona. Những ánh sáng đó gần họ tới mức họ có cảm tưởng như có thể với tay hái chúng xuống.
+</p>
+
+<p>
+ Nó và hai người phụ nữ đứng xung quanh Wyrden khi tiên nhân này quỳ xuống tháo găng tay phải ra. Wyrden đặt lòng bàn tay lên mặt đất và ngâm nga câu thần chú anh đã học từ pháp sư người lùn mà Orik đưa tới hướng dẫn họ cách tìm căn phòng dưới lòng đất – ngay trước khi ra đi làm nhiệm vụ -
+</p>
+
+<p>
+ Trong khi tiên nhân hát, Eragon chăm chú nhìn vào màn đêm, lắng nghe và quan sát động tĩnh của kẻ thù. Mưa nặng hạt dần. Nó mong sao thời tiết sẽ khá khẩm hơn trước khi trận chiến bắt đầu, nếu như nó có thể xảy ra.
+</p>
+
+<p>
+ Có tiếng cú rúc đâu đó và nó với tay nắm lấy thanh Brisingr, nhưng sau đó dừng lại và nắm chặt tay. Barzûl, nó dùng câu chửi thề quên thuộc của Orik để nói với mình. Nó đang căng thẳng hơn mức cần thiết. Những ký ức về trận chiến giữa nó và Murtagh cùng Thorn một lần nữa – từng ký ức và tất cả - đang khiến nó nao núng.
+</p>
+
+<p>
+ Chắc chắn mình sẽ thua nếu tiếp tục thế này, nó nghĩ thầm. Vì thế nó từ từ thở ra và luyện tập bài thể dục cho tinh thần đầu tiên Glaedr dạy để kiểm soát cảm xúc.
+</p>
+
+<p>
+ Con rồng già không mặn mà với nhiệm vụ nay khi Eragon kể cho ông nghe nhưng ông rồng cũng không phản đối. Sau khi bàn luận xong về những tình huống bất ngờ có thể xảy ra, Gleadr nói: Hãy thận trọng với bóng tôi đó Erago. Những thứ kỳ lạ thường ẩn nấp trong bóng tôi. Eragon không cho đó là một lời động viên ý chí nó.
+</p>
+
+<p>
+ Nó gạt những giọt nước mưa trên mặt còn tay kia nắm lấy chuôi kiếm. Găng tay da chạm vào da mặt nó sao ấm và mềm mại thế.
+</p>
+
+<p>
+ Nọ hạ bàn tay xuống ngoắc vào thắt lưng của Beloth Thông Thái và cảm nhận được sức nặng của mười hai viên kim cương không tì vết nạm lên đó. Sáng nay nó đã tới khu nhốt thú và khi các đầu bếp giết chim và cừu làm bữa sáng, nó đã chuyển năng lượng chết của lũ động vật vào những viên đá quý. Nó ghét chuyện nay; khi nó phóng tư tưởng về phía những con vật – nếu như chúng còn đầu – nỗi sợ hãi và đau đớn của chúng biến thành của nó, và khi đầu óc chúng trống rỗng dần, nó cảm thấy như chính nó đang chết. Đó là một trải nghiệm kinh khủng, khiến con người ta hoàng loạn và sợ hãi. Bất cứ khi nào có thể nó đều thì thầm bằng ngôn ngữ cổ với những con vật để khiến chung dịu nỗi đau. Thi thoảng nó thành công nhưng đôi khi lại không. Mặc dù kiểu gì chúng cũng phải chết và dù nó cần năng lượng nhưng nó không thích công việc này, vì nó có cảm giác nó là người chịu trách nhiệm vì cái chết của chúng. Nó cảm thấy có tội.
+</p>
+
+<p>
+ Giờ nó thấy thắt lưng hơi nặng hơn một chút vì lượng năng lượng chuyển dời từ những on vật. Kể cả nếu như những viên kim cương khảm trên đó có vô giá trị đi chăng nữa, Eragon vẫn thấy thắt lưng này còn quý hơn vàng, vì trên đó chứa hàng trăm ngàn mạng sống.
+</p>
+
+<p>
+ Khi Wyrden ngừng hát, Arya hỏi, “Anh tìm ra không?”
+</p>
+
+<p>
+ “Lối này,” Wyrden đứng thẳng lên nói.
+</p>
+
+<p>
+ Eragon vừa bị chấn động vừa thấy nhẹ nhõm. Jeod nói đúng!
+</p>
+
+<p>
+ Wyrden dẫn họ đi qua một con đường và rất nhiều ngọn đồi nhỏ sau đó đi tới một bãi bồi phù sa. “Cửa đường hầm phải ở đâu đó quanh đây,” tiên nhân nói và chỉ về phía bờ tây.
+</p>
+
+<p>
+ Bà lang tăng độ sáng của ngọn đèn ma để họ có thể tìm kiếm; sau đó Eragon, Arya và Wyrden bắt đầu ra soát hai bên bãi bồi bằng cách dùng que chọc xuống. Hai lần Eragon vấp chân vào một thân cây bu lô đổ khiến nó nghiến răng nghiến lợi vì đau. Nó ước gì mình quấn xà cạp nhưng nó đã bỏ lại thứ đó cùng khiên vì sợ chúng sẽ khiến dân thành phố chú ý.
+</p>
+
+<p>
+ Sau hai mươi phút tìm kiếm cuối cùng Eragon nghe thấy có tiếng kim loại rung lên, sau đó Arya nhẹ nhàng gọi. “Ở đây.”
+</p>
+
+<p>
+ Nó cùng những người còn lại tất tả chạy tới chỗ nàng đứng cạnh một lỗ nhỏ trên bãi.Arya rút que gậy ra để lộ một đường hầm lát đá cao năm mét rộng ba mét. Một lưới sắt đã gỉ sét che lỗ hổng lại.
+</p>
+
+<p>
+ “Nhìn đi,” Arya nói và chỉ xuống mặt đất.
+</p>
+
+<p>
+ Eragon nhìn và nó thấy một lối nhỏ dẫn xuống đường hầm. Kể cả dưới ánh sáng đỏ kỳ dị từ ngọn đèn ma của bà lang, Eragon cũng biết lối mòn đó có là do đi lâu mà thành. Một hoặc nhiều người đã sử dụng đường hầm này thường xuyên để ra vào Dras – Leona.
+</p>
+
+<p>
+ “Chúng ta nên cẩn thận,” Wyrden nói.
+</p>
+
+<p>
+ Angela hừ nhỏ trong họng. “Không thế thì các người tính đi thế nào? Với kèn trum pét thổi om sòm và sứ giả la hét báo tin chắc.”
+</p>
+
+<p>
+ Tiên nhân không trả lời nhưng rõ ràng anh ta rất không vui.
+</p>
+
+<p>
+ Arya và Wyrden giỡ tấm lưới sắt và cẩn trọng đặt chân vào đường hầm. Cả hai mang theo ngọn đèn ma cho riêng mình. Quả cầu sang trôi trên đầu họ như những mặt trời đỏ rực con con dù ánh sang của chúng không hơn ánh lửa tỏa ra từ than đang cháy là mấy.
+</p>
+
+<p>
+ Eragon lùi lại nói với Angela. “Vì sao thần tiên lại kính trọng bà thế? Hình như họ sợ bà nữa là đằng khác.”
+</p>
+
+<p>
+ “Chẳng nhẽ ta không đáng cho người khác kính trọng à?”
+</p>
+
+<p>
+ Nó lưỡng lự. “Bà biết không, một ngày nào đó bà phải nói cho cháu biết rõ về bà.”
+</p>
+
+<p>
+ “Sao cháu lại nghĩ thế,” Sau đó bà bước vào đường hầm, áo choàng phấp phới sau lưng như cánh Lethrblaka.
+</p>
+
+<p>
+ Eragon lắc đầu nối bước.
+</p>
+
+<p>
+ Bà lang nhỏ thó không phải cúi xuống nhiều để khỏi đụng đầu vào trần nhưng Eragon và hai tiên nhân kia phải cúi xuống như một ông gia bị bệnh thấp khớp. Hầu như đường hầm trống không. Một lớp bụi bẩn dày bám trên sàn nhà. Vài cành cây và đá sỏi, thậm chí cả da rắn nằm rải rác gần miệng đường hầm. Con đường có mùi như rạ ướt và cánh bướm đêm.
+</p>
+
+<p>
+ Eragon và những người khác im lặng bước nhưng đường hầm khuếch đại tiếng động. Một tiếng bước chân và tiếng lạo xạo vọng lại kèm theo tiếng văng vẳng thì thầm xì xào như có người sống quanh đây. Những tiếng xì xào khiến Eragon cảm thấy như bị bao vây bởi những linh hồn người chết bám theo họ trong từng bước đi.
+</p>
+
+<p>
+ Quá nhiều kẻ theo dõi vài người, nó nghĩ khi đá phải một hòn đá khiến nó nảy lên với những tiếng lách cách lớn đã đường đường hầm làm lớn hơn gấp trăm lần.
+</p>
+
+<p>
+ “Xin lỗi,” nó nói khi mọi người quay lại nhìn nó.
+</p>
+
+<p>
+ Một nụ cười nhăn nhở hiện lên trên môi nó. Ít nhất chúng ta đã biết những âm thanh kỳ lạ dưới lòng Dras – Leona từ đâu mà ra. Khi về nó sẽ kể lại cho ông Jeod nghe.
+</p>
+
+<p>
+ Khi họ đã đi được một đoạn khá dài trong đường hầm, Eragon dừng lại và nhìn về lối vào, lúc này hầu như đã lẫn trong bóng tối. Bóng chạng vạng như có thể nắm bắt lấy, như thể một tấm vài dày phủ lên toàn thế giới. Cùng với những bức tường sát sịt và trần nhà thấp, chúng khiến nó có cảm giác tù túng và bị bóp nghẹt. Thường nó không để ý nhiều tới việc ở trong không gian hẹp, nhưng đường hầm này khiến nó nhớ tới những con đường xấu xí trong núi Helgrind nơi nó và Roran chống trả lại lũ Ra’zac – một ký ức chẳng lấy gì làm vui vẻ.
+</p>
+
+<p>
+ Nó hít một hơi thật sâu sau đó thở ra.
+</p>
+
+<p>
+ Ngay khi định bước tiếp, nó thoáng nhìn thấy hai con mắt lớn sáng lên trong bóng tôi nhưn thể hai viên đá mặt trăng màu đồng. Nó nắm lấy thanh Brisingr và rút thanh kiếm ra khỏi bao vài centimet thì Solembum xuất hiện khỏi bóng tối, nhẹ nhàng di chuyển trên bàn chân móng vuốt.
+</p>
+
+<p>
+ Con ma mèo dừng lại ngoài vùng ánh sáng. Nó nhúc nhích cái tai điểm đen và hàm rơi ra như ngạc nhiên lắm.
+</p>
+
+<p>
+ Eragon thả lỏng người. Đáng nhẽ mình phải đoán ra chứ. Angela đi đâu và Solembum theo đó. Lại một lần nữa, Eragon nghĩ về quá khứ của bà lang: Sao bà lại có được sự trung thành của con mèo ma?”
+</p>
+
+<p>
+ Vì những người khác đã đi xa hơn, bóng tôi lại một lần nữa phủ lên Solembum.
+</p>
+
+<p>
+ Biết mèo ma bọc hậu nên Eragon vui vẻ đuổi theo những người còn lại.
+</p>
+
+<p>
+ Trước khi nhóm rời doanh trại, Nasuada đã nói tóm tắt cho họ trong thành có chính xác bao nhiêu lính, họ đứng gác ở đâu cũng như nhiệm vụ và thói quen như thế nào. Cô cũng cho họ biết chi tiết về giờ giấc ngủ nghỉ của Murtagh, hắn ta ăn gì, và kể cả tâm trạng vào đêm trước. Thông tin của cô luôn luôn chính xác đến lạ lùng. Nếu có ai hỏi, cô chỉ cười và giải thích rằng, từ hồi Varden xuất quân, mèo ma đã giúp cô do thám Dras – Leona. Một khi Eragon và những người đồng hành vào được trong thành phố, mèo ma sẽ cùng họ đi tới cổng nam nhưng sẽ nếu được không xuất đầu lộ diện trước mặt quân Triều đình, nếu không họ sẽ không thể nào giúp Nasuada hiệu quả như trước. Dù sao thì làm gì có ai lại nghĩ một con mèo to tổ chảng lại là do thám của quân địch được chứ?
+</p>
+
+<p>
+ Sau đó, Eragon đột nhiên nghĩ khi nhớ những lời chỉ dẫn vắn tắt của Nasuada rằng, điểm yếu lớn nhất của Murtagh là hiện giờ hắn vẫn phải ngủ. Nếu chúng ta không bắt hoặc giết được hắn trong ngày hôm nay, lần sau gặp lại, chúng ta phải tìm cách đánh thức hắn vào nửa đêm – hoặc nếu được thì nhiều hơn một đêm. Ba hay bốn đêm không ngủ đủ sẽ khiến hắn khó lòng chiến đấu.
+</p>
+
+<p>
+ Họ tiếp tục đi trong đường hầm chạy thẳng như một mũi tên, không có lấy một đoạn rẽ, ngõ quặt. Eragon nghĩ nó thấy nền hơi dốc – cũng đúng thôi vì nó được thiết kế làm cống thoát nước cho thành phố - nhưng nó không chắc lắm.
+</p>
+
+<p>
+ Sau một hồi, lớp bụi bẩn dưới chân họ nhão hơn và dính vào giày của họ như đất sét ướt. Nước nhỏ xuống từ trần nhà, thi thoảng rơi xuống cổ và chảy xuống xương quai xanh Eragon như một ngón tay lạnh lẽo lướt lên người nó. Có một lần nó bị trượt chân vì giẫm phải bùn khiến nó phải giang tay giữ thăng bằng, khi đó nó phát hiện tường dính đầy chất nhờn.
+</p>
+
+<p>
+ Họ không biết đã đi bao lâu, có thể là một tiếng hoặc giả chỉ là vài phút. Nhưng thế nào đi nữa, cổ Eragon ê ẩm vì nửa đứng nửa cúi và nó mệt mỏi phải nhìn chăm chăm vào bức tường đá giống nhau như đúc.
+</p>
+
+<p>
+ Cuối cùng nó để ý thấy vọng nhỏ đi và ngắt quãng lâu hơn. Ngay sau đó, đường hầm dẫn tới một căn phòng chữ nhật rộng với trần nhà nửa vòm chóp cao khoảng mười lăm mét. Căn phòng trống rỗng trừ có một cái thùng bị mọt ăn ở một góc. Phía đối diện với họ là ba cánh cổng vòm giống y sì nhau mở ra ba căn phòng giống nhau, đều nhỏ và tối. Eragon không biết chúng sẽ dẫn tới đâu.
+</p>
+
+<p>
+ Cả nhóm dừng lại và Eragon từ từ đứng thẳng lưng, nhăn mặt vì các cơ bắp đau nhừ giãn ra.
+</p>
+
+<p>
+ “Chắc phần này không nằm trong bản thiết kế của Erst Râu bạc,” Arya nói.
+</p>
+
+<p>
+ “Chúng ta nên chọn đường nào?” Wyrden hỏi.
+</p>
+
+<p>
+ “Không rõ ràng sao?” bà lang hỏi. “Đường bên trái. Luôn luôn là đường bên trái.” Sau đó bà rảo bước tới cổng vòm đó.
+</p>
+
+<p>
+ Eragon không thể nào im miệng. “Trái là trái nào? Nếu bà đứng ở chiều bên này thì bên trái là...”
+</p>
+
+<p>
+ “Trái có thể là phải và phải có thể là trái, đúng, đúng,” bà lang nói. Mắt bà nheo lại. “Thi thoảng cháu thông minh đột xuất quá đấy, Khắc tinh của tà thần ạ... Tốt thôi, chúng ta sẽ đi theo hướng của cháu. Nhưng đừng nói là ta không báo trước nếu chúng ta lạc đường lòng vòng trong đây hết ngày này tháng khác.”
+</p>
+
+<p>
+ Eragon thực ra thích đi vào cổng vòm ở giữa hơn vì có vẻ nó sẽ dẫn chúng đi thẳng lên các con đường nhưng nó không muốn cãi nhau với bà lang. Đi đường nào chúng ta cũng sẽ sớm tìm ra cầu thang, nó nghĩ. Dưới Dras – Leona không thể có quá nhiều phòng bí mật được.”
+</p>
+
+<p>
+ Angela giơ ngọn đèn ma lên cao và đi trước. Wyrden và Arya đi theo và Eragon chặn hậu.
+</p>
+
+<p>
+ Căn phòng đi vào qua cổng vòm bên phải rộng hơn họ tưởng. Nó phải dài tới hai mươi mét sau đó ngoặt ở một góc và kéo dài thêm vài mét nữa dẫn tới một hành lang cps gắn những chân đuốc trống. Qua hành lang là một cơn phòng nhỏ hơn với ba cổng vòm dãn tới ba cổng vòm khác, và cứ thế.
+</p>
+
+<p>
+ Ai xây dựng cái này và vì sao? Eragon băn khoăn. Tất cả các căn phòng họ đi qua đều trống trải. Thứ duy nhất họ thấy là một chiếc ghế hai chân nằm chổng chowvaf vài cái lọ vỡ nằm ở một góc phủ đầy mạng nhện.
+</p>
+
+<p>
+ Angela dường như chưa bao giờ chần chừ hay bối rối chọn hướng đi vì bà luôn chọn bên phải. Eragon có thể phản đối nhưng nó chẳng nghĩ được cách nào hay hơn nên thôi.
+ <br/>
+ BÀ lang dừng lại khi họ tới một căn phòng hình tròn có bảy cổng vòm trên tường. Bảy hành lang tính cả cái họ vừa từ đó bước vào trải khắp bức tường trong phòng.
+ <br/>
+</p>
+
+<p>
+ “Đánh dấu lối vào của chúng ta hoặc không chúng ta sẽ đi ngược lại mất,” Arya nói.
+</p>
+
+<p>
+ Eragon đi tới hành lang và dùng đầu kiếm Brisingr vẽ một dấu x lên bức tường đá. Trong khi đó nó nhíu mắt nhìn vào bóng tối tìm tung tích Solembum nhưng nó chẳng thấy gì. Eragon nghĩ con mèo ma đã lạc đâu đó trong ma trận này rồi. Nó đã định phóng tư tưởng đi tìm mèo ma nhưng lại lo; nhỡ có ai đó biết nó ở đây, hoj sẽ báo cho Triều đình biết vị trí của họ.
+</p>
+
+<p>
+ “A!” Angela reo lên và bóng tối xung quanh Eragon chuyển sang chỗ khác khi bà lang đứng nhón chân nâng ngọn đèn ma lên cao nhất có thể.
+</p>
+
+<p>
+ Eragon vội vàng chạy tới giữa phòng nơi bà đang đứng cùng Arya và Wyrden. “Cái gì thế?” nó thì thầm.
+</p>
+
+<p>
+ “TRần nhà, Eragon,” Arya nói nhỏ. “Nhìn trần nhà đi.”
+</p>
+
+<p>
+ Nó làm theo nhưng chỉ nhìn thấy những phiến đá cổ phủ rêu với rất nhiều đường rạn nứt, lạ là trần nhà vẫn chưa bị sập sau bao nhiêu năm.
+</p>
+
+<p>
+ Sau đó nó nhìn đi chỗ khác và thở hụt hơi.
+</p>
+
+<p>
+ Những đường đó không phải vết nứt mà là những chữ run được khắc sâu trong đá – nhiều hàng chữ. Chúng ngay ngắn và nhỏ với những nét sổ và góc sắc nét. Rêu phong và những vị khách của thời gian đã phủ kín một phần văn bản nhưng phần còn lại vẫn đọc được.
+</p>
+
+<p>
+ Eragon vật lộn với những chữ rune trongmootj lát nhưng chỉ nhận ra vài từ và những từ đó lại viết khác với cách nó viết. “Nó nói gì vậy?” nó hỏi. “Chữ người lùn à?”
+</p>
+
+<p>
+ “Không,” Wyrden nói. “Đây là chữ của loài người nhưng được nói và viết từ rất lâu rồi, thuộc về một ngôn ngữ đặc biệt: kẻ cuồng tín Tosk.”
+</p>
+
+<p>
+ Cái tên đó khiến Eragon giật mình. “Khi Roran và tôi giải cứu Katrina, chúng tôi có nghe những thày tu dòng Helgrind nhắc tới cuốn sách của Tosk.”
+</p>
+
+<p>
+ Wyrden gật đầu. “Đó là tôn chỉ của giáo phái Helgrind. Tosk không phải là người đầu tiên thờ phụng Helgrind nhưng là người đầu tiên soạn luật lệ cho tín ngưỡng của họ sau đó nhiều người đã làm theo. Những người thờ phụng Helgrind coi ông ta như người sáng lập giáo phái. Và cái này” – tiên nhân mở rộng tay – “là lược sử cuộc đời Tosk từ lúc ông ta sinh ra tới khi từ giã cõi đời: những câu chuyện thật cũng như những điều ông ta chưa từng nói với ai ngoài giáo phái.”
+</p>
+
+<p>
+ “Chúng ta có thể biết nhiều điều từ đây,” Angela nói mà không rời mắt khỏi trần nhà. “Nếu như chúng ta có thời gian,” Eragon ngạc nhiên khi thấy bà bị cuốn hút tới vậy.
+</p>
+
+<p>
+ Arya liếc nhìn bảy hành lang. “Một lúc cũng được nhưng nhanh lên.”
+</p>
+
+<p>
+ Trong khi Angela và Wyrden căng thẳng đọc, Arya đi tới một trong những cổng vòm và lầm rầm ngâm nga câu thần chú tìm đường và định vị. Khi ngâm xong, nàng ngẩng cổ đợi một lát rồi chuyển tới cổng vòm tiếp theo.
+</p>
+
+<p>
+ Eragon nhìn những chữ rune thêm một lúc nữa. Sau đó nó trở lại cửa hành lang họ vừa bước vào, dựa người vào tường chờ đợi. Những phiến đá mang sự lạnh lẽo khoác lên vai nó.
+</p>
+
+<p>
+ Arya dừng lại trước cổng vòm thứ tư. Điệu hát dần trở nên quen thuộc của nàng tăng lên một cung bậc và nghe giống như tiếng gió thì thào.
+</p>
+
+<p>
+ Nhưng lại không có gì xảy ra.
+</p>
+
+<p>
+ Sự nhột nhạt ở bàn tay phải khiến Eragon nhìn xuống. Một con dế lớn không có cánh bò lên găng tay nó. Con bọ thật xấu xí: đen và trông như củ hành, với những cái chân có ngạnh cùng cái đầu lớn trông như sọ người. Vỏ giáp cứng của nó bóng dầu.
+</p>
+
+<p>
+ Eragon rùng mình, nổi da gà và phẩy tay để con bọ bay vào bóng tối.
+</p>
+
+<p>
+ Nó rơi xuống với một tiếng thụp nghe thấy rõ.
+</p>
+
+<p>
+ Hành lang thứ năm cũng không khả quan hơn 4 hành lang trước là mấy. Arya bước qua cánh cổng Eragon đứng và đi tới trước cổng vòm thứ bảy.
+</p>
+
+<p>
+ Trước khi nàng đọc thần chú, một tiếng mèo kêu vang lên trong hành lang dường như xuất phát từ mọi hướng, sau đó là một tiếng rít và tiếng tát và cào khiến lông trên cơ thể Eragon dựng ngược hết lên.
+</p>
+
+<p>
+ Angela quay người. “Solembum!”
+</p>
+
+<p>
+ Cả bốn người như một đồng thời rút kiếm.
+</p>
+
+<p>
+ Eragon lùi về giữa phòng, ánh mắt đảo từ cổng vòm này sang cổng vòm khác. gedwëy ignasia của nó ngứa ngáy như bị bọ chét cắn – một kiểu báo động vô ích vì nó không biết được nó đang gặp nguy hiểm gì và bắt nguồn từ đâu.
+</p>
+
+<p>
+ “Lối này,” Arya nói và đi về cánh cổng thứ bảy.
+</p>
+
+<p>
+ Bà lang không chịu đi. “Không!” bà thì thầm nhưng quả quyết. “Chúng ta phải giúp cậu ấy.” Eragon để ý thấy bà cầm một thanh đoản kiếm có màu sắc lạ lùng đang phát sáng như đá quý.
+</p>
+
+<p>
+ Arya quắc mắt. “Nếu Murtagh biết chúng ta ở đây, chúng ta sẽ...”
+</p>
+
+<p>
+ Mọi chuyện xảy ra quá nhanh và im lặng nên Eragon không thể biết rằng liệu nó có nhìn đúng hướng không: sáu cánh cửa ẩn trên tường mở ra ba hành lang mở toang, và khoảng xấp xỉ ba mươi tên mặc đồ đen với kiếm trong tay xông về phía họ.
+</p>
+
+<p>
+ “Letta!” Wyrden hét lên và những tên trong một nhóm đụng vào nhau như thể chúng đụng phải một bức tường.
+</p>
+
+<p>
+ Sau đó những kẻ tấn công còn lại ngã đè lên và giờ họ không cần dùng tới phép thuật. Eragon dễ dàng đỡ một nhát kiếm, và với một đòn đánh đảo tay nó chém bay đầu kẻ tấn công. Như những tên khác, tên này đeo khăn che mặt chỉ để lộ cặp mắt và chiếc khăn bay mất khi đầu hắn lăn lông lốc dưới đất.
+</p>
+
+<p>
+ Eragon nhẹ nhõm khi thanh Brisingr đẫm máu. Đã có lúc nó sợ rằng đối thủ của nó được bảo vệ bởi phép thuật và áo giáp – hoặc, tệ hơn, chúng không phải con người.
+</p>
+
+<p>
+ Nó đâm xiên vào ngực một kẻ khác và đang đối phó với hai kẻ khác thì một lưỡi kiếm không biết từ đâu nhằm cổ họng nó mà bay tới. Lưới phép bảo vệ đã giúp nó tránh được cái chết nhưng vì lưỡi kiếm chỉ cách cổ nó chưa đầy hai centimet, nó buộc phải lùi lại.
+</p>
+
+<p>
+ Nó ngạc nhiên khi thấy gã nó vừa đâm vẫn đứng nguyên, máu chảy ào ạt từ lỗ mà Eragon xuyên qua.
+</p>
+
+<p>
+ Eragon kinh hãi. “Chúng không cảm thấy đau,” nó hét khi đang chặn lưỡi kiếm chém tới từ ba hướng khác nhau. Nếu những người khác có nghe thấy tiếng nó, họ cũng không thể trả lời.
+</p>
+
+<p>
+ Nó không nói nữa mà tập trung vào những kẻ trước mặt và tin tưởng những người bạn đồng hành sẽ bọc hậu cho mình.
+</p>
+
+<p>
+ Eragon chém tới chém lui thanh Brisingr vào không khí như thể nó chẳng nặng hơn một cây gậy là mấy. Nếu như bình thường trong một tích tắc nó có thể giết rất nhiều tên địch nhưng giờ nó đang đụng độ những kẻ không biết đau nên nó không còn lựa chọn nào khác ngoài chặt đầu chúng, đâm xuyên tim chúng hoặc chém và kìm chân chúng cho tới khi mất máu nhiều khiến chúng mất ý thức. Nhưng những kẻ kia cứ liên tiếp tấn công nó dù cho vết thương có nặng tới đâu. Càng nhiều kẻ xông tới càng khó cho nó đỡ và đánh trả. Nó có thể không đỡ và để lá chắn bảo vệ mình nhưng việc vung thanh Brisingr lên trở thành một phản ứng vô thức. Và vì nó không biết liệu lá chắn bảo vệ của nó có bị chọc thủng hay không – nếu chúng làm được điều đó, chúng sẽ giết chết nó – và nó nó sẽ còn cần tới nững lá chắn bảo vệ, vì vậy nó chiến đấu thận trọng như thể nó đang đụng độ với những kẻ có thể giết chết nó bằng một nhát chém.
+</p>
+
+<p>
+ Càng thêm nhiều tên lính mặc đồ đen xông ra từ cánh cửa bí mật trong hành lang. CHúng bao vây Eragon, dùng số lượng buộc nó lùi lại. Nhữn bàn tay thò ra nhắm vào chân tay nó như muốn giữ chặt lấy nó.
+</p>
+
+<p>
+ “Kverst,” nó hét nên một trong mười hai từ tử thần mà Orosmis đã dạy nó. Đúng như nó nghĩ, câu thần chú vô tác dụng: những tên lính kia được bảo vệ khỏi những đòn tấn công pháp thuật trực tiếp. Nó nhanh chóng dùng câu thần chú Murtagh đã từng sử dụng với nó: “Thrysta vindr!” Đó là một cách đánh gián tiếp vì nó không thực sự tấn công đối phương mà chỉ dùng khí nén lên người đối phương. Trong bất cứ trường hợp nào, nó cũng thành công.
+</p>
+
+<p>
+ Một trận gió lùa vào căn phòng, thổi bạt tóc và áo choàng của Eragon và thổi bay tên lính gần nó nhất đụng vào những tên đồng bọn, khiến khu vực đường kính mười mét xung quanh nó sạch bách.
+</p>
+
+<p>
+ Nó quay người xem những người khác xoay sở ra sao. Nó không phải người đầu tiên tìm ra cách chọc thủng lưới phòng ngực của những tên lính; những tia chớp xoay tròn trên tay phải Wyrden và bao bọc xung quanh những tên lính xấu xố đứng gần anh. Luồng năng lượng sáng lòa gần như trở thành chất lỏng khi chúng luồn lách xung quanh nạn nhân.
+</p>
+
+<p>
+ Nhưng càng càng nhiều tên lính xông vào phòng.
+</p>
+
+<p>
+ “Đường này!” Arya hét lên và lao về phía hành lang thứ bảy – nàng đã chưa kịp kiểm tra trước khi bọn lính tràn vào.
+</p>
+
+<p>
+ Wyrden đi theo, Eragon cũng vậy. Angela khập khiễng đi cuối cùng. Máu trên vai bà đang chảy ra. Đằng sau họ, những tên lính mặc đồ đen ngần ngừ đứng lại trong phòng thêm một chốc. Sau đó, với một tiếng hét lớn, chúng đuổi theo họ.
+</p>
+
+<p>
+ Khi Eragon chạy trong hành lang, nó cố gắng tìm ra câu thần chú nào đó có thể giết chết thay vì đánh ngã kẻ địch. Nó nhanh chóng tìm ra một câu và đọc ngay khi nhìn thấy kha khá tên địch.
+</p>
+
+<p>
+ Chúng là ai? Nó băn khoăn. Ở đây có bao nhiêu tên?
+</p>
+
+<p>
+ Qua lỗ hổng bên trên, nó nhìn thấy ánh sáng tím mờ nhạt. Nó vừa cảm thấy sợ hãi vì nơi bắt nguồn ánh sáng đó thì bà lang thốt lên một tiếng hét lớn sau đó là một ánh sáng vàng cam lóe qua cùng một tiếng thịch nghe ghê răng và mùi trứng thối bay lên.
+</p>
+
+<p>
+ Eragon quay người quan sát xung quanh và thấy năm tên lính mang bà lang đi qua cánh cửa trong hành lang. “Không!” Eragon hét lên nhưng trước khi nó ngậm miệng, cánh cửa đã đóng lại lặng lẽ như khi mở ra, và bức tường lại một lần nữa phẳng tới hoàn hảo.
+</p>
+
+<p>
+ “Brisingr!” nó hét lên và thanh kiếm của nó cháy rừng rực. Nó đặt đầu mũi kiếm lên bức tường và cố ấn nó xuyên qua đá, cắt mở cánh cửa. Nhưng vì phiến đá dày và khó chảy nên nó sẽ tốn rất nhiều năng lượng vô ích.
+</p>
+
+<p>
+ Sau đó Arya xuất hiện bên cạnh nó và đặt tay lên chỗ từng là cánh cửa rồi lẩm bẩm, “Ládrin.” Mở ra. Cánh cửa vẫn đóng nhưng Eragon xấu hổ vì nó chưa từng nghĩ tới dùng pháp thuật.
+</p>
+
+<p>
+ Những kẻ địch đang đuổi theo sát nụt nên nó và Arya không còn lựa chọn nào khác là quay người nghênh chiến. Eragon muốn dùng câu thần chú nó vừa nghĩ ra nhưng hành lang chỉ vừa cho hai người một lúc; nó sẽ không thể giết hết những tên còn lại khi chúng khuất dạng. Tốt nhất là để câu thần chú đó làm vũ khí bí mật.
+</p>
+
+<p>
+ Nó và Arya chặt đầu hai tên xông tới đầu tiên sau đó tấn công cặp tiếp theo khi chúng bước qua xác hai tên đồng bọn. Họ nhanh chóng chém chết sáu tên nhưng dường như cuộc chiến không thể nào đi tới hồi kết.
+</p>
+
+<p>
+ “Qua đằng đó!” Wyrden hô.
+</p>
+
+<p>
+ “Stenr slauta!” Arya hét vang và trong suốt hành lang – kéo dài vài mét kể từ chỗ nàng đứng – đá trên tường rơi xuống. Trận mưa đã khiến những tên mặc đồ đen thu mình chùn bước và hơn một tên bị què, ngã xuống đất.
+</p>
+
+<p>
+ Eragon và Arya cùng nhau chạy theo Wyrden lúc này đang chạy về phía cửa cuối hành lang. Tiên nhân chỉ còn cách cửa ba mươi mét.
+</p>
+
+<p>
+ Rồi mười mét.
+</p>
+
+<p>
+ Rồi năm mét...
+</p>
+
+<p>
+ Đột nhiên một trận mưa mũi lao bằng thạch anh tím bay tới từ những lỗ hổng trên sàn nhà và trần nhà, khiến Wyrden kẹt cứng ở giữa. Tiên nhân dường như trôi trong hành lang, những mũi lao chỉ còn cách da thịt anh một vài centimet vì lưới phòng hộ của anh bảo vệ anh. Sau đó một tiếng lách tách vang lên khi năng lượng phóng qua mỗi ngọn lao và những đầu lao sắc như kim tỏa sáng rực rỡ tới đau mắt. Một tiếng rắc vang lên và chúng xuyên qua mục tiêu.
+</p>
+
+<p>
+ Wyrden kêu lên và khuỵu xuống, ngọn đèn ma của anh tắt lịm và anh không di chuyển nổi nữa.
+</p>
+
+<p>
+ Eragon không tin vào mắt mình khi dừng lại trước trận địa lao. Với tất cả những kinh nghiệm chiến trận, nó chưa bao giờ chứng kiến cái chết của một tiên nhân. Wyrden và Blödhgarm cùng những tiên nhân bảo vệ nó đều là những người ưu tú. Eragon cứ nghĩ họ chỉ ngã xuống khi đối đầu với Galbatorix hoặc Murtagh.
+</p>
+
+<p>
+ Arya cũng choáng váng y như nó. Nhưng cô phục hồi tinh thần nhanh hơn. “Eragon,” cô vội vã nói. “dùng thanh Brisingr mở đường đi.”
+</p>
+
+<p>
+ Nó hiểu. Thanh kiếm của nó, không giống của nàng, miễn dịch với thứ ma thuật của những mũi giáo, dù cho đó là ma thuật gì đi chăng nữa.
+</p>
+
+<p>
+ Nó kéo tay về phía sau và vung mạnh nhất có thể. Nửa tá lao gãy vụn dưới lưỡi kiếm Brisingr. Đá thạch anh kêu vang như tiếng chuông khi vỡ vụn và khi đụng mặt đất chúng phát ra tiếng leng keng như băng đá.
+</p>
+
+<p>
+ Eragon tiếp tục đi về phía bên phải hành lang và không chạm vào mũi lao đẫm máu đang găm trên mình Wyrden. Nó vung kiếm hết lần này tới lần khác để mở đường đi qua rừng lao đang bay vun vút. Với mỗi nhát chém, nó làm cho nhiều mảnh thạch anh bay lượn trong không khí. Một mảnh sượt qua má trái nó khiến nó nhăn nhó ngạc nhiên và lo rằng lưới bảo vệ của nó đã bị vô hiệu hóa.
+</p>
+
+<p>
+ Những mạnh vụn của những mũi lao vỡ khiến nó phải di chuyển cẩn trọng. Những mảnh vụn bên dưới có thể dễ dàng làm rách giày nó trong những những mảnh đang lao vun vút bên trên đe dọa đầu và cổ nó. Nhưng nó vẫn xoay xở tránh, duy chỉ dính một vết cắt dài trên bắp chân phải khiến nó đau nhói mỗi lần dồn trọng lượng lên chân.
+</p>
+
+<p>
+ Những tên lính mặc đồ đen gần như tóm được họ khi Eragon giúp Arya vượt qua những mũi lao cuối cùng. Một khi vượt qua, họ chạy qua lỗ hỏng và đi vào vùng ánh sáng tím. Eragon quay người lại đối chọi với tụi lính, giết tới những tên cuối cùng để báo thù cho Wyrden.
+</p>
+
+<p>
+ Ở phía bên kia lỗ hổng là một căn phòng xây nặng nề và tối om khiến Eragon nghĩ tới những hang động bên dưới Tronjheim. Những hoa văn hình tròn lớn in lên đá – đá hoa cương, đá can-xê-đoan và đá hê-ma-tít được đánh bóng - ở giữa phòng. Xung quanh đó là những khối đá thạch anh thô to bằng cổ tay lẫn trong những cột bạc. Những phiến đá tím phát ra ánh sáng mờ mờ - đó chính là nguồn sáng họ nhìn thấy trong hành lang. Ngang qua những phiến đá nền in hoa văn, ở bức tường bên kia là một bàn thờ đen lớn phủ vàng và khăn màu đỏ thẫm. Những cây cột và chúc đài đặt hai bên bàn thờ, bên cạnh đó là hai cánh cửa đóng kín ở hai bên.
+</p>
+
+<p>
+ Đó là tất cả những gì Eragon nhìn thấy khi tiến nhanh vào phòng. Chỉ trong một tích tắc nó đã lao tới vòng tròn đá thạch anh và ban thờ. Nó cố dừng lại, cố đổi hướng nhưng nó đang di chuyển quá nhanh.
+</p>
+
+<p>
+ Nó tuyệt vọng làm một điều duy nhất: nhảy lên trên ban thờ và hy vọng với một cú nhảy nó có thể tránh chướng ngại vật trước mặt.
+</p>
+
+<p>
+ Khi đi qua những phiến đá thạch anh gần nhất, cảm giác cuối cùng của nó là hối hận và suy nghĩ cuối cùng của nó là về Saphira.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-028.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-030.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

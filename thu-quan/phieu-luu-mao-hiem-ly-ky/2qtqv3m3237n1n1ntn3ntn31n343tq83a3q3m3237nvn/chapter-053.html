@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 53 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 53</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-052.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-054.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon ngay lập tức để ý tới vài điều.
+</p>
+
+<p>
+ Thứ nhất, họ đang đứng ở một bên căn phòng hình tròn có bán kính hơn 60 mét. Ở giữa căn phòng đặt một chiếc bình lớn. Đó chính là nguồn sáng họ nhìn thấy lúc trước. Thứ hai, trong phòng cực kỳ nóng. Thứ ba, bao quanh căn phòng là hai vòng tròn bậc thang như ghế băng – hàng sau cao hơn hàng trước – trên đó có rất nhiều những vật thể ẩn trong bóng tối. Thứ tư, bức tường đằng sau vòng bậc thang lóe sáng ở nhiều chỗ, như thể trên đó gắn pha lê màu. Nhưng nó không có cơ hội xem xét bức tường hay những vật thể tối đen kia, vì khu vực trống cạnh cái bình phát sáng có một người đàn ông đầu rồng đang đứng.
+</p>
+
+<p>
+ Người đàn ông này là bức tượng kim loại. Hắn tỏa sáng như làm bằng thép bóng. Ông ta chỉ đóng một cái khố, ngực và tứ chi cuồn cuộn cơ bắp như Kull.Tay trái hắn ta cầm một cái khiên, tay phải cầm một lưỡi kiếm phát ra ánh sáng ngũ sắc. Đó là thanh kiếm của Kỵ sĩ.
+</p>
+
+<p>
+ Đằng sau người đàn ông, sâu trong căn phòng, Eragon lờ mờ nhìn thấy một ngai vàng và một bóng người ngồi trong đó.
+</p>
+
+<p>
+ Người đàn ông đầu rồng bước lên. Da và cơ bắp hắn mịn màng như da người, nhưng mỗi cử động lại như cả tấn hạ xuống sàn nhà. Hắn dừng lại khi cách Eragon và Saphira 9m. Hắn nhìn chúng bằng cặp mắt như hai hòn lửa đỏ. Sau đó, hắn ngửng cái đầu đầy vẩy lên và gầm lên tiếng gầm có hơi hướm kim loại vang vọng như có cả tá sinh vật hưởng ứng theo.
+</p>
+
+<p>
+ Ngay khi Eragon đang phân vân có nên đánh hay không, nó cảm nhận có một tư tưởng kỳ lạ, rộng suốt chạm vào nó. Nó chưa gặp loại tư tưởng này. Dường như nó chứa rất nhiều giọng la hét, những tiếng ngân vang chói tai khiến nó liên tưởng tới tiếng gió trong cơn bão.
+</p>
+
+<p>
+ Trước khi nó kịp phản ứng, tư tưởng đó vượt qua lưới phòng thủ và làm chủ suy nghĩ của nó. Dù nó đã dành bao nhiêu thời gian luyện tập cùng Glaedr, Arya và Saphira, nó vẫn không thể ngăn chặn cuộc tấn công này. Thậm chí nó còn không cản bước nổi. Như thể nó dùng tay trần ngăn cả một cơn thủy triều vậy.
+</p>
+
+<p>
+ Một luồn ánh sáng cùng một tiếng gầm đinh tai nhức óc bao lây nó như thể vang tới từng ngóc ngách trong cơ thể nó. Sau đó, tiếng kêu đó như thể kẻ đột nhập đang xé toạc đầu óc nó ra thành nửa tá miếng nhỏ - từng mảnh vẫn biết đến nhau, nhưng chúng không thể làm điều chúng muốn – và thị giác của nó mờ đi. Nó nhìn căn phòng mà như nhìn qua một viên đá được mài giũa.
+</p>
+
+<p>
+ Sau ký ức khác nhau bắt đầu xâm nhập vào tư tưởng nó. Nó không chọn nhớ lại chúng. Chúng đơn giản chỉ xuất hiện, và trôi nhanh khiến nó không kịp hiểu chuyện. CÙng lúc đó, nó cúi gập người theo nhiều tư thế khác nhau. Nó giơ thanh Brisingr lên ngang tầm mắt. Nó chứng kiến cùng lúc sáu phiên bản của cùng một thanh kiếm. Kẻ xâm nhập thậm chí còn buộc nó đọc thần chú. Nó không hiểu mục đích câu thần chú là gì. Nó bị điều khiển. Nó không cảm thấy gì ngoài nỗi kinh hoàng đang nhạt dần.
+</p>
+
+<p>
+ Eragon cảm giác như kẻ lạ mắt kia dành hàng tiếng đồng hồ kiểm tra từng ký ức một, từ lúc nó rời nhà đi săn nai trên rặng Spine – ba ngày trước khi tìm thấy trứng của Saphira – cho tới hiện tại. Eragon có thể cảm nhận điều tương tự xảy ra cho Saphira. Nhưng dù biết nó cũng không làm được gì.
+</p>
+
+<p>
+ CUối cùng, rất lâu sau khi nó mất hy vọng được thả ra thì đoạn điệp khúc đó cẩn thận ghép từng mảnh tư tưởng của nó lại rồi rút lui.
+ <br/>
+ Eragon lảo đảo bước lên và ngã khuỵu một chân xuống trước khi lấy lại được thăng bằng. Bên cạnh nó, Saphira lắc lư, tớp không khí.
+ <br/>
+</p>
+
+<p>
+ Bằng cách nào? Nó nghĩ. Ai vậy? Để bắt được tất cả cùng một lúc, kể cả Glaedr không phải một điều dễ dàng. Nó tin kể cả Galbatorix cũng đừng hòng làm được.
+</p>
+
+<p>
+ Một lần nữa tư tưởng đó lại chạm tới đầu óc Eragon. Nhưng lần này nó không tấn công. Lúc này, tư tưởng đó nói. Chúng ta xin lỗi, Eragon và Saphira. Nhưng chúng tôi phải đảm bảo biết rõ mục đích của các ngươi. Chào mừng tới Hầm mộ của Những Linh Hồn. Chúng ta đã đợi hai ngươi rất lâu rồi. Và chào mừng ngươi nữa, người anh em. Chúng ta mừng là ngươi còn sống. Giờ hãy nhớ lại. Cuối cùng nhiệm vụ của ngươi cũng hoàn thành!
+</p>
+
+<p>
+ Một tia năng lượng lóe lên giữa Glaedr và tư tưởng đó. Một giây sau, Glaedr gầm lên khiến thái dương Eragon đau nhói. Cảm xúc của con rồng vàng rất hỗn độn: buồn có, chiến thắng có, không tin có, hối hận có, và trên hết, là cảm giác thanh thản. Eragon cười không biết vì sao. Nó cảm thấy đang tiếp xúc với tư tưởng của ông Glaedr không chỉ có một mà là vô số tư tưởng khác khác. Tất cả đều đang thì thầm to nhỏ.
+</p>
+
+<p>
+ “Ai đấy?” Eragon hỏi nhỏ. Trước mặt họ, người đàn ông đầu rồng không suy suyển lấy một phân.
+</p>
+
+<p>
+ Eragon, Saphira nói. Hãy nhìn bức tường. Nhìn đi...
+</p>
+
+<p>
+ Nó nhìn. Và nó thấy bức tường hình tròn không phải được trang trí bằng pha lê như nó tưởng. Trên tường có hàng tá, hàng tá lỗ đục trên tường. Trong mỗi hõm là một khối cầu phát sáng. Một số lớn, một số nhỏ, nhưng chúng đều tự mình tỏa ra ánh sáng dìu dịu, như than cháy sắp tàn.
+</p>
+
+<p>
+ Trái tim Eragon lỡ nhịp khi hiểu chuyện gì xảy ra.
+</p>
+
+<p>
+ Nó cúi xuống nhìn những vật thể đen đen trên hàng ghế bên dưới. Chúng nhẵn nhụi, hình trứng như thể mài dũa từ những viên đá màu sắc khác nhau. Cũng giống như những khối cầu, ở đây có viên lớn viên nhỏ. Nhưng dù kích cỡ thế nào, Eragon cũng nhận ra hình dạng của chúng bất cứ nơi đâu.
+</p>
+
+<p>
+ Một cơn gió nóng thổi bạt qua nó. Đầu gối nó bủn rủn. Không thể nào. Nó muốn tin điều mình nhìn thấy, nhưng nó sợ đây chỉ là ảo ảnh đáp ứng hy vọng của nó. Nhưng dù chỉ là khả năng thôi cũng đủ khiến nó nín thở và lảo đảo và bất ngờ tới không biết làm gì hay nói gì. Phản ứng của Saphira cũng tương tự, nếu không muốn nói là mãnh liệt hơn.
+</p>
+
+<p>
+ Sau đó tư tưởng kia nói: Đứa nhỏ kia, ngươi không hề lầm và đôi mắt ngươi không hề đánh lừa ngươi. Chúng ta là hy vọng bí mật của giống loài ngày. Ở đây là trái tim của chúng ta – những Eldunarí tự do cuối cùng trên mảnh đất này – cùng những quả trứng chúng ta đã canh giữ hơn một thế kỷ.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-052.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-054.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

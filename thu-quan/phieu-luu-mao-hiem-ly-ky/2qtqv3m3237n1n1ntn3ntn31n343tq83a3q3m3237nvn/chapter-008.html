@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 8 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 8</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-007.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Bùn đất dính lên đôi ủng của Roran mỗi lần anh nâng chân, khiến anh đi chậm lại và khiến đôi chân vốn đã rệu rã của anh càng thêm mệt mỏi. Anh cảm giác như đất đang cố kéo tuột giày của anh. Bùn vừa dầy vừa trơn. Bùn làm gót giày anh lún sâu xuống, khiến anh đi lại khó khăn. Lớp bùn còn khá sâu nữa. Dòng người, súc vật và động vật đi lại thường cuyên đã biến một lớp đất dày mười lăm phân thành một bãi lầy khó qua lại. Một vài cụm cỏ vẫn mọc được ven đoạn đường xấu – dẫn thẳng tới khu lều bạt của quân Varden – nhưng Roran nghĩ cỏ cũng sẽ chẳng còn vì họ luôn có tránh đi vào chính giữa đường mòn.
+</p>
+
+<p>
+ Roran không thèm tránh giẫm phân nữa, anh còn không thèm quan tâm xem liệu quần áo anh còn sạch không. Hơn nữa, anh đã quá kiệt sức, tốt nhất là cứ thẳng đường mà tiến hơn là vượt quá đống cỏ dại ở hai bên.
+</p>
+
+<p>
+ Khi Roran nghiêng ngả tiến về phía trước, anh nghĩ tới Belatona. Từ sau cuộc thỏa hiệp giữa Nasuada và ma mèo, anh đã nắm vị trí chỉ huy khu phía tây bắc thành phố và làm những điều tốt nhất để lập sự kiểm soát bằng cách phía quân lính đi dập lửa, lập rào chắn trên đường, tìm nhà ở cho binh sĩ và tịch thu vũ khí. Đó là một nhiệm vụ nặng nề và anh làm hết sức có thể vì anh sợ thành phố có thể sẽ sinh ra một trận chiến mới. Mình hy vọng những tên ngu kia sẽ không giết chóc gì trong hết đêm.
+</p>
+
+<p>
+ Cả nửa người trái của anh đau đớn, khiến anh phải mở miệng hít thở.
+</p>
+
+<p>
+ Tên hèn nhát trời đánh.
+</p>
+
+<p>
+ Một tên nào đó đã bắn tên vào anh từ một mái nhà. Đúng là anh đã gặp may; một trong những binh sĩ của anh, Mortenson, đã bước lên trước anh đúng giây phút tên kia bắn tên. Mũi tên xuyên từ lưng qua bụng Mortenson và vẫn còn đủ lực để gây cho Roran một vết bầm lớn. Mortenson chết tại chỗ và dù ai bắn tên thì hắn cũng đã trốn thoát.
+</p>
+
+<p>
+ Năm phút sau, phép thuật đã giết chết hai người lính nữa khi họ bước vào chuồng ngựa kiểm tra xem tiếng ồn phát ra từ đâu.
+</p>
+
+<p>
+ Theo như những gì Roran biết, những vụ tấn công như vậy xảy ra khắp thành phố. Không nghi ngờ gì nữa, những kẻ nằm vùng của Galbatorix đã theo dấu rất nhiều người trong số họ, nhưng dân cư của Belatona cũng phải chịu trách nhiệm – đàn ông và phụ nữ đã không chịu đứng im khi quân đội kiểm soát quê nhà và không thèm quan tâm tới sứ mạng cao cả của quân Varden. Roran đồng cảm với những người cảm thấy họ có trách nhiệm với gia đinh nhưng đồng thời anh cũng nguyền rủa họ vì quá cứng đầu không chịu nhân ra quân Varden đang giúp họ, chứ không phải làm tổn thương họ.
+</p>
+
+<p>
+ Anh gãi gãi cằm khi đợi một người lùn đẩy một con ngựa chất đầy hàng hóa đi ra và sau đó tiếp tục bước thấp bước cao đi.
+</p>
+
+<p>
+ Khi về tới gần lều, anh nhìn thấy Katrian đang đứng cạnh một chậu nước nóng, đầy xà phòng, giặt giũ những chiếc băng gạc dính đầy máu khô. Cô xắn tay áo tới tận khuỷu tay, tóc búi rối ra su và má đỏ hồng lên vì làm nặng, nhưng đối với anh chưa bao giờ cô đẹp như thế. Cô là niềm an ủi của anh – niềm an ủi và nơi trú ẩn của anh – và chỉ cần nhìn thấy cô là anh đã thấy tan đi bao nhiêu đớn đau mệt nhọc.
+</p>
+
+<p>
+ Cô để ý thấy anh và ngay lập tức bỏ việc giặt giũ lại và chạy về phía anh, lau đôi mắt hồng lên của cô vào váy. Roran vòng tay ôm cô, cô ôm trọn lồng ngực anh. Nửa người anh đau buốt, và anh kêu lên một tiếng.
+</p>
+
+<p>
+ Katrina nới lòng vòng tay và nghiêng người ra sau, nhíu mày. “ÔI! Em làm anh đau à?”
+</p>
+
+<p>
+ “Không... không. Anh hơi buốt thôi.”
+</p>
+
+<p>
+ Cô không hỏi gì và lại ôm anh, nhẹ nhàng hơn và nhìn anh với đôi mắt đẫm nước. Anh ôm eo cô, cúi xuống hôn cô, cám ơn chúa trời vì sự hiện diện của cô.
+</p>
+
+<p>
+ Katrina đặt tay trái của anh lên vai cô, và anh để cô giúp mình đi về lều. Roran thở dài, ngồi xuống gốc cây họ dùng làm ghế, bên cạnh đó Katrina đốt một đống lửa nhỏ để đun nước và nấu súp.
+</p>
+
+<p>
+ Katrina đưa cho anh một bát súp. Sau đó cô vào trong lều mang ra cho anh một vại bia và một nửa ổ bánh mỳ cùng một góc pho mát. “Anh còn cần thềm gì không?” cô hỏi, giọng khàn không bình thường.
+</p>
+
+<p>
+ Roran không trả lời mà ôm lấy má cô và xoa xoa. Cô cười và đặt tay lên tay anh, sau đó quay lại giặt đồ.
+</p>
+
+<p>
+ Roran nhìn đồ ăn một lúc lâu rồi mới ăn: anh vẫn còn quá căng thẳng và anh nghĩ ạnh chưa thể tiêu hóa nổi. Sau khi nhai đầy một mồm bánh mỳ, vị giác của anh cũng quay trở lạ, anh bắt đầu vui vẻ húp bát súp.
+</p>
+
+<p>
+ Sau khi anh xong, anh đặt đống bát đĩa xuống đất và ngồi sưởi tay trên ngọn lửa trong khi uống vài hớp bia.
+</p>
+
+<p>
+ “Bọn em nghe thấy tiếng đổ vỡ khi cánh cổng rời ra,” Katrina vừa vắt quần áo vừa nói. “Họ không trụ được lâu nhỉ.”
+</p>
+
+<p>
+ “Không.. Bên chúng ta có một con rồng giúp sức mà.”
+</p>
+
+<p>
+ Roran nhìn bụng cô khi cô ném đống băng gạc sang đống quần áo đã giặt xong. Mỗi lần anh nghĩ tới con, đứa bé hai người sẽ sinh ra, anh lại cảm thấy tự hào vô cùng nhưng xen lẫn chút lo lắng vì anh không biết có thể cho nó một mái ấm an toàn không. Hơn nữa, nếu trận chiến còn kéo dài, có lẽ cô sẽ phải rời xa anh và tới Surda để an toàn nuôi con.
+</p>
+
+<p>
+ Mình không thể mất cô ấy, không một lần nào nữa.
+</p>
+
+<p>
+ Katrina lại nhúng một tấm vải gạc khác vào thau nước. “Còn trận chiến trong thành phố thế nào?” cô hỏi. “Diễn ra thế nào?”
+</p>
+
+<p>
+ “Bọn anh phải tranh giành từng mét đất. Ngay cả Eragon cũng phải trầy trật lắm.”
+</p>
+
+<p>
+ “Những bệnh binh nói chúng có máy bắn đá.”
+</p>
+
+<p>
+ “Ừ. Roran nhấp một ngụm bia sau đó tả ngắn gọn về cách quân Varden tiến quân trong lòng thành phố và những trướng ngại họ gặp phải. “Hôm nay bọn anh mất nhiều người lắm, nhưng mọi chuyện đáng lẽ có thể tệ hơn. Tệ hơn rất nhiều. Jörmundur và tướng Martland đã vạch kế hoạch tác chiến rất tốt.”
+</p>
+
+<p>
+ “Kế hoạch của họ không thành công nếu như không có anh và Eragon. Hai người rất dũng cảm.”
+</p>
+
+<p>
+ Roran cười khan một tiếng. “Ha! Và em biết vì sao không? Anh sẽ nói cho em nghe. Không ai trong mười người đàn ông thực sự muốn tấn công quân thù. Eragon không thấy điều đó; thằng bé luôn luôn ở đầu chiến tuyến, kéo những binh sĩ theo cậu ta xông lên. Nhưng anh lại thấy. Hầu hết những binh sĩ đều đứng xa ra và không chiến đấu trừ khi kẻ thù động tới mình. Hoặc không họ chỉ vẫy tay và hò hét nhựng lại thực sự không làm gì.”
+</p>
+
+<p>
+ Katrina có vẻ xanh xao. “Sao lại thế? Họ hèn thế?”
+</p>
+
+<p>
+ “Anh không biết nữa. Anh nghĩ, anh nghĩ có thể họ không thể nhìn vào mặt một người rồi giết người đó, đối với họ, việc giết một tên lính quay lưng với họ dễ hơn rất nhiều. Vì thế họ đợi những người khác làm việc họ không thể làm nổi. Họ đợi những người như bọn anh.”
+</p>
+
+<p>
+ “Anh có nghĩ binh sĩ của Galbatorix cũng có cùng suy nghĩ không?”
+</p>
+
+<p>
+ Roran nhún vai. “Có thể có. Nhưng sau đó, họ không còn lựa chọn nào khác ngoài phục tùng Galbatorix. Nếu lão ra lệnh cho họ chiến đấu, họ sẽ chiến đấu.”
+</p>
+
+<p>
+ “Nasuada cũng có thể làm thế. Tiểu thư có thể dùng phép thuật để buộc họ không đào ngũ.”
+</p>
+
+<p>
+ “Vậy cô ta và Galbatorix khác gì nhau? Trong bất kỳ trường hợp nào, quân Varden cũng không chấp nhận chuyện đó.”
+</p>
+
+<p>
+ Katrina dừng giặt quần áo và hôn lên trán anh. “Em mừng vì anh có thể làm điều anh đã làm,” cô thì thầm. Cô quay lại giặt đồ. “Hồi chiều em có cảm giác gì đó, do chiếc nhẫn... em nghĩ có thể anh có chuyện.”
+</p>
+
+<p>
+ “Anh đang trong chiến trận. Anh không ngạc nhiên nếu như em cảm thấy bứt rứt từng phút.
+</p>
+
+<p>
+ Cô dừng lại vẫn đặt tay trong chậu nước. “Trước kia em chưa bao giờ có cảm giác đó.”
+</p>
+
+<p>
+ Anh uống cạn vại bia và tìm cách thoái thác. Anh đã từng mong kể cho cô từng chi tiết chuyến phiêu lưu của anh trong lâu đài, nhưng chẳng có ý nghĩa gì nếu như vì chuyện này mà cô không nghỉ ngơi nổi. Nhưng nếu anh thuyết phục cô rằng không có chuyện gì chỉ khiến cô nghĩ ngợi ra những chuyện kinh khủng hơn. Hơn nữa, anh cũng thừa biết sớm muộn những tin tức cũng lan truyền trong toàn quân Varden thôi.
+</p>
+
+<p>
+ Nghĩ đoan anh kể với cô. Anh kể ngắn gọn và cố biến vụ sụp tường thành một trở ngại nho nhỏ hơn là một vụ tai nạn suýt giết chết anh. Nhưng anh vẫn thấy khó mà miêu tả nên nói nhát gừng, để tìm từ diễn đạt cho đúng. Khi anh nói xong, anh im lặng vì chìm trong ký ức.
+</p>
+
+<p>
+ “Ít ra anh cũng không bị thương,” Katrina nói.
+</p>
+
+<p>
+ “Không.”
+</p>
+
+<p>
+ “Trước đây anh đã từng đối diện với nhiều chuyện hiểm nguy hơn nhiều.”
+</p>
+
+<p>
+ “Ừ, anh đoán thế.”
+</p>
+
+<p>
+ Giọng cô nhỏ nhẹ. “Vậy thì làm sao nào?” Khi thấy anh không trả lời, cô nói. “Không có chuyện gì là anh không thể nói với em, Roran. Anh biết mà.”
+</p>
+
+<p>
+ Anh cậy rìa móng tay ngón trỏ khi chạm vào cái cốc. “Anh nghĩ rằng anh sẽ chết khi bức tường sụp xuống.”
+</p>
+
+<p>
+ “Ai cũng sẽ nghĩ thế.”
+</p>
+
+<p>
+ “Đúng. Nhưng vấn đề là, anh không quan tâm tới.” Roran đau khổ nhìn cô. “Em không hiểu sao? Anh đã buông tay. Khi anh nhận ra mình không thể thoát, anh đã chấp nhận nó như thể con cừu chấp nhận rơi vào tay gã đồ tể, và anh...” Roran không thể nói tiếp, anh hạ cốc bia xuống và úp mặt vào tay. Cảm giác dâng lên cổ họng khiến anh không thở nổi. Sau đó anh cảm nhận những ngón tay Katrina đang đặt nhẹ trên vai anh. “Anh đã buông tay,” anh gầm lên, vừa tức giận vừa kinh tởm bản thân. “Anh đã ngừng chiến đấu... Vì em... Vì con chúng ta...” Anh gằn ra từng chữ.
+</p>
+
+<p>
+ “Suỵt,” cô lẩm bẩm.
+ <br/>
+ “Trước đây anh chưa bao giờ từ bỏ. Chưa một lần... Kể cả khi tụi Ra’zac bắt em đi.”
+ <br/>
+</p>
+
+<p>
+ “Em biết là anh không mà.”
+</p>
+
+<p>
+ “Cuộc chiến này phải kết thúc. Mọi chuyện không thể tiếp tục thế này... Anh không thể... Anh...” Anh ngửng đầu lên và sợ hãi khi thấy mắt cô đong đầy nước mắt. Anh đứng dậy, ôm cô vào lòng. “Anh xin lỗi,” anh thì thầm. “Anh xin lỗi. Anh xin lỗi. Anh xin lỗi... Anh sẽ không bao giờ nghĩ như thế nữa. Không bao giờ. Anh hứa đó.”
+</p>
+
+<p>
+ “Em không quan tâm tới chuyện đó,” cô nói, giọng ủ trên vai anh.
+</p>
+
+<p>
+ Câu trả lời của cô khiến anh kinh ngạc. “Em biết em yếu đuối nhưng những gì em nói phải có chút ý nghĩa gì với anh chứ.”
+</p>
+
+<p>
+ “Em không có ý đó!” cô kêu lên và lùi lại nhìn anh vẻ buộc tội. “Đôi lúc anh rất ngốc, Roran ạ.”
+</p>
+
+<p>
+ Anh cười sáng lạng. “Anh biết.”
+</p>
+
+<p>
+ Cô vòng tay qua cổ anh. “Em không bao giờ nghĩ xấu về anh, dù cho anh đã cảm thấy thế nào khi bức tường sụp xuống. Chỉ cần anh còn sống... Anh không thể làm gì khi bức tường sụp, đúng không?”
+</p>
+
+<p>
+ Anh lắc đầu.
+</p>
+
+<p>
+ “Vậy thì anh không cần phải xấu hổ. Nếu anh có thể ngăn nó, hoặc nếu anh có thể chạy trốn nhưng anh không làm, như vậy mới khiến em không tôn trong anh. Nhưng anh đã làm mọi việc có thể, và khi anh không thể làm gì hơn, anh mới buông xuôi. Đó là khôn ngoan chứ không phải yếu đuối.”
+</p>
+
+<p>
+ Anh cúi xuống và hôn lên lông mày cô. “Cám ơn em.”
+</p>
+
+<p>
+ “Và theo như em biết, anh là người đàn ông tốt bụng nhất, dũng mãnh nhất và can đảm nhất Alagaësia.”
+</p>
+
+<p>
+ Lần nay anh hôn lên môi cô. Sau đó, cô cười lớn, và đứng đó xoay vòng, như thể đang khiêu vũ theo một điệu nhạc chỉ mình họ nghe thấy.
+</p>
+
+<p>
+ Sau cùng Katrina đùa đùa đẩy anh ra và tiếp tục giặt giũ, còn anh ngồi xuống gốc cây, cảm giác thư thái dù trên mình đầy những vết thâm đau.
+</p>
+
+<p>
+ Roran quan sát người, ngựa và một vài người lùn hoặc Urgal đi qua lều họ, để ý những vết thương và vũ khí họ mang trên người. Anh cố đánh giá mọi người theo cách của Varden; cuối cùng anh chỉ có thể kết luận rằng mọi người trừ Urgal đều cần ngủ ngon và ăn uống đầy đủ, và mọi người, kể cả Urgal – đặc biệt là Urgal – cần tắm rửa sạch sẽ từ đầu đến chân.
+</p>
+
+<p>
+ Anh ngắm nhìn Katrina và anh thấy được khi cô làm việc, sự vui sướng trên mặt cô nhạt dần đi và cô trở nên giận dữ hơn bao giờ hết. Cô cứ vò đi vò lại vài vết bẩn nhưng chẳng ăn thua gì. Cơn giận dữ khiến mặt cô đen lại, và cô bắt đầu cáu gắt quát nhỏ vài tiếng.
+</p>
+
+<p>
+ Cuối cùng, khi cô ném đống vải vào thùng giặt, làm bắn bọt xà phòng lên cao vài foot trong không khí, cúi người về phía thùng giặt, môi mím chặt, Roran đứng dậy là đến bên cô.
+</p>
+
+<p>
+ “Để anh hộ,” anh nói.
+</p>
+
+<p>
+ “Thế không hay đâu,” cô lẩm bẩm.
+</p>
+
+<p>
+ “Vớ vẩn. Em ngồi xuống đi để anh làm cho. Đi đi.”
+</p>
+
+<p>
+ Cô lắc đầu. “Không. Anh mới cần nghỉ chứ không phải em. Hơn nữa đây không phải việc của đàn ông.”
+</p>
+
+<p>
+ Anh khịt mũi đùa cợt. “Ai phân ra thế? Việc của đàn ông hay đàn bà đều phải làm. GIờ em ngồi xuống đi; em sẽ cảm thấy khả hơn sau khi nghỉ ngơi.”
+</p>
+
+<p>
+ “Roran, em vẫn ổn mà.”
+</p>
+
+<p>
+ “Đứng ngốc thế.” Anh nhẹ nhàng đẩy cô đi nhưng cô không chịu.
+</p>
+
+<p>
+ “Thế này không đúng,” cô cự nự. “Mọi người sẽ nghĩ sao đây?” Cô chỉ về phía những người đàn ông đang đi đi lại lại trên con đường bùn đất bên cạnh lều của họ.
+</p>
+
+<p>
+ “Họ nghĩ gì kệ họ. Anh cưới em chỉ có cưới họ đâu. Nếu họ nghĩ rằng giúp đỡ em khiến anh bớt nam tính, thì họ là đồ ngu.”
+</p>
+
+<p>
+ “Nhưng...”
+</p>
+
+<p>
+ “Không nhưng nhị gì hết. Đi đi. Xùy. Đi khỏi đây đi.”
+</p>
+
+<p>
+ “Nhưng...”
+</p>
+
+<p>
+ “Anh không thích nói nhiều. Nếu em không ngồi, anh sẽ bế em ra đằng kia và trói em vào gốc cây đó.”
+</p>
+
+<p>
+ Sự sửng sốt thay vào sự giận dữ trên gương mặt cô lúc trước. “Được chứ?”
+</p>
+
+<p>
+ “Được. Giờ em đi đi.” Khi cô lưỡng lự đi ra, anh khích cô. “Em cứng đầu quá nhỉ?”
+</p>
+
+<p>
+ “Anh ấy. Anh có thể dạy lừa biết làm một vài thứ đó.”
+</p>
+
+<p>
+ “Không, anh không cứng đầu.” Anh cởi áo giáp, treo lên nóc lều rồi cởi găng tay và sắn tay áo. Anh cảm thấy lành lạnh và đống vải băng gạc còn lạnh hơn – do đặt ngoài trời quá lâu – nhưng anh không quan tâm, vì nước còn ấm và vải cũng nhanh ấm thôi. Những bong bóng xà phòng dính trên cổ tay anh khi anh chà quần áo trên bàn giặt.
+</p>
+
+<p>
+ Anh liếc qua và vui lòng vì Katrina đã chịu ngồi nghỉ.
+</p>
+
+<p>
+ “Anh muốn uống trà hoa cúc không?” cô hỏi. “Gertrude cho em nhiều bông lắm. Em có thể pha cho chúng ta một ấm.”
+</p>
+
+<p>
+ “Được đó.”
+</p>
+
+<p>
+ Một sự im lặng dễ chịu giữa hai người họ diễn ra khi Roran tiếp tục giặt đống quàn áo còn lại. Công việc này khiến anh thấy thoải mái: anh thích làm việc bằng tay hơn bằng búa, và được ở gần Katrina khiến anh cảm thấy hài lòng vô cùng.
+</p>
+
+<p>
+ Anhh đang giặt những quần áo vải vóc cuối cùng, còn ấm trà mới pha đang nằm kia chờ anh thì ai đó hô to tên họ từ phía bên kia con đường tấp nập. Mất một lúc Roran mới nhận ra đó là Baldor đang chạy về phía họ, giữa dòng người và ngựa đi lại như mắc cửi. Cậu ta đẹo một chiếc tạp dề da thủng lỗ chỗ, một đôi găng tay da dài tới khuỷu tay dính đầy bồ hóng, dùng lâu tới mức phần da đầu ngón tay sáng bóng lên. Cậu ta dùng một sợi dây da rách túm gonj mái tóc đen, bóng dầu ra đằng sau và trên trán cậu ta hằn thêm nhiều nếp nhăn. Baldor nhỏ con hơn cha cậu, ông Horst, và anh trai cậu, Albriech, nhưng về mặt khác, cậu ta đô con hơn, đó là kết quả của thời niên thiếu làm việc trong xưởng rèn cùng ông Horst. Cả ba cha con họ đều không tham gia trận chiến ngày hôm nay – những thờ rèn có tay nghề không nên để hy sinh vô ích – dù Roran ước gì Nasuada cho phép họ, vì họ là những chiến binh có khả năng và Roran biết anh có thể tin tưởng vào họ trong những hoàn cảnh đáng sợ nhất.
+</p>
+
+<p>
+ Roran đặt đống quần áo đang giặt xuống và lau tay, phân vân không hiểu có chuyện gì. Katrina đứng dậy, tiến lại gần anh.
+</p>
+
+<p>
+ Khi Baldor tới nơi, họ phải đợi vào giây để cậu ta thở lại bình thường. Sau đó, cậu ta liến thoắng nói, “Đi nhanh nào. Mẹ em đang lâm bồn, và...”
+</p>
+
+<p>
+ “Dì ấy đâu?” Katrina sắc lạnh hỏi.
+</p>
+
+<p>
+ “Trong lều của nhà em.”
+</p>
+
+<p>
+ Cô gật đầu. “Vậy chúng ta đi nhanh thôi.”
+</p>
+
+<p>
+ Baldor biết ơn và quay người rảo bước đi.
+</p>
+
+<p>
+ Khi Katrina chui vào lều, Roran dội chậu nước vào đống lửa. Những thanh củi đang cháy kêu xèo xèo và vỡ vụn, một cuộn khói bay lên từ đống lửa, khiến không khí tỏa ra mùi dễ chịu.
+</p>
+
+<p>
+ Roran vừa thấy phấn khích vừa thấy sợ. Mình hy vọng cô ấy không sao, anh thầm nghĩ khi nhớ lại cuộc trò chuyện của mấy người phụ nữ với nhau về tuổi tác của dì và chuyện dì chửa hơn tháng. Elain luôn luôn đối tốt với anh và Eragon, và anh cũng rất thích dì.
+</p>
+
+<p>
+ “Anh sẵn sàng chưa?” Katrina hỏi khi cô bước ra khỏi lều, quấn thêm một chiếc khăn quàng màu xanh quanh đầu và cổ.
+</p>
+
+<p>
+ Anh với lấy thắt lưng và búa. “Rồi. Chúng ta đi thôi.”
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-007.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

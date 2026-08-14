@@ -1,0 +1,710 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 39 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 39</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-038.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-040.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon và những người khác dành suốt thời gian còn lại của cuộc họp kín để thảo luận những vấn đề thực tế: cách liên lạc – ai trả lời cho ai; thư lệnh; sắp xếp lại tháp canh và lính canh cho doanh trại nhằm tránh Thorn hay Shruikan đánh úp họ lần nữa; và làm sao để cung cấp đầy đủ quân trang cho những người lính đã bị hỏng hết các đồ dùng đó trong lần tấn công rồi. Họ thống nhất chưa tiết lộ chuyện Nasuada bị bắt cho tới ngày hôm sau; các chiên binh được nghỉ ngơi quan trọng hơn.
+</p>
+
+<p>
+ Nhưng họ không hề bàn tới việc làm sao cứu được Nasuada. Cách duy nhất rõ ràng là nắm được Urû’baen, và lúc đó có thể cô đã chết, bị thương hoặc buộc phải thề trung thành với Galbatorix bằng ngôn ngữ cổ. Vì thế họ hoàn toàn tránh vấn đề này như thể đó là điều cấm kỵ
+</p>
+
+<p>
+ Tuy vậy cô vẫn thường trực trong suy nghĩ của Eragon. Mỗi lần nó nhắm mắt, nó lại thấy Murtagh đánh cô, sau đó những ngón chân phủ vẩy sắc nhọn nắm chặt lấy cô rồi con rồng đỏ bay vào bóng tối. Ký ức đó chỉ khiến Eragon thấy mình thảm hại hơn nhưng lại không thể không nghĩ tới.
+</p>
+
+<p>
+ Khi cuộc họp kín kết thúc, Eragon ra hiệu cho Roran, Jörmundur, và Arya. Họ theo nó về lều không hỏi lấy một câu. Ở đó Eragon hỏi xin lời khuyên từ họ và bàn kế sách cho ngày mai.
+</p>
+
+<p>
+ “Hội đồng Bô lão sẽ gây khó khăn cho ngài, tôi chắc chắn,” Jörmundur nói. “Họ không coi ngài có kinh nghiệm chính trị như Nasuada và họ sẽ tấn công vào điểm đó.” Chiến binh tóc dài bình tĩnh tới đáng ngạc nhiên sau vụ tấn công, quá bình tĩnh đến nỗi Eragon nghi ông đã không còn biết khóc hay giận dữ.
+</p>
+
+<p>
+ “Tôi không thể,” Eragon nói.
+</p>
+
+<p>
+ Jörmundur cúi đầu. “Nhưng dù gì ngài cũng phải kiên quyết vào. Tôi có thể giúp ngài, nhưng ngài phải dựa vào chính mình là chính. Nếu ngài để họ gây ảnh hưởng tới quyết định của mình, họ sẽ nghĩ họ là người nắm quyền chỉ huy Varden, chứ không phải ngài.”
+</p>
+
+<p>
+ Eragon liếc nhìn Arya và Saphira, suy nghĩ.
+</p>
+
+<p>
+ Không bao giờ được sợ, Saphira nói với mọi người. Không ai có thể thắng được anh ấy khi tôi đang đứng quan sát.
+</p>
+
+<p>
+ Khi cuộc họp nhỏ thứ hai đi tới hồi kết, Eragon đợi tới khi Arya và Jörmundur ra khỏi lều; sau đó nó nắm vai Roran. “Lúc nãy anh nói đây là cuộc chiến của các vị thần là sao?”
+</p>
+
+<p>
+ Roran nhìn chăm chăm vào nó. “Ừ anh nói thế... Em và Murtagh và Galbatorix – quá mạnh nên không một người thường nào có thể hạ gục các người. Như vậy thật không đúng. Không công bằng. Nhưng sự thật lại như thế. Bọn anh như đàn kiến dưới gót giày các người. Em có biết bằng một tay em có thể giết bao nhiêu người không?”
+</p>
+
+<p>
+ “Rất nhiều.”
+</p>
+
+<p>
+ “Chính xác. Anh mừng vì em chiến đấu với bọn anh, anh mừng vì em là em anh, nhưng anh hy vọng bọn anh không phải dựa dẫm vào Kỵ sĩ, tiên nhân hay bất cứ pháp sư nào để chiến thắng. Không ai nên sống nhờ lòng thương hại của người khác. Không nên. Nó làm thế giới mất cân bằng.”
+</p>
+
+<p>
+ Sau đó Roran rảo bước ra khỏi lều.
+</p>
+
+<p>
+ Eragon ngồi xuống võng, cảm thấy như bị thụi vào ngực. Nó ngồi đó, toát mồ hôi suy nghĩ tới khi dòng suy nghĩ của nó buộc nó bật dậy và vội bước ra ngoài.
+</p>
+
+<p>
+ Khi nó ra khỏi lều, sáu Chim Ưng Đêm nhảy dựng lên, sẵn sàng vũ khí để hộ tống nó tới nơi nó muốn.
+</p>
+
+<p>
+ Eragon ra hiệu cho họ đứng nguyên vị trí. Nó đã phản đối nhưng Jörmundur khăng khăng bắt buộc các Chim Ưng đêm bảo vệ nó, cùng với Blödhgarm và các thần tiên khác. “Chúng tê không thể không cẩn thân,” ông nói. Eragon không thích có thêm người bám theo nó nhưng nó buộc phải đồng ý.
+</p>
+
+<p>
+ Đi qua những người bảo vệ, Eragon vội vã tới chỗ Saphira đang nằm cuộn mình trên mặt đất.
+</p>
+
+<p>
+ Cô em nó mở một mắt khi nó tới gần rồi nâng cánh để nó có thể chui vào gần cái bụng ấm áp của cô nàng. Anh bé, cô em nói, bắt đầu rên rừ rừ nhè nhẹ.
+</p>
+
+<p>
+ Eragon ngồi sát cô nàng, nghe tiếng rên và tiếng hơi thở nhè nhẹ. Đằng sau đó, cái bụng cô nàng nhô lên và xẹp xuống từ từ.
+</p>
+
+<p>
+ Lúc nào, sự hiện diện của cô em nó cũng giúp nó bình tĩnh. Nhưng lần này thì không. Đầu óc nó không chịu bình tĩnh, nhịp tim vẫn dồn dập và tay và chân nóng kinh khủng.
+</p>
+
+<p>
+ Nó giữ cảm xúc cho riêng mình, không muốn làm phiền Saphira. Cô nàng đã mệt sau hai cuộc chiến với Thorn và cô nàng ngủ say, tiếng rên rừ rừ biến mất mà chỉ còn nhịp thở đều đặn.
+</p>
+
+<p>
+ Những suy nghĩ của Eragon không cho nó được ngủ. Nó liên tục nghĩ tới sự thực không thể thay đổi, không thể chối cãi: nó là chỉ huy quân Varden. Nó, chỉ là một đứa nhỏ nhất trong một gia đình nông dân nghèo, thế mà giờ lại là chỉ huy quân đội lớn thứ hai Alagaësia. Thật không tưởng, như thể định mệnh đang trêu đùa nó, nhử nó vào một cái bẫy có thể hủy diệt nó. Nó không bao giờ muốn và mưu cầu vị trí này, nhưng các sự kiện cứ cuốn nó vào.
+</p>
+
+<p>
+ Nasuada nghĩ sao lại để mình làm người kế nhiệm chứ? Nó băn khoăn. Nó nhớ những lý do cô đưa ra, nhưng chúng chẳng giải quyết được nghi ngờ của nó. Cô ấy thực sự tin rằng mình có thể ngồi vào vị trí này sao? Sao không chọn Jörmundur? Ông ấy đã ở cùng Varden hàng chục năm, và ông ấy biết nhiều về chỉ huy và các chiến lược.
+</p>
+
+<p>
+ Eragon nghĩ tới hồi Nasuada chấp nhận liên quân với Urgal dù giữa hai loài tồn tại sự thù địch, và dù Urgal giết bố cô. Mình có làm nổi không? Nó tưởng tượng là không – ít nhất là vào thời điểm đó. Mình có thể đưa ra một quyết định như vậy, nếu chúng là bắt buộc để đánh bại Galbatorix?
+</p>
+
+<p>
+ Nó không dám chắc.
+</p>
+
+<p>
+ Nó cố gắng không nghĩ. Nó nhắm mắt, tập trung đếm nhịp thở mười lần một. Khó để chỉ làm mỗi điều này; vài giây lại một ý nghĩ hay một cảm giác khiến nó sợ hay xao lãng, nó lại quên đếm.
+</p>
+
+<p>
+ Nhưng, theo thời gian, cơ thể nó thả lỏng hơn và nó không nhận ra rằng nó đã lơ mơ ngủ.
+</p>
+
+<p>
+ Nó nhìn thấy nhiều thứ, vài thừ mờ nhạt và không rõ ràng, vì giấc mơ phản ánh những sự kiện của ngày hôm qua. Những giấc mơ khác khiến nó buồn vui lẫn lộn: những ký ức và những điều nó ước ao.
+</p>
+
+<p>
+ Sau đó, đột ngột như khi hướng gió thay đổi, giấc mơ của nó gợn sóng và trở nên rắn chắc hơn và thực hơn, như thể đó là những sự vật nó có thể nắm với. Mọi thứ xung quanh nó mờ đi, nó được chứng kiến một thời gian và không gian khác – vừa quen vừa lạ, như thể nó đã từng thấy từ lâu nhưng đã quên.
+</p>
+
+<p>
+ Eragon mở mắt nhưng hình ảnh vẫn còn đó, cảnh sắc xung quanh mờ mịt. Nó biết giấc mơ không bình thường.
+</p>
+
+<p>
+ Một cánh đồng tối và cô độc trải trước mắt, bị cắt ngang bởi một dòng sông chảy từ từ về phương đông: một dải lụa bạc sáng lên dưới ánh trăng....Trôi trên dòng sông vô danh đó là một con tàu lớn và kiêu hãnh với mái chèo trắng giơ lên chuẩn bị... Những hành lính cầm chắc cây thương và hai người đội mũ đi giữa họ, như trong một buổi diễu binh cấp nhà nước.... Mùi gỗ cây liễu và cây dương, giác một nỗi buồn man mác... Rồi một tiếng khóc đau khổ, những chiếc vảy ánh lên,những cử động hỗn loạn khó biết đâu với đâu.
+</p>
+
+<p>
+ Sau đó chỉ còn im lặng và màn đêm.
+</p>
+
+<p>
+ Eragon nhìn rõ và lại thấy mình đang nhìn vào dưới cánh Saphira. Nó thở ra – giờ nó mới biết nãy giờ mình nín thở - nó dùng bàn tay run run lau nước mắt. Nó không hiểu vì sao giấc mơ lại ảnh hưởng mạnh mẽ tới nó.
+</p>
+
+<p>
+ Liệu có phải một tiên đoán? Nó nghĩ.Hay một sự việc thực sự xảy ra vào thời điểm này? Và vì sao nó lại quan trọng với mình?
+</p>
+
+<p>
+ Sau đó, nó không tài nào ngủ lại. Sự lo lắng xuất hiện và sục sạo trong đầu óc nó như một bầy chuột, mỗi vết cắn của nó như khiến đầu óc nó nhiễm độc.
+</p>
+
+<p>
+ Cuối cùng nó chui ra khỏi cánh Saphira – cố gắng không làm cô em thức giấc – và về lều.
+</p>
+
+<p>
+ Như lúc trước, những Chim Ưng đen lại đứng lên khi nhìn thấy nó. Chỉ huy của họ, một người đàn ông lực lưỡng mũi khoằm tiến lên gặp Eragon, “Ngài cần gì thưa khắc tinh của Tà thần?” anh ta hỏi.
+</p>
+
+<p>
+ Eragon nhớ mang mang tên anh ta là Garven và anh ta đã mất các giác quan sau cuộc kiểm tra của thần tiên. Giờ trông anh đã khỏe lại nhưng ánh mắt vẫn mơ màng. Nhưng Eragon nghĩ anh ta có đủ khả năng đảm đương nhiệm vụ; nếu không, Jörmundur không bao giờ để anh ta về vị trí.
+</p>
+
+<p>
+ “không phải lúc này,” Eragon hạ giọng nói. NÓ bước thêm một bước rồi dừng. “Tối nay chúng ta mất bao nhiêu Chim Ưng Đen?”
+</p>
+
+<p>
+ “Sáu, thưa ngài. Chúng ta sẽ thiếu lực lượng trong vài ngài cho tới khi tìm được người thích hợp. Và chúng ta sẽ cần trợ giúp niều. Chúng tôi muốn tăng gấp đôi lực lượng bảo vệ ngài.” Ánh nhìn đau khổ ánh hưởng tới cái nhìn xa xăm của Garven. “Chúng tôi đã không bảo vệ được tiểu thư, thưa Khắc tinh của Tà thần. Nếu lực lượng đông hơn, có thể chúng tôi đã...”
+</p>
+
+<p>
+ Người đàn ông lưỡng lự rồi gật đầu, biểu cảm tiều tụy.
+</p>
+
+<p>
+ Tôi cũng không bảo vệ được cô ấy, Eragon nghĩ khi bước vào lều. Nasuada là người nó thề trung thành; nó có nhiệm vụ bảo vệ cô còn cơn Những Chim Ưng Đen. Và lúc cô cần nó, nó lại không cứu được cô.
+</p>
+
+<p>
+ Nó chửi rủa chính mình.
+</p>
+
+<p>
+ Đáng ra nó phải tìm cách cứu cô, dù có bằng cách nào đi nữa. Nhưng nó cũng biết cô không muốn nó bỏ lại Varden chỉ vì sự an nguy của bản thân cô. Cô thà chịu khổ và chết hơn là để sự vắng mặt của mình ảnh hưởng tới thứ cô đã cống hiến cả cuộc đời.
+</p>
+
+<p>
+ Eragon lại chửi và bắt đầu đi đi lại lại trong lều.
+</p>
+
+<p>
+ Mình là chỉ huy của Varden.
+</p>
+
+<p>
+ Giờ khi Nasuda đã đi, Eragon mới nhận ra Nasuada không chỉ là nó thề trung thành và là chỉ huy của nó; cô là bạn nó, nó cảm thấy cần bảo vệ cô y như cảm giác đối với Arya. Nhưng nếu nó cố đi cứu cô, nó sẽ khiến Varden thua trận.
+</p>
+
+<p>
+ Mình là chỉ huy của Varden.
+</p>
+
+<p>
+ Nó nghĩ tới những người nó phải chịu tránh nhiệm: Roran và Katrina và những dân làng Carvahall; hàng trăm người lính nó đã sát cánh chiến đấu; và rất nhiều; những người lùn; ma mèo và kể cả Urgal. Giờ tất cả đều dưới sự chỉ huy của nó, và nó buộc phải đưa ra những quyết định sáng suốt để đánh bại Galbatorix và Triều đình.
+</p>
+
+<p>
+ Nhịp tim của Eragon tăng cao khiến nó nổ đom đóm mắt. Nó dừng đi lại và nắm chặt lấy cái cột giữa lều, sau đó lau mồ hôi trên lông mày và môi trên.
+</p>
+
+<p>
+ Nó ước nó có ai để cùng nói chuyện. Nó định đánh thức Saphira nhưng lại thôi. Giấc ngủ của cô nàng quan trọng hơn việc lắng nghe nó phàn nàn. Nó không muốn Arya hay Glaedr phải nặng gánh vì những vấn đề họ không thể giải quyết. Hơn nữa, sau cuộc nói chuyện gai góc lần trước, nó không nghĩ Glaedr sẽ thông cảm với nó.
+</p>
+
+<p>
+ Eragon đi theo nhịp: ba bước tiến, quay lại, ba bước tiến, quay lại.
+</p>
+
+<p>
+ Nó đã đánh mất thăt lưng Beloth Khôn ngoan. Nó đã trơ mắt nhìn Murtagh và Thorn bắt cóc Nasuada. Và giờ nó chỉ huy Varden.
+</p>
+
+<p>
+ Những suy nghĩ đó cứ chạy trong đầu óc nó, và càng lúc nó càng căng thẳng. Nó cảm thấy như nó kẹt trong mê cung không lối thoát và mỗi lần quặt vào một ngã rẽ nó lại đụng phải một con quái vật. Dù nó có nói gì trong buổi họp cùng Orik, Orin và những người khác, nó vẫn không thấy được bằng cách nào nó, Varden và quân đồng minh có thể đánh bại Galbatorix.
+</p>
+
+<p>
+ Mình thậm chí chẳng cứu được Nasuada kể cả khi tự do đuổi theo cô. Nó thấy chua sót. Nó vô vọng. Sao chúng ta lại gặp chuyện này? Nó chửi thề và cắn môi trong tới khi đau không chịu nổi.
+</p>
+
+<p>
+ Nó dừng đi lại và nằm xuống đất, kê tay sau gáy. “Không thể, không thể,” nó thì thầm và kéo người chạm đầu gối. “Không thể.”
+</p>
+
+<p>
+ Trong cơn tuyệt vọng, Eragon nghĩ tới việc cầu xin sự giúp đỡ của vị thần người lùn Gûntera, như nó từng làm. Đặt vấn đề của mình dưới chân một đấng vĩ đại hơn nó và tin gửi gắm định mệnh của mình vào ngài có thể là một sự giải thoát. Làm vậy sẽ giúp nó chấp nhận số phận tốt hơn – cũng như số phận của những người nó yêu thương – vì nó sẽ không còn trực tiếp chịu trách nhiệm cho bất cứ chuyện gì xảy ra.
+</p>
+
+<p>
+ Nhưng nó không tài nào cầu khấn nổi. Nó phải chịu trách nhiệm cho số mệnh của họ, dù có thích hay không, và nó thấy bản thân sai khi giao trách nhiệm của mình cho người khác, kể cả đó có là thần thánh – hay ý tưởng của thần thánh.
+</p>
+
+<p>
+ Vấn đề là nó không biết nên làm gì. Nó có thể chỉ huy Varden; cái đo thì nó chắc. Nhưng sao nó có thể chiếm Urû’baen và giết Galbatorix thì nó không biết. Nó không thể chống lại Murtagh, kém hơn lão bạo chúa rất nhiều. Nó không thể chọc thủng lưới phòng hộ tư tưởng của chúng. Nắm giữ tư tưởng của họ, hoặc ít nhất chỉ của Galbatorix là hoàn toàn không thể rồi.
+</p>
+
+<p>
+ Eragon ấn ngón tay vào gáy mà gãi trong khi suy nghĩ mông lung mọi khả năng.
+</p>
+
+<p>
+ Sau đó nó nghĩ tới lời khuyên mà Solembum đã nói với nó rất lâu rồi, hồi còn ở Teirm. Ma mèo đã nói, Tới thời điểm mi cần một vũ khí, hãy nhìn xuống gốc cây Menoa. Sau đó khi gần như sức tàn lực kiệt, mi hãy tới trước tảng đá Kuthian, tự xưng tên và cửa linh hồn sẽ mở.
+</p>
+
+<p>
+ Lời nói liên quan tới cây Menoa đã đúng; dưới gốc Menoa, Eragon đã tìm thấy thép sáng để tạo nên lưỡi kiếm. Giờ khi đang tuyệt vọng Eragon nghĩ tơi câu thứ hai trong lời nói của ma mèo.
+</p>
+
+<p>
+ Nếu thực sự mình sức tàn lực kiệt,thì chính là lúc này, Eragon nghĩ. Nhưng nó nào biết tảng đá Kuthian và Cửa Linh Hồn ở đâu. Nó đã từng hỏi ông Oromis và Arya, nhưng cả hai chưa bao giờ đưa ra câu trả lời.
+</p>
+
+<p>
+ Eragon vươn tư tưởng, tìm kiếm đầu óc ma mèo. Solembum, nó nói, tôi cần ngươi giúp! Làm ơn tới lều của tôi.
+</p>
+
+<p>
+ Sau một lát, nó cảm thấy sự bực tức của ma mèo và nó cắt đứt liên lạc.
+</p>
+
+<p>
+ Sau đó Eragon ngồi một mình trong bóng tối...chờ đợi.
+</p>
+
+<p>
+ NHỮNG MẢNH VỤN, NỬA THẤY NỬA KHÔNG VÀ MƠ HỒ
+</p>
+
+<p>
+ Sau mười lăm phút, bức trướng cửa lều mở ra và Solembum nhảy vào, đêm móng hạ cánh nhẹ nhàng trên đất.
+</p>
+
+<p>
+ Con mèo hung bước qua Eragon không thèm nhìn, sau đó nhảy lên võng của nó, yên vị trên chăn và sau đó liếm láp bàn chân phải. Cậu ta không thèm nhìn Eragon mà nói, ta không phải chó cho mi gọi đến thì đến đi thì đi, Eragon.
+</p>
+
+<p>
+ “Tôi chưa bao giờ nghĩ thế,” Eragon trả lời. “Nhưng ta cần ngươi, trường hợp khẩn.”
+</p>
+
+<p>
+ Umm. Tiếng lưỡi Solembum liếm soàn soạt to hơn khi cậu ta tập trung vào bàn chân. Vậy nói đi, Khắc tinh của Tà thần. Mi muốn gì?
+</p>
+
+<p>
+ “Đợi chút.” Eragon đứng dậy tới cột treo đèn. “Tôi thắp cái này lên đã,” nó cảnh báo cho Solembum. Sau đó Eragon nói bằng ngôn ngữ cổ. Một ngọn lửa sáng lên trên đèn, trong lều tràn ngập thứ ánh sáng ấm áp.
+</p>
+
+<p>
+ Cả Eragon và Solembum đều nheo mắt khi đợi mắt tiết chế kịp với ánh sáng. Khi ánh sáng không còn khiến họ cảm thấy quá khó chịu, Eragon ngồi xuống cái ghế đẩu, không xa võng là mấy.
+</p>
+
+<p>
+ Con ma mèo đang dùng ánh mắt xanh lạnh nhìn nó.
+</p>
+
+<p>
+ “Không phải mắt ngươi có màu khác à?”
+</p>
+
+<p>
+ Solembum chớp mắt một cái và mắt cậu ta chuyển từ xanh sang vàng. Sau đó cậu ta tiếp tục liếm bàn chân. “Mi muốn gì,Khắc tinh của Tà thần? Tối để làm nhiều việc, không chỉ để ngồi nói chuyện. Cái đuôi cậu ta quật từ bên này sang bên khác.
+</p>
+
+<p>
+ Eragon liếm mép, hy vọng của nó làm nó lo lắng. “Solembum, ngươi đã nói rằng khi mọi hy vọng không còn và khi ta sức cùng lực kiệt, ta nên tới tảng đá Kuthian và mở Cửa Linh Hồn.”
+</p>
+
+<p>
+ Con mèo ma dừng liếm chân. À, cái đó.
+</p>
+
+<p>
+ “Đúng, cái đó. Ta muốn biết ngươi định nói gì. Nếu có gì giúp chúng ta chống lại Galbatorix, ta cần biết ngay bây giờ - không phải sau này, không phải khi ta đã giải được một hai câu đó, mà là bây giờ. Vì thế, ta có thể thấy tảng đá Kuthian và làm sao ta mở được Cửa Linh Hồn, và ta sẽ tìm thấy gì ở đó?”
+</p>
+
+<p>
+ Cái tai điểm đen của Solembum hơi hướng lên phía trước, móng vuốt co lại đệm chân được một nửa. Ta không biết.
+</p>
+
+<p>
+ “Ngươi không biết?” Eragon không tin mà kêu lên.
+</p>
+
+<p>
+ Mi có cần nhắc lại mọi điều ta nói không?
+</p>
+
+<p>
+ “Sao ngươi lại không biết?”
+</p>
+
+<p>
+ Ta không biết.
+</p>
+
+<p>
+ Eragon nhoài người về phía trước, nắm lấy bàn chân to tướng của Solembum. Tai con ma mèo cụp lại, nó rít lên và cong móng, châm móng vuốt vào lòng bàn tay Eragon. Eragon cười và bỏ qua cơn đau. Con ma mèo khỏe hơn nó tưởng, đủ khiến nó ngã khỏi ghế.
+ <br/>
+ “Không thêm một câu đố nào nữa,” Eragon nói. “Ta cần sự thật, Solembum. Ngươi biết thông tin đó từ đâu và nó có nghĩa gì?”
+ <br/>
+</p>
+
+<p>
+ Lông trên xương sống Solembum dựng đứng. Thi thoảng các câu đố là sự thật, đồ người đầu gạch. Giờ thả ta ra không ta xé nát mặt mi và đem ruột mi cho quạ ăn đấy.
+</p>
+
+<p>
+ Eragon vẫn nắm một lúc lâu hơn, sau đó thả bàn chân Solembum ra và ngả về sau. Nó nắm chặt tay nén đau và để máu ngừng chảy.
+</p>
+
+<p>
+ Solembum nhìn nó, tất cả sự thờ ơ đều không còn. Ta nói ta không biết vì, dù cho mi nghĩ gì, thì ta thật sự không biết. Ta không biết đá Kuthian ở đâu và làm sao mi mở được Cổng Linh Hồn hay cổng đó chứa cái gì.
+</p>
+
+<p>
+ “Nói bằng ngôn ngữ cổ xem.”
+</p>
+
+<p>
+ Con ngươi mắt Solembum còn hẹp hơn, nhưng cậu ta vẫn nhắc lại bằng ngôn ngữ của thần tiên. Lúc đó Eragon biết Solembum nói thật.
+</p>
+
+<p>
+ Eragon có rất nhiều thắc mắc khiến nó không biết bắt đầu từ ddaaua. “Sau ngươi lại biết đến Đá Kuthian?”
+</p>
+
+<p>
+ Một lần nữa đuôi Solembum lại quật sang hai bên, làm các nếp gấp trên chăn phẳng thớm. Như cũ, ta không biết. Hay ta không nghĩ ra.
+</p>
+
+<p>
+ “Vậy sao...” Eragon không nói hết vì bối rối.
+</p>
+
+<p>
+ Ngay sau ngày tàn của thời đại Kỵ sĩ, chúng ta tự nhiên mang một nhận thức rằng, khi nào gặp một Kỵ sĩ mới, người không phục vụ Galbatorix, chúng ta phải nói với người đó điều ta nói với ngươi: về cây Menoa và về tảng đá Kuthian.
+</p>
+
+<p>
+ “Nhưng thông tin tới từ đâu?”
+</p>
+
+<p>
+ Miệng Solembum nhăn lại khi nó nhe những chiếc răng tạo ra một nụ cười không thoải mái. Cái đó chúng ta không biết, chỉ có ai hoặc cái gì nói cái đó mới biết nó có nghĩa gì.
+</p>
+
+<p>
+ “Sao ngươi lại biết?” Eragon hô lên. “Nếu đó là Galbatorix thì sao? Hắn ta có thể đã thử chơi các ngươi. HẮn có thể cố chơi ta và Saphira, để tóm sống chúng ta.”
+</p>
+
+<p>
+ Không, Solembum nói, móng vuốt cắm sâu vào chăn. Ma mèo không dễ bị lừa như các loài khác. Galbartorix không phải người đứng đằng sau chuyện này. Ta chắc chắn. Ai muốn mi biết thông tin này là ngươi sắp xếp để ngươi tìm được thép sáng tạo ra thanh gươm của ngươi. Liệu Galbatorix có làm thế không?
+</p>
+
+<p>
+ Eragon nhăn trán. “Các ngươi chưa bao giờ thử tìm xem ai đứng đằng sau sao?”
+</p>
+
+<p>
+ Có.
+</p>
+
+<p>
+ “Và?”
+</p>
+
+<p>
+ Thất bại. Con ma mèo xù lông. Có hai khả năng. Một, trí nhớ của chúng ta chống lại ý muốn của chúng ta và bị điều khiển bởi thực thể đáng ghê tởm nào đó. Hai là, chúng ta đồng ý để thay đổi ký ức, không hiểu vì lý do gì. Có lẽ chúng ta tự mình khống chế ký ức. Ta không thể tin có ai có thể thành công trong việc làm thay đổi trí nhớ của chúng ta. Nếu chỉ là vài người, ta sẽ hiểu. Nhưng đây lại là cả một loài. Không, không có khả năng.
+</p>
+
+<p>
+ Sao lại tin tưởng ma mèo để giao thông tin này?
+</p>
+
+<p>
+ Ta đoán là vì, chúng ta luôn là bạn của Kỵ sĩ và bạn của rồng... Chúng ta là những kẻ quan sát. Những kẻ lắng nghe. Những kẻ lang thang. Chúng ta một mình du ngoạn tại những nơi tối tăm của thế giới, và chúng ta nhớ thế giới đang thế nào và sẽ thế nào.
+</p>
+
+<p>
+ Ánh mắt của Solembum chuyển động.Hiểu đi, Eragon. Chúng ta không vui vẻ gì với tình thế này. Chúng ta đã từng tranh luận không biết bao nhiêu lần về thông tin sẽ gây lợi hay hại khi thời điểm đến. Cuối cùng, ta quyết định. Ta quyết định nói cho mi, để mi có được tất cả những giúp đỡ mi cần. Còn ngươi hiểu thế nào là chuyện của ngươi.
+</p>
+
+<p>
+ “Nhưng tôi phải làm gì?” Eragon nói. “Làm sao tôi tìm được tảng đá Kuthian?”
+</p>
+
+<p>
+ Cái đó thì ta không thể nói.
+</p>
+
+<p>
+ “Vậy thì thông tin dùng làm cái gì? Không nghe với nghe rồi chẳng giải quyết được gì.”
+</p>
+
+<p>
+ Solembum chớp mắt lần nữa. Ta có thể nói cho ngươi nghe cái khác. Có thể chẳng có ý nghĩa gì nhưng có thể sẽ giúp ngươi tìm được đường đi.
+</p>
+
+<p>
+ “Cái gì?”
+</p>
+
+<p>
+ Nếu mi im lặng ta sẽ nói. Khi gặp ngươi ở Teirm, ta có một cảm giác rất lạ rằng mi nên có cuốn sách Domia abr Wyrda. Ta mất một thời gian để dàn xếp nhưng ta chính là người đứng sau việc Jeod đưa mi cuốn sách đó. Sau đó ma mèo giơ chân kia lên, và sau một hồi kiểm tra, bắt đầu liếm.
+</p>
+
+<p>
+ “Trong mấy tháng qua ngươi có thêm cảm giác kỳ lạ nào nữa không?” Eragon hỏi.
+</p>
+
+<p>
+ CHỉ thích ăn những cây nấm nhỏ màu đỏ, nhưng nó cũng qua nhanh.
+</p>
+
+<p>
+ Eragon càu nhàu và cúi xuống lấy cuốn sách từ dưới võng ra. Nó nhìn chằm chằm vào cuồn sách bìa da dày trước khi mở tới một trang bất kỳ. Như thường lệ, những con chứ rune chằng chịt khiến nó khó hiểu khi mới liếc qua. Nó phải cố gắng lắm mới dịch được vài từ.
+</p>
+
+<p>
+ ♣ ♣ ♣
+</p>
+
+<p>
+ Eragon nhăn mặt vì thất vọng và gập cuốn sách lại. “Ta không có thời gian. Cuốn sách quá to còn ta lại đọc quá chậm. Ta chỉ mới đọc vài chương, và ta không thấy có liên quan gì tới Tảng đá Kuthian và Cửa Linh hồn.”
+</p>
+
+<p>
+ Solem dán mắt vào nó. Mi có thể nhờ ai đọc cho, nhưng nếu có bí mật ẩn giấu trong Domia abr Wyrda, có lẽ ngươi là người duy nhất tìm ra.
+</p>
+
+<p>
+ Eragon cưỡng lại ý muốn chửi thề. Nó đứng bật dậy và đi đi lại lại. “SAO ngươi không nói cho ta sớm hơn?”
+</p>
+
+<p>
+ Ta thấy không quan trọng. Bất cứ lời khuyên nào về cánh cổng hay tảng đá chẳng biết có giúp hay chẳng ích gì, và biết nguồn gốc thông tin – chẳng...thay...đôi...
+</p>
+
+<p>
+ Gì!
+</p>
+
+<p>
+ “Nhưng nếu ta biết có gì đó liên quan tới Cổng Linh Hồn, ta sẽ giành nhiều thời gian mà đọc hơn.”
+</p>
+
+<p>
+ Nhưng ta không biết ngươi cần, Solembum nói. Lưỡi nó thò ra khỏi mieengjj và liếm lên hàng ria. Cuốn sách có thể chẳng nói gì tới Tảng đá Kuthian hay Cổng Linh Hồn. Ai mà biết được? Ngoài ra, mi cũng đã đọc rồi. Liệu nếu ta nói ta có cảm giác thế này thế kia ngươi có chịu đọc thêm không? Hả?
+</p>
+
+<p>
+ “Có thể không... nhưng ngươi vẫn phải nói chứ.”
+</p>
+
+<p>
+ Con ma mèo xòe móng và không nói gì.
+</p>
+
+<p>
+ Eragon nhăn mắt, nắm cuốn sách như muốn xé nó ra. “Cuốn sách này không thể là mọi thứ chúng ta cần. Phải có thông tin gì đó ngươi quên chứ.”
+</p>
+
+<p>
+ Có nhiều, nhưng ta nghĩ chẳng có cái gì liên quan tới chuyện này.
+</p>
+
+<p>
+ “Trong tất cả các chuyến du ngoạn ở Alagaësia, kể cả có hay không có đi cùng bà Angela, ngươi chẳng nhẽ chưa bao giờ tìm thấy cái gì giải thích cho bí mật này? Hay kể cả thứ gì đó giúp chúng ta chống lại Galbatorix ư?”
+</p>
+
+<p>
+ Không phải ta thấy mi sao?
+</p>
+
+<p>
+ “Không buồn cười đâu,” Eragon nhăn mặt. “Chết tiệt, ngươi phải biết gì chứ.”
+</p>
+
+<p>
+ Không.
+</p>
+
+<p>
+ “Vậy thì nghĩ đi! Nếu ta không tìm ra biện pháp chống lại Galbatorix, chúng ta sẽ thua đó Solembum. Chúng ta sẽ thua, hầu hết Varden, kể cả ma m èo, sẽ chết.”
+</p>
+
+<p>
+ Solembum lại rít lên. Thế ngươi muốn gì ở ta? Ta không thể nghĩ ra nơi giúp ngươi. ĐỌc sách đi.
+</p>
+
+<p>
+ “Chúng ta sẽ tới Urû’baen trước khi chúng ta tìm ra cuốn sách. Cuốn sách sẽ như không tồn tại.”
+</p>
+
+<p>
+ Tai Solembum lại cụp xuống. Không phải lỗi của ta.
+</p>
+
+<p>
+ “Ta không quan tâm. Ta chỉ muốn tìm cách giúp chúng ta không đâm đầu vào chỗ chết. Nghĩ đi! Ngươi phải biết gì nữa chứ!”
+</p>
+
+<p>
+ Solembum phát ra tiếng gầm gừ nho nhỏ. Ta không biết. Và...
+</p>
+
+<p>
+ “Ngươi phải biết, nếu không chúng ta tiêu!”
+</p>
+
+<p>
+ Khi Eragon nói từ đó, nó thấy sự thay đổi trên ma mèo. Tai Solembum từ từ dựng đứng, ria chùng xuống, ánh mắt nhẹ nhàng hơn và mất đi sự cứng rắn. Cùng lúc đó, đầu óc mèo ma như thể trống trỗng không bình thường, như thể trí óc của nó bị đóng băng hoặc móc mất.
+</p>
+
+<p>
+ Eragon cứng người không hiểu gì.
+</p>
+
+<p>
+ Sau đó nó cảm thấy Solembum nói, tư tưởng bằng phẳng và không màu như một hồ nước dưới bầu trời ẩm đạm, đầy mây. Chương bốn mươi bảy. Trang ba. BẮt đầu từ khổ thứ hai.
+</p>
+
+<p>
+ Ánh nhìn của Solembum có thần sắc lại và tai nó về vị trí cũ. Cái gì? Nó hỏi với sự tức giận rõ ràng. Vì sao mi lại nhìn ta chằm chằm?
+</p>
+
+<p>
+ “Ngươi vừa nói gì?”
+</p>
+
+<p>
+ Ta nói ta không biết gì nữa. Và rằng...”
+</p>
+
+<p>
+ “Không, không phải cái đó, cái khác cơ, về chương và trang ấy.”
+</p>
+
+<p>
+ Đừng đùa. Ta không có nói.
+</p>
+
+<p>
+ “Có mà.”
+</p>
+
+<p>
+ Solembum nhìn kỹ nó vài giây. Sau đó, khi đã bình tĩnh, cậu ta nói, Nói cho ta nghe chính xác những gì ngươi nghe, Kỵ sĩ Rồng.
+</p>
+
+<p>
+ Thế là, Eragon nhắc lại từng từ. Sau khi nó nói xong, con ma mèo im lặng trong một lúc. Ta không nhớ,cậu ta nói.
+</p>
+
+<p>
+ “Ngươi nghĩ nó nghĩa là sao?”
+</p>
+
+<p>
+ Nghĩa là chúng ta nên xem trong trang ba chương bốn mươi bảy viết gì.
+</p>
+
+<p>
+ Eragon lưỡng lự rồi gật đầu và bắt đầu lật trang. Trong lúc đó, nó nhớ lại chương đó viết gì; về sự việc sự tái sinh của các hậu duệ Kỵ sĩ rồng, sau đó là cuộc chiến diễn ra trong thời gian ngắn giữa tiên và người. Eragon đã đọc phần đầu nhưng nó thấy đó chỉ là một cuộc bàn luận khô khan về các hiệp ước và thỏa hiệp. Thế là nó bỏ qua để đọc trong lần khác.
+</p>
+
+<p>
+ Ngay sau đó, nó tìm thấy trang. Nó dùng đầu ngón tay di chuyển dọc theo các con chữ rune và đọc lớn lên.
+</p>
+
+<p>
+ ♣ ♣ ♣
+</p>
+
+<p>
+ Eragon dừng lại. “Chẳng liên quan.”
+</p>
+
+<p>
+ Đọc tiếp xem.
+</p>
+
+<p>
+ Eragon nhíu mày tiếp tục đọc đoạn tiếp.
+</p>
+
+<p>
+ Ở lòng chảo trung tâm Vroengard là nơi các kỵ sĩ xây dựng thành phố cực kỳ nổi tiếng của mình, Doru Araeba.
+</p>
+
+<p>
+ Doru Araeba! Thành phố duy nhất trong lịch sử được xây dựng làm nơi cư trú cho rồng cũng như người và tiên. Doru Araeba! Nơi của pháp thuật và học hỏi và những bí mật cổ xưa. Doru Araeba! Cái tên mang âm điệu phấn khởi.Thành phố không giống bất cứ thành phố nào trước nó và kể cả sau nó. Nhưng giờ nó đã không còn, bị hủy diệt – bị chôi vùi bởi tên bạo chúa Galbatorix.
+</p>
+
+<p>
+ Các tòa nhà xây dựng theo phong cách thần tiên – với sự ảnh hưởng của các kỵ sĩ loài người vào vài năm cuối quá trình xây dựng – không dùng đá, cũng không dùng gỗ; các tòa nhà gỗ, rõ ràng không thể chịu nổi những sinh vật với móng vuốt sắc như dao cạo và khả năng thở ra lửa. Tuy nhiên, đặc điểm tuyệt diệu nhất của Doru Araeba là độ lớn. Mỗi con đường đều rộng rãi cho ít nhất hai con rồng đi sánh ngang, phòng và lối vào lướn đủ cho nhiều con rồng ở với đủ kích thước.
+</p>
+
+<p>
+ Kết quả, Doru Araeba là một thành phố rộng lớn thênh thang, điểm xuyết những tòa nhà to lớn vô cùng, khiến người lùn cũng phải ấn tượng. Những khu vườn và đài phun nước là những thứ quá bình thường trong thành phố, vì các thần tiên vô cùng yêu chuộng thiên nhiên. Ngoài ta còn có rất nhiều những tòa tháp cao vút xen lẫn những đại sảnh và pháo đài của kỵ sĩ rồng.
+</p>
+
+<p>
+ Trên rặng nui xung quanh thành phố, Kỵ sĩ rồng cho dựng các tháp canh và nhà tổ chim – để canh chừng các đợt tấn công – và các kỵ sĩ và rồng của họ có những hang động cao trên núi, nơi họ sống tách biệt khỏi những người còn lại. NHững con rồng già hơn, lớn tuổi hơn đặc biệt được sắp xếp tách khỏi các con rồng khác, vì chúng thích sống cô độc, trên lòng chào để chúng cất cánh dễ dàng hơn.
+</p>
+
+<p>
+ Eragon thất vọng dừng đọc. Doru Araeba thực sự thú vị nhưng nó đã đọc những cái khác, chi tiết hơn về thành phố của kỵ sĩ rồng trong thời gian ở Ellesméra. Mà nó cũng không thích ngồi dịch chữ rune nữa.
+</p>
+
+<p>
+ “Chẳng có tích sự gì,” nó nói và hạ quyển sách xuống. Đừng từ bỏ. Đọc thêm hai trang nữa xem. Nếu sau đó không có gì, mi có thể dừng.
+</p>
+
+<p>
+ Eragon hít một hơi và đồng ý. Nó chạy ngón tay theo trang cho tới khi tìm thấy chỗ nó vừa dừng và đọc tiếp:
+</p>
+
+<p>
+ Thành phố có nhiều kỳ quan, từ Đài nước biết hát của Eldimírim tới pháo đài pha lê của Svellhjall hay cây tổ quạ của loài rồng, nhưng hơn cả, tôi tin tưởng kho báu lớn nhất của Doru Araeba là thư viện của nó. Không phải vì đây là một công trình quan trọng – dù thực sự như thế - mà vì qua nhiều thế kỷ, các Kỵ sĩ đã thu thập kho kiến thức quý báu nhất của toàn miền đất. Vào thời điểm thời đại các hiệp sĩ suy vong, trên toàn miền chỉ còn lại ba thư viện– một của Ilirea, một của Ellesméra và một của Tronjheim—và cả tổng số sách trong ba thư viện đó không thể nào sánh bằng thư viện của Doru Araeba.
+</p>
+
+<p>
+ Thư viện nằm ở phía tây bắc thành phố, gần khu vườn được bao quanh bởi Ngọn tháp xoắn của Moraeta, hay còn được biết tới với cái tên Tảng đá của Kuthian...
+</p>
+
+<p>
+ Giọng Eragon chết nghẹn trong cổ họng khi nhìn thấy cái tên. Sau một lát, nó đọc tiếp, chậm rãi hơn:
+</p>
+
+<p>
+ Được biết tới với cái tên, tảng đá Kuthian,nó không xa Thượng viện, nơi các Kỵ sĩ rồng tối cao gặp mặt các vua và nữ hoàng khi họ tới gặp mặt là bao.
+</p>
+
+<p>
+ Eragon vừa sợ vừa ngưỡng mộ. Một người hoặc cái gì đó đã sắp xếp để nó biết được thông tin này, cũng là người hoặc vật đã giúp nó tìm thép sáng rèn kiếm. Ý nghĩ đó thật đáng sợ và giờ khi Eragon biết mình phải đi đâu, nó lại không chắc nó còn muốn tìm ngọn ngành nữa không.
+</p>
+
+<p>
+ Nó không biết cái gì đang chờ đợi nó ở Vroengard? Nó sợ phải liều lĩnh, nhất là khi nó có được cơ hội thực hiện điều không tưởng.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-038.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-040.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

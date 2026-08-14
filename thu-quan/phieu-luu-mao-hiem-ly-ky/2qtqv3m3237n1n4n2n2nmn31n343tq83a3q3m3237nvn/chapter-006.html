@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 6 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 6</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-005.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-007.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ “Chúng ta luôn khát khao đến với tương lai, bởi vì hiện tại luôn làm con người buồn khổ, mọi thứ đều là tạm thời, là giây phút thoáng qua.” – Pushkin (1)
+</p>
+
+<p>
+ (1) Aleksandr Sergeyevich Pushkin (1799 – 1837) là một nhà thơ, nhà văn, nhà viết kịch nổi tiếng người Nga. Được tôn vinh là đại thi hào, Mặt trời thi ca Nga, ông đã có những đóng góp to lớn trong việc phát triển ngôn ngữ văn học Nga hiện đại và là biểu tượng của dòng văn học lãng mạn Nga thế kỷ XIX. (Theo wiki)
+</p>
+
+<p>
+ Dù đã tham gia các buổi phỏng vấn tuyển dụng hết lần này đến lần khác, đã nộp hồ sơ lý lịch hết cái này rồi cái khác, nhưng vẫn có người nhận được việc làm, có kẻ thì không.
+</p>
+
+<p>
+ Tìm việc làm và học tập không giống nhau. Quá trình thực hiện và kết quả cuối cùng của việc học mọi người đều thấy rất rõ ràng, người giỏi là phải cố gắng chăm chỉ, bỏ ra tâm sức mà đạt được thành tích, đó là chuyện phải có, kẻ yếu kém là do không đủ chăm chỉ, không đủ quyết tâm nên gánh lấy thất bại, dĩ nhiên là không thể than trời trách đất. Nhưng tìm việc làm lại khiến người ta rất mơ hồ, rõ ràng người này thành tích học tập rất tốt vậy mà đã bị loại ra ngay từ vòng phỏng vấn đầu tiên, trong khi một người khác có thành tích rất bình thường nhưng đến vòng phỏng vấn thứ hai lại đột nhiên tỏa sáng.
+</p>
+
+<p>
+ Cùng một ngành học thì phương hướng tìm việc là hoàn toàn giống nhau, mỗi một lần nộp hồ sơ xin việc là một vòng cạnh tranh. Lúc bắt đầu, mọi người chưa có cảm giác gì, không dè chừng, không đố kỵ trao đổi với nhau về cách viết sơ yếu lý lịch, về kinh nghiệm phỏng vấn. Nhưng dần dần, khi trải qua thất bại và thành công, mọi người bắt đầu nhận ra bọn họ không chỉ là bạn học, mà còn là đối thủ, không ai để ý, bầu không khí trong ký túc xá từ lúc nào đã trở nên kỳ lạ. Họ sẽ không như trước hi hi ha ha than thở tìm việc làm thật là phiền hà, thật là bực bội, mà thay vào đó bắt đầu lảng tránh bàn luận cụ thể chi tiết, ví dụ như trong lúc phỏng vấn thì vấn đề quan trọng nào được hỏi và họ đã trả lời vấn đề đó như thế nào.
+</p>
+
+<p>
+ Nhan Hiểu Thần bị thất bại hai lần ở vòng phỏng vấn đầu tiên, tự mình phân tích cô đã nhận ra có nhiều nguyên nhân, nhưng tiếng Anh là quan trọng nhất, bởi vì biểu cảm diễn đạt không đủ tự tin nên làm cho người ta có ấn tượng ban đầu không tốt. Trải qua thêm mấy vòng phỏng vấn, tích lũy thêm một ít kinh nghiệm, cô biết được rằng thực chất tất cả các vòng phỏng vấn đều có chung nguyên tắc, đặc biệt là ở vòng đầu tiên, cho nên tùy theo mục đích mà cô có thể chuẩn bị thật tốt.
+</p>
+
+<p>
+ Nhan Hiểu Thần đã thỏa thuận với du học sinh một cách thuận lợi, một mặt cô sẽ không hời hợt trong việc luyện phát âm, một mặt khác cậu ta sẽ tập thêm cho cô các tình huống phỏng vấn. Người du học sinh này ban đầu đã làm rất tốt, nhưng đột nhiên cậu ta lại thay đổi ý định, thậm chí yêu cầu chấm dứt học phụ đạo với cô. Lúc đầu, Nhan Hiểu Thần nghĩ do lỗi của mình nên cô đã đi tìm cậu ta để hỏi cho ra, nhưng cậu ta lại ăn nói quanh co, có chút gì đó bất đắc dĩ, cô không hiểu cho lắm. Sau này, cô mới phát hiện ra cậu ta đã bị một bạn nữ khác cùng khoa cướp mất, lúc hai người nói chuyện tỏ ra khá thân mật, quan hệ vô cùng mờ ám. Nhan Hiểu Thần đã biết tình thế này không liên quan gì đến năng lực của mình, cô có thành tích học tập tốt như vậy mà cũng bị cướp đi cơ hội, cô gởi cho cậu ta một cái email, cảm ơn cậu ta nhiều tháng qua đã giúp cô học tiếng Anh, chúc cậu ta học tập tại Trung Quốc không gặp trở ngại, luôn vui vẻ và may mắn.
+</p>
+
+<p>
+ Trường đại học của cô có không ít các sinh viên nước ngoài, nhưng các bạn đến từ các quốc gia nói tiếng Anh thì không nhiều, mà hiện tại học kỳ cũng đã nhanh kết thúc, Nhan Hiểu Thần không có khả năng tìm được thêm ai để hổ trợ, chỉ có thể tự mình luyện tập, dĩ nhiên hiệu quả kém đi rất nhiều, nhưng cô đã tự cổ vũ chính mình, quen tay thì hay việc, cần cù bù thông minh!
+</p>
+
+<p>
+ Vì tìm việc làm, Nhan Hiểu Thần không có nhiều thời gian làm thêm tại quán Bar Lam Nguyệt, nên cô giảm xuống còn 3 ngày. Lui tới quán cũng không ít người nước ngoài, nhưng đại bộ phận họ là những giáo viên ở gần trường đại học, đương nhiên là dựa vào tiếng Anh để kiếm tiền, vì vậy không thể trông cậy luyện tập phát âm với họ được. Hơn nữa những người này không ít thì nhiều đều muốn nói tiếng Hoa, cố gắng luyện phát âm giống như cô vậy. Nhan Hiểu Thần vẫn mặc kệ, cứ có cơ hội là cô tận dụng triệt để, chỉ cần gặp khách nước ngoài cô sẽ dùng tiếng Anh nói chuyện, đôi khi bất quá chỉ là nói đi nói lại tên của các loại rượu, nhưng như vậy cũng đủ luyện thêm một chút biểu cảm ngôn ngữ.
+</p>
+
+<p>
+ Trình Trí Viễn đến quán Bar cũng là lúc Nhan Hiểu Thần vừa tiếp xong một bàn toàn khách nước ngoài, cả buổi chiều cũng đã luyện phát âm, nên trong đầu cô bây giờ chỉ toàn là Anh ngữ, tự nhiên cũng nói với anh ta bằng tiếng Anh: “Sir, what can I do for you?” (Chào anh, tôi có thể giúp gì cho anh?)
+</p>
+
+<p>
+ Anh ta cười cười, cũng nói tiếng Anh với cô: “Sure, I just want to have some drink.” (Dĩ nhiên, tôi chỉ muốn uống chút gì đó.)
+</p>
+
+<p>
+ Nhan Hiểu Thần sực nhớ ra, vội nói: “Xin lỗi, hơi bất ngờ.”
+</p>
+
+<p>
+ Trình Trí Viễn hỏi: “Em gần đây luyện tập phát âm sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần kinh ngạc, “Làm sao anh biết?”
+</p>
+
+<p>
+ “Rất nhiều năm trước, tôi đã từng sống ở Mỹ và cũng đã từng như em, nắm bắt cơ hội cùng người bản địa nói tiếng Anh.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cười rộ lên, “Tôi thì vì tìm việc làm mới cố gắng như vậy. Ghét thật, rõ ràng là trên lãnh thổ Trung Quốc, giám khảo phỏng vấn cũng là người Trung Quốc, vậy mà lại muốn dùng tiếng Anh để phỏng vấn!”
+</p>
+
+<p>
+ Trình Trí Viễn nhìn cô thật lâu, thân thiết hỏi: “Sao vậy? Tìm việc không thuận lợi à?” Anh ta mỗi tuần đều đến quán Bar, có khi đi một mình, có khi đi với bạn, mỗi lần như vậy đều do Nhan Hiểu Thần tiếp đón, anh ta vẫn tao nhã lễ độ, chưa từng có ngôn từ khiếm nhã, hơn một tháng gặp nhau, Nhan Hiểu Thần và anh ta tuy rằng không thể nói là thân thiết, nhưng cũng coi như có thể trò chuyện với nhau một cách thân mật.
+</p>
+
+<p>
+ “Tôi đã qua được vòng phỏng vấn đầu tiên của một vài công ty lớn, không thể nói là không thuận lợi, nhưng nghe nói vòng phỏng vấn cuối sẽ có người nước ngoài, tôi thì phát âm không được tốt, sợ vì nguyên nhân này mà thất bại.” Trong khoảng thời gian này, không khí ở ký túc xá thật ngột ngạt, rất nhiều điều không thể nói ra. Không nói thì mọi người cho rằng mình vờ vịt giấu diếm, mà nói ra thì lại bảo mình khoe khoang. Cuộc sống của Trình Trí Viễn đối với cô khác xa nhau, cho nên Nhan Hiểu Thần cảm thấy yên tâm mà than phiền với anh ta chút ít.
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Tôi hiện tại không bận gì, nếu em muốn, tôi có thể giúp em.”
+</p>
+
+<p>
+ “Anh giúp tôi?” Nhan Hiểu Thần không hiểu nhìn Trình Trí Viễn.
+</p>
+
+<p>
+ “Tôi ở nước ngoài học tập và làm việc rất nhiều năm, tiếng Anh coi như cũng khá, huống chi công ty của tôi tuyển dụng cũng rất nhiều, tôi tính ra kinh nghiệm làm giám khảo phỏng vấn cũng không ít.” Anh ta cười nhìn Nhan Hiểu Thần, “Thế nào, có hứng thú chấp nhận thử thách mới không?”
+</p>
+
+<p>
+ Nhan Hiểu Thần đột nhiên nhớ ra, hình như Apple và Yoyo có nói đến công việc của anh ta, là kinh tế tài chính, vậy là cùng ngành rồi. Chữ “Có” đã muốn nói ra, nhưng Nhan Hiểu Thần lại kềm chế được, “Tôi đi lấy rượu cho anh trước.”
+</p>
+
+<p>
+ Đưa anh ta rượu, Nhan Hiểu Thần vội vàng đi tiếp đón các vị khách khác, nên không có thời gian tiếp tục đề tài này.Cô vừa làm việc vừa rối rắm suy nghĩ. Đề nghị của Trình Trí Viễn rất là hấp dẫn, anh ta là tiền bối trong ngành tài chính, hơn nữa nhìn qua có thể thấy sự nghiệp rất thành công, nếu có được dịp tiếp cận, cùng nhau trao đổi, chính là cơ hội học tập tốt nhất, nếu nói vì mục đích luyện phát âm, cùng lắm chỉ là cách nói hơi tế nhị một chút. Nhưng “vô công bất hưởng lộc” (2), cô lấy gì báo đáp ơn nghĩa này đây?
+</p>
+
+<p>
+ (2) không làm thì không được hưởng, ý câu này nói rằng Nhan Hiểu Thần không muốn mình mắc nợ người khác.
+</p>
+
+<p>
+ Đấu tranh tư tưởng một hồi, Nhan Hiểu Thần nén lòng quyết định, vẫn là muốn dựa vào chính mình!
+</p>
+
+<p>
+ Cô cầm bình nước, đi qua thêm một ít nước chanh cho anh ta, nói rằng: “Cảm ơn ý tốt của anh, nhưng tôi không muốn làm phiền anh”. Cô rót đầy nước vào ly, cười cười, muốn nói thêm vài câu, nhưng Trình Trí Viễn đột nhiên có điện thoại. Anh ta ra hiệu ý bảo cô chờ một lát.
+</p>
+
+<p>
+ Câu đầu tiên “Chào anh”, Trình Trí Viễn dùng tiếng phổ thông, nhưng sau đó khi bắt đầu đối thoại anh ta lại dùng tiếng địa phương, người ngoài nghe qua dĩ nhiên là không quen, vậy mà Nhan Hiểu Thần lại thấy thân thiết dễ nghe, khó trách cô và Trình Trí Viễn có duyên như vậy, hóa ra là đồng hương!
+</p>
+
+<p>
+ Trình Trí Viễn cúp điện thoại, liền nói: “Xin lỗi, vừa rồi em muốn nói…”
+</p>
+
+<p>
+ Nhan Hiểu Thần quên mất mình muốn nói gì, nhịn không được dùng tiếng địa phương nói lại: “Thì ra chúng ta là đồng hương nha!”
+</p>
+
+<p>
+ Trình Trí Viễn kinh ngạc, chỉ chỉ Nhan Hiểu Thần, cười rộ lên, “Thật không nghĩ tới, chúng ta dĩ nhiên là đồng hương!” Hai người không hẹn mà cùng hỏi: “Nhà anh/em ở đâu?” Hỏi xong cùng cười.
+</p>
+
+<p>
+ Giống như có chung ám hiệu vậy, bọn họ dùng tiếng địa phương nhanh chóng trao đổi tin tức, phát hiện hai người cùng thị xã nhưng khác huyện, Trình Trí Viễn biết trường học cấp 2 của Nhan Hiểu Thần, nếu không phải vì đến cấp 2 nhà anh ta dọn đi, không chừng anh ta cũng học trường đó. Nhan Hiểu Thần biết trường tiểu học của anh ta, thì chính cô đã tốt nghiệp từ trường đó, không chừng bọn họ đã ngồi cùng bàn với nhau.
+</p>
+
+<p>
+ Bởi vì khách hàng ngoắc gọi bồi bàn, Nhan Hiểu Thần không muốn nán lại cùng Trình Trí Viễn nói chuyện phiếm, cô vội vàng rời khỏi. Bởi vì ngẫu nhiên phát hiện chuyện này, khiến Nhan Hiểu Thần cảm thấy, khoảng cách giữa cô và Trình Trí Viễn tự nhiên kéo gần lại. Vài phút trước, Trình Trí Viễn và các khách hàng khác là cùng một loại người, đều là những kẻ sống nơi đô thị phồn hoa, trú ngụ tại thành phố Thượng Hải nơi có ánh đèn nê ông xa hoa trụy lạc, cuộc sống ngợp trong vàng son, phù phiếm. Nhưng vài phút tiếp theo, cuộc sống phía sau anh ta hiện ra rõ ràng, như trông thấy một bộ rễ lớn, bộ rễ này biến thành một gốc cây to, hơn nữa cây đại thụ này Nhan Hiểu Thần rất quen thuộc. Cô lúc tiểu học có đến trường của anh ta tham dự cuộc thi thả diều, thầy chủ nhiệm của anh ta giờ đã là hiệu trưởng, ông ấy còn đọc diễn văn trao giải tại buổi thi thả diều đó.
+</p>
+
+<p>
+ Như ngày thường, Trình Trí Viễn ngồi ờ quán Bar khoảng một canh giờ (3).
+</p>
+
+<p>
+ (3) tương đương 2 tiếng.
+</p>
+
+<p>
+ Lúc rời khỏi, anh ta trêu chọc Nhan Hiểu Thần: “Tiểu đồng hương, nghĩ xong chưa? Lời đề nghị của tôi đó.” Có lẽ lúc nói anh ta tươi cười, nên Nhan Hiểu Thần nhất thời khó từ chối, do dự không trả lời.
+</p>
+
+<p>
+ Trình Trí Viễn hỏi: “Đề nghị của tôi làm em khó quyết định sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần thành thật nói: “Cơ hội rất tốt, nhưng tôi cảm thấy làm phiền anh quá!”
+</p>
+
+<p>
+ Trình Trí Viễn dùng tiếng địa phương nói: “Bạn bè với nhau nếu có chút ít bận rộn cũng bình thường, huống chi chúng ta không chỉ là bạn bè, đều là người sống xa quê. Em suy nghĩ thêm một chút, nếu muốn, có thể điện thoại cho tôi, chúng ta sẽ thử qua một lần, nếu em thấy có kết quả, chúng ta sẽ tiếp tục.”Nói xong, anh ta ra về. Nhan Hiểu Thần suy nghĩ mãi cho đến lúc tan ca mới ra quyết định.
+</p>
+
+<p>
+ Sợ thời gian đã muộn, cô không muốn gọi điện cho Trình Trí Viễn mà gửi tin nhắn trước, “Anh đã nghỉ ngơi chưa?”
+</p>
+
+<p>
+ Một lúc sau, điện thoại của Nhan Hiểu Thần vang lên.
+</p>
+
+<p>
+ “Nhan Hiểu Thần?”Qua điện thoại, giọng nói của anh ta dường như mang ý cười, làm cho người nghe cảm thấy thoải mái.
+</p>
+
+<p>
+ “Là tôi.”
+</p>
+
+<p>
+ “Em đã quyết định?”
+</p>
+
+<p>
+ “Đúng vậy, là muốn làm phiền anh!”
+</p>
+
+<p>
+ “Thật sự không phiền, lúc nào là tiện cho em nhất?”
+</p>
+
+<p>
+ “Thời gian anh cứ tự quyết định, tôi là sinh viên, giờ giấc tự do hơn anh nhiều.”
+</p>
+
+<p>
+ “Ngày mai là chủ nhật, em chắc là không bận học, có thể chứ?”
+</p>
+
+<p>
+ Nhan Hiểu Thần lập tức đáp: “Ngày mai được ạ.”
+</p>
+
+<p>
+ “Thời tiết lúc này trở lạnh, bên ngoài không thích hợp. Mục đích của chúng ta là luyện tập phỏng vấn bằng tiếng Anh, nếu ở nơi công cộng em sẽ thấy không được tự nhiên, chi bằng đến văn phòng của tôi, có được không?”
+</p>
+
+<p>
+ “Được ạ.”
+</p>
+
+<p>
+ “Quyết định như vậy nhé, hẹn gặp em ngày mai.”
+</p>
+
+<p>
+ “Hẹn gặp anh sau.”
+</p>
+
+<p>
+ Cúp điện thoại, Nhan Hiểu Thần mới nhớ ra là không biết văn phòng công ty của anh ta ở đâu, sực nhớ tới tấm danh thiếp anh ta đã đưa, cô vội vàng đi tìm, lúc đó cô thuận tay bỏ nó vào túi xách, bây giờ không biết đã bỏ chổ nào nữa.
+</p>
+
+<p>
+ Nhan Hiểu Thần bực bội vò đầu bứt tóc, không thể không mặt dày gửi cho anh ta một tin nhắn nữa, “Làm phiền anh cho tôi biết địa chỉ văn phòng, cảm ơn!” Trong lòng cầu mong anh ta đã quên là có đưa cho cô danh thiếp.
+</p>
+
+<p>
+ Điện thoại lại vang lên, Nhan Hiểu Thần vội vàng nhận, rất là chột dạ nói: “Làm phiền anh quá.”
+</p>
+
+<p>
+ Trình Trí Viễn cười nói: “Là tôi sơ sót, sáng sớm ngày mai tôi đến đón em.”
+</p>
+
+<p>
+ Nhan Hiểu Thần vội nói: “Không cần, không cần, tôi muốn đi xe buýt, anh cho tôi địa chỉ là được rồi.”
+</p>
+
+<p>
+ Trình Trí Viễn cũng không khách khí nữa, “Được rồi, tôi sẽ gửi địa chỉ cho em ngay.”
+</p>
+
+<p>
+ Một lát sau, tin nhắn đến, địa chỉ công ty rất rõ ràng cụ thể.
+</p>
+
+<p>
+ Nhan Hiểu Thần lên mạng tra cứu tuyến xe buýt gần nhất, chuẩn bị thật tốt các loại tư liệu, xong cô an tâm đi ngủ.
+</p>
+
+<p>
+ Sáng sớm hôm sau, Nhan Hiểu Thần đi xe buýt đến công ty của Trình Trí Viễn.
+</p>
+
+<p>
+ Thường thì các công ty tài chính đều ở khu Phố Đông (4), nhưng công ty của anh ta lại không ở khu đó, chỉ cách trường đại học của Nhan Hiểu Thần không xa, cô đổi một lần xe buýt là đã đến nơi.
+</p>
+
+<p>
+ (4) Phố  Đông tên chính thức là Phố  Đông Tân Khu hay “Quận mới Phố  Đông” là một quận của thành phố Thượng Hải, Trung Quốc. Kể từ khi bắt đầu được phát triển năm 1990 – thời điểm công bố quy hoạch lần đầu tiên, Phố  Đông đã nổi lên như là trung tâm tài chính và thương mại của Trung Quốc. Phố  Đông nổi bật với Tháp Minh Châu Phương Đông, Tháp Kim Mậu – biểu tượng của Thượng Hải và của sự phát triển kinh tế Trung Quốc. (Theo wiki)
+</p>
+
+<p>
+ Xuống xe buýt, Nhan Hiểu Thần vừa hỏi đường vừa nhìn ngó xung quanh, đi khoảng 10 phút cô đã tìm được công ty của Trình Trí Viễn, đó là một tòa nhà nhỏ bốn tầng, có một chút phong cách kiến trúc Châu Âu, mái nhà có khu vườn không lớn lắm. Trong tin nhắn Trình Trí Viễn không có nói số tầng và số phòng, Nhan Hiểu Thần không biết nên làm gì, đành lấy điện thoại gọi cho anh ta.
+</p>
+
+<p>
+ “Tôi đến rồi, đang ở dưới lầu, anh ở tầng mấy?”
+</p>
+
+<p>
+ “Tôi xuống ngay.”
+</p>
+
+<p>
+ Một lát sau, anh ta đi ra. Thời tiết bên ngoài rất lạnh, nhưng có lẽ do vội vàng đi xuống, anh ta không mặc áo khoác mà chỉ mặc một chiếc áo sơ mi, Nhan Hiểu Thần sợ anh ta lạnh, nên nhanh chóng chạy sang.
+</p>
+
+<p>
+ Anh ta dẫn Nhan Hiểu Thần vào cửa, bên dưới tầng trệt không có bật đèn, đại sảnh trống trải có vẻ âm u, tiếng bước chân trên thảm nghe văng vẳng, có cảm giác như toàn bộ khu nhà này chỉ có hai người bọn họ, Nhan Hiểu Thần đột nhiên có chút khẩn trương.
+</p>
+
+<p>
+ Vào thang máy, Trình Trí Viễn cười nói: “Một mình đến một nơi xa lạ, em không sợ tôi là người xấu à?”
+</p>
+
+<p>
+ Bị anh ta nhìn thấu tâm sự, chút khẩn trương dường như bớt đi vài phần, Nhan Hiểu Thần nói: “Anh không phải người xấu.” Làm việc tại quán Bar hơn hai năm, cô đã gặp qua không ít loại người, ngôn hành và cử chỉ của Trình Trí Viễn thật sự không giống người xấu. Nhan Hiểu Thần nói với chính mình: Ngươi phải tin vào phán đoán của mình chứ.
+</p>
+
+<p>
+ Trình Trí Viễn nhìn cô nói: “Có phải người xấu hay không, nhìn bề ngoài không biết được.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy ánh mắt anh ta dường như có nhiều cảm xúc, đang muốn tìm hiểu thì cửa thang máy mở ra.
+</p>
+
+<p>
+ Đại sảnh ở tầng bốn vô cùng sáng sủa, một phụ nữ có gương mặt thanh tú đang ngồi trước bàn làm việc, nghe tiếng bước chân của bọn họ đi vào, lập tức đứng lên, cung kính thưa: “Trình tổng.”
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Đây là thư ký của tôi, Tân Lỵ”
+</p>
+
+<p>
+ Tân Lỵ nhìn Nhan Hiểu Thần mỉm cười, chút khẩn trương còn lại của Nhan Hiểu Thần biến mất hoàn toàn.
+</p>
+
+<p>
+ Trình Trí Viễn dẫn cô đi vào một phòng họp nhỏ, phía bên ngoài cửa sổ là toàn cảnh một con sông, không có tòa nhà nào che chắn, nhìn rất thoáng đãng.
+</p>
+
+<p>
+ Trình Trí Viễn mời Nhan Hiểu Thần ngồi, Tân Lỵ bưng hai tách trà đi vào, nhìn thấy Nhan Hiểu Thần đang cởi áo khoác ngoài, liền nói: “Tôi giúp cô treo áo khoác lên nhé?”
+</p>
+
+<p>
+ Nhan Hiểu Thần vội nói: “Không cần, tôi để tạm trên ghế là được rồi.”
+</p>
+
+<p>
+ Tân Lỵ lễ phép tươi cười, im lặng rời khỏi.
+</p>
+
+<p>
+ Trình Trí Viễn ngồi xuống một bên bàn, đối diện với Nhan Hiểu Thần, “Chúng ta bắt đầu nhé?”
+</p>
+
+<p>
+ Nhan Hiểu Thần đem sơ yếu lý lịch cùng các loại giấy tờ khác đưa cho anh ta.
+</p>
+
+<p>
+ Anh ta cúi đầu xem qua các tài liệu của cô một lượt, đoạn ngẩn đầu nói: “Hi, you must be Xiaochen, I’m Zhiyuan Cheng. Nice to meet you!” (Xin chào, em chắc là Nhan Hiểu Thần, tôi tên Trình Trí Viễn. Rất vui được gặp em!)
+</p>
+
+<p>
+ Nhìn qua, anh ta cũng ngồi tư thế đó, dáng ngồi không thay đổi, cũng như lúc đầu tươi cười dịu dàng, không biết là có điểm nào khác hay không, nhưng trong nháy mắt, Nhan Hiểu Thần đã cảm thấy anh ta trở nên thật sắc bén, có chút gì đó lạnh nhạt, chăm chú nhìn kỹ từng cử chỉ lúng túng của cô.
+</p>
+
+<p>
+ Nhan Hiểu Thần bất giác ngồi thẳng, không tỏ ra bất kỳ một cử chỉ bất thường nào: “Hi, Mr. Cheng, nice to meet you too!” (Chào anh Trình, tôi cũng rất vui được gặp anh!)
+</p>
+
+<p>
+ Anh ta chỉ vào bảng điểm của Nhan Hiểu Thần, “Wow! I am quite impressed by your GPA (5) as I know it’s very tough to get top scores in your university. I was wondering how you did it. You must work really hard or you are extremely smart, maybe both?” (Tuyệt! Tôi khá ấn tượng với điểm GPA của em, theo như tôi biết điều này rất khó thực hiện ở trường của em. Tôi thắc mắc bằng cách nào mà em đạt được. Chắc hẳn em phải học tập chăm chỉ hoặc em có trí thông minh tuyệt vời, hoặc em có cả hai?)
+</p>
+
+<p>
+ (5) GPA là viết tắt của Grade Point Average (điểm trung bình), là một chỉ số để đánh giá một học sinh hoặc sinh viên. Chỉ số này được tính bằng cách cộng các điểm trung bình của các môn học rồi chia đều ra để lấy số trung bình. GPA được tính theo thang điểm 4, khác với thang điểm của Việt Nam là 10. Trong đó 4 là cao nhất. (theo wiki)
+</p>
+
+<p>
+ Kinh nghiệm phỏng vấn của Nhan Hiểu Thần còn rất ít, nhưng cô biết Trình Trí Viễn quả thật rất lợi hại, anh ta nhìn qua giống như đang khen ngợi cô, nhưng cô biết mỗi câu đều là cạm bẫy.
+</p>
+
+<p>
+ Vì sao thành tích tốt như vậy? Bạn cho rằng mình thông minh? Hay bạn thích học? Nếu vậy tại sao không tiếp tục học lên thạc sĩ? Nếu không thích học tiếp mà tính toán ra đi làm tại sao không tham gia các hoạt động đoàn trường hay các câu lạc bộ học thuật? Vì sao đến công ty chúng tôi? Vì sao thích vị trí này? Công ty chúng tôi có gì hấp dẫn bạn?…Vấn đề này nối tiếp vấn đề khác, tất cả đều là vấn đề thường hay hỏi trong các buổi phỏng vấn, nhưng qua lời nói sắc bén của anh ta, tất cả những điều cẩn thận tỉ mỉ chuẩn bị từ trước đều không dùng được, nếu như nói dối, khẳng định sẽ lòi đuôi ngay.
+</p>
+
+<p>
+ Hơn ba mươi phút sau, anh ta bỏ tư liệu của cô xuống, tỏ vẻ cuộc phỏng vấn đã chấm dứt thì Nhan Hiểu Thần mới nhẹ nhàng thở ra.
+</p>
+
+<p>
+ Trình Trí Viễn cười nói: “Cảm giác thế nào?”
+</p>
+
+<p>
+ Nhan Hiểu Thần uống một ngụm nước nói: “Cảm giác thật không xong!”
+</p>
+
+<p>
+ Anh ta cười cười: “Tôi đã biết rồi, là do em chuẩn bị quá kỹ. Phỏng vấn đương nhiên phải chuẩn bị, nhưng hãy nhớ rằng, trước hết cần chân thành đối diện với chính mình! Giám khảo phỏng vấn tuy rằng chức vụ cao hơn em, kinh nghiệm xã hội phong phú hơn em, nhưng đều đã trải qua tuổi của các em. Bọn họ không nghĩ các em là những người chưa ra khỏi giảng đường có thể làm được gì, bọn họ chỉ muốn nhìn ra tiềm năng của các em có phù hợp với công ty của họ hay không thôi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghi ngờ nhìn Trình Trí Viễn.
+</p>
+
+<p>
+ Anh ta nói: “Lấy ví dụ, Công ty Tài Chính sẽ cần người chăm chỉ và kiên định, Ngân Hàng Đầu Tư sẽ thích những người thông minh và có tham vọng, Công Ty Cố Vấn thì lựa chọn người có tính cách cầu tiến, thích đi công tác, Ngân Hàng Thương Mại Nhà Nước thì sẽ chú ý đến người có tính cách ôn hòa, cẩn thận và hiểu chuyện…Nếu một người có tính cách thích hợp với Ngân Hàng Đầu Tư lại lọt vào Ngân Hàng Thương Mại Nhà Nước, đối với anh ta chính là bi kịch, còn đối với công ty anh ta là một lần lãng phí nhân tài. Nói ngược lại, cũng là như vậy.”
+</p>
+
+<p>
+ (Khúc này toàn nói về lĩnh vực ngân hàng, kinh tế, tài chính là sở trường của Đồng Hoa, xin lỗi không phải sở trường của mình. Nếu có bạn nào muốn mình giải thích rõ từng công ty này thì mình chào thua >”<)
+</p>
+
+<p>
+ Nhan Hiểu Thần hình như có chút hiểu vấn đề, vừa nghe vừa suy tư.
+</p>
+
+<p>
+ Trình Trí Viễn tiếp tục nói: “Kỳ thật, khi giám khảo phỏng vấn từ chối một người, không phải là vì anh ta không đủ ưu tú, mà bởi vì người giám khảo đã căn cứ vào kinh nghiệm của bản thân, đoán được anh ta không thích hợp cho công ty này. Cho dù được thông qua nhờ chuẩn bị thật kỹ, lừa gạt giám khảo phỏng vấn, nhưng cuộc sống cuối cùng cũng sẽ chứng minh, con người không bao giờ lừa gạt được chính mình!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy buồn bực! Vừa cảm thấy chính mình tìm được thành công, kết quả lại bị anh ta nói là, cho dù thành công, cuối cùng cũng sẽ thất bại.
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Bọn em vừa mới ra trường, dĩ nhiên thiếu tự tin, rất sốt ruột nghĩ rằng tìm được công viêc nào thì tốt công việc đó, nhưng nếu một ngày khi trở thành giám khảo đi phỏng vấn người khác, bọn em sẽ hiểu lựa chọn sai lầm là như thế nào. Nghề nghiệp là chuyện của cả đời người, hiện tại nếu trong tình huống cho phép, hãy hết sức trung thực với chính mình, chọn một vị trí phù hợp với tính cách bản thân, xứng đáng với niềm đam mê vốn có. Công việc đầu tiên trong đời là đặc biệt quan trọng. Nếu chọn sai, bọn em cần phải nỗ lực rất nhiều để sửa chữa lại.”
+</p>
+
+<p>
+ Nhan Hiểu Thần thở dài: “Đạo lý anh nói chắc là đúng rồi, nhưng chúng tôi có đời nào lo lắng nhiều như vậy? Chỉ mong có thể tìm được công việc, nuôi sống chính mình.”
+</p>
+
+<p>
+ Trình Trí Viễn ôn hòa nói: “Tôi hiểu, ai cũng đều đã trải qua độ tuổi của em. Tôi chỉ lấy góc độ của người từng trải nói thêm vài câu, hi vọng có thể giúp được cho em.”
+</p>
+
+<p>
+ Nhan Hiểu Thần gật đầu thật mạnh, “Rất có ích ạ, tôi cảm thấy anh so với những người phỏng vấn tôi trước đây lợi hại hơn rất nhiều! Nếu như được anh chiếu cố thêm vài lần, tôi nhất định có thể tự tin đối phó với bọn họ.”
+</p>
+
+<p>
+ Trình Trí Viễn cười, “Xem ra tôi phải chiếu cố em dài dài rồi. Chúng ta có thể quyết định thời gian, mỗi tuần một lần tập phỏng vấn bằng tiếng Anh.”
+</p>
+
+<p>
+ Nhan Hiểu Thần chần chừ nói: “Có phiền anh không?”
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Tôi mới về nước hồi tháng 5, còn chưa có cơ hội kết giao bạn bè, thời gian rảnh rỗi rất nhiều, một tuần có thể tùy hứng dư ra một hai tiếng, tôi đoán chừng việc này không mất nhiều thời gian lắm, chờ khi nào em có việc làm thì hãy từ từ trả ơn tôi!”
+</p>
+
+<p>
+ “Vậy tôi không khách sáo nữa, mỗi tuần vào ngày này nhé?”
+</p>
+
+<p>
+ “Không thành vấn đề!” Trình Trí Viễn trả tư liệu lại cho Nhan Hiểu Thần, đùa nói: “Công ty chúng tôi sang năm cũng sẽ có thông báo tuyển dụng một vài người mới, đến lúc đó nếu em còn chưa ký hợp đồng, có thể cân nhắc một chút đến công ty chúng tôi.” Nhan Hiểu Thần cũng nói đùa lại: “Đến lúc đó phải nhờ anh nói tốt cho tôi vài câu.”
+</p>
+
+<p>
+ Trình Trí Viễn cười cúi nhìn xuống đồng hồ, “Sắp mười hai giờ rồi, cùng ăn cơm đi!”
+</p>
+
+<p>
+ “Không được, tôi phải về trường.” Nhan Hiểu Thần bắt đầu thu dọn đồ đạc.
+</p>
+
+<p>
+ Trình Trí Viễn đi đến phía trước cửa sổ, nói: “Trời đang đổ mưa, từ từ hãy về.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn về phía cửa sổ mới phát hiện trời đã âm u, trên cửa thủy tinh rơi lác đác vài giọt mưa.
+</p>
+
+<p>
+ Công ty của Trình Trí Viễn cách trạm xe buýt khoảng mười phút đi bộ, Nhan Hiểu Thần hỏi: “Anh có ô không? Cho tôi mượn nhé?”
+</p>
+
+<p>
+ “Công ty đã gọi sẵn cơm hộp, em ở lại ăn một chút, có lẽ ăn xong mưa sẽ tạnh.” Tân Lỵ mang hai hộp cơm đi vào, giúp bọn họ thay trà nóng, nếu từ chối nữa có vẻ không phải, Nhan Hiểu Thần chỉ có thể nói: “Cám ơn!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cùng Trình Trí Viễn vừa ăn cơm vừa tán gẫu, ăn xong anh ta lại mời cô ở lại uống thêm chút trà.
+</p>
+
+<p>
+ Trình Trí Viễn kiến thức rộng, lại làm ngành tài chính, cùng hướng chuyên môn với Nhan Hiểu Thần. Khi tán gẫu với anh ta, cô cảm thấy mới mẻ thú vị, kiến thức bổ sung thêm rất nhiều, bất tri bất giác một giờ đã trôi qua. Ngoài cửa sổ mưa không nhỏ giọt chậm rãi nữa mà càng lúc càng lớn, tiếng đập lách tách bụp bụp ngày càng nhiều.
+</p>
+
+<p>
+ Nhan Hiểu Thần buồn bực nghĩ, mưa lớn như vậy có che ô cũng bị ướt hết.
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Chỗ tôi cách trường của em không xa, đúng lúc tôi cũng muốn đi về, chi bằng em chờ tôi một lát, chúng ta cùng về, dù sao cũng tiện đường.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cũng chỉ có thể đáp: “Được ạ.”
+</p>
+
+<p>
+ Trình Trí Viễn tiện tay lấy trên giá sách vài quyển tạp chí tiếng Anh đưa cho cô, “Em xem tạp chí một lát, khoảng nửa giờ nữa tôi sẽ quay lại.”
+</p>
+
+<p>
+ “Không sao cả, dù sao tôi trở lại trường cũng là đọc sách hoặc làm bài tập, anh cứ thong thả.”
+</p>
+
+<p>
+ Gần hai mươi phút sau, Trình Trí Viễn gõ gõ cửa kính, cười nói: “Có thể đi rồi.” Anh ta có dáng cười cao ráo, mặc một bộ áo khoác măng tô lông cừu màu xám tro, mang giày da đen mỏng, nhìn qua cực kỳ nho nhã. Trước kia, Nhan Hiểu Thần luôn cho rằng “nho nhã” là từ cổ xưa, chỉ dùng để hình dung cho những văn nhân nho sĩ, nhưng Trình Trí Viễn làm cho cô cảm thấy chỉ có từ này mới xứng đáng dùng để nói về anh ta.
+</p>
+
+<p>
+ Nhan Hiểu Thần vội vàng mặc áo khoác vào, gói ghém sách vở và tài liệu, chạy ra khỏi phòng họp.
+</p>
+
+<p>
+ Đến dưới lầu, Nhan Hiểu Thần đang định hỏi Trình Trí Viễn xe anh ta ở đâu thì một chiếc xe Benz (Mercedes Benz) màu đen đỗ ngay trước mặt bọn họ, tài xế mở một chiếc ô màu đen to xuống xe, bước nhanh qua mở cửa xe.
+</p>
+
+<p>
+ Trình Trí Viễn đưa tay ra nói, “Phụ nữ ưu tiên.”
+</p>
+
+<p>
+ Tài xế hộ tống Nhan Hiểu Thần lên xe trước, sau đó mới quay lại hộ tống Trình Trí Viễn đi vòng qua một bên khác để lên xe. Bon bon đi trong mưa to, tài xế lái xe thật vững vàng, Nhan Hiểu Thần suy nghĩ miên mang.
+</p>
+
+<p>
+ Chiếc Mercedes Benz này không thể chứng minh được điều gì, hai ba triệu cũng có thể mua, mà mấy trăm ngàn cũng có thể mua, quả thật Nhan Hiểu Thần nhìn không ra. Nhưng theo kinh nghiệm hiểu biết xã hội không phong phú của cô, một công ty bình thường thì chỉ có giám đốc điều hành mới có tài xế riêng. Tuy rằng công ty của Trình Trí Viễn không lớn, mà anh ta cùng lắm chỉ mới hơn 30 tuổi, nhưng ở cái tuổi này, đã có thể quản lý ngân sách của cả một công ty tài chính, có thể nói không phải chuyện đơn giản.
+</p>
+
+<p>
+ Trình Trí Viễn hỏi: “Em đang suy nghĩ gì vậy?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cười làm cái mặt quỷ, “Tôi đang suy nghĩ rốt cuộc anh có bao nhiêu thành công, tôi vốn cho rằng anh cùng lắm chỉ là một nhân viên cấp trung ở mấy công ty tài chính.”
+</p>
+
+<p>
+ Trình Trí Viễn khẽ cười nói: “Thành công là một từ có ý nghĩa rất phức tạp, chỉ là tôi có chút tiền mà thôi.”
+</p>
+
+<p>
+ Ánh mắt, chân mày của anh ta biểu hiện nét ủ dột, Nhan Hiểu Thần tuy còn nhỏ tuổi, nhưng có thể hiểu rõ ý của anh ta, kiếm tiền không phải là chuyện khó, nhưng để luôn được hạnh phúc vui vẻ thì cực kỳ khó! Trên đời này có một vài thứ, cho dù có nhiều tiền cũng không thể mua được! Cô trầm mặc nhìn ra ngoài cửa sổ, mưa to như một bức màn sương mù lớn, không có một chút tươi sáng nào, giống như nội tâm bị che dấu của cô vậy.
+</p>
+
+<p>
+ Tiếng di động đột nhiên vang lên, là chiếc Nokia cũ rích, bên trong xe đang rất yên ắng, tiếng chuông của nó nghe rất là chói tai.
+</p>
+
+<p>
+ Nhan Hiểu Thần vội vàng lấy di động từ trong túi xách ra, dĩ nhiên là Thẩm Hầu gọi.
+</p>
+
+<p>
+ “A lô.”
+</p>
+
+<p>
+ Thẩm Hầu nói: “Trời mưa rất lớn nha!”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhìn về phía ngoài cửa sổ xe, “Ừ.”
+</p>
+
+<p>
+ “Cậu đang ở ngoài mưa à?”
+</p>
+
+<p>
+ “Không có.”
+</p>
+
+<p>
+ “Buổi tối cậu phải đi làm thêm à?”
+</p>
+
+<p>
+ “Ừ”
+</p>
+
+<p>
+ “Mưa lớn như vậy sao còn phải đi?”
+</p>
+
+<p>
+ “Không đi sẽ không có tiền.”
+</p>
+
+<p>
+ Hắn cười nhạo, “Đồ ham tiền! Cậu định đi như thế nào?”
+</p>
+
+<p>
+ Nếu trời vẫn mưa như vậy dĩ nhiên là không thể đi được bằng xe đạp, Nhan Hiểu Thần nói: “Hi vọng đến lúc đi thì hết mưa, nếu không được cũng phải đi.”
+</p>
+
+<p>
+ “Mình đang ở trường, để mình lái xe đưa cậu đi, cậu đang ở phòng tự học hay ở ký túc xá vậy? Mình đến đón.”
+</p>
+
+<p>
+ Nhan Hiểu Thần theo bản năng nhìn thoáng qua Trình Trí Viễn, “Không cần đâu, mình đang ở ngoài trường, đợi một lúc mình tự về cũng được.”
+</p>
+
+<p>
+ “Tiểu ham tiền! Đừng có đi xe buýt! Trời mưa lạnh như vậy cậu không sợ bị bệnh à? Đi bác sĩ cũng phải tốn tiền đó! Cậu đang ở đâu? Mình lập tức đến.”
+</p>
+
+<p>
+ “Mình không ngồi xe buýt, có một người bạn ở gần trường chúng ta, anh ta có xe, tiện đường đưa mình về.”
+</p>
+
+<p>
+ “Bạn của cậu?”
+</p>
+
+<p>
+ Có nói ra tên của Trình Trí Viễn, Thẩm Hầu cũng sẽ không biết, Nhan Hiểu Thần trả lời: “Cậu không biết đâu, khi nào về mình nói cho cậu biết.”
+</p>
+
+<p>
+ “Người đó đang ở bên cạnh cậu à?”
+</p>
+
+<p>
+ Trước mặt Trình Trí Viễn mà bàn đến anh ta, Nhan Hiểu Thần có chút bối rối, nhỏ giọng nói, “Phải.”
+</p>
+
+<p>
+ “Là nam?”
+</p>
+
+<p>
+ “Phải”
+</p>
+
+<p>
+ “Được, mình biết rồi!” Thẩm Hầu nói xong lập tức cúp điện thoại.
+</p>
+
+<p>
+ Nhan Hiểu Thần ngẩm nghĩ, viết cho hắn một cái tin nhắn, “Cảm ơn cậu! Trời mưa, lái xe cẩn thận một chút!”
+</p>
+
+<p>
+ Trình Trí Viễn cười hỏi: “Bạn trai của em à?”
+</p>
+
+<p>
+ Nhan Hiểu Thần lập tức biện hộ: “Là bạn trai trước đây.”
+</p>
+
+<p>
+ “Hai người vì sao còn chưa làm lành?”
+</p>
+
+<p>
+ Nhan Hiểu Thần buồn bực nói, “Không phải đã nói với anh rồi sao, chúng tôi không phải giận dỗi, mà là chính thức chia tay.”
+</p>
+
+<p>
+ Trình Trí Viễn đặt tay lên cằm, làm bộ dáng suy tư, ra vẻ nghiêm túc nói: “Đúng vậy, tôi biết hai người đã chính thức chia tay, nhưng chia tay rồi cũng có thể tốt với nhau vậy, tôi nói có gì sai à?”
+</p>
+
+<p>
+ Nhan Hiểu Thần bất đắc dĩ giải thích: “Chúng tôi là bạn học cùng khoa, muốn chia tay nhưng không thể tránh mặt được, cho nên lúc đó chúng tôi thỏa thuận sẽ tiếp tục làm bạn bè tốt.”
+</p>
+
+<p>
+ Trình Trí Viễn cười lắc đầu, “Hai người đang ở cái tuổi yêu hận rõ ràng, chia tay rồi rất khó làm bạn bè bình thường được, nếu quả thật còn có thể tâm bình khí hòa tiếp tục làm bằng hữu, thì căn bản không cần phải chia tay, trừ phi hai bên còn tình cảm.”
+</p>
+
+<p>
+ Nhan Hiểu Thần lười cùng “Lão nhân gia” này tranh luận lắm rồi, “Dù sao chúng tôi hiện tại cũng là bạn bè bình thường.”
+</p>
+
+<p>
+ Trình Trí Viễn không có ý kiến gì, chỉ mỉm cười, để chờ xem hai người sau này thế nào đã. Đến trường đại học mưa đã nhỏ đi rất nhiều. Tuy rằng vẫn rơi rã rích tí ta tí tách, nhưng cầm ô đi đường thì tuyệt đối không thành vấn đề.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-005.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-007.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

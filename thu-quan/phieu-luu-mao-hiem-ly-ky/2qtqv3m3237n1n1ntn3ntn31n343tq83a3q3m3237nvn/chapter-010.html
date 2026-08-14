@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 10 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 10</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-011.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Tiếng hét vang lên: cao, the thé và chói tai hầu như không hề giống của con người.
+</p>
+
+<p>
+ Eragon căng thăng như ai đó dùng kim đâm vào nó. Nó đã giành cả ngày để chứng kiến mọi người chiến đấu và tử trận – chính nó cũng giết vô khối kẻ địch – nhưng nó không thể chịu nổi khi nghe thấy tiếng thét thống khổ của dì Elain. Những âm thanh đó quá kinh khủng khiến nó phân vân liệu dì vượt cạn nổi không.
+</p>
+
+<p>
+ Bên cạnh nó, Abriech và Baldor ngồi phệt xuống và dựt cỏ. Những ngón tay to bè của họ xé những lá cỏ tan tành trước khi bứt cây cỏ tiếp theo. Mồ hôi rịn ra trên trán họ và mắt họ mở to với vẻ tức giận và tuyệt vọng. Thi thoảng họ nhìn nhau hoặc nhìn vào trong lều, nhưng hầu hết thời gian họ cắm mặt xuống đất và không để ý tới mọi chuyện xung quanh.
+</p>
+
+<p>
+ Cách đó vài mét, Roran đang ngồi trên một cái thùng. Ở bên góc con đường lầy lội là một toán người dân Carvahall đang tụ tập, hầu hết là bạn của chú Horst và những cậu con trai cùng vợ của họ tới giúp bà Gertrude đỡ đẻ cho dì Elain. Saphira đứng sau họ. Cổ của cô nàng cong xuống như một chiếc cung, đuôi nó vẫy qua vẫy lại như thể đi săn, và nó cứ hết thò thụt cái lưới đỏ như đá ruby ra khỏi miệng, nếm lấy vị không khí có thể báo cho nó biết vài thông tin về Elain và đứa nhỏ sắp sinh.
+</p>
+
+<p>
+ Eragon xoa xoa bắp tay trái bị đau. Họ đã chờ đợi hàng giờ và cũng đã chạng vạng tối. Bóng tối phủ lên mọi cảnh vật, tiến về phía đông như thể muốn tiến tới đường chân trời. Trời trở lạnh và muỗi cùng những con chuồn chuồn kim từ sông Jiet bay vo ve xung quanh họ.
+</p>
+
+<p>
+ Một tiếng gào nữa phá tan sự im lặng.
+</p>
+
+<p>
+ Những người đàn ông thì thầm với vẻ lo lắng, rồi ra dấu không tốt và thì thầm nhỏ chỉ để người gần họ nhất có thể nghe thấy nhưng Eragon lại nghe rất rõ. Họ thì thầm về ca đẻ khó của dì Elain; một vài người còn nói nếu dì không sớm sinh em bé thì sẽ khó cứu được mẹ lẫn con. Một số người khác lại nói “Kể cả lúc sung sướng mất vợ đã khổ chứ đừng nói là trong hoàn cảnh này” hoặc “Tiếc thay, tiếc thay...” Vài người đổ chuyện của Elain cho lũ Ra’zac hoặc những chuyện dân làng đã gặp phải trong hành trình tới với quân Varden. Thậm chí có người còn bảo họ không tin Arya biết đỡ đẻ.” “Cô ta là tiên chứ đâu phải người,” bác thợ mộc Fisk nói. “Cô ấy nên sống cùng những người như cô ấy chứ không phải tới những nơi không chào mừng cô ta. Ai mà biết được co ta thực sự muốn gì?”
+</p>
+
+<p>
+ Eragon nghe thấy tất cả và còn nhiều điều khác nhưng nó vẫn giấu cảm xúc và vẫn giữ vẻ mặt bình thản, vì cậu biết dân làng sẽ không vui khi biết cậu nghe tốt thế nào.
+</p>
+
+<p>
+ Chiếc thùng gỗ dưới Roran kêu cọt kẹt khi anh ngoài người về phía trước. “Mọi người có nghĩ chúng ta nên...”
+</p>
+
+<p>
+ “Không,” Albriech nói.
+</p>
+
+<p>
+ Eragon cuốn chặt áo choàng vào người hơn. Cơn ớn lạnh đã lan vào tận xương. Nhưng cậu sẽ không đi cho tới khi nào dì Elain sinh xong.
+</p>
+
+<p>
+ “Nhìn kìa,” Roran đột nhiên hào hứng nói.
+</p>
+
+<p>
+ Albriech và Baldor ngay đầu lại nhìn.
+</p>
+
+<p>
+ Katrina xuất hiện trước lều cầm theo một đống giẻ bẩn. Trước khi tấm bạt lều khép lại, Eragon chợt nhìn thấy mờ mờ hình ảnh của chú Horst và một người phụ nữ Carvahall – nó không chắc là ai – đứng ở đầu võng dì Elain nằm.
+</p>
+
+<p>
+ Katrina không thèm liếc lấy một cái mà chạy thẳng tới chỗ vợ của chú Fisk, Isold và cô Nolla đang đun lại đống vải để dùng lại.
+</p>
+
+<p>
+ Cái thùng lại cọt kẹt kêu khi Roran đổi tư thế ngồi. Eragon nửa mong anh đi tới hỏi chuyện Katrina nửa không, nhưng anh vẫn đó như Albriech và Baldor. Họ và những dân làng khác nhìn theo chuyển động của cô không hề chớp mắt.
+</p>
+
+<p>
+ Eragon nhăn nhó khi nghe tiếng thét của dì Elain vang lên, không hề bớt đau khổ hơn những lần khác.
+</p>
+
+<p>
+ Tấm bạt lại được kéo ra lần thứ hai và lần này Arya chạy vụt ra, đầu tóc rối bù và tay áo sắn cao. Những sóng tóc dợn quanh mặt nàng khi nàng lướt qua ba trong số mười một hộ vệ của Eragon đang đứng trong bóng râm của cái lều gần đó. Nàng vội nói gì đó với một người trong số họ, một tiên nữ mặt xương xương tên Invidia, rồi khẩn trương quay lại lều.
+</p>
+
+<p>
+ Eragon đuổi kịp nàng sau khi nàng bước được mấy bước. “Chuyện sao rồi?” nó hỏi.
+</p>
+
+<p>
+ “Tệ lắm.”
+</p>
+
+<p>
+ “Sao lại lâu đến vậy? Nàng không giúp cho dì sinh nhanh được à?”
+</p>
+
+<p>
+ Nét mặt của Arya từ căng thẳng trở nên trầm trọng. “Có thể. Ngay từ nửa tiếng đầu tiên tôi có thể giúp đứa bé chui ra nhưng Gertrude và những người phụ nữ khác chỉ cho tôi làm một vài phép thuật đơn giản nhất.”
+</p>
+
+<p>
+ “Vô lý! Sao vậy?”
+</p>
+
+<p>
+ “Vì phép thuật làm họ sợ - và tôi làm họ sợ.”
+</p>
+
+<p>
+ “Vậy thì nói với họ là nàng không muốn làm họ sợ. Nói bằng ngôn ngữ cổ và họ sẽ phải tin nàng.”
+</p>
+
+<p>
+ Nàng lắc đầu. “Làm vậy chỉ khiến tình hình tệ hơn. Họ sẽ nghĩ tôi đang cố phù phép họ chống lại ý chí của họ, và họ sẽ đuổi tôi đi.”
+</p>
+
+<p>
+ “Chắc chắn Katrina...”
+</p>
+
+<p>
+ “Nhờ có chị ấy tôi mới làm phép được.”
+</p>
+
+<p>
+ Elain lại la lớn.
+</p>
+
+<p>
+ “Họ không cho nàng giảm đau cho dì à?”
+</p>
+
+<p>
+ “Họ không cho tôi làm gì thêm.”
+</p>
+
+<p>
+ Eragon quay người nhìn lều nhà chú Horsr. “Hóa ra vậy,” nó rít lên qua kẽ răng.
+</p>
+
+<p>
+ Nó phải giữ chặt cánh tay trái để đứng im. Nó choáng vàng nhìn Arya mong một lời giải thích. Cô lắc đầu. “Đừng,” nàng nói. “Có những tục lệ quá lâu đời. Nếu chàng can thiệp, chàng sẽ khiến bà Gertrude giận dữ và xấu hổ và khiến nhiều phụ nữ khác trong làng ác cảm với chàng.”
+</p>
+
+<p>
+ “Tôi không quan tâm!”
+</p>
+
+<p>
+ “Tôi biết, nhưng tin tôi đi: ngay lúc này tốt nhất là chàng nên ngồi đợi cùng những người khác.” Như để nhấn mạnh, nàng kéo tay nó xuống.
+</p>
+
+<p>
+ “Tôi không thể ngồi đó mà mặc cho dì đau đớn!”
+</p>
+
+<p>
+ “Nghe tôi đi. Tốt hơn là chàng nên ở lại. Tôi sẽ cố gắng hết sức để giúp Elain, tôi hứa đó, nhưng chàng đừng có bước vào. Chàng chỉ khiến mọi người giận dữ thôi... Làm ơn nha.”
+</p>
+
+<p>
+ Eragon đắn đó rồi tức giận hạ tay xuống khi Elain lại kêu váng lên. “Tốt thôi,” nó nói và nhoài lại gần Arya, “nhưng dù có chuyện gì cũng đừng để dì hay đứa bé ra đi. Tôi không cần biết nàng phải làm gì, nhưng đừng để họ chết.”
+</p>
+
+<p>
+ Arya nghiêm túc quan sát nó. “Tôi sẽ không bao giờ để đứa bé gặp tổn thương,” cô nói rồi tiếp tục bước đi.
+</p>
+
+<p>
+ Khi nàng vừa biến mất trong lều của chú Horst, Eragon quay lại chỗ Roran, Albriech và Baldor đang tập trung và ngồi xuống cái thùng của nó.
+</p>
+
+<p>
+ “Thế nào?”
+</p>
+
+<p>
+ Eragon nhún vai. “Họ làm tất cả những gì có thể. Chúng ta phải kiên nhẫn chờ đợi... Thế thôi.”
+</p>
+
+<p>
+ “Chẳng có gì mới,” Baldor nói. “Vẫn thế.”
+ <br/>
+ Mặt trời chuyển sang vàng cam rồi đỏ thẫm khi lặn ở đường chân trời. Vài đám mây lang thang ở phía tây, còn sót lại sau cơn bão, không khí ẩm ướt. Nhặng và ruồi cùng một số loài côn trung khác bay vo ve.
+ <br/>
+</p>
+
+<p>
+ Sau một lúc, tiếng thét của dì Elain yếu dần, nhỏ dần thành những tiếng rên rỉ đứt quãng khiến Eragon dựng tóc gáy. Nó muốn giải thoát dì khỏi đau đớn, nhưng nó không thể bỏ qua lời khuyên của Arya, thế là nói ngồi lại và cắn móng tay, miễn cưỡng nói chuyện với Saphira.
+</p>
+
+<p>
+ Khi mặt trời đi tới đường chân trời, nó lan rộng như một lòng trứng gà khi đập vỡ vỏ trứng. Dơi bắt đầu bay lẫn với bầy chim nhạn, tiếng vỗ cánh của chúng nghe sao mà mờ nhạt và hoảng loạn, tiếng kêu the thé của chúng khiến Eragon đau tai vô cùng.
+</p>
+
+<p>
+ Sau đó Elain hét một tiếng inh tai làm tất cả những âm thanh trong vùng câm lặng, Eragon không mong trong đời nghe thêm lần nữa.
+</p>
+
+<p>
+ Sau đó là một khoảng lăng ngắn ngủi nhưng kinh người.
+</p>
+
+<p>
+ Cuối cùng mọi người nghe thấy tiếng khóc lớn và đứt quãng của đứa nhỏ từ trong lều – tiếng kèn lệnh từ xa xưa tuyên bố một sinh linh mới tới với thế giới này. Albriech và Baldor cười lớn, Roran và Eragon cũng vậy, vài người khác ăn mừng.
+</p>
+
+<p>
+ Sự vui sướng của họ chẳn bao lâu. Ngay khi tiếng ăn mừng cuối cùng kết thúc, những người phụ nữ trong lều bắt đầu la hét không thôi khiến Eragon sợ lạnh người. Nó biết tiếng than vãn đó có ý nghĩa gì: tình thế tệ nhất đã tới.
+</p>
+
+<p>
+ “Không,” nó nói, không thể nào tin nổi và đứng bật dậy khỏi cái thùng gỗ. Dì ấy không thể chết... Không thể nào... Arya đã hứa rồi...
+</p>
+
+<p>
+ Như thể trả lời ý nghĩ của nó, Arya chạy về phía nó với những sải chân dài không tưởng.
+</p>
+
+<p>
+ “Chuyện gì?” Baldor hỏi khi nàng đi chậm lại rồi dừng hẳn.
+</p>
+
+<p>
+ Arya lờ cậu ta đi và nói. “Eragon, tới đây.”
+</p>
+
+<p>
+ “Chuyện gì thế?” Baldor tức tối hét lên và nắm lấy vai Arya. Cô nàng cử động nhanh như một ánh chớp, chộp lấy cổ tay cậu ta vặn ra sau lưng, buộc cậu ta phải cúi người về phía trước như một thằng què. Mặt cậu ta nhăn lại vì đau.
+</p>
+
+<p>
+ “Nếu cậu muốn em gái mình sống, vậy đứng sang một bên và đừng có can dự vào!” Nàng thả tay và đẩy cậu ta ra, khiến cậu ta nhào vào cánh tay Albriech rồi quay người rảo bước về lều nhà Horst.
+</p>
+
+<p>
+ “Chuyện gì đang diễn ra?” Eragon hỏi khi đi cùng nàng.
+</p>
+
+<p>
+ Arya quay qua nhìn nó, ánh mắt cháy bỏng. “Đứa nhỏ khỏe mạnh nhưng bị hở hàm ếch.”
+</p>
+
+<p>
+ Eragon hiểu vì sao những người phụ nữ lại la hét như vậy. Những đứa nhỏ bị hở hàm ếch thường không được phép sống; chúng rất khó nuốt thức ăn và nếu bố mẹ chúng cho chúng ăn được, chúng vẫn gặp rất nhiều trở ngại khác: bị xa lánh, nhạo báng và khó có ai chịu lấy chúng. Trong hầu hết các trường hợp, đứa trẻ chết non còn tốt hơn.
+</p>
+
+<p>
+ “Chàng có thể giúp nó, Eragon,” Arya nói.
+</p>
+
+<p>
+ “Tôi à? Nhưng tôi chưa bao giờ... sao lại không phải nàng? Nàng biết nhiều về chữa trị hơn tôi.”
+</p>
+
+<p>
+ “Nếu tôi sửa lại hình dạng đứa bé, mọi người sẽ nói tôi đã cướp đứa nhỏ đi và thay nó bằng đứa khác. Tôi biế mọi người nói gì về loài của tôi, Eron – biết rất rõ là đằng khác. Nếu phải làm tôi sẽ làm nhưng đứa trẻ sẽ phải chịu đựng nhiều đau khổ về sau. Chàng là ngwofi duy nhất có thể cứu nó khỏi số mệnh đó.”
+</p>
+
+<p>
+ Nó thấy hoảng sợ. Nó không muốn chịu trách nhiệm về cuộc đời một người khác; nó đã phải chịu trách nhiệm cho quá nhiều người rồi.
+</p>
+
+<p>
+ “Chàng phải cứu đứa bé,” Arya nói với giọng bắt buộc. Eragon tự nhắc mình nhớ xem tiên nhân luôn yêu thương con mình và trẻ con những giống loài khác như thế nào.
+</p>
+
+<p>
+ “Nàng sẽ trợ giúp tôi nếu cần chứ?”
+</p>
+
+<p>
+ “Tất nhiên.”
+</p>
+
+<p>
+ Em cũng thế, Saphira nói. Anh có phải hỏi không?
+</p>
+
+<p>
+ “Được rồi”, Eragon nói và nắm lấy chuôi gươm Brisingr quả quyết. “Tôi sẽ làm.”
+</p>
+
+<p>
+ Với Arya sóng bước đi cạnh, nó đi về phía lều và đẩy tấm bạt nặng nề bước vào. Khói nến làm cay mắt nó. Năm người phụ nữ làng Carvahall đứng túm tụm lại canh bạt lều. Tiếng than khói của họ như thụi cho nó một cú. Họ lắc lư như thể bị hôn mê, xé quần áo và dứt tóc than vãn. Chú Horst đứng cuối võng cãi vã với bà Gertrude, mặt đỏ lựng, sưng lên và hằn nếp nhăn vì kiệt sức. Dì đang giữ một bọc vai vào ngực, Eragon đoán đó là đứa nhỏ - dù cậu không nhìn thấy mặt nó – đang cựa quậy. Đôi má bánh đúc của bà Gertrude bóng nhờn và tóc bết vào mặt. Mồ hôi chạy dọc cánh tay trần của bà. Katrina đứng đầu võng, chị đang quỳ trên một tấm thảm tròn, dùng khăn ướt lau trán cho dì Elain.
+</p>
+
+<p>
+ Eragon không còn nhận ra dì Elain; mặt dì hốc hác, dưới đôi mắt lạc thần của dì là quầng đen. Nước mắt đang chảy ra từ hai hốc mắt, tràn ra thái dương rồi biến mất trong búi tóc rối tung. Dì mở miệng và ngậm lại, rên rỉ những từ không ai hiểu nổi. Một tấm chăn bết máu khô che phần người còn lại.
+</p>
+
+<p>
+ Cả Horst lẫn Gertrude đều không để ý tới Eragon cho tới khi nó tiến gần tới họ. Eragon đã lớn lên nhiều từ hồi rời làng Carvahall nhưng chú Horst vẫn cao hơn nó cả cái đầu. Khi họ nhìn nhau, chút ánh sáng hy vọng bừng lên trên khuôn mặt ảm đạm của người thợ rèn.
+</p>
+
+<p>
+ “Eragon!” chú vỗ vai Eragon và ôm lấy nó khiến nó khó lòng trụ vững. “Cháu nghe thấy rồi à?” Đấy không thực sự là một câu hỏi nhưng Eragon vẫn gật đầu. Chú Horst liếc nhìn bà Gertrude – nhanh như tên bắn – rồi ông liếm môi. “Cháu có thể... có thể làm gì cho con bé không?”
+</p>
+
+<p>
+ “Có thể,” Eragon nói. “Cháu sẽ thử.”
+</p>
+
+<p>
+ Nó giơ tay ra. Sau một hồi ngần ngừ, Gertrude đưa bọc vải ấm áp cho nó rồi lùi lại, thái độ không bình thường.
+</p>
+
+<p>
+ Bên trong đống vải là khuôn mặt nhăn nheo nhỏ bé của một bé gái. Da con bé đỏ sậm, mắt nhắm tịt nhưng nhăn nhó như thể nó giận vì bị ngược đãi – Eragon nghĩ nó phản ứng vậy cũng hợp lý thôi. Nhưng điểm khiến nó chú ý nhất chính là vết hở xẻ từ cánh mũi trái tới giữa môi trên. Chiếc lưỡi hồng hồng nho nhỏ của nó lộ rõ ra ngoài.
+</p>
+
+<p>
+ “Làm ơn,” chú Horst nói. “Cháu có thể làm gì...”
+</p>
+
+<p>
+ Eragon cau mày vì tiếng thổn thức của những người phụ nữ. “Cháu không thể làm gì ở đây,” nó nói.
+</p>
+
+<p>
+ Khi nó quay người định đi, Gertrude đứng sau lưng nó nói. “Bà sẽ đi với cháu. Một trong số những người biết chăm sóc trẻ con phải ở cạnh con bé.”
+</p>
+
+<p>
+ Eragon không cần Gertrude lượn lờ xung quanh khi nó cố sửa lại khuôn mặt cô bé con, và nó định nói thì nó nhớ ra Arya đã nói gì đó về những khổ sở sau này của cô bé. Một người dân làng Carvahall, một người được tín nhiệm, phải chứng kiến sự thay đổi của con bé, làm nhân chứng đảm bảo con bé chính là đứa nhỏ được sinh ra.
+</p>
+
+<p>
+ “Vâng,” nói nói, che giấu ý định của mình.
+</p>
+
+<p>
+ Đứa nhỏ cựa quậy trong cánh tay nó và khóc khe khẽ khi nó bước ra khỏi lều. Bên kia con đường, những người dân lang đứng chỉ trỏ còn Abriech và Baldor dợm bước về phía nó. Eragon lắc đầu bảo họ đứng lại đó và họ nhìn nó với vẻ vô vọng.
+</p>
+
+<p>
+ Arya và Gertrude đi hai bên Eragon khi nó bước về lều của mình, mặt đất rung lên sau mỗi bước đi của Saphira đằng sau. Những chiến minh nhanh chóng nhường đường cho họ.
+</p>
+
+<p>
+ Eragon cố gắng đi nhẹ nhàng để tránh làm đứa nhỏ bị động. Mùi ẩm mốc bay lên từ người đứa bé như mùi đất rừng trong những ngày hè ấm áp.
+</p>
+
+<p>
+ Họ gần bước tới lều thì Eragon nhìn thấy đứa bé phù thủy, Elva đang đứng ở gần hai cái lều cạnh đường đi. Con bé nhìn nó với vẻ mặt nghiêm trọng. Nó mặc một chiếc váy màu đen tím có mũ kéo ra sau, để lộ ra hình ngôi sao trên trán.
+</p>
+
+<p>
+ Con bé không nói một lời cũng không dừng Eragon lại. Nhưng Eragon vẫn hiểu con bé muốn cảnh báo nó, vì sự xuất hiện của nó luôn là sự quở trách đối với nó. Trước đây nó đã làm ảnh hưởng tới vận mệnh của một đứa trẻ sơ sinh. Nó không thể để mình mắc cùng một sai lầm không chỉ vì nó có thể dẫn tới hậu quả nghiêm trọng mà còn vì nếu nó làm như vậy, Elva sẽ trở thành kẻ thù không đội trời chung với nó. Dù Eragon có sức mạnh nhưng nó vẫn e ngại Elva. Khả năng của con bé là nhìn vào linh hồn một con người, tìm ra trong đó những điều khiến họ đau đớn hoặc phiền lòng – và nhìn thấy trước những gì có thể làm tổn thương họ - chính vì thế con bé là một trong những sinh vật nguy hiểm nhất Alagaësia.
+</p>
+
+<p>
+ Dù chuyện gì xảy ra, Eragon thầm nghĩ khi bước vào trong căn lều tối om, mình cũng không muốn làm tổn thương đứa nhỏ này. Và nó cảm thấy có một động lực mới giúp cho con bé có một cuộc đời mới.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-011.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

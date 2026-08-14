@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 26 - Nửa Thời Gian Ấm &#193;p</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 26</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-025.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-027.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Sức mạnh của tình yêu mang đến sự bình an. Nó trước giờ không tuân theo quy tắc, không thuận theo lý trí, không tồn tại vinh nhục; nhưng lại có thể biến tất cả áp lực, tổn thương, sợ hãi bên trong nỗi thống khổ trở thành mật ngọt. —William Shakespeare
+</p>
+
+<p>
+ (12.1) Nguyên văn trích trong bài thơ “A lover’s Complaints”(Tạm dịch là Tình yêu than thở)
+</p>
+
+<p>
+ Love’s arms are peace, ‘gainst rule, ‘gainst sense, ‘gainst shame;
+</p>
+
+<p>
+ And sweetens, in the suff’ring pangs it bears,
+</p>
+
+<p>
+ The aloes of all forces, shocks, and fears.
+</p>
+
+<p>
+ Đến gần tết âm lịch, công ty muốn làm một buổi tổng kết cuối năm, chuẩn bị tiệc tối chúc mừng năm mới, vô cùng bận rộn náo nhiệt.
+</p>
+
+<p>
+ Buổi chiều, Nhan Hiểu Thần đang ở công ty làm việc thì tiếp tân gọi điện thoại cho cô, “Nhan Hiểu Thần, có một quý bà họ Hầu tìm cô, tôi mời bà ta lên nhé?”
+</p>
+
+<p>
+ Nhan Hiểu Thần thở dài, “Không cần đâu, tôi lập tức xuống ngay.”
+</p>
+
+<p>
+ Cô vội vàng chạy xuống lầu, nhìn thấy mẹ của Thẩm Hầu ngồi trên ghế sô pha tại đại sảnh, đang lật xem tài liệu giới thiệu vắn tắt về công ty.
+</p>
+
+<p>
+ Nhan Hiểu Thần lễ phép nói: “Thưa bác, chúng ta ra ngoài nói chuyện đi!”
+</p>
+
+<p>
+ Bà Thẩm bỏ tài liệu xuống, cùng Nhan Hiểu Thần ra khỏi công ty, bà ta khẽ cười nói: “Tôi ngược lại rất coi thường cô, không ngờ cô nhanh như vậy đã tìm được một công ty tốt.”
+</p>
+
+<p>
+ Bởi vì bà ấy là mẹ của Thẩm Hầu, Nhan Hiểu Thần không thể không “yêu ai yêu cả đường đi lối về” được, nên cô trịnh trọng hạ thấp bản thân. “Bác à, cháu biết nhà cháu và nhà bác có chênh lệch rất lớn, trong mắt của bác, cháu hoàn toàn không xứng với Thẩm Hầu, cháu không có hy vọng xa vời là bây giờ bác đồng ý cho cháu và Thẩm Hầu quen nhau, chỉ mong bác cho cháu thêm cơ hội, cháu sẽ chứng minh mình vẫn có điểm nào đó đáng khen.”
+</p>
+
+<p>
+ “Tuyệt đối không thể! Tôi nói, tôi không đồng ý cho các người quen nhau, nhất định phải chia tay!”
+</p>
+
+<p>
+ Mắng chửi cũng không được, trừng phạt cũng không xong, cầu xin cũng vô ích, Nhan Hiểu Thần đối với bà Thẩm cố chấp này quả thật là không còn biện pháp nào, cô bất đắc dĩ đá trái bóng qua cho Thẩm Hầu, “Nếu bác có thể thuyết phục Thẩm Hầu chia tay với cháu, cháu sẽ đồng ý.”
+</p>
+
+<p>
+ Bà Thẩm cười lạnh nhạt, “Cô còn chưa qua thời gian thử việc phải không? Cô nên biết, nếu tôi muốn cô mất đi công việc này, rất dễ dàng! Nếu cô và Thẩm Hầu không chia tay, tôi sẽ đuổi Thẩm Hầu ra khỏi công ty, hai lần phẩm hạnh không tốt, bị đại học khai trừ, lại bị công ty đuổi việc, cô cảm thấy công ty nào còn dám thuê nó? Hai người không có công việc chính thức ở Thượng Hải thì cuộc sống có thể ra cái dạng gì? Cô có thể suy nghĩ thật kỹ! Vợ chồng nghèo hèn trăm khổ cực, tôi tin chắc không sớm thì muộn các người cũng phải chia tay! Cô cho rằng tình cảm của cô là rất sâu đậm, 3 năm không thể chia cắt? Vậy thì 5 năm, 5 năm mà còn không được, thì 10 năm!”
+</p>
+
+<p>
+ Nhan Hiểu Thần không thể nào tin được nhìn bà Thẩm, bà ta điên rồi sao? Ngay cả con trai của mình cũng không buông tha?
+</p>
+
+<p>
+ Mẹ của Thẩm Hầu nói: “Cô cảm thấy tôi không thể nào đối xử với Thẩm Hầu như vậy? Cô đã sai lầm! Thẩm Hầu thất vọng 10 năm, lãng tử quay đầu, trở lại vẫn là con tôi, tài sản lớn đang chờ nó kế thừa. Đàn ông lãng phí 10 năm, vẫn sẽ hào hoa phong nhã, còn cô? Cô mất đi 10 năm, có thể còn cái gì? Dù là bất cứ thứ gì cũng phải lựa chọn giữa lợi và hại, mặc dù tôi rất đau lòng phải đối xử với con trai của mình như vậy, nhưng tôi tình nguyện cho nó lãng phí 10 năm tuổi trẻ, còn hơn để nó bởi vì cô mà lãng phí cả đời!”
+</p>
+
+<p>
+ Nhan Hiểu Thần đột nhiên ý thức được, cô đã từng nói với Thẩm Hầu, muốn tránh việc phải đau khổ lựa chọn một trong hai cái tất yếu, nhất định phải tránh cho phát sinh tình huống phải lựa chọn, nhưng xem ra với thái độ của bà Thẩm, dường như không có khả năng tránh khỏi.
+</p>
+
+<p>
+ Mẹ của Thẩm Hầu nói: “Tôi cực khổ cả đời, là vì cái gì? Không phải hy vọng người nhà sống càng tốt hay sao? Thẩm Hầu là con trai duy nhất của tôi, tôi đã hy vọng ở nó quá nhiều, tôi và ba của nó không phải cố gắng phấn đấu vài thập niên để cho nó đi cưới một phụ nữ bát nháo không ra gì về làm vợ, hủy đi cuộc đời.” Bà Thẩm nói giọng nhỏ nhẹ, “Nhan tiểu thư, cô hãy nghĩ lại thật kỹ, chẳng lẽ hai người khốn khổ nghèo hèn ở bên nhau so với một mình bay cao bay xa là hạnh phúc hơn? Nếu cô thật sự yêu Thẩm Hầu, hãy lựa chọn buông tay!”
+</p>
+
+<p>
+ Nhan Hiểu Thần chê cười nói: “Thật ra nếu thật lòng yêu một người sẽ không muốn ở bên người đó, chỉ là yêu chưa đủ nên mới muốn như vậy.”
+</p>
+
+<p>
+ Bà Thẩm thẳng thắn sắc bén nói: “Cô và Thẩm Hầu đích thực là như thế, nếu cô còn yêu nó, thì hãy buông tay đi!”
+</p>
+
+<p>
+ “Biểu hiện nghiêm túc như vậy? Áp lực công việc lớn lắm sao?” Giọng nói của Trình Trí Viễn đột nhiên vang lên, anh ta bưng tách cà phê đi tới, mỉm cười nhìn Nhan Hiểu Thần.
+</p>
+
+<p>
+ Nhan Hiểu Thần vội vàng rặn ra nụ cười, “Chào Trình tổng.”
+</p>
+
+<p>
+ Trình Trí Viễn chủ động vươn ta ra, nói với bà Thẩm: “Trình Trí Viễn, ông chủ của Hiểu Thần. Bà không cần lo lắng cho Hiểu Thần, em ấy ở công ty biểu hiện vô cùng tốt, chúng tôi đều rất hài lòng. Tôi đã nghe qua một chút về công việc trước kia của em ấy rồi, bà yên tâm, chúng tôi thuộc ngành tài chính, chưa bao giờ tin tưởng vào các tin tức vô căn cứ, chỉ tin tưởng vào số liệu khách quan. Nếu như đối phương làm bậy, công kích nhân viên của chúng tôi, cũng chính là nhục mạ công ty chúng tôi, luật sư của công ty nhất định rất muốn có cơ hội đi chứng minh chình mình hằng năm đã lấy được bao nhiêu vật chứng có giá trị.”
+</p>
+
+<p>
+ Giọng điệu của Trình Trí Viễn rất quen thuộc, thân thiết nhiệt tình, dĩ nhiên là hình tượng ông chủ tốt nhất, đáng tiếc bà Thẩm không phải là trưởng bối đang quan tâm lo lắng đến Nhan Hiểu Thần, bà ta hết sức khó xử, cùng Trình Trí Viễn bắt tay, “Không quấy rầy các người làm việc, tôi đi đây.”
+</p>
+
+<p>
+ Trình Trí Viễn uống cà phê, đưa mắt nhìn bóng dáng của bà Thẩm, đăm chiêu hỏi: “Là mẹ của Thẩm Hầu à?”
+</p>
+
+<p>
+ Nhan Hiểu Thần kinh ngạc nhìn Trình Trí Viễn, “Anh…Anh biết bà ấy là ai? Vừa rồi anh…” Nhìn anh ta giống như rất nhiệt tình an ủi, nhưng rõ ràng là uy hiếp trắng trợn.
+</p>
+
+<p>
+ Trình Trí Viễn nhún vai, tỏ vẻ vô tội, “Chẳng lẽ bà ấy không phải là trưởng bối của em sao?” Anh ta chớp chớp mắt, “Yên tâm đi, chúng tôi đều rất lịch sự lễ phép, là con cháu có dạy dỗ, đối xử với trưởng bối sẽ khiêm tốn lễ độ.”
+</p>
+
+<p>
+ Nhan Hiểu Thần dở khóc dở cười, nhưng bực tức trong lòng do bà Thẩm mang đến đã vơi đi rất nhiều, “Anh, làm sao anh biết? Ai nói cho anh biết?” chuyện bà Thẩm uy hiếp bức bách cô, chắc chắn chỉ có ba mẹ của Thẩm Hầu, Lưu tổng, và cô là biết.
+</p>
+
+<p>
+ “Không ai nói cho tôi biết cả, nhưng bà chủ của một công ty nổi tiếng trên thị trường lại bỏ một đống việc đại sự không thèm làm, cố ý đến đây, không phải có suy tính cực kỳ tốt, thì cũng có chủ đích cực kỳ xấu, không khó đoán.”
+</p>
+
+<p>
+ “Xin lỗi, lại làm phiền anh nữa rồi.” Nhan Hiểu Thần cúi đầu, nhìn mũi chân của chính mình, cô giống như là luôn mang đến nhiều phiền toái cho Trình Trí Viễn.
+</p>
+
+<p>
+ Gió lạnh thổi tới làm tóc cô lõa xõa tung bay, vương trên gương mặt, Trình Trí Viễn đưa tay muốn chạm vào tóc nhưng sau đó lại đặt xuống bờ vai của cô, vỗ nhè nhẹ, “Tôi không cảm thấy phiền gì cả, ngược lại là em mới đúng, hơn nửa năm nay em toàn gặp chuyện phiền muộn, em vẫn ổn chứ?”
+</p>
+
+<p>
+ Đối mặt với mẹ của Thẩm Hầu, biểu hiện của cô vẫn rất kiên cường, nhưng đối mặt với sự quan tâm, cô lại đột nhiên trở nên yếu đuối, sống mũi Nhan Hiểu Thần cay cay, cô muốn nói rằng mình vẫn ổn, nhưng cổ họng giống như bị cái gì chặn lại, một câu cũng không nói ra được.
+</p>
+
+<p>
+ “Chờ một chút!” Trình Trí Viễn đột nhiên chạy về hướng cửa hàng tạp hóa ở ngã tư đường phía đối diện, một lát sau, anh ta quay lại với một tay là hai ly cà phê nóng, và một tay khác là hai cây kem ngọt.
+</p>
+
+<p>
+ Hai người ngồi vào băng ghế bên cạnh bồn hoa, anh ta xé mở một cây kem, đưa cho Nhan Hiểu Thần, “Ăn thử xem, mùa đông gió thổi lạnh mà ăn kem, so với mùa hè càng tuyệt hơn, uống cùng với cà phê đen thật đắng, lúc nóng, lúc lạnh, vừa đắng vừa ngọt, rất đặc biệt.”
+</p>
+
+<p>
+ Nhìn thấy Trình Trí Viễn ăn một miếng kem, tỏ vẻ thích thú cười híp mắt, Nhan Hiểu Thần nhịn không được có chút tò mò, cũng cắn một miếng, cảm giác được vị ngọt lạnh buốt từ từ hòa tan ở trong miệng.
+</p>
+
+<p>
+ Trình Trí Viễn nói: “Có một năm đi Canada trượt tuyết, ngày đầu tiên tôi đã bị thương ở tay, bạn bè đều ra ngoài vui chơi, tôi ở một mình trong phòng nghỉ ngơi, ngắm tuyết đến nhàm chán, đột nhiên muốn ăn kem, vậy là cố gắng đi trong tuyết dày, cuốc bộ thật xa mới mua được, đó là cây kem ngon nhất trong đời tôi được ăn. Tuy chúng đều được lấy ra từ trong tủ lạnh, nhưng kem mùa hè thì có phần tan mềm, trong khi kem mùa đông thì đông cứng hơn, hương vị lại có chút lạnh lẽo trống vắng.”
+</p>
+
+<p>
+ Anh ta bưng ly cà phê đen lên uống một ngụm, “Rất kỳ lạ, lúc còn nhỏ ai cũng đều thích ngọt, ghét đắng, dường như đó là hương vị hạnh phúc khởi đầu của cuộc đời, nhưng sau khi lớn lên, có người lại thích nhấm nháp một chút chua xót. Có lẽ bởi vì sau khi trưởng thành, trong tiềm thức đã hiểu được chua xót đắng cay là một phần không thể thiếu, không trốn tránh được, cho nên chỉ có thể học cách tự nhấm nháp.”
+</p>
+
+<p>
+ Nhan Hiểu Thần cũng uống một ngụm cà phê đen, không biết có phải do vừa nếm qua vị ngọt hay không, mà cảm giác vô cùng đắng, lập tức nhe răng nhíu mày.
+</p>
+
+<p>
+ Trình Trí Viễn cười to, “Kem!”
+</p>
+
+<p>
+ Nhan Hiểu Thần cắn một miếng kem thật lớn, thật ngọt, nhưng đột nhiên trong miệng chạm đến băng lạnh, răng lợi đều tê buốt, cô phồng miệng, hít lấy một hơi khí lạnh, biểu hiện rất kỳ quái.
+</p>
+
+<p>
+ Trình Trí Viễn cười ha ha, Nhan Hiểu Thần ngậm kem trong miệng lầu bầu, “Hương vị quả thật rất đặc biệt!”
+</p>
+
+<p>
+ Một lúc sau đã quen dần, Nhan Hiểu Thần cảm thấy thích nhâm nhi thưởng thức theo cách kỳ lạ này.
+</p>
+
+<p>
+ Trình Trí Viễn đột nhiên hỏi: “Em đang sợ cái gì sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần ăn kem, không nói gì.
+</p>
+
+<p>
+ “Chắc không phải là ba mẹ của Thẩm Hầu, em là loại người rất kiên cường, dù ba mẹ của cậu ta có nài nỉ, hay uy hiếp, cũng không thể nào làm cho em sợ được, là Thẩm Hầu sao?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cảm thấy thật kỳ lạ, dường như Trình Trí Viễn có thể hiểu rõ tất cả về cô, làm cho cô không phải khó khăn giải thích, chỉ có thể trả lời thẳng thắn, “Mẹ của Thẩm Hầu nhìn qua như ép buộc bức bách tôi, nhưng trên thực tế cho thấy bà ấy không có khả năng giành lại được Thẩm Hầu, bà ấy rất hiểu Thẩm Hầu, biết là anh ấy tuyệt đối không bao giờ chịu khuất phục, cho nên chỉ có thể ép buộc tôi. Nhà tôi… thật ra, chỉ có mẹ tôi và tôi, ba tôi vài năm trước đã qua đời vì tai nạn giao thông, chúng tôi không có người thân… Gia đình tôi không chỉ nghèo hơn gia đình nhà người ta, mẹ tôi và tôi còn… Tôi không biết Thẩm Hầu có thể chấp nhận hay không.”
+</p>
+
+<p>
+ “Một mình em ngồi đây suy nghĩ, mãi mãi sẽ không có đáp án, Thẩm Hầu có chấp nhận hay không, chỉ có bản thân cậu ta mới có thể trả lời.”
+</p>
+
+<p>
+ “Tôi không có ý giấu diếm Thẩm Hầu, là do tôi… không biết nên nói với anh ấy như thế nào. Từ nhỏ đến lớn, tôi là người luôn có chủ kiến, luôn rất rõ ràng mình cần cái gì, không cần cái gì, nhưng lần trước bởi vì thái độ kiên quyết này mà tôi đã phạm một lỗi lầm rất lớn. Tôi hiểu rõ hơn bất kỳ ai, trên thế giới này, không phải cố gắng giành được là có thể hạnh phúc, đôi khi phải biết buông tay đúng lúc, không biết sẽ có hạnh phúc hay không, nhưng ít ra tránh được những điều đau khổ. Bây giờ tôi không thể nào tin tưởng thái độ kiên quyết của mình có đúng hay không? Tôi sợ mình sẽ giống như lời nói của mẹ Thẩm Hầu, là cái dạng sống bừa bãi không ra gì, sẽ mang đến nhiều khổ cực nghèo hèn cho Thẩm Hầu.”
+</p>
+
+<p>
+ “Mỗi người đều có một thế giới riêng, hai thế giới giao nhau không thể nào tránh ảnh hưởng lẫn nhau, rốt cuộc bóng tối che lấp ánh sáng, hay ánh sáng chiếu rọi bóng đêm, thì cái quyết định chính là ánh sáng kia có đủ mạnh hay không. Nếu đó là ánh nến lập lòe, thì chỉ một ngọn gió nhẹ cũng đã đủ thổi tắt, nhưng nếu là ánh đèn tĩnh lặng thì vẫn có thể chiếu sáng khắp mọi nơi.” Trình Trí Viễn uống một ngụm cà phê, khẽ cười hỏi: “Thẩm Hầu là loại nào?”
+</p>
+
+<p>
+ Nhan Hiểu Thần im lặng.
+</p>
+
+<p>
+ Ăn xong kem, Nhan Hiểu Thần đứng lên, bưng theo ly cà phê nói: “Tôi đi lên làm việc đây, cảm ơn anh đã mời tôi ăn kem, uống cà phê.”
+</p>
+
+<p>
+ Trình Trí Viễn đưa tay đang cầm ly cà phê lên, ra ý tạm biệt.
+</p>
+
+<p>
+ Nhanh đến lúc hết giờ làm thì Thẩm Hầu gọi điện thoại cho Nhan Hiểu Thần, “Em ăn cơm một mình trước đi, anh có chút việc, sẽ ghé qua chỗ em trễ một chút.”
+</p>
+
+<p>
+ Nhan Hiểu Thần không hỏi hắn là có chuyện gì, bởi vì buổi chiều cô vừa gặp qua bà Thẩm. Rõ ràng là Thẩm Hầu phải đối mặt với sự tận tình khuyên bảo, nài nỉ dụ dỗ hoặc lời răn dạy cứng rắn, thần sắc nghiêm nghị.
+</p>
+
+<p>
+ Hơn 10 giờ tối, Thẩm Hầu vẫn không liên lạc gì với cô, xem ra tình hình có vẻ nghiêm trọng. Nhan Hiểu Thần không biết Thẩm Hầu có ở cùng với ba mẹ của hắn hay không, nên không dám gọi cho hắn, chỉ có thể lên giường nằm, vừa đọc sách, vừa chờ điện thoại.
+</p>
+
+<p>
+ Gần 12 giờ đêm thì chuông cửa vang lên, tâm trạng của Nhan Hiểu Thần chấn động một chút, vội vội vàng vàng chạy ra, “Ai đó?”
+</p>
+
+<p>
+ “Là anh!”
+</p>
+
+<p>
+ Nhan Hiểu Thần mở cửa, nhìn thấy Thẩm Hầu kéo 2 cái va li lớn, cười hì hì nhìn cô, “Anh thất nghiệp rồi, không thuê nổi phòng trọ, chỉ có thể đến tìm em thôi.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghiêng người tránh ra, “Lại cãi nhau với ba mẹ nghiêm trọng đến nỗi xin nghỉ việc?”
+</p>
+
+<p>
+ Thẩm Hầu vươn người ra hôn lên má của cô một cái, cợt nhả nói: “Bà xã của anh sao lại thông minh như vậy?”
+</p>
+
+<p>
+ Hắn nhìn bề ngoài có vẻ hồn nhiên không nghĩ đến điều gì, nhưng trên thực tế chắc cũng chẳng dễ chịu, Nhan Hiểu Thần chuyển sang đề tài khác, “Anh ăn cơm chưa?”
+</p>
+
+<p>
+ “Ăn rồi.”
+</p>
+
+<p>
+ “Vậy nghỉ ngơi sớm đi!”
+</p>
+
+<p>
+ Thẩm Hầu thu dọn đơn giản một vài thứ, rồi đi tắm. Nhan Hiểu Thần tựa trên giường đọc sách, nhưng tâm trí không hoàn toàn tập trung được, mẹ của Thẩm Hầu không hổ danh là một phụ nữ kiên cường xây dựng sự nghiệp từ hai bằng tay trắng, đối xử với con trai độc nhất kiên quyết tàn ác không thua gì kẻ thù ra tay tàn độc.
+</p>
+
+<p>
+ “Anh ngủ ở đâu?” Thẩm Hầu đứng tại cửa của phòng ngủ, tóc ướt sũng rũ xuống dính vào trán của hắn, ánh mắt sáng ngời trong suốt nhìn Nhan Hiểu Thần, giống như mấy viên kẹo dẻo hình gấu Teddy.
+</p>
+
+<p>
+ Nhan Hiểu Thần liếc mắt nhìn hắn một cái, tiếp tục cúi đầu đọc sách, “Ở sô pha, được không?”
+</p>
+
+<p>
+ Thẩm Hầu toan trèo lên giường, sáp lại gần Nhan Hiểu Thần, “Vậy anh nằm đây một lát nhé.” Hắn cầm cái “áo mưa”, lắc qua lắc lại trước mắt của Nhan Hiểu Thần.
+</p>
+
+<p>
+ Nhan Hiểu Thần vẻ mặt không thay đổi, đẩy tay hắn ra, vẫn tập trung đọc sách, không để ý gì đến hắn.
+</p>
+
+<p>
+ Thẩm Hầu nằm nghiêng người, một tay chống đầu, chuyên tâm nhìn Nhan Hiểu Thần, một tay sờ soạng lưng của Nhan Hiểu Thần, sờ soạng vuốt ve, bàn tay muốn thò vào trong quần áo của cô, Nhan Hiểu Thần nghiêm mặt, gỡ tay hắn ra; hắn không yên tĩnh được một giây nào, lại bắt đầu táy máy tay chân, Nhan Hiểu Thần lại nghiêm nét mặt, đánh rồi lại đẩy bàn tay hư hỏng kia, tay của hắn sờ đến eo của Nhan Hiểu Thần, cô nhột quá, nhịn không được bật cười, “Đừng sờ lung tung!” Hắn càng hứng lên, hai tay không ngừng cù cô, Nhan Hiểu Thần lấy sách đánh hắn, hắn giật lấy quyển sách, ném qua một bên, nhào lên người cô, hung hăng hôn cô một cái, “Nhìn anh thích hơn hay nhìn sách thích hơn?”
+</p>
+
+<p>
+ “Nhìn sách thích hơn!”
+</p>
+
+<p>
+ “Thích hơn phải không? Anh hay sách?” Thẩm Hầu hôn lên lỗ tai của cô.
+</p>
+
+<p>
+ “Sách!”
+</p>
+
+<p>
+ “Thích này…Thích này…” Một loạt cái hôn liên miên không dứt, khiến cho Nhan Hiểu Thần quên mất trả lời. Lần hoan ái này, hai người đều mang theo chút gì đó muốn bùng nổ phát tiết, vô cùng triền miên kịch liệt, sau trận mây mưa, Thẩm Hầu thuận lý thành chương được ngủ ở trên giường.
+</p>
+
+<p>
+ Hắn ôm Nhan Hiểu Thần từ phía sau, hai người thân mật khắng khít, nhưng lại không thể thấy được nét mặt của nhau, coi như thích hợp để nói hết tâm sự.
+</p>
+
+<p>
+ “Anh không có cách nào hiểu ba mẹ của anh, năm đó, ông nội và bà nội đều cho rằng ba và mẹ anh không xứng đôi, phản đối bọn họ rất kịch liệt, thậm chí còn bày trò tuyệt thực, bỏ nhà ra đi. Bởi vì chán ghét mẹ, nên từ nhỏ bà nội đã không thích anh, cũng không phải là chuyện gì lớn, chỉ là mỗi lần có đồ ăn vặt thì bà cho Thẩm Lâm hơn vài phần, hay là chuyện nhỏ nhặt như ôm Thẩm Lâm nhiều hơn, thế giới của trẻ con thì mấy việc đó đều không đáng để nói, nhưng cảm giác không được bà nội quan tâm lại khiến cho anh rất để ý. Anh nhớ có một năm tết đến, anh khóc lóc không chịu đến nhà bà nội, ba bắt anh phải đi, trên đường đi mẹ một bên an ủi dỗ dành anh, một bên lặng lẽ lau nước mắt. Sau này bà nội đối với anh rất tốt, bây giờ nếu có nói bà bất công với anh, bà sẽ một mực không nhận! Mẹ anh đã tự mình nếm trải qua cảm giác này một lần rồi, hiện giờ lại trở thành một bà nội khác, tại sao ba mẹ anh lại không hiểu, anh là con của bọn họ, bọn họ đã từng không chịu nhường bước, thì anh làm sao có thể nhường bước?”
+</p>
+
+<p>
+ Nhan Hiểu Thần nhắm mắt lại nói: “Anh định sau này sẽ thế nào?”
+</p>
+
+<p>
+ “Thành tích bán hàng năm nay của anh không tệ, ngày mai anh sẽ đi nhận tiền lương, hai ba chục ngàn chắc sẽ có, vừa đúng lúc đón tết âm lịch. Qua tết âm lịch sẽ đi tìm công việc khác.” Thẩm Hầu nắm tay Nhan Hiểu Thần nói, “Anh đã nghe lời em, không tranh cãi ầm ĩ với bọn họ, nhưng nếu làm quá anh cũng có quyền bất mãn. Bọn họ cảm thấy nhất định anh sẽ phải nghe lời, không phải bởi vì anh muốn ỷ lại vào bọn họ hay sao? Vậy thì anh không ỷ lại nữa! Đừng quá lo lắng, nghề bán hàng của bọn anh, bằng cấp không quan trọng, tìm một công việc khác sẽ không quá khó, có thể lúc đầu tiền lương sẽ thấp, nhưng kiên trì một hai năm, khẳng định sẽ cao hơn.”
+</p>
+
+<p>
+ Nhan Hiểu Thần nghĩ đến tính cố chấp và kiên quyết bà Thẩm, nói: “Ba mẹ anh có vẻ rất nghiêm túc, gia sản lớn như vậy anh chỉ ngó qua, cam tâm tình nguyện từ người giàu có biến thành kẻ nghèo khổ hay sao? Chú anh,  cậu anh đều làm việc ở công ty, anh không có hứng thú đối với công ty, nhưng anh em họ của anh không chắc là không có hứng thú.” Thẩm Hầu cười ha ha, hôn sau gáy cô một cái, “Anh yêu mỹ nhân, không yêu giang sơn!”
+</p>
+
+<p>
+ Nhan Hiểu Thần dùng khủy tay huých vào hắn một cái, “Em đang nói nghiêm túc!”
+</p>
+
+<p>
+ “Thì anh cũng rất nghiêm túc! Bà xã chỉ có một mà thôi, em chạy đi rồi, anh đi tìm ở đâu ra một người giống như vậy? Nếu là công ty, cùng lắm thì hai chúng ta tự mình gây dựng, thành lập một công ty của riêng mình. Em đừng suy nghĩ lung tung, tiền thì lúc nào cũng là như vậy, đến một mức nào đó sẽ biến thành một dãy số trong ngân hàng, anh đối với mấy con số đó quả thật chẳng có hứng thú.”
+</p>
+
+<p>
+ Có lẽ, những lời này của Thẩm Hầu hoàn toàn không phải thật lòng, tuy rằng hắn đã từng cực kỳ hứng thú với ước mơ quản lý một công ty sản xuất, nhưng thái độ của hắn rất rõ ràng, tình yêu chỉ có một, tuyệt đối sẽ không buông tay, sự nghiệp thì lại có rất nhiều đường ra, nên có thể tự mình cố gắng đạt được.
+</p>
+
+<p>
+ Nhan Hiểu Thần xoay người, hôn Thẩm Hầu một cái.
+</p>
+
+<p>
+ Thẩm Hầu cười ôm lấy cô, “Tết âm lịch lần này về nhà em đi, anh muốn gặp mẹ em.”
+</p>
+
+<p>
+ “Ừ.”
+</p>
+
+<p>
+ “Mẹ em thích gì? Anh phải làm gì để bà ấy thích anh?”
+</p>
+
+<p>
+ Nhan Hiểu Thần cười khổ nói: “Không nên suy nghĩ nhiều, cứ để tự nhiên đi!”
+</p>
+
+<p>
+ Thẩm Hầu hơi đăm chiêu trầm mặc, mỗi lần nhắc đến chuyện nhà, biểu hiện của Nhan Hiểu Thần rất kỳ lạ, hắn có linh tính, sự việc lần này sẽ không đơn giản.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-025.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-027.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

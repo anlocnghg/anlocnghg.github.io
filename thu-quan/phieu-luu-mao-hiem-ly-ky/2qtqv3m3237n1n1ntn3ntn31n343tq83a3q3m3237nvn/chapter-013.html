@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 13 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 13</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-012.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-014.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Eragon gõ gót giày lên hai bên tảng đá nó đang ngồi lên vì thấy chán và mất kiên nhẫn.
+</p>
+
+<p>
+ Nó, Saphira và Arya – cùng Blödhgarm và những thần tiên khác – đang thơ thẩn bên vệ đường chạy dọc khu bờ đông thành phố Belatona: chạy qua những cánh đồng xanh mượt; qua cây cầu đá lớn cong cong bắc qua sông Jiet; vòng quanh bờ nam hồ Leona. Tới đây con đường phân nhánh, một tới Cánh Đồng Cháy và Surda, một đi về phía bắc, tới Dras – Leona và Urȗ’baen.
+</p>
+
+<p>
+ Hàng ngàn binh lính, người lùn và Urgal đi lang thang trước cửa thành phía Đông Belatona cũng như trong thành phố, cãi cọ và la hét trong khi quân Varden đang sắp xếp họ vào từng đội. Ngoài ra còn có đoàn kỵ binh của vua Orrin – không thể kể hết số ngựa đang hí, đang nhảy dựng lên. Đằng sau quân tiền tuyến là quân đội hậucần: một đoàn dài xe do thú có sừng của Varden mang tới từ Surda và của nông dân trong vùng kéo. Từ đó phát lên tiếng lừa la kêu be be, tiếng bò rồng, tiếng ngỗng kêu, tiếng ngựa và tiếng ngựa hí.
+</p>
+
+<p>
+ Thế là quá đủ để Eragon muốn bít lỗ tai lại.
+</p>
+
+<p>
+ Em sẽ nghĩ là chúng ta sẽ chịu đựng giỏi hơn sau bao nhiêu lần chứ nhỉ, nó nói với Saphira khi nó nhảy xuống khỏi tảng đá.
+</p>
+
+<p>
+ Cô nàng khịt mũi. Đáng ra họ nên để em lo việc này; em có thể dọa cho bọn chúng về đúng vị trí chỉ trong một tiếng đồng hồ và sau đó chúng ta sẽ không phải mất thì giờ chờ đợi.
+</p>
+
+<p>
+ Ý nghĩ đó khiến cậu hứng thú. Đúng, anh chắc chắn là em có thể...Nhưng cẩn thận với những gì em nói, hoặc không Nasuada sẽ bắt em làm thật đấy.
+</p>
+
+<p>
+ Sau đó Eragon nghĩ tới Roran, nó đã không gặp anh từ sau đêm nó trị bệnh cho đứa nhỏ nhà Horst và Elain, và nó phân vân không biết anh nó đang làm gì và lo lắng vì anh ở quá xa nó.
+</p>
+
+<p>
+ “Ngốc thế không biết,” Eragon lầm bầm khi nhớ lại chuyện Roran đã đi mà không để cậu tạo kết giới mới.
+</p>
+
+<p>
+ Anh ấy là một thợ săn có kinh nghiệm, Saphira nói. Anh ấy sẽ không ngu ngốc tới nỗi để con mồi làm mình bị thương đâu.
+</p>
+
+<p>
+ Anh biết, nhưng đôi khi nghĩ thế cũng không thể giúp anh an tâm... Anh ấy cần phải cực kỳ cẩn trọng. Anh không muốn anh ấy bị què, hay tệ hơn, bị phủ khăn trắng.
+</p>
+
+<p>
+ Một cảm giác buồn bã dâng lên trong Eragon, sau đó nó cố quên đi và nhún nhảy trên chân, muốn thư giãn gân cốt trước khi dành vài giờ tiếp theo ngồi trên lưng Saphira. Nó thích được bay cùng cô em nhưng nó không thích phải ngồi cứng đờ trong mười hai dặm hoặc hơn trong cả ngày, là là liệng như chim kền kền. Nếu chỉ có nó và Saphira, tụi nó chỉ chiều muộn là tới Dras – Leona.
+</p>
+
+<p>
+ Nó bước từ đường cái sang trảng cỏ. Đứng đó, không quan tâm tới cái nhìn của Arya và những tiên nhân khác, nó rút thanh Brisingr ra và luyện lại vài đường kiếm ông Brom đã dạy nó rất lâu trước đây. Nó đi kiếm từ từ và cảm nhận mặt đất mịn dưới chân.
+</p>
+
+<p>
+ Nó đưa thanh kiếm lên cao quá đầu, chém xuống với một nhát chém có thể chẻ một người làm đôi, dù đó là người, tiên hay Urgal, dù họ mặc áo giáp gì. Nó dừng kiếm khi cách mặt đất chừng vài centimet. Lưỡi kiếm truyền rung động lên cổ tay nó. Trên màn xanh của cỏ, màu xanh lơ của kim loại trở nên chói mắt, hầu như không thật.
+</p>
+
+<p>
+ Eragon hít một hơi nữa và nhảy về phía trước, đâm vào không khí như thể trước mặt nó là một kẻ thù không đội trời chung. Nó luyện tập từng đường kiếm cơ bản, không chú trọng vào tốc độ hay sức lực mà vào độ chính xác.
+</p>
+
+<p>
+ Khi nó đã ấm người, nó nhìn quanh những người hộ vệ đang đứng thành một vòng bán nguyệt cách nó một đoạn. “Có ai luyện tập với tôi một vài phút không?” nó lớn tiếng hỏi.
+</p>
+
+<p>
+ Những tiên nhân nhìn nhau, không biểu lộ cảm xúc. Sau đó, tiên nhân Wydren tiến lên phía trước, “Để tôi, thưa KHắc tinh của Tà Thần, nếu ngài đồng ý. Tuy nhiên, tôi đề nghị ngài nên đội mũ trụ lên.”
+</p>
+
+<p>
+ “Đồng ý.”
+</p>
+
+<p>
+ Eragon tra thanh Brisingr vào bao rồi chạy tới chỗ Saphira và trèo lên một bên mình cô nàng, thò tay vào phía trong vảy. Nó mặc áo giáp, quấn xà cạp, bao tay nhưng lại cất mũ trụ trong túi yên để nó không rơi khỏi Saphira hay lẫn trong cỏ.
+</p>
+
+<p>
+ Khi đã lấy được mũ, nó nhìn thấy cái tráp đựng trái tim của Glaedr được bọc trong một mảnh vải và đặt ở đáy túi. Nó với tay xuống và chạm vào cái tráp thầm cầu nguyện cho con rồng vàng, rồi đóng túi lại và nhảy khỏi lưng Saphira.
+</p>
+
+<p>
+ Eragon vừa đội mũ vừa bước lại trảng cỏ. Nó cắn chảy máu đầu ngón tay cái, sau đó đeo găng tay và hy vọng máu không chảy ra nhiều quá. Wydren và nó sử dụng vài câu thần chú tương tự đặt ra một kết giới mỏng – không thể nhìn thấy, trừ việc họ làm cho không gian xung quanh vặn vẹo – xung quanh thanh kiếm để họ không bị làm người kia bị thương. Họ cũng hạ vòng bảo vệ xuống.
+</p>
+
+<p>
+ Sau đó nó và Wydren đứng đối diện nhau, cúi đầu và nâng cao thanh kiếm. Eragon nhìn vào đôi mắt đen, không chớp của tiên nhân và Wydren cũng vậy. Eragon nhìn đối thủ và tính tấn công bên trái tiên nhân vì nếu tấn công phía bên kia chính nó cũng khó tự vệ.
+</p>
+
+<p>
+ Vị tiên nhân chậm rãi quay người, cỏ dưới gót giày anh ta bị nghiền nát khi anh tiến về phía Eragon. Sau khi bước vài bước,Eragon dừng lại. Wydren là một chiến binh cảnh giác và lão luyện khiến Eragon phải dè chừng; có thể nó không bao giờ có thể ngang cơ với tiên nhân kia. Tất nhiên, trừ khi mình lừa được anh ta.
+</p>
+
+<p>
+ Nhưng trước khi nó quyết định bước tiếp theo nên làm gì, Wydren giả vờ tấn công chân phải Eragon như thể định chém vào mắt cá chân nó, rồi đổi hướng, vặn cổ tay và chém ngang ngực và cổ Eragon.
+</p>
+
+<p>
+ Dù Wydren rất nhanh nhưng Eragon còn nhanh hơn. Khi nhận ra Wydren chuyển hướng tấn công, Eragon lùi lại nửa bước, gập khuỷu tay và đưa kiếm lên trước mặt.
+</p>
+
+<p>
+ “Ha!” Eragon hét vang khi nó dùng thanh Brisingr chặn lưỡi kiếm của Wydren. Hai thanh va vào nhau kêu “keng”.
+</p>
+
+<p>
+ Eragon dùng lực đẩy Wydren lạ rồi chuồn ra sau anh ta, chém liên tiếp.
+</p>
+
+<p>
+ Họ đấu kiếm trên bãi cỏ trong vài phút. Eragon là người ra đòn đầu tiên – một đường rạch nông trên hông Wydren – và chém cú thứ hai, nhưng sau đó, họ trở nên cân sức hơn, vì vị tiên nhân đã hiểu được cách đánh của nó và bắt đầu lựa theo đó mà tấn công và phản công. Eragon ít có cơ hội được chiến đấu với một người giỏi và mạnh như Wydren để tự lượng sức mình. Vì vậy, nó thích thú đấu kiếm với vị thần tiên này.
+</p>
+
+<p>
+ Tuy nhiên, bao nhiêu hứng thú của nó đều tiêu tan khi Wydren chém liên tiếp bốn nhát vào nó: một nhát vào vai phải, hai nhát trên lồng ngực, và một đường kiếm hiểm trên bụng. Những cú đánh khiến nó đâu nhưng lòng tự trọng của nó còn bị tổn thương nhiều hơn. Nó lo rằng rằng tiên nhân dễ dàng vượt qua được thế phòng thủ của nó. Nếu họ đối đầu ngoài chiến trường kia, Eragon biết nó có thể đánh bại anh ta sau vài cú giao đấu nhưng ý nghĩ đó không khiến nó dễ chịu hơn là mấy.
+</p>
+
+<p>
+ Anh không nên để anh ta có nhiều cơ hội thế chứ, Saphira nhận xét.
+</p>
+
+<p>
+ Ừ, anh biết, nó gào lên.
+</p>
+
+<p>
+ Anh có muốn em giúp hạ gục anh ta không?
+</p>
+
+<p>
+ Không... không phải hôm nay.
+</p>
+
+<p>
+ Nó tức tối hạ kiếm và cám ơn Wydren. Tiên nhân cúi đầu và nói, “Không có gì, thưa Khắc tinh của Tà thần,” rồi trở về chỗ các tiên nhân khác.
+</p>
+
+<p>
+ Eragon cắm thanh Brisingr xuống khoảng đất giữa hai chân – điều nó không thể nào làm với những thanh kiếm làm từ thép bình thường – và đặt tay lên chuôi kiếm khi quan sát những người đàn ông và lũ gia súc chen lấn trong con đường đẫn tới thành phố rộng lớn. Sự hỗn loạn đã giảm bớt và nó đoán chẳng bao lâu nữa tiếng kèn sẽ vang lên báo hiệu cho quân Varden lên đường.
+</p>
+
+<p>
+ Trong lúc đó, nó cũng chẳng nghi ngơi gì.
+</p>
+
+<p>
+ Nó nhìn Arya đang đứng cạnh Saphira và nụ cười từ từ giãn ra trên mặt nó. Nó vác thanh Brisingr lên vai và thong thả tiến tới chỉ về phía thanh kiếm của nàng. “Arya, nàng thì sao? Chúng ta chỉ mới giao đấu có một lần hồi ở Farthen Dȗr.” Nó cười ngoác miệng và vuốt lưỡi kiếm Brisingr. “Từ hồi đó tới giờ tôi cũng khá hơn chút chút rồi.”
+</p>
+
+<p>
+ “Ừ.”
+</p>
+
+<p>
+ “Vậy nàng tính sao đây?”
+</p>
+
+<p>
+ Cô nhìn về phía quân Varden và nhún vai. “sao lại không nhỉ?”
+</p>
+
+<p>
+ Thế là họ bước tới bãi cỏ. Nó nói. “Lần này nàng không thể hạ ta dễ dang như lần trước đâu.”
+</p>
+
+<p>
+ “Chắc là thế.”
+</p>
+
+<p>
+ Arya xem xét thanh kiếm sau đó họ đối diện nhau, cách nhau khoảng ba mươi foot. Eragon cảm thấy tự tin và nhanh chóng tấn công trước vì nó biết nó nên tấn công vào đâu: vai trái của nàng.
+</p>
+
+<p>
+ Arya đứng nguyên vị trí và không hề có ý tránh né. Khi nó còn cách nàng độ bốn mét, cô nở một nụ cười ấm áp, rạng rỡ với nó khiến nó hết cả ý chí chiến đấu.
+</p>
+
+<p>
+ Một ánh thép lóe về phía nó.
+</p>
+
+<p>
+ Nó đưa thanh Brisingr lên chậm một nhịp. Tay nó tê rần vì mũi kiếm sượt qua một thứ gì đó cứng – nó không chắc là chuôi kiếm, lưỡi kiếm hoặc da thịt, nhưng dù là gì đi nữa nó cũng biết nó đã tính toán sai khoảng cách và phản ứng của nó đã khiến nó lĩnh đòn.
+</p>
+
+<p>
+ Trước khi nó có thể hãm đà lao tới, một lực tác động khiến lưỡi kiếm của nó nghiêng sang một bên; sau đó là một cú đau nhói giữa người khi Arya áp sát, đánh ngã nó.Eragon rên lên khi lưng hạ cánh xuống đất. Nó cố hít một ngụm không khí nhưng bụng nó căng cứng như đá và nó không thể nào hít khí vào lồng ngực. Sao nhảy múa trước mắt nó, sau vài giây không dễ chịu đầu tiên nó nghĩ nó sẽ ngất. Nhưng rồi các bắp thịt của nó dãn ra và cuối cùng nó cũng hít thở được.
+</p>
+
+<p>
+ Khi đầu óc đã trở lại bình thường, nó từ từ chống thanh Brisingr để đứng dậy. Nó dựa vào thanh kiếm như thể một ông già đợi cơn đau bụng qua đi.
+</p>
+
+<p>
+ “Nàng chơi xấu,” nó nghiến răng nói.
+</p>
+
+<p>
+ “Không, tôi chỉ khai thác điểm yếu của đối phương thôi. Đấy là điểm khác biệt.”
+</p>
+
+<p>
+ “Nàng nghĩ... đó là...điểm yếu?”
+</p>
+
+<p>
+ “Khi chúng ta chiến đấu thì đúng. Chàng muốn tiếp tục không?”
+</p>
+
+<p>
+ Nó trả lời bằng cách rút thanh Brisingr ra khỏi mặt đất và bước về chỗ nó vừa đứng và giơ kiếm lên.
+</p>
+
+<p>
+ “Tốt,” Arya nói. Cô đứng cùng tư thế với nó.
+</p>
+
+<p>
+ Lần này Eragon đã thận trọng hơn khi nó áp sát nàng và Arya cũng không đứng nguyên tại chỗ. Nàng cẩn trọng tiến lên và đôi mắt xanh trong của nàng không bao giờ rời nó.
+</p>
+
+<p>
+ Nàng co tay khiên Eragon giật mình.
+</p>
+
+<p>
+ Nó nhận ra nó đang nín thở và buộc mình phải thư giãn.
+</p>
+
+<p>
+ Nó tiến thêm bước nữa và lao về phía trước hết tốc lực.
+</p>
+
+<p>
+ Cô chặn đường kiếm của nó nhắm vào lồng ngực và trả lại bằng một đâm vào phần nách. Mặt kiếm của nàng chạy dọc mặt trong cánh tay kia của nó, chém lên áo giáp khi nó gạt kiếm đi. Trong lúc đó, thân nàng lộ sơ hở nhưng vì họ quá gần nhau nên Eragon không thể ra đòn hiệu quả.
+</p>
+
+<p>
+ Thay vào đó nó nhào về phía trước, dùng chuôi kiếm đập vào xương quai xanh của nàng hòng đánh gục nàng như nàng đã làm với nó.
+</p>
+
+<p>
+ Nàng vặn mình và chuôi kiếm đánh vào khoảng không.
+</p>
+
+<p>
+ Eragon chưa kịp hiểu chuyện gì xảy ra và đứng như trời trồng khi một cách tay của Arya vòng qua cổ nó và lưỡi kiếm được bọc phép bảo vệ gí sát quai hàm nó.
+</p>
+
+<p>
+ Từ đằng sau, Arya thì thầm vào tai nó, “Tôi có thể cắt đầu chàng dễ như hái táo trên cây vậy.”
+</p>
+
+<p>
+ Sau đó nàng thả tay và đẩy nó đi. Nó tức giận, quay người lại và thấy nàng đã đợi sẵn nó, kiếm đã sẵn sàng và biểu hiện quyết liệt.
+</p>
+
+<p>
+ Nó quên đi nỗi tức giận và lao về phía trước.
+</p>
+
+<p>
+ Hó đánh qua đánh lại bốn đường kiếm, đòn sau mạnh hơn đòn trước. Arya chém được đối phương đầu tiên bằng một nhát trên chân Eragon. Nó cũng rạch một đường dài trên eo nàng nhưng nàng đã kịp lùi ra khỏi vùng nguy hiểm của thanh Brisingr. Nó không cho nàng một cơ hội trân tĩnh, nó tiến lên định chém xuống tay nàng nhưng nàng dễ dàng chặn đứng. Sau đó nàng tiến lên và với một cú chạm nhẹ nhưng cánh chim ruồi, để lại một đường kiếm ngang bụng nó.
+</p>
+
+<p>
+ Arya giữ nguyên tư thể sau cú đánh, mặt chỉ cách nó vài cm. Trán cô lấp lánh mồ hôi và má ửng đỏ.
+</p>
+
+<p>
+ Eragon kéo thẳng áo trấn thủ rồi bước tới gần Arya. Sự tức giận trong trận đánh đã biến đâu mất và khiến nó tập trung trở lại.
+</p>
+
+<p>
+ “Tôi không hiểu,” nó bình tĩnh nói.
+</p>
+
+<p>
+ “Chàng đã quen dần với việc chiến đấu với binh lính của Galbatorix. Họ không thể nào ngang cơ với chàng, vì vậy chàng có thể chiến thắng họ. Những đòn tấn công của chàng quá lộ liễu – chàng không nên chỉ dựa vào lợi thế về sức mạnh – và chàng phòng thủ không chặt.”
+</p>
+
+<p>
+ “Nàng giúp tôi chứ?” nó hỏi. “Nếu có thời gian nàng đấu kiếm với tôi nhé?”
+</p>
+
+<p>
+ Nàng gật đầu. “Tất nhiên. Nhưng nếu tôi không thể chàng nên tìm Blödhgarm; anh ấy cũng có kinh nghiệm chiến đấu như tôi vậy. Chàng phải thực chiến nhiều, đó là bạn đồng hành tốt nhất của chàng.”
+</p>
+
+<p>
+ Eragon định cảm ơn nàng thì nó cảm thấy xúc cảm của một ai đó không phải Saphira đang đè lên đầu óc nó, sợ hãi và buồn rầu: nỗi buồn rất lớn, cổ họng Eragon cứng lại và thế giới dường như không còn màu sắc. Và một giọng nói trầm trầm của rồng vàng Glaedr vang lên:
+</p>
+
+<p>
+ Trò phải học...phải thấy được cái mình đang nhìn.
+</p>
+
+<p>
+ Sau đó sự hiện diện đó biến mất, chỉ để lại sự trống rỗng mênh mang.
+</p>
+
+<p>
+ Eragon nhìn Arya. Nàng cũng đang đứng như trời trồng; nàng đã nghe thấy tiếng nói của Glaedr. Đằng sau nàng, Blödhgarm và các tiên nhân khác đang xì xào bàn tán trong khi ở phía kia con đường, Saphira ngoái đầu lại cố nhìn vào túi yên cương trên lưng.
+</p>
+
+<p>
+ Eragon nhận ra rằng tất cả bọn họ đều nghe thấy.
+</p>
+
+<p>
+ Nó và Arya cùng nhau đứng dậy và tiến tới chỗ Saphira đang nói, Ông ấy không trả lời em; dù ông ấy ở đâu, ông ấy cũng đã trở lại, nhưng ông ấy không nghe thấy cái gì ngoài chính nỗi buồn của mình. Đây, nhìn đi...
+</p>
+
+<p>
+ Eragon liên kết tư tưởng với cô rồng và với Arya. Cả ba người phóng tư tưởng tới trái tim Glaedr đang nằm trong túi yên cương. Phần còn lại của con rồng đã có sức sống hơn nhưng tư tưởng của ông rồng vẫn đóng kín, những suy nghĩ hỗn loạn như từ hồi Galbatorix giết chết Kỵ sĩ của ông, Oromis.
+</p>
+
+<p>
+ Eragon, Saphira và Arya cố gắng đánh thức con rồng vàng. Nhưng Glaedr vẫn phớt lờ họ, ông rồng như một con gấu ngủ đông chẳng để ý gì tới lũ ruồi nhặng vo ve quanh đầu.
+</p>
+
+<p>
+ Eragon không thể nào không nghĩ Glaedr không hề tỉnh.
+</p>
+
+<p>
+ Cuối cùng ba người phải đành chấp nhận thất bại và để tư tưởng trở về cơ thể. Khi Eragon khôi phục được ý thức, Arya nói, “Có lẽ nếu chúng ta chạm vào Eldunari của ông ấy thì...”
+</p>
+
+<p>
+ Eragon cho thanh Brisingr vào bao, trèo lên chân phải trước của Saphira và nhảy lên yên. Nó cúi xuống và bắt đầu lục lọi túi yên.
+</p>
+
+<p>
+ Đúng lúc đó tiếng kèn đồng của quân Varden vang lên báo hiệu xuất phát. Hàng dài người và gia súc chen lấn về phía trước, lúc đầu hơi chậm chạp, nhưng dần uyển chuyển và tự tin hơn.
+</p>
+
+<p>
+ Eragon liếc nhìn xuống Arya không biết nên làm gì. Cô vẫy tay và nói, “Tối nay chúng ta sẽ nói chuyện với ông ấy. Đi đi! Bay theo những cơn gió đi!”
+</p>
+
+<p>
+ Nó nhanh chóng đóng túi lại, rồi chỉnh lại yên cương vì nó không muốn ngã khỏi lưng Saphira khi đang bay.
+</p>
+
+<p>
+ Sau đó Saphira cúi mình và cùng một tiếng gầm vui sướng, nó bay lên khỏi mặt đất. Những người đàn ông đứng dưới cô nàng lùi lại vì hoảng sợ, lũ ngựa lồng lên khi cô nàng mở rộng đôi cánh to lớn, tung mình lên khỏi mặt đất cứng, không phải môi trường yêu thích của cô nàng lên trên khoảng không rộng lớn êm ái.
+</p>
+
+<p>
+ Eragon nhắm mắt ngửa mặt lên trời, vui mừng vì cuối cùng cũng rời khỏi Belatona. Sau cả một tuần ru rú trong thành phổ chỉ ăn rồi ngủ - vì Nasuada bắt buộc – nó hạnh phúc được tới Urȗ’baen.
+</p>
+
+<p>
+ Khi Saphira bay cách những ngọn tháp hàng trăm foot, nó nói, Em nghĩ ông Glaedr có phục hồi được không?
+</p>
+
+<p>
+ Ông ấy sẽ không bao giờ như trước nữa.
+</p>
+
+<p>
+ Không, nhưng anh hy vọng ông ấy sẽ có thể vượt qua nỗi đau. Anh cần sự giúp đỡ của ông ấy mà, Saphira. Có rất nhiều điều anh không biết. Không có ông ấy, anh không biết hỏi ai.
+</p>
+
+<p>
+ Cô nàng im lặng trong chốc lát. Trong không gian chỉ vang lên tiếng đập cánh đều đều. Chúng ta không thể vội, cô nàng nói. Ông ấy bị tổn thương nặng nề nhất theo cách mà một Rồng hay một Kỵ sĩ phải chịu. Trước khi ông ấy có thể giúp anh, em, hay bất cứ ai khác, ông ấy phải quyết định ông ấy có muốn sống nữa không. Cho tới lúc đó, chúng ta không thể nói gì với ông ấy đâu.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-012.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-014.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

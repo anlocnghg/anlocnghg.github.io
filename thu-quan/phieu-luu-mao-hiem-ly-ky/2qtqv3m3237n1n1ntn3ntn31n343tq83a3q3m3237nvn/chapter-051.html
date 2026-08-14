@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 51 - Di Sản Thừa Kế Inheritance</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 51</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-050.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-052.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Nó trượt chân vì dẫm phải bùn. Nó ngã xuống lớp cỏ ướt. Nó rên rỉ và nhăn mặt vì đau hông. Chắc chắn nó bị thâm rồi.
+</p>
+
+<p>
+ “Barzûl,” nó nói khi chống chân đứng dậy. Ít nhất mình không hạ cánh trúng Brisingr, nó nghĩ khi phủi bùn lạnh lẽo trên quần.
+</p>
+
+<p>
+ Nó ủ rũ bước tới tòa nhà đổ nát họ đã cắm trại vì họ tin tại đó sẽ an toàn hơn trong rừng.
+</p>
+
+<p>
+ Khi nó bước qua đám cỏ, nó giật mình khi thấy số lượng ếch bò đang nhảy đi trốn. Những con ếch bò chỉ là một trong những sinh vật lạ lùng khác chúng gặp trên đảo. Trên mắt chúng có vết lồi ra như sừng. Ở giữa trán chúng có một cái ống cong cong như cần câu. Cuối cái ống là một miếng da nhỏ sẽ phát ra ánh sáng trắng vàng vào đêm. Ánh sáng đó lừa hàng trăm những con bọ bay vào gầm tầm với của lưỡi ếch. Chúng kiếm mồi dễ nên to béo khác thường. Có vài con bằng cỡ đầu gấu, mồm và đôi mắt trố rộng bằng hai bàn tay có cộng lại.
+</p>
+
+<p>
+ Những con ếch làm Eragon nhớ tới Angela. Nó đột nhiên ước bà ở trên Vroengard cùng họ. Nếu ai có thể nói cho chúng ta biết tên thật, mình đoán sẽ là bà ấy. Vì lý do gì đó, Eragon luôn có cảm giác bà lang thấu hiểu nó, hiểu mọi thứ về nó. Nó không thích nhưng lúc này thì nó mong điều đó.
+</p>
+
+<p>
+ Nó và Solembum quyết định sẽ tin Solembum và ở lại Vroengard thêm ba ngày nữa để tìm ra tên thật. Glaedr đã cho chúng tự quyết định. Ông nói, Các con biết rõ Solembum hơn ta. Ở hay không tùy các con. Nhưng kiểu gì thì chúng ta cũng gặp nguy hiểm. Không có con đường mòn nào là an toàn cả.
+</p>
+
+<p>
+ Saphira là người đưa ra quyết định. Những ma mèo không bao giờ phục vụ, Galbatorix, cô nàng nói. Họ rất coi trọng tự do. Con tin họ hơn bất cứ sinh vật nào khác, kể cả thần tiên.
+</p>
+
+<p>
+ THế là họ ở lại.
+</p>
+
+<p>
+ HỌ dành phần còn lại của ngày hôm dó và hầu hết ngày hôm sau để ngồi, suy nghĩ, nói chuyện, chia sẻ ký ức, kiểm tra đầu óc kẻ khác và thử hàng tá cách kết hợp từ ngữ bằng ngôn ngữ cổ hòng tìm ra tên thật. Hoặc,nếu may mắn, họ sẽ tình cờ tìm ra nó.
+</p>
+
+<p>
+ Glaedr giúp nếu chúng hỏi. Nhưng phần lớn thời gian, ông im lặng và để Eragon và Saphira trò chuyện riêng tư. Eragon có nhiều điều nó xấu hổ không muốn người khác biết. Chỉ có người đó mới tìm ra tên thật của người đó, Glaedr nói. Nếu ta biết, ta sẽ nói – vì chúng ta không có thời gian mà lãng phí – nhưng tốt nhất là các con tự mình tìm lấy.
+</p>
+
+<p>
+ Nhưng chẳng ai thành công cả.
+</p>
+
+<p>
+ Kể từ khi ông Brom giải thích cho nó về tên thật của mình, Eragon đã muốn biết nó tên gì. Những kiến thức, đặc biệt là những kiến thức về bản thân, vô cùng hữu ích. Nó hy vọng tên thật của nó sẽ giúp nó làm chủ suy nghĩ và cảm xúc tốt hơn. Nhưng nó vẫn cảm thấy lo lắng vì cái nó có thể tìm ra.
+</p>
+
+<p>
+ Nó không chắc nó có thể biết tên mình chỉ trong nội mấy ngày sắp tới không. Nó hy vọng là mình làm được, vì nó muốn hoàn thành nhiệm vụ và không muốn Glaedr hay Saphira biết được. Nếu nó phải tìm ra một từ miêu tả chính xác con người nó, nó muốn tự mình biết, hay vì để người khác nói cho mình nghe.
+</p>
+
+<p>
+ Eragon thở dài khi trèo lên bốn bậc thang vỡ dẫn vào tòa nhà. Kiến trúc này từng theo kiểu nhà tổ chim. Hay theo như Glaedr nói, theo chuẩn mực của Vroengard, tỏa nhà này quá bé nhỏ. Dù vậy nhưng những bức tường vẫn cao hơn tòa nhà ba tầng, không gian bên trong đủ cho Saphira ra vào dễ dàng. Góc nhà phía đông nam đã sụp cùng một phần mái nhà, nhưng phần còn lại vẫn ngon lành.
+</p>
+
+<p>
+ Tiếng bước chân của Eragon vang vọng khi bước qua sàn nhà mọc cỏ vào căn phòng chính.
+</p>
+
+<p>
+ Saphira dừng liếm chân trước. Nó cảm thấy cô nàng có gì muốn hỏi nó. Nó lắc đầu, và cô nàng tiếp tục chải chuốt.
+</p>
+
+<p>
+ Eragon bỏ áo choàng, bước đến bên cạnh đống lửa gần tường. Nó trải tấm vải ướt trên sàn sau đó bỏ đôi giày dính bùn ra và để chúng gần đống lửa cho nhanh khô.
+</p>
+
+<p>
+ Có phải trời lại sắp mưa không? Saphira hỏi.
+</p>
+
+<p>
+ Có thể.
+</p>
+
+<p>
+ Nó ngồi xổm gần đống lửa một lức rồi ngồi lên túi ngủ và dựa vào tường. Nó quan sát Saphira dùng cái lưỡi đỏ ngầu liếm móng chân. Nó đột nhiên nghĩ ra là lẩm bẩm một cụm từ bằng ngôn ngữ cổ, nhưng chẳng cảm nhận được gì từ từ ngữ đó. Saphira cũng không có phản ứng như khi lão Sloan nghe ra Eragon nói tên thật của lão.
+</p>
+
+<p>
+ Eragon nhắm mắt ngửa đầu ra sau.
+</p>
+
+<p>
+ Nó chán nản vì tự mình không tìm ra tên thật của Saphira. Nó có thể chấp nhận rằng mình không hoàn toàn hiểu bản thân. Nhưng nó biết Saphira từ giây phút cô em nó chui khỏi vỏ trứng. Nó biết hầu hết những gì cô nàng biết. Làm sao có chuyện cô nàng có gì giấu nó được? Sao nó có thể hiểu một kẻ giết người như lão Sloan hơn là người bạn đồng hành được phép thuật – ràng buộc? Có phải vì cô nàng là rồng còn nó là người? Có phải vì Sloan đơn giản hơn Saphira?
+</p>
+
+<p>
+ Eragon không biết nữa.
+</p>
+
+<p>
+ Một trong những bài tập mà nó và Glaedr làm – theo gợi ý của sư phụ Glaedr - là nói cho nhau biết từ chi tiết họ để ý tới: về người bạn đồng hành. Một bài tập bình thường. Glaedr cũng đưa ra những nhận xét. Dù ông rồng chỉ tốt bụng muốn giúp nhưng Eragon vẫn không thể không cảm thấy tổn thương lòng tự trọng khi nghe Glaedr kể ra một loạt những khuyết điểm. Bản thân Eragon cũng biết nó cần phải biết để tìm ra tên thật.
+</p>
+
+<p>
+ Đối với Saphira, điều khó nhất là nhận ra tính tự phụ của mình. Cô nàng luôn phủ nhận điều này. Đối với Eragon, đó là sự ngờ nghệch, cảm giác quan tâm đối với người nó đã ra tay giết hại, và tất cả những tính nóng giận, ích kỷ và những tật xấu khác trong con người nó.
+</p>
+
+<p>
+ Nhưng, dù họ đã thành thật với bản thân hết sức có thể, họ vẫn không khám phá ra điều gì.
+</p>
+
+<p>
+ Chúng ta chỉ còn hôm nay và ngày mai. Ý nghĩ tay trắng quay về với Varden làm nó buồn. Làm sao chúng ta đánh bại được Galbatorix đây? Nó tự hỏi rất nhiều lần. Chỉ vài ngày nữa là mạng sống chúng ta sẽ không còn nằm trong tầm tay của chúng ta.Chúng ta sẽ trở thành nô lệ, giống như Murtagh và Thorn.
+</p>
+
+<p>
+ Nó lầm bẩm chửi rủa và lén lút đấm tay xuống sàn.
+</p>
+
+<p>
+ Bình tĩnh nào, Eragon, Glaedr nói. Eragon nhận ra ông rồng đã bao lấy suy nghĩ nó để Saphira không nghe được.
+</p>
+
+<p>
+ Sao con bình tĩnh được chứ?
+</p>
+
+<p>
+ Rất dễ để bĩnh tĩnh khi con không có gì để lo lắng, Eragon ạ. Nhưng, thử thách giành cho sự kiềm chế bản thân là liệu con có giữ đường bình tĩnh trong những tình huống khó khăn nhất hay không. Con không thể để sự tức giận hay nỗi thất vọng làm mờ ý chí của con. Ngay lúc này, đầu óc con cần sáng.
+</p>
+
+<p>
+ Người có thể luôn giữ bình tĩnh trong tình huống như thế này không?
+</p>
+
+<p>
+ Ông rồng già dường như đang cười. Không, ta thường gầm lên và cắn và đá đổ cây cũng như xé toang mặt đất. Ta đã có lần lật tung một đỉnh núi trên rặng Spine. Những con rồng khác giận ta lắm. Nhưng ta đã có rất nhiều năm học được rằng giận dữ chẳng giúp được gì. Ta biết con không có, nhưng hãy để kinh nghiệm của ta giúp con. Hay bỏ qua những lo lắng và tập trung vào nhiệm vụ trước mắt. Điều gì cần đến sẽ đến, và lo lắng về nó chỉ khiến nỗi sợ của con trở thành hiện thực mà thôi.
+</p>
+
+<p>
+ Con biết, Eragon thở dài, nhưng làm thì đâu có dễ.
+</p>
+
+<p>
+ Tất nhiên là không dễ. Nhưng có vài thứ cần phải như vậy. Sau đó Glaedr rời đi và để lại nó một mình trong im lặng.
+</p>
+
+<p>
+ Eragon kiếm cái bát trong túi, nhảy lên trên vòng tròn đá bán nguyệt rồi đi chân trần trên vũng nước bên dưới lỗ hổng trần nhà. Một trận mưa phùn nhẹ đang bắt đầu rơi,phủ lên sàn nhà một lớp nước khiến người ta dễ trượt chân. Nó ngồi chồm hổm gần vũng nước và dùng cái bát để múc nước.
+</p>
+
+<p>
+ Khi bát nước đã đầy, Eragon lùi lại vài bước và đặt nó lên một tảng đá nặng bằng cả một cái bàn. Sau dó nó nghĩ tới Roran và thì thầm, “Draumr kópa.”
+</p>
+
+<p>
+ Nước trong bát rung lên, hình ảnh Roran xuất hiện trên nền trắng tinh khiết. Anh đang đi bên cạnh chú Horst và Albriech và dắt thêm con ngựa của anh, Hỏa Tuyết. Cả ba người đều mệt mỏi và đau chân, nhưng họ vẫn mang theo vũ khí. Eragon biết vậy là Triều đình chưa bắt được họ.
+</p>
+
+<p>
+ Sau đó nó triệu hồi Jörmundur, rồi Solembum – lúc này đang xé một con chim sáo vừa bị giết chết – rồi tới Arya, nhưng lá chắn của Arya đã không cho nó nhìn thấy nàng. Nó chỉ thấy một màn đen.
+</p>
+
+<p>
+ CUối cùng Eragon dừng câu thần chú và đổ nước trở lại vũng nước. Khi nó leo lên hàng rào chắn xung quanh khu trại, Saphira vươn người và ngáp, người cô nàng cong lên như một con mèo. Cô nàng nói, Họ sao rồi?
+</p>
+
+<p>
+ “An toàn.”
+</p>
+
+<p>
+ Nó đặt cái bát vào túi rồi nằm trên túi ngủ, nhắm mắt lại và tiếp tục tìm kiếm tên thật. Cứ vài phút nó lại nghĩ ra vài khả năng, nhưng chẳng cái nào đúng cả. Nó lại tiếp tục tìm kiếm cái mới. Tất cả những cái tên đều mang theo vài điều tất yếu: nó là kỵ sĩ; sự ảnh hưởng cúa nó tới Saphira và Arya; khát vọng muốn đánh bại Galbatorix; quan hệ của nó với Roran, cậu Garrow, ông Brom và quan hệ máu mủ với Murtagh. Nhưng dù nó hết hợp những yếu tố đó thế nào, nó vẫn không tìm ra được cái tên. Rõ ràng nó đã quên mất một nét đặc thù của bản thân mình. Vì thế càng lúc nó càng tạo ra cái tên dài lê thê, hy vọng sẽ vô tình tìm ra cái nó đang tìm kiếm.
+</p>
+
+<p>
+ Khi những cái tên phải mất hàng phút mới đọc xong, nó nhận ra nó đang phí thời gian. Nó cần kiểm tra lại bản thân. Nó nghĩ lỗi của mình nằm ở việc bỏ qua một số khiếm khuyết, hoặc không đủ quan tâm tới những điểm yếu vốn có của bản thân. Nó biết, hầu hết mọi người thường không muốn biết về sự khiếm khuyết của bản thân. Nó cũng vậy. Bằng cách nào đó, nó phải tìm cách mở mắt cho mình. Nó không nhìn ra khiếm khuyết do nó bị che mắt bởi lòng tự trọng và tự tôn quá lớn. Nó cứ nghĩ bản thân nó là người hoàn hảo. Giờ nó không muốn tiếp tục dối lòng nữa.
+</p>
+
+<p>
+ Vì thế, nó cứ nghĩ và nghĩ, nhưng vẫn thất bại.
+</p>
+
+<p>
+ Mưa càng lúc càng nặng hạt. Eragon không thích tiếng mưa rơi trên vũng nước. m thanh vô thưởng vô phạt đó khiến nó khó lòng nghe thấy tiếng nếu có kẻ khác định đánh lén chúng. Từ đêm đầu tiên ở Vroengard, nó đã không thấy hay cảm nhận được những người lạ mặt đội mũ trùm nữa. Nhưng, Eragon vẫn biết tới sự hiện diện của họ. Nó có cảm giác như mình và Saphira có thể bị tấn công bất cứ lúc nào.
+</p>
+
+<p>
+ Những tia nắng xám xịt của một ngày dần biến mất trong hoàng hôn. Một buổi tối đen kịt, không trăng không sao bao trùm thung lũng. Eragon cho thêm nhiều củi vào đống lửa. Đó là nguồn sáng duy nhất trong căn nhà tổ chim. Ngọn lửa vangd đó giống như ngọn nến bé tí tẹo trong một không gian rộng lớn, vang vọng. Sàn nhà mọc cỏ gần đống lửa phản chiếu ánh sáng từ những que củi cháy. Nó sáng lên như phủ băng đá, những màu sắc thường làm Eragon xao lãng.
+</p>
+
+<p>
+ Eragon không ăn tối. Nó đói, nhưng quá căng thẳng khiến thức ăn không thể ở yên trong dạ dày.. Nó nghĩ thức ăn sẽ làm chậm suy nghĩ. Không khi nào đầu óc nó hoạt động tốt bằng khi dạ dày rỗng không.
+</p>
+
+<p>
+ Nó quyết định sẽ không ăn cho tới khi tìm ra tên thật, hoặc tới khi họ rời đảo.
+</p>
+
+<p>
+ Vài tiếng trôi qua. Họ nói rất ít, dù Eragon vẫn để ý tới những cảm xúc và suy nghĩ chung nhất của Saphira. Cô nàng cũng vậy.
+</p>
+
+<p>
+ Sau đó, khi Eragon định đi ngủ và mơ – để nghi ngơi và hy vọng những giấc mơ sẽ cho nó vài gợi ý – Saphira kêu yowl, duỗi móng chân phải và đặt nó xuống sàn. Vài cảnh củi trong đống lửa bật lên và rời ra, khiến vài tàn lửa bắn lên trần nhà.
+</p>
+
+<p>
+ Eragon giật mình đứng dậy, rút thanh Brisingr trong khi tìm kiếm trong bóng tối xem kẻ thù trốn ở đâu. Một giây sau, nó nhận ra Saphira không phải đang lo lắng hay giận dữ, mà là cảm giác chiến thắng.
+</p>
+
+<p>
+ Em làm được rồi! Saphira reo lên. Cô nàng ngửng cổ thở ra một ngọn lửa xanh vào lên mái nhà. Em biết tên thật của em rồi! Cô nàng nói một đoạn ngôn ngữ cổ. Bên trong đầu óc Eragon dười như rung lên như chuông. Một giây sau, những cái vảy Saphira sáng lên. Cô nàng trông như được tạo nên từ những vì sao.
+</p>
+
+<p>
+ Cái tên đó thật lớn lao và tráng lệ, nhưng lại nhuốm chút buồn thương, vì cô là con rồng cái cuối cùng. Trong những từ đó, Eragon nghe thấy được cả tình yêu và sự cống hiến cô nàng dành cho nó, cũng như những đặc điểm làm nên tính cách cô nàng. Nó nhận ra hầu hết; nhưng một vài thì không. Những tật xấu và những điểm tốt đều nổi bật; nhưng trên hết, đó là sự nhấn mạnh tới ngọn lửa, vẻ đẹp và sự tráng lệ.
+</p>
+
+<p>
+ Saphira rung lên từ mũi tới chóp đuôi. Cô nàng rung cánh.
+</p>
+
+<p>
+ Em đã biết em là ai, cô nàng nói.
+</p>
+
+<p>
+ Giỏi lắm, Bjartskular, Glaedr nói và Eragon có thể thấy được sự ấn tượng của ông rồng.Con có một cái tên đáng để tự hào. Nhưng ta sẽ không nhắc lại cái tên đó, dù nói thầm, cho tới khi chúng ta tới... tới cái ngọn tháp. Con phải cẩn trọng không được tiết lộ cái tên của mình.
+</p>
+
+<p>
+ Saphira chớp mắt rung cánh lần nữa. Vâng, thưa Sư phụ. Cô nàng đang vô cùng phấn khích.
+</p>
+
+<p>
+ Eragon bỏ Brisingr vào bao và đi tới cạnh cô em. Cô nàng cúi thấp xuống ngang tầm nó. Nó vuốt ve hàm cô nàng, rồi ấn trán lên cái mũi cứng và giữ chặt. Những cái vảy thật sắc dưới cảm nhận của nó. Những giọt nước má nóng bắt đầu chảy xuống má nó.
+</p>
+
+<p>
+ Sao anh khóc? Cô nàng hỏi.
+</p>
+
+<p>
+ Vì...anh thật may mắn khi có em.
+</p>
+
+<p>
+ Ôi, anh bé nhỏ.
+</p>
+
+<p>
+ Họ nói chuyện thêm một lúc nữa, vì Saphria rất muốn nói về những thứ cô đã biết về bản thân. Eragon vui vẻ lắng nghe, nhưng nó vẫn có chút cay đắng vì vẫn chưa tìm ra tên thật của mình.
+</p>
+
+<p>
+ Sau đó Saphira cuộn người lại và đi ngủ, để lại Eragon một mình dưới ánh sáng của ngọn lửa trại đang dần tàn lụi. Glaedr vẫn thức. Thi thoảng Eragon nói chuyện với ông, nhưng chủ yếu nó dành thời gian mà ngẫm nghĩ.
+</p>
+
+<p>
+ Hàng giờ trôi qua, Eragon càng lúc càng buồn. Nó chẳng còn bao nhiêu thời gian – theo đúng lịch trình, ngày mai nó và Saphira sẽ rời Vroengard – nhưng tới lúc này nó vẫn không thể hiểu bản thân.
+</p>
+
+<p>
+ Gần tới nửa đêm, mưa đã tạnh.
+</p>
+
+<p>
+ Eragon bồn chồn cố quyết định. Sau đó nó đứng dậy vì không thể nào ngồi lâu hơn được nữa. Con sẽ đi dạo, nó nói với Glaedr.
+ <br/>
+ Nó cứ nghĩ ông rồng già sẽ phản đối. Nhưng thay vào đó, Glaedr nói, Bỏ lại vũ khí và áo giáp lại.
+ <br/>
+</p>
+
+<p>
+ Vì sao ạ?
+</p>
+
+<p>
+ Dù con tìm thấy cái gì, con phải tự mình đối mặt. Con không thể biết con là cái gì nếu con dựa vào sự giúp đỡ của người khác hay thứ khác.
+</p>
+
+<p>
+ Eragon hiểu những gì Glaedr nói, nhưng nó vẫn không muốn tháo bỏ kiếm và dao găm cùng áo giáp. Nó đeo giày và mặc áo choàng ướt vào. Sau đó nó đặt túi đựng trái tim của Glaedr gần Saphira hơn.
+</p>
+
+<p>
+ Khi Eragon dợm bước rời khỏi vòng tròn đá, Glaedr nói, Làm cái gì con cần, nhưng phải cẩn thận.
+</p>
+
+<p>
+ Bên ngoài ngôi nhà tổ chim, Eragon mừng thấy những ngôi sao và ánh trăng đang chiếu qua những đám mây soi tỏ đường lối xung quanh.
+</p>
+
+<p>
+ Nó nhảy lên vài lần. Nó không biết đi đâu. Sau rồi nó quyết định tới trung tâm thành phố đổ nát. Sau vài giây, nó đỡ buồn hơn và tăng nhịp bước.
+</p>
+
+<p>
+ Khi lắng nghe tiếng thở và tiếng bước chân vang lên trên những tảng đá lát đường, nó tự hỏi mình, MÌnh là ai? Nhưng nó không có câu trả lời.
+</p>
+
+<p>
+ Nó chạy cho tới khi gần như không thở nổi. Nó chạy thêm một chút nữa cho tới khi không còn đủ sức. Nó dừng lại bên một đài phút nước nổi đầy rêu và dựa tay vào trong khi phục hồi hơi sức.
+</p>
+
+<p>
+ Chung quanh nó là những tòa nhà khổng lồ: những người khổng lồ trong bóng đêm đó trông giống như những rặng núi cổ xưa vậy. Đài phun nước nằm giữa một sân hình vuông rộng lớn, nhiều viên đá trên đó đã bị vỡ vụn.
+</p>
+
+<p>
+ Nó đẩy mình đứng dậy, và từ từ đi vòng quanh. Từ xa xa, nó nghe có tiếng ếch bò kêu ồm ộp. m thanh đó càng lớn đặc biệt khi có thêm một con nào tham gia cùng.
+</p>
+
+<p>
+ Một phiến đá vỡ cách đó vài mét khiến nó chú ý. Nó đi tới, bám vào cạnh đá và dùng sức nâng nó lên khỏi mặt đất. Nó đau rần tay và loạng choạng đi vào bước tới góc sân, và ném phiến đá lên lớp cỏ trên đó.
+</p>
+
+<p>
+ NÓ hạ cánh đánh bụp.
+</p>
+
+<p>
+ Nó lùi lại đài phút nước, cởi áo choàng và ném nó lên bức tượng. Sau đó nó tới cạnh một viên đá khác – một viên đá hình chữ V rơi khỏi một tảng đá lớn hơn – và đặt nó lên vai.
+</p>
+
+<p>
+ Trong một giờ đồng hồ, nó làm sạch toàn bộ sân. Vài tảng đá quá lớn, nó phải dùng pháp thuật để di chuyển nhưng hầu hết nó làm bằng tay. Nó làm rất có phương pháp. Nó đi đi lại lại trong sân, và với mỗi tảng đá, nó đều dừng lại và di chuyển chúng đi.
+</p>
+
+<p>
+ Nó toát mồ hôi. Nó muốn cởi áo, nhưng nếu thế những rìa sắc nhọn của những tảng đá sẽ làm nó bị thương. Như thường lệ, nó lĩnh vài vết bầm trên ngực và vai, tay xước không biết bao nhiêu vết.
+</p>
+
+<p>
+ Lao động giúp nó bình tĩnh và vì công việc không đòi hỏi nó nghĩ nhiều, nó thoát khỏi những suy nghĩ rối ren về chuyện nó đang và sẽ là ai.
+</p>
+
+<p>
+ Khi đang làm dở công việc, khi đang ngồi nghỉ, nó nghe có tiếng rít đầy đe dọa. Nó nhìn thấy một con snalglí – vỏ nó phải cao 1.2m – đang lao ra khỏi bóng tối với tốc độ đáng giật mình. Cái cổ không xương của sinh vật thò ra hoàn toàn, cái mồm không môi của nó trông như một hố đen, con mắt trố lố đang nhìn thẳng vào Eragon. Dưới ánh trưng, phần thịt lộ ra ngoài của snalglí cùng đường nhớt nó để lại trên mặt đất sáng lên như bạc
+</p>
+
+<p>
+ “Letta,” Eragon nói và đứng thẳng dậy, vẩy sạch máu từ bàn tay bị thương. ““Ono ach néiat threyja eom verrunsmal edtha, O snalglí.”
+</p>
+
+<p>
+ Khi nó cảnh cáo, con ốc sên chậm lại và đảo mắt một chút. Nó dừng lạ khi còn cách Eragon một đoạn. Nó lại rít lên và vòng sang bên trái.
+</p>
+
+<p>
+ “Ôi, đừng thế chứ,” Eragon lầm bầm và quay theo con vật. Nó liếc nhìn để chắc chắn không còn một snalglí nào lảng vảng quanh đây.
+</p>
+
+<p>
+ Con ốc sên khổng lồ dường như nhận ra nó không khiến Eragon bất ngờ. Nó dừng lại và rít lên và đảo tròng mắt.
+</p>
+
+<p>
+ “Mày kêu như ấm đun nước sôi ấy,” Eragon nói.
+</p>
+
+<p>
+ Đôi tròng mắt của snalglí đảo nhanh hơn rồi nhìn thẳng vào Eragon.
+</p>
+
+<p>
+ Eragon đợi tới phút chót rồi nhảy sang một bên và để cho snalglí lỡ trón phóng qua. Nó cười và vỗ lên vỏ sinh vật. “Mày cũng chẳng quá thông minh nhỉ?” Nó nhảy qua và bắt đầu nói chuyện với sinh vật, gọi nó bằng đủ cái tên thóa mạ nhưng chính xác.
+</p>
+
+<p>
+ Con ốc sên hình như đang điên lên – cổ nó phình lên, nó mở miệng nhanh hơn và bắt đầu vừa rít vừa phun phì phì.
+</p>
+
+<p>
+ Sinh vật hết lần này tới lần khác lao vào Eragon. Lần nào Eragon cũng nhảy tránh. Cuối cùng snalglí mệt. Nó lùi lại gần 6m và nhìn chằm chằm Eragon bằng đôi tròng mắt to bằng cả nắm tay.
+</p>
+
+<p>
+ “Mày tóm được mọi thứ kiểu gì khi chậm thế hả?” Eragon chế nhạo hỏi. Nó lè lưỡi trêu ngươi con ốc sên.
+</p>
+
+<p>
+ Con snalglí lại rít lên. Sau đó nó quay người chui vào bóng tối.
+</p>
+
+<p>
+ Eragon đợi vài phút cho chắc sinh vật đã bỏ đi trước khi quay lại dọn đống đá vụn. “Có lẽ mình nên lấy hiệu là Khắc tinh của Ốc sên mới đúng,” nó lầm bầm khi lăn một cột đá trên sân. “Eragon, Khắc tinh của Tà thần, Khắc tinh của Ốc sên... Mình sẽ khiến nhiều người sợ tới tim đập chân run ấy chứ.”
+</p>
+
+<p>
+ Đêm đã vào thời gian đen tối nhất thì nó cuối cùng cũng dọn sạch cái sân. Nó đứng đó mà thở dốc. Nó lạnh, đói và mệt. Những vết thương trên bàn tay và cổ tay cứ nhói lên.
+</p>
+
+<p>
+ Nó đứng tại góc đông bắc cái sân. Phía bắc là một đại sảnh lớn đã bị hủy hoại hầu hết trong chiến tranh. Nhưng gì còn lại chỉ là một bức tường đen và một cột đá bị trường xuân cuốn quanh ở nơi từng là lối vào.
+</p>
+
+<p>
+ Nó nhìn cột đá lâu nhất. Trên đó, là những ngôi sao – màu đỏ, xanh và trắng – chiếu sáng trên bầu trời như những viên kim cương đã được đẽo gọt. Nó cảm thấy bị cuốn hút vì một thứ gì đó kỳ quặc.
+</p>
+
+<p>
+ Nó vô thức bước tới chân cột – trên mặt đất lổn nhận đất đá – rồi vươn cao hết mức có thể và chạm vào bụi trường xuân mọc dày nhất. Những sợi dây leo tô bằng cẳng tay nó và có hàng ngàn rễ con.
+</p>
+
+<p>
+ Nó giật sợi dây leo. NÓ bám chắc, thế là Eragon nhảy khỏi mặt đất và trèo lên. Nó ước chừng cột đá cao 90 mét, nhưng khi leoo lên nó cảm thấy cột đá còn cao hơn nhiều.
+</p>
+
+<p>
+ Nó biết nó đang hấp tấp, nhưng sau đó, nó cảm thấy mình hấp tấp.
+</p>
+
+<p>
+ Được nửa chừng, những sợi tua nhỏ hơn của dây leo bắt đầu tuột khỏi đá khi nó bám vào. Sau đó, nó phải cẩn thận chỉ bám vào những cành chính và những nhánh cây dày hơn.
+</p>
+
+<p>
+ Nó suýt tuột tay khi gần lên tới nóc.. Chóp cột đá vẫn còn nguyên vẹn. Nó là một mặt phẳng hình vuông đủ lớn để ngồi lên mà còn thừa ra mỗi bên 0,3 m.
+</p>
+
+<p>
+ Eragon hơi run. Nó khoanh chân và đặt hai tay lên đầu gối, để cho không khí mơn man làn da bị thương.
+</p>
+
+<p>
+ Bên dưới nó là thành phố đổ nát; một mê cung những thứ đổ nát thường vọng lại những tiếng kêu thét kỳ lạ và tuyệt vọng. Ở vài nơi từng là một hồ nước, nó thấy ánh sáng mờ mờ từ đèn bắt mồi của những con ếch bò, giống như ánh đèn nhìn từ khoảng cách xa.
+</p>
+
+<p>
+ Những con ếch câu cá, nó đột nhiên nghĩ bằng ngôn ngữ cổ. Đó là tên chúng: ếch câu cá. Nó biết nó đúng, vì từ ngữ đó đúng như kiểu chìa khóa tra đúng ổ vậy.
+</p>
+
+<p>
+ Sau đó nó nhìn những ngôi sao bên đầu. Nó thở từ từ và tập tủng duy trì cách thở. LẠnh, đói, run rẩy khiến nó cảm thấy cực kỳ minh mẫn. Nó như đã thoát xác, như thể kết nổi giữa tinh thần và xác thịt đã lỏng lèo hơn. Nó đang trôi lên trên ngắm toàn bộ thành phố và hòn đảo. Nó cực kỳ nhạy cảm với từng luồng gió và từng âm thanh và mùi vị thổi qua đỉnh cột đá.
+</p>
+
+<p>
+ Nó ngồi đó, nghĩ đến nhiều cái tên hơn. Dù không cái nào mô tả hoàn toàn về nó, nhưng thất bại không làm nó nản lòng, vì giờ đây sự minh mẫn đang ở sâu trong con người nó.
+</p>
+
+<p>
+ Làm sao mình có thể miêu tả toàn bộ con người mình chỉ bằng vài từ? Nó phân vân và tiếp tục đặt những câu hỏi khi quan sát những vì sao.
+</p>
+
+<p>
+ Ba bóng đen biến dạng bay qua thành phố - như những vết rạn nhỏ, biết chuyển động vậy – đậu xuống mái nhà bên trái nó. Sau đó, những bóng ma cú dựng lông lên và nhìn nó bằng đôi mắt sáng như mắt quỷ. NHững bóng đen rì rào nói chuyện với nhau. Hai trong số chúng rỉa cánh bằng những móng vuốt đen sì. Con thứ ba đang dùng móng vuốt đen như gỗ mun quặp một con ếch bò.
+</p>
+
+<p>
+ Nó quan sát những con chim ma vài phút, chúng cũng nhìn lại nó.Sau đó chúng bay đi và biến mất ở phía động, phát ra tiếng động không to hơn tiếng lông rơi là mấy.
+</p>
+
+<p>
+ Gần bình minh, Eragon nhìn thấy ngôi sao mai giữa hai đỉnh núi phía đông. Nó tự hỏi. “MÌnh muốn cái gì?”
+</p>
+
+<p>
+ Tới lúc đó, nó chẳng cần nghĩ sâu xa hơn tới câu trả lời. Tất nhiên nó muốn hạ bệ Galbatorix. Nhưng, liệu nó và quân Varden có thành công không? Từ khi nó rời khỏi Thung lũng Palancar, nó cứ nghĩ nó và Saphira sẽ có ngày trở lại, ở ngọn núi nó yêu thích. Nhưng, giờ khi nghĩ lại, nó chẳng hứng thú gì nữa.
+</p>
+
+<p>
+ Nó đã lớn lên ở Thung lũng Palancar. Nó luôn coi đó là quê hương của nó. Nhưng ở đó còn gì cho nó hay Saphira thương nhớ? Làng Carvahall đã bị hủy diệt, mà kể cả nếu dân làng có dựng lại làng, ngôi làng cũng không còn như cũ nữa. Hơn nữa, bạn bè của nó và Saphira hầu hết sống ở nơi khác. Nó và Saphira có nghĩa vụ với rất nhiều nòi giống của Alagaësia. CHúng không thể lờ những trách nhiệm đó đi. Và sau tất cả những gì chúng đã làm và chứng kiến, nó không nghĩ rằng cả hai có thể sống tại một nơi tách biệt và giản dị như thế.
+</p>
+
+<p>
+ Vì bầu trời khum khum còn trái đất hình tròn...
+</p>
+
+<p>
+ Kể cả nếu chúng quay lại, chúng sẽ làm gì nào? Chăn bò và trồng lúa mì ư? Nó không muốn sống chắt bóp như đã từng sống hồi thơ bé. Nó và Saphira giờ là Kỵ sĩ và rồng. Định mệnh tới chết của chúng là bay tới tận cùng lịch sử, chứ không phải ngồi trước đống lửa tới béo ị ra.
+</p>
+
+<p>
+ Và còn Arya nữa. Nếu nó và Saphira sống ở Thung lũng Palancar, nó sẽ hiếm, nếu không muốn nói là không bao giờ, được gặp lại nàng.
+</p>
+
+<p>
+ “Không,” Eragon nói, từ ngữ vang lên trong cảnh tĩnh lặng như một tiếng búa nện. “MÌnh không muốn trở lại.”
+</p>
+
+<p>
+ Nó lạnh sống lưng. Nó biết nó đã thay đổi từ ngày nó, ông Brom và Saphira rời đi lần theo dấu vết Ra’zac. Nhưng nó vẫn nghĩ, sâu trong tâm khảm, nó vẫn là con người cũ. Nhưng giờ nó biết là không phải. Câu nhóc lần đầu tiên đặt chân ra khỏi thung lũng Palancar đã không còn; Eragon không giống cậu nhóc đó, không hành động như cậu nhóc đó, và nó không còn mong muốn những thứ như cậu nhóc đó.
+</p>
+
+<p>
+ Nó hít một hơi thật sâu và thở dài khi thấm thía sự thật đó.
+</p>
+
+<p>
+ “Mình không còn là mình nữa.” Nó nói lớn như để giảm bớt sức nặng.
+</p>
+
+<p>
+ Sau đó, khi ánh bình minh đầu tiên chiếu sáng bầu trời phía đông của Vroengard – nơi các Kỵ sĩ và rồng từng sinh sống, nó nghĩ tơi một cái tên – một cái tên nó chưa bao giờ nghĩ tới. Nhưng khi đã nghĩ ra, nó vô cùng chắc chắn.
+</p>
+
+<p>
+ Nó nói cái tên, thì thầm nó cho riêng mình nghe. Toàn bộ cơ thể nó như ngay lập tức run lên, như thể Saphira đang rung cây cột vậy.
+</p>
+
+<p>
+ Sau đó nó thở gấp và vừa cười vừa khóc – cười vì nó thành không và vì hạnh phúc vì đã hiểu bản thân; khóc vì tất cả những thiếu sót và những sai lầm của mình giờ đã trở nên rõ ràng. Giờ nó không thể lờ chúng đi để làm mình vui vẻ.
+</p>
+
+<p>
+ “Mình không còn là mình nữa,” nó thì thầm và bóp chặt láy một bên cột, “nhưng mình biết mình là ai.”
+</p>
+
+<p>
+ Cái tên, cái tên thật của nó, yếu và nhiều khiếm khuyết hơn nó thích. Nó ghét bản thân vì điều đó. Nhưng trong đó có rất nhiều điều để ngưỡng mộ. Nó càng nghĩ tới cái tên đó nhiều, nó càng chấp nhận được bản chất con người mình hơn. Nó không phải người tốt nhất trên thế giới này. Nhưng nó không phải kẻ tệ hại nhất.
+</p>
+
+<p>
+ “Và minh sẽ không bỏ cuộc,” nó hét lên.
+</p>
+
+<p>
+ Nó thấy được an ủi vì tính cách không phải cái bất biến. Nó có thể cải thiện bản thân nếu muốn. Và lúc này, nó thề với lòng sẽ làm tốt hơn trong tương lai, dù có khó khăn thế nào.
+</p>
+
+<p>
+ Nó vẫn vừa cười vừa mà ngửa mặt lên trời và dang rộng cánh tay. Lúc này, những giọt nước mắt và tiếng cười đã ngừng lại. Nó cảm thấy cực kỳ bình tĩnh. Dù Glaedr nhắc nhở gì, nó vẫn một lần nữa thì thầm tên thật, một lần nữa để cơ thể rung lên trước những từ ngữ.
+</p>
+
+<p>
+ Nó vẫn dang rộng cánh tay, đứng trên nóc cột đá, rơi cắm đầu xuống đất. Trước khi chạm mặt đất, nó nói, “Vëoht”. Nó rơi chậm lại, đảo người và đứng trên tảng đá vỡ nhẹ nhàng như vừa bước ra từ một cỗ xe ngựa.
+</p>
+
+<p>
+ Nó quay lại đài phun nước ở giữa sân và mặc lại áo choàng. Sau đó, khi ánh sáng chiếu tỏ thành phố đổ nát, nó rảo bước trở về nhà tổ chim, vui vẻ đánh thức Saphira và nói cho cô em nó và Glaedr về phát hiện của mình.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-050.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-052.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>
