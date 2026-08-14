@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 17 - Mạng Người L&#225; Rụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 17</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-016.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-018.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Về đêm, trạm trong rừng trông như con rắn ngủ im. Không biết đầu đâu, đuôi đâu. Những lều nối tiếp những lều. Mỗi một cái lều là một trời riêng tâm sự. Phần lớn nằm ngủ ở đây là dân Nam kỳ. Trước mặt họ là cha mẹ vợ con quê hương làng mạc gắn bó, sau lưng họ là miền Bắc lừa dối bạc bẽo mọi rợ xã nghĩa, một thứ đất đai đổi thay hình đổi dạng dần dần và sẽ biến thể không còn cái gì đặc sắc của Việt Nam. Ngay cả cái Tháp Rùa! Bây giờ đây cũng phải cụp cổ độ; một ông Sao to tổi bố nặng như xích như cùm. Hồ Gươm bây giờ là nơi người Hà Nội uống bia để than thở vận nước mạt rệp chứ không phải để ngắm di tích của ông cha.
+</p>
+
+<p>
+ Những thắng cảnh ở bãi biển Đồ Sơn, Sầm Sơn là nơi để cho các đồng chí Liên Xô phơi đùi phơi rốn, để cho Bộ Chánh trị đem vợ nhỏ xuống hú hí với nhau, để cho thủ trưởng đem gái con nuôi đến âu yếm, còn những thằng tập kết hai chục năm đi lính, những bần cố nông khố rách áo ôm không được bén mảng đến. Đã có lính xua họ như đuổi ruồi.
+</p>
+
+<p>
+ Những thằng Nam Bộ ra đất Bắc ăn mười cái Tết như đưa mười cái đám ma. Cụ Hồ đâu? Hồi ở trong Nam nghe lời kêu gọi của cụ chúng con coi lửa đạn như trò chơi, quyết chí xông pha giành độc lập cho Tổ quốc. Nguyễn Đình Chín tức Chín Heo sắp ra trường bắn lãnh đạn của thực dân vào ngực, còn cắn ngón tay lấy máu viết thư gởi Cha già dân tộc, bây giờ Cha già dân tộc ở trong hoàng cung, thăng “con” nào léo quéo tới lính cận vệ đặc biệt của cụ bắn thấy mẹ: “Cha già không có vợ, không có con?”
+</p>
+
+<p>
+ Địt mẹ chúng mày. Thực dân trở lại lần nữa để cho chúng mày kháng chiến. Ông trỏ c…, nằm không, chờ thực dân tới làm “dân nô lệ sướng hơn làm chủ nhân ông đất nước xã nghĩa quái gỡ!”
+</p>
+
+<p>
+ Bất thình lình tôi hỏi Cao:
+</p>
+
+<p>
+ - Mày tính về hay không mậy?
+</p>
+
+<p>
+ - Để coi!
+</p>
+
+<p>
+ - Coi gì nữa. Mười năm coi chưa đã sao, từ đầu đến háng, từ háng xuống chân mày còn coi thiếu cái gì nữa hả?
+</p>
+
+<p>
+ - Tao chỉ ngại một điều là về trong đó gặp lại vợ tao.
+</p>
+
+<p>
+ - Sao ngại?
+</p>
+
+<p>
+ - Tao không muốn nhìn thấy sự tan vỡ ở ngay trước mặt mình.
+</p>
+
+<p>
+ - Thì nó đã tan vỡ, ở trước mặt hay sau lưng cũng vậy thôi.
+</p>
+
+<p>
+ - Đã đành, nhưng nghe dễ chịu hơn thấy.
+</p>
+
+<p>
+ - Thấy rõ thì mới giải quyết được, còn nghe mơ hồ, chẳng giải quyết được gì. Mày gởi hình và thư mày về tức là mày chưa dứt được tình vợ chồng. Chi Hoa là một người đàn bà hiếm có. Phải không? Đêm tân hôn bỏ nhà ra đi theo mày. Mày còn đòi gì và với ai mà được như thế?
+</p>
+
+<p>
+ - Tao làm gì nào?
+</p>
+
+<p>
+ - Mày bỏ gia đình luôn từ đó đến nay!
+</p>
+
+<p>
+ - Tao đi kháng chiến mà!
+</p>
+
+<p>
+ - Đã đành là đi kháng chiến, nhưng đàn bà không có đàn ông trong nhà, điều đó, bây giờ tao mới nghĩ ra, là một tội lỗi… của thằng chồng.
+</p>
+
+<p>
+ - Nhưng đâu phải tao muốn làm nên tội lỗi đó..
+</p>
+
+<p>
+ - Mặc dầu mày không làm nhưng đó là tội lỗi của mày.
+</p>
+
+<p>
+ Cao thở dài đau đớn. Hồi lâu. Ánh đèn loạng choạng trong tay, bước chân gập ghềnh trên những mô đá đất dưới chân.
+</p>
+
+<p>
+ -Tao không biết làm sao bây giờ! Cao sịt mũi hai ba cái liền.
+</p>
+
+<p>
+ - Về đi, rồi sẽ có cách! – Tôi quả quyết.
+</p>
+
+<p>
+ Cao đưa tôi đến lều bảo:
+</p>
+
+<p>
+ - Nằm đó đi, tao đi triệu bà tới cho mày.
+</p>
+
+<p>
+ Tôi nằm, nghe rã rời cả tứ chi lẫn tâm thần. Tôi như một gốc cây mục bi xô ngã một cách hạnh phúc.
+</p>
+
+<p>
+ Rầm rầm rầm…! Rầm rầm rầm! Rầm rầm!
+</p>
+
+<p>
+ Tôi lăn xuống đất. Khi tôi tỉnh hồn dậy thì bốn phía rộ lên tiếng kêu thét hãi hùng. Hoàn hồn lại tôi mới hiểu ra đó là tiếng bom. Máy bay bỏ bom. Ban đêm!? Hay cà nông? Hay là cái gì khác?
+</p>
+
+<p>
+ Tiếng bom rền còn e e trong tai tôi. Có lẽ một trái bom rơi gần lắm cho nên hơi bom đánh bật tôi ra khỏi võng.
+</p>
+
+<p>
+ Tôi định thần lại một chốc rồi chạy bạt, mạng trở lều Vân. Vì tôi nghĩ có thể sau trận bom này giao liên đến di chuyển đoàn đi chỗ khác. Mình phải có mặt.
+</p>
+
+<p>
+ Đứng là tôi chạy bằng cặp “mắt cá” ở chân giữa trời tối như mực ngửa bàn tay không thấy. Vậy mà cuối cùng tôi vẫn đến nơi.
+</p>
+
+<p>
+ - Thằng Cao đâu? – Vân hỏi khi nhận ra tôi.
+</p>
+
+<p>
+ - Nó đi về đoàn chưa trở lại lều – Tôi hỏi lại – Cái gì vậy mậy?
+</p>
+
+<p>
+ - Bom trộm!
+</p>
+
+<p>
+ - Là bom gì?
+</p>
+
+<p>
+ - Là nó trút một phát cả chục trái lên đầu mình rồi đi chứ không chơi kiểu như cồng cộc bỏ bom ban ngày vọt lên lao xuống, bỏ từng chập chỉ chết ba con rắn mối.
+</p>
+
+<p>
+ - Cha chả, Mỹ chơi kiểu mới hả!
+</p>
+
+<p>
+ - Tại mình tụ họp ở đây nấu nướng tùm lum. Đấy hồi chiều, máà có thấy không, mỗi lều mỗi bếp, lửa đỏ như đèn bán hàng bông chợ Tết trong mình.
+</p>
+
+<p>
+ - Bom dội khúc đằng kia.
+</p>
+
+<p>
+ - Mày ở đâu?
+</p>
+
+<p>
+ - Gần đó.
+</p>
+
+<p>
+ Chập sau tôi mắc võng ướt ngoài lều, trải một tấm ni lông lên võng. Vân đưa cho tôi cái khăn khô của nó. Tuy lạnh lắm nhưng nước không thấm áo nên nằm một chốc là lại ngủ trong tiếng nhao nháo văng vẳng xa xa đằng kia.
+</p>
+
+<p>
+ Một chập. Tôi nghe có người đi ngang và hỏi:
+</p>
+
+<p>
+ - Ở đây có ông nào là y tá hay bác sĩ gì không các cha.
+</p>
+
+<p>
+ Tôi cố gắng trả lời:
+</p>
+
+<p>
+ - Tụi tôi là nhạc sĩ và nhà báo!
+</p>
+
+<p>
+ - Đồ ăn hại. Cút mẹ mày đi. Người ta bị thương, được cái ích lợi gì nhạc với báo.
+</p>
+
+<p>
+ Rồi đi thẳng. Tôi nằm im thin thít.
+</p>
+
+<p>
+ Tôi thiếp đi tới sáng. Vẫn còn nghe tiếng nhốn nháo. Tôi tỉnh lại hoàn toàn và nhớ lại câu chuyện đêm qua. Tôi muốn trở lại tìm Cao, nhất là để biết xem nó có hề hấn gì hay không. Rủi nó có mệnh hệ gì thì tôi ẩn hận suốt đời.
+</p>
+
+<p>
+ Giao liên tới mắng mỏ một chập, nào là ăn ở bừa bãi, nào là vô kỹ luật, nào là chủ quan khinh địch – rồi ra lệnh đi theo anh ta sang chỗ mới.
+</p>
+
+<p>
+ Anh ta dặn:
+</p>
+
+<p>
+ - Hai mươi mấy người chết và bị thương đó, các ông các bà liệu mà ăn ở có lợi cho cách mạng và cho bản thân..
+</p>
+
+<p>
+ Tôi hỏi:.
+</p>
+
+<p>
+ - Đồng chí có biết đoàn Văn Công bị thiệt hại gì không?
+</p>
+
+<p>
+ - Tôi không biết, nhưng tôi thấy bộ đội bị nặng nhất.
+</p>
+
+<p>
+ Người giao liên bảo bây giờ phải phân tán mỏng mỗi đoàn mỗi nơi cách nhau xa xa càng thưa người càng ít thiệt hại.
+</p>
+
+<p>
+ Bạn cứ tưởng tượng trong xóm có mười lăm, hai chục cái đám ma xảy ra cùng một lúc! Nó phải náo động cả xóm làng, nó phải tràn ngập nước mắt và khăn tang. Cỏ cây cũng phải rúng động, trời đất cũng thảm sầu. Ấy vậy mà ở đây không gì cả. Cả đến việc chôn cất!
+</p>
+
+<p>
+ Tôi không biết ai sẽ đảm nhận hay cứ bỏ đó mà đi. Ai chết cứ nằm đó hưởng vinh quang..
+</p>
+
+<p>
+ Đến chỗ mới, chứng tôi lại bày cái cửa hàng xén của chúng tôi ra. Mặc dù tai nạn suýt chết nhưng người vẫn thản nhiên. Ai chết thì cứ việc chết. Ai sống cứ lo ăn uống như thường.
+</p>
+
+<p>
+ Vấn đề trước tiên cửa tôi và Hoàng Việt là xay bột. Vân nói ngay:
+</p>
+
+<p>
+ - Mấy ông thấy Chệt tán thuốc bắc làm cao đơn huờn tán không? Một là đâm như đâm tiêu, hai là nghiền trong cái cối giống hình chiếc mo nan dừa. Thằng Chệt đứng trên cái bánh xe sắt chạy lên chạy xuống, tay thì vịn gốc cột cho khỏi té.
+</p>
+
+<p>
+ - Nhưng mình tìm đâu ra cái “mo nan” đó?
+</p>
+
+<p>
+ - Túm gạo trong vải rồi kê lên đá, cầm hòn đá mà nện. Thế là gạo thành bột gạo chớ gì!
+</p>
+
+<p>
+ Theo kế hoạch của ông dược sĩ chúng tôi biến thành hai cái máy nện gạo. Tay kềm túm gạo, tay đập bình bịch, coi không giống đánh đàn piano chút nào hết.
+</p>
+
+<p>
+ Nhìn Hoàng Việt, tôi bật cười:
+</p>
+
+<p>
+ - Anh đinh ngủ với cọp đêm qua à?
+</p>
+
+<p>
+ - Thì liều mạng chớ biết sao bây giờ.
+</p>
+
+<p>
+ - Sao hồi vừa đứt đuôi anh không kêu lên cho người ta chờ.
+</p>
+
+<p>
+ - Mày chờ tao nhưng người ta đâu có chờ mày. Đứt chỗ nào cho đứt một chỗ. Nguyên tắc của đường dây là ai đi được cứ đi, ai đau ốm cứ nằm lại, ai chết cứ chết mà!
+</p>
+
+<p>
+ Đập xong cả chục kí gạo, cả hai cũng rã rời. Tôi mới biết sức khỏe của mình tiêu tán đi nhiều vì leo đá tai mèo cũng có mà vì nọ kia cũng có.
+</p>
+
+<p>
+ - Vụ mày tới đâu rồi?
+</p>
+
+<p>
+ - Vụ nào?
+</p>
+
+<p>
+ - Vụ con Nguyệt!
+</p>
+
+<p>
+ - Sao ông nghe?
+</p>
+
+<p>
+ - Tao nằm nghe mơ màng thằng Cao bàn với mày.
+</p>
+
+<p>
+ - Chẳng tới đâu cả. Tôi cũng muốn gặp Nguyệt nhưng Nguyệt chưa tới thì bản đại hòa tấu nổ loạn xà bì hất tôi ra khỏi võng. Chắc trời không cho anh ạ.
+</p>
+
+<p>
+ Nhờ chị Phụng giúp sức mà chúng tôi có hai bòng bột khá to. Nhưng bột thì được cái gì? Chỉ để dành khuấy hồ và nấu chè trôi nước chạy lạt với nước suối theo kiểu bột mì Liên Xô ở các hợp tác xã ăn ở Hà Nội thôi. Chúng tôi sẽ phơi khô rồi mang theo như một thứ lương khô.
+</p>
+
+<p>
+ - Mớ xương tổ tiên anh còn giữ đó không?
+</p>
+
+<p>
+ - Còn chứ! Bỏ sao được mậy!
+</p>
+
+<p>
+ - Đưa cho ông dược sĩ nấu dùm cho.
+</p>
+
+<p>
+ - À, phải. Ngồi buồn lại gặp chiếu manh. Mày thấy không, nếu tao bỏ đi thì bây giờ ân hận biết mấy.
+</p>
+
+<p>
+ Vân nghe nói xương khỉ thì rất khoái chí.
+</p>
+
+<p>
+ - Anh đưa đây tôi coi. Còn đủ bộ xương không?
+</p>
+
+<p>
+ - Còn đủ cả móng, chỉ có c… Hoàng Việt thấy chị Phụng ngồi gần đấy nên tốp lại kịp – chỉ có bộ đồ lòng thi thiếu thôi. – Hoàng Việt moi ba lô lấy gói xương đưa cho Vân.
+</p>
+
+<p>
+ Ông dược sĩ cầm cái gói vừa mở gói ra:
+</p>
+
+<p>
+ - Ở Hà Nội thì tôi nấu ra một ngàn chai cao bang long bán…
+</p>
+
+<p>
+ - Biếu cho Bộ Chính trị.
+</p>
+
+<p>
+ - Mấy lão đó thì phải uống cao hổ cốt mới nhảy lang ba nổi chớ cao khỉ nhằm gì!
+</p>
+
+<p>
+ - Hổ cốt cũng chưa đủ phải cao sư tử kia.
+</p>
+
+<p>
+ Vân hỏi:
+</p>
+
+<p>
+ - Bộ anh có nấu rồi hay sao vậy?
+</p>
+
+<p>
+ - Tôi mới nấu có vài tiếng đồng hồ thôi, thấy không ăn thua gì cả.
+</p>
+
+<p>
+ - Tôi có thuốc, bỏ vô nấu độ chừng một đêm thì rục!
+</p>
+
+<p>
+ - Vậy thì còn gì bằng!
+</p>
+
+<p>
+ Vân đem xuống suối cạo rửa thật kỹ rồi trở lên tìm chỗ nắng trải ra phơi.
+</p>
+
+<p>
+ Một cuộc chuyển quân lao nhao khắp vùng. Đoàn này đoàn nọ kéo qua địa điểm đóng quân của chúng tôi liên tục. Họ vừa đi vừa bàn về vụ bom trộm đêm qua, râm ran, hầu như vui vẻ như đàn bà đi chợ, không tỏ vẻ gì xót thương đồng đội vừa hi sinh.
+</p>
+
+<p>
+ Cuộc đời ở Trường Sơn là như thế. Văn minh vô cùng. Cái chết cũng chỉ đáng cười. Người ta có thể giở một chiếc mùng mắc trùm lên võng, thấy một mạng người nằm trong đó, hố mắt đã lọi nhọi những dòi mẹ dòi con, và bịt mũi quay mặt chạy như tránh một bãi phân, người ta thấy một bàn chân lòi ra dưới mô đất lê tè và cứ lạnh lùng đi qua, cũng như người ta thấy những bộ xương rũ trong hốc đá và chẳng có cảm xúc gì ngoài sự gớm ghiếc.
+</p>
+
+<p>
+ Chính tôi cũng thế. Cái chết, xác chết, xương người, tai nạn chết người, thấy như cơm bữa nên thần kinh chùng dần, không run nữa. Và ai cũng có ý nghĩ nay mai là sẽ tới phiên mình nằm trên võng chết bị dòi đục hố mắt, nay mai xác mình sẽ bi dập lòi chân ra, nay mai mình sẽ rũ xương trong hốc đá, ai sẽ khóc mình?
+</p>
+
+<p>
+ Chẳng ai khóc ai. Con đường này một khi đã vào, không có lối trở ra mà càng đi tới thì càng thấy sự bi thảm mà cự bi thảm cuối cùng là cái chết.
+</p>
+
+<p>
+ Với mọi người, ai cũng như ai, tất cả đều không được thương xót và tất cả không phải thương xót ai. Xin thủ một cửa “Huề Vốn” cho canh bạc Trường Sơn này.
+</p>
+
+<p>
+ Tôi vừa “giã” gạo vừa có ý nhìn các đoàn đi qua để tìm đám Văn Công của ông nhạc sĩ nhưng không thấy.
+</p>
+
+<p>
+ Tôi nói với Hoàng Việt:
+</p>
+
+<p>
+ - Mình rủ thằng Cao đi lậu đi anh Bảy!
+</p>
+
+<p>
+ - Nó đám đi không?
+</p>
+
+<p>
+ - Gì mà không dám. Mình đã thấy mấy ông tướng đi lậu ở trạm ngoài rất kết quả!
+</p>
+
+<p>
+ - Sợ nó còn vướng rau muống ngoài đó chớ!
+</p>
+
+<p>
+ - Đó chẳng qua là một trạm thu mua thôi.
+</p>
+
+<p>
+ - Nó có con với người ta rồi, giỡn hoài mậy?
+</p>
+
+<p>
+ - Thì chánh phủ và đảng nuôi! – Vợ tào khang còn bỏ đi tập kết được, thứ vợ chùm gởi không bỏ được để về xứ về với vợ tào khang hay sao?
+</p>
+
+<p>
+ - Mày chưa có vợ mày nói vậy chớ nếu mày có vợ rồi, lại có con nữa, mày sẽ biết là việc bỏ một người đàn bà không phải là chuyện dễ như ở trạm thu mua, nữa là một người đã biết mình có vợ, mà còn lấy và lại có con với mình.
+</p>
+
+<p>
+ - Tôi rủ nó, coi mòi nó xiêu xiêu rồi!
+</p>
+
+<p>
+ - Nó nói sao?
+</p>
+
+<p>
+ - Nó nói nó không muốn về để nhìn thấy sự tan vỡ. Nghe tan vỡ nhẹ lòng hơn thấy tan vỡ.
+</p>
+
+<p>
+ - Ở đó mà triết lý!
+</p>
+
+<p>
+ - Thì cũng như cái vinh quang vậy. Đời mình có những hai lần vinh quang. Lần thứ nhất, tập kết “Đi cũng vinh quang, ở cũng vinh quang!” Bọn mình đã cong lưng vì đội cái vinh quang “đi,” gia đình mình ly tán vì cái vinh quang “ở.” Mười năm cái lưng còng như vành nia, lại tới cái vinh quang Trường Sơn này.
+</p>
+
+<p>
+ - Ai bảo mày Trường Sơn vinh quang?
+</p>
+
+<p>
+ - “Đây Cửu Long hùng tráng, đây Trường Sơn vinh quang, thúc giục đoàn ta xung phong đi giết thù…” Phải không? Hì hì… ông chủ trại cưa Kim Hữu mần nhạc do Bộ Chính tri trẹo họng mớm lời. Không vinh quang là gì. Cái vinh quang này có lẽ nặng hơn cái vinh quang tập kết! Nghe vinh quang không nặng bằng đội, cõng, đạp, đèo vinh quang trên lưng trên đầu trên cổ.
+</p>
+
+<p>
+ - Cái thằng, mày viết văn hả?
+</p>
+
+<p>
+ - Đêm qua nếu không có ông dược sĩ đi rước anh thì có lẽ cái vinh quang đó nặng cả tấn đấy ạ.
+</p>
+
+<p>
+ - Đâm hơi hoài mầy?
+</p>
+
+<p>
+ - Vinh quang quá sá nên thằng nào được gọi đi Nam cũng mừng thấy mẹ! Mừng vì được về quê. Về tới hay không là một chuyện nhưng được về là đã mừng rồi!
+</p>
+
+<p>
+ Mừng quá, mừng như Tôn Tẩn tái sinh.
+</p>
+
+<p>
+ Tôi được kêu đi Nam như một tin sét đánh vỡ tan nấm mộ kiên cố của tôi đắp bằng ai oán u buồn và hoài hương ở Miền Bắc.
+</p>
+
+<p>
+ - Anh biết tôi được gọi đi Nam trong hoàn cảnh nào không?
+</p>
+
+<p>
+ - Trong hoàn cảnh nào?
+</p>
+
+<p>
+ - Tôi đang công tác tại vinh, trong thời kỳ Mỹ leo thang ra Miền Bấc. – Tôi tiếp – Anh biết không? Nguyễn Tuân viết câu này: Trời đất gì cứ giềnh giang ra mãi!
+</p>
+
+<p>
+ - Là thế nào?
+</p>
+
+<p>
+ - Là ông ta chán đời, ông ta muốn trái đất nổ tung đi cho rảnh. Tôi cũng vậy. Tôi muốn có một cái gì xảy đến quậy lên cái dĩa rau muống chính tri nhàm chán Miền Bắc mà các cái loa rỉ rắc tiêu lên hằng ngày. Chán đến cái mức độ tôi hết sức khoan khoái khi nghe có vụ tàu Mỹ vô Hạ Long và máy bay Mỹ bị bắn rơi ở Hòn Gai Cẩm Phả.
+</p>
+
+<p>
+ - Cái thằng!
+</p>
+
+<p>
+ - Tôi nói thiệt mà. Tôi muốn cuộc kháng chiến chống Pháp tái sanh. Tôi muốn đi kháng chiến, sống trở lại cái không khí vinh quang và sáng ngời tinh thần dân tộc đó. Tôi thấy tôi vĩ đại vô cùng.
+</p>
+
+<p>
+ - Còn ra Miền Bắc xây dựng Tổ quốc Xã hội Chủ nghĩa không vinh quang à?
+</p>
+
+<p>
+ - Anh đi học nước ngoài anh không biết sự đời ở trong nước. Rồi khi tốt nghiệp về nước anh được gọi đi Nam ngay, anh không sống những bước đường gieo neo khổ ải của dân Nam kỳ quốc như bọn tôi.
+</p>
+
+<p>
+ - Thì cũng lãnh phiếu xếp hàng mua gạo mua thịt mua rượu là cùng chứ gì? Nhưng như thế chẳng hơn trong kháng chiến bữa đói bữa no hay sao?
+</p>
+
+<p>
+ - Bữa đói bữa no nhưng chí khí ngang trời, còn phiếu thịt phiếu gạo phát đều nhưng con người cong xuống như những con vật. Tôi căm ghét xã hội chủ nghĩa. Tôi cảm thấy chủ nghĩa xã hội là cái cùm đeo trên cổ dân tộc ta mà kẻ tạo ra nó chính là đảng.
+</p>
+
+<p>
+ - Tại sao?
+</p>
+
+<p>
+ - Tổ quốc Việt Nam là một cái, chủ nghĩa xã hội là một cái khác, không thể nhập hai thành một. Tôi yêu Miền Bắc, dù nghèo đói đến đâu tôi cũng coi đó là quê hương tôi nhưng tôi không thấy có một chút tình cảm nào – ngay cả sống một ngày trên đó, – với Miền Bắc xã hội chủ nghĩa. Tôi đã có ý đinh chui trở lại tàu Liên Xô trở về Nam ngay khi còn ở bến Sầm Sơn kia đó anh
+</p>
+
+<p>
+ - Hồi đó xã hội chủ nghĩa đâu đã ló đuôi ra!
+</p>
+
+<p>
+ - Vâng! Nhưng tôi không chịu nổi sự nhớ nhà. – Tôi tiếp – Cho nên sau khi sống ở Miền Bắc chưa đầy năm tôi đã lên Ủy ban Quốc tế xin về Nam.
+</p>
+
+<p>
+ - Ái dà? Cái đó bậy dữ à, chú em!
+</p>
+
+<p>
+ - Tôi là thằng kỳ cục khó chỉ huy mà anh Bảy. Chuyện không ai làm, tôi lại làm. Chuyện mọi người làm, tôi không làm!
+</p>
+
+<p>
+ - Như chuyện gì người ta làm mày không làm đâu?
+</p>
+
+<p>
+ - Khi ông Tố Hữu đến nói chuyện thì ai nấy đều đứng dậy, tôi không đứng. Hoàng Văn Hoan nói chuyện ở Thái Hà ấp, thiên hạ vỗ tay, tôi ngồi im rơ. Đến đỗi có người trừng mắt nhắc tôi đứng lên và vỗ tay. Mặc, tôi vẫn ngồi lỳ bất động.
+</p>
+
+<p>
+ Tôi kể tiếp về trường hợp tôi được gọi đi B.
+</p>
+
+<p>
+ - Kỳ đó tôi đang ở Vinh. Vinh đã trở thành một đống gạch vụn tua tủa những xương sườn xương sống nhà phố sập chĩa lên trời. Trường đại học Vinh đã di tản ra các làng lân cận. Tôi đang ở tại trận địa pháo thì nhân viên bưu điện đến báo cho tôi có điện khẩn từ Hà Nội. Tôi hỏi nội đung bức điện. Y bảo không biết nhưng là điện tối khẩn. Tôi không có cách nào đến bưu điện để xem mặt bức điện. Thành phố đang báo động cấp một. Pháo thủ đang ngồi trên mâm pháo chuẩn bi bắn. Cơm phải đưa tới cho họ ăn tại mâm pháo. Lúc bấy giờ đã mười hai giờ trưa. Tôi định liều mạng đi thì máy bay tới. Sau khi đánh bến tàu, nhà ga, phà, trường đại học, nhà tù bây giờ đến bưu điện. Sau trận bom, tôi vác xe đạp chạy đến bưu điện. Chẳng còn gì để gặp. Tôi trở về trận địa pháo. Nhờ điện lên Bộ Tư lệnh hỏi Hà Nội dùm. Ở trên bảo không có loại điện cho cá nhân. Tôi nghĩ: Có lẽ tòa báo muốn tôi sẵn ở Vinh đi luôn ra Cồn Cỏ chăng? Như thế sẽ đỡ tốn tiền và tốn máu cho một người đi từ Hà Nội vào tới Vĩnh Linh, trong lúc máy bay đã đánh gục cầu Hàm Rồng ở Thanh Hoá rồi. Nhưng anh tiểu đoàn trưởng bảo: “Cồn Cỏ không ai ra đó được trong lúc này. Tiếp tể cho chiến sĩ ngoài đó còn năm ăn năm thua nữa là chở nhà báo…hại!”
+</p>
+
+<p>
+ May sao tôi nhớ lúc ở Hà Nội sắp đi công tác, có thằng bạn ở Ban Thống Nhất tới chơi, rỉ tai cho biết tên tôi đã lọt vào “chung kết” và chừng một tháng thì có “trát” gọi. Hôm nay là trên dưới một tháng. Vậy là đi B chắc rồi!
+</p>
+
+<p>
+ Tôi bèn từ giã khẩu đội pháo, nơi tôi dầm sương dãi gió với các chiến sĩ và đã trông thấy họ bắn máy bay như thế nào. Rồi xách xe đạp lên đường phản hồi cố đô. Tôi đâm đầu chạy như cua-rơ. Cũng may là cặp lốp mới nên không ăn-panh dọc đường. Tôi tưởng mình đang gần lại quê hương mặc dù bánh xe lăn càng xa phía Nam đi về hướng Bắc. Trời lại mưa dầm dề. Tôi choàng ni-lông rồi tiếp tục đạp. Qua những đoạn đường bị bom cắt đứt, tôi phải làm “xe” cho xe cỡi ngược lại. Những cây cầu bị đánh gục chỉ bắc tạm bằng những mảnh ván lung lơ cho bộ hành đi tạm. Xe hơi đùn đống ở hai đầu cầu. Phà kéo tay không cung ứng nổi những chuyến đi cho xe quân sự. Mặc! tôi len lỏi tìm mọi cách qua được tất cả các chặng đứt.
+</p>
+
+<p>
+ Trời tối, xe đạp không có đèn, tôi lấy đèn pin ra xẹt lên tay rọi đường tay lái xe, chân đạp vun vút tưởng như đẩy lùi cả chục dặm trong một phút. Lòng yêu Quê Hương Tổ Quốc được thấy lại trong tôi như mười mấy năm trước. Với một chiếc xuồng với cặp chèo gãy chắp, tôi đã chèo qua cả sông Cái và vượt hằng trăm sông rạch từ miền Trung đến Tây Nam Bộ, coi cái chết như lông.
+</p>
+
+<p>
+ Ra đi ra đi bảo tồn sông núi,
+</p>
+
+<p>
+ Ra đi ra đi thề chết chớ lui!
+</p>
+
+<p>
+ Hùng tráng biết bao anh Bảy bày trẻ ơi!
+</p>
+
+<p>
+ Hoàng Việt cười:
+</p>
+
+<p>
+ - Tao ở chiến khu D cũng gian khổ chứ mậy!
+</p>
+
+<p>
+ - Để khoan, tôi kể tiếp cái vụ cầm đèn pin chạy xe đạp cho anh nghe.
+</p>
+
+<p>
+ - Sao không chờ sáng hãy đi?
+</p>
+
+<p>
+ - Chờ sáng à? … Cũng được thôi nhưng mà tôi nôn nóng không ở lại được. Nếu bức công điện bảo tôi đạp xe qua cầu Hiền Lương tôi cũng đi mà. Ngủ sao được với một cái điện gọi về Nam mà ngủ? Tôi đạp tới Cầu Giát, tức là quá Diễn Châu một đỗi xa xa, gần Quỳnh Lưu. Anh không biết vụ Quỳnh Lưu đâu. Để đó tôi kể cho anh nghe sau. Tới Cầu Giát thì đèn hết cháy. Pin Văn Điển hơi yếu công suất nên mới có hai tiếng đồng hồ đèn đã trở thành đom đóm. Ủa tôi quên nói cho anh rõ tại sao không chờ sáng hãy đi. Là vì đi đêm an toàn hơn ban ngày. Chả là máy bay nó đang “băm” khúc đường từ Vinh ra Thanh Hoá mà. Ban ngày không có bóng người trên Quốc Lộ 1.
+</p>
+
+<p>
+ Tôi té nhiều cái nín thở anh ạ! Những cái hố ở giữa đường mình thấy đâu có rõ. Cứ việc tông ngay xuống đó. Xe văng một nơi, người một ngã. May là bị nạn mấy lần mà đèn không đứt bóng.
+</p>
+
+<p>
+ Về đến Cầu Giát chừng ba giờ sáng. Tôi tắp vào một cái quán đèn đóm leo heo ở vệ đường. Ngọn đèn đón khách xe thồ và xe quân sự để bán bánh ú và chè xanh. Tôi tấp vào ngay ném chiếc xe bên hè và rứt bánh ú ăn, không cần hỏi giá cả. Nhưng lại cũng may. Tôi gặp may luôn luôn mà anh Bảy.
+</p>
+
+<p>
+ - May gặp bánh ú khi đói rã ruột hả?! Chà bây giờ mà có ba cái bánh ú o ở đây tao dám mua bạc ngàn! – Hoàng Việt chép miệng.
+</p>
+
+<p>
+ - Nhưng không chỉ gặp bánh ú mà thôi đâu. Tôi gặp cả người bán bánh ú nữa chứ. Một cô gái quê Bác chứ lỵ…Hí hí!!
+</p>
+
+<p>
+ - Cái thằng quỷ. Mày lúc nào cũng vậy!
+</p>
+
+<p>
+ - Thì anh đi bên Bún-cà-ri anh trả thù bố mẹ bằng cách rủ mấy em tóc vàng mắt xanh vô rừng thông hát song ca văn minh ra phết, còn em ở xứ mình em cũng cò lã trống quân ở trong nhà tranh vách đất có cái ổ rơm đầy dân tộc tính chớ sao anh Bảy bầy trẻ…ẻ! Không trả thù được để bây giờ ân hận sao? Số là hồi ra dưỡng lão ở đoàn 78 tại Sầm Sơn để chuẩn bị cởi áo lính, em đã xin đi Nông trường Trình Môn để viết một cái Đất Vỡ Hoang như Sô-lô-cốm.
+</p>
+
+<p>
+ - Cholokhov!
+</p>
+
+<p>
+ - Cốm với cốp với cột, cộm, côm, cốp gì thì cũng dissonant như nhau thôi anh Bảy. Khi vô nông trường này em được phong cho chức thư ký của một khu vực lớn nhất của nông trường. Trong số nhân viên văn phòng có một em coi khớ lắm, nhưng vì chức vụ cao cả, ông thư ký không dám bỏ ngón mi-nơ ma-giơ với nhân viên. Khổ cái là em đá lông nheo với đồng chí thư ký luôn. Hồi đó em mới hai mươi ngoài. Còn cô em thì lại chưa hai mưoi mà có thằng chồng đang độ quàng khăn đỏ. Tức mình thằng cu con chẳng nên cơm cháo gì nên cô em mới xin vào nông trường cho rảnh nợ. Trời xui đất khiến làm sao hôm nay ông cựu thư ký của nông trường lại đi công tác ghé vào quán cô em ăn bánh ú. Chả là cái nông trường này sau hai năm hoạt động thì dẹp luôn vì không có trồng được một cái cây gì kể cả cây lúa. Cô em lại trở về nhà và bán quán. Sống vất vưởng cho qua ngày. Gặp tôi, em mừng không thể tả. Em chẳng nói gì ý nhị nhưng ý cứ quấn quít bên tôi. Khi tôi ăn xong, cô trỏ cho tôi cái ổ rơm trong nhà và nói:
+</p>
+
+<p>
+ - Cầu Rừng bị đánh sập rồi. Anh không đi được đâu. Về đêm lại có cướp đấy. Lắm khách đi buôn đi xe thồ bị bóc sạch, chạy lùi về đây gọi công an, nhưng công an đi “chống Mỹ..ỹ” hết cả rồi. Anh chờ sáng hãy đi!
+</p>
+
+<p>
+ Tôi đang mệt nhừ lại còn có cướp chặn đường nữa, ở lại ngủ khoẻ rồi mai đi. Đó là sự hợp lý quá cỡ rồi. Không ở lại thì còn đi đâu.
+</p>
+
+<p>
+ - Cô em muốn hát tuồng dưng dưa cho vua Đường rồi!
+</p>
+
+<p>
+ - Ấy, anh nóng quá, để tôi nói hết đã. Tôi ngả lưng trên nệm rơm thơm phức. Hương rơm khô làm cho tôi nhớ thuở nhỏ chơi trò “vợ chồng” trên những đống rơm ở sân đạp lúa nhà tôi hết sức. Tôi ngủ lịm đi với giấc mơ lạ lùng anh ạ. Tôi mơ thấy tôi trở về quê. Tôi đã lớn và tôi thành chồng, cô bạn thuở xưa thành vợ. Chúng tôi làm đám cưới. Và tôi thấy chúng tôi trở thành vợ chồng thiệt, tôi thấy hạnh phúc thiệt, nghe rêm hết cả người.
+</p>
+
+<p>
+ - Đồ quỷ, nói bóng nói gió, hạnh phúc thiệt trong ổ rơm chớ mơ mộng gì, phải không? Mười bảy mười tám lấy thằng cu con sáu bảy tuổi. Nó gãi lưng con chị không đã ngứa, chị chịu sao nổi. Gặp ông thư ký xếp cũ cô em tặng cho cặp bánh ú nước tro đậu xanh là lô-gích lắm rồi.
+</p>
+
+<p>
+ Tôi ngó quanh không thấy vợ chồng ông dược sĩ ở trong lều nên không úp mở nữa:
+</p>
+
+<p>
+ - Sáng ra cô không e lệ tí nào cả. Cô nói: “Cầu Rừng vẫn chưa chữa được. Đêm qua lại có kẻ bị cướp. Ban ngày máy bay Mỹ đến liên tục, anh đi không được đâu. Để tối hãy đi.
+</p>
+
+<p>
+ - Mệt nhừ lại còn ăn bánh ú chắc mệt dữ hả? Ú o hay ú nguyên?
+</p>
+
+<p>
+ - Ngược lại anh ạ! Tôi không thấy mệt gì cả! Cứ như là không không ấy.
+</p>
+
+<p>
+ - Có hát đi hát lại Điệp Khúc không?
+</p>
+
+<p>
+ - Không hát Điệp Khúc nhưng bản nhạc có ba đoạn chính đàng hoàng. Mỗi đoạn hát xong nghỉ xả hơi bằng một bát chè xanh rồi lại hát. Hát xong đoạn ba, cô em tát vào má tôi mắng yêu: “Thế mà hồi ở nông trường cứ ra cái điều đạo đức. Người ta nhìn lại cứ lờ ra lạnh như tiền ấy!” Tôi bảo:” Có thằng cu đeo sau lưng nếu anh động tới em, nó khóc rinh lên làm sao?” Cô em bảo: “Em tống nó đi rồi em mới vô nông trường đấy.”
+</p>
+
+<p>
+ - Hèn gì ở Thanh Hoá dân bảo là một sư đoàn Nam Bộ uống rượu bằng một triệu dân Thanh Hoá, còn anh đội thì khoẻ nhu vâm, đánh ba ván liền không bỏ dở ván nào! Quả danh bất hư truyền. – Hoàng Việt cười nói.
+</p>
+
+<p>
+ - Nhưng mặc dù cô em cầm chân, sắc có ba đào đi nữa cũng không dìm được anh đội Miền Nam. Nàng khóc anh ạ! Nàng nói: “Em đã cho anh trinh tiết của em nhưng em không ân hận. Em biết anh không bao giờ trở lại đây nữa nhưng em vẫn toại nguyện vô cùng.” Tôi nói: “Anh sẽ trở lại đây đón em cùng về Nam với anh.” Nàng lắc: “Em không đi đâu.” -”Tại sao?” – “Vì anh không bao giờ giữ lời hứa. Người Nam không yêu người Bắc. Chỉ có người Bắc yêu người Nam thôi.” “Tại sao?” ” Người Nam bộc trực và nồng nhiệt. Người Bắc khéo léo nhưng xảo quyệt. Hai vợ chồng giống tính nhau không sống được với nhau, có chăng cũng thủ thế”. Tôi tưởng cô gái mộc mạc chỉ biết yêu đơn giản thôi, chẳng ngờ có nhận xét lạ lùng thế. Quả thật vậy, tôi biết nhiều cô gái Miền Bắc lấy chồng Nam Bộ lớn hơn mình mười lăm hai mươi tuổi mà vẫn hãnh diện và có hạnh phúc.
+</p>
+
+<p>
+ - Bị chúng níu áo rồi mày làm sao dãy cho thoát?
+</p>
+
+<p>
+ - Tôi chỉ hứa. Hứa theo kiểu lãnh tụ hứa với chúng ta. Đại khái tập kết hai năm. Tổng tuyển cử thống nhất đất nước trở về…
+</p>
+
+<p>
+ - Tội nghiệp con nhỏ bị mất trắng ba bàn hả?
+</p>
+
+<p>
+ - Đành thôi. Tại cô em khiêu chiến chứ tôi đâu có bụng gì. Tôi đang ngủ ngon, bỗng trở mình thì đụng làn da là lạ và hương tóc lẫn hương rơm nồng ấm rất thần tiên. Tôi tấn công như máy, trong mơ say như trong mộng vậy.
+</p>
+
+<p>
+ - Cha chả! Thôi đi ông nội. Mộng gì mà hát đến ba đoạn? Chắc là sáng bữa đó đạp xe trên đường, dây xích nghiến cót két, ổ đạn khua như xe ba gác hả??
+</p>
+
+<p>
+ - Không sao cả. Tôi đạp như bay ấy mà.
+</p>
+
+<p>
+ - Chút tí nữa ẵm một em Huế chính gốc Xô Viết Nghệ An đem về xứ, nói toàn dấu nặng nghe mệt điếng hồn, he!
+</p>
+
+<p>
+ - Dấu nặng nghe cũng êm tai chứ anh!
+</p>
+
+<p>
+ - Ừ vui lắm. – Hoàng Việt bật cười rồi tiếp – Để tao kể chuyện cái dấu nặng cho mày nghe về cái dấu nặng nghe êm tai. Hồi tao ở Chiến khu D bị ruồng bố liên miên nên ở trên chủ trương quân sự hoá cơ quan, Phòng Chính Trị được tổ chức thành một đại đội lính cậu. Đại đội do một ông Huế Nghệ chánh hiệu Nai Vàng tên là Vũ Sơn làm đại đội trưởng. Buổi sáng nào cũng thức đậy, bốn bộ phận tập họp thành bốn trung đội hàng dọc. Đại đội trưởng Vũ Sơn đứng trước quân hàng dõng dạc ra lệnh:
+</p>
+
+<p>
+ - ” Cạc trụng đội một, hai, ba bộn kiệm điệm quận sộ xọng bạo cạo”
+</p>
+
+<p>
+ Lần lượt các trung đội trưởng báo cáo. Khi các trung đội báo cáo xong, đại đội trưởng quát:
+</p>
+
+<p>
+ - “Trụng đội nạo đụ rội thị cho vệ trại, trụng đội nạo chựa đụ thì đựng đọ, trụng đội vệ trại xẹm cọ ạnh chị ẹm nạo bệnh khộng?”
+</p>
+
+<p>
+ Trừ các anh Huế Nghệ còn kỳ dư thì Nam lẫn Bắc đều cười rộ lên. Đại đội trưởng không biết chuyện gì, càng quát to:
+</p>
+
+<p>
+ - “Đụ rồi thì vệ trại lậy cuộc đi sạn xuật, chị riệng nhựng trụng đội chựa đụ thị đựng lại đọ chợ ạnh chị ẹm rạ đụ đạ rội hạy vệ trại sạu.”
+</p>
+
+<p>
+ Mọi người lại bịt miệng cười, riêng các bà thì đỏ mặt tía tai. Một anh Nam Kỳ vọt miệng nói:
+</p>
+
+<p>
+ - “Đụ rồi mệt lắm đại đội trưởng ạ, không đi sản xuất nổi, cho nghỉ một bữa.”
+</p>
+
+<p>
+ Đại đội trưởng gắt:
+</p>
+
+<p>
+ - “Tự rạy cạc trụng đội tự động kiệm điệm lại trại, hệ trụng đội nạo đụ rội thị cự cho đị sạn xuật, khộng cận lệnh đại đội nựa. Rọ chựa nạo?”
+</p>
+
+<p>
+ - Rõ! Hễ đụ rồi thì đi cuốc đất, chưa đụ thì đứng đó chờ đụ rồi mới đi.
+</p>
+
+<p>
+ Cả đại đội cười ì ì như vỡ chợ. Ông đại đội trưởng ngơ ngác không hiểu lý do gì. Mãi về sau, khi rõ ra thì cái dấu nặng đã thành trò đùa khắp cơ quan. Và ông đại đội trưởng hạn chế việc tập họp toàn đại đội, nhưng lại xảy ra chuyện dấu nặng khác. Chuyện “nước mắm đổ lộn mỡ”. Ông đại đội trưởng là Huế Nghệ rồi ông anh nuôi cũng Huế Nghệ. Hồi đó mỡ heo rất hiếm. Bữa cơm nào có tí mỡ pha với nước mắm thì môi người nào cũng láng láng béo béo. Anh nuôi đứng trước ba quân hãnh diện tuyên bố: Hôm nay thay vì muối muôn năm, anh em được xơi “nước mắm độ lộn mợ.” Từ tiếng “lộn mợ” anh em lại bỏ một dấu huyền thành ra anh em được ăn nước mắm đổ “l…mợ”! Bữa nào ăn muối, anh em lại hỏi: Chừng nào mới có nước mắm đổ “l… mợ” cho anh em xơi đây anh nuôi? Nước mắm đó ăn béo phải biết. Đó – Hoàng Việt cười – Dấu nặng nghe êm tai chưa?
+</p>
+
+<p>
+ Tôi hỏi:
+</p>
+
+<p>
+ - Anh húp được mấy lần?
+</p>
+
+<p>
+ - Biết mấy lần mà nói!!
+</p>
+
+<p>
+ - Giá bây giờ có mợ để mình đổ nước mắm!!
+</p>
+
+<p>
+ - Ngã mặn hả các cha? – Ông dược sĩ từ dưới suối đi lên vuốt đuôi.- Chuyện nước mắm đổ lộn mỡ đó mới báo động cấp hai về sự bất đồng ngôn ngữ. Để tôi kể cho hai ông nghệ sĩ câu chuyện báo động cấp một. Bà xã tôi còn ở dưới suối giặt giũ lâu lắm, tụi mình thừa cơ hội này mà tiếu lâm cách mạng một bữa.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-016.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-018.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,983 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 14 - Mạng Người L&#225; Rụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 14</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-013.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Hoàng trở lại. Anh ta một tay cầm hai hộp thịt, một tay cầm mớ giấy. Hoàng xòe giấy ra cho tôi:
+</p>
+
+<p>
+ - Ác quá mày! Đọc coi!
+</p>
+
+<p>
+ Tôi đọc và kêu lên:
+</p>
+
+<p>
+ - Thế này thì chúng mình phải cuốn gói đi ngay!
+</p>
+
+<p>
+ Ông huyện ủy giật mình hỏi:
+</p>
+
+<p>
+ - Gì thế đồng chí?
+</p>
+
+<p>
+ - Chúng nó kể tên từng đứa một trong đoàn chúng tôi.
+</p>
+
+<p>
+ - Ồ tưởng cái gì chớ cái vụ đó thì ăn thua chi đâu. Chúng nó in tên các cấp tỉnh ủy huyện ủy xã ủy kể lai lịch từng người một và kêu gọi hồi chánh mà. Chúng rải truyền đơn khắp nơi để dân chúng biết mà tìm gọi mình nữa. Người dân nào đem được một cán bộ cỡ nào thì được thưởng một số tiền bao nhiêu, còn cán bộ cỡ nào tự mình tìm đường về nộp mạng thì được tặng bao nhiêu tiền.
+</p>
+
+<p>
+ - Làm vậy mà có kết quả à?
+</p>
+
+<p>
+ - Có mạnh chớ sao không!
+</p>
+
+<p>
+ - Thế à?
+</p>
+
+<p>
+ - Ngày nào cũng có. Hễ có là chúng cho loa tên tuổi người đó. chụp hình in kèm với lời kêu gọi rồi rải đi khắp nơi! Đồng chí nghĩ coi nó đánh mình thế đó, mình đành chịu thôi không đỡ gạt nổi.
+</p>
+
+<p>
+ Tôi thấy ngồi lâu sẽ bi ông Huyện ủy tuyên truyền về chánh sách hồi chánh rồi nhiễm mất (và tôi bị nhiễm thiệt, nhưng chưa nhiễm ngay bây giờ mà mấy năm sau) nên nháy Hoàng đi về lều. Vừa đi, tôi hỏi:
+</p>
+
+<p>
+ - Ở đâu mò ra vậy?
+</p>
+
+<p>
+ - Thiếu gì! Hầu như ai cũng được một vài hộp..
+</p>
+
+<p>
+ - Tụi ngu bỏ mẹ! Đáng lẽ chúng nó để mình chết đói, lại ném thịt cá cho ăn!
+</p>
+
+<p>
+ - Nó khôn thấy bà!
+</p>
+
+<p>
+ - Khôn gì! “Khôn liền” thì có!
+</p>
+
+<p>
+ - Ăn hết hộp này nó không liệng nữa đâu! Mình thèm! Ăn quen nhịn không quen. Thế là bò về tìm thịt. Thế là nộp thịt. Phải không?
+</p>
+
+<p>
+ Tôi cười:
+</p>
+
+<p>
+ - Anh học trường tâm lý chiến của tụi nó hồi nào vậy?
+</p>
+
+<p>
+ - Mới vừa rồi đó! Cái ông đó đã dạy mình một bài học tâm lý chiến khá chi tiết.
+</p>
+
+<p>
+ - Đổi với cái gì vậy?
+</p>
+
+<p>
+ - Cái áo thun ba lỗ.
+</p>
+
+<p>
+ - Mới cũ?
+</p>
+
+<p>
+ - Cũng còn mới! Chỉ sợ không còn đồ đổi thôi, chứ thịt thiếu gì!
+</p>
+
+<p>
+ - Bây giờ mà trở lại được trạm 1 quơ ba cái đồ mắc trên cây ném trên vách đá đem vô đây đổi thịt ăn hé!
+</p>
+
+<p>
+ - Bố tao bảo trở lại tao cũng không trở. Xe tăng lôi tao cũng bứt xích chạy ngược lại.
+</p>
+
+<p>
+ Hoàng là người gương mẫu trong trường đi B, nhưng đi qua khỏi ngọn sông Bến Hải anh mới bắt đầu hiện nguyên hình: “bất mãn chúa, tấu nhạc toàn chói tai.”
+</p>
+
+<p>
+ Tôi nhớ lại lúc mới đi chặng đầu tiên của con đường này. Vui vẻ, hào hứng, phấn khởi vô cùng. Mọi người coi giải phóng Miền Nam như trở tay. Lấy đồ trong túi còn khó hơn. Trên trời không có máy bay. Dưới chân tuy đồi dốc khá nhiều, nhưng sức lực còn dồi dào. Thanh Niên Xung Phong vừa đi hằng đoàn vừa hát. Cơm ăn với muối nhưng rất ngon miệng. Và tự cho mình đang nằm gai nếm mật cùng với nhân dân khi ngủ giữa trời dưới một tấm tăng bằng cái… lá đa rách nát. Giản chính tư tưởng và giản chính những thứ kềnh càng. Cuộc sống bị “giản chính” một cách không thương tiếc. Dọc theo đường đi, nào áo len, nào mũ dạ, quần ga-bạc-đin, giày bố, khăn mặt, cặp da v.v…. treo mắc như một cửa hàng chợ trời đầy màu sắc.
+</p>
+
+<p>
+ Người đi trước vứt bỏ, người đi sau nhặt lấy hoặc đổi lấy cái tốt của người vừa bỏ vứt cái xấu của mình. Cứ thế, cho đến vài trạm sau thì chẳng còn thấy món đồ nào treo mắc hai bên đường nữa. Con người đã giản chính tối đa. Ở trạm 3, tôi thấy một anh chàng đập cây ghi ta của mình ra mà nhóm lửa vì trời mưa to quá, củi ướt vả lại giữa ban đêm, không còn cách nào khác hơn là hi sinh món nhạc cụ yêu quí đã từng được cõng từ Hà Nội vào đây..
+</p>
+
+<p>
+ Nghe Hoàng nói có lắm thịt hộp thì tôi mê lắm nhưng biết chắc trong ba-lô không còn được bao nhiêu món có giá trị để đổi chác. Ở đây thì đồ vật đổi chác phải là thứ thiệt chứ không thể đem dây chuyền mạ, cà rá giả ra mà đổi lợn, gà như đối với đồng bào Thượng.
+</p>
+
+<p>
+ Đí “ruồng” thịt hộp và nói chuyện khào, tâm thần sảng khoái. Về đến lều thấy Thiệp nằm gác tay lên trán thở hắt ra mà rầu. Hoàng nói:
+</p>
+
+<p>
+ - Chắc cậu không còn giữ ý định vô Nam kỳ quốc với tụi này nữa phải không?
+</p>
+
+<p>
+ - Tôi phải trụ hình ở lại đây rồi anh ạ! Chờ xem tình thế thế nào!
+</p>
+
+<p>
+ - Đã rõ rồi, còn xem tới xem lui cái gì nữa!
+</p>
+
+<p>
+ - Nhưng mà… Khổ quá anh ơi!
+</p>
+
+<p>
+ - Thôi, để nấu cơm ăn cho khoẻ cái đã rồi sẽ tính tới – Tôi cắt ngang.
+</p>
+
+<p>
+ Đợi đến sẫm tối chúng tôi mới bắt đầu nổi lửa nấu cơm. Lửa khói đốm đỏ đốm xanh khắp cả một dãy rừng. Tiếng chí choé í ới nghe thiệt vui tai. Suốt ngày đói meo uống nước cầm hơi, ngồi nhao nháo ngó lên trời không thấy trời, trông xuống đất chỉ thấy toàn sỏi đá mong cho chóng tối để nấu cơm.
+</p>
+
+<p>
+ - Các anh ăn đi! Tôi ăn không vô đâu!
+</p>
+
+<p>
+ Chúng tôi biết Thiệp ngại không muốn ăn chỗ thịt của Hoàng vừa đổi được. Không phải Thiệp sợ mất lập trường mà “ăn của anh em rồi lấy gì trả lại. Ở đây một hạt muối cũng phải đổi chác mà! ” Tôi bèn nói:
+</p>
+
+<p>
+ - Tớ ăn cơm Miền Bắc mười năm, nay cậu ăn lại miếng thịt mà gì dữ vậy?
+</p>
+
+<p>
+ Tôi nói cà rỡn cho nguôi buồn thằng bạn đồng hành để nó ăn no chôn lấy nỗi buồn của nó, cũng là của tôi, chẳng ngờ nó òa lên khóc.
+</p>
+
+<p>
+ - Các anh tốt bụng quá! Xin cảm ơn! Tôi tưởng các anh thành kiến với tụi tôi nặng lắm!
+</p>
+
+<p>
+ - Thành kiến với tụi lớn đầu không nên nết kìa! Chớ tụi tao đâu có thành kiến với cả đồng bào Miền Bắc. Mày hiểu không? Chúng mình cùng là nạn nhân của những chánh sách lạ kỳ hết cả mà.
+</p>
+
+<p>
+ Hoàng Việt nói xong đi lấy tấm hình vợ Thiệp:
+</p>
+
+<p>
+ - Dẹp bàn thờ được rồi chứ! – Rồi đem mấy chén cúng trút vào gà mèn trộn cho đều.
+</p>
+
+<p>
+ - Ừ ừ tôi quên khuấy đi.
+</p>
+
+<p>
+ Chúng tôi ngồi dưới đất ăn cơm trắng và thịt nghiền đóng thành bánh xắt lát mỏng.
+</p>
+
+<p>
+ - Thịt nạc Mỹ đây! – Tôi vừa gắp một miếng vừa nói – Kê vô mát cả răng!
+</p>
+
+<p>
+ Hoàng Việt tiếp tục khuyên lơn Thiệp:
+</p>
+
+<p>
+ - Cậu cho là cô Anh đã hi sinh rồi phải không? Thế mà bây giờ cô cấy còn sống. Đó là một cái may không ngờ được. Cậu còn muốn gì nào? Chắc cậu muốn cổ được thả dù xuống đây chắc. Chuyện đó thì không thể có. Vậy ta hãy vui với cái ta đang có là cô Anh còn sống. Đó là phần cô Anh. Còn cậu, hãy so sánh với ông bạn nhà văn của chúng ta đây thì sao? Cậu sung sướng hơn nhiều phải không? Nếu chẳng may cô Anh lâm vào trường hợp cô Phương và chính tay cậu gói liệm, chôn người yêu như cậu đã liệm và chôn cô Phương thì sao? Cô Phương vĩnh viễn nằm lại đó, mưa gió sẽ khỏa tan nấm đất. Có ai còn biết tới nữa đâu. Trước khi chết không trối được một lời, chết rồi không được người yêu nhìn xác.
+</p>
+
+<p>
+ Thiệp đang bưng chén cơm bỗng đặt xuống, gục đầu xua tay:
+</p>
+
+<p>
+ - Thôi … thôi, anh đừng nói nữa! Tôi hiểu vậy, nhưng tôi đau quá anh ạ! – Rồi bỏ lên võng nằm – Tôi xin lỗi các anh, tôi đã làm cho bữa cơm mất ngon.
+</p>
+
+<p>
+ Hôm sau, tiếp tục đi ruồng thịt hộp tôi lại gặp quá nhiều người quen, toàn dân Nam Cờ. Đúng là khúc ruột…thừa Miền Trung. Tất cả rác rến cặn cáu của dân Nam Bộ mang từ ngoài xứ xã nghĩa vào đến đây đều xì bật ra.
+</p>
+
+<p>
+ Trong sáu người có ba người tôi quen từ trong kháng chiến Nam Bộ. Còn ba người kia không quen nhưng cũng là dân Thành Đồng. Tất cả đều là cán bộ trung cấp nghĩa là từ Tiểu đoàn phó lên tới Trung đoàn phó. Ai nấy đều mang giò heo oai phương lấm lét. Quý, Tiểu đoàn trưởng Tiểu đoàn 2 chuyên gia đào gốc lim ở nông trường Lam Sơn tóc bạc phếu như bọt biển, Mật, Tiểu đoàn phó thuộc đội Công binh Sư đoàn 330 và Trữ, Tiểu đoàn trưởng kiêm Tham mưu phó Trung đoàn 2 đóng ở Bãi Thượng nơi tôi từng tới lui để tìm ngõ chui qua Lào về Nam mà không lọt. (Nếu lọt tôi đã không phải bị muỗi đòn xóc tiêm cho thuốc bổ sốt rét rừng trên đường này).
+</p>
+
+<p>
+ Các tay tổ này cũng đang lùng tìm thịt hộp. Tôi và Hoàng khoái tỷ vì đã gặp được bồ tèo. Dù thế nào cũng xin tháp tùng với họ đi cho vững bụng. Khi tôi bày tỏ ý ấy ra thì Mật nói ngay:
+</p>
+
+<p>
+ - Ê, tụi này là một lũ tội nhơn đây nghe ta! Bộ muốn không còn chỗ đội nón hay sao mà dính vào?
+</p>
+
+<p>
+ - Tại sao là tội?
+</p>
+
+<p>
+ - Chuyện Tam Quốc ba mươi sáu cuốn kể sao cho hết.
+</p>
+
+<p>
+ - Tóm tắt “Hồi thứ năm mươi” nghe thử coi.
+</p>
+
+<p>
+ - Đại khái là ở trên phân công tụi này về khu Sáu!
+</p>
+
+<p>
+ - Trời đất! Thiệt sao cha?
+</p>
+
+<p>
+ - Không thiệt thì bịa à?
+</p>
+
+<p>
+ Hoàng nói:
+</p>
+
+<p>
+ - Thì ở mấy trạm ngoài mình cũng nghe một vụ tréo cẳng ngỗng như vậy mà.
+</p>
+
+<p>
+ Tôi lại hỏi Mật:
+</p>
+
+<p>
+ - Ông đã nếm mùi khu Sáu chưa?
+</p>
+
+<p>
+ - Mới nghe hin hỉn là đã chạy sốt vó rồi, nếu phải nếm chắc ói tới mật xanh.
+</p>
+
+<p>
+ Hoàng Việt hỏi:
+</p>
+
+<p>
+ - Nói vậy đây là khu Sáu rồi sao cha? Vậy gần qua ranh Nam Cờ mình rồi!
+</p>
+
+<p>
+ Mật xua tay:
+</p>
+
+<p>
+ - Chưa, chưa đến khu Sáu đâu mẹ đĩ! Nhưng khu Sáu không có đường xuống. Phải xuống “Khu Eo” rồi mới luồn vô “khu Éo” (Có một số ngôn ngữ sáng tạo trên đường dây như khu Eo, khu éo là khu Năm, khu Sáu). Đừng có mừng vội.
+</p>
+
+<p>
+ Đoàn người rẽ theo những đường mòn khác nhau đi ruồng thịt hộp. Tôi và Mật cố tri nên bắt cặp với nhau đi chung một đường. Tôi hỏi tiếp:
+</p>
+
+<p>
+ - Rồi các cha làm sao?
+</p>
+
+<p>
+ - Một số chống lệnh một số thỉ hành lịnh.
+</p>
+
+<p>
+ - Họ không nói gì à?
+</p>
+
+<p>
+ - Nói chớ sao không nói! Họ bảo là phạm kỷ luật quân đội sẽ ra tòa án binh khu.
+</p>
+
+<p>
+ - Ớn vậy à?
+</p>
+
+<p>
+ - Chống lệnh cấp trên đâu phải chuyện đùa ta! Chắc họ bảo sẽ cho các trạm phía trong bắt giữ chúng tớ lại. Nhưng chưa thấy ai bắt cả.
+</p>
+
+<p>
+ - Nếu họ cho người bắt thì làm sao?
+</p>
+
+<p>
+ - Làm sao thì mặc làm sao, dẫu có bề nào cũng chẳng có ghê mà! Tụi tôi về quê chiến đấu chứ có theo giặc đâu mà sợ tội!
+</p>
+
+<p>
+ Tôi vẫn còn thắc mắc:
+</p>
+
+<p>
+ - Nhưng lệnh đâu lại có lệnh lạ kỳ vậy hả?
+</p>
+
+<p>
+ - Người ra lệnh cứ việc ra còn dưới này có thế nào cũng mặc. Cậu chưa rõ đầu đuôi, để tôi kể cho nghe. Số là ở khu Sáu vừa lập một trung đoàn mới chỉ có lính, rất thiếu cán bộ cậu biết không? Cho nên họ điện ra Hà Nội xin cán bộ. Sẵn dịp bọn này đang đi ngang qua đây, thế là bộ Tổng ra lệnh cho chúng tôi xuống Bác Kế để nhận công tác, tức là lắp vào cái trung đoàn mới đó và chỉ huy nó luôn.
+</p>
+
+<p>
+ - Sẵn ổ đẻ, sướng thấy bà, còn đòi gì nữa!
+</p>
+
+<p>
+ - Ổ gì mà đẻ sướng, cha non! Có sướng mấy tôi cũng không đẻ mà! Ổ tôi phải lót ở trong Nam thì tôi mới đẻ. Mà ở trong đó tôi có sắn ổ rồi. Tôi mong về tới đó. Tôi phải về trong đó cơ! Sống chết cũng về mà! Chứ theo ông, ông bị phân công xuống khu này, ông có đi không ông nội “Thành bùn Tổ cò?”
+</p>
+
+<p>
+ Câu hỏi như một đột biến trong tâm tư tôi.
+</p>
+
+<p>
+ Ừ nhỉ. Đó là lương tâm con người đối với Quê hương. Tôi có người yêu quê ở khu Năm đi về khu Năm. Sao tôi không đi với nàng. Nếu tôi xin đi khu Năm thì chắc chắn được ngay. Vì khu Năm, khu Sáu, ngoài người địa phương, không ai đi. Ngược lại người ở khu Năm mà được đi Nam Bộ thì lấy làm sung sướng. Chao ôi! Cũng thời là con cháu Thành đồng Tổ quốc, nhưng đứa thì con cháu ruột, đứa lại ghẻ. (Cái Thành đồng Tổ quốc này có một thời bị cà nanh dữ dội. Số là cái “thành” này già Hồ tặng cho Nam kỳ không phải cho khu Năm khu Sáu. Đây là lời phỉnh vĩ đại nhất đối với dân Nam kỳ. Do sự phỉnh này mà dân Nam kỳ mới đưa ngực ra đỡ đạn cà-nông trong mười năm trời và lấy làm tự “hìu” so với các miền đất kháng chiến khác. “Tụi tao anh “rũng” nên mới dược cái vinh dự to bằng bồ ấy.” Do đó khu Năm khu Sáu phân bì. “Miền Nam đi trước về sau! ” Cùng với Nam Bộ, khu Eo khu Éo cũng anh “rũn” nào có kém ai? Tại sao già Hồ không tặng gì hết. Già Hồ thấy hơi khó xử, nên lập lờ nói tráo rằng: “Hồi đó tui tặng cái “thành” đó chung cho Miền Nôm” (từ vĩ tuyến mười bảy trở dzô!! Ô hô hô!) Nhưng cái huy hiệu thành đồng nhỏ hơn hai ngón tay tréo chỉ được phát không cho dân Nam kỳ chứ không phát cho dân khu Năm khu Sáu. Nhưng dù được nhận mặc lòng, dân Nam kỳ cũng không có đứa nào thèm đeo trên ngực vì cái ngực bằng xương thịt thì lổ chỗ dấu đạn mút-canh-tông và cà nông, còn áo thì tả tơi nên không còn chỗ đeo. Còn một chỗ khả dĩ được cái huy hiệu đó nhưng không thể đeo vì đeo ở đó, không ai nhòm thấy. Vinh quang cũng có lắm thứ vinh quang, thứ vinh quang thiệt tình là ghế ngồi, đất đứng thì dân Nam Kỳ không được cấp phát bao giờ. Còn vinh quang hàng mã thì được cấp phát nên không nhận. Đại khái cái Thành Đồng nó như vậy đó, cho nên dân Nam Kỳ trên đường này và trong thời kỳ chống Mỹ ở Nam Bộ có những danh từ nhại lại: Thành bùn Tổ cuốc, Thành bùn Tổ cò).
+</p>
+
+<p>
+ Câu hỏi của Mật làm tôi chạnh lòng, một sự chạnh lòng cho những bầy con cháu ghẻ mà tưởng mình là con cháu ruột hằng mấy chục năm trời. Mật tiếp:
+</p>
+
+<p>
+ - Ông mần nghề văn chương, ông không bị ai xỏ lá, chèn ép, bạc đãi, vùi dập khốn nạn như tụi tôi nên ông không biết nỗi nhục của những người đeo cái tấm Thành Bùn trên lưng ông văn sĩ ạ. Bọn này được người ta xài như cái nùi lau vậy. Khi cần lau chân, xách ra lau cho chân, khi cần lau mặt cầm lên lau mặt, khi cần lau háng cứ lau háng một cách vô tội vạ. Tôi đang đào gốc lim, ở trên bảo trở về làm Công binh, đang làm Công binh ở trên bảo sang Lào, sang Lào về ở trên bảo dzề Nam, đi nửa đường vô Nam, bảo xuống khu Sáu.
+</p>
+
+<p>
+ - Vinh quang thấy mẹ còn rên!
+</p>
+
+<p>
+ - Ừ vinh quang thấy ông cố nội, nên tóc rụng gần hết vì đội các thứ vinh quang đó! – Mật giở chiếc mũ tai bèo – Gì đây! Thấy vinh quang chưa? Da tôi ngày nay có giống da Pha-thét không? Đó lại là một thứ và vinh quang quốc tế đấy!
+</p>
+
+<p>
+ - Ủa, có sang đồng Chum nữa hả?
+</p>
+
+<p>
+ - Có chớ? Chum, hũ, lu, mái gì có đi hết cả. Trước khi đi được “hấp da” cho giống người anh em.
+</p>
+
+<p>
+ - Có vụ đó nữa sao? Tôi nhìn Mật trân trối – Vậy tôi tưởng đen này là do ông “rầu rãi ró sương” biến nước da tạch tạch xè (tiểu tư sản) ra nước da lãnh đạo chớ!
+</p>
+
+<p>
+ - Bây giờ có môn bắt nước sôi mà cạo như cạo heo vậy mới mong lấy lại nước da Hồng Lạc ông ạ!
+</p>
+
+<p>
+ - Trời đất!
+</p>
+
+<p>
+ - Cho nên ai có bắn tôi thì bắn, tôi cũng càn về xứ thôi ông ạ!
+</p>
+
+<p>
+ - Năm nay băm mấy cái xuân tình rồi?
+</p>
+
+<p>
+ - Sao không hỏi bốn mấy!
+</p>
+
+<p>
+ - Ối mà lo gì, về trong đó cây nhà lá vườn, các cô trừ cho mười tuổi mà. Ủa! Tôi nói thiệt nghe cha! Con gái hơ hớ ở trong bây giờ chỉ chờ tụi mình về làm đám cưới tập thể thôi, Tui có đọc thơ ở trong gởi ra tại Ban Thống Nhứt mà cha!
+</p>
+
+<p>
+ - Tôi lạy ông! Con gái Nam Kỳ không có lấy thằng mặt lọ như tôi đâu!
+</p>
+
+<p>
+ - Mặt lọ nhưng huy chương đỏ ngực, lo gì không có đứa mê.
+</p>
+
+<p>
+ - Ông nội ơi! ông lãng mạn cách mạng dữ he! Tôi thì thực tế thôi. Nè, tôi kể cho ông nghe. Một lần nọ tôi đến dinh Sư đoàn Bộ ở Thọ Xuân, tôi trông thấy một cảnh tôi chán tới bây giờ.
+</p>
+
+<p>
+ - Cảnh bộ đội mình rước ông Già Rô mà tưởng Cụ Hồ phải không?
+</p>
+
+<p>
+ - Không đâu. Cảnh khác, nhưng cũng ớn lắm. Một ông Trung tá mặt non bấm ra sữa đại điện Bộ Tổng tư lệnh vào kiểm tra Sư đoàn mình. Ông Đại tá nhà mình đầu bạc trắng đứng nghiêm chào và nhận huấn thị của ông Trung tá con nít đáng con!
+</p>
+
+<p>
+ - Cấp bậc quân đội thì phải vậy chứ sao! Người ta đại diện Bộ Tổng mà.
+</p>
+
+<p>
+ - Nhưng nó làm gì mà lên Trung tá mau vậy kia chứ? Mười năm ông Đại tá nhà mình có lên đâu! Ổng là Đại đoàn phó hồi năm 1947 kia mà. Còn tôi Tiểu đoàn trưởng, mười năm trên đất Bắc vẫn còn nguyên!
+</p>
+
+<p>
+ - Xin lỗi nhé, cách mạng quên đồng chí! Ủa không! Cách mạng thử thách đồng chí đấy Hổng sao đâu! Về tới trỏng thăng hai ba cấp một lúc.
+</p>
+
+<p>
+ - Này ông Bảo, Chính ủy Sư đoàn được đi về làm Chính ủy Quân khu Sàigòng Chợ Lớn…
+</p>
+
+<p>
+ - Ủa, ổng dzô rồi sao?
+</p>
+
+<p>
+ - Lâu rồi và đền xong nợ nước cũng lâu rồi.
+</p>
+
+<p>
+ - Vậy hả. Trời đất! Ổng có cho tôi ngồi ngồi xe jeep lên nông trường Lam Sơn một lần.
+</p>
+
+<p>
+ - Nhưng giấu kỹ nghe!
+</p>
+
+<p>
+ - Ừ thì giấu!
+</p>
+
+<p>
+ - Chết lãng nhách!
+</p>
+
+<p>
+ - Đánh với Mỹ chết là vinh quang chứ sao lãng nhách?
+</p>
+
+<p>
+ Hai đứa nói chuyện khào cũng qua hết nửa ngày. Khi đổi được thịt hộp chúng tôi quay lại. Tôi hỏi ngay:
+</p>
+
+<p>
+ - Chừng nào di cho hay để tôi móc cái rờ-mọc của tôi theo với.
+</p>
+
+<p>
+ - Mai!
+</p>
+
+<p>
+ - Sớm vậy?
+</p>
+
+<p>
+ - Hễ có chuyến thì đi chớ sớm muộn gì. Cái “làng” khu Eo này bê bối lắm. Nằm lại một ngày teo… một ngày. Vừa rồi máy bay phóng thanh có nghe không?
+</p>
+
+<p>
+ - Có!
+</p>
+
+<p>
+ - Nó kêu đích danh từng tiên ông tiên bà trong bảng Phong Thần. Hình như có tên ông nữa đấy! Kêu xong, nó cho ông ba bốn ngày để “về với chánh nghĩa” ông hiểu không? Nếu có người về thì nó lại kêu tiếp, nếu không ai chịu về là nó chơi mạnh.
+</p>
+
+<p>
+ - Sao ông chắc vậy?
+</p>
+
+<p>
+ - Thì phải đoán bụng thằng địch chứ. Ngồi chờ nó tới à? Nó không biết những cán bộ từ đồng bằng hết đất sống chạy đi đâu à? Máy bay nó nghiêng cánh liếc thấy hết tất cả lều trại dưới này ông nội ơi! Nó chỉ ném cho ba trái bom napal thì rụi lẻng beng hết ráo thôi. Liệu mà “cuốn vó chạy dài” đi thôi cha non.
+</p>
+
+<p>
+ Nghe ông quân sự Mật bàn như thế, tôi về thuật lại cho Hoàng nghe Hoàng gạt phắt:
+</p>
+
+<p>
+ - Mấy tay đó trốn xâu lậu thuế sợ bí nắm đầu nên phóng nhanh, cậu chớ có tin! Mình lợi dụng tình hình hòa bình này bồi dưỡng và bỏ lưng một mớ lương thực nữa rồi sẽ đi. Đi một cuốc nữa phải vô tới ranh Nam Bộ. Có chết cũng bò cho tới ranh rồi chết mới nhắm mắt.
+</p>
+
+<p>
+ - Tùy anh! Tối thấy mấy chả cũng có lý lắm.
+</p>
+
+<p>
+ - Không bao giờ có chân lý cho mọi người, ai có chân lý nấy! Và cũng không có chân lý nào cố định. Chân lý cũng như con kỳ nhông. Nó đổi thay theo hoàn cảnh. Mấy chả phải đi ngay vì ở lâu sợ lậu sự, còn cậu Thiệp thì ban đầu định quất ngựa chuối vô Nam với mình nhưng sau khi biết vợ còn sống thì ở lại đây muôn năm. Phải không? Còn mình thì chừng nào đi được thì đi, muốn ở đến chừng nào thì ở. Riêng với mấy ông bà ở đồng bằng thoát chết lên đây mắc võng căng lều ngủ ngon giấc thì đây là đất sống, chỗ nào mắc võng căng lều được thì chỗ đó là Thánh địa! – ông nhạc sĩ chơi một hơi “andantino” làm tôi thối chí và hết muốn đi theo mấy nhà quân sự lậu vé nữa.
+</p>
+
+<p>
+ - Ở thì ở! – Tôi nói xụi lơ, rồi hỏi – Anh đổi được cái giống gì không?
+</p>
+
+<p>
+ - Không!
+</p>
+
+<p>
+ - Lấy gì “liên hoan” chiều nay?
+</p>
+
+<p>
+ - Ráng đào ba cái rễ cây vô nấu cà-ri ăn đỡ rồi mai sẽ tính!
+</p>
+
+<p>
+ - Cha nội giỡn hoài? Đổi được cái gì đưa ra coi.
+</p>
+
+<p>
+ - Có được một con cầy, nhưng nó đòi mắc lắm. Tao phải về bàn kế hoạch với mày. Nếu được thì minh sẽ làm lương khô bỏ theo lưng đắp dầu gối khỏe nhất!
+</p>
+
+<p>
+ - Còn ba cái xương “Tổ tiên” nữa ông nội!
+</p>
+
+<p>
+ Hoàng vỗ đùi kêu:
+</p>
+
+<p>
+ - Thấy mẹ! bỏ quên hỗm rày trong ba lô chắc thành dòi hết cả rồi.
+</p>
+
+<p>
+ Vừa nói Hoàng vừa chạy lại moi ba lô, lôi cái gói xương khỉ ra ném đánh bạch xuống đất rồi giở ra một cách cẩn thận như sợ hơi bom nguyên tử xì.
+</p>
+
+<p>
+ - Thối rùm!
+</p>
+
+<p>
+ - Không, không thối chút nào!
+</p>
+
+<p>
+ Hoàng đem xuống suốì rửa ráy rồi đem lên bỏ vô gà-mèn, nói:
+</p>
+
+<p>
+ - Tao nấu liền ba ngày ba đêm.
+</p>
+
+<p>
+ - Khoan đã!
+</p>
+
+<p>
+ - Sao?
+</p>
+
+<p>
+ - Để mai ăn thịt chó lấy xương nấu luôn một mẻ!
+</p>
+
+<p>
+ - Ai bảo mày vậy?
+</p>
+
+<p>
+ - Thì theo công thức quốc doanh do anh phát hiện chớ ai!
+</p>
+
+<p>
+ - Cái thằng!
+</p>
+
+<p>
+ Cơm nước xong ai leo lên võng nấy. Cơm no thật nhưng lại cảm thấy vẫn còn đói vì ăn với hộp ruốc mặn và uống nước trà tráng miệng. Hoàng lại trở lại với mẻ cao khi tưởng tượng.
+</p>
+
+<p>
+ - Mày nhớ hồi thuở nhỏ đi học, thầy giảng cho nghe vụ nấu sơn của Bernard Palissy không? Ông ta chụm hết củi mà cũng chưa tìm ra sơn. Ông ta bèn lấy bàn ghế làm củi. Đốt hết bàn ghế cũng vẫn chưa ra cái giống gì cả. Ông ta giở luôn cả nhà. Sau khi thiêu đến mảnh ván cuối cùng của ngôi nhà ông ta tìm được chất sơn dầu.
+</p>
+
+<p>
+ - Ông muốn làm Palissy hay “Palisse” – không “sy”?
+</p>
+
+<p>
+ - Đừng giỡn mày! Nấu sơn thì còn tìm công thức chứ nấu cao khỉ cứ già lửa là xương nó mềm ra, nó hóa thành nước, thế là đạt yêu cầu.
+</p>
+
+<p>
+ - Ừ thì cứ nấu xem. Mẹ, đây rồi khỉ, dọc, cà khu, lọ nồi trên đường này trốn mất hết đó anh Bảy! Vì chúng sợ cái phát minh của anh.
+</p>
+
+<p>
+ Suốt ngày nói liền miệng, chân đi không nghỉ, tay hoạt động không ngưng cho nên không nhớ không suy nghĩ gì hết. Khi màn đêm buông xuống mới thấy rêm nhức từ thể chất đến tâm tư.
+</p>
+
+<p>
+ Thiệp nằm ngất ngư bên cạnh cứ thở dài não nuột, mỗi một hơi thở của hắn có tác động làm tan hết cả khí phách còn sót lại trong người tôi. Tôi nhớ Phương! Mới hôm nào, nay đã nằm rã mục dưới đất giữa rừng.
+</p>
+
+<p>
+ Tôi nhớ những đêm vác gạch đi trong khu vực nhà Phương. Chỉ có hai đứa. Chúng tôi đi sánh đôi nhau trên những quãng đường khi thì lát gạch khi thì đầy cỏ đẫm sương. Tình yêu đến thật nhanh và bất ngờ. Chúng tôi hình như đã cho đây là lần quyết định, không còn lần nào khác nữa. Một gia đình con con đã vẽ ra trước mặt với một hài nhi oe oe trên tay mẹ.
+</p>
+
+<p>
+ Phương đã có ý thức đó từ lúc nào không biết, nhưng một hôm Phương đưa cho tôi đôi giày trắng tinh nhỏ tí xíu và bảo tôi: “Anh giữ lấy nhé! Mình sẽ mang cho con. Em mang một chân, anh mang một chân!” Nàng hôn tôi mãnh liệt và nói: “Không có con, em không chịu được!”
+</p>
+
+<p>
+ Một đêm chúng tôi tập xong, vào nhà; mẹ của Phương đã quay sẵn một con gà cho chúng tôi ăn. Phương cứ liếc nhìn tôi như bảo: “Mẹ thương anh lắm đó. Em nhỏng nhẽo ghê cơ! Mẹ lúc nào cũng chìu em! Em về là mẹ phải để dành cho em món gì cơ! Chị em cũng cưng em ghê lắm.” Rồi Phương òa khóc: “Em không muốn xa mẹ và chị một ngày nào! ”
+</p>
+
+<p>
+ Phương khóc suốt đọc đường. Chỉ qua ba trạm đầu Phương đã rên rẩm.
+</p>
+
+<p>
+ Đoàn khu Năm của Phương cùng với đoàn Nam Bộ của tôi hợp thành liên đoàn hành quân theo đội hình hàng dọc. Một chiều, Phương đi lạc không một người nào chịu trở lại tìm dùm. Của đáng tội, ai cũng mệt nhừ, mong tới nơi hạ trại để mắc võng nằm hoặc lo cơm nước ăn rồi nghỉ, có ai thừa sức khỏe mà đi làm một công việc như vậy Chỉ có tôi. Tôi ném ba lô và chạy, bò, leo ngược lại và tìm gặp Phương ngồi bên một bụi lau đang gục đầu khóc. Tôi quảy ba lô cho Phương và kè nàng đi từng bước. Nàng nói ngay: “Người ta đem con bỏ chợ!” Đó là lời than thở đầu tiên tôi được nghe trên đường Trường Sơn. (Và tới nay, đã hai mươi sáu năm qua, tôi như còn nghe văng vẳng bên tai khi tôi ngồi viết những dòng này). Tôi hỏi: Nếu anh không trở lại, em làm sao? – Em cứ ngồi đây chứ còn biết làm sao nữa. – Sao hồi theo kịp em không kêu lên? – Em vấp ngã, em bi trặc chân. Em biết ngay vì em không đứng dậy được. Em có kêu, nhưng người đi trước em quay lại vẫy vẫy tay quát: “Đi cố lên!” Rồi mấy người đi sau em đi tới, người thì hỏi một câu, người thì sờ đầu, rồi đi qua luôn! – Bộ họ không biết em đau chân sao? – Họ biết chứ!
+</p>
+
+<p>
+ Chúng tôi về đến điểm hạ trại. Tôi nấu cơm cho Phương ăn, nấu nước cho Phương ngâm chân. Tôi ở lại với Phương, săn sóc nàng tới khuya. Nàng khóc không dứt nước mắt.
+</p>
+
+<p>
+ Từ trạm đó trở đi, tôi như kẻ tùy tùng của nàng, lúc vác ba-lô lúc dìu nàng qua suối. Nàng rất tự hào về đôi chân đẹp của nàng. Đôi chân nàng đẹp thật. Có lẽ vì biết thế, nên mỗi lần qua suối nàng cố tình đi chậm lại và để cho “kẻ tùy tùng” lùi lại phía sau nàng. Nàng xắn quần lên dò dẫm lội từng bước và chốc chốc ngoái lại lườm tôi: Anh nhìn gỉ thế? – Anh xem em múa trên mặt nước!
+</p>
+
+<p>
+ Một đêm mưa, tôi đến tìm hơi ấm ở nàng. Hai đứa nằm trên một chiếc võng, nước mưa đổ ngập cả lưng…
+</p>
+
+<p>
+ Một lần khác trời khô ráo, ai nấy đều ngủ say. Nàng bảo:
+</p>
+
+<p>
+ - Giá mà bây giờ chúng mình đã có với nhau một đứa con!- Rồi nàng bảo: Anh cho em một đứa con đi!… Bây giờ này! Rồi nàng khóc. Mấy hôm sau chúng tôi chia tay..
+</p>
+
+<p>
+ Bây giờ này!
+</p>
+
+<p>
+ Bây giờ thì tất cả đều chấm dứt. Chấm dứt không còn một thứ gì. Đôi giày con tôi vẫn còn cất trong ba lô. Tấm hình nàng nằm trong ví nhưng tôi không dám dở ra xem từ khi Thiệp báo hung tín. Tôi sợ nhìn thấy nàng. Tôi nhìn thấy tôi trong mắt nàng. Bức thư nàng viết cho má tôi – tự nhận mình là con dâu trước khi làm lễ cưới – tôi vẫn còn giữ chung với hình nàng, bọc trong giấy bóng. Sau bao nhiêu lẩn lội suối, dầm mưa, tôi đã đem phơi nắng hoặc hơ lửa.
+</p>
+
+<p>
+ Tôi sợ tất cả những gì của nàng còn lại trong tôi. Tôi như nghe lại lời than trách giữa buổi chiều lạc đường “Người ta đem con bỏ chợ!” Lời ấy quả thật không quá đáng!
+</p>
+
+<p>
+ Tôi nằm trăn trở mãi cho tới khuya. Thiệp cũng không ngủ. Đồng bệnh tương tri.
+</p>
+
+<p>
+ - Anh có định làm gì cho chị Phương không?
+</p>
+
+<p>
+ - Tôi ấy à? Làm gì được bây giờ? – Tôi giật mình trả lời như máy rồi hỏi lại – Còn cậu, cậu định làm gì cho bà chị?
+</p>
+
+<p>
+ - Tôi hoàn toàn bí lối.
+</p>
+
+<p>
+ Sương khuya nặng hạt rơi đầm đìa trên mái lều.
+</p>
+
+<p>
+ Sáng hôm sau, thức dậy thân thể đau như dần, tâm thần nhẹ bông như vừa đầu thai kiếp khác. Giao liên đến ra lệnh tập họp để chuẩn bi lên đường. Giao liên, đó lại là một chàng trai. Giao liên toàn là người trẻ, hoặc từ Bắc vào hoặc từ Nam ra. Họ phải là những người “giỏi gìò, mau chân” trước nhất. Họ là những cái máy biết đi và thuộc đường đi. Họ không có tình cảm thương xót hoặc có mà không hề để lộ ra trước những cảnh huống bi đát của khách đi đường. Cho nên giữa khách và giao liên không có cả “chất nhờn xã giao.”
+</p>
+
+<p>
+ Trái hẳn với những buổi sáng lên đường khác, anh giao liên này cho tập họp từng đoàn một và đứng thành một hàng dọc, những ai chưa lên đường thì không được bén mảng tới. Khách lao nhao phản đối. Anh ta cứ mặt lạnh như tiền đi tới đi lui la quát, chỉ chỏ khách thi hành điều này điều nọ. Rồi cuối cùng đến từng đoàn một, yêu cầu trưởng đoàn cho xem danh sách đoàn viên của đoàn mình.
+</p>
+
+<p>
+ Đoàn đầu tiên được anh ta chiếu cố là đoàn cán bộ thuộc Bộ Công nghiệp nặng. Một người trong đoàn nói ngay:
+</p>
+
+<p>
+ - Trưởng đoàn nằm lại trạm ngoài.
+</p>
+
+<p>
+ - Ai thay thế?
+</p>
+
+<p>
+ - Chẳng có ai thay thế cả!
+</p>
+
+<p>
+ - Các đồng chí có bao nhiêu người?
+</p>
+
+<p>
+ - Khởi đầu thì bốn mươi, bây giờ còn hơn ba chục.
+</p>
+
+<p>
+ - Rụng bao nhiêu?
+</p>
+
+<p>
+ - Bảy, tám gì đó!
+</p>
+
+<p>
+ - Bảy hay tám nói rõ dùm cha nội?
+</p>
+
+<p>
+ - Bảy hay tám, tám hay chín, chín hay mười, không rõ được. Muốn rõ đồng chí chịu khó đếm.
+</p>
+
+<p>
+ - Vậy mỗi người cầm giấy ra tay cho tôi kiểm tra!
+</p>
+
+<p>
+ - Giấy gì?
+</p>
+
+<p>
+ - Giấy đi B chứ giấy gì.
+</p>
+
+<p>
+ - Nào, lấy giấy ra cho người ta xét! – Người kia bảo những kẻ cùng đoàn.
+</p>
+
+<p>
+ Tức thời có tiếng nhao nhao lên khắp đoàn. Có người ném cả ba lô xuống đất.
+</p>
+
+<p>
+ - Giấy đầu còn mà xét!
+</p>
+
+<p>
+ - Còn bộ xương sườn đây có đếm mấy cọng thì đếm!
+</p>
+
+<p>
+ - Cho đi vô thì đi, không cho thì trở ra chẳng xét con mẹ gì cả.
+</p>
+
+<p>
+ Ở đằng sau, cũng có tiếng la ó.
+</p>
+
+<p>
+ - Làm gì lâu vậy? Sáng sớm đi khỏe mà không cho đi bắt ngâm chân ở đây!
+</p>
+
+<p>
+ Anh giao liên cáu tức, quát trả:
+</p>
+
+<p>
+ - Yêu cầu các đồng chí giữ dùm kỷ luật chút!
+</p>
+
+<p>
+ Có tiếng đáp lại to hơn:
+</p>
+
+<p>
+ - Đồng chí xét cái gì mới được chớ?
+</p>
+
+<p>
+ - Có người đi lậu vào Nam!
+</p>
+
+<p>
+ Mọi người cười rộ lên. Một người nói:
+</p>
+
+<p>
+ - Vào Nam sung sướng quá nên có người ham chúng bay ạ!
+</p>
+
+<p>
+ Anh giao liên bị chọc tức, nói to:
+</p>
+
+<p>
+ - Có một số đồng chí được phân công xuống Bác Kế lại không đi mà chuồn vào Ông Cụ đấy! Ở trên bảo chặn họ lại. Vậy đoàn nào có người lạ mặt không phải là đoàn viên của mình xin báo cáo cho tôi biết ngay, nếu không, tôi sẽ xét giấy từng người một.
+</p>
+
+<p>
+ À ra thế! Tôi giật mình và lo cho các ông bạn vàng của tôi. Tôi đảo mắt khắp các đoàn nhưng không thấy các ngài thuộc đoàn nào và đứng ở đâu. Nếu xét gặp chắc rắc rối to. Các tay này không phải là loại người dễ bị bắt nạt.
+</p>
+
+<p>
+ Một hồi lâu, tôi không thấy ai báo cáo với giao liên cả Bỗng một người nói:
+</p>
+
+<p>
+ - Có cả chục đoàn, mỗi đoàn có vài chục người, đồng chí hỏi khơi khơi như vậy làm sao moi ra dân đi lậu. Ít nhất đồng chí cũng phải biết mặt mũi dấu riêng, vóc dáng và tên tuổi chứ đại khái chủ nghĩa vậy ai biết ai là ai?
+</p>
+
+<p>
+ - Biết thế nào được mà biết. Ở trên không cho biết gì hết!
+</p>
+
+<p>
+ - Thế thì chịu thôi.
+</p>
+
+<p>
+ - Ở trên bảo là: Mật, Trừ Trử Trữ hay Trứ gì đó, còn một dọc năm, sáu ông nữa trong đó có tên Quỳ hay Quy Quý gì đó tôi không nhớ.
+</p>
+
+<p>
+ - Vậy ai mách cho đồng chí những cái tên ấy?
+</p>
+
+<p>
+ - Trạm ngoài!
+</p>
+
+<p>
+ - Họ có nói thêm chi tiết nào nữa không?
+</p>
+
+<p>
+ - Họ nói toàn là cán bộ trung cấp.
+</p>
+
+<p>
+ Bỗng bật lên một tiếng cười:
+</p>
+
+<p>
+ - Bọn tôi là cán bộ trung cấp đây! Đồng chí lại xem có phải là dân đi lậu thì cứ bắt giữ lại.
+</p>
+
+<p>
+ Tôi nhìn ra Mật. Cái thằng cha ba trợn thật. Nó moi không ra lại chường mặt tự giới thiệu. Nhưng anh giao liên đi đến rồi xua tay:
+</p>
+
+<p>
+ - Đùa hoài!
+</p>
+
+<p>
+ - Giấy đây có xem thì xem — Mật tiếp.
+</p>
+
+<p>
+ - Dân đi lậu không như các đồng chí. Họ không thể nào đàng hoàng như các đồng chí vậy!
+</p>
+
+<p>
+ Mật nói:
+</p>
+
+<p>
+ - Vô Ông Cụ sướng ích gì mà họ phải trốn chui trốn nhủi vậy?
+</p>
+
+<p>
+ - Các cha ấy nhớ nhà các cha ấy không chịu đi khu Eo khu Éo. Tôi đoán thế!
+</p>
+
+<p>
+ Cả đoàn cười rần. Anh giao liên, hơi ngượng, ra lệnh:
+</p>
+
+<p>
+ - Thôi, ta đi – Nhưng còn bực tức – Trong khi đi đồng chí nào phát hiện được những ông ấy, báo cho tôi biết.
+</p>
+
+<p>
+ Mật cười:
+</p>
+
+<p>
+ - Họ đi mất đất rồi ở mà xét.
+</p>
+
+<p>
+ - Sao đồng chí biết?
+</p>
+
+<p>
+ - Đã đi lậu thì phải đi lén chứ đứng ra tập họp để đồng chí nắm đầu à?
+</p>
+
+<p>
+ - Thôi, tất cả theo tôi! – Anh giao liên nói xong bước nhanh tới phía trước.
+</p>
+
+<p>
+ Tôi thở phào. Bất giác tôi nhảy xuống đất chạy ra nắm tay Mật, rưng rưng:
+</p>
+
+<p>
+ - Ông về trước cho tôi gởi lời thăm bà con nghe ông!
+</p>
+
+<p>
+ - Ừ ráng mà lết nghe! Mật nắm tay tôi thật chặt – Tôi nhắn dùm cho. Mà nhớ đừng chết dọc đường! Có tệ lắm cũng ráng bò tới Bà Rịa nghe cha!
+</p>
+
+<p>
+ Tôi nhìn đoàn người lom khom đi khuất ở ven rừng, nước mắt đổ trào không ngăn được. Tôi cảm thấy quê hương còn xa quá! Mình tới đây mới được hơn phần ba đường. Rồi mai mình cũng đi về, nhưng thấy người ta đi sao buồn vậy.
+</p>
+
+<p>
+ Tôi về võng nằm. Hoàng đã thức dậy ló đầu ra gác trên mép võng hồi nào..
+</p>
+
+<p>
+ - Các cha lậu đi lọt rồi hả?
+</p>
+
+<p>
+ - Làm đếch gì bắt được họ!
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-013.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-015.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>

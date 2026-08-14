@@ -1,0 +1,1051 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chương 10 - Mạng Người L&#225; Rụng</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <style>
+        .chuhoavn { line-height: 1.8; text-align: justify; }
+        .chuhoavn p { margin-bottom: 1rem; }
+        img { max-width: 100%; height: auto; }
+    </style>
+</head>
+<body>
+    <div class="container-fluid py-3">
+<h1 class="h4">Chương 10</h1>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-011.html">Next &raquo;</a></nav>
+<div class="chuhoavn">
+<div class="chuhoavn"> <p>
+ Nếu chặng đường đã bị đạp lùi lại phía sau lưng là chặng đường của đôi chân thì con đường phía trước là con đường của suy tư. Cái gì cũng bắt bộ óc làm việc. Thắc mắc, bất mãn, so sánh, lý luận, vấn đáp, kết luận rồi lại kết luận. Nếu ở Hà Nội, người ta từng quen sống với cái khuôn của cuộc sống với nếp nghĩ của báo Nhân Dân và cái vòng lẩn quẩn của bánh xe đạp và mép bờ hồ méo méo tròn tròn thì vào đây đầu óc như được núi rừng giải phóng hẳn. Cái gì cũng dám nói, cái gì cũng dám nghĩ, cả những điều mà trước kia mình cho là rất bậy bạ cũng cứ nói phứa ra. Thì ra, cái lập trường chỉ giữ được khi ta bị chăn dắt kỹ càng. Buông lỏng nó ra nó quay ngoạm ngược lại kẻ đã tạo ra nó.
+</p>
+
+<p>
+ Đường này là đường cách mạng? Đi chừng nào thì tới? Không tới thì sao? Quê hương, cha mẹ, người yêu, lập trường, thành tích, thâm niên, sáng tác, dĩ vãng, tương lai… tất cả tâm tư trở thành một món xà bần vĩ đại sau đám giỗ. Món ngon nhất là thịt kho tàu, món dở nhất là chuối chát, món trung bình là cá nướng, tất cả còn lại đều trút vài cái trả to, tất cả đều trở thành một món “kho” có cái tên là xà bần.
+</p>
+
+<p>
+ Tư tưởng con người vượt Trường Sơn ỏ những chặng vừa qua là quyết phấn đấu giải phóng Miền Nam. Sau trên một tháng ý chí phấn đấu đó bị đá tai mèo cạp, bị muỗi đòn xóc hút, nay chỉ còn lại một cục bất mãn bao quanh bởi một lớp mây suy tư cho có vẻ triết học để tự lừa mình: Mình đang phấn đấu đây! Sự thực thì mình đang rũ xuống.
+</p>
+
+<p>
+ Có tiếng người khá hách dịch:
+</p>
+
+<p>
+ - Có ông nào là nhà văn nằm ở đây không?
+</p>
+
+<p>
+ - Tôi đây – Nghe cái giọng khá quan trọng tôi đáp ngay.
+</p>
+
+<p>
+ - Anh Sáu cho mời ông lại gặp. Nhanh nhé! – Rồi tôi nghe bước chân đi trở lại.
+</p>
+
+<p>
+ Tôi mọc ốc đầy người. Anh Sáu mời! Làm gì quan trọng đến thế. Cái thằng nhà văn này mười năm nay không được ai mời thỉnh cả. Cả mấy nàng mậu dịch cũng không mời, chỉ hất mặt như hỏi “ông cần gì?”. Nếu ông không cần gì thì đừng tới đây! Chỉ có các cô hàng bán xôi cá thể hay mấy bà bán bún riêu vỉa hè quen mặt biết tôi là “ông nhà báo” thì còn lễ độ chào mời. Hay bà chủ nhiệm hợp tác xã cơm tháng mà tôi giao cả cái bìa phiếu cho bà muốn bán buôn đổi chác làm gì thì làm – thì cũng còn biết trọng vọng tôi, ngoài ra…!! Làm gì có đến một ông lớn – mà là một ông mặt rằn trong các ông mặt rằn to nhất Hà Nội mời?
+</p>
+
+<p>
+ Bỏ mẹ rồi! Cái thằng Thuần là tên “gián điệp hai mặt”. Nó đến giả đò bất mãn nói nhảm để moi ruột mình rồi về báo cáo cấp trên. Thằng tệ thật. Không khéo mình bị gởi trả lại Miền Bắc thì chịu thêm luôn mười năm mưa phùn gió bấc nữa!
+</p>
+
+<p>
+ Tôi đến thì thấy anh Sáu đang nằm. Anh bấm đèn pin rọi vào một hòn đá rồi nói:
+</p>
+
+<p>
+ - Anh ngồi đó nghe! Xin lỗi tôi mệt quá. Giải quyết bao nhiêu công việc suốt ngày hôm qua với các đồng chí chỉ huy đơn vị… Này, anh cho tôi biết vấn đề B quay và vấn đề lính mình làm thổ phỉ, tự sát thương có thật không? Anh cho tôi biết sự thực với con mắt quan sát của anh.
+</p>
+
+<p>
+ - Dạ… – Tôi ngập ngừng.
+</p>
+
+<p>
+ - Anh cứ nói đi. Không việc gì đến anh cả. Anh là nhà văn anh đi trên con đường này đã hơn một tháng rồi. Anh có thấy những hiện tượng đó thật không?
+</p>
+
+<p>
+ - Dạ cái đó thì…
+</p>
+
+<p>
+ - Tôi đã bảo anh là anh cứ nói thật. Đảng cần biết sự thực. Tôi đã gạn hỏi các trưởng đơn vị nhưng họ chỉ nói là mặc dù đói la liệt nhưng chiến sĩ vẫn giữ kỷ luật rất nghiêm minh của quân đội cách mạng. Tôi có hỏi vấn đề thổ phỉ và B quay thì họ nói đó là lời đồn thôi. Tôi hỏi sang vấn đề quân số thì anh nào cũng nói là trừ số lính bệnh, thì không có ai đào ngũ cả. Anh thấy thế nào? Các anh đã nói đi hôm qua, nay đều nói lại hết!
+</p>
+
+<p>
+ - Dạ, những điều đó tôi chắc là …không có.
+</p>
+
+<p>
+ - Anh có chắc thật không?
+</p>
+
+<p>
+ - Dạ ít nhất là tôi không thấy ai sát thưong hoặc ai làm B quay cả!
+</p>
+
+<p>
+ Tôi mà không thấy thực ư? Có chắc như thế không hở cái thằng TÔI – NHÀ VĂN. Trời ơi! Tôi nói láo sao mà tài thế. Tôi nói xong, tôi giật mình vì không ngờ mình nói láo tài hơn viết văn. Mà đúng ra không phải Trời cho tôi hoặc tôi bẩm sinh mà chính là đảng đã dạy tôi cách nói đó. Cái trắng nói đen, cái đen nói trắng.
+</p>
+
+<p>
+ Tôi đã từng thấy lính chết trên võng mắc tận ngọn cây, tôi đã từng thấy xương rũ trong hốc đá, từng thấy những anh B quay trộm heo của trạm làm thịt và bị trạm bắt quả tang, tôi đã từng thấy những vụ cầm nhầm của nhau từ quai dép đến bi-đông, tôi cũng đã nói chuyện với một tên thổ phỉ là em trai của Thu trên đường này. Cớ sao tôi không dám nói cho ông Mặt Sắt nghe chứ?
+</p>
+
+<p>
+ Bởi vì tôi đã kinh nghiệm bản thân rồi. Đảng chỉ thích nghe tung hô vạn tuế. Đảng chỉ thích nghe vỗ tay hoan nghênh. Đảng không có muốn ai chỉ trích phê bình những sai lầm của đảng ngoại trừ những sai lầm đó đã tầy uầy ra không bụm laị được, bởi vì đảng lấy “Phê bình tự phê bình làm qui luật tiến bộ” nhưng cái qui luật ấy chỉ được đảng dùng như cái roi để quất vô mặt ai khác chứ không ai được dùng cái roi ấy chạm khẽ tới lông chân của đảng.
+</p>
+
+<p>
+ Do đó mà những thằng ngu nhất cũng không nói sự thực cho đảng nghe, mà nó nói theo kiểu đảng muốn nghe: đảng là thần thánh.
+</p>
+
+<p>
+ Ở Thái Hà Ấp, trong cuộc học tập chỉnh huấn đấu Nhân Văn, có một anh nhà văn, nhà văn Nam Kỳ Đoàn Giỏi đã phát biểu về tình hình thống nhất nước nhà một cách chân thành như sau: “Tại mình tham lam quá, cái gì cũng muốn quơ cả, chứ nếu mình trung lập như thằng Sia-núc thì có phải dễ dàng hơn không?) (Anh là bạn học với Sihanouk ở Chasseloup Laubat hay trường nào đó, tôi không nhớ). Chỉ vì một câu nói đó thôi mà anh bị kiểm thảo trần ai lai khổ. Bị chụp cho một lô mũ chồng cao tới nóc nhà.
+</p>
+
+<p>
+ Nhưng trời lại dun rủi làm sao mà sau đó, Trung Ương lại sáng mắt ra (chẳng lẽ nhờ câu nói ấy) đảng lại chủ trương “Hoà bình trung lập thống nhất đất nước”. Cái khẩu hiệu chiến lược này được kẻ dọc bờ tường từ Câu Lạc Bộ Thống Nhất cặp theo bờ hồ đến gần tới Nhà Thủy Tạ, chữ nào chữ ấy to hơn người và bề dài của nó phải đạp xe mười bốn phút năm mươi chín sơ-gồng mới hết.
+</p>
+
+<p>
+ Vậy mà đảng đâu có lời gì xin lỗi cho mát lòng mát dạ nhà văn. Cho nên sự nói láo thượng cấp của tôi kể ra cũng lô-gích lắm vậy.
+</p>
+
+<p>
+ Ông Mặt Sắt phàn nàn:
+</p>
+
+<p>
+ - Tôi chỉ nhìn thấy đoàn hôm qua hạ trại mà tôi phỏng đoán là các đồng chí ấy đã không nói sự thực.
+</p>
+
+<p>
+ - Dạ nếu họ không nói sự thực thì sự thực đó đã không có gì đáng nói thưa anh!
+</p>
+
+<p>
+ - Không phải thế đâu! Chẳng có con voi nào nằm im trong thúng được!
+</p>
+
+<p>
+ Anh Sáu lặng thinh.
+</p>
+
+<p>
+ Tôi càng giữ sự im lặng cho chắc chắn. Tôi muốn ghì giữ tôi lại chớ có lạc lòng mà nói tung hê ra. Chưa chắc được cái giống gì! Chỉ chuốc hoạ vào thân thôi. Nhân Văn Giai Phẩm há chẳng nói sự thực về Cải cách ruộng đất hay sao? Đảng đâu có chịu nghe. Đã bảo đảng thích ngọt mật mà! Thằng Phùng Quán chết lên chết xuống vì cái bài thơ Lời Mẹ Dặn. Nó chỉ viết: “Yêu ai cứ nói là yêu. Ghét ai cứ nói là ghét!” Thế mà các hợp tác xã đã từ chối không dám nấu cơm cho nó ăn. (Không phải vì ghét nó mà chính vì sợ liên lụy với một anh nhà văn có tư tưởng Nhân Văn)
+</p>
+
+<p>
+ Cái sự đời xã nghĩa không mấy gì đơn giản như người ta tưởng ngay cả trong việc nói lên sự thực cho đảng nghe với lời yêu cầu của đảng.
+</p>
+
+<p>
+ Tôi còn biết một sự thực rất ác hơn cũng trên con đường này. Cách đây vài trạm trên đường rẽ xuống Bác Kế, tôi được thấy một cái giấy bán đất. Người bán hiện đang ở Hà Nội, người mua đất đang trên đường về Nam. Tiền mua đất được chồng ở Hà Nội nhưng người về Nam có đến khu V thì mới nhận đất, nếu chết dọc đường thì sao?… Không ai biết được. Vì khi tôi thấy tờ giấy bán đất đó thì người cầm giấy còn sống và sắp về tới nơi!
+</p>
+
+<p>
+ Nếu sự kiện này được nêu ra ở Hà Nội thì toàn đảng sẽ ngồi cụp xương sống mà học tập cái “tư tưởng bóc lột phản động của địa chủ, tư bản” này, nhưng ở đây không ai phát hiện ra nổi. Và người mua đất đó là một huyện ủy viên.
+</p>
+
+<p>
+ Tôi không ngần ngại gì mà giấu luôn cái chuyện đó với đồng chí Trưởng ban Công Tác Nông Thôn của Trung ương đảng, tác giả “Cây đa bến cũ, con đò khác đưa“.
+</p>
+
+<p>
+ Sau khi thấy thái độ “chân thành” của tôi, anh Sáu bèn hỏi sang chuyện khác:
+</p>
+
+<p>
+ - Bao giờ các anh lên đường?
+</p>
+
+<p>
+ - Dạ cô diễn viên ca múa còn yếu chân quá!
+</p>
+
+<p>
+ - Không đi được à?
+</p>
+
+<p>
+ - Dạ cô ấy cứ lấy nước mắt thay chân.
+</p>
+
+<p>
+ - Nghĩa là sao?
+</p>
+
+<p>
+ - Dạ, thấy cô khóc, anh em chiến sĩ mỗi người mang ba-lô dùm một quãng.
+</p>
+
+<p>
+ - Chỉ vậy thôi à?
+</p>
+
+<p>
+ - Dạ đối với chúng tôi lúc này một tờ giấy cũng nặng như núi.
+</p>
+
+<p>
+ - Thôi được. Nghỉ vài hôm đã, rồi tôi cho người mang ba-lô cho cô ấy. Được không?
+</p>
+
+<p>
+ - Dạ nếu được thế thì cô ấy phấn khởi lắm
+</p>
+
+<p>
+ - Thôi, anh về nghỉ đi, sáng mai tôi bảo bác sĩ tới trị tiếp cái chân cô ấy và cái đầu gối của anh nhạc sĩ. Hãy yên tâm. Mọi việc trên đường dây rồi phải khá lên. Như thế này thì không thể được! Hai tàu gạo, ác quá!
+</p>
+
+<p>
+ - Dạ, cám ơn anh Sáu.
+</p>
+
+<p>
+ Tôi lững thững đi về như đi trong mơ!
+</p>
+
+<p>
+ Hai tàu gạo, anh Sáu nhắc lại, tôi nghe cũng xót xa lắm. Gạo đó đáng lẽ đắp đầu gối nay lại trút cả vào mồm Bà Thủy.
+</p>
+
+<p>
+ Tôi về đến lều thì quơ đúng cái gà-mèn trên đầu võng. Nó còn âm ấm.
+</p>
+
+<p>
+ Tôi cầm lấy giỡ nắp ra. Mùi hương bốc lên bát ngát như một thứ tiên dược tôi chưa được biết bao giờ: sữa!
+</p>
+
+<p>
+ Thu và nhạc sĩ đã làm thịt hộp sữa. Tôi nâng lên miệng nốc mấy hơi liền, tưởng mình bay bổng thành tiên. Sữa xuống cổ họng chạy vào dạ dày mát như nước sông chảy vào ruộng hạn. Bao nhiêu đất cằn cỏ khô đều vươn ngóc dậy, tôi nghe từng sớ thịt tươi lên, đầu óc sáng sủa lạ lùng.
+</p>
+
+<p>
+ - Anh về đấy à?
+</p>
+
+<p>
+ - Ừ!
+</p>
+
+<p>
+ - Có gì lạ không?
+</p>
+
+<p>
+ - Sẽ có người giúp em đi đến nơi.
+</p>
+
+<p>
+ Tôi sang lều Thu, ngồi phệch ở cái rễ cây đầu võng, thủ thỉ:
+</p>
+
+<p>
+ - May quá! Nếu không gặp anh Sáu anh không biết em sẽ làm sao mà đi.
+</p>
+
+<p>
+ - Em được sự săn sóc của bác sĩ tự nhiên em thấy những ý nghĩ trước đây của em tiêu tán hết.
+</p>
+
+<p>
+ - Em thấy phấn khởi cách mạng trở lại rồi hả?
+</p>
+
+<p>
+ - Anh lại ngạo em rồi!
+</p>
+
+<p>
+ - Lần này em về luôn quê anh nghe!
+</p>
+
+<p>
+ Thu lặng thinh. Tôi nghe hương tóc Thu bay loáng thoáng như những mảnh lụa bé tí vô hình trong bóng đêm.
+</p>
+
+<p>
+ Một vài ánh lửa bếp của mấy anh chiến sĩ nấu nướng muộn lập loè sau những bụi rậm làm cho không khí âm u của rừng vỡ ra thành một tấm màn ma quái rùng rợn. Tôi bỗng thấy mình hoá thành một thư sinh trong Liêu Trai, thân mình lâng lâng nhẹ nhỏm.
+</p>
+
+<p>
+ Tôi bước đến võng Thu, run run giọng:
+</p>
+
+<p>
+ - Anh lạnh quá.
+</p>
+
+<p>
+ - Anh có thấy gà-mèn sữa không?
+</p>
+
+<p>
+ - Uống hết rồi! – Tôi vén màn lên và chúi mũi vào tóc Thu, hai tay ôm quàng lấy cả chiếc võng. Tôi hôn, tôi hít miên man.
+</p>
+
+<p>
+ Thu đẩy tôi ra nhưng tôi vẫn ghì chặt, ôm nàng đầy tay tôi.
+</p>
+
+<p>
+ Sao bữa nay nàng thơm thế. Sao bữa nay gương mặt nàng không hiện rõ trong bóng đêm mà tôi vẫn thấy đẹp thế? Tôi không ngăn được tôi nữa. Tôi ngồi ghé lên mép võng làm hai cây cọc mắc võng rung chuyển mạnh.
+</p>
+
+<p>
+ - Ây chết! – Thu vừa xô tôi ra vừa kêu.
+</p>
+
+<p>
+ - Để anh lấy tí hơi ấm trong em.
+</p>
+
+<p>
+ Tôi cứ ngồi lên võng. Tôi đã quen mùi da thịt của Thu lâu rồi, nhưng mỗi lần gần nàng tôi vẫn thấy rụt rè hồi hộp như mới lần đầu.
+</p>
+
+<p>
+ Cái võng đã từng là chiếc thuyền không bến đưa tôi và Phương lên những khoảng không của vũ trụ, ru hồn hai đứa lạc vào những rừng tinh tú không tên. Chiếc võng là cái lá trong chuyện thần thoại nào mà người đời chưa biết. Mỗi lần tôi ngồi lên võng Thu tôi lại nhớ đến Phương. Một chiếc võng nhỏ bé mong manh nhưng chứa chan hạnh phúc, nặng trĩu những nguồn tình.
+</p>
+
+<p>
+ Chiếc võng của Thu khua xào xạc khi tôi ngả người lên, một nửa người tôi đè lên tấm thân bát ngát của nàng. Tất cả dây và võng đều chuyển mình tưởng đứt vỡ tung ra. Chiếc võng nằm một người thì thơ mộng biết bao nhiêu. Hai người nằm chung thì càng thơ nhưng lại khó mộng. Nó chập chờn, lắc lư như con thuyền nhỏ cỡi trên đầu sóng to. Một tí cử động cũng làm như cả lều trại sắp đổ ụp.
+</p>
+
+<p>
+ - Thôi anh ạ! Anh không nhớ à?
+</p>
+
+<p>
+ - Nhớ em lắm chứ.
+</p>
+
+<p>
+ - Em ở đây mà nhớ gì! Anh phải nhớ người ở xa mới phải!
+</p>
+
+<p>
+ - Dù có nhớ mấy cũng không làm gì. Anh nói thật với em nhé. Nhưng em phải hứa.
+</p>
+
+<p>
+ - Hứa gì?
+</p>
+
+<p>
+ - Hứa là đừng chê anh.
+</p>
+
+<p>
+ - Chê gì?
+</p>
+
+<p>
+ - Phương đã muốn anh và Phương có một kỷ niệm cụ thể hơn những cái hôn.
+</p>
+
+<p>
+ - Phương tỏ ý đó với anh hay sao?
+</p>
+
+<p>
+ - Không tỏ ra nhưng anh đoán thế.
+</p>
+
+<p>
+ - Anh chỉ phịa.
+</p>
+
+<p>
+ - Phương đưa cho anh đôi giày hài nhi trắng như tuyết.
+</p>
+
+<p>
+ Thu thở dài. Không biết trời đã khuya lắm chưa nhưng rừng đêm im bặt. Tiếng thở dài của Thu vang to, rõ mồn một.
+</p>
+
+<p>
+ Tôi hỏi Thu:
+</p>
+
+<p>
+ - Em nghĩ gì?
+</p>
+
+<p>
+ - Em không nghĩ gì cả. Em đau khổ…
+</p>
+
+<p>
+ Nàng chưa thốt hết câu thì môi tôi đã cắt ngang lời nói. Nàng vùng ra. Tôi thấy mình khoẻ hẳn lên. Sốt rét, đau bao tử và các thứ bệnh nặng bệnh nhẹ đều tản đi hết. Tôi cũng không ngờ.
+</p>
+
+<p>
+ Trong giấc mơ trần tục của tôi có một con suối ấm chảy qua, có một ngọn đồi phơn phớt cỏ xanh mát rượi và hai quả đào chín treo lơ lửng trước môi tôi. Mùi thơm ngây ngất. Tôi không dám cắn chỉ hưởng lấy mùi hương.
+</p>
+
+<p>
+ - Anh đi ngoài sương, không khéo bị cảm cho coi. – Thu rủ rỉ.
+</p>
+
+<p>
+ - Không bị đâu! – Tôi vừa nói vừa ngả nằm xuống.
+</p>
+
+<p>
+ - Gãy cọc mắc võng cho coi!
+</p>
+
+<p>
+ - Không sao đâu mà.
+</p>
+
+<p>
+ - Đứt võng.
+</p>
+
+<p>
+ - Hồi nãy không đứt, bây giờ đứt gì mà đứt? – Tuy nói thế, hai tiếng “đứt võng” vẫn dựng lên trong tôi caí hình ảnh lần trước hai ông bà làm tình vụng trên võng bị đứt võng, người con gái rơi xuống đất, xương sống bị cấn một mũi đá nhọn bị thương nặng. Người đàn ông bỏ trốn. Đến sáng khi giao liên đến dắt khách mới tìm thấy người con gái đã hấp hối.
+</p>
+
+<p>
+ Hai tiếng “đứt võng” làm tôi “ớn xương sống”, tôi bèn bảo Thu đưa đèn pin rọi dưới đít võng xem có đá hay không. Chỉ có lá khô.
+</p>
+
+<p>
+ - Em đừng lo. Anh lấy làm hạnh phúc được chết vì em hay chết chung với em.
+</p>
+
+<p>
+ Nàng tát mạnh vào mồm tôi:
+</p>
+
+<p>
+ - Nói gở.
+</p>
+
+<p>
+ - Thật mà! Anh thấy ấm lắm Thu ạ.
+</p>
+
+<p>
+ - Anh thiệt à! Cứ phí sức.
+</p>
+
+<p>
+ - Anh còn trèo núi như Fulro vậy mà.
+</p>
+
+<p>
+ Chiếc võng bé quá mà cũng rộng quá. Trời đất như run khe khẽ. Đầu núi nghiêng nghiêng như sắp đổ.
+</p>
+
+<p>
+ Một chập.
+</p>
+
+<p>
+ Thu phàn nàn:
+</p>
+
+<p>
+ - Cái ông đạo đức học đến thăm anh làm gì?
+</p>
+
+<p>
+ - May nhờ nó, em không phải lo!
+</p>
+
+<p>
+ - Lo gì?
+</p>
+
+<p>
+ - Lo chuyện nọ chuyện kia cho em chứ chuyện gì.
+</p>
+
+<p>
+ - Chuyện nọ chuyện kia là chuyện gì?
+</p>
+
+<p>
+ - Những chuyện em không thể biết mà cũng không nên biết.
+</p>
+
+<p>
+ - Em nghe hết cả rồi.
+</p>
+
+<p>
+ - Vậy sao còn hỏi?
+</p>
+
+<p>
+ Thu lặng thinh.
+</p>
+
+<p>
+ Con người kể cũng không khó nuôi hơn con lợn là mấy. Chỉ có tí sữa loãng mà đã làm cho sức khoẻ vượng lên trông thấy. Chẳng khác gì uống cao đại sâm nhung hổ cốt của Thái Thượng Lão Quân bào chế cho các tiên ông tiên bà ăn tiệc trên Thiên đình.
+</p>
+
+<p>
+ Một buổi trưa, tôi đang đi quơ củi để chuẩn bị cơm chiều thì tôi gặp thằng bạn nhạc trưởng. Tất cả đoàn đến đây đều được lệnh của anh Sáu dừng lại để chỉnh đốn tổ chức. Còn văn công thì phải chữa lại cái màn hoạt cảnh lính bắn vào chân thành ra lính chỉ bất mãn chung chung thôi. Nếu để như cũ thì chẳng khác nào xúi giục lính bắt chước. Hơn nữa, một anh lính đã liều đến mức đó rồi và đã về tới ngoài Bắc rồi thì không ai có thể giác ngộ cho anh ta trở vào đây nữa hoặc có giác ngộ thì không thể chỉ trong một sớm một chiều như đã diễn ra trong hoạt cảnh.
+</p>
+
+<p>
+ Do đó đoàn Văn Công có cơ hội ăn hút. Thanh Cao (gã nhạc trưởng) nói:
+</p>
+
+<p>
+ - Con Nguyệt nó muốn gặp mày ghê lắm.
+</p>
+
+<p>
+ - Sao cô ta biết tao ở đây?
+</p>
+
+<p>
+ - Nó thấy mầy chớ sao! Nó đóng vai con tẻng người yêu của thằng mắc dịch bắn vào chân đó. Nó bảo nó trông thấy mầy nó mất tinh thần, nó diễn không nổi nữa.
+</p>
+
+<p>
+ - Đếch họ. Cô ta có thằng Ba Ke nào đó “kèm” chặt mà!
+</p>
+
+<p>
+ - Đó là chuyện xưa rồi. Bây giờ nó đã trống chân! – Thanh Cao tiếp – Nó than với tao ghê lắm.
+</p>
+
+<p>
+ Hai đứa tìm cái bóng mát ngồi nói chuyện. Cao tiếp:
+</p>
+
+<p>
+ - Nó nói nó nghĩ tầm bậy về giai cấp. Lúc cải cách nó bị truy kích dữ quá nên nó bấn xúc xích nó phăng teo hết thảy mọi quan hệ bất cứ với ai, cho khoẻ cái thân. Kể cả chị ruột của nó, nó cũng không tới lui. Còn mày, nó biết mày đi kháng chiến từ 45 nhưng thành phần của mày lại không “hẩu”. Cả hai đứa cùng loài “đụ chỉa” cả nếu yêu nhau thì nặng chình chịch cất đầu lên không nổi. Hơn nữa, tổ chức đâu dễ gì chấp nhận cho hai bên lấy nhau.
+</p>
+
+<p>
+ Tôi phát cáu:
+</p>
+
+<p>
+ - Vậy sao sau đó có thằng đáp vào mà tổ chức lại “giúp đỡ” nghĩa là sao?
+</p>
+
+<p>
+ - Thì mày còn lạ gì nữa chứ! Phép vua thua lệ làng, trâu buộc ghét trâu ăn. Cái thằng đáp vô này là thằng trung đoàn trưởng, tuổi đáng bố tụi mình nhưng nó là “loại chưn xanh mắt ếch” mày rõ chưa? Thời nào cũng có Ông Trượng – Tiên Bửu cả… chứ không phải chỉ thời xưa mới có. Tình ca bây giờ đâu có dệt bằng “tơ lòng” mà xây dựng trên lập trường.- Cao tiếp – Thằng trưởng đoàn văn công được thằng trung đoàn trưởng đãi trà buổi sáng, đãi rượu buổi chiều. Ăn xôi chùa thì phải mở miệng. Cho nên nó xây dựng con Nguyệt cho thằng kia. Mày không nhớ vụ con Thu Hồng ở Ông Dèo gần Hoả Lựu nhà tao à? Lão Tư lệnh Lé đá thằng Sơn Lâm một cú nhẹ nhàng và quơ nàng Hồng bỏ xuống ghe bốn chèo cái một. Thằng Sơn Lâm tức giận chửi địt mẹ cách mạng rồi au revoir kháng chiến hồi 1950 mày nhớ không?
+</p>
+
+<p>
+ - Nhưng tên Lé là Tư lệnh cho cũng được đi, còn thằng trung đoàn truởng thì nước mẹ gì kia chứ?
+</p>
+
+<p>
+ - Nó không nước mẹ gì, nhưng thằng trưởng đoàn cứ rù rì rủ rỉ mãi rồi con Nguyệt thấy “giày cộp” và súng ngắn cũng oai. Hơn nữa nó lại có xe đạp riêng. Muốn đi Thanh Hoá chơi là nó đèo khỏi phải ngồi xe cây đau đít.
+</p>
+
+<p>
+ - Thì cứ mà ngồi xe đạp và khoái súng ngắn! Tao có ý kiến gì đâu!
+</p>
+
+<p>
+ Cao nói:
+</p>
+
+<p>
+ - Nhưng con nhỏ bị trong đoàn chế diễu quá xá nên chưa cắn câu đã cho thằng trung tá sụt cà lui té xuống Nông giang luôn.
+</p>
+
+<p>
+ - Thôi bỏ đi mày ơi! Tao chẳng thiết gì tới nàng ta nữa đâu! – Tôi gạt ngang – Nói chuyện bá láp nghe còn mát lỗ tai hơn.
+</p>
+
+<p>
+ Cao cười:
+</p>
+
+<p>
+ - Thì đây cũng là chuyện bá láp chớ chuyện hay ho gì! Nhưng chưa hết đâu. Sau khi hạ màn trung tá, tới lớp Ba Ke. Thằng Ba Ke này ở ngoài Tổng Cục đưa vào. Tao đang phụ trách đoàn, nó vào tự nhiên được bổ nhiệm thay tao để tao đi học ngoài Hà Nội. Thôi cũng được. Cái nghề này tao cũng chán thấy mẹ rồi… Đọ, nó vào hôm trước hôm sau đã “biểu diễn” một màn “chỉ huy đồng ca”. Chả là nó có đi học Trung Quốc mà. Thế là nó để ý con Nguyệt. Con Nguyệt là biên đạo vũ nên có cơ hội học tập ở nó. Rồi đó hai bên thân nhau đến mức độ trong đoàn phải “ách” lại. Rồi có thêm đề tài “Rau muống mà cấy ruộng Nam. Ba năm chết héo biết làm sao đây“. Con Nguyệt tự ái đá luôn phát thứ hai. Lúc đó tao đi học Hà Nội đã về. Tao xin chuyển ngành. Cởi áo lính, trở ra Hà Nội. Kỳ đó tao gặp mày, tao “tường thuật” cả cho mày nghe, nhớ không? Và có nói là con Nguyệt nó đang ân hận về cái lập trường kênh gân của nó, nó muốn gặp mày nhưng mày phớt lờ đi. Thiếu chi con “ghé” Hà Nội mà phải lụy vào một cái nơi bầm dập như vậy chứ!
+</p>
+
+<p>
+ - Thì tao có lụy đâu. Tao có lo ế đâu mà!
+</p>
+
+<p>
+ - Để tao nói nốt. Có lần nó ra Hà Nội, nó nhờ tao tìm mày dùm. Nhưng tao bảo là tao không biết chỗ ở của mày. Nó rầu lắm. Kể từ đó không có “chưn xanh mắt ếch” hoặc Ba Ke Bốn Ke nào vô được mà tụi trong đoàn thì lại chẳng thằng đực rựa nào sánh được với “nhà…à…dă..ăng”. – Cao dịu giọng – Thôi chín bỏ làm mười đi mày ạ. Cột kèo cũ coi vậy chớ vẫn hay hơn cái mới. Để nó âu sầu hoài, kể cũng tội nghiệp.
+</p>
+
+<p>
+ - Thôi đi mày ơi! Tao bây giờ lo đi “rải” phóng Miền Nam, chuyện lăng nhăng xin gác lại hết.
+</p>
+
+<p>
+ Cao cười hềnh hệch:
+</p>
+
+<p>
+ - Tàng hoài cha nội!! Vậy còn ngôi sao nào lấp lánh bên hông mày đó.
+</p>
+
+<p>
+ - Nó đi cùng đoàn với tao.
+</p>
+
+<p>
+ - Tao biết con nhỏ mà. Nó múa ba-lê cho đoàn Múa Trung ương chớ gì.
+</p>
+
+<p>
+ - Rồi sao?
+</p>
+
+<p>
+ - Thì đâu có sao, nhưng mà rau muống vô trong mình “trọ trẹ” nghe mệt lỗ tai lắm mày ơi. Các “via” nhà mình không “đắc co” cho đâu.
+</p>
+
+<p>
+ - Tao có gì mà phải “đắc co”.
+</p>
+
+<p>
+ - Mày là con quỉ mà! Tao không biết ư. Hở hở ra là bị mày. Láng cháng là mày yêu thôi. Đi như thế với mày, đố khỏi!
+</p>
+
+<p>
+ Hai đứa làm thinh. Một chập Cao nói:
+</p>
+
+<p>
+ - Nó muốn gặp mày được không? Tùy ý, tao không ép. Nhưng nó nhờ tao. Đây là lần thứ hai. Mày nên an ủi nó chút.
+</p>
+
+<p>
+ Tôi thở dài:
+</p>
+
+<p>
+ - Để về tới trỏng hãy tính.
+</p>
+
+<p>
+ - Mày dìa chớ “nàng” có dìa đâu mà tính.
+</p>
+
+<p>
+ - Vậy khỏi tính.
+</p>
+
+<p>
+ - Cái thằng ba trợn quá mậy! Chán mày quá!
+</p>
+
+<p>
+ - Ừ, chính tao cũng chán tao nữa là ai! – Tôi quơ ba que củi đứng dậy – Thôi đi về đằng chòi tao nấu nước trộm uống trà nói dóc. Trời nắng, củi khô, ít khói.
+</p>
+
+<p>
+ Thế là hai thằng kéo đi về lều của tôi. Trời nắng như thiêu. Mặc dù ngồi trong bóng mát mà mồ hôi vẫn đổ ròng ròng mồm thở như gà toi, há cả mồm ra mà không đủ.
+</p>
+
+<p>
+ Hoàng Việt và Thanh Cao cũng biết nhau từ lâu trong kháng chiến ở Miền Tây. Thấy Cao tới, Hoàng reo lên:
+</p>
+
+<p>
+ - Còn kí-nin đủ uống không chú em?
+</p>
+
+<p>
+ - Anh “rơ” cái bánh chè hả? Hừ hừ, tháo nó ra, gởi qua Bungari cho người anh em vô dầu mỡ rồi gởi trả về ráp lại mấy hồi.
+</p>
+
+<p>
+ Ba thằng ngồi dụm đâu uống trà nhu ba ông táo.
+</p>
+
+<p>
+ - Nè! Anh Bảy! – Cao gợi chuyện – Anh có gởi thơ về cho chị Bảy thường xuyên không?
+</p>
+
+<p>
+ - Mỗi năm 2 chiếc. Đi đường “Pa-Ghi” dô Sài Gòng.
+</p>
+
+<p>
+ - Hôn trên giấy rách hết cả giấy hả?
+</p>
+
+<p>
+ - Còn chú mày tài gì hơn tao?
+</p>
+
+<p>
+ - Hà hà… Mười năm chưa có cái nào! Phải được hai chiếc một năm cũng đỡ khổ.
+</p>
+
+<p>
+ Trong những thằng bạn tôi đi tập kết có hai thằng tôi cho là gan cùng mình. Cả hai đều là nhạc sĩ nổi tiếng cả. Một là nhạc sĩ Hoàng Lưu. Con nhà giàu, con một của gia đình. Lưu vừa cưới vợ được hai tháng là bỏ vợ đi ra Bắc. Không tin tức gì cả. Làm ở đài phát thanh với tôi. Đau gan, ở một mình, trong một cái hang không có số nhà. Nửa đêm bị chảy máu nội tạng. Hai ngày sau cơ quan đến đập cửa (vì tìm mãi không biết Lưu ở đâu), Lưu đã chết cứng.
+</p>
+
+<p>
+ Thằng thứ hai là Thanh Cao. Vợ là tiểu thư đài các, học trường đầm về quê ở Cái Đuốc Lớn (Cần Thơ) ở với ông ngoại là đại phú hộ trong vùng ai cũng biết danh. Chị tên Tuyết Hoa. Con trai nhà giàu đi hỏi rất đông lại không ưng. Gia đình gả ép. Đêm động phòng chị bỏ đi theo chàng nhạc sĩ nghèo rớt mồng tơi không có xu dính túi. Nhưng gia đình cưng con cháu nên đem cây gỗ cất nhà cho chị và Thanh Cao ở với nhau. Nhà trên bờ kinh Hoả Lựu. Chúng tôi về nghỉ ngơi ở đây luôn và nhờ sự tiếp tế của ông ngoại vợ mà vợ chồng Thanh Cao sống rất đầy đủ và hạnh phúc. Cao bảo vợ gọi cô em gái đang học ở trường đầm trên Sàigòn về để “làm cột chèo” vói tôi cho đủ cặp. Nhưng không hiểu sao hồi đó tôi lại lơ là không quyết tâm, hơn nữa, coi vợ con là một sự vướng bận làm cho mình không tung cánh được. Còn mê kháng chiến quá mà. Tuổi xanh như lúa mai! Đời thanh niên sáng tươi! - Không muốn ai ràng buộc! Cho nên tôi đã bỏ lỡ một cơ hội ngàn vàng.
+</p>
+
+<p>
+ Khi đình chiến Cao đã có hai trai. Hai cháu bé thật xinh đẹp, bụ bẩm. Chị Hoa có đưa hai đứa bé xuống bến Chắc Băng để từ giã chồng. Tôi thấy chuyện chồng đi vợ ở lại có hai năm, ăn thua gì. Cả ngàn người như thế, không phải một mình Cao. Ra Hà Nội, Cao đến tôi chơi. Anh chàng mới ân hận.
+</p>
+
+<p>
+ Khi gặp tôi ở Trường Sơn thì Cao đã bước đi bước nữa với một ca sĩ nào đó. Trước khi hai bên ở với nhau, Cao có đến hỏi ý kiến của tôi, gần như xin thông cảm và muốn tôi gật đầu như một sự “cho phép”. Nhưng tôi nhất định không đồng ý “Mày muốn làm gì tùy mày, nhưng tao không chứng nhận vụ này. Về trong đó, nếu chị hỏi tao, tao nói tao không biết.”
+</p>
+
+<p>
+ Cao ở liều với nàng ca sĩ. Và tôi không lui tới nữa. Có đến ba bốn năm liền. Bây giờ gặp nhau ở đây. Cao nói vụ cô Nguyệt với tôi nhưng cũng là để nói về tình duyên của chính mình.
+</p>
+
+<p>
+ Tôi biết Cao sẽ mở màn và lại yêu cầu tôi thông cảm cho nên tôi nói trước:
+</p>
+
+<p>
+ - Mày coi anh Bảy cũng như mày, ảnh có lăng nhăng gì đâu!
+</p>
+
+<p>
+ - Dề! Mày biết ảnh không lăng nhăng bên Sophia hả?
+</p>
+
+<p>
+ - Nhưng đó là cỡi ngựa xem hoa. Còn mày, mày làm thiệt.
+</p>
+
+<p>
+ Cao ngồi tự nhiên, bắp thịt má giật giật. Hồi lâu mới nói:
+</p>
+
+<p>
+ - Sẵn có anh Bảy ở đây, tao xin công khai hóa vấn đề.
+</p>
+
+<p>
+ Hoàng Việt xua tay:
+</p>
+
+<p>
+ - Thôi tao không có muốn làm quan toà để về sau ăn chổi chà, cũng không muốn làm biện hộ sư để ăn đạp ăn đá. Chuyện của mày mày làm mày biết và mày chịu lấy. Tao biết mày đã có con với cô ca sĩ rồi, nhưng khu phố không chịu khai sinh phải không?
+</p>
+
+<p>
+ - Tôi không cần! Khai hay không nó cũng là con tôi, tôi nuôi! – Cao nói tiếp – Nhưng hôm nay sẵn có bạn bè tôi xin đưa ra một bức thư. -Vừa nói Cao vừa móc túi lấy ví và moi ra một bì thư. – Đây mày đọc đi, Vũ.
+</p>
+
+<p>
+ Tôi tiếp lấy mở ra đọc. Đó là bức thư của một người chú của Cao ở Sàigon gởi ra cho Cao. Và một bức thư của chị Tuyết Hoa. Thư của chị Hoa viết rằng chị không thể sống cô đơn lâu hơn nữa vì những khó khăn mà chị không vượt nổi. Cho nên chị đến nhà chú ruột của Cao để trình bày (cha mẹ Cao đều qua đời khi Cao hãy còn bé) và xin phép chú đi lấy chồng nuôi con. Lá thư của chú Cao viết:Chú đồng ý vì đàn bà không thể không có chồng nhất là người đàn bà còn quá trẻ lại có hai con, v.v.. mà ngày chồng về thì không có hạn. Vậy việc “cháu Tuyết Hoa tái giá trong lúc cháu vẫn còn sống là điều có vẻ trái nghịch nhưng theo chú lại rất hợp lý…”
+</p>
+
+<p>
+ Tôi như thấy trời đất xoay vần. Bản tình ca khởi đầu đẹp đẽ biết bao, đoạn giữa cũng phong phú biết bao! Nhưng kết thúc lại vô cùng bi đát.
+</p>
+
+<p>
+ Tôi trao trả hai bức thư cho Cao. Cao lặng lẽ đút vào túi.
+</p>
+
+<p>
+ Nước trà đang ngon bỗng nhiên đắng lạ lùng. Cao rưng rưng nói:
+</p>
+
+<p>
+ - Tao không muốn cho mày biết để mày khỏi buồn lây. Tao biết mày mến gia đình tao, thương mấy đứa nhỏ dữ lắm. Sự đổ vỡ của đời chúng tao làm mày khổ. Do đó tao giấu biệt. Nếu trong lúc đó (1959-60) tao cho mày coi hai bức thư này thì mày sẽ cho răng tao mạo ra để dựng cớ mà làm càn. Bởi vì có rất nhiều đứa “lập hồ sơ giả” để xin tổ chức cưới vợ. – Cao tiếp- Trong số bạn bè mình, có thằng đã chơi mững đó rồi.
+</p>
+
+<p>
+ - Thằng Duy! Bạn chúng mình! Nó làm ở Bộ Công Nghiệp!
+</p>
+
+<p>
+ - Phải đó! Ba bốn năm liền nó lặn mất tiêu không đến với tao.- Cao nói.
+</p>
+
+<p>
+ - Nó bịa một bức thư gởi từ Paris. Nói rằng vợ nó đã lấy chồng. Nó cũng đem thư đến cho tao xem để tao “thông cảm” nhưng tao nhìn ra ngay tuồng chữ của nó. Tao nói thẳng ra, không sợ nó giận. Vì tao biết vợ chồng nó đã hục hặc với nhau hồi ở Rạch Ba Ngọn kia mà. Nó muốn thôi mà vì Phụ Nữ Cứu Quốc tỉnh bắt gắt quá nó thôi không được. Khi nó về cất nhà ở địa phương xong, nó bỏ vợ lăn lóc và đi lêu bêu, kháng chiến cà nhõng với chức chánh trị viên đại đội hồi xưa. – Tôi nói để cho Hoàng Việt biết một trường hợp lừa gạt của một ông cán bộ tập kết luôn. – Nó đã ăn ở với một người đàn bà goá rồi nó mới đến thanh minh với tôi anh Bảy ạ! Thế đó! Hồi ở trong Nam, chị Hằng, vợ nó than với tôi luôn. Chị ấy nói:”Anh Duy làm gì kỳ quá! Ở với tôi nữa thì ở, không thì tôi cho ảnh tự do! Đã có hai mặt con rồi, làm vậy chị em cười tôi chết. ” Khi chị sanh đứa bé thứ hai, một đứa con gái rất đẹp, anh ta về nhà kiếm chuyện gây lộn rồi ẳm con bé lội qua rạch đi…
+</p>
+
+<p>
+ - … Hắn đi qua nhà tao ở Hỏa Lựu và bảo vợ tao cho con bé bú dùm. Bà già vợ nó cho người đi tìm bắt đứa cháu về!… Một thằng khùng!
+</p>
+
+<p>
+ Tôi tiếp:
+</p>
+
+<p>
+ - Nó không khùng đâu. Nó vặn nài bẻ ổng như vậy là nó muốn nói gì đó chớ. Bởi vậy khi nó đưa “bức thơ Paris” ra cho tao xem là tao gạt ngay.
+</p>
+
+<p>
+ Hoàng hỏi Cao:
+</p>
+
+<p>
+ - Rồi mày tính sao?
+</p>
+
+<p>
+ - Thì tính như vậy đó! Tính rồi còn tính sao gì nữa!
+</p>
+
+<p>
+ - Không! Tính vụ vợ con mày ở trong Nam kìa.
+</p>
+
+<p>
+ Cao thở dài:
+</p>
+
+<p>
+ - Bây giờ chúng nó đâu còn là vợ con của tôi nữa anh Bảy!
+</p>
+
+<p>
+ - Tuy “lìa ngó ý còn vương tơ lòng”. – Hoàng cười gượng gạo – Vợ tào khang đâu có bỏ được chú em! Anh Bảy đây có chết bỏ xác dọc đường thì thôi chớ còn sống thì nhất định phải lết về tới nơi thăm con mẹ xề bằng được.
+</p>
+
+<p>
+ - Trường hợp anh khác trường hợp của tôi.
+</p>
+
+<p>
+ - Sao hồi đó không đem vợ con đi?
+</p>
+
+<p>
+ - Thì tưởng hai năm về. Anh Bảy ơi, tui đâu có dè cái sự đời nó thế này.
+</p>
+
+<p>
+ - Mày có định về không?
+</p>
+
+<p>
+ - Tôi ấy à? Xin về làm cái con mẹ gì nữa chứ?
+</p>
+
+<p>
+ - Mắc gốc rau muống rồi phải không?
+</p>
+
+<p>
+ - Không phải vậy đâu anh Bảy ơi! Lỡ dỡ như thế này rồi, tôi không muốn về nữa. Tôi ở luôn ngoài này thôi!!!
+</p>
+
+<p>
+ - Thôi mà, đừng có nói lẩy. Mày bỏ vợ chứ bỏ con được sao?
+</p>
+
+<p>
+ - Con không bỏ được mà vợ cũng không bỏ được, nhưng hoàn cảnh nó thế… Tôi phải đành nhắm mắt đưa chân. Tới đâu thì tới!
+</p>
+
+<p>
+ Cao uống thêm tí trà rồi nói với tôi:
+</p>
+
+<p>
+ - Tao nhờ mày một chuyện.
+</p>
+
+<p>
+ - Chuyện gì?
+</p>
+
+<p>
+ - Mày đem thư về cho vợ tao được không?
+</p>
+
+<p>
+ - Biết còn ở Hoả Lựu không?
+</p>
+
+<p>
+ - Nếu không thì mày hỏi bà con lối xóm. Trong vườn dừa có nhiều bà con biết và mến chúng mình. Chắc chưa ai quên mình đâu. Mày nhớ cái ông học đàn ghi-ta với tao không? Với ông Ba bên kia rạch, mỗi lần mày về nhà tao mày hay sang đó ngủ để nghe ổng đàn bầu. Vợ tao đi đâu bà con cũng biết mà.
+</p>
+
+<p>
+ - Ừ viết mau đi.
+</p>
+
+<p>
+ - Tao viết lâu rồi, nhưng không gởi được! Với nhờ mày đem cái hình tao về cho mấy đứa nhỏ coi. Nói đây là thằng cha khốn nạn của nó. Không biết tụi nó bao lớn rồi?
+</p>
+
+<p>
+ - Đứa mười hai, đứa mười tuổi.
+</p>
+
+<p>
+ - Không biết có học hành gì không hay chăn trâu chăn bò?
+</p>
+
+<p>
+ - Ông bà nó giàu có thế mà…
+</p>
+
+<p>
+ - Còn khỉ mẹ gì. Bộ đội và cơ quan ăn tàn mạt hết. Cô của vợ tao đã bỏ về thành hồi trước hoà bình. Phải hồi đó mày chịu làm cột chèo với tao có hai đứa hủ hỉ với nhau đỡ khổ biết mấy.
+</p>
+
+<p>
+ Cao nói vậy rồi gục đầu khóc mùi. Tôi hết biết nói sao. Cái thằng coi vậy mà yếu quá. Tôi không muốn nói gì thêm.
+</p>
+
+<p>
+ Hồi lâu Cao hỏi:
+</p>
+
+<p>
+ - Mà mày định không gặp con Nguyệt thiệt hả. Để tao trả lời dứt khoát cho nó kẻo nó chờ đợi hoài.
+</p>
+
+<p>
+ Tôi nói:
+</p>
+
+<p>
+ - Mày bảo cô ta là coi như tao không có ở đây. Nào, đưa hình và thư đây. Tao hứa với mày là khi về tới nơi tao sẽ tìm cách đến gặp vợ con mày.
+</p>
+
+<p>
+ (Nhưng khi về đến nơi tôi không giữa được lời hứa. Không phải vì tôi là thằng bạn quen thói thất tín nhưng vì không thể nào đi nổi xuống Miền Tây. Nếu đường đi suông sẻ thì tôi cũng ráng tìm hiểu một sự thực để có thể sau này viết tiểu thuyết, nhưng khi về R thì lại được phân công đi Bến Tre quê tôi. Từ Bến Tre mà xuống tới Cần Thơ thì phải vượt qua không biết bao nhiêu sông và lộ mà hồi kháng chiến tôi đã vượt và suýt chết không biết bao nhiêu lần rồi. Bây giờ xương đầu gối đã khô, túi mật không còn đầy, một đoạn đường gian nan như vậy, tôi không thể đi nữa, nhất là sau khi đã lội suốt Trường Sơn rồi… Trên đường về Bến Tre tôi có gặp một đoàn về Miền Tây, tôi có nói rõ địa dư của vùng nhà chị Tuyết Hoa và nhờ một anh bạn – nếu có dịp đi qua đó thì tìm đến trao thư và ảnh dùm. Không biết kết quả thế nào. Nhưng khi hồi chánh về Sàigòn, tôi có lên Tivi nhắn tin. Tôi tin chắc chị Tuyết Hoa có nghe…)
+</p>
+
+<p>
+ Cao nói:
+</p>
+
+<p>
+ - Để tao viết thêm ít hàng. Chừng nào mày đi?
+</p>
+
+<p>
+ - Chừng nào có lệnh anh Sáu thì đi. Ảnh đang cho vô từng đợt sau khi chấn chỉnh lại đội ngũ.
+</p>
+
+<p>
+ - Được rồi! Tao sẽ đưa thơ cho mày trước khi đi.
+</p>
+
+<p>
+ Cao đứng dậy ra về.
+</p>
+
+<p>
+ Trời nắng chang chang như lửa xối xuống những ngọn cây rừng nhưng tim tôi nghe lạnh buốt.
+</p>
+
+<p>
+ Tôi trèo lên võng nằm lắc lư cho cái không khí nặng nề chuyển động tan bớt đi sự ảm đạm do câu chuyện gây nên.
+</p>
+
+<p>
+ Hoàng Việt cũng nằm thườn ra thở dốc.
+</p>
+
+<p>
+ - Thế là tiêu tùng một cặp uyên ương. Cũng vì tập kết mà ra cả. Còn một vài thằng nhạc sĩ nữa cũng đang treo mõm ngoài Hà Nội. Lâu nay mày có gặp thằng Phạm Văn không?
+</p>
+
+<p>
+ - Chừng ba tháng trước khi vô trường đi B.
+</p>
+
+<p>
+ - Nó còn khùng khùng nữa hết?
+</p>
+
+<p>
+ - Vẫn thế thôi!!
+</p>
+
+<p>
+ - Còn thằng Lưu Kiều?
+</p>
+
+<p>
+ - Thằng này thì lo buôn lậu đâu có thiết gì tới vợ con.
+</p>
+
+<p>
+ - Còn thằng đại uý gì, rể ông Mười Huệ?
+</p>
+
+<p>
+ - Tôi không quen nhiều, nhưng thấy chiều thứ bảy nào nó cũng chở cô em vợ đi Bờ Hồ. Cô em thì ăn mặc bảnh tẻng còn y thì áo quần nhổm nha.
+</p>
+
+<p>
+ - Còn thằng Quốc Hiên, mày có nghe tin gì mới về nó không?
+</p>
+
+<p>
+ - Tin gì mới?
+</p>
+
+<p>
+ - Sau khi nó “cấy” con Lịch Dzung ở xưởng phim rồi nó còn “ghép” con nào nữa không?
+</p>
+
+<p>
+ - Ồ, hắn đi học hát ở Hungari mà anh không có liên lạc sao?
+</p>
+
+<p>
+ - Có nghe nó đi nhưng tao không biết tin gì về nó cả.
+</p>
+
+<p>
+ Rồi Hoàng thở dài:
+</p>
+
+<p>
+ - Như mày vậy mà khoẻ! Có vợ có con mệt lắm mày ơi!
+</p>
+
+<p>
+ - Không “hoạt” hai cái lỗ tai được hả?
+</p>
+
+<p>
+ - Không phải chuyện đó đâu. Tao nói nghiêm túc đấy. Mấy đứa con tao hồi tao đi tập kết thì đứa đã mười tuổi, đứa bảy tuổi. Nay lớn lắm rồi. Mẹ nó chụp hình gởi cho tao, tao đâu có nhìn ra. Mẹ kiếp, mình chống đế quốc mà đế quốc lại nuôi vợ con mình. Thế mới lạ!
+</p>
+
+<p>
+ - Đế quốc nào mà nuôi vợ con anh?
+</p>
+
+<p>
+ - Thì mình đi hết chín năm, rồi đi luôn mười năm nữa, bỏ vợ con lại Sàigòn. Vợ làm mướn, có tiền, nuôi con, còn con thì đi học nay có đứa chắc đã đỗ tú tài. Đế quốc không nuôi là gì?
+</p>
+
+<p>
+ - Tụi Sàigòn nó không biết anh đi tập kết à?
+</p>
+
+<p>
+ - Sao không biết, nhưng nó không khó dễ gì. Bạn bè tao ở Sàigòn cùng chơi nhạc cho các “bar” ngày trước thằng nào lại không biết tao đi kháng chiến, nữa là công an mật thám – Hoàng Việt thở dài sườn sượt – Tao nghe chuyện thằng Cao mà tao ớn lòng. Tao không hiểu nếu trường hợp của nó mà xảy ra cho tao thì không biết tao làm sao.
+</p></div>
+</div>
+<nav class="my-3 d-flex gap-2"><a class="btn btn-sm btn-outline-secondary" href="chapter-009.html">&laquo; Prev</a><a class="btn btn-sm btn-outline-secondary" href="index.html">Contents</a><a class="btn btn-sm btn-outline-secondary" href="chapter-011.html">Next &raquo;</a></nav>
+
+    </div>
+</body>
+</html>
