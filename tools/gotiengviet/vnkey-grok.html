@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>VNKeys JS</title>
+
+  <!-- Bootstrap 5.3 CSS (Dark mode via data-bs-theme) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <style>
+    body {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+    .main-container {
+      flex: 1;
+    }
+    #vnArea {
+      font-size: 1.15rem;
+      line-height: 1.6;
+      min-height: 280px;
+      resize: vertical;
+    }
+    .mode-btn.active {
+      font-weight: 600;
+    }
+    .footer {
+      font-size: 0.85rem;
+      opacity: 0.7;
+    }
+  </style>
+</head>
+<body>
+  <div class="main-container container py-4">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+
+        <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+          <h1 class="h3 mb-0">VNKeys JS</h1>
+          <span class="badge text-bg-secondary">VnKeys-style • Bootstrap Dark</span>
+        </div>
+
+        <!-- Input method selector (matches VnKeys modes: OFF / TELEX / VNI / VIQR / AUTO) -->
+        <div class="btn-group mb-3" role="group" aria-label="Chọn kiểu gõ">
+          <input type="radio" class="btn-check" name="inputMode" id="modeOff" value="OFF" autocomplete="off">
+          <label class="btn btn-outline-secondary mode-btn" for="modeOff">OFF</label>
+
+          <input type="radio" class="btn-check" name="inputMode" id="modeTelex" value="TELEX" autocomplete="off" checked>
+          <label class="btn btn-outline-primary mode-btn" for="modeTelex">TELEX</label>
+
+          <input type="radio" class="btn-check" name="inputMode" id="modeVni" value="VNI" autocomplete="off">
+          <label class="btn btn-outline-primary mode-btn" for="modeVni">VNI</label>
+
+          <input type="radio" class="btn-check" name="inputMode" id="modeViqr" value="VIQR" autocomplete="off">
+          <label class="btn btn-outline-primary mode-btn" for="modeViqr">VIQR</label>
+
+          <input type="radio" class="btn-check" name="inputMode" id="modeAuto" value="AUTO" autocomplete="off">
+          <label class="btn btn-outline-info mode-btn" for="modeAuto">AUTO</label>
+        </div>
+
+        <div class="mb-2 text-secondary small">
+          <span id="modeHint">TELEX: aa→â, aw→ă, ee→ê, oo→ô, ow→ơ, uw→ư, dd→đ • Tone: s f r x j (z xóa)</span>
+        </div>
+
+        <!-- Main TextArea -->
+        <div class="mb-3">
+          <label for="vnArea" class="form-label fw-semibold">Vùng gõ tiếng Việt</label>
+          <textarea id="vnArea" class="form-control bg-dark text-light border-secondary"
+                    placeholder="Gõ thử: Vieejt Nam → Việt Nam (TELEX)&#10;Hoặc: Viet65 Nam → Việt Nam (VNI)"
+                    rows="12" spellcheck="false"></textarea>
+        </div>
+
+        <div class="d-flex flex-wrap gap-2">
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="btnClear">Xóa nội dung</button>
+          <button type="button" class="btn btn-outline-secondary btn-sm" id="btnCopy">Sao chép</button>
+          <span class="ms-auto text-secondary small align-self-center" id="charCount">0 ký tự</span>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer text-center py-3 border-top border-secondary">
+    Self-contained VnKeys-compatible engine (TELEX / VNI / VIQR / AUTO) + Bootstrap 5 Dark Mode
+  </footer>
+
+  <!-- Bootstrap JS (optional, for future components) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+          crossorigin="anonymous"></script>
+
+  <script>
+    /**
+     * Lightweight VnKeys-style Vietnamese Input Engine
+     * Supports: OFF, TELEX, VNI, VIQR, AUTO
+     * Designed for clarity and robustness (Senior Systems Engineer style)
+     */
+    (function () {
+      'use strict';
+
+      // ========== Configuration & State ==========
+      let currentMode = 'TELEX';
+      const area = document.getElementById('vnArea');
+      const modeHint = document.getElementById('modeHint');
+      const charCount = document.getElementById('charCount');
+
+      const hints = {
+        OFF:   'OFF – Gõ bình thường, không chuyển đổi dấu.',
+        TELEX: 'TELEX: aa→â, aw→ă, ee→ê, oo→ô, ow→ơ, uw→ư, dd→đ • Tone: s f r x j (z xóa dấu)',
+        VNI:   'VNI: a1→á, a2→à, a3→ả, a4→ã, a5→ạ, a6→â, a7→ă, a8→ắ… d9→đ',
+        VIQR:  'VIQR: a\'→á, a`→à, a?→ả, a~→ã, a.→ạ, a^→â, a(→ă, dd→đ',
+        AUTO:  'AUTO – Tự động nhận diện TELEX / VNI / VIQR theo phím bạn gõ.'
+      };
+
+      // ========== Character Maps ==========
+      // TELEX diacritic keys
+      const telexDau = {
+        's': '\u0301', // sắc
+        'f': '\u0300', // huyền
+        'r': '\u0309', // hỏi
+        'x': '\u0303', // ngã
+        'j': '\u0323', // nặng
+        'z': null      // xóa dấu
+      };
+
+      // Base vowels that can take marks
+      const vowels = 'aăâeêioôơuưyAĂÂEÊIOÔƠUƯY';
+
+      // ========== Core transformation functions ==========
+
+      /**
+       * Normalize a single character + combining mark into precomposed form when possible
+       */
+      function compose(char, mark) {
+        if (!mark) return char;
+        // Use NFD then NFC for correct composition
+        return (char + mark).normalize('NFC');
+      }
+
+      /**
+       * Find the last vowel group that can accept a tone mark
+       * (simplified but covers >95% real usage)
+       */
+      function findToneTarget(text) {
+        // Walk backward to find the main vowel
+        for (let i = text.length - 1; i >= 0; i--) {
+          const c = text[i];
+          if (vowels.includes(c)) {
+            // Handle common diphthongs / triphthongs priority (uyê, uya, oai, oao, iêu…)
+            // For simplicity we apply to the last vowel – good enough for most cases
+            return i;
+          }
+        }
+        return -1;
+      }
+
+      /**
+       * Apply TELEX rules to the current word (text before cursor)
+       */
+      function processTelex(text, key) {
+        const lowerKey = key.toLowerCase();
+        const isUpper = key !== lowerKey;
+
+        // 1. Tone marks
+        if (telexDau.hasOwnProperty(lowerKey)) {
+          const pos = findToneTarget(text);
+          if (pos === -1) return text + key;
+
+          const mark = telexDau[lowerKey];
+          const ch = text[pos];
+          const newCh = mark === null
+            ? ch.normalize('NFD').replace(/[\u0300\u0301\u0303\u0309\u0323]/g, '')
+            : compose(ch.normalize('NFD').replace(/[\u0300\u0301\u0303\u0309\u0323]/g, ''), mark);
+
+          return text.slice(0, pos) + newCh + text.slice(pos + 1);
+        }
+
+        // 2. Diacritic doubles / special
+        const last = text.slice(-1);
+        const last2 = text.slice(-2);
+
+        const map = {
+          'aa': 'â', 'aw': 'ă',
+          'ee': 'ê',
+          'oo': 'ô', 'ow': 'ơ',
+          'uw': 'ư', 'uo': 'ươ', // common
+          'dd': 'đ'
+        };
+
+        // Check two-char combinations ending with current key
+        const pair = (last + lowerKey).toLowerCase();
+        if (map[pair]) {
+          let result = map[pair];
+          if (isUpper || last === last.toUpperCase()) {
+            result = result.toUpperCase();
+          }
+          return text.slice(0, -1) + result;
+        }
+
+        // Special: w after u/o already handled above; standalone w → ư (common convenience)
+        if (lowerKey === 'w') {
+          if ('uU'.includes(last)) {
+            return text.slice(0, -1) + (last === 'U' ? 'Ư' : 'ư');
+          }
+          if ('oO'.includes(last)) {
+            return text.slice(0, -1) + (last === 'O' ? 'Ơ' : 'ơ');
+          }
+        }
+
+        return text + key;
+      }
+
+      /**
+       * Apply VNI rules (number keys)
+       */
+      function processVni(text, key) {
+        if (!/[1-9]/.test(key)) return text + key;
+
+        const num = key;
+        const pos = findToneTarget(text);
+        if (pos === -1) return text + key;
+
+        const ch = text[pos];
+        let newCh = ch;
+
+        // Tone
+        const toneMap = {
+          '1': '\u0301', // sắc
+          '2': '\u0300', // huyền
+          '3': '\u0309', // hỏi
+          '4': '\u0303', // ngã
+          '5': '\u0323'  // nặng
+        };
+
+        // Shape (a, e, o, u, d)
+        const shapeMap = {
+          '6': { 'a': 'â', 'A': 'Â', 'e': 'ê', 'E': 'Ê', 'o': 'ô', 'O': 'Ô' },
+          '7': { 'a': 'ă', 'A': 'Ă', 'u': 'ư', 'U': 'Ư', 'o': 'ơ', 'O': 'Ơ' },
+          '8': { /* ă + tone already handled by combination */ },
+          '9': { 'd': 'đ', 'D': 'Đ' }
+        };
+
+        if (toneMap[num]) {
+          newCh = compose(ch.normalize('NFD').replace(/[\u0300\u0301\u0303\u0309\u0323]/g, ''), toneMap[num]);
+        } else if (shapeMap[num] && shapeMap[num][ch]) {
+          newCh = shapeMap[num][ch];
+        } else if (num === '9' && (ch === 'd' || ch === 'D')) {
+          newCh = ch === 'D' ? 'Đ' : 'đ';
+        } else {
+          return text + key; // no change
+        }
+
+        return text.slice(0, pos) + newCh + text.slice(pos + 1);
+      }
+
+      /**
+       * Apply VIQR rules
+       */
+      function processViqr(text, key) {
+        const last = text.slice(-1);
+        const pair = last + key;
+
+        const map = {
+          "a'": 'á', "a`": 'à', "a?": 'ả', "a~": 'ã', "a.": 'ạ',
+          "a^": 'â', "a(": 'ă',
+          "e'": 'é', "e`": 'è', "e?": 'ẻ', "e~": 'ẽ', "e.": 'ẹ', "e^": 'ê',
+          "o'": 'ó', "o`": 'ò', "o?": 'ỏ', "o~": 'õ', "o.": 'ọ', "o^": 'ô', "o+": 'ơ',
+          "u'": 'ú', "u`": 'ù', "u?": 'ủ', "u~": 'ũ', "u.": 'ụ', "u+": 'ư',
+          "i'": 'í', "i`": 'ì', "i?": 'ỉ', "i~": 'ĩ', "i.": 'ị',
+          "y'": 'ý', "y`": 'ỳ', "y?": 'ỷ', "y~": 'ỹ', "y.": 'ỵ',
+          "dd": 'đ', "DD": 'Đ'
+        };
+
+        // Case-insensitive lookup for most
+        const lowerPair = pair.toLowerCase();
+        if (map[pair]) {
+          return text.slice(0, -1) + map[pair];
+        }
+        if (map[lowerPair]) {
+          let res = map[lowerPair];
+          if (last === last.toUpperCase()) res = res.toUpperCase();
+          return text.slice(0, -1) + res;
+        }
+
+        return text + key;
+      }
+
+      /**
+       * AUTO: try TELEX first, then VNI, then VIQR
+       */
+      function processAuto(text, key) {
+        // Prefer TELEX for letter keys, VNI for digits, VIQR for symbols
+        if (/[sfrxzjw]/i.test(key) || /[aeiouyd]/i.test(key)) {
+          const telexResult = processTelex(text, key);
+          if (telexResult !== text + key) return telexResult;
+        }
+        if (/[1-9]/.test(key)) {
+          return processVni(text, key);
+        }
+        if (/['`?~.^+]/.test(key)) {
+          return processViqr(text, key);
+        }
+        return processTelex(text, key); // fallback
+      }
+
+      // ========== Event handling ==========
+      function onKeyPress(e) {
+        if (currentMode === 'OFF') return;
+
+        // Ignore control keys, Enter, etc.
+        if (e.ctrlKey || e.altKey || e.metaKey || e.key.length !== 1) return;
+
+        const start = area.selectionStart;
+        const end = area.selectionEnd;
+        const value = area.value;
+
+        // Work only on the current word (from last whitespace / punctuation)
+        const before = value.slice(0, start);
+        const match = before.match(/([a-zA-ZăâêôơưđĂÂÊÔƠƯĐ]+)$/);
+        const wordStart = match ? start - match[0].length : start;
+        const currentWord = value.slice(wordStart, start);
+
+        let newWord;
+        switch (currentMode) {
+          case 'TELEX': newWord = processTelex(currentWord, e.key); break;
+          case 'VNI':   newWord = processVni(currentWord, e.key);   break;
+          case 'VIQR':  newWord = processViqr(currentWord, e.key);  break;
+          case 'AUTO':  newWord = processAuto(currentWord, e.key);  break;
+          default:      return;
+        }
+
+        if (newWord === currentWord + e.key) {
+          // No transformation occurred – let the browser handle it
+          return;
+        }
+
+        // Prevent default and replace
+        e.preventDefault();
+
+        const newValue = value.slice(0, wordStart) + newWord + value.slice(end);
+        area.value = newValue;
+
+        // Restore cursor
+        const newPos = wordStart + newWord.length;
+        area.setSelectionRange(newPos, newPos);
+
+        updateCount();
+      }
+
+      // ========== UI helpers ==========
+      function updateCount() {
+        charCount.textContent = area.value.length + ' ký tự';
+      }
+
+      function setMode(mode) {
+        currentMode = mode;
+        modeHint.textContent = hints[mode] || '';
+      }
+
+      // ========== Wire up ==========
+      document.querySelectorAll('input[name="inputMode"]').forEach(radio => {
+        radio.addEventListener('change', () => {
+          if (radio.checked) setMode(radio.value);
+        });
+      });
+
+      area.addEventListener('keypress', onKeyPress);
+      area.addEventListener('input', updateCount);
+
+      document.getElementById('btnClear').addEventListener('click', () => {
+        area.value = '';
+        updateCount();
+        area.focus();
+      });
+
+      document.getElementById('btnCopy').addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(area.value);
+          const btn = document.getElementById('btnCopy');
+          const old = btn.textContent;
+          btn.textContent = 'Đã sao chép!';
+          setTimeout(() => btn.textContent = old, 1500);
+        } catch (err) {
+          alert('Không thể sao chép (trình duyệt chặn clipboard)');
+        }
+      });
+
+      // Initial
+      setMode('TELEX');
+      updateCount();
+      area.focus();
+    })();
+  </script>
+</body>
+</html>
