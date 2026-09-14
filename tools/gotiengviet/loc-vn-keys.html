@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoVkeys &ndash; Vietnamese Input Tool</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #212529;
+        }
+
+        .main-container {
+            flex: 1;
+        }
+
+        #vnArea {
+            min-height: 420px;
+            resize: vertical;
+            font-family: "Segoe UI", system-ui, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.65;
+        }
+
+        .footer {
+            font-size: 0.82rem;
+            opacity: 0.65;
+        }
+
+        .hint {
+            min-height: 2.25rem;
+            font-size: 0.9rem;
+        }
+
+        kbd {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-container container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                    <div>
+                        <h1 class="h3 mb-0">LoVkeys</h1>
+                        <p class="text-secondary small mb-0">
+                            Vietnamese Input Tool &bull; TELEX / VNI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-nowrap align-items-center gap-2 mb-3">
+                    <label for="inputMode" class="form-label fw-semibold mb-0">
+                        Kiểu gõ:
+                    </label>
+
+                    <select id="inputMode"
+                            class="form-select w-auto"
+                            aria-describedby="modeHint">
+                        <option value="OFF">OFF</option>
+                        <option value="TELEX" selected>TELEX</option>
+                        <option value="VNI">VNI</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 text-secondary hint"
+                     id="modeHint"
+                     aria-live="polite">
+                </div>
+
+                <div>
+                    <label for="vnArea" class="form-label fw-semibold">
+                        Vùng gõ tiếng Việt
+                    </label>
+
+                    <textarea id="vnArea"
+                              class="form-control bg-dark text-light border-secondary"
+                              rows="16"
+                              spellcheck="false"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              placeholder="Thử ngay:
+
+TELEX : Vieejt Nam  &rarr;  Việt Nam
+VNI   : Vie65t Nam  &rarr;  Việt Nam
+
+Gõ \ trước phím dấu để nhập ký tự nguyên dạng."></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center py-3 border-top border-secondary mt-auto">
+        Unicode NFC &bull; Dedicated Vietnamese Input Engine &bull; No External JavaScript
+    </footer>
+
+    <script>
+        (() => {
+            'use strict';
+
+            const area = document.getElementById('vnArea');
+            const inputMode = document.getElementById('inputMode');
+            const modeHint = document.getElementById('modeHint');
+
+            let currentMode = 'TELEX';
+
+            const TONE_RE = /[\u0300\u0301\u0303\u0309\u0323]/g;
+            const VOWELS = 'aăâeêioôơuưyAĂÂEÊIOÔƠUƯY';
+
+            const TELEX_TONES = {
+                s: '\u0301',
+                f: '\u0300',
+                r: '\u0309',
+                x: '\u0303',
+                j: '\u0323',
+                z: null
+            };
+
+            const VNI_TONES = {
+                '1': '\u0301',
+                '2': '\u0300',
+                '3': '\u0309',
+                '4': '\u0303',
+                '5': '\u0323'
+            };
+
+            const hints = {
+                OFF: `
+                            OFF - Gõ Latin bình thường, không chuyển đổi.
+                        `,
+
+                TELEX: `
+                            TELEX:
+                            <kbd>aa</kbd>&rarr;â
+                            <kbd>aw</kbd>&rarr;ă
+                            <kbd>ee</kbd>&rarr;ê
+                            <kbd>oo</kbd>&rarr;ô
+                            <kbd>ow</kbd>&rarr;ơ
+                            <kbd>uw</kbd>&rarr;ư
+                            <kbd>uow</kbd>&rarr;ươ
+                            <kbd>dd</kbd>&rarr;đ
+                            &bull; Tone: <kbd>s f r x j</kbd>
+                            &bull; <kbd>z</kbd> xóa dấu
+                            &bull; <kbd>\\</kbd> thoát
+                        `,
+
+                VNI: `
+                            VNI:
+                            <kbd>1 2 3 4 5</kbd> đặt dấu
+                            &bull; <kbd>6</kbd> mũ
+                            &bull; <kbd>7</kbd> móc
+                            &bull; <kbd>8</kbd> trăng
+                            &bull; <kbd>9</kbd> đ
+                            &bull; <kbd>\\</kbd> thoát
+                        `
+            };
+
+            function isUpper(ch) {
+                return ch !== ch.toLowerCase() && ch === ch.toUpperCase();
+            }
+
+            function getTone(ch) {
+                return ch.normalize('NFD').match(TONE_RE)?.[0] ?? '';
+            }
+
+            function removeTone(ch) {
+                return ch
+                    .normalize('NFD')
+                    .replace(TONE_RE, '')
+                    .normalize('NFC');
+            }
+
+            function applyTone(ch, tone) {
+                const withoutTone = ch.normalize('NFD').replace(TONE_RE, '');
+
+                return (withoutTone + (tone ?? '')).normalize('NFC');
+            }
+
+            function replaceAt(text, index, replacement) {
+                return text.slice(0, index) + replacement + text.slice(index + 1);
+            }
+
+            function replaceShapeKeepTone(ch, map) {
+                const replacement = map[removeTone(ch)];
+
+                return replacement
+                    ? applyTone(replacement, getTone(ch))
+                    : null;
+            }
+
+            function isVowel(ch) {
+                return VOWELS.includes(removeTone(ch));
+            }
+
+            function isLetter(ch) {
+                return /\p{L}/u.test(ch);
+            }
+
+            function getBaseLower(ch) {
+                return removeTone(ch).toLowerCase();
+            }
+
+            function findToneTarget(text) {
+                const chars = Array.from(text);
+                const vowelGroups = [];
+
+                let index = 0;
+
+                while (index < chars.length) {
+                    if (!isVowel(chars[index])) {
+                        index++;
+                        continue;
+                    }
+
+                    const start = index;
+
+                    while (index < chars.length && isVowel(chars[index])) {
+                        index++;
+                    }
+
+                    vowelGroups.push({
+                        start,
+                        end: index
+                    });
+                }
+
+                if (vowelGroups.length === 0) {
+                    return -1;
+                }
+
+                const group = vowelGroups.at(-1);
+                let start = group.start;
+                const end = group.end;
+
+                if (end - start > 1) {
+                    const beforeGroup = chars[start - 1]
+                        ? getBaseLower(chars[start - 1])
+                        : '';
+
+                    const firstVowel = getBaseLower(chars[start]);
+
+                    if (beforeGroup === 'q' && firstVowel === 'u') {
+                        start++;
+                    }
+                }
+
+                let skippedInitialGi = false;
+
+                if (end - start > 1) {
+                    const beforeGroup = chars[start - 1]
+                        ? getBaseLower(chars[start - 1])
+                        : '';
+
+                    const firstVowel = getBaseLower(chars[start]);
+
+                    if (beforeGroup === 'g' && firstVowel === 'i') {
+                        start++;
+                        skippedInitialGi = true;
+                    }
+                }
+
+                if (start >= end) {
+                    return -1;
+                }
+
+                const nucleus = chars
+                    .slice(start, end)
+                    .map(getBaseLower)
+                    .join('');
+
+                const finalVowel = getBaseLower(chars[end - 1]);
+
+                if (
+                    skippedInitialGi &&
+                    getBaseLower(chars[start]) === 'a' &&
+                    finalVowel === 'o'
+                ) {
+                    return start;
+                }
+
+                const hasFinalGlide =
+                    end - start >= 2 &&
+                    ['i', 'y', 'u', 'o'].includes(finalVowel); // Added 'o' to fix words like "chào"
+
+                if (hasFinalGlide) {
+                    return end - 2;
+                }
+
+                const hasCoda = chars
+                    .slice(group.end)
+                    .some(isLetter);
+
+                if (!hasCoda) {
+                    const openSyllableFirstToneGroups = [
+                        'oa',
+                        'oe',
+                        'ia',
+                        'ua',
+                        'ưa'
+                    ];
+
+                    if (openSyllableFirstToneGroups.includes(nucleus)) {
+                        return start;
+                    }
+                }
+
+                return end - 1;
+            }
+
+            function normalizeTonePosition(text) {
+                const chars = Array.from(text);
+
+                let groupEnd = chars.length;
+
+                while (groupEnd > 0 && !isVowel(chars[groupEnd - 1])) {
+                    groupEnd--;
+                }
+
+                if (groupEnd === 0) {
+                    return text;
+                }
+
+                let groupStart = groupEnd;
+
+                while (groupStart > 0 && isVowel(chars[groupStart - 1])) {
+                    groupStart--;
+                }
+
+                let tone = '';
+
+                for (let i = groupStart; i < groupEnd; i++) {
+                    const currentTone = getTone(chars[i]);
+
+                    if (!tone && currentTone) {
+                        tone = currentTone;
+                    }
+
+                    chars[i] = removeTone(chars[i]);
+                }
+
+                if (!tone) {
+                    return text;
+                }
+
+                const plainText = chars.join('');
+                const target = findToneTarget(plainText);
+
+                if (target === -1) {
+                    return text;
+                }
+
+                chars[target] = applyTone(chars[target], tone);
+
+                return chars.join('');
+            }
+
+            function processTelex(text, key) {
+                const lower = key.toLowerCase();
+
+                if (text.endsWith('\\')) {
+                    return text.slice(0, -1) + key;
+                }
+
+                if (Object.prototype.hasOwnProperty.call(TELEX_TONES, lower)) {
+                    const pos = findToneTarget(text);
+
+                    return pos === -1
+                        ? text + key
+                        : replaceAt(text, pos, applyTone(text[pos], TELEX_TONES[lower]));
+                }
+
+                const last = text.at(-1) ?? '';
+                const lastBase = removeTone(last);
+
+                if (text.length >= 2 && lower === 'w') {
+                    const first = text.at(-2);
+                    const second = text.at(-1);
+
+                    if (
+                        removeTone(first).toLowerCase() === 'u' &&
+                        removeTone(second).toLowerCase() === 'o'
+                    ) {
+                        const newU = applyTone(
+                            isUpper(first) ? 'Ư' : 'ư',
+                            getTone(first)
+                        );
+
+                        const newO = applyTone(
+                            isUpper(second) || isUpper(key) ? 'Ơ' : 'ơ',
+                            getTone(second)
+                        );
+
+                        return text.slice(0, -2) + newU + newO;
+                    }
+                }
+
+                const pair = (lastBase + lower).toLowerCase();
+
+                const shapes = {
+                    aa: 'â',
+                    aw: 'ă',
+                    ee: 'ê',
+                    oo: 'ô',
+                    ow: 'ơ',
+                    uw: 'ư',
+                    dd: 'đ'
+                };
+
+                if (shapes[pair]) {
+                    const shaped = isUpper(last) || isUpper(key)
+                        ? shapes[pair].toUpperCase()
+                        : shapes[pair];
+
+                    return text.slice(0, -1) + applyTone(shaped, getTone(last));
+                }
+
+                const reverse = {
+                    a: { 'â': 'a', 'Â': 'A' },
+                    e: { 'ê': 'e', 'Ê': 'E' },
+                    o: { 'ô': 'o', 'Ô': 'O' },
+                    d: { 'đ': 'd', 'Đ': 'D' },
+                    w: {
+                        'ă': 'a', 'Ă': 'A',
+                        'ơ': 'o', 'Ơ': 'O',
+                        'ư': 'u', 'Ư': 'U'
+                    }
+                };
+
+                const reverted = reverse[lower]?.[lastBase];
+
+                // Fix: a triple-tap should yields a double character: aaa -> aa, ooo -> oo, ddd -> dd
+                // So, replace this line:
+                // return reverted
+                //     ? text.slice(0, -1) + applyTone(reverted, getTone(last))
+                //     : text + key;
+
+                // by:
+
+                if (!reverted) {
+                    return text + key;
+                }
+
+                const tone = getTone(last);
+                const restored = applyTone(reverted, tone);
+
+                // For an untoned shape conversion, the third key restores the
+                // literal two-character sequence: aaa → aa, ooo → oo, ddd → dd.
+                //
+                // For a tone-bearing character, preserve the existing behavior:
+                // ấ + a → á, rather than appending another "a".
+                return text.slice(0, -1) + restored + (tone ? '' : key);
+
+            }
+
+            function processVni(text, key) {
+                if (text.endsWith('\\')) {
+                    return text.slice(0, -1) + key;
+                }
+
+                if (!/^[1-9]$/.test(key)) {
+                    return text + key;
+                }
+
+                const last = text.at(-1) ?? '';
+
+                if (key === '9') {
+                    if (last === 'd') return text.slice(0, -1) + 'đ';
+                    if (last === 'D') return text.slice(0, -1) + 'Đ';
+                    if (last === 'đ') return text.slice(0, -1) + 'd';
+                    if (last === 'Đ') return text.slice(0, -1) + 'D';
+
+                    return text + key;
+                }
+
+                const pos = findToneTarget(text);
+
+                if (pos === -1) {
+                    return text + key;
+                }
+
+                const target = text[pos];
+                let replacement = null;
+
+                if (VNI_TONES[key]) {
+                    replacement = applyTone(target, VNI_TONES[key]);
+                }
+
+                if (key === '6') {
+                    replacement = replaceShapeKeepTone(target, {
+                        a: 'â', A: 'Â', â: 'a', Â: 'A',
+                        e: 'ê', E: 'Ê', ê: 'e', Ê: 'E',
+                        o: 'ô', O: 'Ô', ô: 'o', Ô: 'O'
+                    });
+                }
+
+                if (key === '7') {
+                    replacement = replaceShapeKeepTone(target, {
+                        o: 'ơ', O: 'Ơ', ơ: 'o', Ơ: 'O',
+                        u: 'ư', U: 'Ư', ư: 'u', Ư: 'U'
+                    });
+                }
+
+                if (key === '8') {
+                    replacement = replaceShapeKeepTone(target, {
+                        a: 'ă', A: 'Ă', ă: 'a', Ă: 'A'
+                    });
+                }
+
+                return replacement && replacement !== target
+                    ? replaceAt(text, pos, replacement)
+                    : text + key;
+            }
+
+            function transform(text, key) {
+                let result;
+
+                switch (currentMode) {
+                    case 'TELEX':
+                        result = processTelex(text, key);
+                        break;
+
+                    case 'VNI':
+                        result = processVni(text, key);
+                        break;
+
+                    default:
+                        result = text + key;
+                        break;
+                }
+
+                return normalizeTonePosition(result);
+            }
+
+            function onBeforeInput(event) {
+                if (
+                    currentMode === 'OFF' ||
+                    event.inputType !== 'insertText' ||
+                    !event.data ||
+                    event.data.length !== 1 ||
+                    !event.cancelable ||
+                    event.isComposing
+                ) {
+                    return;
+                }
+
+                const start = area.selectionStart;
+                const end = area.selectionEnd;
+
+                if (start !== end) {
+                    return;
+                }
+
+                const beforeCursor = area.value.slice(0, start);
+                const match = beforeCursor.match(/([\p{L}\p{M}\\]+)$/u);
+                const wordStart = match ? start - match[0].length : start;
+                const currentWord = area.value.slice(wordStart, start);
+                const newWord = transform(currentWord, event.data);
+
+                if (newWord === currentWord + event.data) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                area.setRangeText(
+                    newWord,
+                    wordStart,
+                    start,
+                    'end'
+                );
+            }
+
+            function onPaste(event) {
+                const text = event.clipboardData?.getData('text/plain');
+
+                if (text === undefined || text === null) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                area.setRangeText(
+                    text.normalize('NFC'),
+                    area.selectionStart,
+                    area.selectionEnd,
+                    'end'
+                );
+            }
+
+            function setMode(mode) {
+                currentMode = hints[mode] ? mode : 'TELEX';
+
+                inputMode.value = currentMode;
+                modeHint.innerHTML = hints[currentMode];
+
+                area.focus();
+            }
+
+            inputMode.addEventListener('change', () => {
+                setMode(inputMode.value);
+            });
+
+            area.addEventListener('beforeinput', onBeforeInput);
+            area.addEventListener('paste', onPaste);
+
+            area.value = area.value.normalize('NFC');
+            setMode('TELEX');
+        })();
+    </script>
+</body>
+</html>
