@@ -1,0 +1,1504 @@
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\GlobalUsings.cs
+----------------
+global using LoVkeysTest.Tests.Support;
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\LoVkeysTest.csproj
+----------------
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" Version="10.0.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="18.10.0" />
+    <PackageReference Include="Microsoft.Playwright.Xunit" Version="1.62.0" />
+    <PackageReference Include="xunit" Version="2.9.3" />
+    <PackageReference Include="xunit.runner.visualstudio" Version="4.0.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+	<ItemGroup>
+		<None Update="web\**\*">
+			<CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+		</None>
+	</ItemGroup>
+
+	<ItemGroup>
+    <Folder Include="web\library\" />
+  </ItemGroup>
+
+</Project>
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Playwright_Setup.txt
+----------------
+
+
+Playwright setup (DoD/USAF work machines)
+
+1. Install package: Microsoft.Playwright.Xunit
+2. Install Playwright Browsers
+
+dotnet tool update --global Microsoft.Playwright.CLI
+playwright install
+
+If blocked:
+$env:NODE_TLS_REJECT_UNAUTHORIZED=0
+
+then:
+playwright install
+
+
+and finally:
+$env:NODE_TLS_REJECT_UNAUTHORIZED=1
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc1\HelloWorld\PlaywrightIntroTest.cs
+----------------
+using Microsoft.Playwright.Xunit;
+
+namespace LoVkeysTest.Tests.Loc1.HelloWorld;
+
+public class PlaywrightIntroTest : PageTest
+{
+    [Fact]
+    public async Task PageLoads_AndTitleIsCorrect()
+    {
+        // 1. Resolve path robustly using AppContext and Uri
+        string filePath = Path.Combine(AppContext.BaseDirectory, "web", "inline", "loc-vn-keys.html");
+        string fileUrl = new Uri(filePath).AbsoluteUri;
+
+        // 2. Navigate to the local file
+        await Page.GotoAsync(fileUrl);
+
+        // 3. Verify the title to ensure it loaded
+        await Expect(Page).ToHaveTitleAsync("LoVkeys – Vietnamese Input Tool");
+
+        // 4. and the default state as we expect as well
+        await Expect(Page.Locator("#inputMode")).ToHaveValueAsync("TELEX");
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc1\Telex\TelexInputTests.cs
+----------------
+using Microsoft.Playwright.Xunit;
+
+namespace LoVkeysTest.Tests.Loc1.Telex;
+
+public class TelexInputTests : PageTest
+{
+    // Helper method to load the local file before each test
+    private async Task NavigateToAppAsync()
+    {
+        // Use AppContext.BaseDirectory to reliably point to the bin/Debug/net10.0 folder
+        string filePath = Path.Combine(AppContext.BaseDirectory, "web", "inline", "loc-vn-keys.html");
+
+        // Use standard Uri class to automatically format it into a proper file:// URL
+        string fileUrl = new Uri(filePath).AbsoluteUri;
+
+        await Page.GotoAsync(fileUrl);
+
+        // Ensure textarea is ready and focused
+        await Page.Locator("#vnArea").ClickAsync();
+    }
+
+    [Theory]
+    // Single characters and circumflex/breve
+    [InlineData("aa", "â")]
+    [InlineData("aw", "ă")]
+    [InlineData("ee", "ê")]
+    [InlineData("oo", "ô")]
+    [InlineData("ow", "ơ")]
+    [InlineData("uw", "ư")]
+    [InlineData("dd", "đ")]
+    // Uppercase equivalents
+    [InlineData("AA", "Â")]
+    [InlineData("AW", "Ă")]
+    [InlineData("DD", "Đ")]
+    public async Task Telex_BasicShapes_TransformsCorrectly(string input, string expectedOutput)
+    {
+        await NavigateToAppAsync();
+        var textArea = Page.Locator("#vnArea");
+
+        // Use PressSequentiallyAsync to trigger `beforeinput` events
+        await textArea.PressSequentiallyAsync(input);
+
+        // Verify the value in the text area
+        await Expect(textArea).ToHaveValueAsync(expectedOutput);
+    }
+
+    [Theory]
+    // Basic tones on single vowels
+    [InlineData("as", "á")]
+    [InlineData("af", "à")]
+    [InlineData("ar", "ả")]
+    [InlineData("ax", "ã")]
+    [InlineData("aj", "ạ")]
+    // Complex tone targeting (testing the `findToneTarget` logic)
+    [InlineData("thuys", "thúy")]
+    [InlineData("hoangf", "hoàng")]
+    [InlineData("nguowif", "người")]
+    [InlineData("vieetj", "việt")]
+    [InlineData("truong", "truong")] // No tone
+    [InlineData("truowngf", "trường")]
+    public async Task Telex_TonesAndTargeting_TransformsCorrectly(string input, string expectedOutput)
+    {
+        await NavigateToAppAsync();
+        var textArea = Page.Locator("#vnArea");
+
+        await textArea.PressSequentiallyAsync(input);
+        await Expect(textArea).ToHaveValueAsync(expectedOutput);
+    }
+
+    [Theory]
+    // "z" removes the applied tone
+    [InlineData("asz", "a")]
+    [InlineData("afz", "a")]
+    public async Task Telex_CancellationsAndReversions_TransformsCorrectly(string input, string expectedOutput)
+    {
+        await NavigateToAppAsync();
+        var textArea = Page.Locator("#vnArea");
+
+        await textArea.PressSequentiallyAsync(input);
+        await Expect(textArea).ToHaveValueAsync(expectedOutput);
+    }
+
+    [Theory]
+    // The escape character '\\' should bypass the TELEX engine for the next character
+    // Note: In C#, @"..." is a literal string, so @"\" is a single backslash stroke.
+    [InlineData(@"a\a", "aa")]
+    [InlineData(@"Hello Wo\rld", "Hello World")]
+    [InlineData(@"d\d", "dd")]
+    [InlineData(@"\s", "s")]
+    public async Task Telex_EscapeCharacter_BypassesTransformation(string input, string expectedOutput)
+    {
+        await NavigateToAppAsync();
+        var textArea = Page.Locator("#vnArea");
+
+        await textArea.PressSequentiallyAsync(input);
+        await Expect(textArea).ToHaveValueAsync(expectedOutput);
+    }
+
+    [Theory]
+    [InlineData("Hoom nay trowif nawngs ddepj", "Hôm nay trời nắng đẹp")]
+    [InlineData("Xin chaof thees giowis!", "Xin chào thế giới!")]
+    public async Task Telex_SentenceInput_HandlesSpacesAndPunctuation(string input, string expectedOutput)
+    {
+        await NavigateToAppAsync();
+        var textArea = Page.Locator("#vnArea");
+
+        await textArea.PressSequentiallyAsync(input);
+        await Expect(textArea).ToHaveValueAsync(expectedOutput);
+    }
+
+    [Theory]
+    // 1. Tone Overwrites
+    [InlineData("asf", "à")] // Sắc followed by Huyền
+    [InlineData("aaszf", "ầ")] // Â -> Ấ -> Â -> Ầ
+    // 2. Qu / Gi Exceptions
+    [InlineData("quas", "quá")]
+    [InlineData("gias", "giá")]
+    // 3. Shortcuts
+    [InlineData("uow", "ươ")]
+    [InlineData("uowf", "ườ")]
+    // 4. Mixed Casing
+    [InlineData("Vieetj", "Việt")]
+    [InlineData("Ddaij", "Đại")]
+    [InlineData("Aa", "Â")]
+    // 5. English Integration / Reversions
+    [InlineData("faceboook", "facebook")]
+    [InlineData("s", "s")] // Tone key with no vowel
+    public async Task Telex_RealWorldEdgeCases_TransformsCorrectly(string input, string expectedOutput)
+    {
+        await NavigateToAppAsync();
+        var textArea = Page.Locator("#vnArea");
+
+        await textArea.PressSequentiallyAsync(input);
+        await Expect(textArea).ToHaveValueAsync(expectedOutput);
+    }
+
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc2\Telex\TelexCoreShapeTests.cs
+----------------
+// #1
+
+namespace LoVkeysTest.Tests.Loc2.Telex;
+
+public class TelexCoreShapeTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("aa", "â")]
+    [InlineData("aw", "ă")]
+    [InlineData("ee", "ê")]
+    [InlineData("oo", "ô")]
+    [InlineData("ow", "ơ")]
+    [InlineData("uw", "ư")]
+    [InlineData("uow", "ươ")]
+    [InlineData("dd", "đ")]
+    public async Task ShapeKeys_ConvertLowercaseLetters(string keys, string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("AA", "Â")]
+    [InlineData("Aw", "Ă")]
+    [InlineData("Dd", "Đ")]
+    [InlineData("UOW", "ƯƠ")]
+    public async Task ShapeKeys_PreserveUppercaseLetters(string keys, string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc2\Telex\TelexCoreToneTests.cs
+----------------
+// #2
+
+namespace LoVkeysTest.Tests.Loc2.Telex;
+
+public class TelexCoreToneTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("as", "á")]
+    [InlineData("af", "à")]
+    [InlineData("ar", "ả")]
+    [InlineData("ax", "ã")]
+    [InlineData("aj", "ạ")]
+    public async Task ToneKeys_ApplyAllFiveVietnameseTones(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("asf", "à")]
+    [InlineData("afs", "á")]
+    [InlineData("asj", "ạ")]
+    public async Task LaterToneKey_ReplacesTheCurrentTone(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("az", "a")]
+    [InlineData("asz", "a")]
+    [InlineData("aasz", "â")]
+    public async Task Z_RemovesTheToneAndPreservesTheLetterShape(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("s", "s")]
+    [InlineData("f", "f")]
+    [InlineData("r", "r")]
+    [InlineData("x", "x")]
+    [InlineData("j", "j")]
+    [InlineData("z", "z")]
+    [InlineData("bs", "bs")]
+    [InlineData("qs", "qs")]
+    [InlineData("bz", "bz")]
+    [InlineData("123", "123")]
+    [InlineData("hello", "hello")]
+    public async Task ToneKeys_ArePreservedWhenNoVowelExists(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc2\Telex\TelexTonePlacementTests.cs
+----------------
+// #3
+
+namespace LoVkeysTest.Tests.Loc2.Telex;
+
+public class TelexTonePlacementTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("hoas", "hóa")]
+    [InlineData("hoaf", "hòa")]
+    [InlineData("giaos", "giáo")]
+    [InlineData("quas", "quá")]
+    [InlineData("muas", "múa")]
+    [InlineData("ngoaif", "ngoài")]
+    [InlineData("chieecs", "chiếc")]
+    [InlineData("muoosn", "muốn")]
+    [InlineData("giowis", "giới")]
+    public async Task ToneKeys_TargetTheCorrectVowel(string keys, string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc2\Telex\TelexTypingFlowTests.cs
+----------------
+// #4
+
+namespace LoVkeysTest.Tests.Loc2.Telex;
+
+public class TelexTypingFlowTests : LoVkeysPageTest
+{
+    [Fact]
+    public async Task ShapeConversion_UpdatesAsEachKeyIsTyped()
+    {
+        await OpenTelexAsync();
+
+        await TypeKeysAsync("a");
+        await AssertEditorValueAsync("a");
+
+        await TypeKeysAsync("a");
+        await AssertEditorValueAsync("â");
+    }
+
+    [Fact]
+    public async Task Backspace_DeletesAComposedVietnameseCharacter()
+    {
+        await OpenTelexAsync();
+
+        await TypeKeysAsync("aas");
+        await AssertEditorValueAsync("ấ");
+
+        await Page.Keyboard.PressAsync("Backspace");
+        await AssertEditorValueAsync(string.Empty);
+    }
+
+    [Theory]
+    [InlineData(@"a\a", "aa")]
+    [InlineData(@"a\s", "as")]
+    [InlineData(@"d\d", "dd")]
+    [InlineData(@"\s", "s")]
+    [InlineData("\\\\", "\\")]
+    public async Task Backslash_InputsTheNextKeyLiterally(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Fact]
+    public async Task Backslash_PreservesEnglishTextContainingAToneKey()
+    {
+        await TypeAndAssertAsync(@"Hello Wo\rld", "Hello World");
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc2\Telex\TelexWordTests.cs
+----------------
+// #5
+
+namespace LoVkeysTest.Tests.Loc2.Telex;
+
+public class TelexWordTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("thuys", "thúy")]
+    [InlineData("tieesng", "tiếng")]
+    [InlineData("nghieemj", "nghiệm")]
+    [InlineData("chuyeern", "chuyển")]
+    [InlineData("Nguowif", "Người")]
+    [InlineData("Dduwowngf", "Đường")]
+    [InlineData("Vieetj", "Việt")]
+    public async Task CommonVietnameseWords_ConvertCorrectly(string keys, string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Fact]
+    public async Task Sentence_ConvertsAcrossWordBoundaries()
+    {
+        await TypeAndAssertAsync("Tieesng Vieetj", "Tiếng Việt");
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc3\Examples\FutureLibraryCoverageExamples.cs
+----------------
+namespace LoVkeysTest.Tests.Loc3.Examples;
+
+public class FutureLibraryCoverageExamples : LoVkeysPageTest
+{
+    [Fact(Skip = "Enable after web/library/index.html is created and loads the extracted LoVkeys library.")]
+    public async Task LibraryPage_LoadsInTelexMode()
+    {
+        await OpenTelexAsync(TestWebPages.LibraryLoVkeys);
+
+        await Expect(InputMode).ToHaveValueAsync("TELEX");
+        await Expect(Editor).ToBeVisibleAsync();
+    }
+
+    [Fact(Skip = "Enable after web/library/index.html is created and loads the extracted LoVkeys library.")]
+    public async Task LibraryPage_ConvertsTelexInput()
+    {
+        await TypeAndAssertAsync(
+            TestWebPages.LibraryLoVkeys,
+            "Tieesng Vieetj",
+            "Tiếng Việt");
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc3\Telex\TelexCaseRegressionTests.cs
+----------------
+// #1
+
+namespace LoVkeysTest.Tests.Loc3.Telex;
+
+public class TelexCaseRegressionTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("Aa", "Â")]
+    [InlineData("aA", "Â")]
+    [InlineData("AW", "Ă")]
+    [InlineData("EE", "Ê")]
+    [InlineData("OO", "Ô")]
+    [InlineData("OW", "Ơ")]
+    [InlineData("UW", "Ư")]
+    [InlineData("DD", "Đ")]
+    [InlineData("Uow", "Ươ")]
+    [InlineData("uOw", "ưƠ")]
+    [InlineData("uoW", "ưƠ")]
+    public async Task ShapeKeys_HandleMixedAndUppercaseInput(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("AAs", "Ấ")]
+    [InlineData("Awj", "Ặ")]
+    [InlineData("EEs", "Ế")]
+    [InlineData("OOf", "Ồ")]
+    [InlineData("Owr", "Ở")]
+    [InlineData("Uwx", "Ữ")]
+    public async Task UppercaseShapedVowels_AcceptToneKeys(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("TIEESNG VIEETJ", "TIẾNG VIỆT")]
+    [InlineData("DDOONGF NAI", "ĐỒNG NAI")]
+    public async Task AllUppercaseWords_PreserveUppercaseOutput(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc3\Telex\TelexEditingRegressionTests.cs
+----------------
+// #2
+
+namespace LoVkeysTest.Tests.Loc3.Telex;
+
+public class TelexEditingRegressionTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData(@"abc\f", "abcf")]
+    [InlineData(@"hoa\s", "hoas")]
+    [InlineData("\\\\", "\\")]
+    [InlineData("a\\\\", "a\\")]
+    [InlineData(@"as\s", "ás")]
+    public async Task Backslash_EscapesTheNextKeyInDifferentContexts(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Fact]
+    public async Task TypingInTheMiddleOfText_ConvertsTheInsertedWord()
+    {
+        await OpenTelexAsync();
+
+        await TypeKeysAsync("Tooi hocj");
+        await AssertEditorValueAsync("Tôi học");
+
+        await Page.Keyboard.PressAsync("ArrowLeft");
+        await Page.Keyboard.PressAsync("ArrowLeft");
+        await Page.Keyboard.PressAsync("ArrowLeft");
+
+        await Page.Keyboard.TypeAsync("ddang ");
+
+        await AssertEditorValueAsync("Tôi đang học");
+    }
+
+    [Fact]
+    public async Task InputAfterWhitespace_StartsANewVietnameseWord()
+    {
+        await OpenTelexAsync();
+
+        await TypeKeysAsync("thuys ");
+        await AssertEditorValueAsync("thúy ");
+
+        await TypeKeysAsync("tieesng");
+        await AssertEditorValueAsync("thúy tiếng");
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc3\Telex\TelexTextRegressionTests.cs
+----------------
+// #5
+
+namespace LoVkeysTest.Tests.Loc3.Telex;
+
+public class TelexTextRegressionTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("aa bb", "â bb")]
+    [InlineData("Vieejt, Nam!", "Việt, Nam!")]
+    [InlineData(@"Hello, Wo\rld!", "Hello, World!")]
+    [InlineData("123 aa 456", "123 â 456")]
+    [InlineData("aa.aw,ee;oo", "â.ă,ê;ô")]
+    [InlineData("Tooi, yeeu Vieejt Nam.", "Tôi, yêu Việt Nam.")]
+    [InlineData("Xin chaof!", "Xin chào!")]
+    public async Task WordBoundaries_AndPunctuation_PreserveExpectedText(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("Tieesng Vieetj, Dduwowngf.", "Tiếng Việt, Đường.")]
+    [InlineData("Tooi yeeu Vieetj Nam.", "Tôi yêu Việt Nam.")]
+    [InlineData("Nhaf khoa hocj.", "Nhà khoa học.")]
+    public async Task Sentences_PreserveCaseSpacesAndPunctuation(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("thuowng", "thương")]
+    [InlineData("bieets", "biết")]
+    [InlineData("hocj", "học")]
+    [InlineData("nguowif", "người")]
+    public async Task RepresentativeVietnameseWords_ConvertCorrectly(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc3\Telex\TelexTonePlacementRegressionTests.cs
+----------------
+// #3
+
+namespace LoVkeysTest.Tests.Loc3.Telex;
+
+public class TelexTonePlacementRegressionTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("chaof", "chào")]
+    [InlineData("baof", "bào")]
+    [InlineData("keof", "kèo")]
+    [InlineData("khoer", "khỏe")]
+    [InlineData("hoangf", "hoàng")]
+    [InlineData("nguowif", "người")]
+    [InlineData("vieetj", "việt")]
+    [InlineData("truong", "truong")]
+    [InlineData("truowngf", "trường")]
+    public async Task ToneKeys_HandleComplexVowelGroups(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("aas", "ấ")]
+    [InlineData("aaf", "ầ")]
+    [InlineData("aar", "ẩ")]
+    [InlineData("aax", "ẫ")]
+    [InlineData("aaj", "ậ")]
+    [InlineData("aws", "ắ")]
+    [InlineData("awf", "ằ")]
+    [InlineData("ows", "ớ")]
+    [InlineData("owf", "ờ")]
+    [InlineData("uws", "ứ")]
+    [InlineData("uwf", "ừ")]
+    public async Task ToneKeys_ApplyToShapedVowels(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("uows", "ướ")]
+    [InlineData("uowf", "ườ")]
+    [InlineData("uowr", "ưở")]
+    [InlineData("uowx", "ưỡ")]
+    [InlineData("uowj", "ượ")]
+    public async Task ToneKeys_ApplyToUoWCombination(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Loc3\Telex\TelexTransformationRegressionTests.cs
+----------------
+// #4
+
+namespace LoVkeysTest.Tests.Loc3.Telex;
+
+public class TelexTransformationRegressionTests : LoVkeysPageTest
+{
+    [Theory]
+    [InlineData("aaa", "aa")]
+    [InlineData("aww", "aw")]
+    [InlineData("eee", "ee")]
+    [InlineData("ooo", "oo")]
+    [InlineData("oww", "ow")]
+    [InlineData("uww", "uw")]
+    [InlineData("ddd", "dd")]
+    [InlineData("uoww", "ưow")]
+    public async Task ThirdShapeKey_RestoresLiteralRepeatedText(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("aasa", "á")]
+    [InlineData("oofo", "ò")]
+    public async Task RevertingAToneBearingShape_PreservesTheTone(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("asf", "à")]
+    [InlineData("afs", "á")]
+    [InlineData("asj", "ạ")]
+    [InlineData("ajz", "a")]
+    [InlineData("aaszf", "ầ")]
+    public async Task ToneKeys_CanBeReplacedOrRemoved(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("dangf", "dàng")]
+    [InlineData("ddangf", "đàng")]
+    [InlineData("viecj", "viẹc")]
+    [InlineData("vieejc", "việc")]
+    public async Task MissingShapeKey_UsesCurrentEngineBehavior(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+
+    [Theory]
+    [InlineData("faceboook", "facebook")]
+    [InlineData("az", "a")]
+    [InlineData("aaz", "â")]
+    [InlineData("ddz", "đz")]
+    public async Task RepeatedAndLiteralInput_ProducesExpectedText(
+        string keys,
+        string expected)
+    {
+        await TypeAndAssertAsync(keys, expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Notes.txt
+----------------
+Tests are organized into 3 folders:
+
+1. Loc1: simple Playwright learning area.
+
+2. Loc2: focused TELEX functional suite.
+
+3. Loc3: TELEX regression suite.
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\Support\LoVkeysPageTest.cs
+----------------
+using System.Text;
+using Microsoft.Playwright;
+using Microsoft.Playwright.Xunit;
+
+namespace LoVkeysTest.Tests.Support;
+
+public abstract class LoVkeysPageTest : PageTest
+{
+    protected ILocator InputMode => Page.Locator("#inputMode");
+
+    protected ILocator Editor => Page.Locator("#vnArea");
+
+    protected Task OpenTelexAsync()
+        => OpenTelexAsync(TestWebPages.InlineLoVkeys);
+
+    protected Task OpenTelexAsync(string htmlPath)
+        => OpenPageAsync(htmlPath, "TELEX");
+
+    protected Task OpenPageAsync(string mode)
+        => OpenPageAsync(TestWebPages.InlineLoVkeys, mode);
+
+    protected async Task OpenPageAsync(string htmlPath, string mode)
+    {
+        ArgumentException.ThrowIfNullOrWhiteSpace(htmlPath);
+        ArgumentException.ThrowIfNullOrWhiteSpace(mode);
+
+        if (!File.Exists(htmlPath))
+        {
+            throw new FileNotFoundException(
+                $"Test page was not found: '{htmlPath}'. Confirm it is copied to the test output directory.",
+                htmlPath);
+        }
+
+        await Page.GotoAsync(
+            new Uri(Path.GetFullPath(htmlPath)).AbsoluteUri,
+            new PageGotoOptions
+            {
+                WaitUntil = WaitUntilState.DOMContentLoaded
+            });
+
+        await Expect(InputMode).ToBeVisibleAsync();
+        await Expect(Editor).ToBeVisibleAsync();
+
+        await InputMode.SelectOptionAsync(mode);
+        await Expect(InputMode).ToHaveValueAsync(mode);
+
+        await Editor.ClickAsync();
+    }
+
+    protected async Task TypeKeysAsync(string keys)
+    {
+        ArgumentNullException.ThrowIfNull(keys);
+
+        if (!string.IsNullOrEmpty(keys))
+        {
+            await Editor.PressSequentiallyAsync(keys);
+        }
+    }
+
+    protected async Task AssertEditorValueAsync(string expected)
+    {
+        string actual = await Editor.InputValueAsync();
+
+        Assert.Equal(expected, actual);
+        Assert.Equal(actual, actual.Normalize(NormalizationForm.FormC));
+    }
+
+    protected Task TypeAndAssertAsync(string keys, string expected)
+        => TypeAndAssertAsync(TestWebPages.InlineLoVkeys, keys, expected);
+
+    protected async Task TypeAndAssertAsync(
+        string htmlPath,
+        string keys,
+        string expected)
+    {
+        await OpenTelexAsync(htmlPath);
+        await TypeKeysAsync(keys);
+        await AssertEditorValueAsync(expected);
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\Tests\TestWebPages.cs
+----------------
+namespace LoVkeysTest.Tests;
+
+public static class TestWebPages
+{
+    public static string InlineLoVkeys =>
+        GetRequiredFile("web", "inline", "loc-vn-keys.html");
+
+    public static string LibraryLoVkeys =>
+        GetRequiredFile("web", "library", "index.html");
+
+    private static string GetRequiredFile(params string[] pathParts)
+    {
+        var fullPath = Path.Combine(
+            AppContext.BaseDirectory,
+            Path.Combine(pathParts));
+
+        if (!File.Exists(fullPath))
+        {
+            throw new FileNotFoundException(
+                $"Test web page was not found: '{fullPath}'. " +
+                "Confirm it is copied to the test output directory.");
+        }
+
+        return fullPath;
+    }
+}
+----------------
+
+File: C:\Works\Loc\Loc4Docs\LoVkeysTest\web\inline\loc-vn-keys.html
+----------------
+<!DOCTYPE html>
+<html lang="vi" data-bs-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LoVkeys &ndash; Vietnamese Input Tool</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet"
+          crossorigin="anonymous">
+
+    <style>
+        body {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background-color: #212529;
+        }
+
+        .main-container {
+            flex: 1;
+        }
+
+        #vnArea {
+            min-height: 420px;
+            resize: vertical;
+            font-family: "Segoe UI", system-ui, sans-serif;
+            font-size: 1.2rem;
+            line-height: 1.65;
+        }
+
+        .footer {
+            font-size: 0.82rem;
+            opacity: 0.65;
+        }
+
+        .hint {
+            min-height: 2.25rem;
+            font-size: 0.9rem;
+        }
+
+        kbd {
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main-container container py-4">
+        <div class="row justify-content-center">
+            <div class="col-lg-10 col-xl-9">
+                <div class="d-flex flex-wrap justify-content-between align-items-center mb-3 gap-2">
+                    <div>
+                        <h1 class="h3 mb-0">LoVkeys</h1>
+                        <p class="text-secondary small mb-0">
+                            Vietnamese Input Tool &bull; TELEX / VNI
+                        </p>
+                    </div>
+                </div>
+
+                <div class="d-flex flex-nowrap align-items-center gap-2 mb-3">
+                    <label for="inputMode" class="form-label fw-semibold mb-0">
+                        Kiểu gõ:
+                    </label>
+
+                    <select id="inputMode"
+                            class="form-select w-auto"
+                            aria-describedby="modeHint">
+                        <option value="OFF">OFF</option>
+                        <option value="TELEX" selected>TELEX</option>
+                        <option value="VNI">VNI</option>
+                    </select>
+                </div>
+
+                <div class="mb-3 text-secondary hint"
+                     id="modeHint"
+                     aria-live="polite">
+                </div>
+
+                <div>
+                    <label for="vnArea" class="form-label fw-semibold">
+                        Vùng gõ tiếng Việt
+                    </label>
+
+                    <textarea id="vnArea"
+                              class="form-control bg-dark text-light border-secondary"
+                              rows="16"
+                              spellcheck="false"
+                              autocomplete="off"
+                              autocorrect="off"
+                              autocapitalize="off"
+                              placeholder="Thử ngay:
+
+TELEX : Vieejt Nam  &rarr;  Việt Nam
+VNI   : Vie65t Nam  &rarr;  Việt Nam
+
+Gõ \ trước phím dấu để nhập ký tự nguyên dạng."></textarea>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer text-center py-3 border-top border-secondary mt-auto">
+        Unicode NFC &bull; Dedicated Vietnamese Input Engine &bull; No External JavaScript
+    </footer>
+
+    <script>
+        (() => {
+            'use strict';
+
+            const area = document.getElementById('vnArea');
+            const inputMode = document.getElementById('inputMode');
+            const modeHint = document.getElementById('modeHint');
+
+            let currentMode = 'TELEX';
+
+            const TONE_RE = /[\u0300\u0301\u0303\u0309\u0323]/g;
+            const VOWELS = 'aăâeêioôơuưyAĂÂEÊIOÔƠUƯY';
+
+            const TELEX_TONES = {
+                s: '\u0301',
+                f: '\u0300',
+                r: '\u0309',
+                x: '\u0303',
+                j: '\u0323',
+                z: null
+            };
+
+            const VNI_TONES = {
+                '1': '\u0301',
+                '2': '\u0300',
+                '3': '\u0309',
+                '4': '\u0303',
+                '5': '\u0323'
+            };
+
+            const hints = {
+                OFF: `
+                            OFF - Gõ Latin bình thường, không chuyển đổi.
+                        `,
+
+                TELEX: `
+                            TELEX:
+                            <kbd>aa</kbd>&rarr;â
+                            <kbd>aw</kbd>&rarr;ă
+                            <kbd>ee</kbd>&rarr;ê
+                            <kbd>oo</kbd>&rarr;ô
+                            <kbd>ow</kbd>&rarr;ơ
+                            <kbd>uw</kbd>&rarr;ư
+                            <kbd>uow</kbd>&rarr;ươ
+                            <kbd>dd</kbd>&rarr;đ
+                            &bull; Tone: <kbd>s f r x j</kbd>
+                            &bull; <kbd>z</kbd> xóa dấu
+                            &bull; <kbd>\\</kbd> thoát
+                        `,
+
+                VNI: `
+                            VNI:
+                            <kbd>1 2 3 4 5</kbd> đặt dấu
+                            &bull; <kbd>6</kbd> mũ
+                            &bull; <kbd>7</kbd> móc
+                            &bull; <kbd>8</kbd> trăng
+                            &bull; <kbd>9</kbd> đ
+                            &bull; <kbd>\\</kbd> thoát
+                        `
+            };
+
+            function isUpper(ch) {
+                return ch !== ch.toLowerCase() && ch === ch.toUpperCase();
+            }
+
+            function getTone(ch) {
+                return ch.normalize('NFD').match(TONE_RE)?.[0] ?? '';
+            }
+
+            function removeTone(ch) {
+                return ch
+                    .normalize('NFD')
+                    .replace(TONE_RE, '')
+                    .normalize('NFC');
+            }
+
+            function applyTone(ch, tone) {
+                const withoutTone = ch.normalize('NFD').replace(TONE_RE, '');
+
+                return (withoutTone + (tone ?? '')).normalize('NFC');
+            }
+
+            function replaceAt(text, index, replacement) {
+                return text.slice(0, index) + replacement + text.slice(index + 1);
+            }
+
+            function replaceShapeKeepTone(ch, map) {
+                const replacement = map[removeTone(ch)];
+
+                return replacement
+                    ? applyTone(replacement, getTone(ch))
+                    : null;
+            }
+
+            function isVowel(ch) {
+                return VOWELS.includes(removeTone(ch));
+            }
+
+            function isLetter(ch) {
+                return /\p{L}/u.test(ch);
+            }
+
+            function getBaseLower(ch) {
+                return removeTone(ch).toLowerCase();
+            }
+
+            function findToneTarget(text) {
+                const chars = Array.from(text);
+                const vowelGroups = [];
+
+                let index = 0;
+
+                while (index < chars.length) {
+                    if (!isVowel(chars[index])) {
+                        index++;
+                        continue;
+                    }
+
+                    const start = index;
+
+                    while (index < chars.length && isVowel(chars[index])) {
+                        index++;
+                    }
+
+                    vowelGroups.push({
+                        start,
+                        end: index
+                    });
+                }
+
+                if (vowelGroups.length === 0) {
+                    return -1;
+                }
+
+                const group = vowelGroups.at(-1);
+                let start = group.start;
+                const end = group.end;
+
+                if (end - start > 1) {
+                    const beforeGroup = chars[start - 1]
+                        ? getBaseLower(chars[start - 1])
+                        : '';
+
+                    const firstVowel = getBaseLower(chars[start]);
+
+                    if (beforeGroup === 'q' && firstVowel === 'u') {
+                        start++;
+                    }
+                }
+
+                let skippedInitialGi = false;
+
+                if (end - start > 1) {
+                    const beforeGroup = chars[start - 1]
+                        ? getBaseLower(chars[start - 1])
+                        : '';
+
+                    const firstVowel = getBaseLower(chars[start]);
+
+                    if (beforeGroup === 'g' && firstVowel === 'i') {
+                        start++;
+                        skippedInitialGi = true;
+                    }
+                }
+
+                if (start >= end) {
+                    return -1;
+                }
+
+                const nucleus = chars
+                    .slice(start, end)
+                    .map(getBaseLower)
+                    .join('');
+
+                const finalVowel = getBaseLower(chars[end - 1]);
+
+                if (
+                    skippedInitialGi &&
+                    getBaseLower(chars[start]) === 'a' &&
+                    finalVowel === 'o'
+                ) {
+                    return start;
+                }
+
+                const hasFinalGlide =
+                    end - start >= 2 &&
+                    ['i', 'y', 'u', 'o'].includes(finalVowel); // Added 'o' to fix words like "chào"
+
+                if (hasFinalGlide) {
+                    return end - 2;
+                }
+
+                const hasCoda = chars
+                    .slice(group.end)
+                    .some(isLetter);
+
+                if (!hasCoda) {
+                    const openSyllableFirstToneGroups = [
+                        'oa',
+                        'oe',
+                        'ia',
+                        'ua',
+                        'ưa'
+                    ];
+
+                    if (openSyllableFirstToneGroups.includes(nucleus)) {
+                        return start;
+                    }
+                }
+
+                return end - 1;
+            }
+
+            function normalizeTonePosition(text) {
+                const chars = Array.from(text);
+
+                let groupEnd = chars.length;
+
+                while (groupEnd > 0 && !isVowel(chars[groupEnd - 1])) {
+                    groupEnd--;
+                }
+
+                if (groupEnd === 0) {
+                    return text;
+                }
+
+                let groupStart = groupEnd;
+
+                while (groupStart > 0 && isVowel(chars[groupStart - 1])) {
+                    groupStart--;
+                }
+
+                let tone = '';
+
+                for (let i = groupStart; i < groupEnd; i++) {
+                    const currentTone = getTone(chars[i]);
+
+                    if (!tone && currentTone) {
+                        tone = currentTone;
+                    }
+
+                    chars[i] = removeTone(chars[i]);
+                }
+
+                if (!tone) {
+                    return text;
+                }
+
+                const plainText = chars.join('');
+                const target = findToneTarget(plainText);
+
+                if (target === -1) {
+                    return text;
+                }
+
+                chars[target] = applyTone(chars[target], tone);
+
+                return chars.join('');
+            }
+
+            function processTelex(text, key) {
+                const lower = key.toLowerCase();
+
+                if (text.endsWith('\\')) {
+                    return text.slice(0, -1) + key;
+                }
+
+                if (Object.prototype.hasOwnProperty.call(TELEX_TONES, lower)) {
+                    const pos = findToneTarget(text);
+
+                    return pos === -1
+                        ? text + key
+                        : replaceAt(text, pos, applyTone(text[pos], TELEX_TONES[lower]));
+                }
+
+                const last = text.at(-1) ?? '';
+                const lastBase = removeTone(last);
+
+                if (text.length >= 2 && lower === 'w') {
+                    const first = text.at(-2);
+                    const second = text.at(-1);
+
+                    if (
+                        removeTone(first).toLowerCase() === 'u' &&
+                        removeTone(second).toLowerCase() === 'o'
+                    ) {
+                        const newU = applyTone(
+                            isUpper(first) ? 'Ư' : 'ư',
+                            getTone(first)
+                        );
+
+                        const newO = applyTone(
+                            isUpper(second) || isUpper(key) ? 'Ơ' : 'ơ',
+                            getTone(second)
+                        );
+
+                        return text.slice(0, -2) + newU + newO;
+                    }
+                }
+
+                const pair = (lastBase + lower).toLowerCase();
+
+                const shapes = {
+                    aa: 'â',
+                    aw: 'ă',
+                    ee: 'ê',
+                    oo: 'ô',
+                    ow: 'ơ',
+                    uw: 'ư',
+                    dd: 'đ'
+                };
+
+                if (shapes[pair]) {
+                    const shaped = isUpper(last) || isUpper(key)
+                        ? shapes[pair].toUpperCase()
+                        : shapes[pair];
+
+                    return text.slice(0, -1) + applyTone(shaped, getTone(last));
+                }
+
+                const reverse = {
+                    a: { 'â': 'a', 'Â': 'A' },
+                    e: { 'ê': 'e', 'Ê': 'E' },
+                    o: { 'ô': 'o', 'Ô': 'O' },
+                    d: { 'đ': 'd', 'Đ': 'D' },
+                    w: {
+                        'ă': 'a', 'Ă': 'A',
+                        'ơ': 'o', 'Ơ': 'O',
+                        'ư': 'u', 'Ư': 'U'
+                    }
+                };
+
+                const reverted = reverse[lower]?.[lastBase];
+
+                // Fix: a triple-tap should yields a double character: aaa -> aa, ooo -> oo, ddd -> dd
+                // So, replace this line:
+                // return reverted
+                //     ? text.slice(0, -1) + applyTone(reverted, getTone(last))
+                //     : text + key;
+
+                // by:
+
+                if (!reverted) {
+                    return text + key;
+                }
+
+                const tone = getTone(last);
+                const restored = applyTone(reverted, tone);
+
+                // For an untoned shape conversion, the third key restores the
+                // literal two-character sequence: aaa → aa, ooo → oo, ddd → dd.
+                //
+                // For a tone-bearing character, preserve the existing behavior:
+                // ấ + a → á, rather than appending another "a".
+                return text.slice(0, -1) + restored + (tone ? '' : key);
+
+            }
+
+            function processVni(text, key) {
+                if (text.endsWith('\\')) {
+                    return text.slice(0, -1) + key;
+                }
+
+                if (!/^[1-9]$/.test(key)) {
+                    return text + key;
+                }
+
+                const last = text.at(-1) ?? '';
+
+                if (key === '9') {
+                    if (last === 'd') return text.slice(0, -1) + 'đ';
+                    if (last === 'D') return text.slice(0, -1) + 'Đ';
+                    if (last === 'đ') return text.slice(0, -1) + 'd';
+                    if (last === 'Đ') return text.slice(0, -1) + 'D';
+
+                    return text + key;
+                }
+
+                const pos = findToneTarget(text);
+
+                if (pos === -1) {
+                    return text + key;
+                }
+
+                const target = text[pos];
+                let replacement = null;
+
+                if (VNI_TONES[key]) {
+                    replacement = applyTone(target, VNI_TONES[key]);
+                }
+
+                if (key === '6') {
+                    replacement = replaceShapeKeepTone(target, {
+                        a: 'â', A: 'Â', â: 'a', Â: 'A',
+                        e: 'ê', E: 'Ê', ê: 'e', Ê: 'E',
+                        o: 'ô', O: 'Ô', ô: 'o', Ô: 'O'
+                    });
+                }
+
+                if (key === '7') {
+                    replacement = replaceShapeKeepTone(target, {
+                        o: 'ơ', O: 'Ơ', ơ: 'o', Ơ: 'O',
+                        u: 'ư', U: 'Ư', ư: 'u', Ư: 'U'
+                    });
+                }
+
+                if (key === '8') {
+                    replacement = replaceShapeKeepTone(target, {
+                        a: 'ă', A: 'Ă', ă: 'a', Ă: 'A'
+                    });
+                }
+
+                return replacement && replacement !== target
+                    ? replaceAt(text, pos, replacement)
+                    : text + key;
+            }
+
+            function transform(text, key) {
+                let result;
+
+                switch (currentMode) {
+                    case 'TELEX':
+                        result = processTelex(text, key);
+                        break;
+
+                    case 'VNI':
+                        result = processVni(text, key);
+                        break;
+
+                    default:
+                        result = text + key;
+                        break;
+                }
+
+                return normalizeTonePosition(result);
+            }
+
+            function onBeforeInput(event) {
+                if (
+                    currentMode === 'OFF' ||
+                    event.inputType !== 'insertText' ||
+                    !event.data ||
+                    event.data.length !== 1 ||
+                    !event.cancelable ||
+                    event.isComposing
+                ) {
+                    return;
+                }
+
+                const start = area.selectionStart;
+                const end = area.selectionEnd;
+
+                if (start !== end) {
+                    return;
+                }
+
+                const beforeCursor = area.value.slice(0, start);
+                const match = beforeCursor.match(/([\p{L}\p{M}\\]+)$/u);
+                const wordStart = match ? start - match[0].length : start;
+                const currentWord = area.value.slice(wordStart, start);
+                const newWord = transform(currentWord, event.data);
+
+                if (newWord === currentWord + event.data) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                area.setRangeText(
+                    newWord,
+                    wordStart,
+                    start,
+                    'end'
+                );
+            }
+
+            function onPaste(event) {
+                const text = event.clipboardData?.getData('text/plain');
+
+                if (text === undefined || text === null) {
+                    return;
+                }
+
+                event.preventDefault();
+
+                area.setRangeText(
+                    text.normalize('NFC'),
+                    area.selectionStart,
+                    area.selectionEnd,
+                    'end'
+                );
+            }
+
+            function setMode(mode) {
+                currentMode = hints[mode] ? mode : 'TELEX';
+
+                inputMode.value = currentMode;
+                modeHint.innerHTML = hints[currentMode];
+
+                area.focus();
+            }
+
+            inputMode.addEventListener('change', () => {
+                setMode(inputMode.value);
+            });
+
+            area.addEventListener('beforeinput', onBeforeInput);
+            area.addEventListener('paste', onPaste);
+
+            area.value = area.value.normalize('NFC');
+            setMode('TELEX');
+        })();
+    </script>
+</body>
+</html>
+----------------
+
